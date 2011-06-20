@@ -22,19 +22,145 @@ Of course, you can also start production manually by clicking the button :guilab
 .. index::
    single: module; mrp_jit
 
-If you have not installed the Just-In-Time planning module :mod:`mrp_jit`, you should start
-using OpenERP to schedule the Production Orders automatically using the
-various system rules. To do this, use the menu :menuselection:`Warehouse --> Schedulers --> Compute Schedulers`.
+If you have not installed the Just-in-Time planning module :mod:`mrp_jit`, you should start using OpenERP to schedule the Production Orders automatically using the various system rules. To do this, use the menu :menuselection:`Warehouse --> Schedulers --> Compute Schedulers`.
 
 .. tip:: Procurement Exceptions
 
-	You must pay attention to the fact that you have to define `minimum stock rules` for each product that is in 
-	``Make to Stock``.
+        Pay attention to the fact that you have to define `minimum stock rules` for each product set as ``Make to Stock``.
 
-Raw material consumption
-++++++++++++++++++++++++
+Complete Production Workflow
+============================
 
-Finished product manufacturing
+To understand the usefulness and the functioning of the system you should test a complete workflow
+on the database installed with the demonstration data. We will show you:
+
+* How to create a sales order,
+
+* The manufacturing workflow for an intermediate product,
+
+* The manufacturing of an ordered product,
+
+* The delivery of products to a customer,
+
+* Invoicing at the end of the month,
+
+* Traceability for after-sales service.
+
+.. tip:: Demonstration data
+
+    To exactly follow the workflow as shown below, you should keep the same quantities as in the
+    example and start from a new database. Then you will not run into exceptions resulting from a lack of stock.
+
+This more advanced case of handling problems in procurement will be sorted out later in the chapter.
+
+To be able to do the following step, add Sales Management through the Reconfigure wizard.
+
+The Sales Order
++++++++++++++++
+
+.. index:: quotation
+.. index:: sales order
+
+Begin by encoding a sales (or customer) order through the menu :menuselection:`Sales Management --> Sales Orders -> New Quotation`. Enter the following information:
+
+* :guilabel:`Customer` : Agrolait,
+
+* :guilabel:`Shipping Policy` : Invoice from the picking (``Other Information`` tab),
+
+* :guilabel:`Sales Order Lines`, click `New`:
+
+  * :guilabel:`Product` : PC2 – Basic PC (assembly on order),
+
+  * :guilabel:`Quantity (UoM)` : 1,
+
+  * :guilabel:`Product UoM` : PCE,
+
+  * :guilabel:`Procurement Method` : on order.
+
+Once the quotation has been entered, you can confirm it immediately by clicking the button
+:guilabel:`Confirm Order` at the bottom to the right. Keep note of the order reference because this
+follows all through the process. Usually, in a new database, this will be ``SO007`` . At this stage,
+you can look at the process linked to your order using the :guilabel:`Question Mark` button next to the ``Sales Orders`` title.
+
+.. figure:: images/mrp_sales_process_new.png
+   :scale: 75
+   :align: center
+
+   *Process for Handling Sales Order SO007*
+
+Start the requirements calculation using the menu :menuselection:`Manufacturing --> Compute All Schedulers`.
+
+.. index::
+   single: semi-finished product
+
+Producing an Intermediate Product
++++++++++++++++++++++++++++++++++
+
+To understand the implications of requirements calculation, you must know the configuration of the
+sold product. To do this, go to the form for product PC2 and click on the link :guilabel:`Bill of
+Materials` to the right. You get the scheme shown in :ref:`fig-mrpbomtree` which is the composition 
+of the selected product.
+
+.. _fig-mrpbomtree:
+
+.. figure:: images/mrp_product_bom_tree.png
+   :scale: 75
+   :align: center
+
+   *Composition of product PC2 in the demonstration data*
+
+Manufacturing the PC2 computer must be done in two steps:
+
+1: Manufacture of the intermediate product: CPU_GEN
+
+2: Manufacture of the finished product using that intermediate product: PC2
+
+The manufacturing supervisor can then consult the product orders using the menu
+:menuselection:`Manufacturing --> Production Orders --> Production Orders To Start`. You then get a
+list of orders to start and the estimated start date to meet the ordered customer delivery date.
+
+.. figure:: images/mrp_production_list.png
+   :scale: 75
+   :align: center
+
+   *List of production orders*
+
+You'll see the production order for CPU_GEN but not that for PC2 because that one depends on an
+intermediate product. Return to the production order for CPU_GEN and click below it. If there are
+several of them, select the one corresponding to your order using the reference that contains your
+order number (in this example ``SO007`` ).
+
+.. figure:: images/mrp_production_form.png
+   :scale: 75
+   :align: center
+
+   *The detail of a production order*
+
+The system shows you that you must manufacture product CPU_GEN using the components: MB1, CPU1, FAN,
+RAM. You can then confirm the production twice:
+
+Start of production: consumption of raw materials,
+
+End of production: manufacture of finished product.
+
+At this stage, you should click to edit the line for the product MB1 to enter a lot number for it.
+The lot number is usually shown the parent chart, so you should just copy that over. To do that put
+the cursor in the field :guilabel:`Production Lot` and press :kbd:`<F1>` to create a new lot. Set a lot
+reference, for example: ``MB1345678`` . The system may then show you a warning because this lot is not in
+stock, but you can ignore this message.
+
+The production order must be in the closed state as shown in the figure :ref:`fig-mrpprdfrm`.
+
+.. _fig-mrpprdfrm:
+
+.. figure:: images/mrp_production_form_end.png
+   :scale: 75
+   :align: center
+
+   *Production order after the different stages*
+
+
+Finished Product Manufacturing
 ++++++++++++++++++++++++++++++
 
 Having manufactured the intermediate product CPU_GEN, OpenERP automatically proposes the manufacturing
