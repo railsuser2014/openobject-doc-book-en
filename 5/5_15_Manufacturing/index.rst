@@ -52,6 +52,7 @@ second part. The management of products depends on the concept of classification
 
 For this chapter you should start with a fresh database that includes demo data,
 with :mod:`mrp` (``Manufacturing``) and its dependencies installed and no particular chart of accounts configured (just click the ``Skip`` button a couple of times).
+As you will notice, when you select ``Manufacturing`` to be installed, OpenERP will install the linked applications automatically.
 
 .. raw:: html
 
