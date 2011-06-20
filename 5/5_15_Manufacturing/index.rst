@@ -51,7 +51,7 @@ second part. The management of products depends on the concept of classification
     * Building: Plans.
 
 For this chapter you should start with a fresh database that includes demo data,
-with :mod:`mrp` (``Manufacturing``) and its dependencies installed and no particular chart of accounts configured.
+with :mod:`mrp` (``Manufacturing``) and its dependencies installed and no particular chart of accounts configured (just click the ``Skip`` button a couple of times).
 
 .. raw:: html
 

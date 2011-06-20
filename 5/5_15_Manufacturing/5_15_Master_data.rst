@@ -4,11 +4,11 @@ Master Data
 Bill of Materials and Components
 ++++++++++++++++++++++++++++++++
 
-Use of Bills of Materials
--------------------------
+Using Bills of Materials
+------------------------
 
 Bills of Materials are documents that describe the list of raw materials used to make a finished
-product. To illustrate the concept of specification, you are going to work on a cabinet where the
+product. To illustrate the concept of specification, you will work on a cabinet where the
 manufacturing plan is given by the figure :ref:`fig-mrparm2`.
 
 .. _fig-mrparm2:
@@ -49,8 +49,7 @@ The cabinet is assembled from raw materials and intermediate assemblies. The Ima
 
         To create the above products, duplicate existing ones, such as Side Panel and Wood 2mm.
 
-To describe how to assemble this cabinet, you define a bill of materials for each intermediate
-product and for the final cabinet assembly. These are given by the table below. You can start from the demo data and complete them according to the specifications below.
+To describe how this cabinet should be assembled, you define a bill of materials for each intermediate product and for the final cabinet assembly. These are shown in the tables below. You can start from the demo data and complete them according to the specifications.
 
 .. table:: Bill of Materials for 1 SHE100 Unit (already defined)
 
