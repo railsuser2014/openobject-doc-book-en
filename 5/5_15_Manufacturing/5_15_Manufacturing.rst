@@ -96,10 +96,7 @@ Start the requirements calculation using the menu :menuselection:`Manufacturing 
 Producing an Intermediate Product
 +++++++++++++++++++++++++++++++++
 
-To understand the implications of requirements calculation, you must know the configuration of the
-sold product. To do this, go to the form for product PC2 and click on the link :guilabel:`Bill of
-Materials` to the right. You get the scheme shown in :ref:`fig-mrpbomtree` which is the composition 
-of the selected product.
+To understand the implications of requirements calculation, you should know the configuration of the sold product. To do this, go to the form for product PC2 and click the link :guilabel:`Bill of Materials` to the right. You get the scheme shown in :ref:`fig-mrpbomtree` which is the composition of the selected product.
 
 .. _fig-mrpbomtree:
 
