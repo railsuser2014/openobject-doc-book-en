@@ -467,7 +467,7 @@ In the routing, you have to enter the list of operations that has to be executed
 .. tip:: Multi-level Routing
 
    It is possible to define routing on several levels to support multi-level bills of materials.
-   You can select the routing on each level of a bill of materials ( BoM in a Bom can have a different routing).
+   You can select the routing on each level of a bill of materials ( BoM in a BoM can have a different routing).
    The levels are then linked to hierarchies of bills of materials.
 
 .. Copyright © Open Object Press. All rights reserved.
