@@ -189,7 +189,7 @@ same finished product from raw materials (A + B > C). With Subproduct management
     (or the offcuts may have value for the company if they can be used elsewhere).
 
 If the module :mod:`mrp_subproduct` has been installed, you get a new tab Sub products in the Bill of Material
-that lets you set secondary products resulting from the manufacture of the finished product.
+that lets you set secondary products resulting from the manufacturing of the finished product.
 
 .. figure:: images/mrp_bom_subproduct.png
     :scale: 75
@@ -204,28 +204,24 @@ up the list of all products in the the second tab of the production order ``Fini
     :scale: 75
     :align: center
     
-    *A production order producing several finished products*
+    *Production Order producing Several Finished Products*
 
-Secondary products enable you to generate several types of products from the same raw materials and manufac-
-turing methods - only these are not used in the calculation of requirements. Then, if you need the secondary
-products, OpenERP will not ask you to manufacture another product to use the waste products and secondary
-products of this manufacture. In this case, you should enter another production order for the secondary product.
+Secondary products enable you to generate several types of products from the same raw materials and manufacturing methods - only these are not used in the calculation of requirements. Then, if you need the secondary products, OpenERP will not ask you to manufacture another product to use the waste products and secondary products of this production. In this case, you should enter another production order for the secondary product.
 
-..note: Services in Manufacturing
+.. note:: Services in Manufacturing
 
     Unlike most software for production management, OpenERP manages services as well as stockable products. So
     it is possible to put products of type Service in a bill of materials. These do not appear in the production 
-    order but their requirements will be taken into account.
+    order, but their requirements will be taken into account.
     
-    If they are defined as Make to Order, OpenERP will generate a task for the manufacture or a subcontract
-    order for the operations. The behaviour will depend on the Supply Method configured on the product form: Buy
+    If they are defined as Make to Order, OpenERP will generate a task for the manufacturing or a subcontract
+    order for the operations. The behaviour will depend on the Supply Method configured in the product form: Buy
     or Produce.
 
 Scrapping
 +++++++++
 
-If you have to scrap the final product before it is finished, you will have to scrap every components
-allowed to this product. 
+If you have to scrap the final product before it is finished, you will have to scrap every component allowed for this product. 
 
 .. figure:: images/mo_scrap.png
     :scale: 75
@@ -233,29 +229,26 @@ allowed to this product.
     
     *Scrapping a Product to Finish*
 
-If you scrap a Product to Finish, you will get the situation illustrated in the previous figure. A 
-finished product will be *created* and put in the scrapped virtual location, and a new Product to
-Finish has been added to the manufacturing order.
+If you scrap a Product to Finish, you will get the situation illustrated in the previous figure. A finished product will be *created* and put in the scrapped virtual location. A new Product to Finish has been added to the manufacturing order.
 
 .. tip:: Scrap a product
 
     To scrap a product, you have to edit the manufacturing order and then select the product to be
-    scrapped by clicking on the little pencil on the left of the item.
+    scrapped by clicking the little pencil at the left of the item.
 
-This new product has been added because when you have to manufacture a product and if this product
+This new product has been added for the following reason: when you have to manufacture a product and if this product
 has to be scrapped, you have to produce another product to replace the scrapped one. The reason why 
 you have to scrap each component manually is that the production problem can come from one component.
 
 If the production process is finished and you see that you have to scrap the finished product, you will
 not have to scrap the different components. They are already *consumed*. They are not available anymore
-for further manufacturing orders, they have been moved to the production Stock Location.
+for further manufacturing orders; they have been moved to the production Stock Location.
 
-Production orders
+Production Orders
 +++++++++++++++++
 
-To open a Production Order, use the menu
-:menuselection:`Manufacturing --> Manufacturing --> Manufacturing Orders` and click on `New` button.
-You get a blank form for entering a new production order as shown in the figure :ref:`fig-mrpprdnew`.
+To open a Production Order, use the menu :menuselection:`Manufacturing --> Manufacturing --> Manufacturing Orders` and click the `New` button.
+You get a blank form to enter a new production order as shown in the figure :ref:`fig-mrpprdnew`.
 
 .. _fig-mrpprdnew:
 
@@ -263,7 +256,7 @@ You get a blank form for entering a new production order as shown in the figure 
    :scale: 75
    :align: center
 
-   *New production order*
+   *New Production Order*
 
 The production order follows the process given by the figure :ref:`fig-mrpprdproc`.
 
@@ -273,7 +266,7 @@ The production order follows the process given by the figure :ref:`fig-mrpprdpro
    :scale: 75
    :align: center
 
-   *Process for handling a production order*
+   *Process for Handling a Production Order*
 
 The `Scheduled date` , `Product Qty` and `Reference`, are automatically completed when the form is first opened.
 Enter the product that you want to produce, and the quantity required. The :guilabel:`Product UOM` by
@@ -286,17 +279,13 @@ You then have to set two locations:
 	* The location for depositing the finished products.
 
 For simplicity, put the ``Stock`` location in both places. The field :guilabel:`Bill of Materials` will
-automatically be completed by OpenERP when you select the product.  You
-can then overwrite it with another BoM to specify something else to use for this specific
-manufacture, then click the button :guilabel:`Compute Data`.
+automatically be completed by OpenERP when you select the product. You can then overwrite it with another BoM to specify something else to use for this specific manufacturing, then click the button :guilabel:`Compute Data`.
 
 The tabs :guilabel:`Scheduled Products` and :guilabel:`Work Orders` are also completed automatically when you click
 :guilabel:`Compute Data` (in the :guilabel:`Work Orders` or :guilabel:`Scheduled Products` tabs). 
 You will find the raw materials there that are required for the production and the operations needed by the assembly staff.
 
-If you want to start production, click the button :guilabel:`Confirm Production`, and OpenERP then
-automatically completes the :guilabel:`Products to Consume` field in the :guilabel:`Consumed Products` tab and
-:guilabel:`Products to Finish` field in :guilabel:`Finished Products` tab.
+If you want to start production, click the button :guilabel:`Confirm Production`, and OpenERP automatically completes the :guilabel:`Products to Consume` field in the :guilabel:`Consumed Products` tab and :guilabel:`Products to Finish` field in :guilabel:`Finished Products` tab.
 
 The information in the :guilabel:`Consumed Products` tab can be changed if:
 
@@ -313,17 +302,11 @@ using the :guilabel:`Force Reservation` button. This means that you do not have
 to wait for the scheduler to assign and reserve the raw materials from your stock for this
 production run. This shortens the procurement process.
 
-If you do not want to change the priorities, just
-leave the production order in this state and the scheduler will create a plan based on the priority
-and your planned date.
+If you do not want to change the priorities, just leave the production order in this state and the scheduler will create a plan based on the priority and your planned date.
 
-.. todo:: Report that State is not shown on a Production Order
+To start the production of products, click :guilabel:`Start Production`. The raw materials are then consumed automatically from stock, which means that the draft ( ``Waiting`` ) movements become ``Done``.
 
-To start the production of products, click :guilabel:`Start Production`. The raw materials are then
-consumed automatically from stock, which means that the draft ( ``Waiting`` ) movements become ``Done`` .
-
-Once the production is complete, click :guilabel:`Produce`. The finished products are
-then moved into stock.
+Once the production is complete, click :guilabel:`Produce`. The finished products are now moved into stock.
 
 
 .. Copyright © Open Object Press. All rights reserved.
