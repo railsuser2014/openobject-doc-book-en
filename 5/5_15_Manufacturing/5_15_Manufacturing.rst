@@ -53,7 +53,7 @@ on the database installed with the demonstration data. We will show you:
 
 This more advanced case of handling problems in procurement will be sorted out later in the chapter.
 
-To be able to do the following step, add Sales Management through the Reconfigure wizard.
+To be able to do the following step, add ``Sales Management`` through the Reconfigure wizard.
 
 The Sales Order
 +++++++++++++++
@@ -96,45 +96,41 @@ Start the requirements calculation using the menu :menuselection:`Manufacturing 
 Producing an Intermediate Product
 +++++++++++++++++++++++++++++++++
 
-To understand the implications of requirements calculation, you should know the configuration of the sold product. To do this, go to the form for product PC2 and click the link :guilabel:`Bill of Materials` to the right. You get the scheme shown in :ref:`fig-mrpbomtree` which is the composition of the selected product.
+To understand the implications of requirements calculation, you should know the configuration of the sold product. To do this, go to the form for product PC2 and click the link :guilabel:`Product BoM Structure` to the right. You get the scheme shown in :ref:`fig-mrpbomtree` which is the composition of the selected product.
 
 .. _fig-mrpbomtree:
 
-.. figure:: images/mrp_product_bom_tree.png
+.. figure:: images/mrp_product_bom_tree_new.png
    :scale: 75
    :align: center
 
-   *Composition of product PC2 in the demonstration data*
+   *Composition of PC2*
 
-Manufacturing the PC2 computer must be done in two steps:
+The PC2 computer has to be manufactured in two steps:
 
-1: Manufacture of the intermediate product: CPU_GEN
+1: The intermediate product: CPU_GEN
 
-2: Manufacture of the finished product using that intermediate product: PC2
+2: The finished product using that intermediate product: PC2
 
-The manufacturing supervisor can then consult the product orders using the menu
-:menuselection:`Manufacturing --> Production Orders --> Production Orders To Start`. You then get a
-list of orders to start and the estimated start date to meet the ordered customer delivery date.
+The manufacturing supervisor can then consult the production orders using the menu
+:menuselection:`Manufacturing --> Manufacturing --> Manufacturing Orders`. You then get a
+list of orders to start (``Ready to Produce``) and the estimated start date (``Scheduled Date``) to meet the customer delivery date.
 
-.. figure:: images/mrp_production_list.png
+.. figure:: images/mrp_production_list_new.png
    :scale: 75
    :align: center
 
-   *List of production orders*
+   *List of Manufacturing Orders*
 
-You'll see the production order for CPU_GEN but not that for PC2 because that one depends on an
-intermediate product. Return to the production order for CPU_GEN and click below it. If there are
-several of them, select the one corresponding to your order using the reference that contains your
-order number (in this example ``SO007`` ).
+You will see the production order for CPU_GEN, but not the one for PC2 because it depends on an intermediate product. Return to the production order for CPU_GEN and click it. If there are several of them, select the one corresponding to your order using the source document that contains your order number (in this example ``SO007`` ).
 
-.. figure:: images/mrp_production_form.png
+.. figure:: images/mrp_production_form_new.png
    :scale: 75
    :align: center
 
-   *The detail of a production order*
+   *Details of a Production Order*
 
-The system shows you that you must manufacture product CPU_GEN using the components: MB1, CPU1, FAN,
-RAM. You can then confirm the production twice:
+The system shows you that you have to manufacture product CPU_GEN using the components: MB1, CPU1, FAN, RAM. You can then confirm the production twice:
 
 Start of production: consumption of raw materials,
 
