@@ -601,7 +601,7 @@ For example, `Administration Dashboard` will open when you click the :menuselect
 	as a list of open tasks, tasks delegated to him and an analysis of the progress of
 	the relevant projects.
 
-Dashboards are dynamic, letting you navigate easily around the whole information base.
+Dashboards are dynamic, letting you navigate easily around the entire information base.
 Using the icons above a graph, for example, you can filter the data or zoom into the graph. You can
 click any element of the list to get detailed statistics on the selected element.
 
