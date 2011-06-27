@@ -7,7 +7,7 @@ Manufacturing Stock Locations
 Stock Moves linked to Manufacturing Processes
 +++++++++++++++++++++++++++++++++++++++++++++
 
-`Stock --> Production --> Stock`
+To get an overview of all stock moves, go to :menuselection:`Stock --> Production --> Stock`.
 
 Traceability
 ++++++++++++
