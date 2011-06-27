@@ -87,8 +87,8 @@ To see a calculation of the lead times, take the example of the cabinet above. S
    WOOD002       0.17      m
    ============  ========  ===============
 
-The SIDEPAN is made from an order using the workflow shown. The WOOD002 is purchased on order and the other products are all found in stock. An order for the product SHE100 will then generate two production orders (SHE100 and SIDEPAN) then produce two purchase orders for the product WOOD02.
-Product WOOD02 is used in the production of both SHE100 and SIDEPAN. Set the lead times on the product forms to the following:
+The SIDEPAN is made from an order using the workflow shown. The WOOD002 is purchased on order and the other products are all found in stock. An order for the product SHE100 will then generate two production orders (SHE100 and SIDEPAN) then produce two purchase orders for the product WOOD002.
+Product WOOD002 is used in the production of both SHE100 and SIDEPAN. Set the lead times on the product forms to the following:
 
 .. table:: Lead Times
 
