@@ -3,7 +3,7 @@
    single: Manufacturing
    single: production; management
 
-.. _ch-mnf:
+.. _part3-man-manuf:
 
 *************
 Manufacturing
