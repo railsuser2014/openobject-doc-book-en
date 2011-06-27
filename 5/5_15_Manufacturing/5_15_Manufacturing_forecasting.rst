@@ -1,54 +1,44 @@
-Forecasting and suppling
-========================
+Forecasting and Supplying
+=========================
 
 Scheduler
 +++++++++
 
-The requirements scheduler is the calculation engine which plans and prioritises production
-and purchasing automatically from the rules defined on these products. It is started once
-per day. You can also start it manually using the menu :menuselection:`Warehouse --> Schedulers --> Compute Schedulers`.
-This uses all the relevant parameters defined in the products, the suppliers and the company
-to determine the priorities between the different production orders, deliveries and supplier
-purchases.
+The requirements scheduler is the calculation engine which plans and prioritises production and purchasing automatically according to the rules defined on products. By default, the scheduler is set to run once a day (OpenERP automatically creates a *Scheduled Action* for this). You can also start the scheduler manually from the menu :menuselection:`Warehouse --> Schedulers --> Compute Schedulers`.
+The scheduler uses all the relevant parameters defined for products, suppliers and the company to determine the priorities between the different production orders, deliveries and supplier purchases.
 
-You can set the starting time by modifying the corresponding action in the menu
-:menuselection:`Administration --> Configuration --> Scheduler --> Scheduled Actions`. Modify the
-``Run mrp Scheduler`` configuration document.
+.. note::
+
+        You can set the starting time of the scheduler by modifying the corresponding action in the menu :menuselection:`Administration --> Configuration --> Scheduler --> Scheduled Actions`. Modify the ``Run mrp Scheduler`` configuration document.
 
 .. figure:: images/stock_cron.png
    :scale: 75
    :align: center
 
-   *Configuring the start time for calculating requirements*
+   *Configuring the Start Time to Calculate Requirements*
 
 .. tip::  Calculating Requirements / Scheduling
 
     Scheduling only validates procurements that are confirmed but not yet started. These procurement reservations
-    will themselves start production, tasks or purchases depending on the configuration of the
-    requested product.
+    will themselves start production, tasks or purchases depending on the configuration of the requested product.
 
-You take account of the priority of operations in starting reservations and procurements.
-The urgent requests, or those with a date in the past, or those with a date earlier than the others will be
-started first so that if there are not enough products in stock to satisfy all the requests, the
-most urgent will be produced first.
+You take into account the priority of operations when starting reservations and procurements.
+Urgent requests, those with a date in the past, or requests with a date earlier than the others will be started first. In case there are not enough products in stock to satisfy all the requests, you can be sure that the most urgent requests will be produced first.
 
-Planification
-+++++++++++++
+Planning
+++++++++
 
-In OpenERP, you can plan the production in a easy way. By simply going to :menuselection:`Manufacturing
---> Planning`, you can plan manufacturing orders, work orders and/or work centers.
+In OpenERP, you can plan the production in an easy way. Simply by going to :menuselection:`Manufacturing --> Planning`, you can plan manufacturing orders, work orders and/or work centers.
 
-By clicking on one of these item, a calendar view will open and will let you select a day to create
-the order whenever you want. You will also see the already planned orders.
+By clicking ``Manufacturing Orders`` in the *Planning* menu, a calendar view will open in which you can select a day to create the order whenever you want. You will also see the already planned orders. By dragging and dropping a manufacturing order in Calendar view, you can change the starting date of the order.
 
 .. figure:: images/mo_plan.png
     :scale: 75
     :align: center
     
-    *Planning the manufacturing orders*
+    *Planning Manufacturing Orders*
 
-When you click on a day, an empty manufacturing order window will open and let you choose which product
-you want to make.
+When you click in a day in the Calendar view, an empty manufacturing order window will open and let you choose which product you want to produce.
 
 .. figure:: images/newmo_plan.png
     :scale: 75
@@ -56,115 +46,95 @@ you want to make.
     
     *New Manufacturing Order*    
 
-Scheduler and Just In Time
+Scheduler and Just in Time
 --------------------------
 
-When you want to work in *Just In Time* way, you have to install the module :mod:`mrp_jit`.
+When you want to work according to the *Just in Time* way, you should install the module :mod:`mrp_jit`.
 
-If you install this module, you will not have to run the regular procurement scheduler anymore 
-(but you still need to run the minimum order point rule scheduler, or for example let it run daily.) 
+If you install this module, you will not have to run the regular procurement scheduler anymore (but you still need to run the minimum order point rule scheduler, or for example let it run daily.) 
 
-All procurement orders will be processed immediately, which could in some cases entail a small performance 
-impact. 
+All procurement orders will be processed immediately, which could in some cases entail a small performance impact. 
 
-It may also increase your stock size because products are reserved as soon as possible and the scheduler 
-time range is not taken into account anymore. In that case, you can not use priorities any more on 
-the different picking. 
+It may also increase your stock size because products are reserved as soon as possible and the scheduler time range is not taken into account anymore. In that case, you can no longer use priorities for the different picking orders. 
 
 
 Lead times
 ----------
 
-All procurement operations (that is, the requirement for both production orders and purchase orders)
-are automatically calculated by the scheduler. But more than just creating each order, OpenERP plans 
-the timing of each step. A planned date calculated by the system can be found on each order document.
+All procurement operations (that is, the requirement for both production orders and purchase orders) are automatically calculated by the scheduler. But more than just creating each order, OpenERP plans the timing of each step. A planned date calculated by the system can be found on each order document.
 
-To organize the whole chain of manufacturing and procurement, OpenERP bases everything on the delivery
-date promised to the customer. This is given by the date of the confirmation in the order and the
-lead times shown in each product line of the order. This lead time is itself proposed automatically
-in the field :guilabel:`Customer Lead Time` shown in the product form. This is the difference
-between the time on an order and that of the delivery.
+To organize the whole chain of manufacturing and procurement, OpenERP bases everything on the delivery date promised to the customer. This is given by the date of the confirmation in the order and the lead times shown in each product line of the order. This lead time is itself proposed automatically in the field :guilabel:`Customer Lead Time` shown in the product form. This Customer Lead Time is the difference between the time on an order and that of the delivery.
 
-To see a calculation of the lead times, take the example of the cabinet above. Suppose that the
-cabinet is assembled in two steps, using the two following bills of materials.
+To see a calculation of the lead times, take the example of the cabinet above. Suppose that the cabinet is assembled in two steps, using the two following bills of materials.
 
-.. table:: Bill of Materials for 1 ARM100 Unit
+.. table:: Bill of Materials for 1 SHE100 Unit
 
    ============  ========  ===============
    Product Code  Quantity  Unit of Measure
    ============  ========  ===============
-   PANLAT        2         Unit
-   BOIS002       0.25      m2
+   SIDEPAN       2         Unit
+   WOOD002       0.25      m
    LIN040        1         m
-   BOIS010       0.249     m2
-   TAQ000        12        Unit
+   WOOD010       0.249     m
+   METC000       12        Unit
    ============  ========  ===============
 
-.. table:: Bill of Materials for 2 PANLAT Units
+.. table:: Bill of Materials for 2 SIDEPAN Units
 
    ============  ========  ===============
    Product Code  Quantity  Unit of Measure
    ============  ========  ===============
-   BOIS002       0.17      m2
+   WOOD002       0.17      m
    ============  ========  ===============
 
-The PANLAT is made from an order using the workflow shown. The BOIS02 is purchased on order and the
-other products are all found in stock. An order for the product ARM100 will then generate two
-production orders (ARM100 and PANLAT) then produce two purchase orders for the product BOIS02.
-Product BOIS02 is used in the production of both ARM100 and PANLAT. Set the lead times on the
-product forms to the following:
+The SIDEPAN is made from an order using the workflow shown. The WOOD002 is purchased on order and the other products are all found in stock. An order for the product SHE100 will then generate two production orders (SHE100 and SIDEPAN) then produce two purchase orders for the product WOOD02.
+Product WOOD02 is used in the production of both SHE100 and SIDEPAN. Set the lead times on the product forms to the following:
 
 .. table:: Lead Times
 
    ============ ================== ======================= ==================
    Product Code Customer Lead Time Manufacturing Lead Time Supplier Lead Time
    ============ ================== ======================= ==================
-   ARM100       30 days            5 days
-   PANLAT                          10 days
-   BOIS02                                                  5 days
+   SHE100       30 days            5 days
+   SIDEPAN                         10 days
+   WOOD002                                                 5 days
    ============ ================== ======================= ==================
 
 A customer order placed on the 1st January will set up the following operations and lead times:
 
-* Delivery ARM100: 31 January (=1st January + 30 days),
+* Delivery SHE100: 31 January (=1st January + 30 days),
 
-* Manufacture ARM100: 26 January (=31 January – 5 days),
+* Manufacture SHE100: 26 January (=31 January – 5 days),
 
-* Manufacture PANLAT: 16 January (=26 January – 10 days),
+* Manufacture SIDEPAN: 16 January (=26 January – 10 days),
 
-* Purchase BOIS02 (for ARM100): 21 January (=26 January – 5 days),
+* Purchase WOOD002 (for SHE100): 21 January (=26 January – 5 days),
 
-* Purchase BOIS02 (for PANLAT): 11 January (=16 January – 5 days).
+* Purchase WOOD002 (for SIDEPAN): 11 January (=16 January – 5 days).
 
-In this example, OpenERP will propose placing two orders with the supplier of product BOIS002. Each of
-these orders can be for a different planned date. Before confirming these orders, the purchasing manager 
-could group these orders into a single order.
+In this example, OpenERP will propose placing two orders with the supplier of product WOOD002. Each of these orders can be for a different planned date. Before confirming these orders, the purchasing manager could group (merge) these orders into a single order.
 
 Security Days
 -------------
 
-The scheduler will plan all operations as a function of the time configured on the products. But it
-is also possible to configure these factors in the company. These factors are then global to the
-company, whatever is the product concerned. In the description of the company, on the
+The scheduler will plan all operations as a function of the time configured on the products. But it is also possible to configure these factors in the company. These factors are then global to the company, whatever the product concerned may be. In the description of the company, on the
 :guilabel:`Configuration` tab, you find the following parameters:
 
-* `Scheduler Range Days` : all the requests which are for procuring for a later date to
-  the number of days which are not calculated in the scheduler.
+* `Scheduler Range Days`: all the procurement requests that are not between today and today plus the number of days specified here are not taken into account by the scheduler.
   
-* `Manufacturing Lead Time` : number of additional days needed for manufacturing,
+* `Manufacturing Lead Time`: number of additional days needed for manufacturing,
 
-* `Purchase Lead Time` : additional days to include for all purchase orders with this supplier,
+* `Purchase Lead Time`: additional days to include for all purchase orders with this supplier,
 
-* `Security Days` : number of days to deduct from a system order to cope with any problems of
-  procurement,
+* `Security Days`: number of days to deduct from a system order to cope with any problems of procurement,
 
 .. note:: Purchase Lead Time
 
     The security delay for purchases is the average time between the order generated by OpenERP and
     the real purchase time from the supplier by your purchasing department.
-    This delay takes account of the order process in your company, including order negotiation time.
+    This delay takes into account the order process in your company, including order negotiation time.
 
-Take for example the following configuration:
+Take for instance the following configuration:
 
 * `Manufacturing Lead Time` : 1,
 
@@ -174,27 +144,24 @@ Take for example the following configuration:
 
 The example above will then be given the following lead times:
 
-* Delivery ARM100: 29 January (= 1st January + 30 days – 2 days),
+* Delivery SHE100: 29 January (= 1st January + 30 days – 2 days),
 
-* Manufacture ARM100: 23 January (= 29 January – 5 days – 1 day),
+* Manufacture SHE100: 23 January (= 29 January – 5 days – 1 day),
 
-* Manufacture PANLAT: 12 January (= 26 January – 10 days – 1 day),
+* Manufacture SIDEPAN: 12 January (= 26 January – 10 days – 1 day),
 
-* Purchase BOIS02 (for ARM100): 15 January (= 26 January – 5 days – 3 days),
+* Purchase WOOD002 (for SHE100): 15 January (= 26 January – 5 days – 3 days),
 
-* Purchase BOIS02 (for PANLAT): 4 January (= 12 January – 5 days – 3 days).
+* Purchase WOOD002 (for SIDEPAN): 4 January (= 12 January – 5 days – 3 days).
 
 Procurement
 +++++++++++
 
-In normal system use, you do not need to worry about procurement orders because they are automatically generated
-by OpenERP and the user will usually work on the results of a procurement: a production order, a purchase order,
-a sale order and a task.
+In normal system use, you do not need to worry about procurement orders, because they are automatically generated by OpenERP and the user will usually work on the results of a procurement: a production order, a purchase order, a sales order and a task.
 
-But if there are configuration problems, the system can remain blocked by a procurement without generating a
-corresponding document.
+But if there are configuration problems, the system can remain blocked by a procurement without generating a corresponding document.
 
-Automating purchasing and replenishment
+Automating Purchasing and Replenishment
 ---------------------------------------
 
 In the product form view, you can select between two procurement methods:
