@@ -72,11 +72,11 @@ To see a calculation of the lead times, take the example of the cabinet above. S
    ============  ========  ===============
    Product Code  Quantity  Unit of Measure
    ============  ========  ===============
-   SIDEPAN       2         Unit
+   SIDEPAN       2         PCE
    WOOD002       0.25      m
    LIN040        1         m
    WOOD010       0.249     m
-   METC000       12        Unit
+   METC000       12        PCE
    ============  ========  ===============
 
 .. table:: Bill of Materials for 2 SIDEPAN Units
