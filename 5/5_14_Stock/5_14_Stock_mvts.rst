@@ -429,10 +429,10 @@ So the negative effects of working with the Just in Time module are:
 * Additionally stocked products.
 
 
-Logistics Configuration in a Multi-Company Environment
-------------------------------------------------------
+Logistics Configuration through Advanced Routes
+-----------------------------------------------
 
-To configure your logistics in multi-company environment, you need to install :mod:`stock_location` module 
+To configure your logistics for advanced push and pull, you need to install :mod:`stock_location` module 
 (`Reconfigure` wizard, `Advanced Routes`) as explained before. A complete scenario will be developed at the end of this chapter.
 
 Go to :menuselection:`Administration --> Users --> Users` and add the :guilabel:`Useability / Multi Companies` group to your user, to be able to use OpenERP in a multi-company environment.

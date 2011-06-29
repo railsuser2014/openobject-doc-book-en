@@ -14,6 +14,11 @@ Let us start by configuring the different components we need. In the next sectio
 		* Product definition
 		* Push & pull flows
 		
+
+.. note:: User Group
+
+        Go to :menuselection:`Administration --> Users --> Users` and add the :guilabel:`Useability / Multi Companies` group to your user, to be able to use OpenERP in a multi-company environment.
+
 .. toctree::
 
    config_company
