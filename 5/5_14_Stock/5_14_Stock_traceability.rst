@@ -1,5 +1,5 @@
-Management of Lots and Traceability
-===================================
+Managing Lots and Traceability
+==============================
 
 The double-entry management in OpenERP enables you to run very advanced traceability. All
 operations are formalized in terms of stock moves, so it is very easy to search for the cause of any
@@ -154,8 +154,8 @@ Finally, on a lot, you can enter data on all the operations that have been done 
 keeps a useful history of the pre-sales operations.
 
 
-Tracking Inventory Scrap
-========================
+Scrapping Products
+==================
 
 In OpenERP, there are many ways to handle scrap products. 
 
@@ -195,8 +195,8 @@ To display the content of this :guilabel:`Virtual Location`, go to :menuselectio
 If you want to transfer the products to another location, you can create a new one and check the 
 :guilabel:`Scrap Location` in the additional information.
 
-Identification of Products and Location with Barcodes and RFID devices
-======================================================================
+Identifying Products and Locations with Barcodes and RFID Devices
+=================================================================
 
 You can the barcode in the product form in the field :guilabel:`EAN13`.
 

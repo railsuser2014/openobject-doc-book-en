@@ -1,8 +1,8 @@
 Estimating Delivery Dates
 =========================
 
-Define Standard Delivery Time
------------------------------
+Standard Delivery Time
+----------------------
 
 In order to define the delivery time, you have to know three things:
 

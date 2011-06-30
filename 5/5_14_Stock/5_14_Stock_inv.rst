@@ -1,4 +1,4 @@
-Managing physical inventory structure
+Managing Physical Inventory Structure
 =====================================
 
 .. index::

@@ -1,7 +1,5 @@
-Financial Management of Inventories  
-===================================
-
-.. todo:: give example
+Financial Inventory Management
+==============================
 
 Manual and Real-time Stock Valuation
 ------------------------------------

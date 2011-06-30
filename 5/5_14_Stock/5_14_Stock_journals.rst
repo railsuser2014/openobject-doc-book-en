@@ -1,6 +1,6 @@
 
-Management by Journal
-=====================
+Organize your Deliveries
+========================
 
 You can manage stock through journals in the same way as you can manage your accounts
 through journals. This approach has the great advantage

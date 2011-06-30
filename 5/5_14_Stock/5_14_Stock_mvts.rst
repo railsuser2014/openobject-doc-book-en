@@ -1,8 +1,8 @@
-Managing Stock Movements
-========================
+Keeping Track of Stock Movements
+================================
 
-Reception of the Goods
-----------------------
+Goods Receipts
+--------------
 
 In OpenERP, you have the choice between three ways to receive goods from suppliers. 
 
