@@ -107,7 +107,7 @@ To describe how this shelf should be assembled, you define a bill of materials f
    ============  ========  ===============
 
 The bills of materials are then used by the software to calculate the raw material needs based on the
-requirements of the finished products. So if you want to manufacture 10 shelfs, the system can
+requirements of the finished products. So if you want to manufacture 10 shelves, the system can
 calculate the actual products that will be consumed:
 
 .. table:: Total Quantities per Shelf
