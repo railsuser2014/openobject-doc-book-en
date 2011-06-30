@@ -2,10 +2,9 @@
 All the Elements of a Complete Workflow
 =======================================
 
-The supplier order is the document that lets you manage price negotiations, control
-supplier invoices, handle goods receipts and synchronize all of these documents.
+The supplier or purchase order is the document that lets you manage price negotiations, control supplier invoices, handle goods receipts and synchronize all of these documents.
 
-Start by looking at the following order workflow:
+Let us start by looking at the following order workflow:
 
 #. Price request to the supplier,
 
@@ -31,9 +30,8 @@ the remainder of this chapter logged in as the *admin* user.
 Price Request from the Supplier
 -------------------------------
 
-To enter data for a new supplier price request, use the menu :menuselection:`Purchases --> Purchase Management -->
-Request for Quotation`. On clicking :guilabel:`New`, OpenERP opens a blank request for quotation
-form that you use for requesting prices from a supplier. This is shown in the figure :ref:`fig-pfrm`. If the price request came from an automatic procurement created by OpenERP, you will find a reference to the document that generated the request in the :guilabel:`Origin` field.
+To enter data for a new supplier price request (i.e. request for quotation), use the menu :menuselection:`Purchases --> Purchase Management -->
+Request for Quotation`. When you click :guilabel:`New`, OpenERP opens a blank request for quotation form that you use for requesting prices from a supplier. This is shown in the figure :ref:`fig-pfrm`. If the price request came from an automatic procurement created by OpenERP, you will find a reference to the document that generated the request in the :guilabel:`Origin` field.
 
 .. _fig-pfrm:
 
@@ -48,21 +46,13 @@ form that you use for requesting prices from a supplier. This is shown in the fi
 
 .. note:: Managing Alerts
 
-   If you install the :mod:`warning` module, you will be able to define alerts that appear when the
-   purchaser enters a price request or order. You can set alerts on the product and on the supplier.
+        If you install the :mod:`warning` module, you will be able to define alerts that appear when the purchaser enters a price request or order. You can set alerts on the product and on the supplier.
 
-The internal reference, the date, and the warehouse that the products should be delivered to are
-completed automatically by OpenERP, but you can change these values if needed. Next, when you select a
-supplier, OpenERP automatically completes the contact
-address for the supplier. The pricelist is also automatically completed. This should
-bring in all of the conditions that you have negotiated with the supplier for a given period.
+The internal reference, the date and the warehouse the products should be delivered to, are completed automatically by OpenERP, but you can change these values if needed. Next, when you select a supplier, OpenERP automatically completes the contact address for the supplier. The pricelist is also automatically completed from the pricelist in the supplier form. This should bring in all of the conditions that you have negotiated with the supplier for a given period.
 
 .. tip:: Supplier Selection
 
-   Searching for a supplier is limited to all of the partners in the system that have the :guilabel:`Supplier`
-   checkbox checked.
-   If you do not find your supplier, it might be worth checking the whole list of all partners to make
-   sure that the supplier has not been partially entered into the system.
+        Searching for a supplier is limited to all of the partners in the system that have the :guilabel:`Supplier` checkbox checked. If you do not find your supplier, it might be worth checking the whole list of all partners to make sure that the supplier does not yet exist without the Supplier checkbox being checked.
 
 Once the main body of the purchase order has been completed, you can enter the product lines.
 
@@ -78,7 +68,7 @@ When you have selected the product, OpenERP automatically completes the other fi
 
 * The :guilabel:`Description` of the product in the supplier's language,
 
-* :guilabel:`Scheduled Date`, calculated from the order date and the lead time,
+* :guilabel:`Scheduled Date`, calculated from the order date and the delivery lead time for the supplier (for the given product),
 
 * :guilabel:`Unit Price`, taken from the supplier's pricelist,
 
@@ -87,10 +77,7 @@ When you have selected the product, OpenERP automatically completes the other fi
 
 .. tip:: Product Wording and Code
 
-   When you enter supplier names in the product form, you can set a name and a product code for each
-   individual supplier.
-   If you do that, OpenERP will then use those details instead of your own internal product names
-   for that selected supplier.
+        When you enter supplier names in the product form, you can set a name and a product code for each individual supplier. If you do that, OpenERP will then use those details instead of your own internal product names for that selected supplier.
 
 If you work with management by case, you can also set the analytic account that should be used to
 report all the purchase costs. The costs will then be reported at the receipt of the supplier

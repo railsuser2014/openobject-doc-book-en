@@ -13,9 +13,7 @@ Driving your Purchases
  You will now see how OpenERP handles and simplifies this and the control of purchases from
  suppliers.*
 
-For this chapter you should start with a fresh database that includes demonstration data,
-with :mod:`purchase` and its dependencies installed
-and no particular chart of accounts configured. 
+For this chapter you can continue using the database already created or you should start with a fresh database that includes demonstration data, with :mod:`purchase` and its dependencies installed and no particular chart of accounts configured. 
 
 
 .. raw:: html
@@ -26,7 +24,6 @@ and no particular chart of accounts configured.
 
    6_17_Purchases_workflow
    6_17_Purchases_analysis
-   6_17_Purchases_analytic
 
 .. raw:: html
 
