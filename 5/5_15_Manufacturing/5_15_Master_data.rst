@@ -5,7 +5,7 @@ Using Bills of Materials
 ------------------------
 
 Bills of Materials are documents that describe the list of raw materials used to make a finished
-product. To illustrate the concept of specification, you will work on a shelf where the
+product. To illustrate the concept of specification, you will work on a shelf (or cabinet) where the
 manufacturing plan is given by the figure :ref:`fig-mrparm2`.
 
 .. _fig-mrparm2:
