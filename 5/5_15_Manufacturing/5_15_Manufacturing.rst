@@ -1,5 +1,5 @@
-Manufacturing
-=============
+Manufacturing Orders
+====================
 
 Once the bills of materials have been defined, OpenERP is capable of automatically deciding on the manufacturing route according to the needs of the company.
 

@@ -245,8 +245,8 @@ calculated from order date, default supplier, raw materials needs, selection of 
     create a new procurement order.
         
 
-Subcontracting Management
-=========================
+Working with Subcontractors
+===========================
 
 In OpenERP, you can also subcontract production operations (for example, painting and item assembly) at a supplier's. To do this, you should indicate on the relevant routing document a supplier location for stock management.
 
@@ -285,8 +285,8 @@ Production orders can be found in the menu :menuselection:`Manufacturing --> Man
 Depending on the company's needs, you can specify that the first step is confirmed at the acknowledgement of the manufacturing supplier, and the second at the receipt of finished goods in the warehouse.
 
 
-Matching Sales Orders and BoM with Properties
-=============================================
+Matching Sales Orders and Bills of Materials
+============================================
 
 In OpenERP, you can define several bills of materials for the same product. In fact, you can have several manufacturing methods or several approved raw materials for a given product. You will see in the following section that the manufacturing procedure (the routing) is attached to the Bill of Materials, so the choice of bill of materials implicitly includes the operations to make it.
 

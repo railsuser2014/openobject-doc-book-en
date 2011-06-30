@@ -63,8 +63,8 @@ stock moves that are traced due to the Bill of Materials attached to the product
 
 In this window, you only see the move for the finished product. This is related to the definition of the  concept of Downstream Traceability, which only shows the flow from the customer to the supplier of raw materials.
 
-Managing Repairs
-================
+Managing Repairs: from Repair to Invoicing and Stock Movements
+==============================================================
 
 .. index::
    single: module; mrp_repair

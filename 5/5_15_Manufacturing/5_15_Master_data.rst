@@ -1,8 +1,5 @@
-Master Data
-===========
-
 Bill of Materials and Components
-++++++++++++++++++++++++++++++++
+================================
 
 Using Bills of Materials
 ------------------------
@@ -373,7 +370,7 @@ Then it asks the storesperson to pack 2 ``SIDEPAN``, 1 ``RPAN100``, 4 ``PROFIL``
 This is described as a ``SHE100``, not just the individual products delivered.
 
 Work Centers
-++++++++++++
+============
 
 Work centers represent units of product, capable of doing material transformation operations. You can distinguish two types of work centers: machines and human resources.
 
@@ -445,7 +442,7 @@ capacity per cycle is 6, it takes 3 cycles to realize 15 operations (15/6 = 2.5,
 With the `Hour Account` and `Cycle Account` you define the links to analytical accounting, to report the costs of the work center operations. If you leave the different fields empty, it will not have any effect on the analytic accounts.
 
 Routings
-++++++++
+========
 
 Routings define the manufacturing operations to be done in work centers to produce a certain product. A routing is usually attached to bills of materials, which will define the assembly of products required for manufacturing or to produce finished products.
 
