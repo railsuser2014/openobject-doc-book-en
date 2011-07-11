@@ -41,14 +41,14 @@ Each stock move is in a given state. The various states are:
 
 * ``Draft`` : the move so far has no effect in the system. The transaction has not yet been confirmed,
 
-* ``Confirmed`` : the move will be done, so it will be counted in the calculations of virtual stock. But
-  you do not know whether it will be done without problem because the products have been reserved for
+* ``Not available``: the move will be done, so it will be counted in the calculations of virtual stock. But
+  you do not know whether it will be done without problem because the products have not been reserved for
   the move,
 
-* ``Validated`` : the move will be done and the necessary raw materials have been reserved for the
+* ``Available`` : the move will be done and the necessary raw materials have been reserved for the
   transaction,
 
-* ``Done`` : the stock move has been done, and entered into the calculations of real stock,
+* ``Done`` : the stock move (picking) has been done, and entered into the calculations of real stock,
 
 * ``Waiting`` : in the case of transactions ``From Order``, this state shows that the stock move is blocked
   waiting for the end of another move,
