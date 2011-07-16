@@ -41,7 +41,7 @@ You can either select and add them one at a time, or :kbd:`Ctrl-click` them and 
 the multiple selection - the order in which you 
 select them, is the order in which they will be displayed.
 
-If you do not wish to export your your data just yet, or would like to use the same fields for future exports,
+If you do not wish to export your data just yet, or would like to use the same fields for future exports,
 you have the option to save these settings. To do that, click :guilabel:`Save List` and give your export a name.
 
 Then click :guilabel:`Export` and save the resulting :file:`data.csv` file somewhere accessible - 
