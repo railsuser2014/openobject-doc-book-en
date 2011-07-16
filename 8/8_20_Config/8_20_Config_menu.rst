@@ -184,7 +184,7 @@ these column names, remains untouched.
 The :guilabel:`src` field contains the base text in English,
 and the :guilabel:`value` field contains a translation into another conventional language or into a
 specialist technical phrase. If there is nothing at all in the :guilabel:`value` field then the
-English translation will automatically be used on the the form you see.
+English translation will automatically be used on the form you see.
 
 .. tip:: Where Should you Modify the Text?
 
