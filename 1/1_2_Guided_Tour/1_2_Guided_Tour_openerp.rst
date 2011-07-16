@@ -638,7 +638,7 @@ There is a clear distinction between a cross-functional process (that is current
 shown in the web client) and the detailed document workflow (that is shown in both the
 web client from a process node, and the GTK client from the
 :menuselection:`Plugins > Execute a Plugin...` menu and clicking either
-the :guilabel:`Print Workflow` or the the :guilabel:`Print Workflow (Complex)` option.
+the :guilabel:`Print Workflow` or the :guilabel:`Print Workflow (Complex)` option.
 
 .. figure:: images/purchase_workflow.png
    :scale: 65

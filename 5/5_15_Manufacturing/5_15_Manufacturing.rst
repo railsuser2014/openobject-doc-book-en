@@ -198,7 +198,7 @@ that lets you set secondary products resulting from the manufacturing of the fin
     *Definition of Subproducts*
 
 When OpenERP generates a production order based on a bill of materials that uses a secondary product, you pick
-up the list of all products in the the second tab of the production order ``Finished Products``.
+up the list of all products in the second tab of the production order ``Finished Products``.
     
 .. figure:: images/mrp_production.png
     :scale: 75

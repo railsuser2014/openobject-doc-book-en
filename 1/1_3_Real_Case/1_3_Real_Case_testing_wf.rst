@@ -137,7 +137,7 @@ Invoice Control
 When you have received an invoice from your supplier (which would usually be sent to your Accounts department),
 go to the menu :menuselection:`Accounting --> Suppliers --> Supplier Invoices`
 to open a list of supplier invoices waiting for receipt.
-These invoices enable your Accounts Department to match the the price and quantities
+These invoices enable your Accounts Department to match the price and quantities
 ordered against the price and quantities on the supplier's invoice (and since it is not uncommon to receive
 an invoice showing details more favourable to the supplier than those agreed at the time of
 purchase, this is a useful function).
