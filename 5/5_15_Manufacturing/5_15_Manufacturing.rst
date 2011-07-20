@@ -61,7 +61,7 @@ The Sales Order
 .. index:: quotation
 .. index:: sales order
 
-Begin by encoding a sales (or customer) order through the menu :menuselection:`Sales Management --> Sales Orders -> New Quotation`. Enter the following information:
+Begin by encoding a sales (or customer) order through the menu :menuselection:`Sales --> Sales Orders -> New Quotation`. Enter the following information:
 
 * :guilabel:`Customer` : Agrolait,
 

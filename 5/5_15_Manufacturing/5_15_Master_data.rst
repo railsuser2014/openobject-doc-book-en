@@ -372,7 +372,7 @@ This is described as a ``SHE100``, not just the individual products delivered.
 Work Centers
 ============
 
-Work centers represent units of product, capable of doing material transformation operations. You can distinguish two types of work centers: machines and human resources.
+Work centers represent units of production, capable of doing material transformation operations. You can distinguish two types of work centers: machines and human resources.
 
 .. note:: Work Center
 
