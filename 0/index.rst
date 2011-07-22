@@ -80,10 +80,10 @@ They range from specific modules like the EDI interface for agricultural product
 which has been used to interface with Match and Leclerc stores, up to the generic demonstration
 automation module for ordering sandwiches, which can take care of the eating preferences of your staff.
 
-The results are rather impressive. OpenERP (once called Tiny ERP when it started out) is a Management
+The results are rather impressive. OpenERP (originally called Tiny ERP) is a Management
 Software that is downloaded more than any other in the world, with over 600 downloads per day.
 Today it is available in 18 languages and has a worldwide network of partners and contributors.
-More than 800 developers participate in the projects on the collaborative development system.
+Over 800 developers participate in the projects on the collaborative development system.
 
 To our knowledge, OpenERP is the only management system which is routinely used not only by big
 companies but also by very small companies and independent companies. This diversity is an
