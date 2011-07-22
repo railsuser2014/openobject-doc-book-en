@@ -23,7 +23,7 @@ With the Outlook and Thunderbird plug-ins, you can create and/or open contacts d
 You can also link emails (with attachments) to OpenERP, to avoid information getting lost.
 Both plug-ins enable you for instance to create leads based on exchanges you have with the customer.
 
-The email gateway functionality enables you to use Open ERP’s CRM without necessarily using the OpenERP interface. Up-to-date leads can automatically be stored in OpenERP just by sending and receiving emails through a specific email address. You can even answer such mails from your own mailbox.
+The email gateway functionality enables you to use OpenERP’s CRM without necessarily using the OpenERP interface. Up-to-date leads can automatically be stored in OpenERP just by sending and receiving emails through a specific email address. You can even answer such mails from your own mailbox.
 
 And of course, you can link the OpenERP meeting calendar to your mobile device.
 
