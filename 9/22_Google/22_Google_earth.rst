@@ -9,7 +9,7 @@ Name of module:
 
 1. See partners information on google map(name, code, address,...) with icon on map
 
-2. And Turnover of country by partners, country appears in  light red color => low turnover and  with dark red color => high turnover.
+2. And Turnover of country by partners, country appears in light red color => low turnover and with dark red color => high turnover.
 
 3. Delivery routes from Warehouse location to Customer location by cities with 10 different colors (by number of delivery to that city from warehouse).
 
@@ -29,11 +29,11 @@ You can find 5 wizards on Partners/ Google Map/Earth.
 
 **KML File:**
 
-If you want to use google_earth module you have to know about what is kml file and how to use it on google/map.
+To use the google_earth module you must know what a kml file is and how to use it on google/map.
 
 .. tip::  KML
 
-    KML is a file format used to display geographic data in an Earth browser such as Google Earth, Google Maps, and Google Maps for mobile. KML uses a tag-based structure with nested elements and attributes and is based on the XML standard. All tags are case-sensitive and must be appear exactly as they are listed in the KML Reference. The Reference indicates which tags are optional. Within a given element, tags must appear in the order shown in the Reference.
+    KML is a file format used to display geographic data in an Earth browser such as Google Earth, Google Maps and Google Maps for mobile. KML uses a tag-based structure with nested elements and attributes and is based on the XML standard. All tags are case-sensitive and must appear exactly as they are listed in the KML Reference. The Reference indicates which tags are optional. Within a given element, tags must appear in the order shown in the Reference.
 
 For more information: 
 
@@ -53,7 +53,7 @@ Step2: import
 Step3: upload kml
 
 
-**Differnce between Google Map and Google Earth:**
+**Difference between Google Maps and Google Earth:**
 
 Google Maps is available through the window of your browser, Google Earth is a downloadable application which can be installed on your computer in order to view the satellite imagery straight from your desktop. However, the super giant Google updates the two products every once in a while so they have almost the same functions
 
@@ -76,7 +76,7 @@ This is the screen shot which shows the partner's country, turnover of partners 
    :scale: 50
    :align: center
 
-This is the screen shot for finding the delievery routes from warehouse location to customer location. Here we can see there are different routes in different colours. By clicking on particular route we get the information about Customer Location, Warehouse Location, Number of Products sent and Number of delieveries made.
+This is the screen shot for finding the delivery routes from warehouse location to customer location. Here we can see there are different routes in different colours. By clicking on particular route we get the information about Customer Location, Warehouse Location, Number of Products sent and Number of delieveries made.
 
 (3) KML for ``Partners``
 
@@ -97,7 +97,7 @@ This is the screen shot showing all partners from different countries. This will
 
         A special kind of kml file which has networklink tag inside it which contains link of your kml file.
 
-This wizard will create network link in kml for different objects and save it to your computer and then you have to upload network link kml to google earth/map. It can update data periodically by looking networklink kml files parameters(refreshtime,interval....).For e.g if you have inserted new partner then google earth can able to fetch that new partner from webservice of etiny.
+This wizard will create network link in kml for different objects and save it to your computer and then you have to upload network link kml to google earth/map. It can update data periodically by looking networklink kml files parameters(refreshtime,interval....). For exampleif you have inserted new partner then google earth can fetch that new partner from webservice of etiny.
 
 .. note:: If you ticked partner and country, wizard will create two link tag with url/path of two kml file.now whenever you will upload this kml file it will show both partner and country information on earth and update that information by given interval time (using url/path ).
 	
@@ -137,7 +137,7 @@ First, ``path`` shows a url (HTTP address) means your web-client path with port 
 
 This wizard will directly open google map in browser.
 
-For e.g. If you want to open that map for partner-country, then it will directly open google map for partner with coutries in browser.
+For example, ifyou want to open that map for partner-country, then it will directly open google map for partner with countries in browser.
 
 In above figure, You can see Path field. In that, http://maps.google.com/maps?q=, will be common and later is shown your web-client path with port. Another field is Map For which is selection for Partner, Partner-Country and Delivery-Route. Whatever option you select from Map For field, it will directly open map for that option and with that url(Path).
 
