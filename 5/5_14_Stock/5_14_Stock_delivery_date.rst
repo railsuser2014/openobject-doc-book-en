@@ -34,7 +34,7 @@ According to those numbers, we will have to start the process in 23 days if we h
 Schedule Logistic Flows according to MRP1 Rules 
 -----------------------------------------------
 
-MRP is a software-based production, planning and inventory control system used to manage themanufacturing process.
+MRP is a software-based production, planning and inventory control system used to manage the manufacturing process.
 
 It is a computer-based system in which the given Master Schedule is exploded with Bills Of 
 Material, into the required amount of raw material, parts and subassemblies needed to produce 
