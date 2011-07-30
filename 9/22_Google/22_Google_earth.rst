@@ -76,7 +76,7 @@ This is the screen shot which shows the partner's country, turnover of partners 
    :scale: 50
    :align: center
 
-This is the screen shot for finding the delivery routes from warehouse location to customer location. Here we can see there are different routes in different colours. By clicking on particular route we get the information about Customer Location, Warehouse Location, Number of Products sent and Number of delieveries made.
+This is the screen shot for finding the delivery routes from warehouse location to customer location. Here we can see there are different routes in different colours. By clicking on particular route we get the information about Customer Location, Warehouse Location, Number of Products sent and Number of deliveries made.
 
 (3) KML for ``Partners``
 
