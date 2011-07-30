@@ -34,7 +34,7 @@ software but will show the user another way of working on a given problem.
 Processes are used by end-users to help them understand the problems which
 have not been handled in OpenERP. You can find actions that have no influence
 on the software, such as “Telephone customer to thank him”, and “Send a fax to
-reassure him”. Alongwith providing user help, processes provide functions such
+reassure them”. As well as providing user help, processes provide functions such
 as:
 
 * integration with OpenERP Help and the company's quality manual,
