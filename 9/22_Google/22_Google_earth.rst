@@ -95,9 +95,9 @@ This is the screen shot showing all partners from different countries. This will
  
 .. tip:: Network link kml: 
 
-        A special kind of kml file which has networklink tag inside it which contains link of your kml file.
+        A special kind of kml file which has network link tag inside it which contains link of your kml file.
 
-This wizard will create network link in kml for different objects and save it to your computer and then you have to upload network link kml to google earth/map. It can update data periodically by looking networklink kml files parameters(refreshtime,interval....). For exampleif you have inserted new partner then google earth can fetch that new partner from webservice of etiny.
+This wizard will create network link in kml for different objects and save it to your computer and then you have to upload network link kml to google earth/map. It can update data periodically by looking network link kml files parameters(refreshtime,interval....). For example if you have inserted new partner then google earth can fetch that new partner from webservice of etiny.
 
 .. note:: If you ticked partner and country, wizard will create two link tag with url/path of two kml file.now whenever you will upload this kml file it will show both partner and country information on earth and update that information by given interval time (using url/path ).
 	
@@ -137,7 +137,7 @@ First, ``path`` shows a url (HTTP address) means your web-client path with port 
 
 This wizard will directly open google map in browser.
 
-For example, ifyou want to open that map for partner-country, then it will directly open google map for partner with countries in browser.
+For example, if you want to open that map for partner-country, then it will directly open google map for partner with countries in browser.
 
 In above figure, You can see Path field. In that, http://maps.google.com/maps?q=, will be common and later is shown your web-client path with port. Another field is Map For which is selection for Partner, Partner-Country and Delivery-Route. Whatever option you select from Map For field, it will directly open map for that option and with that url(Path).
 
