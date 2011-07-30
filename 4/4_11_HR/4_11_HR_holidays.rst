@@ -105,7 +105,7 @@ All the above statistical reports are enhanced by various filters and groupings 
 
    *Leaves Analysis statistical report*
 
-To get an overview of leaves by department, go to :menuselection:`Human Resource --> Reporting --> Holidays --> Leaves by Department`. You may select a :guilabel:`From` date, a :guilabel:`Leave Type` (``Validated``, ``Confirmed`` or ``Both Validated and Confirmed``) and select atleast one department. Click :guilabel:`Print` to generate a PDF report based on your specifications.
+To get an overview of leaves by department, go to :menuselection:`Human Resource --> Reporting --> Holidays --> Leaves by Department`. You may select a :guilabel:`From` date, a :guilabel:`Leave Type` (``Validated``, ``Confirmed`` or ``Both Validated and Confirmed``) and select at least one department. Click :guilabel:`Print` to generate a PDF report based on your specifications.
 
 .. figure::  images/holidays_dept_leaves.png
    :scale: 80
