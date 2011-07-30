@@ -97,7 +97,7 @@ Financial Accounting --> Taxes --> Tax codes`. You define the following fields:
 *  :guilabel:`Parent Code` : a link to a parent Tax Case that forms the basis of the tree structure
    like a Chart of Accounts,
 
-*  :guilabel:`Coefficent for parent` : choose ``1.00`` to add the total to the parent account or ``-1.00`` to
+*  :guilabel:`Coefficient for parent` : choose ``1.00`` to add the total to the parent account or ``-1.00`` to
    subtract it,
 
 *  :guilabel:`Description` : a free text field for documentation purposes.
