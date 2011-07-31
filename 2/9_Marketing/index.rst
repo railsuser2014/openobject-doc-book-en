@@ -294,7 +294,7 @@ For Leads, the following filter would select draft Leads from any European count
 
  * `?` means that the previous pattern is optional (0 or 1 times)
 
- * `.*` would represent any character, repeated in 0 or more occurencies 
+ * `.*` would represent any character, repeated 0 or more times 
 
  * `.+` would represent at least 1 character (but any)
 
