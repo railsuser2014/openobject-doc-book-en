@@ -169,7 +169,7 @@ In the ``Product`` form view, you can choose between two procurement methods:
     * Make to Stock (MTS)
     * Make to Order (MTO)
 
-These two methods will impact the way you have to configure your automatic purchasing and replenishment. For the MTS method, you will have to define Minimum Stock Rules to order products when the minimum treshold has been reached, as well as a supplier to define where to order the products. 
+These two methods will impact the way you have to configure your automatic purchasing and replenishment. For the MTS method, you will have to define Minimum Stock Rules to order products when the minimum threshold has been reached, as well as a supplier to define where to order the products. 
 For the MTO method, you have to define a supplier for the product in order to buy new products when a sales order or a manufacturing 
 order is confirmed.
 
