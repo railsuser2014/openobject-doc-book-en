@@ -150,7 +150,7 @@ As an example, to track your opportunities, you can assign the following stages 
     * Decision maker confirmed his interest to purchase,
     * Preliminary pricing confirmed/agreed upon.
 
-4. Negociation – Submit the final proposal to the customer and begin the negotiation process.
+4. Negotiation – Submit the final proposal to the customer and begin the negotiation process.
 
    What is the expected result?
     * Negotiation concluded,
