@@ -8,14 +8,14 @@ In OpenERP, the invoicing workflow is very simple. You can see it in the followi
    :width: 100%
    :align: center
 
-   *Invoicing workflow*
+   *Invoicing Workflow*
 
-An invoice can be generated from various documents like a `Sales Order`, a `Purchase Order` and also
-at the time of confirmation of a shipment.
+An invoice can be generated from various documents like a `Sales Order`, a `Purchase Order` and also at the time of confirming a shipment. These methods will be used when you use OpenERP also as your accounting system.
 
-The invoicing system in OpenERP allows you to keep track of your accounting, even when you are not an accountant.
-It provides an easy way to follow up your suppliers and customers.
+You could also work with an external accountant who keeps your books. Still, you would like to know which invoices exist and have been paid.
 
+The specific `Invoicing` system in OpenERP allows you to keep track of your accounting, even when you are not an accountant.
+It provides an easy way to follow up your suppliers and customers. You could use this simplified accounting when your (external) account keeps your books, but you would like to keep track of payments. The Invoicing system includes receipts and vouchers (an easy way to keep track of sales and purchases) as well as payment registration without the need to encode complete abstracts of account.
 
 Customer Receipts / Supplier Vouchers
 -------------------------------------
@@ -23,8 +23,7 @@ Customer Receipts / Supplier Vouchers
 When you sell products to a customer, you can give him an invoice or a `Sales Receipt`, which is also called `Customer Receipt`.
 Sales Receipts are merely a kind of sales ticket and not a real invoice.
 
-When the sales receipt is confirmed, it creates journal items automatically and you can record the customer payment related
-to this sales receipt.
+When the sales receipt is confirmed, OpenERP creates journal items automatically and you can record the customer payment related to this sales receipt. The easy invoicing system does not require extensive accounting setup, and so you will be up and running quickly!
 
 You can create and modify the sales receipt using the menu :menuselection:`Accounting --> Customers --> Sales Receipt`.
 
@@ -34,9 +33,9 @@ You can create and modify the sales receipt using the menu :menuselection:`Accou
 
    *Defining a Customer Receipt*
 
-When you create a new `Sales Receipt`, you have to enter the `Customer` for which you want to create a voucher. You can also define `Sales Lines` in the `Sales Information` tab. Here you have to define `Account`, `Amount` and `Description`.
-At the bottom of the form, you can have two options for `Payment`: one is `Pay Directly` and another is `Pay Later or Group Funds`.
-You have to enter `Account` in the case of the `Pay Directly` option. The `Total` amount displays automatically with calculation of tax when you click the `Compute Tax` button.
+When you create a new `Sales Receipt`, you have to enter the `Customer` for whom you want to create a voucher. You can also define `Sales Lines` in the `Sales Information` tab. Here you have to define `Account`, `Amount` and `Description`.
+At the bottom of the form, you will have two options for `Payment`: one is `Pay Directly` and another is `Pay Later or Group Funds`.
+You have to enter the `Account` in the case of the `Pay Directly` option. The `Total` amount displays automatically with calculation of tax when you click the `Compute Tax` button.
 
 After validating the sales receipt, you can print the voucher by clicking the `Voucher Print` action at the
 upper right side. The voucher will be printed as follows.
