@@ -2,20 +2,6 @@
 .. index::
    single: Invoice to Payment
 
-.. raw:: html
-
-    <div class="all-toctree">
-
-.. toctree::
-
-    accounting_workflow
-    invoicing
-    accounting_entries
-
-.. raw:: html
-
-    </div>
-
 ***********************
 From Invoice to Payment
 ***********************
@@ -34,22 +20,22 @@ directors' curiosity about certain strategic decisions, and to printing the bala
 income statement several times a year. Even then, there is often several weeks of delay between
 reality and the report.
 
-.. note:: Valuing your Accounting Function
+.. note:: Valueing your Accounting Function
 
-	In many small companies, the accounting function is poorly treated.
+        In many small companies, the accounting function is poorly treated.
 
-	Not only do you see the data for documents being entered into the system twice,
-	but also the results are often just used to produce legal documents and regular printouts
-	of the balance sheet and income statements some weeks after the closing dates.
+        Not only do you see the data for documents being entered into the system twice,
+        but also the results are often just used to produce legal documents and regular printouts
+        of the balance sheet and income statements some weeks after the closing dates.
 
-	By contrast, integrating your accounts with your management system means that you can:
+        By contrast, integrating your accounts with your management system means that you can:
 
-	* reduce data entry effort – you only need to do it once,
+        * reduce data entry effort – you only need to do it once,
 
-	* run your processes with the benefit of financial vision: for example, in managing projects,
-	  negotiating contracts, and forecasting cash flow,
+        * run your processes with the benefit of financial vision: for example, in managing projects,
+          negotiating contracts, and forecasting cash flow,
 
-	* easily get hold of useful information when you need it, such as a customer's credit position.
+        * easily get hold of useful information when you need it, such as a customer's credit position.
 
 So accounting is too often underused. The information it brings makes it a very effective tool
 for running the company if it is integrated into the management system. Accounting information really
@@ -90,37 +76,37 @@ and budgetary accounting. It is double-entry, multi-currency and multi-company.
 
 .. note:: Accounting
 
-	* General accounting (or financial accounting) is for identifying the assets and liabilities of the
-	  business. It is managed using double-entry accounting which ensures that each transaction is
-	  credited to one account and debited from another.
+        * General accounting (or financial accounting) is for identifying the assets and liabilities of the
+          business. It is managed using double-entry accounting which ensures that each transaction is
+          credited to one account and debited from another.
 
-	* Analytical accounting (or management accounting, or cost accounting) is an independent accounting
-	  system, which reflects the general accounts but is structured along axes that represent the
-	  company's management needs.
+        * Analytical accounting (or management accounting, or cost accounting) is an independent accounting
+          system, which reflects the general accounts but is structured along axes that represent the
+          company's management needs.
 
-	* Auxiliary accounting reflects the accounts of customers and/or suppliers.
+        * Auxiliary accounting reflects the accounts of customers and/or suppliers.
 
-	* Budgetary accounts predefine the expected allocation of resources, usually at the start of a
-	  financial year.
+        * Budgetary accounts predefine the expected allocation of resources, usually at the start of a
+          financial year.
 
 .. index::
    pair: accounting; multi-company
 
 .. tip:: Multi-company
 
-	There is a choice of methods for integrating OpenERP in a multi-company environment:
+        There is a choice of methods for integrating OpenERP in a multi-company environment:
 
-	* if the companies hold few documents in common (such as products, or partners - any OpenERP
-	  resource), you could install separate databases,
+        * if the companies hold few documents in common (such as products, or partners - any OpenERP
+          resource), you could install separate databases,
 
-	* if the companies share many documents, you can register them in the same database and install
-	  OpenERP's multi-company documents to finely manage access rights,
+        * if the companies share many documents, you can register them in the same database and install
+          OpenERP's multi-company documents to finely manage access rights,
 
-	.. index::
-	   single: module; base_synchro
+        .. index::
+           single: module; base_synchro
 
-	* you can synchronize specified document types in several databases using the :mod:`base_synchro`
-	  module, which is a shared-funding module rather than a module in the standard open repositories.
+        * you can synchronize specified document types in several databases using the :mod:`base_synchro`
+          module, which is a shared-funding module rather than a module in the standard open repositories.
 
 One of the great advantages of integrating accounts with all of the other modules is in avoiding the
 double entry of data into accounting documents. So in OpenERP, an Order automatically generates an
@@ -141,18 +127,18 @@ submissions, customer reminders, and so on. Such strong integration enables you 
 
 .. tip:: For Accountants
 
-	You can configure the Accounting application using the information given in the configuration wizard.
+        You can configure the Accounting application using the information given in the configuration wizard.
 
-	.. figure::  images/config_wiz_account.png
-   	   :scale: 65
+        .. figure::  images/config_wiz_account.png
+           :scale: 65
 
 
-	With appropriate rights management, this allows trustees to
-	provide customers with real-time access to their data. It also gives them the opportunity to work
-	on certain documents that have no direct accounting impact, such as budgets.
+        With appropriate rights management, this allows trustees to
+        provide customers with real-time access to their data. It also gives them the opportunity to work
+        on certain documents that have no direct accounting impact, such as budgets.
 
-	This can provide a value-added service that greatly improves the interaction between trustees and
-	their clients.
+        This can provide a value-added service that greatly improves the interaction between trustees and
+        their clients.
 
 All the accounts are held in the default currency (which is specified in the company definition),
 but each account and/or transaction can also have a secondary currency (which is defined in the
@@ -160,6 +146,22 @@ account). The value of multi-currency transactions is then tracked in both curre
 
 For this chapter you should start with a fresh database that includes demo data,
 with `Sales Management` installed and a generic chart of accounts.
+
+.. raw:: html
+
+    <div class="all-toctree">
+
+.. toctree::
+
+    accounting_workflow
+    invoicing
+    accounting_entries
+
+.. raw:: html
+
+    </div>
+
+
 
 .. Copyright © Open Object Press. All rights reserved.
 
