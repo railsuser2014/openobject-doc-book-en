@@ -4,11 +4,11 @@ Periods and Financial Years
 
 .. note:: Periods and Fiscal Years
 
-	A fiscal year (or financial year) corresponds to twelve months for a company.
-	In many countries, the fiscal year corresponds to a calendar year. That is not the case in
-	others.
+        A fiscal year (or financial year) corresponds to twelve months for a company.
+        In many countries, the fiscal year corresponds to a calendar year. That is not the case in
+        others.
 
-	The fiscal year is divided into monthly or three-monthly accounting periods.
+        The fiscal year is divided into monthly or three-monthly accounting periods.
 
 OpenERP's management of the fiscal year is flexible enough to enable you to work on several years
 at the same time. This gives you several advantages, such as creating three-year budgets, and
@@ -16,6 +16,8 @@ statements straddling several calendar years.
 
 .. index:: period
 .. index:: fiscal year
+
+.. _financialyear:
 
 Defining a Period or a Financial Year
 -------------------------------------
