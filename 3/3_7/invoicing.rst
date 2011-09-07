@@ -347,12 +347,8 @@ cancel the invoice if the following two conditions are met:
 Cancelling an invoice has the effect of automatically modifying the corresponding accounting
 entries.
 
-You can cancel an invoice if the :guilabel:`Allow Cancelling Entries` function has been activated in the
-journal and the entries have not yet been reconciled. You could then move it from \ ``Cancelled`` \
+To be able to cancel invoices, you should install the module :mod:`account_cancel`. You can cancel an invoice if the :guilabel:`Allow Cancelling Entries` function has been activated in the journal and the entries have not yet been reconciled. You could then move it from \ ``Cancelled`` \
 to the \ ``Draft`` \ state to modify it and regenerate it.
-
-When the invoice has been cancelled you could then put it back into the
-\ ``Draft`` \ state. So you could modify it and approve it again later.
 
 .. tip::  Numbering Invoices
 
@@ -375,7 +371,7 @@ strongly advised to recreate this invoice and re-approve it to fill the hole in 
 .. note:: Duplicating Invoices
 
         Instead of entering a new invoice each time, you can base an invoice on a similar preceding one
-        and duplicate it. To do this, first search for a suitable existing one. In the web client, show
+        and duplicate it. To do this, first search for a suitable existing invoice. In the web client, show
         the invoice in read-only (non-editable) form view, then click `Duplicate`. In the GTK client,
         select :menuselection:`Form --> Duplicate` from the top menu.
 
