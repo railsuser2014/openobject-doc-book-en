@@ -39,14 +39,14 @@ from a combination of the two (such as applicable Taxes and the Price of the pro
 
 .. tip:: Draft Invoices
 
-	There are several advantages in working with draft invoices:
+        There are several advantages in working with draft invoices:
 
-	* You have got an intermediate validation state before the invoice is approved.
-	  This is useful when your accountants are not the people creating the initial invoice,
-	  but are still required to approve it before the invoice is entered into the accounts.
+        * You have got an intermediate validation state before the invoice is approved.
+          This is useful when your accountants are not the people creating the initial invoice,
+          but are still required to approve it before the invoice is entered into the accounts.
 
-	* It enables you to create invoices in advance, without approving them at the same time.
-	  You are also able to list all of the invoices awaiting approval.
+        * It enables you to create invoices in advance, without approving them at the same time.
+          You are also able to list all of the invoices awaiting approval.
 
 Open or Pro Forma Invoices
 --------------------------
@@ -71,19 +71,19 @@ state until you have entered the payment.
 
 .. tip::  Payment and Reconciliation
 
-	To avoid surprises, it is important to understand the idea of reconciliation and its link with
-	invoice payment.
+        To avoid surprises, it is important to understand the idea of reconciliation and its link with
+        invoice payment.
 
-	You will find the :guilabel:`Paid/Reconciled` checkbox on an invoice.
-	It is checked if the Journal Entry of the invoice has been totally reconciled
-	with one or several Journal Entries of payment.
+        You will find the :guilabel:`Paid/Reconciled` checkbox on an invoice.
+        It is checked if the Journal Entry of the invoice has been totally reconciled
+        with one or several Journal Entries of payment.
 
 .. note:: Reconciliation
 
-	Reconciliation links entries in an account that cancel each other out – they are reconciled
-	to each other (sum of credits = sum of debits).
+        Reconciliation links entries in an account that cancel each other out – they are reconciled
+        to each other (sum of credits = sum of debits).
 
-	This is generally applied to payments against corresponding invoices.
+        This is generally applied to payments against corresponding invoices.
 
 Without the reconciliation process, OpenERP would be incapable of marking invoices that have been
 paid. Suppose that you have got the following situation for the ``Smith and Offspring`` customer:
@@ -98,20 +98,16 @@ If you receive a payment of 120, OpenERP will delay reconciliation because there
 invoices to pay. It could either reconcile the payment against invoices 145 and 184 or against
 invoice 167.
 
-You can cancel an invoice if the :guilabel:`Allow Cancelling Entries` function has been activated in the
-journal and the entries have not yet been reconciled. You could then move it from \ ``Cancelled`` \
-to the \ ``Draft`` \ state to modify it and regenerate it.
-
 .. tip:: Treatment in Lots
 
-	Usually, different transactions are grouped together and handled at the same time rather than
-	invoice by invoice. This is called batch work or lot handling.
+        Usually, different transactions are grouped together and handled at the same time rather than
+        invoice by invoice. This is called batch work or lot handling.
 
-	You can select several documents in the list of invoices: check the checkboxes of
-	the interesting lines using the web client and click the appropriate shortcut button at the right;
-	or shift-click the lines using the mouse in the GTK client and use the action or print button at
-	the top –
-	these give you the option of a number of possible actions on the selected objects.
+        You can select several documents in the list of invoices: check the checkboxes of
+        the interesting lines using the web client and click the appropriate shortcut button at the right;
+        or shift-click the lines using the mouse in the GTK client and use the action or print button at
+        the top –
+        these give you the option of a number of possible actions on the selected objects.
 
 At regular intervals, and independent of the invoices, an automatic import procedure or a manual
 accounts procedure can be used to bring in bank statements. These comprise all of the payments of
