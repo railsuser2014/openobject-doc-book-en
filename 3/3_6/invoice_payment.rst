@@ -1,4 +1,8 @@
 
+.. raw:: latex
+
+    \afterpage{\clearpage}
+
 Invoicing Workflow
 ==================
 
