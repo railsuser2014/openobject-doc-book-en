@@ -198,7 +198,7 @@ You can manage four access modes on objects independently:
 
    *Access control to invoices for the Accounting / Invoice group*
 
-To configure access rights on a OpenERP objects, use the menu :menuselection:`Administration -->
+To configure access rights on an OpenERP object, use the menu :menuselection:`Administration -->
 Security --> Access Controls List` and click :guilabel:`New` or choose an existing one
 and click :guilabel:`Edit`.
 You give a :guilabel:`Name` to the access control, select a :guilabel:`Group`, and

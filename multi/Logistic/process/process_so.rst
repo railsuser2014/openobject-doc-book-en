@@ -1,7 +1,7 @@
 Sales Order
 -----------
 
-At this point, you have to log in with a user of OpenERP France in order to make a Sales Order coming from a customer 
+At this point, you have to login as a user of OpenERP France to make a Sales Order coming from a customer 
 of this company.
 
 .. figure:: images/sales_order_1tab.png
