@@ -2,13 +2,12 @@
 .. index::
    single: Invoicing & Payments
 
-**********************************************
-How to Keep Track of your Invoicing & Payments
-**********************************************
+*****************************
+Customer Invoicing & Payments
+*****************************
 
 OpenERP provides various features to keep track of your invoicing and payments. The simple workflow of invoicing,
-with efficient encoding of the payment process of your customer and supplier, makes OpenERP more adoptable. In this section,
-we discuss `Customer Receipt` and `Supplier Voucher`, as well as `Customer Payment` and `Supplier Payment` process.
+with efficient encoding of the payment process of your customers, makes OpenERP more adoptable. In this section, we discuss two processes, the easy workflow for non-accountants who just want to keep track of their payments, and the complete accounting section. Note that only the customer process will be described, but of course OpenERP offers equal invoicing and payment methods for suppliers.
 
 .. raw:: html
 

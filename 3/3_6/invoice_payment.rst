@@ -14,11 +14,11 @@ In OpenERP, the invoicing workflow is very simple. You can see it in the followi
 
    *Invoicing Workflow*
 
-An invoice can be generated from various documents like a `Sales Order`, a `Purchase Order` and also at the time of confirming a shipment. These methods will be used when you use OpenERP also as your accounting system.
+An invoice can be generated from various documents like a `Sales Order`, a `Purchase Order` and also at the time of confirming a shipment. These methods will be used when you use OpenERP as a true accounting system.
 
-You could also work with an external accountant who keeps your books. Still, you would like to know which invoices exist and have been paid.
+Of course, companies often work together with an external accountant who keeps their books. In that case, you would like to know which invoices exist and have been paid.
 
-The specific `Invoicing` system in OpenERP allows you to keep track of your accounting, even when you are not an accountant.
+The specific and easy-to-use `Invoicing` system in OpenERP allows you to keep track of your accounting, even when you are not an accountant.
 It provides an easy way to follow up your suppliers and customers. You could use this simplified accounting when your (external) account keeps your books, but you would like to keep track of payments. The Invoicing system includes receipts and vouchers (an easy way to keep track of sales and purchases) as well as payment registration without the need to encode complete abstracts of account.
 
 Customer Receipts / Supplier Vouchers
