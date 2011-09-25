@@ -102,7 +102,7 @@ Click `Confirm` to confirm the account settings.
 
 .. note:: Server Configuration
 
-       You will also have your administrator to configur your server settings to allow for an email gateway. This will not be explained
+       You will also need your administrator to configure your server settings to allow for an email gateway. This will not be explained
        in this book.
 
 .. index:: Outlook (Microsoft)
