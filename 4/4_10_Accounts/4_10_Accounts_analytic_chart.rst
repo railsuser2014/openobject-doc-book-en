@@ -4,52 +4,43 @@
 To Each Enterprise its own Analytic Chart of Accounts
 =====================================================
 
-To illustrate analytic accounts clearly, you will follow three use cases, each in one of three
-different types of company:
+To illustrate analytic accounts clearly, you will follow three use cases, each in one of three different types of company:
 
-	#. Industrial Manufacturing Enterprise.
+        #. Industrial Manufacturing Enterprise.
 
-	#. Law Firm.
+        #. Law Firm.
 
-	#. IT Services Company.
+        #. IT Services Company.
 
 Case 1: Industrial Manufacturing Enterprise
 -------------------------------------------
 
-In industry, you will often find analytic charts of accounts structured into the departments and
-products that the company itself is built on.
+In industry, you will often find analytic charts of accounts structured into departments and products the company itself is built on.
 
-So the objective is to examine the costs, sales and margins by department and by product. The first
-level of the structure comprises the different departments, and the lower levels represent the
-product ranges that the company makes and sells.
+So the objective is to examine the costs, sales and margins by department and by product. The first level of the structure comprises the different departments, and the lower levels represent the product ranges the company makes and sells.
 
 .. note::  Analytic Chart of Accounts for an Industrial Manufacturing Company
 
-		#. Marketing Department
+                #. Marketing Department
 
-		#. Commercial Department
+                #. Commercial Department
 
-		#. Administration Department
+                #. Administration Department
 
-		#. Production
+                #. Production
 
-			* Product Range 1
+                        * Product Range 1
 
-			* Sub-groups
+                        * Sub-groups
 
-			* Product Range 2
+                        * Product Range 2
 
 .. index::
    pair: cost; allocation
 
-In daily use, it is useful to mark the analytic account on each purchase invoice. The analytic account
-is the one to which the costs of that purchase should be allocated. When the invoice is approved, it
-will automatically generate the entries for both the general and the corresponding analytic
-accounts. So, for each entry on the general accounts, there is at least one analytic entry that
-allocates costs to the department that incurred them.
+In daily use, it is useful to mark the analytic account on each purchase invoice. The analytic account is the one to which the costs of that purchase should be allocated. When the invoice is approved, it will automatically generate the entries for both the general and the corresponding analytic accounts. So, for each entry on the general accounts, there is at least one analytic entry that allocates costs to the department which incurred them.
 
-Here is a possible breakdown of some general accounting entries for the example above, allocated to
-various analytic accounts:
+Here is a possible breakdown of some general accounting entries for the example above, allocated to various analytic accounts:
 
 
 .. csv-table::  Breakdown of general and analytic accounting entries (Case 1)
@@ -109,16 +100,16 @@ departments.
 
 .. note::  Representation by Unique Product Range
 
-	This analytic representation by department and by product range is usually used by trading
-	companies and industries.
+        This analytic representation by department and by product range is usually used by trading
+        companies and industries.
 
-	A variant of this is not to break it down by sales and marketing departments but to assign each
-	cost to its corresponding product range.
-	This will give you an analysis of the profitability of each product range.
+        A variant of this is not to break it down by sales and marketing departments but to assign each
+        cost to its corresponding product range.
+        This will give you an analysis of the profitability of each product range.
 
-	Choosing one over the other depends on how you look at your marketing effort.
-	Is it a global cost allocated in some general way, or does each product range have responsibility
-	for its own marketing costs?
+        Choosing one over the other depends on how you look at your marketing effort.
+        Is it a global cost allocated in some general way, or does each product range have responsibility
+        for its own marketing costs?
 
 Case 2:  Law Firm
 -----------------
@@ -143,29 +134,29 @@ employees work on the different client cases.
 
 .. note::  *Example Representation of an Analytic Chart of Accounts for a Law Firm*
 
-		#. Absences
+                #. Absences
 
-			* Paid Absences
+                        * Paid Absences
 
-			* Unpaid Absences
+                        * Unpaid Absences
 
-		#. Internal Projects
+                #. Internal Projects
 
-			* Administrative
+                        * Administrative
 
-			* Others
+                        * Others
 
-		#. Client Cases
+                #. Client Cases
 
-			* Client 1
+                        * Client 1
 
-			* Case 1.1
+                        * Case 1.1
 
-			* Case 1.2
+                        * Case 1.2
 
-			* Client 2
+                        * Client 2
 
-			* Case 2.1
+                        * Case 2.1
 
 All expenses and sales are then attached to a case. This gives the profitability of each case and,
 at a consolidated level, of each client.
@@ -214,15 +205,15 @@ service entries in the analytic account for this case.
 
 .. tip:: Invoicing Analytic Costs
 
-	Most software that manages billing enables you to recharge for hours worked.
-	In OpenERP, these services are automatically represented by analytic costs.
-	But many other OpenERP documents can also generate analytic costs, such as credit notes and
-	purchases of goods.
+        Most software that manages billing enables you to recharge for hours worked.
+        In OpenERP, these services are automatically represented by analytic costs.
+        But many other OpenERP documents can also generate analytic costs, such as credit notes and
+        purchases of goods.
 
-	So when you invoice the client at the end of the month, it is possible for you to include all the
-	analytic costs,
-	not just the hours worked. So, for example, you can easily recharge the whole cost of your journeys
-	to the client.
+        So when you invoice the client at the end of the month, it is possible for you to include all the
+        analytic costs,
+        not just the hours worked. So, for example, you can easily recharge the whole cost of your journeys
+        to the client.
 
 Case 3: IT Services Company
 ---------------------------
@@ -240,31 +231,31 @@ contract. A representation of that is given in the following example:
 
 .. note::  *Example Analytic Representation of a Chart of Accounts for an IT Services Company*
 
-		#. Internal Projects
+                #. Internal Projects
 
-			* Administrative and Commercial
+                        * Administrative and Commercial
 
-			* Research and Development
+                        * Research and Development
 
-		#. Client Projects
+                #. Client Projects
 
-			* Client 1
+                        * Client 1
 
-			* Project 1.1
+                        * Project 1.1
 
-			* Project 1.2
+                        * Project 1.2
 
-			* Client 2
+                        * Client 2
 
-			* Project 2.1
+                        * Project 2.1
 
-			* Project 2.2
+                        * Project 2.2
 
-		#. Support Contracts – 20h
+                #. Support Contracts – 20h
 
-			* Customer X
+                        * Customer X
 
-			* Customer Y
+                        * Customer Y
 
 The management of services, expenditures and sales is similar to that presented above for lawyers.
 Invoicing and the study of profitability are also similar.
@@ -306,17 +297,17 @@ you to compare the budget (that is, your plan) to the services actually carried 
 
 .. tip:: Cash Budgets
 
-	Problems of cash management are amongst the main difficulties encountered by small growing
-	businesses.
-	It is really difficult to predict the amount of cash that will be available when a company is young
-	and rapidly growing.
+        Problems of cash management are amongst the main difficulties encountered by small growing
+        businesses.
+        It is really difficult to predict the amount of cash that will be available when a company is young
+        and rapidly growing.
 
-	If the company adopts management by case, then staff planning can be represented on the analytic
-	accounts report, as you have seen.
+        If the company adopts management by case, then staff planning can be represented on the analytic
+        accounts report, as you have seen.
 
-	But since you know your selling price for each of the different projects,
-	you can see that it is easy to use the plan in the analytic accounts
-	to more precisely forecast the amounts that you will invoice in the coming months.
+        But since you know your selling price for each of the different projects,
+        you can see that it is easy to use the plan in the analytic accounts
+        to more precisely forecast the amounts that you will invoice in the coming months.
 
 
 .. Copyright © Open Object Press. All rights reserved.
