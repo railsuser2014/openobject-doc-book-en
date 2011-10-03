@@ -104,7 +104,7 @@ Standard OpenERP allows you to post analytic entries to one chart at a time. Usi
 You can define the combination of analytic plans through the menu :menuselection:`Accounting --> Configuration --> Analytic Accounting --> Multi Plans --> Analytic Plan.`
 
 .. figure::  images/account_analytic_plan_61.png
-   :scale: 75
+   :scale: 85
    :align: center
 
    *Definition of Analytic Plan*
@@ -112,7 +112,7 @@ You can define the combination of analytic plans through the menu :menuselection
 Using the link `Distribution Models` at the right side of the `Analytic Plan` form, you can define the distribution of either your expenses while creating supplier invoice, or revenue when defining customer invoices.
 
 .. figure::  images/account_distribution_model_61.png
-   :scale: 75
+   :scale: 85
    :align: center
 
    *Definition of Distribution Models*
@@ -124,7 +124,7 @@ When the invoice has been validated, you can find the Analytic Journal Entries w
 
 
 .. figure::  images/analytic_journal_entry_analytic_distribution_61.png
-   :scale: 75
+   :scale: 85
    :align: center
 
    *Journal Entries with Distributed Amount*
