@@ -24,7 +24,7 @@ Analytic records can be distinguished from general records by the following char
 .. _fig-accanmv:
 
 .. figure::  images/account_analytic_move.png
-   :scale: 75
+   :scale: 85
    :align: center
 
    *Analytic Account Records for a Customer Project*
