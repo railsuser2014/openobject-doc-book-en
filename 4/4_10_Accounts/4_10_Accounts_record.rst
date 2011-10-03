@@ -110,6 +110,7 @@ You can define the combination of analytic plans through the menu :menuselection
    *Definition of Analytic Plan*
 
 Using the link `Distribution Models` at the right side of the `Analytic Plan` form, you can define the distribution of either your expenses while creating supplier invoice, or revenue when defining customer invoices.
+Thanks to these models, you can have one amount distributed amongst several analytic accounts. Models can be reused, and they can be applied to one analytic chart of accounts, but also to a combination of various charts of account, such as projects and cost centers.
 
 .. figure::  images/account_distribution_model_61.png
    :scale: 85
