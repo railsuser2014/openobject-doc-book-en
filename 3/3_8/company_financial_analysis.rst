@@ -1,18 +1,6 @@
 
 .. index::
   single: financial analysis
-..
-
-Company Financial Analysis
-==========================
-
-You will see here the analysis tools for your company's financial situation, in particular:
-
-* Management Indicators
-
-* Budgets
-
-* The Accounting Dashboard
 
 .. index:: indicators
 
@@ -21,11 +9,11 @@ Management Indicators
 
 .. note:: Financial Indicators
 
-	Indicators, sometimes called financial ratios, are tools for analyzing a company's finances.
-	They enable you to compare two accounts or sets of accounts from the balance sheet or the profit
-	and loss account, in the form of a ratio.
-	They also let you measure the financial health of a company, and make comparisons from one year to
-	the next or against those of other companies.
+        Indicators, sometimes called financial ratios, are tools for analyzing a company's finances.
+        They enable you to compare two accounts or sets of accounts from the balance sheet or the profit
+        and loss account, in the form of a ratio.
+        They also let you measure the financial health of a company, and make comparisons from one year to
+        the next or against those of other companies.
 
 .. index::
    single: module; account_report
@@ -51,11 +39,11 @@ Indicators defined by default in OpenERP are the following:
 
 .. tip:: Calculation of Indicators
 
-	Calculating indicators can take quite a while in OpenERP, because you have to analyse the whole
-	company's accounting entries.
+        Calculating indicators can take quite a while in OpenERP, because you have to analyse the whole
+        company's accounting entries.
 
-	So it is best not to calculate all of the indicators at once, but just a small selection to keep
-	calculation time within limits.
+        So it is best not to calculate all of the indicators at once, but just a small selection to keep
+        calculation time within limits.
 
 Time Analysis of Indicators
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -120,30 +108,27 @@ that is the balance in accounts 4 and 5 divided by the balance in account 1.
 Good Management Budgeting
 -------------------------
 
-OpenERP manages its budgets using both General and Analytic Accounts. You will see how to do this
-here for General Accounts and then in :ref:`ch-accts` for Analytical Accounts.
-Install :mod:`account_budget` to be able to do this.
+OpenERP manages its budgets using both General and Analytic Accounts. You will see how to do this here for General Accounts and then in :ref:`ch-accts` for Analytical Accounts. Install :mod:`account_budget` to be able to do this.
 
-Use the menu :menuselection:`Accounting --> Budgets --> Budgets`
-to define a new budget by clicking the `New` button.
+Use the menu :menuselection:`Accounting --> Budgets --> Budgets` to define a new budget by clicking the `New` button.
 
 .. figure::  images/account_budget_form.png
    :scale: 75
    :align: center
 
-   *Budget form*
+   *Budget Form*
 
 .. index::
    single: budget revisions
 
 .. tip:: Budget Revisions
 
-	Even though you *can* modify a budget at any time to make a revision of it, it is best if you do not do
-	that.
+        Even though you *can* modify a budget at any time to make a revision of it, it is best if you do not do
+        that.
 
-	Rather than edit an existing budget document, make a new version so that you can keep your original
-	estimates safe for comparison. This lets you analyze your changing perspectives of the
-	company from revision to revision.
+        Rather than edit an existing budget document, make a new version so that you can keep your original
+        estimates safe for comparison. This lets you analyze your changing perspectives of the
+        company from revision to revision.
 
 Begin data entry by entering a :guilabel:`Name`, a :guilabel:`Code`,
 a :guilabel:`Start Date` and an :guilabel:`End Date` in your new budget.
@@ -190,8 +175,7 @@ You can open the `Accounting Dashboard` using the menu :menuselection:`Accountin
 .. index::
    single: module; board_account
 
-OpenERP gives you an accounting dashboard
-that can be presented to your accounting staff as they sign into the system (if you have set it as
+OpenERP gives you an accounting dashboard that can be presented to your accounting staff as they sign into the system (if you have set it as
 their Home Page). This dashboard provides an analysis of the company's financial health at a glance.
 
 The description of the different parts of the dashboard, from top to bottom, then from left
