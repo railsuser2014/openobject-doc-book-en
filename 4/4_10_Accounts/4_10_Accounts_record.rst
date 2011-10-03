@@ -100,19 +100,18 @@ To visualise the general entries following these different actions, you can use 
 Analytic Models
 ---------------
 
-Standard OpenERP allows you to post analytic entries to one chart at a time. Using the `Analytic Model` concept (install the option ``Multiple Analytic Plans`` from the `Add New Features` wizard), you can distribute your income or expense to your analytic accounts.
-You can define the combination of analytic plans using the menu :menuselection:`Accounting --> Configuration --> Analytic Accounting --> Multi Plans --> Analytic Plan.`
+Standard OpenERP allows you to post analytic entries to one chart at a time. Using the `Analytic Model` concept (install the option ``Multiple Analytic Plans`` from the `Add New Features` wizard), you can distribute your income or expenses to one or several analytic charts of account at the same time.
+You can define the combination of analytic plans through the menu :menuselection:`Accounting --> Configuration --> Analytic Accounting --> Multi Plans --> Analytic Plan.`
 
-.. figure::  images/account_analytic_plan.png
+.. figure::  images/account_analytic_plan_61.png
    :scale: 75
    :align: center
 
    *Definition of Analytic Plan*
 
-Using the link `Distribution Models` given on right side of the `Analytic Plan` form, you can define
-the distribution of either your expenses while creating supplier invoice, or revenue when defining customer invoices.
+Using the link `Distribution Models` at the right side of the `Analytic Plan` form, you can define the distribution of either your expenses while creating supplier invoice, or revenue when defining customer invoices.
 
-.. figure::  images/account_distribution_model.png
+.. figure::  images/account_distribution_model_61.png
    :scale: 75
    :align: center
 
@@ -121,21 +120,17 @@ the distribution of either your expenses while creating supplier invoice, or rev
 For example, when you create the invoice (suppose 1000 EUR) for the product ``Client Project`` with analytic distribution that
 we defined as above.
 
-When the invoice has been validated, you can find the Analytic Journal Entries with distributed amount among the analytic accounts using the menu
-:menuselection:`Accounting --> Journal Entries --> Analytic Journal Items.`
+When the invoice has been validated, you can find the Analytic Journal Entries with the amount distributed amongst the analytic accounts through the menu :menuselection:`Accounting --> Journal Entries --> Analytic Journal Items.`
 
 
-.. figure::  images/analytic_journal_entry_analytic_distribution.png
+.. figure::  images/analytic_journal_entry_analytic_distribution_61.png
    :scale: 75
    :align: center
 
-   *Journal Entries with distributed amount*
+   *Journal Entries with Distributed Amount*
 
 You can also specify default `Analytic Distribution` for a particular product, partner, user and company for specific time interval using
 the menu :menuselection:`Accounting --> Configuration --> Analytic Accounting --> Analytic Defaults.`
-
-
-
 
 
 .. Copyright © Open Object Press. All rights reserved.
