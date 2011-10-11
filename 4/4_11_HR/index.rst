@@ -39,6 +39,7 @@ following configuration wizard.
     4_11_HR_motivate_your_people
     4_11_HR_timesheet
     4_11_HR_expenses
+    4_11_HR_payroll
 
 .. raw:: html
 
