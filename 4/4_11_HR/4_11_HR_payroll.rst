@@ -13,7 +13,7 @@ OpenERP provides the following features for efficient payroll management process
 - Generating Reports.
 - Integrated with Contracts and Holidays.
 
-Define Salary Rule Categories
+**Salary Rule Categories**
 
 Salary Rule Categories are your Basic, Allowance, Deduction, Gross, Net and Company Contribution by using which you can define your Salary Rule.You can define Salary Rule Categories by using the menu :menuselection:`Human Resources --> Configuration --> Payroll --> Salary Rule Categories` and click *New.*
 
@@ -28,7 +28,7 @@ You can configure the following information:-
 
 After entering the Salary Rule Category information click *Save.*
 
-Define Salary Rules
+**Salary Rules**
 
 Salary Rules  are the various types of Allownces, Deductions, etc.You can define Salary Rules by using the menu
 :menuselection:`Human Resources --> Configuration --> Payroll --> Salary Rules` and click *New.*
@@ -97,7 +97,7 @@ After entering the salary rule information click Save.
     - *inputs.sum(code, from_date, to_date)*
 The date given for the from_date and to_date parameters should be in the form 'YYYY-MM-DD'.
 
-Define Salary Structure
+**Salary Structure**
 
 Using the menu :menuselection:`Human Resources --> Configuration --> Payroll --> Salary Structure` you can define salary structure.
 
@@ -113,7 +113,7 @@ You can configure the following information:-
 
 After entering the salary structure information click Save.
 
-Define Contracts
+**Contracts**
 
 We need to define a contract for an employee which will be used during the payslip generation.
 Using the menu :menuselection:`Human Resources --> Contracts` you can define contract.
@@ -135,7 +135,7 @@ You can configure the following information:-
 
 After entering the contract information click Save.
 
-Employee Payslips
+**Employee Payslips**
 
 Using the menu :menuselection:`Human Resources --> Payroll --> Employee Payslips` you can generate payslips.
 
@@ -192,7 +192,7 @@ Other Information Tab: -
 
 Click on the Confirm button when the payslip is fully calculated and the Payment is made.It will change the state to done.
 
-Payslips Run
+**Payslips Run**
 
 Using the menu :menuselection:`Human Resources --> Payroll --> Payslips Run` you can create payslips for various employees at a time.
 Its like a register which holds payslips of various employees created through Generate Payslips wizard.
@@ -213,7 +213,7 @@ Click on the *Generate Payslips* wizard will let you choose the employees for wh
 
 A click on the Close button changes the state to close.
 
-Contribution Registers
+**Contribution Registers**
 
 Using the menu :menuselection:`Human Resources --> Configuration --> Payroll --> Contribution Registers` you can create a Contribution Register.
 
@@ -228,21 +228,21 @@ You need to configure the following:-
 
 After creating a register you can assign it on Salary rule.When Payslip is created, payslip lines generated through salary rules having a contribution register will be linked with that register.To see the payslip lines related to a contribution register go to that particular register and print the Payslip Lines report.
 
-Employee Payslip PDF Report
+**Employee Payslip PDF Report**
 
 You can print the Employee Payslip PDF Report from the form view of Employee Payslips.
 
 .. image:: images/payslip_report.png
    :align: center
 
-Payslip Details PDF Report
+**Payslip Details PDF Report**
 
 You can print the Payslip Details report from the form view of Employee Payslips. It prints the report grouped by Salary Rule Category and also prints the Payslip Lines by Contribution Register.
 
 .. image:: images/payslip_details_report.png
    :align: center
 
-Payslip Lines PDF Report
+**Payslip Lines PDF Report**
 
 You can print the Payslip Lines report from the form view of Contribution Registers. It prints the Payslip Lines by Contribution Register.
 
