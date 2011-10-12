@@ -3,6 +3,7 @@ HR Payroll
 You can manage your company's payroll by using hr_payroll module.The configuration wizard to install this module is shown below:
 
 .. image:: images/install_payroll.png
+   :align: center
 
 Using the menu *Human Resources->Payroll->Employee Payslips* you can generate payslips.To generate a payslip you need to define Salary Rules
 
@@ -19,6 +20,7 @@ Define Salary Rule Categories
 Salary Rule Categories are your Basic, Allowance, Deduction, Gross, Net and Company Contribution by using which you can define your Salary Rule.You can define Salary Rule Categories by using the menu *Human Resources->Configuration->Payroll->Salary Rule Categories* and click *New.*
 
 .. image:: images/salary_rule_categories.png
+   :align: center
 
 You can configure the following information:-
 
@@ -34,6 +36,7 @@ Salary Rules  are the various types of Allownces, Deductions, etc.You can define
 Salary Rules *Human Resources->Configuration->Payroll->Salary Rules* and click *New.*
 
 .. image:: images/salary_rule.png
+   :align: center
 
 Before starting to configure a rule I would like to mention a list of Available Variables which will be used to specify field values(as python code) on Salary Rules.
 
@@ -100,6 +103,7 @@ Define Salary Structure
 Using the menu *Human Resources->Payroll->Configuration->Payroll->Salary Structure* you can define salary structure.
 
 .. image:: images/salary_structure.png
+   :align: center
 
 You can configure the following information:-
 
@@ -116,6 +120,7 @@ We need to define a contract for an employee which will be used during the paysl
 Using the menu *Human Resources->Human Resources->Contracts* you can define contract.
 
 .. image:: images/payroll_contract.png
+   :align: center
 
 You can configure the following information:-
 
@@ -136,6 +141,7 @@ Employee Payslips
 Using the menu *Human Resources->Payroll->Employee Payslips* you can generate payslips.
 
 .. image:: images/payslip.png
+   :align: center
 
 You can configure the following information:-
 
@@ -193,6 +199,7 @@ Using the menu Human Resources->Payroll->Payslips Run you can create payslips fo
 Its like a register which holds payslips of various employees created through Generate Payslips wizard.
 
 .. image:: images/payslips_run.png
+   :align: center
 
 You need to configure the following:-
 
@@ -212,6 +219,7 @@ Contribution Registers
 Using the menu *Human Resources->Payroll->Configuration->Payroll->Contribution Registers* you can create a Contribution Register.
 
 .. image:: images/contribution_register.png
+   :align: center
 
 You need to configure the following:-
 
@@ -227,18 +235,20 @@ You can print the payslip report by using the menu *Human Resources->Payroll->Em
 *It prints Employee Payslip.
 
 .. image:: images/payslip_report.png
+   :align: center
 
 Payslip Details PDF Report
 
 You can print the Payslip Details report by using the menu *Human Resources->Payroll->Employee Payslips.* It prints the report grouped by Salary Rule Category and also prints the Payslip Lines by Contribution Register.
 
 .. image:: images/payslip_details_report.png
+   :align: center
 
 Payslip Lines PDF Report
 
 You can print the Payslip Lines report by using the menu *Human Resources->Payroll->Configuration->Payroll->Contribution Register.* It prints the Payslip Lines by Contribution Register.
 
 .. image:: images/contribution_register_report.png
-
+   :align: center
 
 
