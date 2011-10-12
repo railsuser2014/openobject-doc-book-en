@@ -2,7 +2,7 @@
 Point of Sale
 =============
 
-You can manage your daily sales and account transactions using point_of_sale module. 
+You can manage your daily sales and its account transactions using point_of_sale module. 
 
   *This module provides fast and easy way to manage sales orders. You can end your orders in a faster way. There are different ways of making payments and to split them between different payment modes. Computation of amount of money and creation and confirmation of the pickings are done automatically. Invoices are being generated automatically. Allows to refund old sales orders.*
 
