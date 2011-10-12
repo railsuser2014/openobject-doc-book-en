@@ -5,9 +5,7 @@ You can manage your company's payroll by using hr_payroll module.The configurati
 .. image:: images/install_payroll.png
    :align: center
 
-Using the menu *Human Resources->Payroll->Employee Payslips* you can generate payslips.To generate a payslip you need to define Salary Rules
-
-OpenERP can provide the following features for efficient payroll management process:-
+OpenERP provides the following features for efficient payroll management process:-
 
 - Salary calculation after considering all the allowances, deductions and incentives (if any) etc.,
 - Calculation of allowances, deductions and incentives by using the formula.
@@ -17,7 +15,7 @@ OpenERP can provide the following features for efficient payroll management proc
 
 Define Salary Rule Categories
 
-Salary Rule Categories are your Basic, Allowance, Deduction, Gross, Net and Company Contribution by using which you can define your Salary Rule.You can define Salary Rule Categories by using the menu *Human Resources->Configuration->Payroll->Salary Rule Categories* and click *New.*
+Salary Rule Categories are your Basic, Allowance, Deduction, Gross, Net and Company Contribution by using which you can define your Salary Rule.You can define Salary Rule Categories by using the menu :menuselection:`Human Resources --> Configuration --> Payroll --> Salary Rule Categories` and click *New.*
 
 .. image:: images/salary_rule_categories.png
    :align: center
@@ -33,7 +31,8 @@ After entering the Salary Rule Category information click *Save.*
 Define Salary Rules
 
 Salary Rules  are the various types of Allownces, Deductions, etc.You can define Salary Rules by using the menu
-Salary Rules *Human Resources->Configuration->Payroll->Salary Rules* and click *New.*
+:menuselection:`Human Resources --> Configuration --> Payroll --> Salary Rules` and click *New.*
+
 
 .. image:: images/salary_rule.png
    :align: center
@@ -100,7 +99,7 @@ The date given for the from_date and to_date parameters should be in the form 'Y
 
 Define Salary Structure
 
-Using the menu *Human Resources->Payroll->Configuration->Payroll->Salary Structure* you can define salary structure.
+Using the menu :menuselection:`Human Resources --> Configuration --> Payroll --> Salary Structure` you can define salary structure.
 
 .. image:: images/salary_structure.png
    :align: center
@@ -117,7 +116,7 @@ After entering the salary structure information click Save.
 Define Contracts
 
 We need to define a contract for an employee which will be used during the payslip generation.
-Using the menu *Human Resources->Human Resources->Contracts* you can define contract.
+Using the menu :menuselection:`Human Resources --> Contracts` you can define contract.
 
 .. image:: images/payroll_contract.png
    :align: center
@@ -138,7 +137,7 @@ After entering the contract information click Save.
 
 Employee Payslips
 
-Using the menu *Human Resources->Payroll->Employee Payslips* you can generate payslips.
+Using the menu :menuselection:`Human Resources --> Payroll --> Employee Payslips` you can generate payslips.
 
 .. image:: images/payslip.png
    :align: center
@@ -195,7 +194,7 @@ Click on the Confirm button when the payslip is fully calculated and the Payment
 
 Payslips Run
 
-Using the menu Human Resources->Payroll->Payslips Run you can create payslips for various employees at a time.
+Using the menu :menuselection:`Human Resources --> Payroll --> Payslips Run` you can create payslips for various employees at a time.
 Its like a register which holds payslips of various employees created through Generate Payslips wizard.
 
 .. image:: images/payslips_run.png
@@ -216,7 +215,7 @@ A click on the Close button changes the state to close.
 
 Contribution Registers
 
-Using the menu *Human Resources->Payroll->Configuration->Payroll->Contribution Registers* you can create a Contribution Register.
+Using the menu :menuselection:`Human Resources --> Configuration --> Payroll --> Contribution Registers` you can create a Contribution Register.
 
 .. image:: images/contribution_register.png
    :align: center
@@ -231,22 +230,21 @@ After creating a register you can assign it on Salary rule.When Payslip is creat
 
 Employee Payslip PDF Report
 
-You can print the payslip report by using the menu *Human Resources->Payroll->Employee Payslips.*
-*It prints Employee Payslip.
+You can print the Employee Payslip PDF Report from the form view of Employee Payslips.
 
 .. image:: images/payslip_report.png
    :align: center
 
 Payslip Details PDF Report
 
-You can print the Payslip Details report by using the menu *Human Resources->Payroll->Employee Payslips.* It prints the report grouped by Salary Rule Category and also prints the Payslip Lines by Contribution Register.
+You can print the Payslip Details report from the form view of Employee Payslips. It prints the report grouped by Salary Rule Category and also prints the Payslip Lines by Contribution Register.
 
 .. image:: images/payslip_details_report.png
    :align: center
 
 Payslip Lines PDF Report
 
-You can print the Payslip Lines report by using the menu *Human Resources->Payroll->Configuration->Payroll->Contribution Register.* It prints the Payslip Lines by Contribution Register.
+You can print the Payslip Lines report from the form view of Contribution Registers. It prints the Payslip Lines by Contribution Register.
 
 .. image:: images/contribution_register_report.png
    :align: center
