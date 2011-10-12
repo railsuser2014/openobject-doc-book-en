@@ -4,7 +4,7 @@ You can manage your company's payroll by using hr_payroll module.The configurati
 
 .. image:: images/install_payroll.png
 
-Using the menu *Human Resources->Payroll->Employee Payslips* you can generate payslips.To generate a payslip you need to define Salary Rules 
+Using the menu *Human Resources->Payroll->Employee Payslips* you can generate payslips.To generate a payslip you need to define Salary Rules
 
 OpenERP can provide the following features for efficient payroll management process:-
 
@@ -89,7 +89,7 @@ After entering the salary rule information click Save.
 - Note: If you are defining a rule for Allowance then make sure that the 'amount' , 'percentage',  or 'python code' you enter is positive. And if its for Deduction then it has to be negative.
 - Note: A code has to be unique and you cannot change the code for working days i.e.'WORK100'.
 - Note: Sequence plays a major role in the calculation and appearance of payslip lines.For e.g. A sequence defined on a rule calculating the Gross should always be greater than the sequence's given on Allowance's rules, else it won't be considered in the calculation of Gross value.
-- Note: You can also use the method() in your expression.There is a sum() method available for three objects/variables i.e.payslip, worked_days, inputs.They are 
+- Note: You can also use the method() in your expression.There is a sum() method available for three objects/variables i.e.payslip, worked_days, inputs.They are
     - *payslip.sum(code, from_date, to_date)*
     - *worked_days.sum(code, from_date, to_date)*
     - *inputs.sum(code, from_date, to_date)*
@@ -107,7 +107,7 @@ You can configure the following information:-
 - *Reference* : A code for a salary structure.It must be unique.
 - *Parent* : Select a structure whose rules you want to inherit.
 - *Salary Rules* : Add the salary rules which you want to provide under your structure.
-  
+
 After entering the salary structure information click Save.
 
 Define Contracts
@@ -115,7 +115,7 @@ Define Contracts
 We need to define a contract for an employee which will be used during the payslip generation.
 Using the menu *Human Resources->Human Resources->Contracts* you can define contract.
 
-.. image:: images/contracts.png
+.. image:: images/payroll_contract.png
 
 You can configure the following information:-
 
@@ -161,18 +161,18 @@ Worked Days : The no of days and hours an employee has worked.It will be compute
 
 - *Description* : Description regarding your working or leave day.
 - *Code* :  Code for Payslip Worked Days.
-- *Payslip* : Payslip on which Payslip Worked Days has to be applied.  
+- *Payslip* : Payslip on which Payslip Worked Days has to be applied.
 - *Sequence* : Sequence for Payslip Worked Days which will be considered in the calculation and its display..
 - *Number of Days* : Number of Days an employee has worked or taken leave.
 - *Number of Hours* : Number of Hours for which an employee has worked or taken leave.
 - *Contract* : Contract to be applied for Payslip Worked Days.
 
 Note: You cannot change the code for working days i.e.'WORK100'.
-Input Data : It is used when you want to provide some incentive.Input Data comes from the rules having Inputs.You need to provide an amount through Payslip Input Data.  
+Input Data : It is used when you want to provide some incentive.Input Data comes from the rules having Inputs.You need to provide an amount through Payslip Input Data.
 
 - *Description* : Description for Payslip Input.
 - *Code* : A code for Payslip Input.
-- *Payslip* : Payslip on which Payslip Input has to be applied. 
+- *Payslip* : Payslip on which Payslip Input has to be applied.
 - *Sequence* : Sequence for Payslip Input which will be considered in the calculation and its display.
 - *Amount* : The amount for an incentive.
 - *Contract* : Contract to be applied for Payslip Input.
@@ -180,12 +180,12 @@ Input Data : It is used when you want to provide some incentive.Input Data comes
 Other Information Tab: -
 
 - *Other Information* : It holds the information regarding the company, payment, notes, etc.
-- *Company* : The company 
+- *Company* : The company
 - *Payslip Run* : Name of Payslip Run through which payslip is generated.
 - *Made Payment Order* : If True, the payment is made.
 - *Notes* : Some additional information related to payslip.
 
-Click on the Confirm button when the payslip is fully calculated and the Payment is made.It will change the state to done. 
+Click on the Confirm button when the payslip is fully calculated and the Payment is made.It will change the state to done.
 
 Payslips Run
 
@@ -234,7 +234,7 @@ You can print the Payslip Details report by using the menu *Human Resources->Pay
 
 .. image:: images/payslip_details_report.png
 
-Payslip Lines PDF Report 
+Payslip Lines PDF Report
 
 You can print the Payslip Lines report by using the menu *Human Resources->Payroll->Configuration->Payroll->Contribution Register.* It prints the Payslip Lines by Contribution Register.
 
