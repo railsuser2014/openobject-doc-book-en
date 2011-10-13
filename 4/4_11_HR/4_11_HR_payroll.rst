@@ -18,7 +18,7 @@ OpenERP provides the following features for efficient payroll management process
 
 **Salary Rule Categories**
 
-Salary Rule Categories are your Basic, Allowance, Deduction, Gross, Net and Company Contribution by using which you can define your Salary Rule. You can define Salary Rule Categories by using the menu :menuselection:`Human Resources --> Configuration --> Payroll --> Salary Rule Categories` and click *New.*
+Salary Rule Categories are your Basic, Allowance, Deduction, Gross, Net, Company Contribution, etc by using which you can categorize your Salary Rule. You can define Salary Rule Categories by using the menu :menuselection:`Human Resources --> Configuration --> Payroll --> Salary Rule Categories` and click *New.*
 
 .. figure:: images/salary_rule_categories.png
    :align: center
