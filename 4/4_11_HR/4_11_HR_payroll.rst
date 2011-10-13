@@ -1,10 +1,12 @@
 HR Payroll
+==========
 
 The new :mod:`hr_payroll` module includes a generic payroll engine that handles everything required to compute hr salary slips, the taxes to pay, etc. 
 You can manage your company's payroll by using this module.The configuration wizard to install this module is shown below:
 
 .. figure:: images/install_payroll.png
    :align: center
+   :scale: 90
 
    *Configuration wizard to install hr_payroll module*
 
@@ -16,12 +18,14 @@ OpenERP provides the following features for efficient payroll management process
 - Generating Reports.
 - Integrated with Contracts and Holidays.
 
-**Salary Rule Categories**
+Salary Rule Categories
+----------------------
 
 Salary Rule Categories are your Basic, Allowance, Deduction, Gross, Net, Company Contribution, etc by using which you can categorize your Salary Rule. You can define Salary Rule Categories by using the menu :menuselection:`Human Resources --> Configuration --> Payroll --> Salary Rule Categories` and click *New.*
 
 .. figure:: images/salary_rule_categories.png
    :align: center
+   :scale: 75
 
    *Allowance defined as Salary Rule Category*
 
@@ -33,7 +37,8 @@ You can configure the following information:-
 
 After entering the Salary Rule Category information click *Save.*
 
-**Salary Rules**
+Salary Rules
+------------
 
 Salary Rules  are the various types of Allownces, Deductions, etc.You can define Salary Rules by using the menu
 :menuselection:`Human Resources --> Configuration --> Payroll --> Salary Rules` and click *New.*
@@ -41,6 +46,7 @@ Salary Rules  are the various types of Allownces, Deductions, etc.You can define
 
 .. figure:: images/salary_rule.png
    :align: center
+   :scale: 80
 
    *House Rent Allowance defined as Salary Rule*
 
@@ -62,58 +68,68 @@ You can configure the following information:-
 - *Code* : A code for the salary rule.It must be unique.
 - *Category* : Select a category for a rule.
 - *Sequence* : Provide the sequence(integer).
-.. note:: Sequence plays a major role in the calculation and appearance of payslip lines. For example, a sequence defined on a rule calculating the Gross should always be greater than the sequence's given on Allowance's rules, else it won't be considered in the calculation of Gross value.
+.. note:: Sequence 
+    
+    Sequence plays a major role in the calculation and appearance of payslip lines. For example, a sequence defined on a rule calculating the Gross should always be greater than the sequence's given on Allowance's rules, else it won't be considered in the calculation of Gross value.
+
 - *Active* : If **False**, it will allow you to hide the salary rule without removing it.
 - *Appears on Payslip* : If **False** it won't appear on the payslip but will be considered in the calculation.
-- *Condition Based on* : Consider a rule on the basis of some condition
-    1. *Always True* : As the name implies the condition is always True and hence rule will always be considered in the Payslip calculation.
-    2. *Range* : The rule will be considered if it falls under a particular range.
-        - *Range Based on* : You can provide the base value for range by using the above mentioned variable. For example, ``contract.wage``. This will take the wages mentioned on contract.
-        - *Minimum Range* : The minimum amount applied for this rule.
-        - *Maximum Range* : The maximum amount, applied for this rule.
-    3. Python Expression : You can specify your condition by python expression.
-        - *Python Condition* : The expression can be written using the above mentioned variable. For example, ``result = rules.NET > categories.NET * 0.10`` .
-- *Amount Type* : The computation type for the rule amount. There are three types available to compute the amount.i.e Fixed Amout, Percentage, Python Code.
-    1. *Fixed Amount* : As the name indicates the amount is fixed.
-        - *Quantity* : For e.g. A rule for Meal Voucher having fixed amount of 1€ per worked day can have its quantity defined in expression like ``worked_days.WORK100.number_of_days`` which will then be multiplied with the amount.
-        - *Fixed Amount* : An amount for a rule.
-    2. *Percentage* : Here you can calculate the amount through percentage.
-        - *Percentage based on* : You can provide a base value for type percentage by using the above mentioned variable. For example, If you want to give 5% of wages for Provident Fund then you have to specify percentage based on as contract.wage.
-        - *Quantity* : For example, a rule for Meal Voucher having fixed amount of 1€ per worked day can have its quantity defined in expression like ``worked_days.WORK100.number_of_days`` which will then be multipied with the calculated percentage amount.
-        - *Percentage* : Provide Percentage
-    3. *Python Expression* : You can specify your condition by python expression.
-        - *Python condition* : For example, If you want to calculate Gross then you can write your expression like ``result = categories.BASIC + categories.ALW`` .
+
+- *Condition Based on* : Consider a rule on the basis of some condition.
+1. *Always True* : As the name implies the condition is always True and hence rule will always be considered in the Payslip calculation.
+2. *Range* : The rule will be considered if it falls under a particular range.
+  - *Range Based on* : You can provide the base value for range by using the above mentioned variable. For example, ``contract.wage``. This will take the wages mentioned on contract.
+  - *Minimum Range* : The minimum amount applied for this rule.
+  - *Maximum Range* : The maximum amount, applied for this rule.
+3. Python Expression : You can specify your condition by python expression.
+  - *Python Condition* : The expression can be written using the above mentioned variable. For example, ``result = rules.NET > categories.NET * 0.10`` .
 
 - *Contribution Register* : Eventual third party involved in the salary payment of the employees.Used in report.
+
+- *Amount Type* : The computation type for the rule amount. There are three types available to compute the amount.i.e Fixed Amout, Percentage, Python Code.
+1. *Fixed Amount* : As the name indicates the amount is fixed.
+  - *Quantity* : For e.g. A rule for Meal Voucher having fixed amount of 1€ per worked day can have its quantity defined in expression like ``worked_days.WORK100.number_of_days`` which will then be multiplied with the amount.
+  - *Fixed Amount* : An amount for a rule.
+2. *Percentage* : Here you can calculate the amount through percentage.
+  - *Percentage based on* : You can provide a base value for type percentage by using the above mentioned variable. For example, If you want to give 5% of wages for Provident Fund then you have to specify percentage based on as contract.wage.
+  - *Quantity* : For example, a rule for Meal Voucher having fixed amount of 1€ per worked day can have its quantity defined in expression like ``worked_days.WORK100.number_of_days`` which will then be multipied with the calculated percentage amount.
+  - *Percentage* : Provide Percentage
+3. *Python Expression* : You can specify your condition by python expression.
+  - *Python condition* : For example, If you want to calculate Gross then you can write your expression like ``result = categories.BASIC + categories.ALW`` .
+
 - *Child Rules* : It is used to assign child rules.
 - *Inputs* : It is used when you want to provide some Input.
-    - *Code* : A code for an input that can be used in salary rule.Code must be unique.
-    - *Salary Rule Input* : Selection of salary rule.
-    - *Description* : Description for an input.
+  - *Code* : A code for an input that can be used in salary rule.Code must be unique.
+  - *Salary Rule Input* : Selection of salary rule.
+  - *Description* : Description for an input.
 
 - *Description* : Description regarding the rule.
 
 After entering the salary rule information click Save.
 
-.. note:: If you are defining a rule for Allowance then make sure that the 'amount' , 'percentage',  or 'python code' you enter is positive. And if its for Deduction then it has to be negative.
+.. note:: Sign of amount
+    
+    If you are defining a rule for Allowance then make sure that the **amount** , **percentage** or **python code** you enter is *positive*. And if its for Deduction then it has to be *negative*.
 
 .. note:: Python Expression
 
-    If you are using python code then returned value has to be set in the variable 'result'
+    If you are using python code then returned value has to be set in the variable *result*.
 
     You can also use the method() in your expression.
     There is a sum() method available for three objects/variables i.e.payslip, worked_days, inputs. They are:
 
-    #.	payslip.sum(code, from_date, to_date)
-    #.	worked_days.sum(code, from_date, to_date)
-    #.	inputs.sum(code, from_date, to_date)
+    * payslip.sum(code, from_date, to_date)
+    * worked_days.sum(code, from_date, to_date)
+    * inputs.sum(code, from_date, to_date)
 
-**Salary Structure**
+Salary Structure
+----------------
 
 Using the menu :menuselection:`Human Resources --> Configuration --> Payroll --> Salary Structure` you can define salary structure.
 
 .. figure:: images/salary_structure.png
    :align: center
+   :scale: 80
 
    *Salary Structure for an employee*
 
@@ -126,13 +142,16 @@ You can configure the following information:-
 
 After entering the salary structure information click Save.
 
-**Contracts**
+Contracts
+---------
 
 We need to define a contract for an employee which will be used during the payslip generation.
 Using the menu :menuselection:`Human Resources --> Contracts` you can define contract.
 
 .. figure:: images/payroll_contract.png
    :align: center
+   :scale: 80
+   
 
    *Contract for an employee*
 
@@ -143,12 +162,14 @@ Installation of payroll module adds the following fields on contract:-
 
 After entering the contract information click Save.
 
-**Employee Payslips**
+Employee Payslips
+-----------------
 
 Using the menu :menuselection:`Human Resources --> Payroll --> Employee Payslips` you can generate payslips.
 
 .. figure:: images/payslip.png
    :align: center
+   :scale: 80
 
    *Employee Payslip*
 
@@ -200,15 +221,17 @@ Payslip lines will appear and will be calculated based on the sequence provided 
 - *Made Payment Order* : If **True**, the payment is made.
 - *Notes* : Some additional information related to payslip.
 
-Click on the Confirm button when the payslip is fully calculated and the Payment is made. It will change the state to done.
+Click on the Confirm button when the payslip is fully calculated and the Payment is made. It will change the state to ``Done``.
 
-**Payslips Run**
+Payslips Run
+------------
 
 Using the menu :menuselection:`Human Resources --> Payroll --> Payslips Run` you can create payslips for various employees at a time.
 Its like a register which holds payslips of various employees created through ``Generate Payslips`` wizard.
 
 .. figure:: images/payslips_run.png
    :align: center
+   :scale: 80
 
    *Payslips Run*
 
@@ -223,14 +246,16 @@ Click on the *Generate Payslips* wizard will let you choose the employees for wh
 
 - *Payslips* : It holds the newly generated Payslips through wizard.
 
-A click on the Close button changes the state to close.
+A click on the Close button changes the state to ``Close``.
 
-**Contribution Registers**
+Contribution Registers
+----------------------
 
 Using the menu :menuselection:`Human Resources --> Configuration --> Payroll --> Contribution Registers` you can create a Contribution Register.
 
 .. figure:: images/contribution_register.png
    :align: center
+   :scale: 80
 
    *Contribution Registers*
 
@@ -244,25 +269,31 @@ After creating a register you can assign it on Salary rule.
 When Payslip is created, payslip lines generated through salary rules having a contribution register will be linked with that register.
 To see the payslip lines related to a contribution register go to that particular register and print the ``Payslip Lines report``.
 
-**Employee Payslip PDF Report**
+Employee Payslip PDF Report
+---------------------------
 
 You can print the Employee Payslip PDF Report from the form view of Employee Payslips.
 
 .. figure:: images/payslip_report.png
    :align: center
+   :scale: 80
 
-**Payslip Details PDF Report**
+Payslip Details PDF Report
+--------------------------
 
 You can print the Payslip Details report from the form view of Employee Payslips. It prints the report grouped by Salary Rule Category and also prints the Payslip Lines by Contribution Register.
 
 .. figure:: images/payslip_details_report.png
    :align: center
+   :scale: 80
 
-**Payslip Lines PDF Report**
+Payslip Lines PDF Report
+------------------------
 
 You can print the Payslip Lines report from the form view of Contribution Registers. It prints the Payslip Lines by Contribution Register.
 
 .. figure:: images/contribution_register_report.png
    :align: center
+   :scale: 80
 
 
