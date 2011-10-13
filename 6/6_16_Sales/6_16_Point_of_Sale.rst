@@ -2,9 +2,9 @@
 Point of Sale
 =============
 
-You can manage your daily sales and its account transactions using point_of_sale module. 
+You can manage your retail business and its account transactions using point_of_sale module. 
 
-  *This module provides fast and easy way to manage sales orders. You can end your orders in a faster way. There are different ways of making payments and to split them between different payment modes. Computation of amount of money and creation and confirmation of the pickings are done automatically. Invoices are being generated automatically. Allows to refund old sales orders.*
+  *This module provides fast and easy way to manage sales orders. The primary function of point-of-sale is to make transactions easy to manage without sacrificing quick, efficient service or customer data. There are different ways of making payments and to split them between different payment modes. Computation of amount of money and creation and confirmation of the pickings are done automatically. Invoices are being generated automatically. Allows to refund old sales orders.*
 
 
 The configuration wizard to install this module is shown below:
@@ -14,6 +14,8 @@ The configuration wizard to install this module is shown below:
    :align: center
 
    *Configuration wizard to install point_of_sale module*
+
+The point of sale provides maximum efficiency, with all retail transactions conducted. Since the point-of-sale application is parameter-driven, you determine what, if any, information, you must enter to begin an order. For most businesses with a point-of-sale operation, a cash sale is the most common type of transaction. Depending on the way you set up your parameters, the Cash Sale Customer will be displayed and the paycode will default to cash.
 
 Daily sales of products, picking and delivery of the products and invoicing are the main features that is provided by this module. In and out of the cash is being maintained using Cash Registers. Each cash register is created based on the Cash / Bank Journals so it will make easier to create journal entries and thus we can keep track of all accounting entries in appropriate accounts.
 
@@ -28,6 +30,8 @@ Using the menu *Point of Sale ‣ Cash Register Management ‣ Open Cash Registe
 
    *Wizard to open cash registers*
 
+This wizard creates and opens the cash registers related to cash and bank journals. This is a shortcut way of creating the cash registers. Else you can browse to the menu *Point of Sale ‣ Cash Register Management ‣ List of Cash Registers* and create and open the cash registers manually.
+
 To see all opened cash registers you can browse to *Point of Sale ‣ Cash Register Management ‣ List of Cash Registers*.
 
 .. figure:: images/2_opened_cash_registers.png
@@ -36,9 +40,9 @@ To see all opened cash registers you can browse to *Point of Sale ‣ Cash Regis
 
    *List of open cash registers*
 
-Cash registers are used at the time of making payment from a sale order. Amount of money is being transferred to the particular journal and accounts through the cash registers.
+Cash registers are used at the time of making payment from a sale order. You can select any of the cash journal and the account entry will be made in the related cash register of the selected journal.
 
-When all the transactions are over at the end of the day we close these registers using the wizard from *Point of Sale ‣ Cash Register Management ‣ Close Cash Register*. It checks the starting and ending balance of the register and if they are equal it will close it.
+When all the transactions are over at the end of the day we close these registers using the wizard from *Point of Sale ‣ Cash Register Management ‣ Close Cash Register*. When you close the cashbox, generally at the end of the day, enter the amounts on the ``CashBox`` tab, in the ``Closing Balance`` section. Then confirm the statement to close the day’s cash statement and automatically generate the corresponding accounting entries. Note that the ``Computed Balance`` and the ``Closing Balance`` need to be equal before you can close the cashbox.
 
 .. figure:: images/12_close_cash_registers.png
    :scale: 75
@@ -51,7 +55,7 @@ You will get the list of closed cash registers at the end of the wizard.
 Making sale orders
 ------------------
 
-To make a sale order you can go to *Point of Sale ‣ Daily Operations ‣ New Sale Order*. It will open a form view and there you can fill up the sale order information. Following is the form view of sale order.
+For any retail business, the process flow of point of sale starts by making the sales orders. In OpenERP we provide you a menu to make a sale order *Point of Sale ‣ Daily Operations ‣ New Sale Order* which will open a form view and there you can fill up the necessary information to generate a sale order. Following figure is the form view of sale order you will get.
 
 .. figure:: images/3_pos_order.png
    :scale: 75
@@ -59,11 +63,7 @@ To make a sale order you can go to *Point of Sale ‣ Daily Operations ‣ New S
 
    *POS order form view*
 
-You can fill up the following information on your sale order:
- - **Order Ref** : Reference of sale order generated using sequence
- - **Order lines** : Fill up the necessary information for product, quantity and discount
-  
-There are other extra information which you would like to fill up then you can go to Extra Info tab and configure the appropriate values.
+There are other extra information which you would like to fill up then you can go to ``Extra Info`` tab and configure the appropriate values.
 
 .. figure:: images/7_pos_extra_info_tab.png
    :scale: 75
@@ -81,7 +81,9 @@ You can configure the following information here:
 Making payment
 --------------
 
-Now after filling up all the necessary information you can save your sale order. Then you can click on the ``Payment`` button. It will open a wizard, there you can select the particular journal and payment amount. You can see it as following:
+You need to make payment to complete a sale order. In OpenERP we provide you certain payment modes using which you can pay for your sale order.
+
+After filling up all the necessary information you can save your sale order. On the same sale order form you will see one button named ``Payment``, by clicking on the button one wizard will be opened. On the wizard you can select the particular Journal as **Payment Mode** and payment amount as **Amount**. By default the Amount will contain the value of **Total** field on the sale order form. You can see it in the following figure:
 
 .. figure:: images/4_make_payment.png
    :scale: 75
@@ -89,9 +91,7 @@ Now after filling up all the necessary information you can save your sale order.
 
    *Payment wizard*
 
-After the wizard finishes you will get a payment receipt in a printed form which consists of the pos order and payment mode information.
-
-This wizard will also generate a picking and a journal entry for the sale order. You can see that the delivery order is in ``Done`` state as following:
+When the wizard finishes you will get a payment receipt in a printed form which consists of the pos order information and payment mode details. As a background process this wizard will also generate a picking or you can say a delivery order for the sale order. The picking will be in done state as we consider that the products have been delivered to the customer. You can see that the delivery order is in ``Done`` state as following:
 
 .. figure:: images/5_pos_picking_order.png
    :scale: 75
@@ -99,7 +99,24 @@ This wizard will also generate a picking and a journal entry for the sale order.
 
    *Delivery order after making payment of sale order*
 
-There are two ways to generate journal entries for the sale order. One is you can use the button ``Post Entries`` on the ``Extra Info`` tab on Sale Order form view. And second way is to use the wizard on *Point of Sale ‣ Cash Register Management ‣ Post Journal Entries*. To use this functionality you have to first close all cash registers.
+Generate journal entries
+------------------------
+
+You need to record the payments to show your accounting transations of the day. For that OpenERP will give you the facility to generate the journal entries per sale orders.
+
+There are two ways to generate journal entries for the sale order. They are as following:
+ - You can use the button ``Post Entries`` on the ``Extra Info`` tab on Sale Order form view. 
+ - Second way is to use the wizard on *Point of Sale ‣ Cash Register Management ‣ Post Journal Entries*. You need to close the cash registers to use this.
+
+You can browse to the menu *Accounting ‣ Journal Entries ‣ Journal Entries* and open the related entry. Following is the image of posted journal entry.
+
+.. figure:: images/8_post_entries_account_move.png
+   :scale: 75
+   :align: center
+
+   *Journal Entry of a sale order*
+
+The accounting entries will be done in the Journal selected on the sale order.
 
 Put money in / Take money out
 -----------------------------
