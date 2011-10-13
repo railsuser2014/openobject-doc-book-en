@@ -1,6 +1,7 @@
 HR Payroll
 
-You can manage your company's payroll by using hr_payroll module.The configuration wizard to install this module is shown below:
+The new :mod:`hr_payroll` module includes a generic payroll engine that handles everything required to compute hr salary slips, the taxes to pay, etc. 
+You can manage your company's payroll by using this module.The configuration wizard to install this module is shown below:
 
 .. figure:: images/install_payroll.png
    :align: center
@@ -10,7 +11,7 @@ You can manage your company's payroll by using hr_payroll module.The configurati
 OpenERP provides the following features for efficient payroll management process:-
 
 - Salary calculation after considering all the allowances, deductions and incentives (if any) etc.,
-- Calculation of allowances, deductions and incentives by using the formula.
+- Define salary rules by using the formula.
 - Salary processing on the basis of leaves taken.
 - Generating Reports.
 - Integrated with Contracts and Holidays.
