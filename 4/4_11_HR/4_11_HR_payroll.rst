@@ -47,20 +47,21 @@ Before starting to configure a rule I would like to mention a list of Available 
 
 `Available variables:`
 
-- *payslip* : object containing the payslips.
-- *employee* : hr.employee object.
-- *contract* : hr.contract object.
-- *rules* : object containing the rules code (previously computed).
-- *categories* : object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
-- *worked_days* : object containing the computed worked days.
-- *inputs* : object containing the computed inputs.
+* ``payslip``: object containing the payslips.
+* ``employee``: hr.employee object.
+* ``contract``: hr.contract object.
+* ``rules``: object containing the rules code (previously computed).
+* ``categories``: object containing the computed salary rule categories (sum of amount of all rules belonging to that category).
+* ``worked_days``: object containing the computed worked days.
+* ``inputs``: object containing the computed inputs.
 
 You can configure the following information:-
 
 - *Name* : A name for the Salary Rule.
-- *Code* : A code for the salary rule .It must be unique.
+- *Code* : A code for the salary rule.It must be unique.
 - *Category* : Select a category for a rule.
 - *Sequence* : Provide the sequence(integer).
+.. note:: Sequence plays a major role in the calculation and appearance of payslip lines.For e.g. A sequence defined on a rule calculating the Gross should always be greater than the sequence's given on Allowance's rules, else it won't be considered in the calculation of Gross value.
 - *Active* : If **False**, it will allow you to hide the salary rule without removing it.
 - *Appears on Payslip* : If **False** it won't appear on the payslip but will be considered in the calculation.
 - *Condition Based on* : If you want to consider a rule on the basis of some condition then you can select from any of the three
@@ -89,19 +90,22 @@ You can configure the following information:-
     - *Salary Rule Input* : Selection of salary rule.
     - *Description* : Description for an input.
 
-Description : Description regarding the rule.
+- *Description* : Description regarding the rule.
 
 After entering the salary rule information click Save.
 
-- Note: If you are using python code then returned value has to be set in the variable 'result'
-- Note: If you are defining a rule for Allowance then make sure that the 'amount' , 'percentage',  or 'python code' you enter is positive. And if its for Deduction then it has to be negative.
-- Note: A code has to be unique and you cannot change the code for working days i.e.'WORK100'.
-- Note: Sequence plays a major role in the calculation and appearance of payslip lines.For e.g. A sequence defined on a rule calculating the Gross should always be greater than the sequence's given on Allowance's rules, else it won't be considered in the calculation of Gross value.
-- Note: You can also use the method() in your expression.There is a sum() method available for three objects/variables i.e.payslip, worked_days, inputs.They are
-    - *payslip.sum(code, from_date, to_date)*
-    - *worked_days.sum(code, from_date, to_date)*
-    - *inputs.sum(code, from_date, to_date)*
-The date given for the from_date and to_date parameters should be in the form 'YYYY-MM-DD'.
+.. note:: If you are defining a rule for Allowance then make sure that the 'amount' , 'percentage',  or 'python code' you enter is positive. And if its for Deduction then it has to be negative.
+
+.. note:: Python Expression
+
+    If you are using python code then returned value has to be set in the variable 'result'
+
+    You can also use the method() in your expression.
+    There is a sum() method available for three objects/variables i.e.payslip, worked_days, inputs.They are:
+
+    #.	payslip.sum(code, from_date, to_date)
+    #.	worked_days.sum(code, from_date, to_date)
+    #.	inputs.sum(code, from_date, to_date)
 
 **Salary Structure**
 
@@ -170,34 +174,34 @@ On the selection of an employee the Reference,Contract, Structure, Description, 
 Click on the *Compute Sheet* button will fill the payslip lines based on the rules defined in your salary structure.
 Payslip lines will appear and will be calculated based on the sequence provided on salary rules.Allowances and Deductions will be shown in positive and negative values respectively.
 
-Details By Salary Rule Category Tab: It displays the rules grouped by its categories.
+*Details By Salary Rule Category*: It displays the rules grouped by its categories.
 
-Worked Days & Inputs Tab:- It displays the worked days and inputs.
+*Worked Days & Inputs*:- It displays the worked days and inputs.
 
-Worked Days : The no of days and hours an employee has worked.It will be computed on employee onchange.It calculates the number of working days and hours on the basis of Working Schedule provided on contract.It also calculates the leaves.
+#.	*Worked Days* : The no of days and hours an employee has worked.It will be computed on employee onchange.It calculates the number of working days and hours on the basis of Working Schedule provided on contract.It also calculates the leaves.
 
-- *Description* : Description regarding your working or leave day.
-- *Code* :  Code for Payslip Worked Days.
-- *Payslip* : Payslip on which Payslip Worked Days has to be applied.
-- *Sequence* : Sequence for Payslip Worked Days which will be considered in the calculation and its display..
-- *Number of Days* : Number of Days an employee has worked or taken leave.
-- *Number of Hours* : Number of Hours for which an employee has worked or taken leave.
-- *Contract* : Contract to be applied for Payslip Worked Days.
+    - *Description* : Description regarding your working or leave day.
+    - *Code* :  Code for Payslip Worked Days.
+    .. note:: You cannot change the code for working days i.e.'WORK100'.
+    - *Payslip* : Payslip on which Payslip Worked Days has to be applied.
+    - *Sequence* : Sequence for Payslip Worked Days which will be considered in the calculation and its display..
+    - *Number of Days* : Number of Days an employee has worked or taken leave.
+    - *Number of Hours* : Number of Hours for which an employee has worked or taken leave.
+    - *Contract* : Contract to be applied for Payslip Worked Days.
 
-Note: You cannot change the code for working days i.e.'WORK100'.
-Input Data : It is used when you want to provide some incentive.Input Data comes from the rules having Inputs.You need to provide an amount through Payslip Input Data.
+#.	*Input Data* : It is used when you want to provide some incentive.Input Data comes from the rules having Inputs.You need to provide an amount through Payslip Input Data.
 
-- *Description* : Description for Payslip Input.
-- *Code* : A code for Payslip Input.
-- *Payslip* : Payslip on which Payslip Input has to be applied.
-- *Sequence* : Sequence for Payslip Input which will be considered in the calculation and its display.
-- *Amount* : The amount for an incentive.
-- *Contract* : Contract to be applied for Payslip Input.
+    - *Description* : Description for Payslip Input.
+    - *Code* : A code for Payslip Input.
+    - *Payslip* : Payslip on which Payslip Input has to be applied.
+    - *Sequence* : Sequence for Payslip Input which will be considered in the calculation and its display.
+    - *Amount* : The amount for an incentive.
+    - *Contract* : Contract to be applied for Payslip Input.
 
-Other Information Tab: -
+*Other Information*: -
 
 - *Other Information* : It holds the information regarding the company, payment, notes, etc.
-- *Company* : The company
+- *Company* : The company.
 - *Payslip Run* : Name of Payslip Run through which payslip is generated.
 - *Made Payment Order* : If True, the payment is made.
 - *Notes* : Some additional information related to payslip.
