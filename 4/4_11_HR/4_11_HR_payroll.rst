@@ -31,7 +31,7 @@ Salary Rule Categories are your Basic, Allowance, Deduction, Gross, Net, Company
 
 You can configure the following information:-
 
-- *Name* : A name for the Salary Rule Category
+- *Name* : A name for the Salary Rule Category.
 - *Code* : A code for the Salary Rule Category. It must be unique.
 - *Parent* : It is used to create hierarchy for reporting purpose.
 
@@ -65,7 +65,7 @@ Before starting to configure a rule I would like to mention a list of Available 
 You can configure the following information:-
 
 - *Name* : A name for the Salary Rule.
-- *Code* : A code for the salary rule.It must be unique.
+- *Code* : A code for the salary rule. It must be unique.
 - *Category* : Select a category for a rule.
 - *Sequence* : Provide the sequence(integer).
 .. note:: Sequence 
@@ -93,13 +93,14 @@ You can configure the following information:-
 2. ``Percentage`` : Here you can calculate the amount through percentage.
   - *Percentage based on* : You can provide a base value for type percentage by using the above mentioned variable. For example, If you want to give 5% of wages for Provident Fund then you have to specify percentage based on as contract.wage.
   - *Quantity* : For example, a rule for Meal Voucher having fixed amount of 1€ per worked day can have its quantity defined in expression like ``worked_days.WORK100.number_of_days`` which will then be multipied with the calculated percentage amount.
-  - *Percentage* : Provide Percentage
+  - *Percentage* : Provide Percentage.
 3. ``Python Expression`` : You can specify your condition by python expression.
-  - *Python condition* : For example, If you want to calculate Gross then you can write your expression like ``result = categories.BASIC + categories.ALW`` .
+  - *Python condition* : For example, If you want to calculate Gross then you can write your expression like ``result = categories.BASIC + categories.ALW`` where ``BASIC`` and ``ALW`` are salary rule categories code.
 
 - *Child Rules* : It is used to assign child rules.
 - *Inputs* : It is used when you want to provide some Input.
-  - *Code* : A code for an input that can be used in salary rule.Code must be unique.
+
+  - *Code* : A code for an input that can be used in salary rule. Code must be unique.
   - *Salary Rule Input* : Selection of salary rule.
   - *Description* : Description for an input.
 
@@ -193,7 +194,7 @@ Payslip lines will appear and will be calculated based on the sequence provided 
 
 *Worked Days & Inputs*:- It displays the worked days and inputs.
 
-1.	*Worked Days* : The no of days and hours an employee has worked. It will be computed on employee onchange. It calculates the number of working days and hours on the basis of Working Schedule provided on contract.It also calculates the leaves.
+1.	*Worked Days* : The no of days and hours an employee has worked. It will be computed on employee onchange. It calculates the number of working days and hours on the basis of Working Schedule provided on contract. It also calculates the leaves.
 
     - *Description* : Description regarding your working or leave day.
     - *Code* :  Code for Payslip Worked Days.
@@ -238,7 +239,7 @@ Its like a register which holds payslips of various employees created through ``
 You need to configure the following:-
 
 - *Name* : A name for Payslips Run.
-- *Date From* : The beginning date of pay period which will be the Date From for payslips to be created..
+- *Date From* : The beginning date of pay period which will be the Date From for payslips to be created.
 - *Date To* : The last date of pay period which will be the Date To for payslips to be created.
 - *Credit Note* :If **True**, indicates that all payslips generated from here are refund payslips.
 
@@ -261,9 +262,9 @@ Using the menu :menuselection:`Human Resources --> Configuration --> Payroll -->
 
 You need to configure the following:-
 
-- *Name* : A name for the Contribution Register
-- *Company* : Contribution Register belonging to a company
-- *Description* : Description related to Contribution Register
+- *Name* : A name for the Contribution Register.
+- *Company* : Contribution Register belonging to a company.
+- *Description* : Description related to Contribution Register.
 
 After creating a register you can assign it on Salary rule.
 When Payslip is created, payslip lines generated through salary rules having a contribution register will be linked with that register.
