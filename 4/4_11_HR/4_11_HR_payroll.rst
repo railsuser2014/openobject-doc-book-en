@@ -1,7 +1,7 @@
 HR Payroll
 ==========
 
-The new :mod:`hr_payroll` module includes a generic payroll engine that handles everything required to compute hr salary slips, the taxes to pay, etc. 
+The new :mod:`hr_payroll` module includes a generic payroll engine that handles everything required to compute hr salary slips, the taxes to pay, etc.
 You can manage your company's payroll by using this module.The configuration wizard to install this module is shown below:
 
 .. figure:: images/install_payroll.png
@@ -68,33 +68,44 @@ You can configure the following information:-
 - *Code* : A code for the salary rule. It must be unique.
 - *Category* : Select a category for a rule.
 - *Sequence* : Provide the sequence(integer).
-.. note:: Sequence 
-    
+.. note:: Sequence
+
     Sequence plays a major role in the calculation and appearance of payslip lines. For example, a sequence defined on a rule calculating the Gross should always be greater than the sequence's given on Allowance's rules, else it won't be considered in the calculation of Gross value.
 
 - *Active* : If **False**, it will allow you to hide the salary rule without removing it.
 - *Appears on Payslip* : If **False**, it won't appear on the payslip but will be considered in the calculation.
 
 - *Condition Based on* : Consider a rule on the basis of some condition.
+
 1. ``Always True`` : As the name implies the condition is always True and hence rule will always be considered in the Payslip calculation.
+
 2. ``Range`` : The rule will be considered if it falls under a particular range.
+
   - *Range Based on* : You can provide the base value for range by using the above mentioned variable. For example, ``contract.wage``. This will take the wages mentioned on contract.
   - *Minimum Range* : The minimum amount applied for this rule.
   - *Maximum Range* : The maximum amount, applied for this rule.
+
 3. ``Python Expression`` : You can specify your condition by python expression.
+
   - *Python Condition* : The expression can be written using the above mentioned variable. For example, ``result = rules.NET > categories.NET * 0.10`` .
 
 - *Contribution Register* : Eventual third party involved in the salary payment of the employees.Used in report.
 
 - *Amount Type* : The computation type for the rule amount. There are three types available to compute the amount.i.e ``Fixed Amout, Percentage, Python Code``.
+
 1. ``Fixed Amount`` : As the name indicates the amount is fixed.
+
   - *Quantity* : For e.g. A rule for Meal Voucher having fixed amount of 1€ per worked day can have its quantity defined in expression like ``worked_days.WORK100.number_of_days`` which will then be multiplied with the amount.
   - *Fixed Amount* : An amount for a rule.
+
 2. ``Percentage`` : Here you can calculate the amount through percentage.
+
   - *Percentage based on* : You can provide a base value for type percentage by using the above mentioned variable. For example, If you want to give 5% of wages for Provident Fund then you have to specify percentage based on as contract.wage.
   - *Quantity* : For example, a rule for Meal Voucher having fixed amount of 1€ per worked day can have its quantity defined in expression like ``worked_days.WORK100.number_of_days`` which will then be multipied with the calculated percentage amount.
   - *Percentage* : Provide Percentage.
+
 3. ``Python Expression`` : You can specify your condition by python expression.
+
   - *Python condition* : For example, If you want to calculate Gross then you can write your expression like ``result = categories.BASIC + categories.ALW`` where ``BASIC`` and ``ALW`` are salary rule categories code.
 
 - *Child Rules* : It is used to assign child rules.
@@ -109,7 +120,7 @@ You can configure the following information:-
 After entering the salary rule information click Save.
 
 .. note:: Sign of amount
-    
+
     If you are defining a rule for Allowance then make sure that the **amount** , **percentage** or **python code** you enter is *positive*. And if its for Deduction then it has to be *negative*.
 
 .. note:: Python Expression
@@ -152,7 +163,7 @@ Using the menu :menuselection:`Human Resources --> Contracts` you can define con
 .. figure:: images/payroll_contract.png
    :align: center
    :scale: 80
-   
+
 
    *Contract for an employee*
 
@@ -182,7 +193,7 @@ You can configure the following information:-
 - *Structure* : Salary Structure for generating payslip lines.
 - *Description* : Description of payslip.
 - *Credit Note* : If **True**, indicates this payslip has refund of another.
-- *Date From* : The beginning date of pay period
+- *Date From* : The beginning date of pay period.
 - *Date To* : The last date of pay period.
 
 On the selection of an employee the Reference, Contract, Structure, Description, Worked Days and Input data ( if you have a rule that has an input data) fields will be automatically filled.
