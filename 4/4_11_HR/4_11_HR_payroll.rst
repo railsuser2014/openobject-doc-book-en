@@ -13,7 +13,7 @@ You can manage your company's payroll by using this module.The configuration wiz
 OpenERP provides the following features for efficient payroll management process:-
 
 - Salary calculation after considering all the allowances, deductions and incentives (if any) etc.,
-- Define salary rules by using the formula.
+- Define salary rules by using the expression.
 - Salary processing on the basis of leaves taken.
 - Generating Reports.
 - Integrated with Contracts and Holidays.
@@ -73,7 +73,7 @@ You can configure the following information:-
     Sequence plays a major role in the calculation and appearance of payslip lines. For example, a sequence defined on a rule calculating the Gross should always be greater than the sequence's given on Allowance's rules, else it won't be considered in the calculation of Gross value.
 
 - *Active* : If **False**, it will allow you to hide the salary rule without removing it.
-- *Appears on Payslip* : If **False** it won't appear on the payslip but will be considered in the calculation.
+- *Appears on Payslip* : If **False**, it won't appear on the payslip but will be considered in the calculation.
 
 - *Condition Based on* : Consider a rule on the basis of some condition.
 1. ``Always True`` : As the name implies the condition is always True and hence rule will always be considered in the Payslip calculation.
