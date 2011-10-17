@@ -35,18 +35,18 @@ All of OpenERP's graphs are dynamic. So you can, for example, filter the data by
 
 To obtain a more detailed report of the aged balance (or order by past date), use the menu :menuselection:`Accounting --> Reporting --> Generic Reporting --> Partners --> Aged Partner Balance`.
 
-When you click that report, OpenERP shows a wizard asking you for the chart of accounts, the start date of the analysis period and the size of the interval to be analyzed (in days). The start date will determine which documents will be included in the report (document date until the selected start date).
+When you click that report, OpenERP shows a wizard asking you for the chart of accounts, the start date of the analysis period and the size of the interval to be analyzed (in days). The start date will determine which documents will be included in the report (document date until the selected start date) and it will serve as a reference date to calculate the amounts due for the selected interval.
 You can print an aged partner balance for Receivable Accounts or Payable Accounts of for both at the same time. The analysis direction may be Past (for entries that are due) or Future to keep track of your cash flow in the next days or weeks (according to your selection). OpenERP then calculates a table of credit balance by period. So, if you request an interval of 30 days, OpenERP generates an analysis of creditors for the past month, past two months, and so on.
 An ageing balance will indicate how much of the accounts receivable is past due. It also reports how far past due the accounts are (number of days).
 
 .. figure::  images/account_aged_balance.png
-   :scale: 65
+   :scale: 85
    :align: center
 
    *Aged Balance in the Past using a 30-days Period*
 
 .. figure::  images/account_aged_balance_fut.png
-   :scale: 65
+   :scale: 85
    :align: center
 
    *Aged Balance in the Future using a 30-days Period*
@@ -55,7 +55,7 @@ For an analysis by partner, you can use the partner balance that you get through
 cumulative credit balance.
 
 .. figure::  images/account_partner_balance_61.png
-   :scale: 65
+   :scale: 85
    :align: center
 
    *Partner Balance*
@@ -65,7 +65,7 @@ cumulative credit balance.
 If you want detailed information about a partner, you can use the partner ledger from the menu :menuselection:`Accounting --> Reporting --> Generic Reporting --> Partners --> Partner Ledger`. You can optionally print one partner per page.
 
 .. figure::  images/account_partner_ledger_61.png
-   :scale: 65
+   :scale: 85
    :align: center
 
    *Partner Ledger*
@@ -78,7 +78,7 @@ Finally, you can look up individual account entries. To search for account entri
         From the web client, you need to navigate to a search list for the resource, then click
         the :guilabel:`Export` link at the bottom left of the list.
         From the GTK client, you would use the menu :menuselection:`Form --> Export data`.
-        This enables you to easily make your own analysis in Microsoft Excel or OpenOffice.org Calc,
+        This enables you to easily make your own analysis in Microsoft Excel or Calc (LibreOffice or OpenOffice),
         by exporting accounting entries.
 
 .. index::
