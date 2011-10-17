@@ -91,12 +91,17 @@ Multi-step Reminders
 
 To automate the management of follow-ups (reminders) you should install the module :mod:`account_followup` (or check the `Followups Management` option in the `Add New Features` wizard).
 
+This module is integrated with the email features of OpenERP. Ask your system administrator to define the smtp server through the menu :menuselection:`Administration --> Configuration --> Parameters --> Outgoing Mail Servers`.
+
 Once the module is installed, configure your levels of follow-up using the menu :menuselection:`Accounting --> Configuration --> Miscellaneous --> Follow-Ups`.
 
-The levels of follow-up are relative to the date of creation of an invoice, and not the due date. This enables you to put payment conditions such as 'payable in 21 days' and send a reminder in 30 days, or the converse.
+.. note:: Follow-ups
 
-For each level, you should define the number of days and create a note which will automatically be added into the reminder letter. The sequence determines the order of the level in ascending order.
+    You can define only one follow-up cycle per company, because you cannot link the follow-up cycle to a partner.
 
+The levels of follow-up are relative to the due date; when no payment term is specified, the invoice date will be considered as the due date.
+
+For each level, you should define the number of days and create a note which will automatically be added into the reminder letter. The order in which you define the various follow-up levels determines the order in which letters will be sent.
 
 .. csv-table::  Example of Configuring Follow-up Levels
    :header: "Sequence","Level","Days","Description"
@@ -114,13 +119,16 @@ You can send your reminders by mail and/or email with the menu :menuselection:`A
 
    *Prepare Reminders*
 
-OpenERP presents you with a list of partners who are due to be reminded, which you can modify before starting the procedure. On the second tab of the form, you can supply the information you will send in the email reminder.
+OpenERP allows you to plan your reminders in the future; you could start a cycle today for invoices due at the end of the week, for instance.
+OpenERP presents you with a list of partners who are due to be reminded, which you can modify before starting the procedure. On the ``Email Settings`` tab of the form, you can supply the information you will send in the email reminder.
+
+You can either print the reminders or send them by email. From the ``Email Settings`` tab, you can select the ``Test Print`` checkbox to print the reminders as a preview only, without adding follow-up data to the reminded invoices. This way you can easily preview reminders to be sent.
 
 The system then gives you a PDF report with all of the reminder letters for each partner. Each letter is produced in the language of the partner (if that is available), and you can therefore get letters in several languages in the same PDF on several pages.
 
-You should check the due date of customers and/or suppliers before starting the reminder procedure. You get a list of unreconciled entries' accounts. You can then modify the date, the last follow-up and the level of reminder for each entry.
+From the Journal Items view, you can check the due date of customers before starting the reminder procedure. You will get a list of unreconciled entries. You can then modify the date, the last follow-up and the level of reminder for each entry.
 
-To obtain a detailed statistical report of sent follow-ups use the menus in :menuselection:`Accounting --> Reporting --> Generic Reporting --> Partners --> Follow-ups Sent`.
+To obtain a detailed statistical report of sent follow-ups use the menus in :menuselection:`Accounting --> Reporting --> Generic Reporting --> Partners --> Follow-ups Sent`. This screen will let you analyse your reminder data in various ways, e.g. by reminder level, by partner or for a combination of these data. You can also group by ``Latest Followup Date``.
 
 The different reports are standard OpenERP screens, so you can filter them and explore the elements in detail.
 
