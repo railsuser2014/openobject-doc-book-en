@@ -5,8 +5,8 @@
    single: creditor
    single: debtor
 
-Reporting
-=========
+Get your Money in
+=================
 
 OpenERP provides many tools for managing customer and supplier accounts. You will see here:
 
@@ -25,35 +25,36 @@ Financial Analysis of Partners
    single: module; board_account
    pair: dashboard; accounting
 
-When members of your accounts department sign on to the OpenERP system, they can immediately be presented with the :guilabel:`Accounting Dashboard`. By default, it contains a useful graph for analyzing receivables. Then look at it using the menu :menuselection:`Accounting --> Reporting --> Dashboard --> Accounting Dashboard`.
-
-.. figure::  images/account_board.png
-   :scale: 65
-   :align: center
-
-   *Accounting Dashboard*
+When members of your accounting department sign in to OpenERP, they can immediately be presented with the :guilabel:`Accounting Dashboard`. By default, it contains the customer invoices to approve, a company analysis according to account type, a Treasury graph and a useful graph for analyzing aged receivables. Click the ``Accounting`` button to open the dashboard. You can also call the dashboard from the menu :menuselection:`Accounting --> Reporting --> Dashboard --> Accounting Dashboard`.
 
 .. index:: balance; aged
 
-In the dashboard, the graph at the right entitled :guilabel:`Aged Receivables` represents your receivables week by week. That shows you at a glance the cumulative amount of your customer debtors by week.
+In the dashboard, the graph at the right entitled :guilabel:`Aged Receivables` represents your receivables week by week. At a glance, you can see the cumulative amount of your customer receivables by week.
 
-All of OpenERP's graphs are dynamic. So you can, for example, filter the data by clicking :guilabel:`Zoom` and then :guilabel:`Filter` on the Search form. Or just click on :guilabel:`Zoom` to open in a larger window for a graph, then click :guilabel:`Search` to display this in a list
-view.
+All of OpenERP's graphs are dynamic. So you can, for example, filter the data by clicking the graph itself and then :guilabel:`Filter` in the Search form. When you click the graph, data will be displayed in list view. Now you enter extra search criteria and then click the `graph` button to display the data as a graph again.
 
 To obtain a more detailed report of the aged balance (or order by past date), use the menu :menuselection:`Accounting --> Reporting --> Generic Reporting --> Partners --> Aged Partner Balance`.
 
-.. figure::  images/account_balance.png
+When you click that report, OpenERP shows a wizard asking you for the chart of accounts, the start date of the analysis period and the size of the interval to be analyzed (in days). The start date will determine which documents will be included in the report (document date until the selected start date).
+You can print an aged partner balance for Receivable Accounts or Payable Accounts of for both at the same time. The analysis direction may be Past (for entries that are due) or Future to keep track of your cash flow in the next days or weeks (according to your selection). OpenERP then calculates a table of credit balance by period. So, if you request an interval of 30 days, OpenERP generates an analysis of creditors for the past month, past two months, and so on.
+An ageing balance will indicate how much of the accounts receivable is past due. It also reports how far past due the accounts are (number of days).
+
+.. figure::  images/account_aged_balance.png
    :scale: 65
    :align: center
 
-   *Aged Balance using a 30-days Period*
+   *Aged Balance in the Past using a 30-days Period*
 
-When opening that report, OpenERP asks for the name of the company, the fiscal period and the size of the interval to be analyzed (in days). OpenERP then calculates a table of credit balance by period. So, if you request an interval of 30 days, OpenERP generates an analysis of creditors for the past month, past two months, and so on.
+.. figure::  images/account_aged_balance_fut.png
+   :scale: 65
+   :align: center
+
+   *Aged Balance in the Future using a 30-days Period*
 
 For an analysis by partner, you can use the partner balance that you get through the menu :menuselection:`Accounting --> Reporting --> Generic Reporting --> Partners --> Partner Balance`. The system then supplies you with a PDF report containing one line per partner representing the
 cumulative credit balance.
 
-.. figure::  images/account_partner_balance.png
+.. figure::  images/account_partner_balance_61.png
    :scale: 65
    :align: center
 
@@ -61,19 +62,19 @@ cumulative credit balance.
 
 .. index:: ledger
 
-If you want detailed information about a partner, you can use the partner ledgers that you reach through the menu :menuselection:`Accounting --> Reporting --> Generic Reporting --> Partners --> Partner Ledger`.
+If you want detailed information about a partner, you can use the partner ledger from the menu :menuselection:`Accounting --> Reporting --> Generic Reporting --> Partners --> Partner Ledger`. You can optionally print one partner per page.
 
-.. figure::  images/account_partner_ledger.png
+.. figure::  images/account_partner_ledger_61.png
    :scale: 65
    :align: center
 
    *Partner Ledger*
 
-Finally, you can look up individual account entries by searching for useful information. To search for account entries, you can use the menu :menuselection:`Accounting --> Reporting --> Statistic Reports --> Entries Analysis`.
+Finally, you can look up individual account entries. To search for account entries, you can use the menu :menuselection:`Accounting --> Reporting --> Statistic Reports --> Entries Analysis`.
 
 .. tip:: Exporting Entries
 
-        It is helpful to remember that you can export all types of resources in OpenERP.
+        Remember that you can export all types of resources in OpenERP.
         From the web client, you need to navigate to a search list for the resource, then click
         the :guilabel:`Export` link at the bottom left of the list.
         From the GTK client, you would use the menu :menuselection:`Form --> Export data`.
