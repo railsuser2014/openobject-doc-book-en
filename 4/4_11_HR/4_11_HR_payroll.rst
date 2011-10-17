@@ -220,7 +220,7 @@ Payslip lines will appear and will be calculated based on the sequence provided 
     - *Number of Hours* : Number of Hours for which an employee has worked or taken leave.
     - *Contract* : Contract to be applied for Payslip Worked Days.
 
-2.	*Input Data* : It is used when you want to provide some incentive. Input Data comes from the rules having Inputs. You need to provide an amount through Payslip Input Data.
+2.	*Input Data* : It is used when you want to provide some incentives, commissions, etc. Input Data comes from the rules having Inputs. You need to provide an amount through Input Data of payslip.
 
     - *Description* : Description for Payslip Input.
     - *Code* : A code for Payslip Input.
