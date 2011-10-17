@@ -256,6 +256,12 @@ You need to configure the following:-
 
 Click on the *Generate Payslips* wizard will let you choose the employees for which you want to generate payslips.
 
+.. figure:: images/generate_payslip_wizard.png
+   :align: center
+   :scale: 80
+
+   *Generate Payslips wizard*
+
 - *Payslips* : It holds the newly generated Payslips through wizard.
 
 A click on the Close button changes the state to ``Close``.
