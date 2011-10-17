@@ -12,8 +12,12 @@ You can manage your company's payroll by using this module.The configuration wiz
 
 OpenERP provides the following features for efficient payroll management process:-
 
-- Salary calculation after considering all the allowances, deductions and incentives (if any) etc.,
+- Salary rule: are used to compute data like allowances, deductions, net, taxes, contribution registers, etc.
 - Define salary rules by using the expression.
+- Salary structure: Define a set of rules usually applied to a category of employees.
+- Salary calculation after considering all the allowances, deductions and incentives (if any) etc.,
+- Contribution registers: A register containing to whom the company or the employee have to pay taxes.
+- Employee and contract: It includes everything required to compute the salary slip of an employee.
 - Salary processing on the basis of leaves taken.
 - Generating Reports.
 - Integrated with Contracts and Holidays.
@@ -264,7 +268,7 @@ Click on the *Generate Payslips* wizard will let you choose the employees for wh
 
 - *Payslips* : It holds the newly generated Payslips through wizard.
 
-A click on the Close button changes the state to ``Close``.
+A click on the Close button of Payslips Run changes the state to ``Close``.
 
 Contribution Registers
 ----------------------
