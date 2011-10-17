@@ -18,7 +18,7 @@ OpenERP provides the following features for efficient payroll management process
 - Salary calculation after considering all the allowances, deductions and incentives (if any) etc.,
 - Contribution registers: A register containing to whom the company or the employee have to pay taxes.
 - Employee and contract: It includes everything required to compute the salary slip of an employee.
-- Salary processing on the basis of leaves taken.
+- Salary processing on the basis of leaves taken or number of working days.
 - Generating Reports.
 - Integrated with Contracts and Holidays.
 
