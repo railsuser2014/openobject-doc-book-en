@@ -16,6 +16,7 @@ with efficient encoding of the payment process of your customers, makes OpenERP 
 .. toctree::
 
     invoice_payment
+    managing_accounts
 
 .. raw:: html
 

@@ -3,9 +3,6 @@
 
     \afterpage{\clearpage}
 
-Customer Invoicing & Payments
-=============================
-
 In OpenERP, the invoicing workflow is very simple. You can see it in the following figure:
 
 .. figure::  images/account_invoice_workflow.png
