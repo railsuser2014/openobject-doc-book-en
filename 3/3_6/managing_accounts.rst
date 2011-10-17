@@ -141,6 +141,21 @@ The different reports are standard OpenERP screens, so you can filter them and e
 .. index::
    single: overdue payments
 
+Invoice Analysis
+-----------------
+
+Analyse your invoicing in OpenERP through the **Invoices Analysis** screen from the menu :menuselection:`Accounting --> Reporting --> Statistic Reports --> Invoices Analysis`.
+
+This report provides an overview of what has been invoiced to your customer as well as the average payment delays.
+You can easily group by partner, product category, ... or select only invoices that have not been confirmed yet.
+
+This is an easy way to check your sales people's impact on turnover. You can see your turnover per product category, per salesman, per partner and many more options.
+
+.. figure::  images/invoice_analysis.jpeg
+   :scale: 80
+   :align: center
+
+   *Analysing your Invoices*
 
 
 .. Copyright © Open Object Press. All rights reserved.

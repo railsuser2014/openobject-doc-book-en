@@ -123,6 +123,24 @@ Through the menu :menuselection:`Accounting --> Suppliers --> Supplier Payment`,
 
 Another way of keeping track of your payments is the way accountants will do it, by encoding Bank Statements. For more information about this, please refer to the chapter Advanced Invoice Management.
 
+You can also install a module to import your payments electronically through a CODA file you receive from the bank. To do this install the module :mod:`account_coda`.
+
+How should you proceed?
+
+You have to enter your company's bank account(s) for which you want to have CODA files. Go to the menu :menuselection:`Accounting --> Configuration --> Financial Accounting --> Accounts --> Setup your Bank Accounts`. Choose the bank account type you want to use (IBAN or normal bank account). If you use IBAN, do not forget to also enter your bank's' BIC code.
+
+.. tip:: Bank Journal
+
+    When you save the bank account, a bank journal will be automatically created for that account.
+
+Then add the bank account details for each partner that will pay you through a bank. You can do this in the Partner form, on the ``Accounting`` tab.
+
+Download the CODA file from your bank to any directory. Import the electronic bank statement through the menu :menuselection:`Accounting --> Periodical Processing --> Statements --> Import Coda Statements`.
+
+Enter the data required in the wizard (receivable and payable account, bank journal and a default account to post to when no correspoonding partner is found). Then select the CODA file on your directory and click the ``Import`` button to start processing the CODA file.
+
+OpenERP will then import a draft bank statement in the selected journal and will match all corresponding customer / supplier payments when possible. You can change the draft statement if necessary from the menu :menuselection:`Accounting --> Bank and Cash --> Bank Statements`. You can check any issues during file loading from the menu :menuselection:`Accounting --> Bank and Cash --> Coda Import Logs`.
+
 .. Copyright © Open Object Press. All rights reserved.
 
 .. You may take electronic copy of this publication and distribute it if you don't
