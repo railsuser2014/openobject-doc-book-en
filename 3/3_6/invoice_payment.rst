@@ -3,8 +3,8 @@
 
     \afterpage{\clearpage}
 
-Invoicing Workflow
-==================
+Customer Invoicing & Payments
+=============================
 
 In OpenERP, the invoicing workflow is very simple. You can see it in the following figure:
 
@@ -21,8 +21,8 @@ Of course, companies often work together with an external accountant who keeps t
 The specific and easy-to-use `Invoicing` system in OpenERP allows you to keep track of your accounting, even when you are not an accountant.
 It provides an easy way to follow up your suppliers and customers. You could use this simplified accounting when your (external) account keeps your books, but you would like to keep track of payments. The Invoicing system includes receipts and vouchers (an easy way to keep track of sales and purchases) as well as payment registration without the need to encode complete abstracts of account.
 
-Simple Customer Receipt
------------------------
+Simple Customer Receipts
+------------------------
 
 When you sell products to a customer, you can give him an invoice or a `Sales Receipt`, which is also called `Customer Receipt`.
 Sales Receipts are merely a kind of sales ticket and not a real invoice.
@@ -82,8 +82,8 @@ Description to be done when modules are ready.
 
 .. todo:: include EDI description when module is available
 
-Keep Track of your Payments
----------------------------
+Keep Track of your Customer's Payments
+--------------------------------------
 
 You should efficiently keep track of payments of your customers and suppliers. People who have no accounting knowledge and just want to use OpenERP to keep track of their payments, can work with the ``Invoicing & Payments`` access rights for such kind of user.
 
