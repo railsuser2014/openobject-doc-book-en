@@ -21,8 +21,7 @@ Management Indicators
 To define financial indicators in OpenERP, you should install the module :mod:`account_report` (from ``extra-addons``).
 When installing the module, the usual financial indicators are registered in OpenERP.
 
-You can consult your indicators, calculated in real time, from the menu :menuselection:`Accounting -->
-Reporting --> Generic Reporting --> Reporting --> Custom reporting`.
+You can consult your indicators, calculated in real time, from the menu :menuselection:`Accounting --> Reporting --> Generic Reporting --> Reporting --> Custom reporting`.
 
 Indicators defined by default in OpenERP are the following:
 
@@ -108,9 +107,13 @@ that is the balance in accounts 4 and 5 divided by the balance in account 1.
 Good Management Budgeting
 -------------------------
 
-OpenERP manages its budgets using both General and Analytic Accounts. You will see how to do this here for General Accounts and then in :ref:`ch-accts` for Analytical Accounts. Install :mod:`account_budget` to be able to do this.
+OpenERP manages its budgets using both General and Analytic Accounts. You will see how to do this here for General and Analytic Accounts.
+Go to :menuselection:`Administration --> Modules --> Modules` and install :mod:`account_budget` to be able to do this.
 
-Use the menu :menuselection:`Accounting --> Budgets --> Budgets` to define a new budget by clicking the `New` button.
+The first step in defining budgets is to determine the general accounts you want to use.
+You can use Budgetary positions for this from the menu :menuselection:`Accounting --> Configuration --> Budgets --> Budgetary Positions`. Here you can link the general accounts for which you want to keep budgets. The aim is to group general accounts logically, according to sales or purchases, for instance.
+
+To define your budgets, go to the menu :menuselection:`Accounting --> Budgets --> Budgets`. Define a new budget by clicking the `New` button.
 
 .. figure::  images/account_budget_form.png
    :scale: 75
@@ -124,14 +127,13 @@ Use the menu :menuselection:`Accounting --> Budgets --> Budgets` to define a new
 .. tip:: Budget Revisions
 
         Even though you *can* modify a budget at any time to make a revision of it, it is best if you do not do
-        that.
+        that, because then you have no history of changes.
 
-        Rather than edit an existing budget document, make a new version so that you can keep your original
-        estimates safe for comparison. This lets you analyze your changing perspectives of the
+        Rather than edit an existing budget, make a new version so that you can keep your original
+        estimates safe for comparison. This lets you analyse your changing perspectives of the
         company from revision to revision.
 
-Begin data entry by entering a :guilabel:`Name`, a :guilabel:`Code`,
-a :guilabel:`Start Date` and an :guilabel:`End Date` in your new budget.
+Begin data entry by entering a :guilabel:`Name`, a :guilabel:`Code`, a :guilabel:`Start Date` and an :guilabel:`End Date` in your new budget.
 Then you can define the budgeted amounts within that period, one by one. For each, you define:
 
 * an :guilabel:`Analytic Account`
@@ -156,7 +158,7 @@ The figure :ref:`fig-accbudg` gives an example of a budget produced by OpenERP.
    :scale: 65
    :align: center
 
-   *Printing a budget*
+   *Printing a Budget*
 
 You could also use the menu :menuselection:`Accounting --> Reporting --> Generic Reporting --> Budgets --> Budget Lines`.
 This gives a budgetary analysis report for each budget line.
