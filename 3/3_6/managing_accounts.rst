@@ -141,8 +141,8 @@ The different reports are standard OpenERP screens, so you can filter them and e
 .. index::
    single: overdue payments
 
-Invoice Analysis
------------------
+Analyse your Turnover
+=====================
 
 Analyse your invoicing in OpenERP through the **Invoices Analysis** screen from the menu :menuselection:`Accounting --> Reporting --> Statistic Reports --> Invoices Analysis`.
 
