@@ -9,7 +9,7 @@ Management Indicators
 
 .. note:: Financial Indicators
 
-        Indicators, sometimes called financial ratios, are tools for analyzing a company's finances.
+        Indicators, sometimes called financial ratios, are tools to analyse a company's finances.
         They enable you to compare two accounts or sets of accounts from the balance sheet or the profit
         and loss account, in the form of a ratio.
         They also let you measure the financial health of a company, and make comparisons from one year to

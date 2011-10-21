@@ -6,6 +6,8 @@
 General Ledger and Trial Balance
 --------------------------------
 
+A general ledger includes accounts with their debits and credits, and shows all transactions in an account, for one period, for several periods or for a financial year.
+
 To print the `General Ledger`, you can use the menu :menuselection:`Accounting --> Reporting --> Legal Reports --> Accounting Reports --> General Ledger`.
 You will find the following wizard which is used to filter the resulting report.
 
@@ -13,9 +15,10 @@ You will find the following wizard which is used to filter the resulting report.
    :scale: 75
    :align: center
 
-   *Wizard for selecting the specific entries in report*
+   *Preparing a General Ledger*
 
-Select the proper options and journal(s) from the above wizard to print the `General Ledger`.
+Select the proper options and journal(s) from the above wizard to print the `General Ledger`. The report can also be filtered by date or by period. When you choose to print the general ledger from one date to another, or for one or more periods, you can also have the initial balances printed for the periods preceeding the periods you selected.
+You can sort the report by date or by journal / partner.
 
 .. figure::  images/account_general_ledger.png
    :scale: 65
@@ -23,28 +26,10 @@ Select the proper options and journal(s) from the above wizard to print the `Gen
 
    *General Ledger*
 
-.. index::
-   single: module; account_simulation
+While the general ledger displays transactions for an account, a trial balance will show one amount (either debit or credit) for each account. The aim of the trial balance is to prove that the total of all debit balances is equal to the total of all credit balances.
 
-.. tip::  Simulated Balance
-
-        While you are printing account balances,
-        if you have installed the :mod:`account_simulation` module from ``extra-addons``,
-        OpenERP asks you which level of
-        simulation to execute.
-
-        Results will vary depending on the level selected.
-        You could, for example, print the balance depending on various methods of amortization:
-
-        * the normal IFRS method,
-
-        * the French method.
-
-        More generally, it enables you to make analyses using other simulation levels that you could
-        expect.
-
-To print the `Trial Balance`, you can use this menu :menuselection:`Accounting --> Reporting --> Legal Reports --> Accounting Reports --> Trial Balance`.
-This report allows you to print or generate a PDF of your trial balance, allowing you to quickly check the balance of each of your accounts in a single report.
+To print the `Trial Balance`, go to the menu :menuselection:`Accounting --> Reporting --> Legal Reports --> Accounting Reports --> Trial Balance`.
+This report allows you to print or generate a PDF of your trial balance, allowing you to quickly check the balance of each of your accounts in a single report. A trial balance may include all accounts (even the ones without balance), only accounts with transactions or accounts of which the balance is not equal to zero. You can print a trial balance for all posted entries (meaning entries with a Valid state) or all entries, in which case the report will also print entries in a draft state. This option is useful, for instance, when your new financial year has just been opened, and you are preparing miscellaneous entries in the previous financial year.
 
 .. figure::  images/account_trial_balance.png
    :scale: 65
@@ -52,7 +37,9 @@ This report allows you to print or generate a PDF of your trial balance, allowin
 
    *Trial Balance*
 
-You can print the `General Ledger`  and `Trial Balance` report directly from  the `Account` form also.
+.. tip:: Reporting for one or more Accounts
+
+    You can print the `General Ledger`  and `Trial Balance` report directly from the `Account` form too.
 
 .. index::
    single: balance sheet
@@ -63,83 +50,103 @@ Balance Sheet and Profit & Loss Report
 
 OpenERP also offers a Balance Sheet and a Profit & Loss Report.
 
-A Balance Sheet is a financial statement that summarises the assets, liabilities and shareholders' equity of a company at a specific point in time. These three balance sheet segments give investors an idea as to what the company owns and owes, as well as the amount invested by the shareholders.
+A `Balance Sheet` is a financial statement that summarises the assets, liabilities and shareholders' equity of a company at a specific point in time. These three balance sheet segments give investors an idea as to what the company owns and owes, as well as the amount invested by the shareholders.
 
-The balance sheet must follow the following formula:
+The balance sheet complies with the formula below:
 
 Assets = Liabilities + Shareholders' Equity.
 
 A balance sheet is often described as a snapshot of a company's financial condition.
 
-The Profit & Loss Report is a financial statement which gives a summary of the revenues, costs and expenses during a specific period of time. Such a report provides information that shows the ability of a company to generate profit by increasing revenue and reducing costs. The P&L statement is also known as an "Income Statement".
+The accounts displayed in the Balance Sheet are linked to an account type for which the ``"P&L / Balance Sheet`` parameter is set to Balance Sheet (either Assets or Liabilities account). To configure Account types, go to :menuselection:`Accounting --> Configuration --> Financial Accounting --> Account Types`.
 
-The result shown in this report, is a the net profit or loss of a business.
+The Balance Sheet can be printed from the menu :menuselection:`Accounting --> Reporting --> Legal Reports --> Accounting Reports --> Balance Sheet`.
+
+.. tip:: Reserve & Profit and Loss Account
+
+    A Balance Sheet needs a reserve & profit and loss account, but instead of entering it each time you start the report, you can add a default Reserve & Profit and Loss account through the menu:menuselection:`Administration --> Companies --> Companies` on the ``Configuration`` tab. This account will be used as a counterpart to balance your accounts.
+
+The `Profit & Loss Report` is a financial statement which gives a summary of the revenues, costs and expenses during a specific period of time. Such a report provides information that shows the ability of a company to generate profit by increasing revenue and reducing costs. The P&L statement is also known as an "Income Statement".
+
+The purpose of the Profit & Loss Report is to show managers and accountants whether the company earned or lost money during the report period.
 
 In general, the Profit and Loss report will be used to determine profit ratios, to examine sales prices and costs, and to set marketing budgets, for instance.
+
+The accounts displayed in the Profit and Loss Report are linked to an account type for which the ``"P&L / Balance Sheet`` parameter is set to Profit & Loss (either Expense or Income account). To configure Account types, go to :menuselection:`Accounting --> Configuration --> Financial Accounting --> Account Types`.
+
+The Profit and Loss report can be printed from the menu :menuselection:`Accounting --> Reporting --> Legal Reports --> Accounting Reports --> Profit And Loss`.
+
+
+.. figure::  images/account_profit_loss.png
+   :scale: 75
+   :align: center
+
+   *Profit and Loss Report*
+
 
 .. index:: journal
 
 The Accounting Journals
 -----------------------
 
-To configure the different journals use the menu :menuselection:`Accounting --> Configuration --> Financial Accounting --> Journals --> Journals`.
+A journal allows you to list entries in chronological order (by default according to date). Each entry posted in OpenERP is recorded in such a journal. To configure the different accounting journals go to the menu :menuselection:`Accounting --> Configuration --> Financial Accounting --> Journals --> Journals`.
 
 .. figure::  images/account_journal_form.png
    :scale: 75
    :align: center
 
-   *Definition of the Journal*
+   *Defining a Journal*
 
 OpenERP provides three main reports regarding the journals:
 
-* To print `Journals`, use the menu :menuselection:`Accounting --> Reporting --> Legal Reports --> Journals --> Journals`.
+* To print `Journals`, use the menu :menuselection:`Accounting --> Reporting --> Legal Reports --> Journals --> Journals`. A Journal will show all entries per journal, e.g. sales entries, purchase entries, etc. Each transaction is mentioned, with date, reference, document number, account, partner, description and debit and credit amount. The Journal Report is printed per period and per journal.
 
 .. figure::  images/account_journal_print.png
-   :scale: 65
+   :scale: 75
    :align: center
 
    *Printing a Journal*
 
-* To print `General Journals`, use the menu :menuselection:`Accounting --> Reporting --> Legal Reports --> Journals --> General Journals`.
+* To print `General Journals`, use the menu :menuselection:`Accounting --> Reporting --> Legal Reports --> Journals --> General Journals`. A General Journal will print a page per period for any journal entries posted in that period, and totalised per journal. The report will show the period, the journal, debit, credit and balance.
 
-* To print `Centralizing Journal`, use the menu :menuselection:`Accounting --> Reporting --> Legal Reports --> Journals --> Centralizing Journal`.
+.. figure::  images/account_gen_journal_print.png
+   :scale: 75
+   :align: center
+
+   *Printing a General Journal*
+
+* To print `Centralizing Journal`, use the menu :menuselection:`Accounting --> Reporting --> Legal Reports --> Journals --> Centralizing Journal`. A centralizing journal gives a summary per account for each journal and period of debit, credit and balance.
 
 
 Tax Declaration
 ---------------
 
-Information required for a tax declaration is automatically generated by OpenERP from invoices. In
-the section on invoicing, you will have seen that you can get details of tax information from the area
-at the bottom left of an invoice.
+Information required for a tax declaration is automatically generated by OpenERP from invoices. In the section on invoicing, you will have seen that you can get details of tax information from the area at the bottom left of an invoice.
 
-You can also get the information from the accounting entries in the columns to the right.
+You can also get the tax information when you open a journal entry by looking at the columns to the right of each line.
 
-OpenERP keeps a tax chart that you can reach from the menu :menuselection:`Accounting --> Charts --> Chart of Accounts`. The structure of the chart is for calculating the tax
-declaration, but all the other taxes can be calculated also(such as the French DEEE).
+OpenERP keeps a tax chart that you can reach from the menu :menuselection:`Accounting --> Charts --> Chart of Taxes`. The wizard will propose to display entries for the current period only, but you can also leave the period empty to see a complete financial year. The structure of the chart is for calculating the VAT declaration, but all the other taxes can be calculated as well (such as the French DEEE).
 
 .. index::
-   single: TVA
    single: VAT
 
 .. figure::  images/account_tax_chart.png
    :scale: 75
    :align: center
 
-   *Example of a Belgian TVA (VAT) declaration*
+   *Example of a Belgian VAT Structure*
 
-The tax chart represents the amount of each area of the tax declaration for your country. It is
-presented in a hierarchical structure which lets you see the detail only of what interests you and
-hides the less interesting subtotals. This structure can be altered as you wish to fit your needs.
+The tax chart represents the amount of each area of the VAT declaration for your country. It is presented in a hierarchical structure which lets you see the detail only of what interests you and hides the less interesting subtotals. This structure can be altered as you wish to fit your needs.
 
-You can create several tax charts if your company is subject to different types of tax or tax-like
-accounts, such as:
+You can create several tax charts if your company is subject to different types of tax or tax-like accounts, such as:
 
 * authors' rights,
 
 * ecotaxes, such as the French DEEE for recycling electrical equipment.
 
-Each accounting entry can then be linked to one of the tax accounts. This association is done
-automatically by the taxes which had previously been configured in the invoice lines.
+Creating several charts of taxes allows you to print different declarations from the menu :menuselection:`Accounting --> Reporting --> Generic Reporting --> Taxes --> Taxes Report`. Simply select the declaration you want to print in the wizard.
+
+Each accounting entry can then be linked to one of the tax accounts. This association is done automatically from the taxes which had previously been configured in the invoice lines.
 
 .. tip:: Tax Declaration
 
@@ -149,27 +156,15 @@ automatically by the taxes which had previously been configured in the invoice l
 
         * it is possible to allocate only a part of the tax transaction,
 
-        * it is not necessary to manage several different general accounts depending on the type of sale and
-          type of tax,
+        * it is not necessary to manage several general accounts depending on the type of sale and the type of tax,
 
-        * you can restructure your chart of taxes as you need.
+        * you can restructure your chart of taxes as required.
 
-At any time, you can check your chart of taxes for a given period using the report
-:menuselection:`Accounting --> Reporting --> Generic Reporting --> Taxes --> Taxes Report`.
+At any time, you can check your chart of taxes for a given period using the report :menuselection:`Accounting --> Reporting --> Generic Reporting --> Taxes --> Taxes Report`.
 
-This data is updated in real time. This is very useful because it enables you to preview at any time
-the tax that you owe at the start and end of the month or quarter.
+Data is updated in real time. This is very useful because it enables you to preview at any time the tax that you owe at the start and end of the month or quarter.
 
-Furthermore, for your tax declaration, you can click on one of the tax accounts to investigate the
-detailed entries that make up the full amount. This helps you search for errors, such as when you have
-entered an invoice at full tax rate when it should have been zero-rated for an inter-community trade or for
-a charity.
-
-In some countries, tax can be calculated on the basis of payments received rather than invoices
-sent. In this instance, choose \ ``Payments``\   instead of
-\ ``Invoices``\   in the :guilabel:`Based On` field. Even if you make your declaration on the
-basis of invoices sent and received, it can be helpful to compare the two reports to see the
-amount of tax that you pay but have not yet received from your customers.
+Furthermore, for your tax declaration, you can click one of the tax accounts to investigate the detailed entries that make up the full amount. This helps you search for errors, such as when you have entered an invoice at full tax rate when it should have been zero-rated for an intracommunity trade or for charity.
 
 .. Copyright © Open Object Press. All rights reserved.
 
