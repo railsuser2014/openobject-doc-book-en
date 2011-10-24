@@ -101,8 +101,8 @@ So, using this notation, the cash ratio is defined by \ ``balance('4', '5') / ba
 that is the balance in accounts 4 and 5 divided by the balance in account 1.
 
 .. index::
-  single: budgeting
-..
+   single: budgeting
+
 
 Good Management Budgeting
 -------------------------
