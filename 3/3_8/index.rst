@@ -38,9 +38,9 @@ with :mod:`sale` and its dependencies installed and no particular chart of accou
 
 .. toctree::
 
-    managing_accounts
     statutory_taxes
     company_financial_analysis
+    accounts_fin_ana
 
 .. raw:: html
 

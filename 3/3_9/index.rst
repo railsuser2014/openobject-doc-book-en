@@ -39,6 +39,7 @@ with :mod:`sale` and its dependencies installed, and no particular chart of acco
     periods_and_fiscal_years
     payment_terms
     entries_at_the_start_of_a_year
+    accounts_place
 
 .. raw:: html
 
