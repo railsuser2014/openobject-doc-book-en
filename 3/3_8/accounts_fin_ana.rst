@@ -1,24 +1,40 @@
 
-Financial Analysis
-==================
+Analytic Analysis
+=================
 
-Various reports designed for financial analysis are based on the analytic accounts. Most of those
-are available directly from the tree of accounts or from the form view of the account.
+There are various reports designed for financial analysis are based on the analytic accounts. Most of these reports are available directly from the tree of analytic accounts or from the form view of the analytic account.
 
 Analysis per Account
 --------------------
 
-From an `Analytic Account` form, click on one of the :guilabel:`REPORTS` buttons to select a report.
-OpenERP provides the following financial analyses from the analytic accounts (and maybe more,
-depending on the additional installed modules):
+From the :menuselection:`Accounting -_> Configuration --> Analytic Accounting --> Analytic Accounts`, select one or more analytic accounts and then click one of the reports in the `Reports` section at the right side of the screen.
+OpenERP provides the following financial analyses from the analytic accounts (and maybe more, depending on the additional installed modules):
 
 *  :guilabel:`Cost Ledger`,
 
-*  :guilabel:`Cost Ledger (quantities only)`.
-
 *  :guilabel:`Inverted Analytic Balance`,
 
+*  :guilabel:`Cost Ledger (only quantities)`.
+
 *  :guilabel:`Analytic Balance`,
+
+.. index::
+   pair: balance; analytic
+
+Inverted Analytic Balance
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The inverted analytic balance provides a summary report relating general accounts and analytic accounts. This report shows the balances of the general accounts broken down by the selected analytic accounts from date / to date.
+
+.. figure::  images/analytic_balance_inverse.png
+   :scale: 65
+   :align: center
+
+   *The inverted analytic balance shows a breakdown of operations by analytic account (project)*
+
+This enables you to analyze your costs by general account. For example, if you examine your general
+account for staff salaries, you can obtain all your salary costs broken down by the different
+analytic (or project) accounts.
 
 .. index::
    pair: cost ledger; analytic
@@ -26,15 +42,13 @@ depending on the additional installed modules):
 The Cost Ledger
 ^^^^^^^^^^^^^^^
 
-The cost ledger provides all of the
-detailed entries for the selected accounts. It enables you to make a detailed analysis of each operation carried
-out on one or several projects.
+The cost ledger provides all of the detailed entries in general accounts for the selected analytic account(s). It enables you to make a detailed analysis of each operation carried out on one or several projects.
 
 .. figure::  images/analytic_cost_ledger.png
    :scale: 65
    :align: center
 
-   *The analytic cost ledger gives a detailed history of the entries in an analytic account*
+   *Cost Ledger*
 
 The Cost Ledger (Quantities Only)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -57,31 +71,12 @@ services journal for printing.
 
 .. tip:: Multiple Printing
 
-	To print several analytic accounts at once, you can make a multiple selection on the different
-	accounts in the tree of accounts.
-	Then click on the appropriate :guilabel:`Report` in the toolbar (in the web client), or
-	select one of the :guilabel:`Print` reports (in the GTK client), to export the whole selection into a
-	single PDF document.
+        To print several analytic accounts at once, you can make a multiple selection on the different
+        accounts in the tree of accounts.
+        Then click on the appropriate :guilabel:`Report` in the toolbar (in the web client), or
+        select one of the :guilabel:`Print` reports (in the GTK client), to export the whole selection into a
+        single PDF document.
 
-.. index::
-   pair: balance; analytic
-
-Inverted Analytic Balance
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The inverted analytic balance provides a summary report relating general accounts and
-analytic accounts. This report shows the balances of the general accounts
-broken down by the selected analytic accounts for a selected period.
-
-.. figure::  images/analytic_balance_inverse.png
-   :scale: 65
-   :align: center
-
-   *The inverted analytic balance shows a breakdown of operations by analytic account (project)*
-
-This enables you to analyze your costs by general account. For example, if you examine your general
-account for staff salaries, you can obtain all your salary costs broken down by the different
-analytic (or project) accounts.
 
 Analytic Balance
 ^^^^^^^^^^^^^^^^
@@ -103,16 +98,16 @@ a project for the different operations that you used to carry out the project.
 
 .. tip::  Multi-company
 
-	In a multi-company environment, each company can have its own general chart of accounts on the same
-	database.
-	The two general charts of accounts are independent, but can be linked in a third chart using a
-	view account to do the consolidation.
+        In a multi-company environment, each company can have its own general chart of accounts on the same
+        database.
+        The two general charts of accounts are independent, but can be linked in a third chart using a
+        view account to do the consolidation.
 
-	If the different companies collaborate on joint projects, they may all share the same analytic chart
-	of accounts.
-	In this environment, the cross-related reports like the balance and inverted balance are extremely
-	useful, because
-	they enable you to make an analysis per company by linking up to the general accounts.
+        If the different companies collaborate on joint projects, they may all share the same analytic chart
+        of accounts.
+        In this environment, the cross-related reports like the balance and inverted balance are extremely
+        useful, because
+        they enable you to make an analysis per company by linking up to the general accounts.
 
 Analytic Entries Analysis
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -201,13 +196,13 @@ planning, keeping customers up-to-date, and budgeting for resources.
 
 .. note:: Analytic Budgets
 
-	Analytic budgets can be budgeted in the :mod:`account_budget` module. They offer:
+        Analytic budgets can be budgeted in the :mod:`account_budget` module. They offer:
 
-	* forecasting projects in the medium term,
+        * forecasting projects in the medium term,
 
-	* controlling project costs,
+        * controlling project costs,
 
-	* comparisons with general accounts.
+        * comparisons with general accounts.
 
 .. Copyright © Open Object Press. All rights reserved.
 
