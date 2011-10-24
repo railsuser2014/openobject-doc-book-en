@@ -29,13 +29,13 @@ There are several reasons for this:
 
 .. note:: Independence from General Accounts
 
-	In some software packages, analytic accounts are managed as an extension of general accounts –
-	for example, by using the two last digits of the account code to represent analytic accounts.
+        In some software packages, analytic accounts are managed as an extension of general accounts –
+        for example, by using the two last digits of the account code to represent analytic accounts.
 
-	In OpenERP, analytic accounts are linked to general accounts but are treated totally
-	independently.
-	So you can enter various different analytic operations that have no counterpart in the general
-	financial accounts.
+        In OpenERP, analytic accounts are linked to general accounts but are treated totally
+        independently.
+        So you can enter various different analytic operations that have no counterpart in the general
+        financial accounts.
 
 While the structure of the general chart of accounts is imposed by law, the analytic chart of
 accounts is built to fit a company's needs closely.
@@ -59,10 +59,10 @@ here are some of those advantages:
 
 .. tip:: Who Benefits from Analytic Accounts?
 
-	Unlike general accounts, analytic accounts in OpenERP are not so much an accounting tool for Accounts as a
-	management tool for everyone in the company. (That is why they are also called management accounts.)
+        Unlike general accounts, analytic accounts in OpenERP are not so much an accounting tool for Accounts as a
+        management tool for everyone in the company. (That is why they are also called management accounts.)
 
-	The main users of analytic accounts should be the directors, general managers and project managers.
+        The main users of analytic accounts should be the directors, general managers and project managers.
 
 Analytic accounts make up a powerful tool that can be used in different ways. The trick is to create
 your own analytic structure for a chart of accounts that closely matches your company's needs.
@@ -77,9 +77,7 @@ with :mod:`sale` and its dependencies installed, and no particular chart of acco
 .. toctree::
 
     4_10_Accounts_analytic_chart
-    4_10_Accounts_place
     4_10_Accounts_record
-    4_10_Accounts_fin_ana
 
 .. raw:: html
 

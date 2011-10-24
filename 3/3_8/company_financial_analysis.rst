@@ -1,108 +1,6 @@
 
 .. index::
-  single: financial analysis
-
-.. index:: indicators
-
-Management Indicators
----------------------
-
-.. note:: Financial Indicators
-
-        Indicators, sometimes called financial ratios, are tools to analyse a company's finances.
-        They enable you to compare two accounts or sets of accounts from the balance sheet or the profit
-        and loss account, in the form of a ratio.
-        They also let you measure the financial health of a company, and make comparisons from one year to
-        the next or against those of other companies.
-
-.. index::
-   single: module; account_report
-
-To define financial indicators in OpenERP, you should install the module :mod:`account_report` (from ``extra-addons``).
-When installing the module, the usual financial indicators are registered in OpenERP.
-
-You can consult your indicators, calculated in real time, from the menu :menuselection:`Accounting --> Reporting --> Generic Reporting --> Reporting --> Custom reporting`.
-
-Indicators defined by default in OpenERP are the following:
-
-*  :guilabel:`Indicators of Working Capital` : determines if the company can pay its short term debts in
-   normal conditions. It is calculated from \ ``(Stocks + Cash + Current Assets) / Current
-   Liabilities``\  .
-
-*  :guilabel:`Financial Ratios` : enables you to calculate the company's liquidity. It is defined as follows:
-   \ ``( Current Assets – Stocks) / Current Liabilities``\  .
-
-*  :guilabel:`Fixed Assets` : in a going concern, the value of fixed assets are covered in the first place by
-   owners' capital and in the second place by all of the long term liabilities. Ideally, this indicator
-   will be greater than 1.
-
-.. tip:: Calculation of Indicators
-
-        Calculating indicators can take quite a while in OpenERP, because you have to analyse the whole
-        company's accounting entries.
-
-        So it is best not to calculate all of the indicators at once, but just a small selection to keep
-        calculation time within limits.
-
-Time Analysis of Indicators
-^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-You can analyze the financial indicators along two axes. You must have a figure calculated at a
-particular instant of time when you compare accounts, balances and the ratios between them. But you
-can also calculate a time series to follow the change of a given indicator throughout the life of
-the company.
-
-.. index::
-   single: module; account_report
-
-To do a temporal analysis of your indicators, you must install the module
-:mod:`account_report` from the set of modules in ``extra-addons``.
-
-Once this module is installed, you can click on a financial indicator to get a graph of its
-evolution in time.
-
-.. figure::  images/account_report_history.png
-   :scale: 75
-   :align: center
-
-   *History of an accounting indicator*
-
-Defining your Own Indicators
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-You can define your own indicators in OpenERP using the menu
-:menuselection:`Accounting --> Reporting --> Generic Reporting --> Reporting --> Custom reporting`.
-
-.. figure::  images/account_indicator_new.png
-   :scale: 75
-   :align: center
-
-   *Defining a new indicator*
-
-You should make sure that the accounts that you base indicators on are given unique account codes,
-because codes are used in the creation of formulae. Create a formula using the syntax indicated in
-the instructions at the bottom of the form:
-
-* Sum of debits in a general account: \ ``debit('12345')``\  ,
-
-* Sum of credits in a general account: \ ``credit('12345')``\  ,
-
-* Balance of a general account: \ ``balance('12345')``\  ,
-
-* Value of another indicator: \ ``report ('IND')``\  .
-
-where:
-
-* \ ``12345``\   represents the code of a general account,
-
-* \ ``IND``\   represents the code of another indicator.
-
-So, using this notation, the cash ratio is defined by \ ``balance('4', '5') / balance('1')``\   –
-that is the balance in accounts 4 and 5 divided by the balance in account 1.
-
-.. index::
    single: budgeting
-
 
 Good Management Budgeting
 -------------------------
@@ -170,8 +68,7 @@ From the same list of actions, you can also print the ``Print Summary`` report, 
 
 Each of these reports can be printed from a specific date to a specific date. The End Date selected in the wizard determines the theoretical amount; if you select the last day of your financial year, the theoretical amount will be calculated as a function of that date (thus considering a complete financial year).
 
-The percentage for a budget is calculated as follows:
-  (amount realised / theoretical amount) * 100
+The percentage for a budget is calculated as follows: (amount realised / theoretical amount) x 100
 This way you get a view on how much of the forecasted amount has been actually realised in your accounting.
 
 The figure :ref:`fig-accbudg` gives an example of a budget produced by OpenERP.
@@ -187,7 +84,7 @@ The figure :ref:`fig-accbudg` gives an example of a budget produced by OpenERP.
 You could also use the menu :menuselection:`Accounting --> Reporting --> Generic Reporting --> Budgets --> Budget Lines`.
 This gives a graphic budgetary analysis for each budget line.
 
-From the menu :menuselection:`Accounting --> Configuration --> Budgets --> Budgetary Positions`, you can also print the budgets for an invidual budgetary position.
+From the menu :menuselection:`Accounting --> Configuration --> Budgets --> Budgetary Positions`, you can print the budgets for an individual budgetary position.
 
 The Accounting Dashboard
 ------------------------
@@ -219,7 +116,7 @@ For most of the panels of the `Accounting Dashboard`, you can click a line or a 
 
 The `Accounting Dashboard` is dynamically integrated, which means that you can navigate easily through the data if you want more detail about certain factors, and edit the entries if necessary.
 
-The ``Change Layout``button at the top right allows you to change the way the dashboard is displayed; you can choose among several options, such as one column, two columns, etc.
+The ``Change Layout`` button at the top right allows you to change the way the dashboard is displayed; you can choose among several options, such as one column, two columns, etc.
 You can also add other features to the dashboard and customise it to your needs with the ``Add Widget`` button. You can easily ``Undo`` changes or ``Reset`` the original dashboard.
 
 .. Copyright © Open Object Press. All rights reserved.
