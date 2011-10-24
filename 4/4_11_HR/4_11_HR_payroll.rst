@@ -13,7 +13,7 @@ You can manage your company's payroll by using this module.The configuration wiz
 OpenERP provides the following features for efficient payroll management process:-
 
 - Salary rule: are used to compute data like allowances, deductions, net, taxes, contribution registers, etc.
-- Define salary rules by using the expression.
+- You can define salary rules by using the expression.
 - Salary structure: Define a set of rules usually applied to a category of employees.
 - Salary calculation after considering all the allowances, deductions and incentives (if any) etc.,
 - Contribution registers: A register containing to whom the company or the employee have to pay taxes.
@@ -44,7 +44,7 @@ After entering the Salary Rule Category information click *Save.*
 Salary Rules
 ------------
 
-Salary Rules  are the various types of Allownces, Deductions, etc.You can define Salary Rules by using the menu
+Salary Rules are the various types of Allowances, Deductions, etc.You can define Salary Rules by using the menu
 :menuselection:`Human Resources --> Configuration --> Payroll --> Salary Rules` and click *New.*
 
 
