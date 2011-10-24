@@ -107,11 +107,19 @@ that is the balance in accounts 4 and 5 divided by the balance in account 1.
 Good Management Budgeting
 -------------------------
 
-OpenERP manages its budgets using both General and Analytic Accounts. You will see how to do this here for General and Analytic Accounts.
+Budgets are important for a company to get a good grip on forecasted expenses and revenues. They allow you to measure your actual financial performance against the planned one.
+
+OpenERP manages its budgets using both General and Analytic Accounts.
 Go to :menuselection:`Administration --> Modules --> Modules` and install :mod:`account_budget` to be able to do this.
 
-The first step in defining budgets is to determine the general accounts you want to use.
-You can use Budgetary positions for this from the menu :menuselection:`Accounting --> Configuration --> Budgets --> Budgetary Positions`. Here you can link the general accounts for which you want to keep budgets. The aim is to group general accounts logically, according to sales or purchases, for instance.
+The first step in defining budgets is to determine the general accounts for which you want to keep budgets (i.e. expense or income accounts).
+You can use ``Budgetary Positions`` for this from the menu :menuselection:`Accounting --> Configuration --> Budgets --> Budgetary Positions`. Here you can select the general accounts for which you want to keep budgets. The aim is to group general accounts logically, according to sales or purchases, for instance. OpenERP has no limitations as to the account types that can be used for budgeting.
+
+.. figure::  images/account_budget_pos.png
+   :scale: 75
+   :align: center
+
+   *Budgetary Position for Sales*
 
 To define your budgets, go to the menu :menuselection:`Accounting --> Budgets --> Budgets`. Define a new budget by clicking the `New` button.
 
@@ -119,57 +127,75 @@ To define your budgets, go to the menu :menuselection:`Accounting --> Budgets --
    :scale: 75
    :align: center
 
-   *Budget Form*
+   *Optimistic Budget*
 
 .. index::
    single: budget revisions
 
 .. tip:: Budget Revisions
 
-        Even though you *can* modify a budget at any time to make a revision of it, it is best if you do not do
-        that, because then you have no history of changes.
+    Even though you *can* modify a budget at any time to make a revision, we recommend you to create a new budget, because otherwise you will have no history of changes.
 
-        Rather than edit an existing budget, make a new version so that you can keep your original
-        estimates safe for comparison. This lets you analyse your changing perspectives of the
-        company from revision to revision.
+    Rather than edit an existing budget, make a new version so that you can keep your original estimates safe for comparison. This lets you analyse your changing perspectives of the company from revision to revision.
 
-Begin data entry by entering a :guilabel:`Name`, a :guilabel:`Code`, a :guilabel:`Start Date` and an :guilabel:`End Date` in your new budget.
-Then you can define the budgeted amounts within that period, one by one. For each, you define:
+To define your budgets, start by entering a :guilabel:`Name`, a :guilabel:`Code`, a :guilabel:`Start Date` and an :guilabel:`End Date` for your new budget. Then you can define the budgeted amounts within that period, one by one (enter negative amounts for purchases, positive amounts for sales). For each, you define:
 
 * an :guilabel:`Analytic Account`
 
-* a :guilabel:`Budgetary Position` : for example ``Sales`` or ``Purchases``,
+* a :guilabel:`Budgetary Position`, for example ``Sales`` or ``Purchases``,
 
-* a :guilabel:`Start Date` and :guilabel:`End Date` for the use of the budget,
+* a :guilabel:`Start Date` and an :guilabel:`End Date` for the budget,
 
 * a :guilabel:`Planned Amount` in the default currency of the chart of accounts.
 
-Once it is completed, you can save your budget.
+Once this information is completed, save your budget.
 
-To print a budget and make calculations of expenditure through budget, use the menu
-:menuselection:`Accounting --> Budgets --> Budgets`. OpenERP then gives you a
-list of available budgets. Select one or more budgets and then click :guilabel:`Print Budgets` to create
-the report for each, in a date range of your choice.
+A budget has various stages:
+
+* Confirmed: the budget is to be reviewed, but it can still be changed before actual approval;
+
+* Approved: the budget is approved by the budget holder; the name of the user approving the budget will be displayed in the ``Validate User`` field.
+
+You can cancel a budget and reset it to draft for the two preceeding steps.
+
+* Done: the budget is fully approved and no changes will be allowed. You can no longer cancel the budget and reset it to draft.
+
+The Theoretical amount indicates the actual amount that could have been realised for the budget concerned according to the current date. When your budget is 1200 for 12 months, and today is the 30 October, the theoretical amount will be 1000, since this is the actual amount that could have been realised to date.
+
+To print a budget and make calculations of expenditure through budget, use the menu :menuselection:`Accounting --> Budgets --> Budgets`. OpenERP then gives you a list of available budgets. Select one or more budgets and then click :guilabel:`Print Budgets` to create the report for each, in a date range of your choice.
+
+The ``Print Budget`` report gives an overview of each analytic account included in your budget, according to the individual budgetary positions for that account.
+
+From the same list of actions, you can also print the ``Print Summary`` report, which will give you a total per analytic account (without splitting by budgetary position).
+
+Each of these reports can be printed from a specific date to a specific date. The End Date selected in the wizard determines the theoretical amount; if you select the last day of your financial year, the theoretical amount will be calculated as a function of that date (thus considering a complete financial year).
+
+The percentage for a budget is calculated as follows:
+  (amount realised / theoretical amount) * 100
+This way you get a view on how much of the forecasted amount has been actually realised in your accounting.
+
 The figure :ref:`fig-accbudg` gives an example of a budget produced by OpenERP.
 
 .. _fig-accbudg:
 
 .. figure::  images/account_budget.png
-   :scale: 65
+   :scale: 75
    :align: center
 
    *Printing a Budget*
 
 You could also use the menu :menuselection:`Accounting --> Reporting --> Generic Reporting --> Budgets --> Budget Lines`.
-This gives a budgetary analysis report for each budget line.
+This gives a graphic budgetary analysis for each budget line.
+
+From the menu :menuselection:`Accounting --> Configuration --> Budgets --> Budgetary Positions`, you can also print the budgets for an invidual budgetary position.
 
 The Accounting Dashboard
 ------------------------
 
-You can open the `Accounting Dashboard` using the menu :menuselection:`Accounting --> Reporting --> Dashboard --> Accounting Dashboard`.
+You can open the `Accounting Dashboard` in more than one way: either by clicking the ``Accounting`` button at the top of the web screen, or from the menu :menuselection:`Accounting --> Reporting --> Dashboard --> Accounting Dashboard`.
 
 .. figure::  images/account_board.png
-   :scale: 65
+   :scale: 75
    :align: center
 
    *Accounting Dashboard*
@@ -177,26 +203,24 @@ You can open the `Accounting Dashboard` using the menu :menuselection:`Accountin
 .. index::
    single: module; board_account
 
-OpenERP gives you an accounting dashboard that can be presented to your accounting staff as they sign into the system (if you have set it as
-their Home Page). This dashboard provides an analysis of the company's financial health at a glance.
+OpenERP gives you an accounting dashboard that will be presented to your accounting staff as they sign in to the Accounting system (you can also set the dashboard as their Home Page). This dashboard provides an analysis of the company's financial health at a glance.
 
-The description of the different parts of the dashboard, from top to bottom, then from left
-to right, is as follows:
+The description of the different parts of the dashboard, from top to bottom, then from left to right, is as follows:
 
 *  :guilabel:`Customer Invoices to Approve` : gives the list of invoices waiting to be approved by an accountant.
 
-*  :guilabel:`Company Analysis` : gives the credit, debit and balance of all account types.
+*  :guilabel:`Company Analysis` : lists the debit, credit and balance of all account types.
 
-*  :guilabel:`Treasury` : shows balance per Account
+*  :guilabel:`Treasury` : shows the balance per Bank account in graphical view.
 
-*  :guilabel:`Aged receivables` : gives a weekly graph of the receivables that have not yet been
-   reconciled.
+*  :guilabel:`Aged Receivables` : gives a weekly graph of the receivables that have not yet been reconciled.
 
-In each panel of the `Accounting Dashboard`, you can click the :guilabel:`Zoom` button at the top
-right to investigate the detail of your financial indicators.
+For most of the panels of the `Accounting Dashboard`, you can click a line or a graph to investigate the detail of your financial indicators.
 
-The `Accounting Dashboard` is dynamically integrated, which means that you can navigate easily through
-the data if you want more detail about certain factors, and edit the entries if necessary.
+The `Accounting Dashboard` is dynamically integrated, which means that you can navigate easily through the data if you want more detail about certain factors, and edit the entries if necessary.
+
+The ``Change Layout``button at the top right allows you to change the way the dashboard is displayed; you can choose among several options, such as one column, two columns, etc.
+You can also add other features to the dashboard and customise it to your needs with the ``Add Widget`` button. You can easily ``Undo`` changes or ``Reset`` the original dashboard.
 
 .. Copyright © Open Object Press. All rights reserved.
 
