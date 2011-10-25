@@ -15,13 +15,18 @@ OpenERP provides the following financial analyses from the analytic accounts (an
 
 *  :guilabel:`Analytic Balance`,
 
+
+.. note:: Menu
+
+    At the time of writing, there is no separate menu to print analytic reporting.
+
 .. index::
    pair: cost ledger; analytic
 
 The Cost Ledger
 ---------------
 
-The cost ledger provides all of the detailed entries in general accounts for the selected analytic account(s). It enables you to make a detailed analysis of each operation carried out on one or several projects.
+The cost ledger provides the entries in general accounts for the selected analytic account(s). It enables you to make a detailed analysis of each operation carried out on one or several projects.
 
 .. figure::  images/analytic_cost_ledger.png
    :scale: 65
