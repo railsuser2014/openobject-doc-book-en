@@ -54,7 +54,7 @@ A budget has various stages:
 
 * Approved: the budget is approved by the budget holder; the name of the user approving the budget will be displayed in the ``Validate User`` field.
 
-You can cancel a budget and reset it to draft for the two preceeding steps.
+You can cancel a budget and reset it to draft for the two preceding steps.
 
 * Done: the budget is fully approved and no changes will be allowed. You can no longer cancel the budget and reset it to draft.
 

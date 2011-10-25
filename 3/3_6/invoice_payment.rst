@@ -137,7 +137,7 @@ Then add the bank account details for each partner that will pay you through a b
 
 Download the CODA file from your bank to any directory. Import the electronic bank statement through the menu :menuselection:`Accounting --> Periodical Processing --> Statements --> Import Coda Statements`.
 
-Enter the data required in the wizard (receivable and payable account, bank journal and a default account to post to when no correspoonding partner is found). Then select the CODA file on your directory and click the ``Import`` button to start processing the CODA file.
+Enter the data required in the wizard (receivable and payable account, bank journal and a default account to post to when no corresponding partner is found). Then select the CODA file on your directory and click the ``Import`` button to start processing the CODA file.
 
 OpenERP will then import a draft bank statement in the selected journal and will match all corresponding customer / supplier payments when possible. You can change the draft statement if necessary from the menu :menuselection:`Accounting --> Bank and Cash --> Bank Statements`. You can check any issues during file loading from the menu :menuselection:`Accounting --> Bank and Cash --> Coda Import Logs`.
 

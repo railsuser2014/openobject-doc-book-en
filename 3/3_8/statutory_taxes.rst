@@ -17,7 +17,7 @@ You will find the following wizard which is used to filter the resulting report.
 
    *Preparing a General Ledger*
 
-Select the proper options and journal(s) from the above wizard to print the `General Ledger`. The report can also be filtered by date or by period. When you choose to print the general ledger from one date to another, or for one or more periods, you can also have the initial balances printed for the periods preceeding the periods you selected.
+Select the proper options and journal(s) from the above wizard to print the `General Ledger`. The report can also be filtered by date or by period. When you choose to print the general ledger from one date to another, or for one or more periods, you can also have the initial balances printed for the periods preceding the periods you selected.
 You can sort the report by date or by journal / partner.
 
 .. figure::  images/account_general_ledger.png
