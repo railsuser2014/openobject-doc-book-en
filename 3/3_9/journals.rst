@@ -5,84 +5,64 @@
 Journals
 ========
 
-All your accounting entries must appear in an accounting journal. So you must, at a minimum, create
-a Sales Journal for customer invoices, a Purchase Journal for supplier invoices and a Cash Journal
-for cash and bank transactions.
+All your accounting entries need to appear in an accounting journal. So you should create a Sales Journal for customer invoices, a Sales Refund journal for customer credit notes, a Purchase Journal for supplier invoices, a Purchase Refund journal for supplier credit notes and a Bank Journal for bank transactions.
 
 Configuring a Journal
 ---------------------
 
-To view, edit or create new journals use the menu :menuselection:`Accounting -->
-Configuration --> Financial Accounting --> Journals --> Journals`.
+To view, edit or create new journals use the menu :menuselection:`Accounting --> Configuration --> Financial Accounting --> Journals --> Journals`.
 
 .. figure::  images/account_journal_form.png
    :scale: 75
    :align: center
 
-   *Definition of an accounting journal*
+   *Defining an Accounting Journal*
 
-You have to associate a view with each journal. The journal view indicates the fields that must be
-visible and required to enter accounting data in that journal. The view determines both the order of
-the fields and the properties of each field. For example, the field :guilabel:`Account Number` must
-appear when entering data in the bank journal but not in the other journals.
+Blue fields are mandatory fields. When you select a journal type, some configuration parameters will be preset. The journal type will tell the system where the journal concerned can be used.
 
-Before creating a new view for a journal, check that there is nothing similar already defined for
-another journal. You should only create a new view for new types of journals.
+Each journal has a specific way of displaying data. The type of journal determines the journal view, which indicates the fields that need to be visible and are required to enter accounting data in that journal. The view determines both the order of the fields and the properties of each field. For example, the field :guilabel:`Statement` has to appear when entering data in the bank journal, but not in the other journals.
+
+You can also create your own journal views. However, before creating a new view for a journal, check whether there is nothing similar already defined. You should only create a new view for new types of journals.
 
 .. note:: Customizing Views
 
-	You will often have to edit a journal view.
-	For example, for a journal in a foreign currency you add a field for the currency, and this currency
-	must be in the journal view.
+        You might sometimes have to edit a journal view. For example, for a journal in a foreign currency you add a field for the currency, and this currency should be in the journal view.
 
-	Conversely, to simplify data entry, the journal view for the bank is quite different from one of the
-	invoicing journals.
+You can create a sequence for each journal. This sequence gives the automatic numbering for accounting entries. Or several journals can use the same sequence if you want to define one for them all.
 
-You can create a sequence for each journal. This sequence gives the automatic numbering for
-accounting entries. Or several journals can use the same sequence if you want to define one for them
-all.
+.. tip:: Sequences
 
-The credit and debit account by default permit the automatic generation of counterpart entries when
-you are entering data in the journal quickly. For example, in a bank journal you should put an
-associated bank account for default matching credits and debits, so that you do not have to create
-counterparts for each transaction manually.
+    Sequences can also be created from the :menuselection:`Administration --> Configuration -_> Sequences & Identifiers --> Sequences`.
 
-A journal can be marked as being centralized. When you do this, the counterpart entries will not be
-owned by each entry, but globally for the given journal and period. You will then have a credit line
-and a debit line centralized for each entry in one of these journals, meaning that both credit and
-debit appear on the same line.
+The default credit and debit account allow the software to automatically generate counterpart entries when you are entering data in the journal quickly. In some journals, debit and credit accounts are mandatory. For example, in a bank journal you should put an associated bank account, so that you do not have to create counterparts for each transaction manually.
+
+A journal can be marked as being centralised. When you do this, the counterpart entries will not be owned by each entry, but globally for the given journal and period. You will then have a credit line and a debit line centralized for each entry in one of these journals, meaning that both credit and debit appear on the same line. This option is used when posting opening entries in a situation journal.
+
+.. note:: Bank Journal, Easy Configuration
+
+    A bank journal can automatically be created from the bank account(s) you define for your company. Go to :menuselection:`Accounting --> Configuration --> Financial Accounting --> Accounts --> Setup your Bank Accounts`. Here you create the bank account or IBAN number of your company's bank account(s). Fill in the Bank Name, and when you save the entry, your Bank Journal will automatically be created with the Bank Name and the Account Number. The general ledger account for this bank will also be created for you.
 
 Controls and Tips for Data Entry
 --------------------------------
 
-You can carry out two types of control on journals in OpenERP – controls over the financial
-accounts and access controls for groups of users. In addition to these controls, you can also apply
-all of the rights management detailed in :ref:`ch-config`.
+You can carry out two types of control on journals in OpenERP – controls over the accounts and access controls for groups of users. In addition to these controls, you can also apply all of the standard user rights management.
 
-To avoid mistakes while entering accounts data, you can place conditions in the general accounts
-about who can use a given account. To do this, you must list all the accounts or valid account types
-in the second tab, :guilabel:`Entry Controls`. If you have not added any accounts there, OpenERP applies no
-restriction on data entry in the accounts or journals. If you list accounts and the types of accounts
-that can be used in a journal, OpenERP prevents you from using any account not in that list. This
-verification step starts from the moment you save the entry.
+To avoid entering account data in wrong accounts, you can put conditions on the general accounts about which journal can use a given account. To do this, you have to list all the accounts or valid account types in the second tab, :guilabel:`Entry Controls`. If you have not added any accounts there, OpenERP applies no restriction on the accounts for that journal. If you list accounts and/or the types of accounts that can be used in a journal, OpenERP prevents you from using any account or account type not in that list. This verification step starts from the moment you enter data. You can only select allowed accounts or account types.
 
-This functionality is useful for limiting possible data entry errors. Also, in a bank journal, it is
-possible to restrict the accounts that can be linked to a bank to classes 1 to 5. Using this, you would
-help prevent the user from making any false entries in the journal.
+This functionality is useful for limiting possible data entry errors by restricting the accounts to be used in a journal.
 
 .. tip:: Control of Data Entry
 
-	In accounting it is not a good idea to allow a data entry directly from bank account A to bank
-	account B.
-	If you enter a transaction from bank A to bank B, the transaction will be accounted for twice.
+        In accounting it is not a good idea to allow a data entry directly from bank account A to bank
+        account B.
+        If you enter a transaction from bank A to bank B, the transaction will be accounted for twice.
 
-	To prevent this problem, pass the transaction through intermediate account C.
-	At the time of data entry, the system checks the type of account that is accepted in the bank
-	journal:
-	only accounts that are not of type ``Bank`` are accepted.
+        To prevent this problem, pass the transaction through intermediate account C.
+        At the time of data entry, the system checks the type of account that is accepted in the bank
+        journal: only accounts that are not of type ``Bank`` are accepted.
 
-	If your accountant defines this control properly, non-accounting users are prevented from
-	transferring payment from one bank to another, reducing your risks.
+        If your accountant defines this control properly, non-accounting users are prevented from
+        transferring payments from one bank to another, reducing your risks.
 
 .. Copyright © Open Object Press. All rights reserved.
 
