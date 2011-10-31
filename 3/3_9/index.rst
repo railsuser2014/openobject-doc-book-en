@@ -33,7 +33,6 @@ OpenERP lets you adapt and reconfigure many functions to ease the task of data e
     tax_structure
     chart_of_accounts
     journals
-    payment_terms
     entries_at_the_start_of_a_year
     accounts_place
 
