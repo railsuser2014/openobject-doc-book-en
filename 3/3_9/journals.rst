@@ -32,7 +32,7 @@ You can create a sequence for each journal. This sequence gives the automatic nu
 
 .. tip:: Sequences
 
-    Sequences can also be created from the :menuselection:`Administration --> Configuration -_> Sequences & Identifiers --> Sequences`.
+    Sequences can also be created from the :menuselection:`Administration --> Configuration --> Sequences & Identifiers --> Sequences`.
 
 The default credit and debit account allow the software to automatically generate counterpart entries when you are entering data in the journal quickly. In some journals, debit and credit accounts are mandatory. For example, in a bank journal you should put an associated bank account, so that you do not have to create counterparts for each transaction manually.
 
