@@ -14,68 +14,51 @@ For the initial setup of good analytic accounts you should:
 Setting up the Chart of Accounts
 --------------------------------
 
-Start by choosing the most suitable analytic representation for your company before entering it into
-OpenERP. To create the different analytic accounts, use the menu :menuselection:`Accounting
---> Configuration --> Analytic Accounting --> Analytic Accounts` and click the `New` button.
+Start by choosing the most suitable analytic representation for your company before entering it into OpenERP. To create the different analytic accounts, use the menu :menuselection:`Accounting--> Configuration --> Analytic Accounting --> Analytic Accounts` and click the `New` button.
+Note that the data you see when creating an analytic account will depend upon the business applications installed.
 
 .. figure::  images/account_analytic_form.png
    :scale: 75
    :align: center
 
-   *Setting up an analytic account*
+   *Setting up an Analytic Account*
 
 To create an analytic account, you have to complete the main fields:
 
 * the :guilabel:`Account Name`,
 
-* the :guilabel:`Account Code` : used as a shortcut for selecting the account,
+* the :guilabel:`Account Code`: used as a shortcut for selecting the account,
 
-* the :guilabel:`Account Type` : just like general accounts, the \ ``View``\   type is used for
-  virtual accounts which are used only to create a hierarchical structure and for subtotals, and not
-  to store accounting entries,
+* the :guilabel:`Parent Analytic Account`: use this field to define the hierarchy between the accounts.
 
-* the :guilabel:`Parent Analytic Account` : defines the hierarchy between the accounts.
+* the :guilabel:`Account Type`: just like general accounts, the \ ``View``\ type is used for virtual accounts which are used only to create a hierarchical structure and for subtotals, and not to store accounting entries. The \ ``Normal``\ type will be used for analytic accounts containing entries.
 
-If the project is for a limited time you can define a start and end date here. The :guilabel:`State`
-field is used to indicate whether the project is running (\ ``Open``\ ), waiting for information
-from the client (\ ``Pending``\ ), \ ``Draft``\   or \ ``Closed``\  .
+If an analytic account (e.g. a project) is for a limited time, you can define a start and end date here.
 
-Finally, if the analytic account is a client project you can complete the fields about the partner,
-which you would need so that you can invoice the partner:
-
-* the :guilabel:`Partner`,
-
-* a :guilabel:`Sale Pricelist`, which shows how services linked to the project should be charged,
-
-* a :guilabel:`Max. Invoice Price`, showing the maximum invoice price regardless of actual
-  overspend,
-
-* a :guilabel:`Maximum Quantity`, for contracts with a fixed limit of hours to use,
-
-* an :guilabel:`Invoicing Rate per Journal` field, which defines an invoicing rate and whether the project
-  should be invoiced automatically from the services represented by the costs in the analytic account.
+The :guilabel:`Maximum Quantity` can be used for contracts with a fixed limit of hours to use,
 
 .. index::
    single: invoicing
 
 .. tip:: Invoicing
 
-	You have several methods available to you in OpenERP for automated invoicing:
+        You have several methods available to you in OpenERP for automated invoicing:
 
-	* Service companies usually use invoicing from purchase orders, analytic accounts or 
-	  project management tasks.
+        * Service companies usually use invoicing from purchase orders, analytic accounts or
+          project management tasks.
 
-	* Manufacturing and trading companies more often use invoicing from deliveries or customer purchase
-	  orders.
+        * Manufacturing and trading companies more often use invoicing from deliveries or customer purchase
+          orders.
 
-Once you have defined the different analytic accounts, you can view your chart through the menu
-:menuselection:`Accounting --> Charts --> Chart of Analytic Accounts`.
+        For more information about invoicing from projects, we refer to the book (soon to be released) about Project and Services Management.
+
+Once you have defined the different analytic accounts, you can view your chart through the menu :menuselection:`Accounting --> Charts --> Chart of Analytic Accounts`. You can display analytic accounts for one or more periods or for an entire financial year.
 
 .. figure::  images/account_analytic_chart.png
-   :scale: 65
+   :scale: 85
    :align: center
 
-   *Example of an analytic chart for projects*
+   *Analytic Chart of Accounts*
 
 .. index::
    single: module; hr_timesheet_invoice
@@ -83,21 +66,17 @@ Once you have defined the different analytic accounts, you can view your chart t
 
 .. tip:: Setting up an Analytic Account
 
-	The setup screen for an analytic account can vary greatly depending on the modules installed in
-	your database.
-	For example, you will see information about recharging services only if you have the module
-	:mod:`hr_timesheet_invoice` installed.
+        The setup screen for an analytic account can vary greatly depending on the modules installed in your database.
+        For example, you will see information about recharging services only if you have the module :mod:`hr_timesheet_invoice` installed.
 
-	Some of these modules add helpful management statistics to the analytic account.
-	The most useful is probably the module :mod:`account_analytic_analysis`,
-	which adds such information as indicators about your margins, invoicing amounts, and latest service
-	dates and invoice dates.
+        Some of these modules add helpful management statistics to the analytic account. The most useful is probably the module :mod:`account_analytic_analysis`, which adds such information as indicators about your margins, invoicing amounts, and latest service
+        dates and invoice dates.
 
 Creating Journals
 -----------------
 
-Once the analytic chart has been created for your company you have to create the different journals.
-These enable you to categorize the different accounting entries by their type:
+Once the analytic chart has been created for your company, you have to create the different journals.
+These journals enable you to categorise the different accounting entries by their type, such as:
 
 * services,
 
@@ -107,50 +86,53 @@ These enable you to categorize the different accounting entries by their type:
 
 * miscellaneous expenditure,
 
-* sales,
+* sales.
 
-* situation entries (special situations, such as installation of the software).
 
 .. index::
    single: journal; minimal journals
 
 .. note::  Minimal Journals
 
-	At a minimum, you have to create one analytic journal for Sales and one for Purchases.
-	If you do not create these two, OpenERP will not validate invoices linked to an analytic account,
-	because it would not be able to create an analytic accounting entry automatically.
+        At a minimum, you have to create one analytic journal for Sales and one for Purchases.
+        If you do not create these two, OpenERP will not validate invoices linked to an analytic account,
+        because it would not be able to create an analytic accounting entry automatically.
 
 .. figure::  images/account_analytic_journal.png
-   :scale: 75
+   :scale: 85
    :align: center
 
-   *Creating an analytic journal*
+   *Creating an Analytic Journal*
 
-To define your analytic journals, use the menu :menuselection:`Accounting -->
-Configuration --> Analytic Accounting --> Analytic Journals` then click :guilabel:`New`.
+To define your analytic journals, use the menu :menuselection:`Accounting --> Configuration --> Analytic Accounting --> Analytic Journals` then click :guilabel:`New`.
 
 It is easy to create an analytic journal. Just give it a :guilabel:`Journal Name`, a :guilabel:`Journal Code` and a :guilabel:`Type`. The
 types available are:
 
-* \ ``Sales``\  , for sales to customers and for credit notes,
+* \ ``Sale``\, for sales to customers and for credit notes,
 
-* \ ``Purchases``\  , for purchases and miscellaneous expenses,
+* \ ``Purchase``\, for purchases and miscellaneous expenses,
 
-* \ ``Cash``\  , for financial entries,
+* \ ``Cash``\, for financial entries,
 
-* \ ``Situation``\  , to adjust accounts when starting an activity, or at the end of the financial
+* \ ``Situation``\, to adjust accounts when starting an activity, or at the end of the financial
   year,
 
-* \ ``General``\  , for all other entries.
+* \ ``General``\, for all other entries.
 
-The type of journal enables the software to automatically select the analytic journal based on the
-nature of the operation. For example, if you enter an invoice for a customer, OpenERP will
-automatically search for an analytic journal of type \ ``Sales``\  .
+The analytic journal now has to be linked to your general journals to allow OpenERP to post the analytic entries. For example, if you enter an invoice for a customer, OpenERP will automatically search for the analytic journal of type \ ``Sales``\ linked to your Sales Journal.
+Go to :menuselection:`Accounting--> Configuration --> Financial Accounting --> Journals --> Journals` and select for instance the Sales journal. In the :guilabel:`Analytic Journal` select the analytic sales journal.
 
-Working with Analytic Levels
-----------------------------
+.. figure::  images/account_general_journal.png
+   :scale: 85
+   :align: center
 
-You can work with analytic levels using OpenERP by installing :mod:`account_analytic_default` module.
+   *Linking an Analytic Journal to a Journal*
+
+Working with Analytic Defaults
+------------------------------
+
+You can work with analytic default accounts using OpenERP by installing :mod:`account_analytic_default` module.
 
 It allows you to automatically select analytic accounts based on some criteria:
 
@@ -160,14 +142,14 @@ It allows you to automatically select analytic accounts based on some criteria:
 * Company
 * Date
 
-You can configure these criteria using the menu :menuselection:`Accounting -->
-Configuration --> Analytic Accounting --> Analytic Defaults` and click the `New` button.
+You can configure these criteria using the menu :menuselection:`Accounting --> Configuration --> Analytic Accounting --> Analytic Defaults` and click the `New` button.
+According to the criteria you define here, the correct analytic account wil be proposed when creating an order or an invoice.
 
 .. figure::  images/account_analytic_default.png
-   :scale: 75
+   :scale: 85
    :align: center
 
-   *Specify criteria to select analytic account automatically*
+   *Specify Criteria to Automatically Select Analytic Account*
 
 .. Copyright © Open Object Press. All rights reserved.
 
