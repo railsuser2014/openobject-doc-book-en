@@ -8,14 +8,12 @@
 Configuring Accounts from A to Z
 ********************************
 
- *Accounts must be configured to meet your company's needs.
+ *Accounts have be configured to meet your company's needs.
  This chapter explains how to modify your chart of accounts, journals, access rights, initial
  account balances and default values for the initial configuration of your OpenERP accounts.*
 
-Assuming that it calculates sufficiently accurately, the best accounting software would be marked out by
-its usability and simplicity of data entry, and flexibility in configuring its different components.
-You would be able to easily modify the accounting module to meet your own needs, so that you could
-optimize it for the way you want to use it.
+Good accounting software requires great usability and simplicity of data entry, as well as flexibility in configuring its different components.
+You should be able to easily modify the accounting module to meet your own needs, so that you can optimise it for the way you want to use it.
 
 OpenERP lets you adapt and reconfigure many functions to ease the task of data entry:
 
@@ -25,18 +23,15 @@ OpenERP lets you adapt and reconfigure many functions to ease the task of data e
 
 * filling fields automatically during data entry with data that is already known to the system.
 
-For this chapter, you should start with a fresh database that includes demo data,
-with :mod:`sale` and its dependencies installed, and no particular chart of accounts configured.
-
 .. raw:: html
 
     <div class="all-toctree">
 
 .. toctree::
 
+    periods_and_fiscal_years
     chart_of_accounts
     journals
-    periods_and_fiscal_years
     payment_terms
     entries_at_the_start_of_a_year
     accounts_place

@@ -5,14 +5,11 @@ Periods and Financial Years
 .. note:: Periods and Fiscal Years
 
         A fiscal year (or financial year) corresponds to twelve months for a company.
-        In many countries, the fiscal year corresponds to a calendar year. That is not the case in
-        others.
+        In many countries, the fiscal year corresponds to a calendar year. That may not be the case in other countries.
 
-        The fiscal year is divided into monthly or three-monthly accounting periods.
+        The financial year can be divided into monthly or three-monthly accounting periods (when you have a quarterly declaration).
 
-OpenERP's management of the fiscal year is flexible enough to enable you to work on several years
-at the same time. This gives you several advantages, such as creating three-year budgets, and
-statements straddling several calendar years.
+OpenERP's management of the fiscal year is flexible enough to enable you to work on several years at the same time. This gives you several advantages, such as creating three-year budgets, and statements straddling several calendar years.
 
 .. index:: period
 .. index:: fiscal year
@@ -22,18 +19,15 @@ statements straddling several calendar years.
 Defining a Period or a Financial Year
 -------------------------------------
 
-To define your fiscal year, use the menu :menuselection:`Accounting --> Configuration -->
-Financial Accounting --> Periods --> Fiscal Year`. You can create several years in advance to define long-term budgets.
+To define your fiscal year, use the menu :menuselection:`Accounting --> Configuration --> Financial Accounting --> Periods --> Fiscal Year`. You can create several years in advance to define long-term budgets.
 
 .. figure::  images/account_period.png
    :scale: 75
    :align: center
 
-   *Defining a financial year and periods*
+   *Defining a Financial Year and Periods*
 
-First enter the date of the first day of your fiscal year and the last day. Then to create the
-periods, click one of the two buttons at the bottom depending on whether you want to create twelve
-1-month or four 3-month periods:
+First enter the date of the first day of your fiscal year and the last day. Then to create the periods, click one of the two buttons at the bottom depending on whether you want to create twelve 1-month or four 3-month periods:
 
 *  :guilabel:`Create Monthly Periods` ,
 
