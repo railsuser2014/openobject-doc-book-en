@@ -110,11 +110,9 @@ The main account fields are:
    ``Consolidation`` to create a virtual (or consolidation) chart of accounts,
    ``Closed`` to indicate accounts that are no longer used.
 
-*  :guilabel:`Account Type`: it is important to select the corresponding account type, as explained above. This will have an impact at year
-    closing and also when printing reports.
+*  :guilabel:`Account Type`: it is important to select the corresponding account type, as explained above. This will have an impact at year closing and also when printing reports.
 
-*  :guilabel:`Secondary Currency`: forces all the moves for this account to have this secondary currency.
-    Note that you have to define exchange rates.
+*  :guilabel:`Secondary Currency`: forces all the moves for this account to have this secondary currency. Note that you have to define exchange rates.
 
 *  :guilabel:`Outgoing Currencies Rate`: to be selected only when you add a secondary currency. You have two options for outgoing transactions: ``At Date`` or ``Average Rate``. Incoming transactions are always At Date.
 
