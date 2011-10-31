@@ -27,33 +27,26 @@ To define your fiscal year, use the menu :menuselection:`Accounting --> Configur
 
    *Defining a Financial Year and Periods*
 
-First enter the date of the first day of your fiscal year and the last day. Then to create the periods, click one of the two buttons at the bottom depending on whether you want to create twelve 1-month or four 3-month periods:
+First enter the date of the first day of your fiscal year and the last day. Then, to create the periods, click one of the two buttons at the bottom depending on whether you want to create twelve 1-month or four 3-months periods:
 
 *  :guilabel:`Create Monthly Periods` ,
 
 *  :guilabel:`Create 3 Months Periods` .
 
-Closing a Financial Year
-------------------------
+Do not forget to create an opening period to post your outstanding balances from the previous fiscal year. Click the ``Opening/Closing Period`` checkbox for this specific period.
 
-To close a financial year, use the menu :menuselection:`Accounting--> Periodical Processing --> End of Period --> Close a Fiscal Year`.
-A wizard opens asking you for the essential information it needs
-to close the following year.
+Closing a Period
+----------------
 
-When the year is closed, you can no longer create or modify any financial transactions in that year.
-So you should always make a backup of the database before closing the fiscal year. Closing a year
-is not obligatory, and you could easily do that sometime in the following year, when your accounts are
-finally sent to the statutory authorities, and no further modifications are permitted.
+To close a financial period, for example when a tax declaration has been made, go to the menu :menuselection:`Accounting--> Configuration --> Financial Accounting --> Periods --> Periods`. Click the green arrow to close the period for which you want no more entries to be posted.
 
-.. figure::  images/account_fy_close.png
-   :scale: 75
-   :align: center
+.. tip:: Opening Closed Periods
 
-   *Closing a financial year*
+    The system administrator can re-open a period should a period have been closed by mistake.
 
-It is also possible to close an accounting period. You could, for example, close a monthly period when
-a tax declaration has been made. When a period is closed, you cannot modify any of the entries in that
-period. To close an accounting period, use the menu :menuselection:`Accounting--> Periodical Processing --> End of Period --> Close a Period`.
+When a period is closed, you can no longer create or modify any transactions in that period. Closing a period is not obligatory, and you could easily leave periods open.
+
+To close an accounting period you can also use the menu :menuselection:`Accounting--> Periodical Processing --> End of Period --> Close a Period`.
 
 .. Copyright © Open Object Press. All rights reserved.
 
