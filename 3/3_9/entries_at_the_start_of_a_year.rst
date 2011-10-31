@@ -9,9 +9,9 @@ At the end of a financial year, you will have to transfer the closing balance of
 
 .. note:: OpenERP Accounting
 
-    This procedure is valid if you already have a financial year in OpenERP.
+    The procedure below is valid if you already have a financial year in OpenERP.
 
-Steps to Open a new Financial Year in an existing OpenERP Configuration
+Steps to Open a New Financial Year in an Existing OpenERP Configuration
 -----------------------------------------------------------------------
 
 .. index::
