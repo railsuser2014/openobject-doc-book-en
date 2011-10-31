@@ -62,7 +62,7 @@ The fields used to define an account type are the following:
 
 *  :guilabel:`Code`: the code of the account type.
 
-*  :guilabel:`P&L / BS Category`: this category determines where in a report the account will be printed (i.e. Balance Sheet and Profit and Loss). There are five types you can use: No type at all (/), Balance Sheet (Assets Accounts = active), Balance Sheet (Liabilities Accounts = passive), Profit & Loss (Income) and Profit & Loss (Expense).
+*  :guilabel:`PL/BS Category`: this category determines where in a report the account will be printed (i.e. Balance Sheet and Profit and Loss). There are five types you can use: No type at all (/), Balance Sheet (Assets Accounts = active), Balance Sheet (Liabilities Accounts = passive), Profit & Loss (Income) and Profit & Loss (Expense).
 
 *  :guilabel:`Deferral Method`: this field indicates how and whether the account will be transferred at financial year closing.
     ``None`` means that the account will not be transferred. Typically used for profit and loss accounts.
