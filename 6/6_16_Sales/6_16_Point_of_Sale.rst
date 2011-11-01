@@ -4,7 +4,7 @@ Point of Sale
 
 You can manage your retail business and its account transactions using point_of_sale module. 
 
-  *This module provides fast and easy way to manage sales orders. The primary function of point-of-sale is to make transactions easy to manage without sacrificing quick, efficient service or customer data. There are different ways of making payments and to split them between different payment modes. Computation of amount of money and creation and confirmation of the pickings are done automatically. Invoices are being generated automatically. Allows to refund old sales orders.*
+  *This module provides fast and easy way to manage sales orders. The primary function of point-of-sale is to make transactions easy to manage without sacrificing quick, efficient service or customer data. There are different ways of making payments and to split them between different payment modes. Computation of amount of money and creation and confirmation of the pickings are done automatically.*
 
 
 You can click on *Install* button given below the Point of Sales on the home page to install this module:
@@ -23,7 +23,7 @@ Daily sales of products, picking and delivery of the products and invoicing are 
 Generate Sale Orders
 --------------------
 
-For any retail business, the process flow of point of sale starts by making the sales orders. To start point of sale touchscreen application you can click on Point of Sale ‣ Start Point of Sale. It will open the following screen. Following figure is the form view of sale order you will get.
+For any retail business, the process flow of point of sale starts by making the sales orders. To start point of sale touchscreen application you can click on *Point of Sale ‣ Start Point of Sale*. It will open the following screen:
 
 .. figure:: images/2_pos_order.png
    :scale: 75
@@ -31,14 +31,14 @@ For any retail business, the process flow of point of sale starts by making the 
 
    *POS order view*
 
-There are three steps to make a complete sale order. 
+There are three steps to make a complete sale order:
   - Select products, quantity, discount, etc.
   - Make payment with or without selecting cash registers.
   - Print receipt of the payment.
 
-There are thumbnails of Products on the right side of the screen. You can click on the product you want and that product will be added in your list which you can see on the up left corner of the screen.
+There are thumbnails of Products on the right side of the screen. You can click on the product you are selling and that product will be added in your list which you can see on the up left corner of the screen.
 
-You can use the combinations of numbers with Qty, Disc and Price. If you want to add quantity then first you need to click on Qty button and press the numbers to enter the quantity. Same goes with Disc and Price. You can see it in the following screen.
+You can use the combinations of numbers with Qty, Disc and Price. If you want to add quantity then first you need to click on **Qty** button and press the numbers to enter the quantity. Same goes with **Disc** and **Price** buttons. You can see it in the following screen:
 
 .. figure:: images/3_order_products.png
    :scale: 75
@@ -51,7 +51,7 @@ Making Payment
 
 You need to make payment to complete a sale order. In OpenERP we provide you certain payment modes using which you can pay for your sale order.
 
-After finishing your order you can click on Payment button or any of the Cash registers listed on the left side. This will open a new screen which will display the total amount to be paid and selected register name. You can see it in the following figure:
+After finishing your order you can click on **Payment** button or any of the Cash registers listed on the left side. This will open a new screen which will display the total amount to be paid and selected register name. You can see it in the following figure:
 
 .. figure:: images/4_pos_payment.png
    :scale: 75
@@ -59,12 +59,12 @@ After finishing your order you can click on Payment button or any of the Cash re
 
    *Payment of sale order*
 
-There will be a Validate button on the screen. When you click on it a new screen will appear which consists of a payment receipt of the sale order. 
+There will be a **Validate** button on the screen. When you click on it a new screen will appear which consists of a payment receipt of the sale order. 
 
 Payment Receipt
 ---------------
 
-After you validate your sale order you will get a payment receipt and one button will appear *“Next Order”*, to create a new order. You can see it in the following screen:
+After you validate your sale order you will get a payment receipt and one button will appear **Next Order**, to create a new order. You can see it in the following screen:
 
 .. figure:: images/5_pos_payment_receipt.png
    :scale: 75
