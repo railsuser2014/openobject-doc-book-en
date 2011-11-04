@@ -5,11 +5,11 @@ Google Translate
 Name of the module:
 ``google_translate``
 
-This module translate OpenERP terms/fields/objects etc. in any language with the integration of Google Translate.
+This module translates OpenERP terms/fields/objects etc. into any language using Google Translate.
 
 You can find the menu here: Administration/Translation/Application terms/Translation Terms and Need review terms.
 
-Check below screenshots which translate string "how are you" in chinese language.
+Check the screenshots below which translate the phrase "how are you" into Chinese.
 
 .. note:: If the Need Review field is True then it will translate the source value to destination by given language.
 
