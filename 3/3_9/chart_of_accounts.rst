@@ -16,7 +16,7 @@ Using a Preconfigured Chart of Accounts
 ---------------------------------------
 
 On installation, the software allows you to select a default chart of accounts from a huge list of predefined charts. To install the chart of accounts as well as the tax definitions for your own country, select the chart corresponding to your country from the ``Installation Wizard``.
-The Generic Chart of Accounts offers a default (but limited) set of accounts which can beused as a basic chart in any country. The ``Chart of Accounts`` list also includes a lot of localised charts of accounts.
+The Generic Chart of Accounts offers a default (but limited) set of accounts which can be used as a basic chart in any country. The ``Chart of Accounts`` list also includes a lot of localised charts of accounts.
 
 .. figure::  images/account_chart.png
    :scale: 75
@@ -24,7 +24,7 @@ The Generic Chart of Accounts offers a default (but limited) set of accounts whi
 
    *Starting from a Generic Chart of Accounts*
 
-The wizard will change a bit according to the chart of accounts you select. For the Generic Chart you will be able to add a tax percentage, which will not be the case when you install, for instance, the chart named ``Belgium - Plan Comptable Minimum Normalise``. Here OpenERP will automaticaly install the tax configuration for Belgium too. You will
+The wizard will change a bit according to the chart of accounts you select. For the Generic Chart you will be able to add a tax percentage, which will not be the case when you install, for instance, the chart named ``Belgium - Plan Comptable Minimum Normalise``. Here OpenERP will automatically install the tax configuration for Belgium too. You will
 
 .. figure::  images/account_chart_be.png
    :scale: 75

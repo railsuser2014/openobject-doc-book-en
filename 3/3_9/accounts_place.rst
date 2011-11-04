@@ -143,7 +143,7 @@ It allows you to automatically select analytic accounts based on some criteria:
 * Date
 
 You can configure these criteria using the menu :menuselection:`Accounting --> Configuration --> Analytic Accounting --> Analytic Defaults` and click the `New` button.
-According to the criteria you define here, the correct analytic account wil be proposed when creating an order or an invoice.
+According to the criteria you define here, the correct analytic account will be proposed when creating an order or an invoice.
 
 .. figure::  images/account_analytic_default.png
    :scale: 85
