@@ -75,9 +75,30 @@ The new email and invoicing system in OpenERP allows you to create an invoice an
 
 The customer then has several options. If your customer also has an OpenERP instance, he can easily import the invoice you have sent him, simply by clicking the link.
 
-Description to be done when modules are ready.
+It is surprising to see that in the 21rst century, most companies still process Quotations & Invoices manually, mostly by post or e-mail. The trend is clearly for personal communication to disregard these legacy media, replacing them with instant messaging, social networks, etc. The Electronic Data Interchange (EDI) platform is here to try opening OpenERP to more modern communication systems, where electronic documents are exchanged and synchronized in real-time between business partners. We will initially support a simple EDI mechanism for certain OpenERP documents, like Sales Orders, Purchase Orders and Invoices. We defined a simple and modern electronic format (JSON-based) to represent these documents, and we have added import/export capabilities in this format for the corresponding OpenERP business objects.
 
-.. todo:: include EDI description when module is available
+The flow will be as follows:
+
+1. Your company issues a Sales Order, a Purchase Order or an Invoice for a specific partner, let's say Agrolait.
+
+2. Partner Agrolait receives an email with a link to an online preview of the document.
+
+3. In the online preview of the document, Agrolait can read the document, download or print the PDF version, and then choose between a few
+options:
+
+  a. import this document in his own OpenERP instance, simply by providing its address
+
+  b. ask to create a new OpenERP online instance, where the document will be pre-imported
+
+  c. ask for the raw EDI document, which the partner then can import in his own third-party software, possibly via a corresponding EDI import
+     system
+
+4. Partner Agrolait can also choose to directly pay online via Paypal or any other mechanism provided by your company.
+
+The email notification is freely customizable as an Email Template, and the online preview of the EDI document can be customized with a 6.1-web-addon.
+
+To get the EDI and automatic emailing of orders and invoices to work, you will have to install the :mod:`EDI` module.
+You have to add an email adress to the partner, and make sur the "Opt-out" checkbox is not selected. Ask your system administrator to configure an Outgoing Mail Server. Note that email notifications will be added to a mail queue, but you can force emails to be send directly from the :menuselection:`Tools --> Message`.
 
 Keep Track of your Customer's Payments
 --------------------------------------
