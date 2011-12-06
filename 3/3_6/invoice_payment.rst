@@ -100,6 +100,15 @@ The email notification is freely customizable as an Email Template, and the onli
 To get the EDI and automatic emailing of orders and invoices to work, you will have to install the :mod:`EDI` module.
 You have to add an email adress to the partner, and make sur the "Opt-out" checkbox is not selected. Ask your system administrator to configure an Outgoing Mail Server. Note that email notifications will be added to a mail queue, but you can force emails to be send directly from the :menuselection:`Tools --> Message`.
 
+The email your customer will receive, will look like the image displayed.
+
+.. figure::  images/account_edi_mail.png
+   :scale: 75
+   :align: center
+
+   *Mail to Your Customer*
+ 
+
 Keep Track of your Customer's Payments
 --------------------------------------
 
