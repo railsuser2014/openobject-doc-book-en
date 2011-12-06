@@ -11,49 +11,53 @@ In OpenERP, the invoicing workflow is very simple. You can see it in the followi
 
    *Invoicing Workflow*
 
-An invoice can be generated from various documents like a `Sales Order`, a `Purchase Order` and also at the time of confirming a shipment. These methods will be used when you use OpenERP as a true accounting system.
+An invoice can be generated from various documents like a `Sales Order`, a `Purchase Order` and also at the time of confirming a shipment. These methods will be proposed when you use OpenERP as a true accounting system.
 
 Of course, companies often work together with an external accountant who keeps their books. In that case, you would like to know which invoices exist and have been paid.
 
 The specific and easy-to-use `Invoicing` system in OpenERP allows you to keep track of your accounting, even when you are not an accountant.
-It provides an easy way to follow up your suppliers and customers. You could use this simplified accounting when your (external) account keeps your books, but you would like to keep track of payments. The Invoicing system includes receipts and vouchers (an easy way to keep track of sales and purchases) as well as payment registration without the need to encode complete abstracts of account.
+It provides an easy way to follow up your suppliers and customers. You could use this simplified accounting in case you work with an (external) account to keep your books, and you still want to keep track of payments. The ``Invoicing`` system includes receipts and vouchers (an easy way to keep track of sales and purchases). It also offers you an easy method to register payments, without you having to encode complete abstracts of account.
 
 Simple Customer Receipts
 ------------------------
 
-When you sell products to a customer, you can give him an invoice or a `Sales Receipt`, which is also called `Customer Receipt`.
+When you sell products to a customer, you can give him a true invoice or a `Sales Receipt`, which is also called `Customer Receipt`.
 Sales Receipts are merely a kind of sales ticket and not a real invoice.
 
-When the sales receipt is confirmed, OpenERP creates journal items automatically and you can record the customer payment related to this sales receipt. The easy invoicing system does not require extensive accounting setup, and so you will be up and running quickly!
+When the sales receipt is confirmed, OpenERP creates journal items automatically and you can record the customer payment related to this sales receipt. The easy invoicing system does not require extensive accounting setup, so you will be up and running quickly!
 
-You can create and modify the sales receipt using the menu :menuselection:`Accounting --> Customers --> Sales Receipt`.
+You can create and modify a sales receipt from the menu :menuselection:`Accounting --> Customers --> Sales Receipt`.
 
-.. figure::  images/account_customer_receipt.png
+.. figure::  images/account_customer_receipt2.png
    :scale: 75
    :align: center
 
    *Defining a Customer Receipt*
 
+.. note:: Extended view
+
+    To display Sales and Purchase Receipts in the Customers / Suppliers menu, you need to use the ``Extended`` view. This can be changed with the user Preferences button next to the Home button.
+
 When you create a new `Sales Receipt`, you have to enter the `Customer` for whom you want to create a voucher. You can also define `Sales Lines` in the `Sales Information` tab. Here you have to define `Account`, `Amount` and `Description`.
 At the bottom of the form, you will have two options for `Payment`: one is `Pay Directly` and another is `Pay Later or Group Funds`.
-You have to enter the `Account` in the case of the `Pay Directly` option. The `Total` amount displays automatically with calculation of tax when you click the `Compute Tax` button.
+When you select the `Pay Directly` option, you have to enter the bank `Account`. The `Total` amount displays automatically with calculation of tax when you click the `Compute Tax` button.
 
 After validating the sales receipt, you can print the voucher by clicking the `Voucher Print` action at the
 upper right side. The voucher will be printed as follows.
 
-.. figure::  images/account_sale_voucher.png
+.. figure::  images/account_sale_voucher2.png
    :scale: 75
    :align: center
 
-   *Sales Voucher*
+   *Printed Sales Voucher*
 
-When you purchase products from a supplier, a `Supplier Voucher` (a ticket) is given to you which is also called `Notes Payable`
+When you purchase products from a supplier, you will receive a `Supplier Voucher` (a ticket),  which is also called `Notes Payable`
 in accounting terminology. When a supplier voucher is confirmed, it creates journal items automatically and you can record
-the supplier payment related to this purchase receipt.
+the supplier payment related to this purchase receipt, just like for the sales receipts.
 
 You can create and modify the supplier voucher through the menu :menuselection:`Accounting --> Suppliers --> Supplier Vouchers`.
 
-.. figure::  images/account_supplier_voucher.png
+.. figure::  images/account_supplier_voucher2.png
    :scale: 75
    :align: center
 
@@ -61,12 +65,11 @@ You can create and modify the supplier voucher through the menu :menuselection:`
 
 The `Supplier Voucher` form looks like the `Sales Receipt` form. In this form, carefully select the journal. After validating the `Supplier Voucher`, you can print it using the `Voucher Print` action.
 
-.. figure::  images/account_purchase_voucher.png
+.. figure::  images/account_purchase_voucher2.png
    :scale: 75
    :align: center
 
-   *Supplier Voucher*
-
+   *Printed Supplier Voucher*
 
 Invoice your Customers
 ----------------------
@@ -75,9 +78,9 @@ The new email and invoicing system in OpenERP allows you to create an invoice an
 
 The customer then has several options. If your customer also has an OpenERP instance, he can easily import the invoice you have sent him, simply by clicking the link.
 
-It is surprising to see that in the 21rst century, most companies still process Quotations & Invoices manually, mostly by post or e-mail. The trend is clearly for personal communication to disregard these legacy media, replacing them with instant messaging, social networks, etc. The Electronic Data Interchange (EDI) platform is here to try opening OpenERP to more modern communication systems, where electronic documents are exchanged and synchronized in real-time between business partners. We will initially support a simple EDI mechanism for certain OpenERP documents, like Sales Orders, Purchase Orders and Invoices. We defined a simple and modern electronic format (JSON-based) to represent these documents, and we have added import/export capabilities in this format for the corresponding OpenERP business objects.
+It is surprising to see that in the 21st century, most companies still process Quotations & Invoices manually, mostly by post or email. The trend is clearly for personal communication to disregard these legacy media, replacing them with instant messaging, social networks, etc. The Electronic Data Interchange (EDI) platform is here to try opening OpenERP to more modern communication systems, where electronic documents are exchanged and synchronized in real-time between business partners. Initially, OpenERP will support a simple EDI mechanism for certain OpenERP documents, like Sales Orders, Purchase Orders and Invoices. We defined a simple and modern electronic format (JSON-based) to represent these documents, and added import/export capabilities in this format for the corresponding OpenERP business objects.
 
-The flow will be as follows:
+Below, you find an example of such an EDI flow:
 
 1. Your company issues a Sales Order, a Purchase Order or an Invoice for a specific partner, let's say Agrolait.
 
@@ -86,18 +89,18 @@ The flow will be as follows:
 3. In the online preview of the document, Agrolait can read the document, download or print the PDF version, and then choose between a few
 options:
 
-  a. import this document in his own OpenERP instance, simply by providing its address
+  a. import this document in his own OpenERP instance, simply by providing its address;
 
-  b. ask to create a new OpenERP online instance, where the document will be pre-imported
+  b. ask to create a new OpenERP online instance, where the document will be pre-imported;
 
-  c. ask for the raw EDI document, which the partner then can import in his own third-party software, possibly via a corresponding EDI import system
+  c. ask for the raw EDI document, which the partner can then import in his own third-party software, possibly via a corresponding EDI import system.
 
-4. Partner Agrolait can also choose to directly pay online via Paypal or any other mechanism provided by your company.
+4. Partner Agrolait can also choose to directly pay online through Paypal or any other mechanism provided by your company.
 
-The email notification is freely customizable as an Email Template, and the online preview of the EDI document can be customized with a 6.1-web-addon.
+The email notification is freely customisable as an Email Template from the :menuselection:`Settings --> Configuration --> Email --> Templates`.
 
-To get the EDI and automatic emailing of orders and invoices to work, you will have to install the :mod:`EDI` module.
-You have to add an email adress to the partner, and make sur the "Opt-out" checkbox is not selected. Ask your system administrator to configure an Outgoing Mail Server. Note that email notifications will be added to a mail queue, but you can force emails to be send directly from the :menuselection:`Tools --> Message`.
+To get the EDI and automatic emailing of orders and invoices to work, you need the :mod:`EDI` module, which is installed by default.
+You have to add an email adress to the partner and make sure the "Opt-out" checkbox is not selected. Ask your system administrator to configure an Outgoing Mail Server. Note that email notifications will be added to a mail queue, but you can force emails to be send directly from the :menuselection:`Settings --> Email --> Messages`.
 
 The email your customer will receive, will look like the image displayed.
 
@@ -111,7 +114,7 @@ The email your customer will receive, will look like the image displayed.
 Keep Track of your Customer's Payments
 --------------------------------------
 
-You should efficiently keep track of payments of your customers and suppliers. People who have no accounting knowledge and just want to use OpenERP to keep track of their payments, can work with the ``Invoicing & Payments`` access rights for such kind of user.
+You should efficiently keep track of payments of your customers and suppliers. People who have no accounting knowledge and just want to use OpenERP to keep track of their payments can work with the ``Invoicing & Payments`` access rights.
 
 :guilabel:`Customer Payment` allows you to register the payments you receive from your customers.
 In order to record a payment, you have to enter the customer, the payment method (= the journal) and the payment amount. OpenERP will automatically propose the reconciliation of this payment with open invoices or sales receipts.
