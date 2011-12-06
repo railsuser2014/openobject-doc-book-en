@@ -166,6 +166,39 @@ Data is updated in real time. This is very useful because it enables you to prev
 
 Furthermore, for your tax declaration, you can click one of the tax accounts to investigate the detailed entries that make up the full amount. This helps you search for errors, such as when you have entered an invoice at full tax rate when it should have been zero-rated for an intracommunity trade or for charity.
 
+Management Indicators
+---------------------
+
+With OpenERP you can also create your own financial reports. This feature is now included in standard OpenERP. Go to :menuselection:`Accounting -_> Configuration --> Financial Accounting --> Financial  Reports --> Account Reports` and click ``Create``.
+
+Suppose we would like to create our company Balance Sheet. The first report to be created, should be a View report which will contain the final details. Keep the default Sequence 0.
+
+Now create the ``Assets`` report, and set ``Balance Sheet`` as the parent for this report. Set the Sequence to 1.
+
+Now create the ``Liabilities`` report, and set ``Balance Sheet`` as the parent for this report too. Set the Sequence to 2.
+
+Both these reports are of the ``View`` type.
+
+Apart from the ``View`` type, you can select three other types: ``Accounts``, ``Account Type`` and ``Report Value``.
+
+* *Accounts*: here you can select view accounts or individual accounts that should be included in the report. View accounts offer the advantage that when new accounts are added as a child of such view account, they will automatically be printed on the report. When selecting individual accounts, you need to specifically add each newly created account to get the correct report.
+
+* *Account Type*: selecting an account type means that all accounts related to the selected account type(s) will be printed on the report.
+
+* *Report Value*: thanks to this value you can include the balance of existing reports in another report. Example: create a profit & loss report (view) including costs (account class 6) and income (account class 7). In the Balance Sheet, define a report Profit&Loss Balance, with Balance Sheet as the Parent. Set the type to Report Value and link it to the P&L view report you defined. This way, the balance sheet will print the Profit&Loss result.
+
+.. figure::  images/financial_reports.png
+   :scale: 75
+   :align: center
+
+   *Financial Reports*
+
+Create a report to print the Asset accounts (class 2 from the Belgian ledger) on the Assets side of the report. As a Parent, define the Assets report; sequence 3, type Accounts. I fyou want to use all accounts of class 2, just select the class (view account). You can also select various asset accounts. You could also have set this report to Account Type, with type Immo.
+
+If you just want the sum of the selected accounts to appear, you leave the settings as they are. Should you wish to print the account details as well, you can select the ``Display details`` checkbox. The report will then also print the selected account numbers.
+
+To print the results, go to :menuselection:`Accounting --> Reporting --> Legal Reports --> Accounting Reports --> Financial Report`. Select the report you want to print (only reports of the View type will be displayed in the list). You can also print a report for specific periods or dates. If you select the ``Enable Comparison`` checkbox, an extra ``Comparison`` tab will appear in which you can, for instance, select periods from a previous financial year. You have to give the comparison column a name through the ``Column Label`` field.
+
 .. Copyright © Open Object Press. All rights reserved.
 
 .. You may take electronic copy of this publication and distribute it if you don't
