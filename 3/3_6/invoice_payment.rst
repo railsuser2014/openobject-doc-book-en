@@ -90,8 +90,7 @@ options:
 
   b. ask to create a new OpenERP online instance, where the document will be pre-imported
 
-  c. ask for the raw EDI document, which the partner then can import in his own third-party software, possibly via a corresponding EDI import
-     system
+  c. ask for the raw EDI document, which the partner then can import in his own third-party software, possibly via a corresponding EDI import system
 
 4. Partner Agrolait can also choose to directly pay online via Paypal or any other mechanism provided by your company.
 
