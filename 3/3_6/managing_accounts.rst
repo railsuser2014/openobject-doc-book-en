@@ -35,8 +35,8 @@ All of OpenERP's graphs are dynamic. So you can, for example, filter the data by
 
 To obtain a more detailed report of the aged balance (or order by past date), use the menu :menuselection:`Accounting --> Reporting --> Generic Reporting --> Partners --> Aged Partner Balance`.
 
-When you click that report, OpenERP shows a wizard asking you for the chart of accounts, the start date of the analysis period and the size of the interval to be analyzed (in days). The start date will determine which documents will be included in the report (document date until the selected start date) and it will serve as a reference date to calculate the amounts due for the selected interval.
-You can print an aged partner balance for Receivable Accounts or Payable Accounts of for both at the same time. The analysis direction may be Past (for entries that are due) or Future to keep track of your cash flow in the next days or weeks (according to your selection). OpenERP then calculates a table of credit balance by period. So, if you request an interval of 30 days, OpenERP generates an analysis of creditors for the past month, past two months, and so on.
+When you click that report, OpenERP shows a wizard asking you for the chart of accounts, the start date of the analysis period and the size of the interval to be analysed (in days). The start date will determine which documents will be included in the report (document date until the selected start date) and it will serve as a reference date to calculate the amounts due for the selected interval.
+You can print an aged partner balance for Receivable Accounts or Payable Accounts of for both at the same time. The analysis direction may be ``Past`` (for entries that are due) or ``Future`` to keep track of your cash flow in the next days or weeks (according to your selection). OpenERP then calculates a table of credit balance by period. So, if you request an interval of 30 days, OpenERP generates an analysis of creditors for the past month, past two months, and so on.
 An ageing balance will indicate how much of the accounts receivable is past due. It also reports how far past due the accounts are (number of days).
 
 .. figure::  images/account_aged_balance.png
@@ -51,8 +51,7 @@ An ageing balance will indicate how much of the accounts receivable is past due.
 
    *Aged Balance in the Future using a 30-days Period*
 
-For an analysis by partner, you can use the partner balance that you get through the menu :menuselection:`Accounting --> Reporting --> Generic Reporting --> Partners --> Partner Balance`. The system then supplies you with a PDF report containing one line per partner representing the
-cumulative credit balance.
+For an analysis by partner, you can use the partner balance that you get through the menu :menuselection:`Accounting --> Reporting --> Generic Reporting --> Partners --> Partner Balance`. The system then supplies you with a PDF report containing one line per partner representing the cumulative credit balance.
 
 .. figure::  images/account_partner_balance_61.png
    :scale: 85
@@ -75,11 +74,7 @@ Finally, you can look up individual account entries. To search for account entri
 .. tip:: Exporting Entries
 
         Remember that you can export all types of resources in OpenERP.
-        From the web client, you need to navigate to a search list for the resource, then click
-        the :guilabel:`Export` link at the bottom left of the list.
-        From the GTK client, you would use the menu :menuselection:`Form --> Export data`.
-        This enables you to easily make your own analysis in Microsoft Excel or Calc (LibreOffice or OpenOffice),
-        by exporting accounting entries.
+        From the web client, you need to navigate to a search list for the resource, then click the :guilabel:`Export` link at the bottom left of the list. From the GTK client, you would use the menu :menuselection:`Form --> Export data`. This enables you to easily make your own analysis in Microsoft Excel or Calc (LibreOffice or OpenOffice), by exporting accounting entries.
 
 .. index::
    single: follow-up
