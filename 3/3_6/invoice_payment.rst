@@ -71,6 +71,11 @@ The `Supplier Voucher` form looks like the `Sales Receipt` form. In this form, c
 
    *Printed Supplier Voucher*
 
+.. raw:: latex
+
+    \clearpage
+
+
 Invoice your Customers
 ----------------------
 
