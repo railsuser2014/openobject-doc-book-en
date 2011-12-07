@@ -11,7 +11,7 @@ In OpenERP, the invoicing workflow is very simple. You can see it in the followi
 
    *Invoicing Workflow*
 
-An invoice can be generated from various documents like a `Sales Order`, a `Purchase Order` and also at the time of confirming a shipment. These methods will be proposed when you use OpenERP as a true accounting system.
+An invoice can be generated from various documents, such as a `Sales Order` and a `Purchase Order`, or at the time of confirming a shipment. These methods will be proposed when you use OpenERP as a truely integrated system.
 
 Of course, companies often work together with an external accountant who keeps their books. In that case, you would like to know which invoices exist and have been paid.
 
@@ -34,16 +34,18 @@ You can create and modify a sales receipt from the menu :menuselection:`Accounti
 
    *Defining a Customer Receipt*
 
-.. note:: Extended view
+.. note:: Extended View
 
-    To display Sales and Purchase Receipts in the Customers / Suppliers menu, you need to use the ``Extended`` view. This can be changed with the user Preferences button next to the Home button.
+    To display Sales and Purchase Receipts in the Customers / Suppliers menu, you need to use the ``Extended`` view. The view can be changed with the user ``Preferences`` button next to the ``Home`` button in the main toolbar.
 
 When you create a new `Sales Receipt`, you have to enter the `Customer` for whom you want to create a voucher. You can also define `Sales Lines` in the `Sales Information` tab. Here you have to define `Account`, `Amount` and `Description`.
 At the bottom of the form, you will have two options for `Payment`: one is `Pay Directly` and another is `Pay Later or Group Funds`.
-When you select the `Pay Directly` option, you have to enter the bank `Account`. The `Total` amount displays automatically with calculation of tax when you click the `Compute Tax` button.
+When you select the `Pay Directly` option, you have to enter the bank `Account`. The `Total` amount displays automatically with calculation of tax (if you select VAT to be added) when you click the `Compute Tax` button.
 
 After validating the sales receipt, you can print the voucher by clicking the `Voucher Print` action at the
-upper right side. The voucher will be printed as follows.
+upper right side. The voucher will be printed as shown in the screenshot :ref:`fig-salesvoucher`.
+
+.. _fig-salesvoucher:
 
 .. figure::  images/account_sale_voucher2.png
    :scale: 75
@@ -51,25 +53,25 @@ upper right side. The voucher will be printed as follows.
 
    *Printed Sales Voucher*
 
-When you purchase products from a supplier, you will receive a `Supplier Voucher` (a ticket),  which is also called `Notes Payable`
-in accounting terminology. When a supplier voucher is confirmed, it creates journal items automatically and you can record
+When you purchase products from a supplier, you will receive a `Purchase Receipt` (a ticket),  which is also called `Notes Payable`
+in accounting terminology. When a purchase receipt is confirmed, it creates journal items automatically and you can record
 the supplier payment related to this purchase receipt, just like for the sales receipts.
 
-You can create and modify the supplier voucher through the menu :menuselection:`Accounting --> Suppliers --> Supplier Vouchers`.
+You can create and modify the purchase receipt through the menu :menuselection:`Accounting --> Suppliers --> Purchase Receipt`.
 
 .. figure::  images/account_supplier_voucher2.png
    :scale: 75
    :align: center
 
-   *Definition of Supplier Voucher*
+   *Purchase Receipt*
 
-The `Supplier Voucher` form looks like the `Sales Receipt` form. In this form, carefully select the journal. After validating the `Supplier Voucher`, you can print it using the `Voucher Print` action.
+The `Purchase Receipt` form looks like the `Sales Receipt` form. In this form, carefully select the journal. After validating the `Purchase Receipt`, you can print it using the `Voucher Print` action.
 
 .. figure::  images/account_purchase_voucher2.png
    :scale: 75
    :align: center
 
-   *Printed Supplier Voucher*
+   *Printed Purchase Receipt*
 
 .. raw:: latex
 
@@ -79,11 +81,13 @@ The `Supplier Voucher` form looks like the `Sales Receipt` form. In this form, c
 Invoice your Customers
 ----------------------
 
-The new email and invoicing system in OpenERP allows you to create an invoice and automatically send an email with the invoice link to the customer.
+It is surprising to see that in the 21st century, most companies still process quotations & invoices manually, mostly by post or email. The trend is clearly for personal communication to disregard these legacy media, and replace them with instant messaging, social networks, etc. The *Electronic Data Interchange* (EDI) platform is here to try and open OpenERP to more modern communication systems, where electronic documents are exchanged and synchronised between business partners in real-time.
+
+Initially, OpenERP will support a simple EDI mechanism for certain OpenERP documents, such as Sales Orders, Purchase Orders and Invoices.
+
+Indeed, the integrated email and invoicing system in OpenERP allows you to create an invoice and automatically send an email with the invoice link to the customer.
 
 The customer then has several options. If your customer also has an OpenERP instance, he can easily import the invoice you have sent him, simply by clicking the link.
-
-It is surprising to see that in the 21st century, most companies still process Quotations & Invoices manually, mostly by post or email. The trend is clearly for personal communication to disregard these legacy media, replacing them with instant messaging, social networks, etc. The Electronic Data Interchange (EDI) platform is here to try opening OpenERP to more modern communication systems, where electronic documents are exchanged and synchronized in real-time between business partners. Initially, OpenERP will support a simple EDI mechanism for certain OpenERP documents, like Sales Orders, Purchase Orders and Invoices. We defined a simple and modern electronic format (JSON-based) to represent these documents, and added import/export capabilities in this format for the corresponding OpenERP business objects.
 
 Below, you find an example of such an EDI flow:
 
@@ -91,21 +95,20 @@ Below, you find an example of such an EDI flow:
 
 2. Partner Camptocamp receives an email with a link to an online preview of the document.
 
-3. In the online preview of the document, Camptocamp can read the document, download or print the PDF version, and then choose between a few
-options:
+3. In the online preview of the document, Camptocamp can read the document, download or print the PDF version, and then choose between a couple of options:
 
-  a. import this document in his own OpenERP instance, simply by providing its address;
+  a. import this document in his own OpenERP instance, simply by providing the instance address;
 
   b. ask to create a new OpenERP online instance, where the document will be pre-imported;
 
-  c. ask for the raw EDI document, which the partner can then import in his own third-party software, possibly via a corresponding EDI import system.
+  c. ask for the raw EDI document, which the partner can then import in his own third-party software through a corresponding EDI import system.
 
 4. Partner Camptocamp can also choose to directly pay online through Paypal or any other mechanism provided by your company.
 
 The email notification is freely customisable as an Email Template from the :menuselection:`Settings --> Configuration --> Email --> Templates`.
 
 To get the EDI and automatic emailing of orders and invoices to work, you need the :mod:`EDI` module, which is installed by default.
-You have to add an email adress to the partner and make sure the "Opt-out" checkbox is not selected. Ask your system administrator to configure an Outgoing Mail Server. Note that email notifications will be added to a mail queue, but you can force emails to be send directly from the :menuselection:`Settings --> Email --> Messages`.
+You need to add an email adress to the partner and make sure the "Opt-out" checkbox is not selected. Ask your system administrator to configure an Outgoing Mail Server. Note that email notifications will be added to a mail queue and processed once in a while, but you can force emails to be send directly from the :menuselection:`Settings --> Email --> Messages`.
 
 The email your customer will receive, will look like the image displayed.
 
@@ -119,12 +122,12 @@ The email your customer will receive, will look like the image displayed.
 Keep Track of your Customer's Payments
 --------------------------------------
 
-You should efficiently keep track of payments of your customers and suppliers. People who have no accounting knowledge and just want to use OpenERP to keep track of their payments can work with the ``Invoicing & Payments`` access rights.
+It is important to efficiently keep track of payments of your customers and suppliers. People who have no accounting knowledge and just want to use OpenERP to keep an eye on their payments, can set the ``Invoicing & Payments`` access rights from the ``User`` form.
 
 :guilabel:`Customer Payment` allows you to register the payments you receive from your customers.
-In order to record a payment, you have to enter the customer, the payment method (= the journal) and the payment amount. OpenERP will automatically propose the reconciliation of this payment with open invoices or sales receipts.
+In order to record a payment, you have to enter the customer, the payment method (= the journal) and the payment amount. OpenERP will automatically propose the reconciliation of this payment with any open invoices or sales receipts, credit notes and (advance) payments.
 
-You can register such payments in OpenERP using the menu :menuselection:`Accounting --> Customers --> Customer Payment`; click `New` to register a new payment.
+You can register Customer payments in OpenERP from the menu :menuselection:`Accounting --> Customers --> Customer Payment`; click `New` to register a payment.
 
 .. figure::  images/account_cust_payment.png
    :scale: 75
@@ -135,9 +138,9 @@ You can register such payments in OpenERP using the menu :menuselection:`Account
 Suppose you have an invoice of 3000 EUR; the amount you actually receive from the customer is 2995 EUR. You would consider the invoice as entirely paid. How would you proceed?
 
 To create a new `Customer Payment`, select the customer, key in the `Paid Amount`, e.g. 2995 and select the `Payment Method`, i.e. your bank journal. Any open invoices, credit notes or advances for this partner will be displayed on the ``Payment Information`` tab.
-In this example, the 3000 EUR invoice will be proposed. Now to consider this invoice as fully paid, you have to open the journal item on the ``Payment Information`` tab and change the amount to 3000, to be able to post the write-off.
+In this example, the 3000 EUR invoice will be proposed.
 
-Now you have to tell OpenERP that you want to consider the invoice as fully paid. Simply click the invoice line on the ``Payment Information`` tab to make it editable. Now check the :guilabel:`Full Reconcile` checkbox, and notice that the amount changes to the full amount of the invoice.
+Now you have to tell OpenERP that you want to consider the invoice as fully paid. Simply click the invoice line on the ``Payment Information`` tab to make it editable. Now select the :guilabel:`Full Reconcile` checkbox, and notice that the amount changes to the full amount of the invoice.
 
 .. figure::  images/account_cust_reconcile.png
    :scale: 75
@@ -145,13 +148,11 @@ Now you have to tell OpenERP that you want to consider the invoice as fully paid
 
    *Fully Pay*
 
-Select the proper option in the ``Payment Difference`` field, i.e. `Reconcile Payment` (you would use the `Keep Open` option if you want to claim the 5 EUR from the customer). The write-off amount is already proposed automatically, but you have to enter the `Counterpart Account` so that write-off entries can be generated by OpenERP. You can also enter a comment about the reconciliation (by default, Write-Off will be proposed).
+Select the proper option in the ``Payment Difference`` field, i.e. `Reconcile Payment` (you would use the `Keep Open` option if you want to claim the 5 EUR from the customer). The write-off amount is already proposed automatically, but you have to enter the `Counterpart Account` so that write-off entries can be generated by OpenERP. You can also enter a comment about the reconciliation (by default, Write-Off will be proposed). Then post your payment.
 
 .. note:: Analytic Accounts
 
     When you do analytic bookkeeping as well, you can enter an analytic account for the write-off too.
-
-In the case you want to keep the invoice open, do not check the :guilabel:`Full Reconcile` and simply leave the default ``Keep Open`` option. Then post your payment.
 
 This easy payment system also allows you to post a payment that you cannot directly attribute to a customer as an advance.
 
@@ -163,7 +164,9 @@ Validate the payment. The system will now create an advance payment of 1000 for 
 .. index::
    single: Supplier Payment
 
-The ``Supplier Payment`` form allows you to track the payment to your suppliers in the same way as a customer payment.
+.. tip:: Supplier Payment
+
+    The ``Supplier Payment`` form allows you to track the payment to your suppliers in the same way as a customer payment.
 
 From the menu :menuselection:`Accounting --> Suppliers --> Supplier Payment`, click the `New` button to create a new `Supplier Payment`.
 
@@ -173,9 +176,9 @@ From the menu :menuselection:`Accounting --> Suppliers --> Supplier Payment`, cl
 
    *Supplier Payment Form*
 
-Another way of keeping track of your payments is the way accountants will do it, by encoding ``Bank Statements``. For more information about this, please refer to the chapter on *Advanced Invoice Management*.
+Another way of keeping track of your payments is the way accountants will do it, by encoding ``Bank Statements``. For more information about this, please refer to the chapter on :ref:`invoicemanagement`.
 
-You can also install a module to import your payments electronically through a CODA file you receive from the bank. To do this install the module :mod:`account_coda`.
+You can also push your accounting further by importing your payments electronically through a CODA file you receive from the bank. To do this install the :mod:`account_coda` module.
 
 How should you proceed?
 
@@ -183,7 +186,7 @@ You have to enter your company's bank account(s) for which you want to accept CO
 
 .. tip:: Bank Journal
 
-    When you save the bank account, a bank journal will be automatically created for that account.
+    When you save the bank account through the Setup your Bank Accounts wizard, a bank journal will be automatically created for that account.
 
 Then add the bank account details for each partner that will pay you through a bank. You can do this in the Partner form, on the ``Accounting`` tab.
 
