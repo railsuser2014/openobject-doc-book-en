@@ -1,4 +1,6 @@
 
+.. _tax:
+
 Managing your Tax Structure
 ===========================
 
