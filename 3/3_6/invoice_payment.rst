@@ -42,17 +42,6 @@ When you create a new `Sales Receipt`, you have to enter the `Customer` for whom
 At the bottom of the form, you will have two options for `Payment`: one is `Pay Directly` and another is `Pay Later or Group Funds`.
 When you select the `Pay Directly` option, you have to enter the bank `Account`. The `Total` amount displays automatically with calculation of tax (if you select VAT to be added) when you click the `Compute Tax` button.
 
-After validating the sales receipt, you can print the voucher by clicking the `Voucher Print` action at the
-upper right side. The voucher will be printed as shown in the screenshot :ref:`fig-salesvoucher`.
-
-.. _fig-salesvoucher:
-
-.. figure::  images/account_sale_voucher2.png
-   :scale: 75
-   :align: center
-
-   *Printed Sales Voucher*
-
 When you purchase products from a supplier, you will receive a `Purchase Receipt` (a ticket),  which is also called `Notes Payable`
 in accounting terminology. When a purchase receipt is confirmed, it creates journal items automatically and you can record
 the supplier payment related to this purchase receipt, just like for the sales receipts.
@@ -65,13 +54,7 @@ You can create and modify the purchase receipt through the menu :menuselection:`
 
    *Purchase Receipt*
 
-The `Purchase Receipt` form looks like the `Sales Receipt` form. In this form, carefully select the journal. After validating the `Purchase Receipt`, you can print it using the `Voucher Print` action.
-
-.. figure::  images/account_purchase_voucher2.png
-   :scale: 75
-   :align: center
-
-   *Printed Purchase Receipt*
+The `Purchase Receipt` form looks like the `Sales Receipt` form. In this form, carefully select the journal.
 
 .. raw:: latex
 
