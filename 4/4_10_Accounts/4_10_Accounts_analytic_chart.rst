@@ -164,7 +164,7 @@ The following table shows an example of different analytic entries that you can 
    "Fuel Cost -Client trip","Case 1.1","-35","","613 – Transports","35",""
    "Staff salaries","","","","6201 – Salaries","","3 000"
 
-Such a structure allows you to make a detailed study of the profitability of various transactions. In this example, the cost of Case 1.1 is 95.00 (the sum of the analytic costs of studying the files, searching for information and service charges), but has been invoiced at 280.00, which gives you a gross profit of 185.00.
+Such a structure allows you to make a detailed study of the profitability of various transactions. In this example, the cost of Case 1.1 is 95.00 (the sum of the analytic costs of studying the files, searching for information and fuel costs), but has been invoiced at 280.00, which gives you a gross profit of 185.00.
 
 But an interest in analytical accounts is not limited to a simple analysis of the profitability of different cases.
 
