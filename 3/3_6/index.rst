@@ -2,6 +2,8 @@
 .. index::
    single: Invoicing & Payments
 
+.. _custinv:
+
 #############################
 Customer Invoicing & Payments
 #############################
