@@ -46,7 +46,7 @@ Manual Entries
 
 Even though most analytic entries are produced automatically by the other OpenERP documents, it is sometimes necessary to record manual entries. It is usually needed for certain analytic operations which have no counterpart in the general accounts.
 
-To record manual entries, go to the menu :menuselection:`Accounting --> Journal Entries --> Analytic Journal Items` and click the `New` button.
+To record manual entries, go to the menu :menuselection:`Accounting --> Journal Entries --> Analytic Journal Items` and click the :guilabel:`Create` button.
 
 .. index::
    single: analytic; entries
@@ -97,6 +97,12 @@ To visualise the general entries following these different actions, you can use 
 
         #. To see the entries per account, per user, per product or per partner, you can use the menu :menuselection:`Accounting --> Reporting --> Statistic Reports --> Analytic Entries Analysis`.
 
+.. figure::  images/account_analytic_analysis2.png
+   :scale: 85
+   :align: center
+
+   *Analytic Entries Analysis*
+
 Analytic Models
 ---------------
 
@@ -109,7 +115,7 @@ You can define the combination of analytic plans through the menu :menuselection
 
    *Definition of Analytic Plan*
 
-Using the link `Distribution Models` at the right side of the `Analytic Plan` form, you can define the distribution of either your expenses while creating supplier invoice, or revenue when defining customer invoices.
+Using the link `Distribution Models` at the right side of the `Analytic Plan` form, you can define the distribution of either your expenses while creating a supplier invoice, or revenue when defining customer invoices.
 Thanks to these models, you can have one amount distributed amongst several analytic accounts. Models can be reused, and they can be applied to one analytic chart of accounts, but also to a combination of various charts of account, such as projects and cost centers.
 
 .. figure::  images/account_distribution_model_61.png
@@ -118,8 +124,7 @@ Thanks to these models, you can have one amount distributed amongst several anal
 
    *Definition of Distribution Models*
 
-For example, when you create the invoice (suppose 1000 EUR) for the product ``Client Project`` with analytic distribution that
-we defined as above.
+For example, when you create the invoice (suppose 1000 EUR) for the product ``Client Project`` with the analytic distribution defined above.
 
 When the invoice has been validated, you can find the Analytic Journal Entries with the amount distributed amongst the analytic accounts through the menu :menuselection:`Accounting --> Journal Entries --> Analytic Journal Items.`
 
@@ -130,8 +135,7 @@ When the invoice has been validated, you can find the Analytic Journal Entries w
 
    *Journal Entries with Distributed Amount*
 
-You can also specify default `Analytic Distribution` for a particular product, partner, user and company for specific time interval using
-the menu :menuselection:`Accounting --> Configuration --> Analytic Accounting --> Analytic Defaults.`
+You can also specify a default `Analytic Distribution` for a particular product, partner, user and company for a specific time interval using the menu :menuselection:`Accounting --> Configuration --> Analytic Accounting --> Analytic Defaults.`
 
 
 .. Copyright © Open Object Press. All rights reserved.
