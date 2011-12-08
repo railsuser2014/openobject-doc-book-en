@@ -26,6 +26,10 @@ You can sort the report by date or by journal / partner.
 
    *General Ledger*
 
+.. tip:: General Ledger for one or more accounts
+
+    When you want to print the general ledger for one or more accounts, go to the menu :menuselection:`Accounting --> Configuration -> Financial Accounting --> Accounts --> Accounts`. Select the account(s) for which you want to print the general ledger and click the :guilabel:`General Ledger` report at the right side of the screen. 
+
 While the general ledger displays transactions for an account, a trial balance will show one amount (either debit or credit) for each account. The aim of the trial balance is to prove that the total of all debit balances is equal to the total of all credit balances.
 
 To print the `Trial Balance`, go to the menu :menuselection:`Accounting --> Reporting --> Legal Reports --> Accounting Reports --> Trial Balance`.
@@ -37,9 +41,9 @@ This report allows you to print or generate a PDF of your trial balance, allowin
 
    *Trial Balance*
 
-.. tip:: Reporting for one or more Accounts
+.. tip:: Reporting for One or More Accounts
 
-    You can print the `General Ledger`  and `Trial Balance` report directly from the `Account` form too.
+    You can print the `Trial Balance` report directly from the `Account` form too.
 
 .. index::
    single: balance sheet
@@ -58,13 +62,13 @@ Assets = Liabilities + Shareholders' Equity.
 
 A balance sheet is often described as a snapshot of a company's financial condition.
 
-The accounts displayed in the Balance Sheet are linked to an account type for which the ``"P&L / Balance Sheet`` parameter is set to Balance Sheet (either Assets or Liabilities account). To configure Account types, go to :menuselection:`Accounting --> Configuration --> Financial Accounting --> Account Types`.
+The accounts displayed in the Balance Sheet are linked to an account type for which the ``P&L / Balance Sheet`` parameter is set to Balance Sheet (either Assets or Liabilities account). To configure :guilabel:`Account Types`, go to :menuselection:`Accounting --> Configuration --> Financial Accounting --> Accounts --> Account Types`.
 
-The Balance Sheet can be printed from the menu :menuselection:`Accounting --> Reporting --> Legal Reports --> Accounting Reports --> Balance Sheet`.
+The Balance Sheet can be printed from the menu :menuselection:`Accounting --> Reporting --> Legal Reports --> Accounting Reports --> Balance Sheet`. You can print this report in Landscape mode too.
 
 .. tip:: Reserve & Profit and Loss Account
 
-    A Balance Sheet needs a reserve & profit and loss account, but instead of entering it each time you start the report, you can add a default Reserve & Profit and Loss account through the menu:menuselection:`Administration --> Companies --> Companies` on the ``Configuration`` tab. This account will be used as a counterpart to balance your accounts.
+    A Balance Sheet needs a reserve & profit and loss account, but instead of entering it each time you start the report, you can add a default Reserve & Profit and Loss account through the menu:menuselection:`Settings --> Companies --> Companies` on the ``Configuration`` tab. This account will be used as a counterpart to balance your accounts.
 
 The `Profit & Loss Report` is a financial statement which gives a summary of the revenues, costs and expenses during a specific period of time. Such a report provides information that shows the ability of a company to generate profit by increasing revenue and reducing costs. The P&L statement is also known as an "Income Statement".
 
@@ -81,8 +85,13 @@ The Profit and Loss report can be printed from the menu :menuselection:`Accounti
    :scale: 75
    :align: center
 
-   *Profit and Loss Report*
+   *Profit and Loss Wizard*
 
+.. figure::  images/account_profit_loss_report.png
+   :scale: 75
+   :align: center
+
+   *Profit and Loss Report*
 
 .. index:: journal
 
