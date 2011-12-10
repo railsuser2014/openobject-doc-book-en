@@ -8,10 +8,10 @@ Good Management Budgeting
 Budgets are important for a company to get a good grip on forecasted expenses and revenues. They allow you to measure your actual financial performance against the planned one.
 
 OpenERP manages its budgets using both General and Analytic Accounts.
-Go to :menuselection:`Administration --> Modules --> Modules` and install :mod:`account_budget` to be able to do this.
+Go to :menuselection:`Settings --> Modules --> Modules` and install :mod:`account_budget` to be able to do this.
 
-The first step in defining budgets is to determine the general accounts for which you want to keep budgets (i.e. expense or income accounts).
-You can use ``Budgetary Positions`` for this from the menu :menuselection:`Accounting --> Configuration --> Budgets --> Budgetary Positions`. Here you can select the general accounts for which you want to keep budgets. The aim is to group general accounts logically, according to sales or purchases, for instance. OpenERP has no limitations as to the account types that can be used for budgeting.
+The first step in defining budgets is to determine the general accounts for which you want to keep budgets (typically expense or income accounts).
+That is what you will use ``Budgetary Positions`` for, from the menu :menuselection:`Accounting --> Configuration --> Budgets --> Budgetary Positions`. Here you can select the general accounts for which you want to keep budgets. The aim is to group general accounts logically, according to sales or purchases, for instance. OpenERP has no limitations as to the account types that can be used for budgeting.
 
 .. figure::  images/account_budget_pos.png
    :scale: 75
@@ -36,7 +36,7 @@ To define your budgets, go to the menu :menuselection:`Accounting --> Budgets --
 
     Rather than edit an existing budget, make a new version so that you can keep your original estimates safe for comparison. This lets you analyse your changing perspectives of the company from revision to revision.
 
-To define your budgets, start by entering a :guilabel:`Name`, a :guilabel:`Code`, a :guilabel:`Start Date` and an :guilabel:`End Date` for your new budget. Then you can define the budgeted amounts within that period, one by one (enter negative amounts for purchases, positive amounts for sales). For each, you define:
+To define your budgets, start by entering a :guilabel:`Name`, a :guilabel:`Code`, a :guilabel:`Start Date` and an :guilabel:`End Date` for your new budget. Then you can define the budgeted amounts for each analytic account within a specified period, one by one (enter negative amounts for purchases, positive amounts for sales). For each, you define:
 
 * an :guilabel:`Analytic Account`
 
@@ -50,25 +50,25 @@ Once this information is completed, save your budget.
 
 A budget has various stages:
 
-* Confirmed: the budget is to be reviewed, but it can still be changed before actual approval;
+* *Confirmed*: the budget is to be reviewed, but it can still be changed before actual approval;
 
-* Approved: the budget is approved by the budget holder; the name of the user approving the budget will be displayed in the ``Validate User`` field.
+* *Approved*: the budget is approved by the budget holder; the name of the user approving the budget will be displayed in the ``Validate User`` field.
 
 You can cancel a budget and reset it to draft for the two preceding steps.
 
-* Done: the budget is fully approved and no changes will be allowed. You can no longer cancel the budget and reset it to draft.
+* *Done*: the budget is fully approved and no changes will be allowed. You can no longer cancel the budget and reset it to draft.
 
-The Theoretical amount indicates the actual amount that could have been realised for the budget concerned according to the current date. When your budget is 1200 for 12 months, and today is the 30 October, the theoretical amount will be 1000, since this is the actual amount that could have been realised to date.
+The :guilabel:`Theoretical Amount` indicates the actual amount that might have been realised for the budget concerned according to the current date. When your budget is 1200 for 12 months, and today is the 30 October, the theoretical amount will be 1000, since this is the actual amount that could have been realised to date.
 
 To print a budget and make calculations of expenditure through budget, use the menu :menuselection:`Accounting --> Budgets --> Budgets`. OpenERP then gives you a list of available budgets. Select one or more budgets and then click :guilabel:`Print Budgets` to create the report for each, in a date range of your choice.
 
-The ``Print Budget`` report gives an overview of each analytic account included in your budget, according to the individual budgetary positions for that account.
+The ``Print Budget`` report gives an overview of each analytic account included in your budget, according to the individual budgetary positions for that account. From the percentage and the comparison of planned (budgeted) and practical (actual) amounts, you have a good view on your situation.
 
 From the same list of actions, you can also print the ``Print Summary`` report, which will give you a total per analytic account (without splitting by budgetary position).
 
-Each of these reports can be printed from a specific date to a specific date. The End Date selected in the wizard determines the theoretical amount; if you select the last day of your financial year, the theoretical amount will be calculated as a function of that date (thus considering a complete financial year).
+Each of these reports can be printed from a specific date to a specific date. The End Date selected in the wizard determines how the theoretical amount will be calculated; if you select the last day of your financial year, the theoretical amount will be calculated as a function of that date (thus considering a complete financial year). Note that the theoretical amount will be zero when the :guilabel:`Paid Date` entered is equal to or greater than the :guilabel:`End Date` for the budget.
 
-The percentage for a budget is calculated as follows: (amount realised / theoretical amount) x 100
+The percentage for a budget is calculated as follows: (practical amount / theoretical amount) x 100.
 This way you get a view on how much of the forecasted amount has been actually realised in your accounting.
 
 The figure :ref:`fig-accbudg` gives an example of a budget produced by OpenERP.
@@ -81,10 +81,24 @@ The figure :ref:`fig-accbudg` gives an example of a budget produced by OpenERP.
 
    *Printing a Budget*
 
-You could also use the menu :menuselection:`Accounting --> Reporting --> Generic Reporting --> Budgets --> Budget Lines`.
-This gives a graphic budgetary analysis for each budget line.
+.. figure::  images/account_budget_summ.png
+   :scale: 75
+   :align: center
 
-From the menu :menuselection:`Accounting --> Configuration --> Budgets --> Budgetary Positions`, you can print the budgets for an individual budgetary position.
+   *Summarised Budget*
+
+
+You could also use the menu :menuselection:`Accounting --> Reporting --> Generic Reporting --> Budgets --> Budget Lines`.
+This gives an analysis of each budget line.
+
+From the menu :menuselection:`Accounting --> Configuration --> Budgets --> Budgetary Positions`, you can print the budgets for an individual budgetary position. Open a budgetary position, and click the :guilabel:`Budget Lines` tab for a graphical representation of your budgetary position.
+
+.. figure::  images/account_budget_graph.png
+   :scale: 75
+   :align: center
+
+   *Graphical Representation of Budgetary Position*
+
 
 The Accounting Dashboard
 ------------------------
