@@ -24,19 +24,15 @@ Each journal has a specific way of displaying data. The type of journal determin
 
 You can also create your own journal views. However, before creating a new view for a journal, check whether there is nothing similar already defined. You should only create a new view for new types of journals.
 
-.. note:: Customizing Views
-
-        You might sometimes have to edit a journal view. For example, for a journal in a foreign currency you add a field for the currency, and this currency should be in the journal view.
-
-You can create a sequence for each journal. This sequence gives the automatic numbering for accounting entries. Or several journals can use the same sequence if you want to define one for them all.
+You can create a sequence for each journal. This sequence determines the automatic numbering for accounting entries. Several journals can use the same sequence if you want to define one for them all, and if your legislation allows this.
 
 .. tip:: Sequences
 
-    Sequences can also be created from the :menuselection:`Administration --> Configuration --> Sequences & Identifiers --> Sequences`.
+    Sequences can also be created from the :menuselection:`Settings --> Configuration --> Sequences & Identifiers --> Sequences`.
 
-The default credit and debit account allow the software to automatically generate counterpart entries when you are entering data in the journal quickly. In some journals, debit and credit accounts are mandatory. For example, in a bank journal you should put an associated bank account, so that you do not have to create counterparts for each transaction manually.
+The default credit and debit account allow the software to automatically generate counterpart entries when you are entering data through :guilabel:`Journal Items`. In some journals, debit and credit accounts are mandatory. For example, in a bank journal you should put an associated bank account, so that you do not have to create counterparts for each transaction manually.
 
-A journal can be marked as being centralised. When you do this, the counterpart entries will not be owned by each entry, but globally for the given journal and period. You will then have a credit line and a debit line centralized for each entry in one of these journals, meaning that both credit and debit appear on the same line. This option is used when posting opening entries in a situation journal.
+A journal can be marked as being centralised. When you do this, the counterpart entries will not be owned by each entry, but will be global for the given journal and period. You will then have a credit line and a debit line centralized for each entry in one of these journals, meaning that both credit and debit appear on the same line. This option is used when posting opening entries in a situation journal.
 
 .. note:: Bank Journal, Easy Configuration
 
