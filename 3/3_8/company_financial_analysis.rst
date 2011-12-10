@@ -99,6 +99,9 @@ From the menu :menuselection:`Accounting --> Configuration --> Budgets --> Budge
 
    *Graphical Representation of Budgetary Position*
 
+.. note:: Print Reports
+
+    You can also print budgets from the menu :menuselection:`Accounting --> Configuration --> Analytic Accounting --> Analytic Accounts`.
 
 The Accounting Dashboard
 ------------------------
