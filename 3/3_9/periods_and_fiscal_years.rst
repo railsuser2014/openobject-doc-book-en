@@ -9,7 +9,7 @@ Periods and Financial Years
 
         The financial year can be divided into monthly or three-monthly accounting periods (when you have a quarterly declaration).
 
-OpenERP's management of the fiscal year is flexible enough to enable you to work on several years at the same time. This gives you several advantages, such as creating three-year budgets, and statements straddling several calendar years.
+OpenERP's management of the fiscal year is flexible enough to enable you to work on several years at the same time. This gives you several advantages, such as the possibility to create three-year budgets.
 
 .. index:: period
 .. index:: fiscal year
@@ -27,13 +27,13 @@ To define your fiscal year, use the menu :menuselection:`Accounting --> Configur
 
    *Defining a Financial Year and Periods*
 
-First enter the date of the first day of your fiscal year and the last day. Then, to create the periods, click one of the two buttons at the bottom depending on whether you want to create twelve 1-month or four 3-months periods:
+First enter the date of the first day and the last day of your fiscal year. Then, to create the periods, click one of the two buttons at the bottom depending on whether you want to create twelve 1-month or four 3-months periods:
 
 *  :guilabel:`Create Monthly Periods` ,
 
 *  :guilabel:`Create 3 Months Periods` .
 
-Do not forget to create an opening period to post your outstanding balances from the previous fiscal year. Click the ``Opening/Closing Period`` checkbox for this specific period.
+OpenERP automatically creates an opening period to allow you to post your outstanding balances from the previous fiscal year. Notice the ``Opening/Closing Period`` checkbox for such a period.
 
 Closing a Period
 ----------------
