@@ -114,7 +114,7 @@ You can open the `Accounting Dashboard` in more than one way: either by clicking
 .. index::
    single: module; board_account
 
-OpenERP gives you an accounting dashboard that will be presented to your accounting staff as they sign in to the Accounting system (you can also set the dashboard as their Home Page). This dashboard provides an analysis of the company's financial health at a glance.
+OpenERP gives you an accounting dashboard that will be presented to your accounting staff as they sign in to the Accounting system (you can also set the dashboard as their Home Page by setting the :guilabel:`Home Action` to ``Accounting Dashboard`` in the :guilabel:`User` form). This dashboard provides an analysis of the company's financial health at a glance.
 
 The description of the different parts of the dashboard, from top to bottom, then from left to right, is as follows:
 
