@@ -19,7 +19,7 @@ OpenERP lets you adapt and reconfigure many functions to ease the task of data e
 
 * adding controls for data entry,
 
-* customizing the screens,
+* customising the screens,
 
 * filling fields automatically during data entry with data that is already known to the system.
 
