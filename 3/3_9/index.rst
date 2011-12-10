@@ -35,6 +35,7 @@ OpenERP lets you adapt and reconfigure many functions to ease the task of data e
     journals
     entries_at_the_start_of_a_year
     accounts_place
+    payment_terms
 
 .. raw:: html
 
