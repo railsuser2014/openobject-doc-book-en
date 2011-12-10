@@ -150,14 +150,9 @@ We recommend you to use suspense accounts instead of expense or income accounts.
 
 For each account that needs to be reopened, enter account data (debit or credit) in the journal. For this operation, go to the menu :menuselection:`Accounting --> Journal Entries --> Journal Entries` and select a miscellaneous journal.
 
-You can also use OpenERP's generic import tool if you load the balance of each of your accounts from other accounting software.
+.. tip:: Import
 
-You might create a csv file with the first line:
-        "Account","Effective date","Journal","Name","Period","Debit","Credit"
-And the data lines like this:
-        "1000","2011-01-01","Opening Journal","Opening Balance Entry","01/01 - 01/01",0,53828
-
-Go to the menu :menuselection:`Accounting --> Journal Entries --> Journal Items`. While the form is still in List view, click :guilabel:`Import` from the :guilabel:`Other Options` section at the bottom right of the list.
+    You can also use OpenERP's generic import tool if you load the balance of each of your accounts from other accounting software.
 
 .. Copyright © Open Object Press. All rights reserved.
 
