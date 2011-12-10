@@ -86,8 +86,8 @@ So you should always make a backup of the database before closing the fiscal yea
 
    *Closing a Financial Year*
 
-Getting Started with OpenERP Accounting: Steps to Start your Financial Year
-============================================================================
+Steps to Start your Financial Year
+==================================
 
 When you decide to do your accounting in OpenERP, and you already have an accounting system, you should enter your opening balance and outstanding entries in OpenERP. Make sure you configure your accounting system as explained in the Configuration chapter.
 Below we explain the minimal configuration required to post your opening balance and outstanding entries.
