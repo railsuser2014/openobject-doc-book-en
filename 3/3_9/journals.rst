@@ -29,6 +29,7 @@ You can create a sequence for each journal. This sequence determines the automat
 .. tip:: Sequences
 
     Sequences can also be created from the :menuselection:`Settings --> Configuration --> Sequences & Identifiers --> Sequences`.
+    By default, OpenERP has only one sequence in the journal definition. If you need two separate sequences to be kept for the journal, you can install the module :mod:`account_sequence`.
 
 The default credit and debit account allow the software to automatically generate counterpart entries when you are entering data through :guilabel:`Journal Items`. In some journals, debit and credit accounts are mandatory. For example, in a bank journal you should put an associated bank account, so that you do not have to create counterparts for each transaction manually.
 
