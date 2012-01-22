@@ -223,9 +223,9 @@ Finally Part Eight, :ref:`part-config`, structured in two chapters, explains fir
 			As such, the world of OpenSource software became more and more attractive.
 			She started working with OpenERP software in her free time and doing so, Els really wanted to
 			meet Fabien Pinckaers to share thoughts about documentation and training strategy.
-			At a Partner Meeting she heard Fabien was looking for someone to manage the trainings & documentation.
+			At a Partner Meeting she heard Fabien was looking for someone to manage training & documentation.
 			This was absolutely an opportunity to be qualified, and now Els is the OpenERP Training Program Manager
-			and in this job responsible for the worldwide training and certification program of OpenERP.
+			and responsible for the worldwide training and certification program of OpenERP.
 
 			Being an author of several Software Manuals, it is a great challenge to work on the
 			OpenERP documentation and continuously take it to a higher level. Please note that this is a hell of a job,
