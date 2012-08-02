@@ -158,7 +158,7 @@ Part Six, :ref:`part-trade`, deals with Purchasing and Selling goods and service
 Part Seven, :ref:`part-qual`, is focused on the Process description and Documentation & Knowledge handling that OpenERP
 manages.
 
-Finally Part Eight, :ref:`part-config`, structured in two chapters, explains first how to administer and configure OpenERP, then provides a methodology for implementing OpenERP in your entreprise.
+Finally Part Eight, :ref:`part-config`, structured in two chapters, explains first how to administer and configure OpenERP, then provides a methodology for implementing OpenERP in your enterprise.
 
 
 	.. note::  *About the authors*
