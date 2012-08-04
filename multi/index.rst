@@ -13,7 +13,7 @@ The multi-company environment allows you to manage operations from different com
 In the following chapters, we will perform a complete order flow made by a customer in France that does not 
 handle the stock, but delegates it to another company located in Belgium that will deliver the product to the customer.
 
-In order to achieve this, we will follow the schema define hereunder.
+In order to achieve this, we will follow the schema defined below.
 
 .. figure:: Logistic/images/schema.png
    :scale: 100
