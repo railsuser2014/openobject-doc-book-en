@@ -99,7 +99,7 @@ This is the screen shot showing all partners from different countries. This will
 
 This wizard will create network link in kml for different objects and save it to your computer and then you have to upload network link kml to google earth/map. It can update data periodically by looking network link kml files parameters(refreshtime,interval....). For example if you have inserted new partner then google earth can fetch that new partner from webservice of etiny.
 
-.. note:: If you ticked partner and country, wizard will create two link tag with url/path of two kml file.now whenever you will upload this kml file it will show both partner and country information on earth and update that information by given interval time (using url/path ).
+.. note:: If you ticked partner and country, wizard will create two link tag with url/path of two kml file. Now when you upload this kml file it will show both partner and country information on earth and update that information by given interval time (using url/path ).
 	
 	
 **The wizard of network link shown above:**
