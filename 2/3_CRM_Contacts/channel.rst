@@ -21,7 +21,7 @@ You can use geolocalization to assign and forward opportunities to channel partn
 
 Through :menuselection:`Sales --> Configuration --> Leads & Opportunities --> Partner Grade`, you can create partner grades to classify your partners, such as Gold Partner, Silver Partner, Ready Partner. These grades will be used to determine who gets assigned which kind of opportunities.
 
-Assign the grades to the partners on the `Geo Localization` tab of the Customer form. Also assign a `Weight` to determine the probability of assigning opportunities to a partner. The weight might for instance be the amount that the partner pays for his channel partner contract.
+Assign the grades to the partners on the `Geo Localization` tab of the Customer form. Also assign a `Weight` to determine the probability of assigning opportunities to a partner. The weight might for instance be how much the partner pays for their channel partner contract.
 
 How can you tell OpenERP to geolocalize an opportunity?
  
@@ -30,7 +30,7 @@ Go to the `Assignation` tab of the **Opportunities** form, and click the `Geo As
 
 .. note:: GPS
 
-       You can also use the geolocalization without using the GPS coordinates.
+       You can also use the geolocalisation without GPS coordinates.
 
 Now you can decide whether this is the correct channel partner for this opportunity. If you feel that another channel partner would be better to follow up this opportunity because he , you can change the assigned channel partner.
 
@@ -38,7 +38,7 @@ To automatically inform the channel partner of the new opportunity, proceed as f
 
 Click the ``Forward`` button to automatically send an email to the assigned partner with all the details of the opportunity and the prospect.
 When forwarding an opportunity to a partner, you can select which information you want to send: Latest email, Whole Story or Case Information. You can add a cc and add attachments to the mail.
-You can decide to send the mail to the partner (any contact person you want), to an OpenERP user or to an email address you specify.
+You can send the mail to the partner (any contact person you want), to an OpenERP user or to an email address you specify.
 
 To allow your salespeople to keep a view on forwarded opportunities, the assigned opportunity will be displayed for the selected channel partner on the `Geo Localization` tab of the **Customer** form.
 
