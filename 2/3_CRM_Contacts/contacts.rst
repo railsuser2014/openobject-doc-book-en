@@ -51,7 +51,7 @@ Before explaining you how to create a partner, just a quick word on the differen
 `List` view shows a list of customers. In this view, you can see several customers at a time.
 `Form` view is displayed when you click a specific customer to start editing or when you create a new customer.
 
-To create a new partner (a company, customer, supplier, ...) or to display the list of existing customers, use the menu :menuselection:`Sales --> Customers`. This menu does not only allow you to create a new partner, but also to search for partners.
+To create a new partner (a company, customer, supplier, ...) or to display the list of existing customers, use the menu :menuselection:`Sales --> Customers` and for suppliers, use the menu :menuselection:`Purchases --> Suppliers`. This menu does not only allow you to create a new partner, but also to search for partners.
 
 .. figure::  images/crm_partner_default.png
    :scale: 75
