@@ -1,7 +1,7 @@
 
 .. _part2-crm-cont:
 
-Managing your Address Book
+Managing your Customers
 ==========================
 
 .. index::
@@ -11,14 +11,14 @@ Managing your Address Book
    single: Address
    single: Contact
 
-What is the difference between a partner and a contact in OpenERP? A ``Partner`` represents an entity that you do business with - a customer, a prospect, or even an employee of your company. In other CRM applications, a partner is also referred to as an Account.
+What is the difference between a partner (*company*) and a contact in OpenERP? A ``Partner`` represents an entity that you do business with - a customer, a prospect, or even an employee of your company. In other CRM applications, a partner (*company*) is also referred to as an Account.
 A ``Contact`` represents a person who works for a partner.
 
 Each partner can have an unlimited number of contacts. OpenERP also allows you to have several contacts with the same address type for one partner. You can easily link several Invoice addresses to a customer, for instance. 
 
 .. note:: Address Types
 
-	If you have recorded several contacts for the same partner, you can tell OpenERP which contact will be used in
+	If you have recorded several contacts for the same partner (*company*), you can tell OpenERP which contact will be used in
 	various documents (e.g. a quotation) by specifying the ``Address Type``.
 
 	For example, a partner (*company*) can have a delivery address that differs from the company's invoice address.
@@ -27,39 +27,35 @@ Each partner can have an unlimited number of contacts. OpenERP also allows you t
 	the Address Type of Invoice, otherwise to the Default address.
 
 The concept of a partner in OpenERP is much more flexible than in many other management applications. Why is that? Because a partner can be your supplier and your customer at the same time.
-As a consequence, any data you update for that partner will apply to both customer and supplier! Thanks to this, you no longer need to update your address book several times (or even in several places) for the same partner.
+As a consequence, any data you update for that partner will apply to both customer and supplier! Thanks to this, you no longer need to update your customer/supplier information several times (or even in several places) for the same partner.
 
-The partner form contains information about the company, such as its corporate name, its primary language, and whether the company is a
-\ ``Customer`` \ and/or a \ ``Supplier`` \. The partner form is composed of several tabs.
+The partner form contains information about the company, such as its corporate name, its postal information, its communication information, its website and the categories the partner belongs to.
+The partner form is composed of several tabs.
 
-* the :guilabel:`General` tab contains information about different contacts of that partner, postal information,
-  communication information and the categories the partner belongs to,
+* the :guilabel:`Contact` tab contains information about different contacts of that partner (*company*).
 
-* the :guilabel:`Sales & Purchases` tab contains information such as the default salesman and sales team, and the website,
+* the :guilabel:`Sales & Purchases` tab contains information such as the default salesperson and sales team, whether the partner (*company*) is a \ ``Customer`` \ and/or a \ ``Supplier`` \ and its primary language.
 
-* the :menuselection:`History` tab gives visibility on the complete ``Communication History`` (meetings, marketing campaign activities,
-  leads and opportunities, phone calls, emails) with the partner. The events the partner has been involved in are created automatically by
-  different documents like phone calls, leads, meetings,
+* the :menuselection:`Internal Notes` tab is an area for free text notes.
 
-* the :menuselection:`Notes` tab is an area for free text notes.
-
-.. figure::  images/crm_partner_hist.jpeg
-   :scale: 100
+.. figure::  images/sales_purchases_tab.png
+   :scale: 75
    :align: center
 
-   *The History Tab of a Customer*
+   *The Sales & Purchases of a Customer*
 
 Creating and Updating Partners
 ------------------------------
 
 Before explaining you how to create a partner, just a quick word on the different ways of representing partners in OpenERP.
-`List` view shows a list of customers (the default representation when you click the Customers menu). In this view, you can see several customers at a time.
+`Kanban` view shows a global overview of customers (the default representation when you click the Customers menu).
+`List` view shows a list of customers. In this view, you can see several customers at a time.
 `Form` view is displayed when you click a specific customer to start editing or when you create a new customer.
 
-To create a new partner (a company, customer, supplier, ...) or to display the list of existing customers, use the menu :menuselection:`Sales --> Address Book --> Customers`. This menu does not only allow you to create a new partner, but also to search for partners.
+To create a new partner (a company, customer, supplier, ...) or to display the list of existing customers, use the menu :menuselection:`Sales --> Customers`. This menu does not only allow you to create a new partner, but also to search for partners.
 
-.. figure::  images/crm_partner_default.jpeg
-   :scale: 100
+.. figure::  images/crm_partner_default.png
+   :scale: 75
    :align: center
 
    *A Customer Form*
@@ -74,19 +70,19 @@ Create a customer with the following data:
 
 * :guilabel:`Name` : \ ``Smith and Offspring``\ ,
 
-* :guilabel:`Customer` checkbox : \ ``checked``\ ,
+* :guilabel:`Customer` checkbox : \ ``checked``\ , in the Sales & Purchases tab,
 
-* :guilabel:`Supplier` checkbox : \ ``unchecked``\ ,
+* :guilabel:`Supplier` checkbox : \ ``unchecked``\ , in the Sales & Purchases tab,
 
-* :guilabel:`Contact Name` : \ ``Stephen Smith``\ ,
+* :guilabel:`Contact Name` : \ ``Stephen Smith``\ , in the Contacts tab
 
-* :guilabel:`Type` : \ ``Default``\, in the Postal Address section,
+* :guilabel:`Type` : \ ``Default``\,
 
 * :guilabel:`Save` the form.
 
 .. tip:: Email
 
-      If you use the email gateway, the Outlook or the Thunderbird plugin, do not forget to register an email addresses to each contact, so that the gateway will automatically attach incoming emails to the right partner.
+      If you use the email gateway, the Outlook or the Thunderbird plugin, do not forget to register an email addresses to each contact.
 
 To update a partner, open the corresponding form, select `Edit` and change the required fields. As explained before, when a company is both one of your customers and a supplier, you just have to edit the partner form once to have changes applied to both customer and supplier.
 
