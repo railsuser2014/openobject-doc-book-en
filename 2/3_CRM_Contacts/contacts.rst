@@ -92,27 +92,24 @@ To update a partner, open the corresponding form, select `Edit` and change the r
 
 .. index:: Contact; Address
 
-Managing your Contacts & Addresses
-----------------------------------
+Managing your Contacts
+----------------------
 
 You can have several contacts for one partner. Contacts represent company employees that you are in
 touch with, along with their address details. For each address you can indicate the type (\ ``Default``\, \ ``Invoice``\, \ ``Delivery``\, \ ``Contact``\   or \ ``Other``\).
 
-Contacts can be entered into the :guilabel:`General` tab of the **Customer** form, or from the list of addresses in the :menuselection:`Sales --> Address Book --> Addresses` menu.
-
-.. tip:: Same Contact, Different Partners 
-
-      Do you have contacts who work for several companies, and need to be linked to several partners? Check out the :ref:`ch-contact` chapter.
+Contacts can be entered into the :guilabel:`Contacts` tab of the **Customer** form.
+Or you can also create a new partner and assign a company on that partner which will make this partner as a contact on that partner (*company*). 
 
 Customizing Partner Fields
 --------------------------
 
 OpenERP also allows you to customize the ``Partner`` view to your needs. Click the `Manage Views` option if you want to add fields, delete fields or change the order of fields in a view.
 
-Let us add the ``Birthday`` field to a contact, in the `Addresses` form view. To do so, go to the :menuselection:`Sales -->
-Address Book --> Addresses` menu and open any address in Form view. In the right menu bar, click `Manage Views`, then `Edit` because the corresponding view will already be preselected.
+Let us add the ``Birthday`` field to a contact, in the `Customers` form view. To do so, go to the :menuselection:`Sales -->
+Customers` menu and open any customer in Form view. In the debug mode,on top-left select `Manage Views`, then `Edit` because the corresponding view will already be preselected.
 
-Go to the last line of the view and click the blue plus (+) sign to add a field to the `Communication` group. Proceed as in the figure below, then click the `Update` button.
+Go to the last line of the view and click the blue plus (+) sign to add a field to the `Contacts` view. Proceed as in the figure below, then click the `Update` button.
 
 .. figure::  images/manage_views_addfield_small.jpeg
    :scale: 75
@@ -122,19 +119,25 @@ Go to the last line of the view and click the blue plus (+) sign to add a field 
 
 In the `Properties` screen that appears, you can change the label to ``Birthday`` in the ``String`` field. To indicate that a new field can be used in the corresponding search view, make sure to select ``Always Searchable``. Click the `Update` button to confirm your changes. Click `Preview` to see your result. The ``Birthday`` field will now appear in your `Address` form view, ready to be used.
 
+You can customize the ``views``, ``actions`` and ``workflow``.
+
+.. tip:: Customize
+
+        In the debug mode,on top-left click on the ``Debug View`` which will allow you to customize views,actions, etc.
+
 Performing Actions on Customers
 -------------------------------
 
 .. index::
-   single: send SMS
    single: opportunity
    single: reminder
 
-At the right side of the `Customers` list or form view, you will find a list of all of the reports, actions and links available for the selected partner(s). You can perform actions and print reports both from List and from Form view, List view allowing you to do actions for several partners at the same time.
+At the right side of the `Customers` form view, you will find group of buttons(\ ``Schedule a Meeting``\, \ ``Purchase Orders``\, \ ``Supplier Invoices``\, \ ``Quotations and Sales``\  etc) are available. You can perform actions(by clicking on the ``More`` at the top) and print reports(by clicking on the ``Print`` at the top) both from List and from Form view, List view allowing you to do actions for several partners at the same time.
+You can also add an attachment.
 
 .. tip:: Actions
 
-       To display the list of possible actions, just select one or more customers or click the arrow at the top of the right side bar. 
+       To display the list of possible actions, just select one or more customers. 
 
 You can create a new opportunity for a customer, or start a mass mailing. Mass mailings will usually be started from list view, because you will select several partners at a time.
 
@@ -142,26 +145,16 @@ You can create a new opportunity for a customer, or start a mass mailing. Mass m
 
         For mass mailings, you might prefer to use the Direct Marketing application, which offers great functionalities (please refer to chapter :ref:`part3-crm-market`).
 
-Another action enables you to quickly send an SMS message. 
-
-.. tip::  Send an SMS message
-
-	To send an SMS message from standard Open ERP you will have to place an order with the bulk SMS
-	gateway operator Clickatell™ http://clickatell.com.
-
-	To send an SMS message to a partner or a selection of several partners, first select the partners
-	in list view, then click the :guilabel:`SMS Send` Action icon.
-
 .. index:: Filter
 
 Finding your Partners using Filters
 -----------------------------------
 
-Open the `Customers` list view to discover the search options allowing you to easily filter your partners. You can group by ``Salesman`` to see which customers have already been assigned a salesman or not. Click the button at the right (the icon of the person) to see the customers you are responsible for.
+Open the `Customers` list view to discover the search options(top-right) allowing you to easily filter your partners.You can group by ``Salesman`` to see which customers have already been assigned a salesman or not.And can also group by ``Company``. You can also filter by 'Persons' to see the customers you are responsible for.
 
 .. tip:: Limit
 
-       If you want to display more than the 20 partners displayed by default, click the ``1 to 20 of - XX`` option at the bottom of the screen to be able to change the limit.
+       If you want to display more than 80 partners displayed by default, click the ``1 to 80 of 80`` option at the top of the screen to be able to change the limit.
 
 Filters also allow you to quickly set lists of customers for which you want to do specific actions. Through the ``New Filter`` option, you can also add your own filters for any field related to the ``Customer`` form.
 
@@ -178,17 +171,13 @@ Categorizing your Partners
 .. index::
    pair: partner; category
 
-OpenERP uses categories to organize all of its partners according to their relationship with your company (customer, prospect, supplier, and so on). Each partner may be attached to several categories. To open the list of available partner categories, use the menu :menuselection:`Sales --> Configuration --> Address Book --> Partner Categories`.
+OpenERP uses categories to organize all of its partners according to their relationship with your company (partner, prospect, supplier, and so on). Each partner may be attached to several categories. To open the list of available partner categories, use the menu :menuselection:`Sales --> Configuration --> Address Book --> Partner Categories`.
 
 .. figure::  images/crm_partner_category_big.png
-   :scale: 100
+   :scale: 75
    :align: center
 
    *List of Partner Categories*
-
-Click one of the categories in the partner category structure to get a list of the partners
-in that category. If you click a category that has subcategories, you will get a list of all of the
-partners in the main category and in all of its subcategories.
 
 .. note:: Categories
 
@@ -198,71 +187,7 @@ Because categories can be organized according to a tree structure, you can apply
 the structure: a marketing promotion activity, for example, can be applied either to all customers,
 or selectively only to customers in one category and its subcategories.
 
-You can create your own categories and assign them to your partner from the `Customer` form. Another way of assigning the corresponding partner to a category is to open the category from the `Partner Categories`.
-
-In the :ref:`profiling` chapter, you will see how to assign partners to categories automatically using segmentation rules.
-
-.. _ch-contact:
-
-An Alternative to Manage your Contacts
---------------------------------------
-
-According to your kind of business, the standard way of linking several contacts to one partner may not be flexible enough for you. You could perfectly well have the same employees working for several of your companies. Or maybe you work with representatives ensuring follow up of several of your customers. So you would want to have the same contact linked to different partners.
-
-Of course, OpenERP provides an alternative, the :mod:`base_contact` module, which gives you even more flexibility in managing your contacts.
-
-Easily share the same contact (an employee, for instance), who may perfectly have different jobs, with several partners. You only need to enter (or *create*) the contact once and link it to the partners concerned, while specifying the position the contact holds for each company in particular. Any changes to contact information only need to be made once for them to be applied to all partners the contact is related to!
-
-We illustrate the concept of multiple relationships between contacts and partners (companies) through an example. The figure :ref:`fig-crmconw` shows two companies having several addresses (places of business) and several contacts attached to these addresses.
-
-In this example you will find the following elements:
-
-* The ABC bank has two places of business, represented by the addresses of ABC Belgium and ABC
-  Luxembourg,
-
-* The addresses of Dexey France and Dexey Belgium belong to the Dexey company,
-
-* At the office of ABC Luxembourg, you have the contacts of the director (D. Smith) and the
-  accountant (A. Doe),
-
-* Mr Doe holds the post of accountant for ABC Luxembourg and Dexey France,
-
-* Mr D. Smith is director of Dexey France and Dexey Belgium and we also have his private address
-  which is not attached to a partner.
-
-An extra menu option will be added, allowing you to display the list of contacts, through :menuselection:`Sales --> Address Book --> Contacts`.
-
-The screenshot below illustrates how contacts are handled with the advanced Contacts configuration.
-
-.. _fig-crmconw:
-
-.. figure:: images/crm_contact_with_latest.png
-   :scale: 100
-
-   *Advanced Contact Management*
-
-This is a clear way to illustrate the complexities that may be accomplished in OpenERP.
-
-If you correct or change a contact name in the contact form, the changes will be applied to all the posts occupied in the different companies.
-
-The screen below represents a partner form. You can add several addresses, such as Invoice & Delivery, and a list of
-contacts per address. Each contact has its own data, such as name, function, phone number and email.
-
-.. figure:: images/crm_base_contacts.png
-   :scale: 80
-   :align: center
-
-   *Partner Form with the Advanced Contacts Management*
-
-Go to :menuselection:`Sales --> Address Book --> Contacts` to open a contact form.
-You enter data in the contact form, containing information such as mobile phone, different functions occupied, and personal blog. You can also add a photo of your contact.
-If you click the `Functions and Addresses` line, you will get more details about the job (such as start date, end date and fax).
-
-.. figure:: images/crm_partner_poste.png
-   :scale: 100
-   :align: center
-
-   *Detail of a Position occupied by a Contact at a Partner*
+You can create your own categories and assign them to your partner from the `Customer` form.
 
 .. Copyright © Open Object Press. All rights reserved.
 
