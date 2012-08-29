@@ -2,13 +2,12 @@
 .. _part2-crm-cont:
 
 Managing your Customers
-==========================
+=======================
 
 .. index::
    single: Partner
    single: Customer
    single: Prospect
-   single: Address
    single: Contact
 
 What is the difference between a partner (*company*) and a contact in OpenERP? A ``Partner`` represents an entity that you do business with - a customer, a prospect, or even an employee of your company. In other CRM applications, a partner (*company*) is also referred to as an Account.
@@ -106,8 +105,8 @@ Customizing Partner Fields
 
 OpenERP also allows you to customize the ``Partner`` view to your needs. Click the `Manage Views` option if you want to add fields, delete fields or change the order of fields in a view.
 
-Let us add the ``Birthday`` field to a contact, in the `Customers` form view. To do so, go to the :menuselection:`Sales -->
-Customers` menu and open any customer in Form view. In the debug mode,on top-left select `Manage Views`, then `Edit` because the corresponding view will already be preselected.
+Let us add the ``Birthday`` field to a contact, in the `Customers` form view. To do so, click on the logged in user at top-right and select *About OpenERP* and then select *Activate the developer mode*.Now go to the :menuselection:`Sales -->
+Customers` menu and open any customer in Form view.  Click on `Debug View#` and then select `Manage Views`, then `Edit` because the corresponding view will already be preselected.
 
 Go to the last line of the view and click the blue plus (+) sign to add a field to the `Contacts` view. Proceed as in the figure below, then click the `Update` button.
 
@@ -117,13 +116,8 @@ Go to the last line of the view and click the blue plus (+) sign to add a field 
 
    *Add the Birthday Field for a Contact*
 
-In the `Properties` screen that appears, you can change the label to ``Birthday`` in the ``String`` field. To indicate that a new field can be used in the corresponding search view, make sure to select ``Always Searchable``. Click the `Update` button to confirm your changes. Click `Preview` to see your result. The ``Birthday`` field will now appear in your `Address` form view, ready to be used.
-
-You can customize the ``views``, ``actions`` and ``workflow``.
-
-.. tip:: Customize
-
-        In the debug mode,on top-left click on the ``Debug View`` which will allow you to customize views,actions, etc.
+In the `Properties` screen that appears, click on the *New Field* through which you can change the label to ``Birthday`` in the ``String`` field. To indicate that a new field can be used in the corresponding search view, make sure to select ``Always Searchable``. Click the `Update` button to confirm your changes. Click `Preview` to see your result. The ``Birthday`` field will now appear in your *Customers form view --> Contacts tab --> Create/Open* any contact, ready to be used.
+You can also customize the ``actions``.
 
 Performing Actions on Customers
 -------------------------------
@@ -150,7 +144,8 @@ You can create a new opportunity for a customer, or start a mass mailing. Mass m
 Finding your Partners using Filters
 -----------------------------------
 
-Open the `Customers` list view to discover the search options(top-right) allowing you to easily filter your partners.You can group by ``Salesman`` to see which customers have already been assigned a salesman or not.And can also group by ``Company``. You can also filter by 'Persons' to see the customers you are responsible for.
+Open the `Customers` list view to discover the search options(top-right) allowing you to easily filter your partners.You can group by ``Salesman`` to see which customers have already been assigned a salesman or not.And can also group by ``Company``. You can filter by *Persons* to see the customers you are responsible for.
+You can also filter by *My Partners*, *Companies*, *Customers* and *Suppliers*.
 
 .. tip:: Limit
 
@@ -161,7 +156,6 @@ Filters also allow you to quickly set lists of customers for which you want to d
 .. note:: Filters
         
        You can easily create your own frequently used filters by prefiltering the data the way you want and then using the Save Filter option.
-
 
 .. _partner-categ:
 
