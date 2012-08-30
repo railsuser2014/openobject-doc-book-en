@@ -33,8 +33,6 @@ Employees in the marketing or presales department will usually work on leads. On
 
 OpenERP allows you to easily configure the way your company qualifies leads. You can create your own stages through :menuselection:`Sales --> Configuration --> Leads & Opportunities --> Stages`. Use the sequence number to determine the order of the stages, i.e. 10 for First Call, 20 for Renewing Contact and so on. Of course, you can also drag & drop a stage to another place to automatically change the order of all the stages. A salesperson can change the status of the lead according to the response from the prospect and enter the result of this contact in the lead form (e.g. in the ``Notes`` field).
 
-From the :menuselection:`Sales --> Sales --> Leads` menu, you can qualify each individual lead through the button that is found up to the left of the lead definition. To move your lead automatically to the next step from the list of leads, you can click on the button.
-
 Leads can be assigned to a *Sales Team* for easy follow-up (see  :ref:`ch-team`). Each user can be added to a default sales team which can be specified in the `User Preferences`. When you define a tree structure for your sales teams, you can also escalate a lead to another sales team for further actions.
 
 .. note:: Leads or Opportunities
