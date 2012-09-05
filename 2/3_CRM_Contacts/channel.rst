@@ -7,12 +7,7 @@ Managing your Indirect Sales
 .. index::
    single: module; crm_partner_assign
 
-OpenERP will help you to manage your Channel Partners. You can geolocalize your opportunities by going to :menuselection:`Administration --> Modules --> Modules` and then typing :mod:`crm_partner_assign` in the ``Name`` field. Check the module and click the button at the end of the line (after the ``State`` field) to plan the module for installation. Notice that the ``State`` will change to 'To be installed'. In the Actions at the right, click `Apply Scheduled Upgrades`. The module will be installed and the menus :menuselection:`Sales --> Configuration --> Leads & Opportunities --> Partner Grade` and :menuselection:`Sales --> Reporting --> Opportunity Assignment Analysis` will be added.
-
-.. note:: CRM Configuration Wizard
-
-        When you click `Apply Scheduled Upgrades`, the Configuration Wizard will be displayed. You can cancel it if you need no other CRM modules to be installed.
-
+OpenERP will help you to manage your Channel Partners. You can geolocalize your opportunities by installing typing :mod:`crm_partner_assign` module from module list. The module will be installed and the menus :menuselection:`Sales --> Configuration --> Leads & Opportunities --> Partner Grade` and :menuselection:`Reporting --> Sales --> Opp. Assignment Analysis` will be added.
 
 Forwarding Opportunities to Channel Partners
 --------------------------------------------
@@ -42,7 +37,7 @@ You can send the mail to the partner (any contact person you want), to an OpenER
 
 To allow your salespeople to keep a view on forwarded opportunities, the assigned opportunity will be displayed for the selected channel partner on the `Geo Localization` tab of the **Customer** form.
 
-Use the **Opportunity Assignment Analysis** for your reporting.
+Use the **Opportunity Assignment Analysis** for your reporting, you can use the menu Reporting ‣ Sales ‣ Opp. Assignment Analysis. 
 
 .. todo:: test screen
 
@@ -58,7 +53,7 @@ To determine the geographic location of your partners, you do not have to enter 
 In the partner form, the `Geo Localization` tab gives you the information you need.
 
 .. figure:: images/crm_partner_geolocalize.png
-   :scale: 80
+   :scale: 75
    :align: center
 
    *Geolocalizing a Partner*
