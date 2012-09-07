@@ -23,7 +23,7 @@ Tracking Sales Orders
 
 After intensive opportunity qualification, your customer asks you to make a quotation. You can easily do this from the corresponding opportunity! Just click the ``Convert to Quote`` button and OpenERP will create a sales quotation ready for you to be edited. A sales quotation is an unconfirmed sales order. On the quotation, the Source document it was created from (in this case the opportunity) is displayed, to allow you to keep track of which opportunity is linked to which sales quotation / order.
 
-To review the quotation later, you can access it from the :menuselection:`Sales --> Sales --> Sales Orders` menu. On the `Extra Info` tab of the sales quotation, you can find the reference to the related sales quotation / order that has been created from the opportunity concerned.
+To review the quotation later, you can access it from the :menuselection:`Sales --> Sales --> Sales Orders` menu. On the `Other Information` tab of the sales quotation, you can find the source document to the related sales quotation / order that has been created from the opportunity concerned.
 
 For more information about sales orders, please refer to the chapter :ref:`part4-crm-sales`.
 
@@ -34,7 +34,7 @@ Storing Attached Documents
 
 For any object in OpenERP, for instance a lead, opportunity, customer, you can attach external documents. Suppose you send a product folder to one of your customers, and to make sure you know exactly which version of the document he received, you can keep it as an attachment in OpenERP.
 
-To attach whatever type of document to the customer, you just have to go to the :menuselection:`Sales --> Address Book --> Customers` menu.
+To attach whatever type of document to the customer, you just have to go to the :menuselection:`Sales --> Customers` menu.
 
 Open the Customer form of the selected partner, and click the `Add` button in the Action bar, just below `Attachments`. Then click the `Browse...` button and navigate to the location where the product folder is stored, just like you would do in your file explorer. Click the product folder, and then confirm.
 
