@@ -370,7 +370,7 @@ Let us show you an example of how this can be achieved. The figure below shows a
 .. _fig-crmconfo:
 
 .. figure:: images/crm_contact_form.png
-   :scale: 80
+   :scale: 100
    :align: center
 
    *Contact Form on your Website*
