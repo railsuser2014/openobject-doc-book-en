@@ -88,10 +88,10 @@ Below, you find an example of such an EDI flow:
 
 4. Partner Camptocamp can also choose to directly pay online through Paypal or any other mechanism provided by your company.
 
-The email notification is freely customisable as an Email Template from the :menuselection:`Settings --> Configuration --> Email --> Templates`.
+The email notification is freely customisable as an Email Template from the :menuselection:`Settings --> Technical --> Email --> Templates`.
 
 To get the EDI and automatic emailing of orders and invoices to work, you need the :mod:`EDI` module, which is installed by default.
-You need to add an email adress to the partner and make sure the "Opt-out" checkbox is not selected. Ask your system administrator to configure an Outgoing Mail Server. Note that email notifications will be added to a mail queue and processed once in a while, but you can force emails to be send directly from the :menuselection:`Settings --> Email --> Messages`.
+You need to add an email address to the partner and make sure the "Opt-out" checkbox is not selected. Ask your system administrator to configure an Outgoing Mail Server. Note that email notifications will be added to a mail queue and processed once in a while, but you can force emails to be send directly from the :menuselection:`Settings --> Technical --> Email --> Messages`.
 
 The email your customer will receive, will look like the image displayed.
 
