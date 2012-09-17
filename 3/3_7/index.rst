@@ -130,8 +130,10 @@ submissions, customer reminders, and so on. Such strong integration enables you 
         You can configure the Accounting application using the information given in the configuration wizard.
 
         .. figure::  images/config_wiz_account.png
-           :scale: 65
-
+           :scale: 55
+             
+        .. figure::  images/config_wiz_account1.png
+           :scale: 55
 
         With appropriate rights management, this allows trustees to
         provide customers with real-time access to their data. It also gives them the opportunity to work
