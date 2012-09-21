@@ -86,7 +86,7 @@ Customers --> Customer Invoices` and click on `New` button for this.
 
 A new invoice form opens for entering information.
 
-.. figure::  images/account_invoice_new.png
+.. figure::  images/account_customer_invoice.png
    :scale: 75
    :align: center
 
@@ -98,7 +98,7 @@ The document is composed of three parts:
 
 * the main body of the invoice, with detailed invoice lines,
 
-* the bottom of the page, with detail about the taxes, and the totals.
+* the bottom of the page, with some additional information, taxes, and the totals.
 
 To enter a document in OpenERP, you should always fill in fields in the order they appear on
 screen. Doing it this way means that some of the later fields are filled in automatically from the
@@ -134,14 +134,8 @@ completed automatically:
 
    You can reach more information from certain relation fields in OpenERP.
 
-   * In the web client in read-only mode, a relation is commonly a hyperlink
+   * In the web client, a relation is commonly a hyperlink
      - it takes you to the main form for that entity, with all of the actions and links.
-
-   * In the web client in edit mode you can right-click in the field to get a
-     context menu with links and other options.
-
-   * And in the GTK client you can right-click the field to get that same
-     context menu.
 
    So one way or another you can rapidly reach the partner's:
 
@@ -167,9 +161,9 @@ of the two techniques:
 .. tip:: Invoice Line Description
 
         The invoice line description is more of a title than a comment. If you want to add more detailed
-        comments you can use the field in the second tab `Notes`.
+        comments you can use the field `Additional Information`.
 
-So select the product \ ``Basic PC`` \ in the product field in an invoice line. The
+So select the product \ ``LCD Monitor`` \ in the product field in an invoice line. The
 following fields are then completed automatically:
 
 *  `Description` : this comes from the product, in the language of the partner,
@@ -180,8 +174,7 @@ following fields are then completed automatically:
 
 *  `Unit of Measure` : this is defined by default in the product form,
 
-*  `Unit Price` : this is given by the sales price in the product form and is expressed
-   without taxes,
+*  `Unit Price` : this is given by the sales price in the product form.
 
 *  `Taxes` : provided by the product form and the partner form.
 
@@ -195,78 +188,40 @@ following fields are then completed automatically:
         OpenERP can manage tax inclusive prices when you check the `Tax Included in Price` field true when configuring
         the tax.
 
-.. note:: Information about the Product
-
-        When you are entering invoice data, it can sometimes be useful to get hold of more information about
-        the product you are invoicing.
-        Since you are already in edit mode, you would use a right mouse-click
-        on the `Product` field
-        (in both the web and the GTK clients).
-        Then select the available reports. OpenERP provides three standard reports about the product:
-
-        * forecasts of future stock,
-
-        * product cost structure,
-
-        * location of the product in your warehouses.
-
 You can enter several invoice lines and modify the values that are automatically completed
 by OpenERP.
 
-Once the invoice lines have been entered, you can click `Compute Taxes` on the invoice to get
-the following information:
+Once the invoice lines have been entered, you can click `(update)` on the invoice to get
+the details of tax calculated such as:
 
-* details of tax calculated,
+* Untaxed amount,
 
-* tax rate,
+* Tax amount,
 
-* total taxes,
+* Total amount.
 
-* total price.
-
-In the `Taxes` area at the bottom left of the invoice you will find the details of the totals
+In the `Other Info` tab at the bottom you will find the details of the total
 calculated for different tax rates used in the invoice.
 
-.. tip::  Tax Calculations
-
-        You can double-click one of the lines in the tax summary areas in the invoice.
-
-        OpenERP then shows you the detail of the tax charges which will form your tax
-        declaration at the end of the period.
-
-        It shows you the total that will be computed in the different parts of the legal declaration. This
-        enables you to manage the declaration in OpenERP automatically.
-
-
-.. figure::  images/account_invoice_tva.png
-   :scale: 75
-   :align: center
-
-   *Detail of tax charges on an invoice*
-
 Before approving the invoice you can modify the date and the accounting period, which are entered by
-default as today's date. These fields are found on the second tab `Other Info`.
+default as today's date.
 
-.. index::
-   single: invoice layout
-   single: module; account_invoice_layout
+A click on `PRO-FORMA` moves from the \ ``Draft`` \ to \ ``Pro-forma`` \ state. And click `Validate` when you want to approve the invoice. It moves from the \ ``Draft`` \
+state to the \ ``Open``\  state.
 
-.. note:: Invoice Layout
+.. note:: PRO-FORMA button
 
-        If you want to make your invoice layout more elaborate you can install the module
-        :mod:`account_invoice_layout`. This enables you to add various elements between the lines such as
-        subtotals, sections, separators and notes.
-
-Click `Validate` when you want to approve the invoice. It moves from the \ ``Draft`` \
-state to the \ ``Open``\   state.
+        In order to get the `PRO-FORMA` button on invoice, go to the menu :menuselection:`Settings --> Accounting`, *eInvoicing & Payments* section and click the boolean field *Allow pro-forma invoices.*
 
 When you have validated an invoice, OpenERP gives it a unique number from a defined sequence. By
 default it takes the form \ ``Journal Code/Year/Sequence Number`` \ for example, \ ``SAJ/2010/005`` \. You cannot modify an
-invoice number, but instead, you should modify the sequence numbers through the menu :menuselection:`Administration --> Configuration --> Sequences --> Sequences`.
+invoice number, but instead, you should modify the sequence numbers through the menu :menuselection:`Settings --> Configuration --> Accounting`, *eInvoicing & Payments* section and provide *Next Invoice number*
 
 Accounting entries corresponding to this invoice are automatically generated when you approve the
 invoice. You see the details by clicking the entry in the `Journal Entry` field and searching
 there for the account moves generated by that invoice number.
+
+Furthermore, you can also `Print` or `Email` your Invoice.
 
 Tax Management
 --------------
@@ -317,13 +272,10 @@ information directly in the invoice before approving it.
         encode a new product.
         Instead, you will have to provide quite a bit of information manually on the invoice line:
 
-        * sales price,
-
-        * applicable taxes,
-
-        * account,
-
-        * product description.
+		* product description,
+		* account,
+		* quantity,
+		* unit price.
 
 Cancelling an Invoice
 ---------------------
@@ -357,8 +309,8 @@ to the \ ``Draft`` \ state to modify it and regenerate it.
         you find yourself with a break in the numbering you would have to go and modify the sequence,
         redo the invoice and replace the sequence number with its original value.
 
-        You can control the sequences using the menu :menuselection:`Administration --> Configuration -->
-        Sequences --> Sequences`.
+        You can control the sequences using the menu :menuselection:`Settings --> Technical -->
+        Sequences & Identifiers --> Sequences`.
 
 Cancelling an invoice will cause a break in the number sequence of your invoices. You are
 strongly advised to recreate this invoice and re-approve it to fill the hole in the numbering if you can.
@@ -372,55 +324,13 @@ strongly advised to recreate this invoice and re-approve it to fill the hole in 
 
         Instead of entering a new invoice each time, you can base an invoice on a similar preceding one
         and duplicate it. To do this, first search for a suitable existing invoice. In the web client, show
-        the invoice in read-only (non-editable) form view, then click `Duplicate`. In the GTK client,
+        the invoice in read-only (non-editable) form view, then click on `More` and `Duplicate`. In the GTK client,
         select :menuselection:`Form --> Duplicate` from the top menu.
 
         The duplication creates a new invoice in the ``Draft`` state. That enables you to modify it before
         approving it. Duplicating documents in OpenERP is an intelligent function, which enables the
         duplicated invoice to be given its own sequence number, today's date, and the draft state, even if
         the preceding invoice has been paid.
-
-.. note:: Saving Partner Preferences
-
-        OpenERP has many functions to help you enter data quickly. If you invoice the same products
-        frequently for the same partner you can save the last invoice preferences using conditional
-        default values.
-
-        To test this functionality, create an invoice for a partner and add some lines
-        (from the GTK client). Then right-click on the `Invoice Line` field and select
-        `Set Default`. Check the box that indicates this default should apply only to you.
-
-        Then the next time you create an invoice, these invoice lines will be
-        automatically created and you will only have to modify the quantities before confirming the invoice.
-
-        For taxes, you could put the default amount in the invoice lines (in France it would be
-        19.6%, in Belgium 21%, in the UK 17.5% or 15%). Doing this, you will not forget to add tax when you are
-        manually entering invoices.
-
-        (The capabilities of the GTK client are more extensive than those of the web client.
-        You can set defaults for multiple lines in the GTK client but only a single line in the web client,
-        so you need to be quite sure what is possible before you use this functionality routinely.)
-
-.. note:: Getting Information by Navigating to it
-
-        As you are creating an invoice you will often find you need extra information about the partner to
-        help you complete the invoice. As described earlier, you can navigate to other
-        information linked to this partner by right-clicking, such as:
-
-        * Monthly Turnover
-
-        * Benefit Details,
-
-        * Most Recent Invoices,
-
-        * Latest Orders - Sales Order, Purchase Order.
-
-        Do the same to get information about the products you are invoicing. For example: is there enough
-        stock? When will you be getting more stocks in? What are the costs and normal list prices for this
-        product?
-
-        By making this information easily accessible while you are invoicing, OpenERP greatly simplifies
-        your work in creating the invoice.
 
 Creating a Supplier Invoice
 ---------------------------
@@ -446,8 +356,6 @@ To enter a new supplier invoice, use the menu :menuselection:`Accounting --> Sup
 Everything is similar to the customer invoice, starting with the `Journal`
 unless the default is acceptable, and then the `Supplier`, which will automatically complete the following fields
 
-* `Invoice Address`,
-
 * Partner `Account`.
 
 Unlike the customer invoice, you do not have to enter payment conditions – simply a `Due
@@ -455,10 +363,6 @@ Date` if you want one.
 If you do not give a due date, OpenERP assumes that this invoice will be paid in cash.
 If you want to enter more complete payment conditions than just the due date, you can use the `Payment
 Term` field which you can find on the second tab `Other Info`.
-
-You must also enter the invoice `Total` with taxes included. OpenERP uses this amount
-to check whether all invoice lines have been entered correctly before it will let you validate the
-invoice.
 
 Indicate the `Currency` if the invoice is not going to use the default currency, then you can enter
 the `Invoice lines`.
@@ -475,15 +379,11 @@ values are completed automatically:
 
 * the `Quantity` is set at 1 by default but can be changed manually,
 
-* set the `Unit Price` from the total price you are quoted after deducting all
-  the different applicable taxes,
+* `Unit Price` : this is given by the cost price in the product form.
 
-Click `Compute Taxes` to ensure that the totals correspond to those indicated on
-the paper invoice from the supplier. When you approve the invoice, OpenERP verifies that the total
-amount indicated in the header corresponds to the sum of the amounts without tax on the invoice lines
-and the different applicable taxes.
+You can click `(update)` on the invoice in the `Edit` mode to get the details of tax calculated.
 
-OpenERP automatically completes the `Date Invoiced` and the accounting period.
+OpenERP automatically completes the `Invoice Date` and the accounting period.
 
 .. index::
    single: declarations
@@ -527,9 +427,7 @@ reasons that can include:
 
         * 121.66 x 1.196 = 145.51
 
-In this case you can modify a value in the lines that the total is based on, or the total amount of
-taxes at the bottom left of the form: both are editable so that you can modify them to adjust the
-total.
+In this case you can add a row in the Taxes so that you can adjust a total.
 
 When the totals tally, you can validate the invoice. OpenERP then generates the corresponding
 accounting entries. You can manage those entries using the `Account` fields on the
@@ -548,7 +446,7 @@ Similarly, entering a supplier credit note is the same as that of the supplier i
 use the menu :menuselection:`Accounting --> Suppliers --> Supplier Refunds`.
 
 It is easy to generate a credit note quickly from an existing invoice. To do this, select a customer
-or supplier invoice which is in ``Open`` or ``Paid`` state and click the `Refund` button. OpenERP
+or supplier invoice which is in ``Paid`` state and click the `Refund` button. OpenERP
 opens a new payment invoice form for you in the \ ``Draft``\   state so that you can modify it before
 approval.
 
@@ -556,11 +454,14 @@ approval.
    pair: multiple; selection
    pair: multiple; action
 
-.. tip::  Crediting Several Invoices
+Below you find the different options displayed when you click the Refund button on an invoice.
 
-        You can credit more than one customer invoice using the menu :menuselection:`Accounting --> Customers -->
-        Customer Payment`. You can find the `Invoices and outstanding transactions` and `Credits` for the particular customers.
-        Enter the amount in the field `Paid Amount` and validate it.
+Create a Draft Refund
+    Creates a draft credit note of the complete invoice. You can change this credit note, i.e. to make a partial credit note.
+Modify
+    Creates a credit note for the existing invoice, validates the credit note and reconciles it with the invoice. The existing invoice is duplicated so that you can modify it.
+Cancel
+    Creates a credit note for the complete invoice, validates the credit note and reconciles it with the invoice concerned. 
 
 Payments
 --------
