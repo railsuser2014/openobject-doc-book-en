@@ -49,7 +49,7 @@ To create a new :guilabel:`Tax Code`, use the menu :menuselection:`Accounting --
 
 *  :guilabel:`Case Code`: an optional short code for the case,
 
-*  :guilabel:`Parent Code`: a link to a parent Tax Code to create a tree structure which can be displayed from the menu :menuselection:`Accounting --> Charts --> Cgart of Taxes`,
+*  :guilabel:`Parent Code`: a link to a parent Tax Code to create a tree structure which can be displayed from the menu :menuselection:`Accounting --> Charts --> Chart of Taxes`,
 
 *  :guilabel:`Not Printable in Invoice`: a checkbox allowing you to indicate that any taxes linked to the tax code concerned should not be printed on the invoice,
 
@@ -70,7 +70,7 @@ This tree view reflects the structure of the :guilabel:`Tax Codes` and shows the
 
 The :guilabel:`Taxes` defined are used to compute taxes on the transactions they are attached to, and they are linked to the corresponding General Accounts (usually VAT accounts) and to Tax Codes, both for the base amount and the tax amount.
 
-To create a new Tax, use the menu :menuselection:`Accounting --> Configuration --> Financial Accounting --> Taxes --> Taxes`.
+To create a new Tax, use the menu :menuselection:`Accounting --> Configuration --> Taxes --> Taxes`.
 
 .. figure::  images/account_define_tax_form.png
    :scale: 75
@@ -143,6 +143,6 @@ You can also assign multiple taxes to an account, so that when you transfer mone
 
 Taxes on Products and Accounts will usually be national taxes. OpenERP is capable of automatically converting national taxes to intracommunal or export taxes through the concept of ``Fiscal Positions``.
 
-Go to the menu :menuselection:`Accounting --> Configuration -_> Financial Accounting --> Taxes --> Fiscal Positions`. You can use the fiscal positions to automatically convert national taxes to the required intracommunal or export taxes, according to the fiscal position specified for the customer or supplier.
+Go to the menu :menuselection:`Accounting --> Configuration --> Taxes --> Fiscal Positions`. You can use the fiscal positions to automatically convert national taxes to the required intracommunal or export taxes, according to the fiscal position specified for the customer or supplier.
 
 Fiscal positions allow you to make a mapping from national taxes to intracommunal or export taxes, or to map your accounts according to these criteria. You can link fiscal positions to your customers and suppliers to ensure automatic and easy VAT conversion when posting entries.
