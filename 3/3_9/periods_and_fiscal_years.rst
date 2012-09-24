@@ -19,7 +19,7 @@ OpenERP's management of the fiscal year is flexible enough to enable you to work
 Defining a Period or a Financial Year
 -------------------------------------
 
-To define your fiscal year, use the menu :menuselection:`Accounting --> Configuration --> Financial Accounting --> Periods --> Fiscal Year`. You can create several years in advance to define long-term budgets.
+To define your fiscal year, use the menu :menuselection:`Accounting --> Configuration --> Periods --> Fiscal Year`. You can create several years in advance to define long-term budgets.
 
 .. figure::  images/account_period.png
    :scale: 75
@@ -27,7 +27,7 @@ To define your fiscal year, use the menu :menuselection:`Accounting --> Configur
 
    *Defining a Financial Year and Periods*
 
-First enter the date of the first day and the last day of your fiscal year. Then, to create the periods, click one of the two buttons at the bottom depending on whether you want to create twelve 1-month or four 3-months periods:
+First enter the date of the first day and the last day of your fiscal year. Then, to create the periods, click one of the two buttons depending on whether you want to create twelve 1-month or four 3-months periods:
 
 *  :guilabel:`Create Monthly Periods` ,
 
@@ -35,10 +35,12 @@ First enter the date of the first day and the last day of your fiscal year. Then
 
 OpenERP automatically creates an opening period to allow you to post your outstanding balances from the previous fiscal year. Notice the ``Opening/Closing Period`` checkbox for such a period.
 
+To close a fiscal year you can also use the menu :menuselection:`Accounting--> Periodical Processing --> End of Period --> Close a Fiscal Year`.
+
 Closing a Period
 ----------------
 
-To close a financial period, for example when a tax declaration has been made, go to the menu :menuselection:`Accounting--> Configuration --> Financial Accounting --> Periods --> Periods`. Click the green arrow to close the period for which you want no more entries to be posted.
+To close a financial period, for example when a tax declaration has been made, go to the menu :menuselection:`Accounting--> Configuration --> Periods --> Periods`.
 
 .. tip:: Opening Closed Periods
 
