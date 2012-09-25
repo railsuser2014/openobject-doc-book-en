@@ -68,9 +68,8 @@ To restrict the report to hours worked, without including sales and purchases, s
 
 .. tip:: Multiple Printing
 
-    To print several analytic accounts at once, you can make a multiple selection on the different accounts in the tree of accounts. Then
-    click the appropriate :guilabel:`Report` in the toolbar (in the web client), or select one of the :guilabel:`Print` reports (in the
-    GTK client), to export the whole selection into a single PDF document.
+    To print several analytic accounts at once, you can make a multiple selection on the different accounts in the list of accounts. Then
+    click the appropriate :guilabel:`Report` in the `Print` dropdown` button, to export the whole selection into a single PDF document.
 
 Analytic Balance
 ----------------
@@ -80,7 +79,7 @@ The analytic balance is a summary report that relates the analytic accounts to t
 When you select the analytic chart itself (the main analytic account), you can print the analytic balance for the entire analytic chart of accounts.
 
 .. figure::  images/analytic_balance.png
-   :scale: 65
+   :scale: 75
    :align: center
 
    *Analytic Balance*
@@ -101,10 +100,10 @@ This report gives you the profitability of a project for the different operation
 Analytic Journals
 -----------------
 
-From the :menuselection:`Accounting --> Configuration --> Analytic Accounting --> Analytic Journals`, select one or more analytic journals and click the ``Analytic Journal`` report at the right side of the screen. This prints a report per analytic journal from debit and credit (general account versus analytic account).
+From the :menuselection:`Accounting --> Configuration --> Analytic Accounting --> Analytic Journals`, select one or more analytic journals and click the :menuselection:`Print --> Analytic Journal` report at the top of the screen. This prints a report per analytic journal from debit and credit (general account versus analytic account).
 
 .. figure::  images/analytic_journal.png
-   :scale: 75
+   :scale: 65
    :align: center
 
    *Analytic Sales Journal*
@@ -112,17 +111,17 @@ From the :menuselection:`Accounting --> Configuration --> Analytic Accounting --
 Analytic Entries Analysis
 -------------------------
 
-You can have the statistical analysis on all analytic entries from the menu :menuselection:`Accounting --> Reporting --> Statistic Reports --> Analytic Entries Analysis`. By default, analytic entries are grouped by analytic account and month, but you have many options to sort and regroup analytic entries. You can, for instance, first group the information by general account, then by analytic account.
+You can have the statistical analysis on all analytic entries from the menu :menuselection:`Reporting --> Accounting --> Analytic Entries Analysis`. By default, analytic entries are grouped by analytic account and month, but you have many options to sort and regroup analytic entries. You can, for instance, first group the information by general account, then by analytic account.
 
 .. figure::  images/analytic_entries_analysis.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Statistical Report for Analytic Entries*
 
 .. tip:: Graph
 
-    You can easily turn this analysis screen into a graph by clicking the :guilabel:`Graph` button at the top of the screen.
+    You can easily turn this analysis screen into a graph by clicking the :guilabel:`Graph` button at the top right of the screen.
 
 .. Copyright © Open Object Press. All rights reserved.
 

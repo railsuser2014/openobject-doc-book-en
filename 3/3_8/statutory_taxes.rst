@@ -12,7 +12,7 @@ To print the `General Ledger`, you can use the menu :menuselection:`Accounting -
 You will find the following wizard which is used to filter the resulting report.
 
 .. figure::  images/account_wizard_report.png
-   :scale: 75
+   :scale: 73
    :align: center
 
    *Preparing a General Ledger*
@@ -28,7 +28,7 @@ You can sort the report by date or by journal / partner.
 
 .. tip:: General Ledger for one or more accounts
 
-    When you want to print the general ledger for one or more accounts, go to the menu :menuselection:`Accounting --> Configuration -> Financial Accounting --> Accounts --> Accounts`. Select the account(s) for which you want to print the general ledger and click the :guilabel:`General Ledger` report at the right side of the screen. 
+    When you want to print the general ledger for one or more accounts, go to the menu :menuselection:`Accounting --> Configuration --> Accounts --> Accounts`. Select the account(s) for which you want to print the general ledger and click the :menuselection:`Print --> General Ledger` report at the top of the screen. 
 
 While the general ledger displays transactions for an account, a trial balance will show one amount (either debit or credit) for each account. The aim of the trial balance is to prove that the total of all debit balances is equal to the total of all credit balances.
 
@@ -36,7 +36,7 @@ To print the `Trial Balance`, go to the menu :menuselection:`Accounting --> Repo
 This report allows you to print or generate a PDF of your trial balance, allowing you to quickly check the balance of each of your accounts in a single report. A trial balance may include all accounts (even the ones without balance), only accounts with transactions or accounts of which the balance is not equal to zero. You can print a trial balance for all posted entries (meaning entries with a Valid state) or all entries, in which case the report will also print entries in a draft state. This option is useful, for instance, when your new financial year has just been opened, and you are preparing miscellaneous entries in the previous financial year.
 
 .. figure::  images/account_trial_balance.png
-   :scale: 65
+   :scale: 73
    :align: center
 
    *Trial Balance*
@@ -62,13 +62,13 @@ Assets = Liabilities + Shareholders' Equity.
 
 A balance sheet is often described as a snapshot of a company's financial condition.
 
-The accounts displayed in the Balance Sheet are linked to an account type for which the ``P&L / Balance Sheet`` parameter is set to Balance Sheet (either Assets or Liabilities account). To configure :guilabel:`Account Types`, go to :menuselection:`Accounting --> Configuration --> Financial Accounting --> Accounts --> Account Types`.
+The accounts displayed in the Balance Sheet are linked to an account type for which the ``P&L / Balance Sheet`` parameter is set to Balance Sheet (either Assets or Liabilities account). To configure :guilabel:`Account Types`, go to :menuselection:`Accounting --> Configuration --> Accounts --> Account Types`.
 
 The Balance Sheet can be printed from the menu :menuselection:`Accounting --> Reporting --> Legal Reports --> Accounting Reports --> Balance Sheet`. You can print this report in Landscape mode too.
 
 .. tip:: Reserve & Profit and Loss Account
 
-    A Balance Sheet needs a reserve & profit and loss account, but instead of entering it each time you start the report, you can add a default Reserve & Profit and Loss account through the menu:menuselection:`Settings --> Companies --> Companies` on the ``Configuration`` tab. This account will be used as a counterpart to balance your accounts.
+    A Balance Sheet needs a reserve & profit and loss account, but instead of entering it each time you start the report, you can add a default Reserve & Profit and Loss account through the menu :menuselection:`Settings --> Companies --> Companies` on the ``Configuration`` tab. This account will be used as a counterpart to balance your accounts.
 
 The `Profit & Loss Report` is a financial statement which gives a summary of the revenues, costs and expenses during a specific period of time. Such a report provides information that shows the ability of a company to generate profit by increasing revenue and reducing costs. The P&L statement is also known as an "Income Statement".
 
@@ -76,19 +76,19 @@ The purpose of the Profit & Loss Report is to show managers and accountants whet
 
 In general, the Profit and Loss report will be used to determine profit ratios, to examine sales prices and costs, and to set marketing budgets, for instance.
 
-The accounts displayed in the Profit and Loss Report are linked to an account type for which the ``"P&L / Balance Sheet`` parameter is set to Profit & Loss (either Expense or Income account). To configure Account types, go to :menuselection:`Accounting --> Configuration --> Financial Accounting --> Account Types`.
+The accounts displayed in the Profit and Loss Report are linked to an account type for which the ``"P&L / Balance Sheet`` parameter is set to Profit & Loss (either Expense or Income account). To configure Account types, go to :menuselection:`Accounting --> Configuration --> Accounts --> Account Types`.
 
 The Profit and Loss report can be printed from the menu :menuselection:`Accounting --> Reporting --> Legal Reports --> Accounting Reports --> Profit And Loss`.
 
 
 .. figure::  images/account_profit_loss.png
-   :scale: 75
+   :scale: 73
    :align: center
 
    *Profit and Loss Wizard*
 
 .. figure::  images/account_profit_loss_report.png
-   :scale: 75
+   :scale: 45
    :align: center
 
    *Profit and Loss Report*
@@ -98,7 +98,7 @@ The Profit and Loss report can be printed from the menu :menuselection:`Accounti
 The Accounting Journals
 -----------------------
 
-A journal allows you to list entries in chronological order (by default according to date). Each entry posted in OpenERP is recorded in such a journal. To configure the different accounting journals, go to the menu :menuselection:`Accounting --> Configuration --> Financial Accounting --> Journals --> Journals`.
+A journal allows you to list entries in chronological order (by default according to date). Each entry posted in OpenERP is recorded in such a journal. To configure the different accounting journals, go to the menu :menuselection:`Accounting --> Configuration --> Journals --> Journals`.
 
 .. figure::  images/account_journal_form.png
    :scale: 75
@@ -111,7 +111,7 @@ OpenERP provides three main reports regarding the journals:
 * To print a `Journal`, use the menu :menuselection:`Accounting --> Reporting --> Legal Reports --> Journals --> Journals`. This report will show all entries per journal, e.g. sales entries, purchase entries, etc. Each transaction is mentioned, with date, reference, document number, account, partner, description and debit and credit amount. The ``Journal`` report can be printed per period and per journal.
 
 .. figure::  images/account_journal_print.png
-   :scale: 75
+   :scale: 50
    :align: center
 
    *Printing a Journal*
@@ -119,7 +119,7 @@ OpenERP provides three main reports regarding the journals:
 * To print a `General Journal`, use the menu :menuselection:`Accounting --> Reporting --> Legal Reports --> Journals --> General Journals`. A General Journal will print a page per period for any journal entries posted in that period, and totalised per journal. The report will show the period, the journal, debit, credit and balance, but no details of the related entries.
 
 .. figure::  images/account_gen_journal_print.png
-   :scale: 75
+   :scale: 50
    :align: center
 
    *Printing a General Journal*
@@ -127,7 +127,7 @@ OpenERP provides three main reports regarding the journals:
 * To print a `Centralizing Journal`, use the menu :menuselection:`Accounting --> Reporting --> Legal Reports --> Journals --> Centralizing Journal`. A centralizing journal gives a summary per account for each journal and period of debit, credit and balance.
 
 .. figure::  images/account_cent_journal_print.png
-   :scale: 75
+   :scale: 65
    :align: center
 
    *Printing a Centralizing Journal*
@@ -141,7 +141,7 @@ Information required for a tax declaration is automatically generated by OpenERP
 You can also get the tax information when you open a journal entry by looking at the columns to the right of each line.
 
 .. figure::  images/account_journal_vat.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Journal Entry with VAT Information*
@@ -153,7 +153,7 @@ OpenERP keeps a tax chart that you can reach from the menu :menuselection:`Accou
    single: VAT
 
 .. figure::  images/account_tax_chart.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Example of a Belgian VAT Structure*
@@ -191,7 +191,7 @@ Furthermore, for your tax declaration, you can click one of the tax accounts to 
 Management Indicators
 ---------------------
 
-With OpenERP you can also create your own financial reports. This feature is now included in standard OpenERP. Go to :menuselection:`Accounting -_> Configuration --> Financial Accounting --> Financial  Reports --> Account Reports` and click ``Create``.
+With OpenERP you can also create your own financial reports. This feature is now included in standard OpenERP. Go to :menuselection:`Accounting --> Configuration --> Financial Accounting --> Financial  Reports --> Account Reports` and click ``Create``.
 
 Suppose we would like to create our company Balance Sheet. The first report to be created, should be a View report which will contain the final details. Keep the default Sequence 0.
 

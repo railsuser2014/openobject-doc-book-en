@@ -14,15 +14,15 @@ The first step in defining budgets is to determine the general accounts for whic
 That is what you will use ``Budgetary Positions`` for, from the menu :menuselection:`Accounting --> Configuration --> Budgets --> Budgetary Positions`. Here you can select the general accounts for which you want to keep budgets. The aim is to group general accounts logically, according to sales or purchases, for instance. OpenERP has no limitations as to the account types that can be used for budgeting.
 
 .. figure::  images/account_budget_pos.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Budgetary Position for Sales*
 
-To define your budgets, go to the menu :menuselection:`Accounting --> Budgets --> Budgets`. Define a new budget by clicking the `New` button.
+To define your budgets, go to the menu :menuselection:`Accounting --> Budgets --> Budgets`. Define a new budget by clicking the `Creat` button.
 
 .. figure::  images/account_budget_form.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Optimistic Budget*
@@ -36,13 +36,13 @@ To define your budgets, go to the menu :menuselection:`Accounting --> Budgets --
 
     Rather than edit an existing budget, make a new version so that you can keep your original estimates safe for comparison. This lets you analyse your changing perspectives of the company from revision to revision.
 
-To define your budgets, start by entering a :guilabel:`Name`, a :guilabel:`Code`, a :guilabel:`Start Date` and an :guilabel:`End Date` for your new budget. Then you can define the budgeted amounts for each analytic account within a specified period, one by one (enter negative amounts for purchases, positive amounts for sales). For each, you define:
+To define your budgets, start by entering a :guilabel:`Name`, a :guilabel:`Code`, a :guilabel:`Duration` for your new budget. Then you can define the budgeted amounts for each analytic account within a specified period, one by one (enter negative amounts for purchases, positive amounts for sales). For each, you define:
 
 * an :guilabel:`Analytic Account`
 
 * a :guilabel:`Budgetary Position`, for example ``Sales`` or ``Purchases``,
 
-* a :guilabel:`Start Date` and an :guilabel:`End Date` for the budget,
+* a :guilabel:`Duration` for the budget,
 
 * a :guilabel:`Planned Amount` in the default currency of the chart of accounts.
 
@@ -76,13 +76,13 @@ The figure :ref:`fig-accbudg` gives an example of a budget produced by OpenERP.
 .. _fig-accbudg:
 
 .. figure::  images/account_budget.png
-   :scale: 75
+   :scale: 65
    :align: center
 
    *Printing a Budget*
 
 .. figure::  images/account_budget_summ.png
-   :scale: 75
+   :scale: 65
    :align: center
 
    *Summarised Budget*
