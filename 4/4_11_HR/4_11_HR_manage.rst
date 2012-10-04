@@ -40,9 +40,10 @@ To define a new employee in OpenERP, use the menu :menuselection:`Human Resource
 
    *Form describing an employee*
 
-Start by entering the employee's name in :guilabel:`Name` and the company that this employee works for
-in :guilabel:`Company`. You can then create a new user of the OpenERP system linked to this
-employee by filling in a new :guilabel:`User` form through the :guilabel:`User` field.
+Start by entering the employee's name in :guilabel:`Name` and the employee category i.e.
+:guilabel:`Tags`. You can then create a new user of the OpenERP system linked to this
+employee by filling in a new :guilabel:`User` form through the :guilabel:`Related User` field.
+And the company that this employee works for in :guilabel:`Company`. 
 
 Even if the employee is not a user, it is best if you
 create a system access for most of your staff just so that you can control their access rights from
@@ -63,14 +64,14 @@ Then enter the employee's address.
 This appears in the partner contact form in OpenERP. Since
 employees are people that have contracts with your company, it is logical that they have entries
 like any other partner in your database. So enter the name of the employee as a new partner Name and
-the address in the Partner Contact section of the General tab.
+the address.
 Then all of the functions that apply to a partner can also be
 applied to an employee. This is particularly useful for tracking debits and credits in
 the accounts – so you can track salary payments, for example.
 
-To help employees encode and validate timesheets and attendances, you can install :mod:`hr_timesheet_sheet` by selecting :guilabel:`Timesheets` in the :guilabel:`Reconfigure` wizard.
-You can then set both an analytic journal and a linked product to this employee
-in the :guilabel:`Timesheets` tab. If
+To help employees encode and validate timesheets and attendances, you can install :mod:`hr_timesheet_sheet` by going to the menu :menuselection:`Settings --> Configuration --> Human Resources`..
+And then click on the `Allow timesheets validation by managers`.
+You can then set both an analytic journal and linked a product to an employee in the :guilabel:`HR Settings` tab of employee form. If
 you do it that way, then this information can be used to track services. For now, just complete the
 form with the following information:
 
@@ -78,6 +79,8 @@ form with the following information:
 
 *  :guilabel:`Product` : a service product that describes how this employee would be charged out,
    for example as ``Service on Timesheet``.
+   
+At the top right of the form you can find a cluster of buttons which will lead you to the `Timesheets, Payslips, Leaves, Contracts, Appraisals` associated with that employee.   
 
 .. index::
    single: employee; billing
@@ -143,8 +146,8 @@ And each company job position corresponds to a :guilabel:`Product`.
 	The hourly cost of the employee is then automatically calculated from their employment contract
 	when they enter their timesheet data.
 
-	To do this, the software uses a factor defined in the contract type
-	(for example, the gross monthly salary, calculated per day).
+	To do this, the software uses a factor defined in the contract
+	(for example, contract type, wages, working schedule, etc).
 	Ideally, this factor should take into account the salary costs, taxes, insurances and other
 	overheads associated with pay.
 
@@ -154,7 +157,7 @@ And each company job position corresponds to a :guilabel:`Product`.
 Define employee categories to assign different Holiday’s rights to different employee groups
 --------------------------------------------------------------------------------------------
 
-You must create and assign employee categories for employees in order to be able to assign and manage leave and allocation requests by category. You can define employee categories from :menuselection:`Human Resources --> Configuration --> Human Resources --> Employees --> Categories of Employee`. For a new category, define its name in :guilabel:`Category`. A category may also be assigned a :guilabel:`Parent Category`.
+You must create and assign employee categories for employees in order to be able to assign and manage leave and allocation requests by category. You can define employee categories from :menuselection:`Human Resources --> Configuration --> Categories of Employee`. For a new category, define its name in :guilabel:`Category`. A category may also be assigned a :guilabel:`Parent Category`.
 
 .. figure::  images/employee_categories.png
    :scale: 75
@@ -162,7 +165,7 @@ You must create and assign employee categories for employees in order to be able
 
    *Example of categories defined for employees*
 
-To link an employee to a category, open the employee form through :menuselection:`Human Resources --> Human Resources --> Employees`. In the :guilabel:`Categories` tab, you can assign more than one category to an employee by clicking :guilabel:`Add` and selecting a category.
+To link an employee to a category, open the employee form through :menuselection:`Human Resources --> Human Resources --> Employees`. In the :guilabel:`Tags` , you can assign more than one category to an employee.
 
 .. figure::  images/employee_assign_category.png
    :scale: 75
@@ -175,38 +178,25 @@ Now, when you create a new leave or allocation request from the menuitems under 
 .. index::
    single: employee; contracts
 
-Define contract types and wage types with start and end dates for contracts as well as trial periods
+Define contract types with start and end dates for contracts as well as trial periods
 ----------------------------------------------------------------------------------------------------
 
 If you install the :mod:`hr_contract` module you can link contract details to the employee record.
-The configuration wizard to install this module is shown below.
+Go to the menu :menuselection:`Settings --> Configuration --> Human Resources`.And then tick the `Record contracts per employee`.
 
 .. figure::  images/config_wiz_contract.png
    :scale: 75
    :align: center
 
-   *Configuration wizard to install hr_contract*
+   *Install hr_contract*
 
-Define new contract types at :menuselection:`Human Resources --> Configuration --> Human Resources --> Contract --> Contract Types`.
+Define new contract types at :menuselection:`Human Resources --> Configuration  --> Contract --> Contract Types`.
 
 .. figure::  images/hr_contract_type_list.png
    :scale: 75
    :align: center
 
    *Contract Types list*
-
-You may similarly define wage types at :menuselection:`Human Resources --> Configuration --> Human Resources --> Contract --> Wage Type`. Enter the following details in the form:
-
-*  :guilabel:`Wage Type Name` : A name for the wage type.
-*  :guilabel:`Wage Period` : Select a pre-defined wage period. Wage periods are defined at :menuselection:`Human Resources --> Configuration --> Human Resources --> Contract --> Wage period`.
-*  :guilabel:`Type` : Either ``Gross`` or ``Net``.
-*  :guilabel:`Factor for hour cost` : Used by the timesheet system to compute the price of an hour of work based on the contract of an employee.
-
-.. figure::  images/hr_wage_type.png
-   :scale: 75
-   :align: center
-
-   *Wage Type form*
 
 Using :menuselection:`Human Resources --> Human Resources --> Contracts` you can create and edit contracts.
 
@@ -218,23 +208,21 @@ Using :menuselection:`Human Resources --> Human Resources --> Contracts` you can
 
 You can enter information about the employment contract for the employee, such as:
 
-*  :guilabel:`Contract Reference`
+*  :guilabel:`Employee` : Employee for whom you want to define a contract.
 
-*  :guilabel:`Job Title`
-
-*  :guilabel:`Working Schedule`
-
-*  :guilabel:`Start Date`
-
-*  :guilabel:`End Date`
-
-*  :guilabel:`Wage Type` : Select one from pre-defined wage types.
+*  :guilabel:`Job Title` : Select job position.
 
 *  :guilabel:`Contract Type` : Select one from pre-defined contract types.
 
-*  :guilabel:`Trial Start Date` : Start date for the contract trial period, if any.
+*  :guilabel:`Working Schedule`: For example 45 Hours/Week.
 
-*  :guilabel:`Trial End Date` : End date for the contract trial period, if any.
+*  :guilabel:`Duration`: Start date and end date, since the employee started working where Start date is a required field.
+
+*  :guilabel:`Wage` : Basic salary of the employee.
+
+*  :guilabel:`Trial Period Duration` : Start date & End date for the contract trial period, if any.
+
+*  :guilabel:`Work Permit tab` : Information regarding the Visa No, Visa Expire date and Work Permit No.
 
 .. index::
    single: employee; sign in / sign out
@@ -244,7 +232,13 @@ Manage attendance (Sign in / Sign out)
 
 In some companies, staff have to sign in when they arrive at work and sign out again at the end of
 the day. If each employee has been linked to a system user, then they can sign into OpenERP by
-using the menu :menuselection:`Human Resources --> Attendances --> Sign in / Sign out`.
+clicking on the icon at top-right.
+
+.. figure::  images/sign_in_out.png
+   :scale: 75
+   :align: center
+
+   *Sign In/Out*
 
 If an employee has forgotten to sign out on leaving, the system proposes that they sign out manually
 and type in the time that they left when they come in again the next day. This gives you a simple way
@@ -266,7 +260,7 @@ The last report highlights errors in attendance data entry.
 It shows you whether an employee has entered the time of
 entry or exit manually and the differences between the actual and expected sign out time and the sign in time.
 
-The second report shows the attendance data for the selected month.
+The first and second report shows the attendance data for the selected month and week respectively.
 
 .. Copyright © Open Object Press. All rights reserved.
 
