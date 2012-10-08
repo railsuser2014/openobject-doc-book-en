@@ -70,7 +70,7 @@ applied to an employee. This is particularly useful for tracking debits and cred
 the accounts – so you can track salary payments, for example.
 
 To help employees encode and validate timesheets and attendances, you can install :mod:`hr_timesheet_sheet` by going to the menu :menuselection:`Settings --> Configuration --> Human Resources`..
-And then click on the `Allow timesheets validation by managers`.
+Then in ``Time Tracking`` tick on the `Allow timesheets validation by managers`.And finally click on ``Apply`` button.
 You can then set both an analytic journal and linked a product to an employee in the :guilabel:`HR Settings` tab of employee form. If
 you do it that way, then this information can be used to track services. For now, just complete the
 form with the following information:
@@ -216,7 +216,7 @@ You can enter information about the employment contract for the employee, such a
 
 *  :guilabel:`Working Schedule`: For example 45 Hours/Week.
 
-*  :guilabel:`Duration`: Start date and end date, since the employee started working where Start date is a required field.
+*  :guilabel:`Duration`: Start date and end date, since the employee started working where Start date is mandatory.
 
 *  :guilabel:`Wage` : Basic salary of the employee.
 
