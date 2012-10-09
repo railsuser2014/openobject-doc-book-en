@@ -60,13 +60,13 @@ Allow employees to enter professional expenses
    single: module; hr_expense
 
 Install the module :mod:`hr_expense` to automate the management of expense claims.
-The configuration wizard to install this module is shown below.
+Go to the menu :menuselection:`Settings --> Configuration --> Human Resources`.And then click on the `Apply` button.
 
 .. figure::  images/config_wiz_expenses.png
    :scale: 75
    :align: center
 
-   *Configuration wizard to install hr_expense module*
+   *Install hr_expense module*
 
 Users can then enter and review their expenses using the menu :menuselection:`Human Resources --> Expenses --> Expenses`.
 
@@ -92,7 +92,7 @@ reimbursement of travel expenses by car at 0.25 per kilometer:
 
 The employee keeps his expenses sheet in the \ ``Draft``\   state while completing it throughout the
 period. At the end of the period (week or month), the employee can confirm his expense form using the
-:guilabel:`Confirm` button on the form. This puts it into the state \ ``Waiting Approval``\  .
+:guilabel:`Submit to Manager` button on the form. This puts it into the state \ ``Waiting Approval``\  .
 
 .. index::
    single: expense; approval
@@ -103,10 +103,10 @@ Track the approval management process
 At the end of the period, the department manager can access the list of expense forms awaiting
 approval using the menu :menuselection:`Human Resources --> Expenses --> Expenses`.
 
-The department manager can then approve the expenses. Now, the :guilabel:`Invoice` button is visible which on clicking creates a supplier invoice
+The department manager can then approve or refuse the expenses. Now, the :guilabel:`Generate accounting entries` button is visible which on clicking creates a purchase receipt,
 in the employee's name so that the employee can be reimbursed. An analytic account is coded onto
-each line of the invoice. When the invoice is confirmed, general and analytic accounting entries are
-automatically generated as they would be with any other invoice.
+each line of the receipt. The purchase receipt *(on creation)* automatically goes into the `posted` state, generating analytic accounting entries 
+as they would be with any other invoice.
 
 .. index::
    single: expense; rebill customers
@@ -121,7 +121,13 @@ associated with the project.
 Invoicing from timesheets allows you to prepare all your invoices, both
 expenses and timesheets for a project's customer.
 
-You can view the statistical analysis of expenses using menu :menuselection:`Human Resources --> Reporting --> Expenses Analysis`.
+You can view the statistical analysis of expenses using menu :menuselection:`Reporting --> Human Resources --> Expenses Analysis`.
+
+.. figure::  images/expenses_analysis.png
+   :scale: 75
+   :align: center
+
+   *Expenses Analysis*
 
 .. Copyright © Open Object Press. All rights reserved.
 
