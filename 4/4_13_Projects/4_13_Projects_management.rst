@@ -10,8 +10,6 @@ Here we will explain operational project management to organize tasks and plan t
 need to get the tasks completed. All the necessary operations are carried out from the
 :menuselection:`Project` menu.
 
-.. tip:: Remember that you will have less options in Simplified view than in Extended view.
-
 .. index::
    single: project
 
@@ -40,15 +38,13 @@ Creating Projects and Related Tasks
 -----------------------------------
 
 To define a new project, go to the menu :menuselection:`Project --> Project --> Projects`.
-Click :guilabel:`New` and give your new project a :guilabel:`Project Name`.
+Click :guilabel:`Create` and give your new project a :guilabel:`Project Name`.
 
-You can put this project into a hierarchy, as a child of a :guilabel:`Parent Project`, and
+You can put this project into a hierarchy, as a child of a :guilabel:`Parent Analytic Account`, and
 assign a :guilabel:`Project Manager`.
-Enter the general duration by completing :guilabel:`Start Date` and :guilabel:`End Date`.
+Enter the general duration by completing :guilabel:`End Date`.
 
-The `Administration` tab displays information about Planned Time and the Time Spent on the project according to the task work completed.
-By checking the box :guilabel:`Warn Manager`, you configure the system to automatically send the project manager
-an OpenERP `Request` every time a task is closed.
+The `Other Info` tab displays information about Planned Time and the Time Spent on the project according to the task work completed.
 
 In case a project takes too long, it can also be escalated to another project. This feature is available if you have installed the module :mod:`project_issue`, which can be done by selecting :guilabel:`Issues Tracker` in the :guilabel:`Reconfigure` wizard. In :guilabel:`Project Escalation`, enter the project that will be used for escalated tasks.
 Define a generic :guilabel:`Reply-To Email Address` linked to all automated mails; this allows you to receive replies directly in OpenERP.
@@ -67,24 +63,14 @@ The status of a project can take the following values:
 * \ ``Template``\: the project can be used as a template to make projects based on this.
 
 
-On the `Members` tab, add :guilabel:`Members` to the project; this is related to access rights too.
+On the `Team` tab, add :guilabel:`Project Members` to the project; this is related to access rights too.
 
-On the `Billing` tab, you find information to invoice your customer.
-Select the `Customer`; the Invoice address will automatically be filled from the customer form.
-To generate invoices based on time spent on tasks, if activated on a project, you may install :mod:`project_timesheet` by selecting :guilabel:`Bill Time on Tasks` in the :guilabel:`Reconfigure` wizard.
-Then you can complete the invoicing data, such as `Sale Pricelist` and `Invoice Task Work` to directly invoice from task work done.
-OpenERP allows you to set a `Max. Invoice Price` for the project (or sub-project). The `Invoiced Amount` shows the total amount that has already been invoiced for the project concerned. 
+On the project form you find a customer field, which will also be used for invoice creation.
+To generate invoices based on time spent on tasks, you need to install :mod:`project_timesheet`.Go to menu 
+menu :menuselection:`Settings --> Configuration --> Project`.And in `Task`, tick Record timesheet lines per tasks.
+Then Go to the menu :menuselection:`Project --> Invoicing --> Invoice Tasks Work`.Open its form view click on `More` and `Create Invoices`.
 
-If you want to automatically keep your customer informed about the progress of the project, check `Warn Partner`. 
-
-.. note:: Warn Partner Setup
-
-   If you check :guilabel:`Warn Partner`, you should define a generic Mail Header and Mail Footer in the
-   :guilabel:`Billing` tab that will be used in the automated email (*Extended view* only).
-   OpenERP prepares an email the user can send to the customer
-   each time that a task is completed. The contents of this email are based on details of the project
-   task, and can be modified by the user before the email is sent.
-   OpenERP displays a number of variables at the bottom of this tab.
+.. note:: Complete the invoicing data, such as Sale Pricelist and Customer on Analytic Account before creating the invoice.
 
 .. note:: Study of Customer Satisfaction
 
@@ -98,12 +84,18 @@ If you want to automatically keep your customer informed about the progress of t
 
 The `Task Stages` tab allows you to define stages that help you divide your tasks. You can add a sequence number to set the stage order, allowing you to prioritize your task work, i.e. first you will have the Specification stage and then Development.
 
+.. figure::  images/projects.png
+   :scale: 75
+   :align: center
+
+   *Projects*
+
 Managing Tasks
 --------------
 
 Once a project has been defined, you can enter the tasks to be executed. You have two possibilities for this:
 
-* click the :guilabel:`ACTION` button :guilabel:`Tasks` to the right of the project form, then click :guilabel:`New`,
+* click the button :guilabel:`Tasks` to the right of the project form, then click :guilabel:`New`,
 
 * from the menu :menuselection:`Project --> Project --> Tasks`, create a new task and assign it
   to an existing project.
