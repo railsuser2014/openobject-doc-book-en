@@ -32,13 +32,21 @@ Ensure that you have entered a working schedule for your project in the :guilabe
 
 If you have tasks related to a phase, you can see them in the :guilabel:`Tasks Details` tab of your phase form. Schedule them by clicking the :guilabel:`Schedule Tasks` button. All the tasks which are in draft, pending and open state are scheduled and their dates are calculated based on the starting date of the phase.
 
+.. _fig-schedule_phase:
+
+.. figure::  images/schedule_phase.png
+   :scale: 75
+   :align: center
+
+   *Schedule Phase*
+
 .. _fig-schedule_tasks:
 
 .. figure::  images/schedule_tasks.png
    :scale: 75
    :align: center
 
-   *Schedule Related Unclosed Tasks*
+   *Schedule Tasks*
 
 You can similarly derive the Gantt charts for Project Phases and Resources Allocation in the following ways:
 
