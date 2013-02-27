@@ -69,8 +69,7 @@ Then all of the functions that apply to a partner can also be
 applied to an employee. This is particularly useful for tracking debits and credits in
 the accounts – so you can track salary payments, for example.
 
-To help employees encode and validate timesheets and attendances, you can install :mod:`hr_timesheet_sheet` by going to the menu :menuselection:`Settings --> Configuration --> Human Resources`..
-Then in ``Time Tracking`` tick on the `Allow timesheets validation by managers`.And finally click on ``Apply`` button.
+To help employees encode and validate timesheets and attendances, you can install :mod:`hr_timesheet_sheet` by going to the menu :menuselection:`Settings --> Modules --> Apps`..
 You can then set both an analytic journal and linked a product to an employee in the :guilabel:`HR Settings` tab of employee form. If
 you do it that way, then this information can be used to track services. For now, just complete the
 form with the following information:
@@ -80,7 +79,7 @@ form with the following information:
 *  :guilabel:`Product` : a service product that describes how this employee would be charged out,
    for example as ``Service on Timesheet``.
    
-At the top right of the form you can find a cluster of buttons which will lead you to the `Timesheets, Payslips, Leaves, Contracts, Appraisals` associated with that employee.   
+At the top right of the form you can find button which will lead you to the `Timesheets` associated with that employee.   
 
 .. index::
    single: employee; billing
@@ -157,7 +156,7 @@ And each company job position corresponds to a :guilabel:`Product`.
 Define employee categories to assign different Holiday’s rights to different employee groups
 --------------------------------------------------------------------------------------------
 
-You must create and assign employee categories for employees in order to be able to assign and manage leave and allocation requests by category. You can define employee categories from :menuselection:`Human Resources --> Configuration --> Categories of Employee`. For a new category, define its name in :guilabel:`Category`. A category may also be assigned a :guilabel:`Parent Category`.
+You must create and assign employee categories for employees in order to be able to assign and manage leave and allocation requests by category. You can define employee categories from :menuselection:`Human Resources --> Configuration --> Employee Tags`. For a new category, define its name in :guilabel:`Category`. A category may also be assigned a :guilabel:`Parent Category`.
 
 .. figure::  images/employee_categories.png
    :scale: 75
@@ -173,7 +172,7 @@ To link an employee to a category, open the employee form through :menuselection
 
    *Assign categories to an employee in the Employee form*
 
-Now, when you create a new leave or allocation request from the menuitems under :menuselection:`Human Resources --> Holidays`, if your :guilabel:`Leave Category` or :guilabel:`Allocation Category` is ``By Employee Category``, then you must choose a pre-defined :guilabel:`Category`. The request will then be applicable to all those employees who belong to the category selected. For example, you can create an allocation request for employees belonging to the ``Trainee`` category, entitling them to fewer leaves than the rest of the employees.
+Now, when you create a new leave or allocation request from the menuitems under :menuselection:`Human Resources --> Leaves`, if your :guilabel:`Allocation Mode` is ``By Employee Category``, then you must choose a pre-defined :guilabel:`Category`. The request will then be applicable to all those employees who belong to the category selected. For example, you can create an allocation request for employees belonging to the ``Trainee`` category, entitling them to fewer leaves than the rest of the employees.
 
 .. index::
    single: employee; contracts
