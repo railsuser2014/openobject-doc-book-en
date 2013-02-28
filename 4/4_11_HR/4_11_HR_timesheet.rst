@@ -91,7 +91,7 @@ one of the groups there such as :guilabel:`45 Hours/Week`.
 To be able to use timesheets fully, install the module :mod:`hr_timesheet_sheet` from module list or Go to menu :menuselection:`Settings --> Configuration --> Human Resources tick `Allow timesheets validation by managers` and click on apply button..  Once this module
 has been installed and the employees configured, the different system users can enter their
 timesheet data in the menu
-:menuselection:`Human Resources --> Time Tracking --> Timesheet Lines`,
+:menuselection:`Human Resources --> Time Tracking --> Timesheet Activities`,
 then click :guilabel:`Create`.
 
 .. tip:: Shortcut to Timesheets
@@ -130,7 +130,7 @@ accounted for. The total entered is shown at the bottom right of the list of ser
 
 	(And the way to do that is either to modify the view on the file system, or
 	click on the logged in user at top-right and select *About OpenERP* and then select *Activate the developer mode*.Now go to the :menuselection:`HR -->
-	Time Tracking --> Timesheet Lines` menu. Click on `Debug View#` and then select `Edit TreeView`.
+	Time Tracking --> Timesheet Activities` menu. Click on `Debug View#` and then select `Edit TreeView`.
 	
 	If you have sufficient permissions, you can edit the XML that defines the current view.)
 
@@ -157,18 +157,13 @@ employees' data entry. Employees can verify their own timesheet using the follow
   --> Timesheet Profit`.
 
 * You can then use the statistical reports to analyze your services by period, by product
-  or by account using the menu :menuselection:`Human Resources --> Reporting --> Timesheets
-  --> Timesheet Analysis` and :menuselection:`Human Resources --> Reporting --> Timesheets
-  --> Timesheet Sheet Analysis`.
+  or by account using the menu :menuselection:`Reporting --> Human Resources --> Timesheet Analysis` and :menuselection:`Reporting --> Human Resources --> Timesheet Sheet Analysis`.
 
 .. figure::  images/service_timesheet_graph.png
    :scale: 75
    :align: center
 
    *Chart of timesheet by account*
-
-The data making up these list views can be varied using the filters available in the upper part of the
-screen. If you want to see more detail, switch to the graph view.
 
 .. index::
    single: timesheet; evaluation
@@ -313,7 +308,7 @@ then passed to the services manager, who must approve his team's entries. Period
 company forms, and you can set them to run monthly or weekly.
 
 To enter timesheet data each employee uses the menu :menuselection:`Human Resources --> Time Tracking
---> My Timesheet`.
+--> My Current Timesheet`.
 
 .. figure::  images/service_timesheet_sheet_form.png
    :scale: 75
@@ -321,34 +316,35 @@ To enter timesheet data each employee uses the menu :menuselection:`Human Resour
 
    *Form for entering timesheet data*
 
-In the upper part of the screen, the user starts with the sign-in and sign-out times. The system
-enables the control of attendance day by day. The two buttons :guilabel:`Sign In` and :guilabel:`Sign Out` enable the
-automatic completion of hours in the area to the left. These hours can be modified by employee, so
-it is not a true management control system.
+This form describes summary of attendance (total hours) of employee.
 
-The area to the bottom of the screen represents a sheet of the employee's time entries for the
-selected day. In total, this should comprise the number of hours worked in the company each day.
-This provides a simple verification that the whole day's attendance time has been entered properly.
-
-The second tab of the timesheet, :guilabel:`By Day`, gives the number of hours worked on the different
-projects. When there is a gap between the attendance and the timesheet entries, you can use the
-second tab to detect the days or the entries that have not been correctly entered.
+The second tab of the timesheet, :guilabel:`Details`, gives the number of hours worked on the different
+projects. 
 
 .. figure::  images/timesheet_sheet_hours.png
    :scale: 75
    :align: center
 
-   *Detail of hours worked by day for an employee*
+   *Detail of hours worked on different projects for an employee*
 
-The action :guilabel:`Timesheet by Account` shows the time worked on all the different projects. That enables you
+The third tab of timesheet, :guilabel:`Attendances`, shows when there is a gap between the attendance and the timesheet entries, you can use the third tab to detect the days or the entries that have not been correctly entered.
+
+The user starts with the sign-in and sign-out times. The system enables the control of attendance day by day. The two buttons :guilabel:`Sign In` and :guilabel:`Sign Out` enable the
+automatic completion of hours in the area to the right. These hours can be modified by employee, so it is not a true management control system.
+
+.. figure::  images/attendances_new.png
+   :scale: 75
+   :align: center
+
+   *Detail of hours worked by day for an employee*
+   
+The button :guilabel:`Timesheet Activities` shows the time worked on all the different projects. That enables you
 to step back to see an overview of the time an employee has worked spread over different projects.
 
-At the end of the week or the month, the employee confirms his timesheet. If the attendance time in
-the company corresponds to the encoded entries, the whole timesheet is then confirmed and sent to
-his department manager, who is then responsible for approving it or asking for corrections.
+At the end of the week or the month, the employee can submit his/her timesheet to manager by clicking on button :guilabel:`Submit to Manager`.
 
 Each manager can then look at a list of his department's timesheets waiting for approval using the
-menu :menuselection:`Human Resource --> Reporting  --> Timesheet --> Timesheet Sheet Analysis` by applying the proper filters. He then has to approve them or return them to their initial state.
+menu :menuselection:`Reporting --> Human Resource --> Timesheet Sheet Analysis` by applying the proper filters. He then has to approve them or return them to their initial state.
 
 To define the departmental structure, use the menu :menuselection:`Human Resources --> Configuration -->
 Human Resources --> Departments`.
