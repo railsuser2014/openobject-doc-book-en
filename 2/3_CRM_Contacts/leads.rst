@@ -77,7 +77,7 @@ You can also set the status of a lead according to the qualification work that h
 * ``Cancelled``: the lead has been cancelled because the salesperson has decided that it is not worth
   following up.
 
-On the :guilabel:`Extra` tab in the **Leads** form, you find information about the campaign, the channel, and so on.
+On the :guilabel:`Extra Info` tab in the **Leads** form, you find information about the campaign, the channel, and so on.
 
 .. figure:: images/crm_lead_extra.png
    :scale: 75
@@ -99,7 +99,7 @@ another format, you can easily convert it to the CSV format using Microsoft Exce
       The best thing to do to make sure your import will go smoothly, first export all the required Lead fields using the `Export` function,
       and then edit the resulting csv file for import.
 
-Open the **Leads** form using the menu :menuselection:`Sales --> Sales --> Leads`. In `Other Options`, click the :guilabel:`Import` link. (You can also import from List view, just open the action window on the right (by clicking the arrow) and in `Other Options`, click the :guilabel:`Import` link.) 
+Open the **Leads** form using the menu :menuselection:`Sales --> Sales --> Leads`. List view of leads shows two options create or import, click the :guilabel:`Import` link.  
 
 Select your file containing the leads information and click :guilabel:`Import File`. OpenERP will automatically map the column headers from your CSV file to the corresponding fields in OpenERP. If necessary, you can click ``CSV Options`` to change the settings so that they match your local settings. 
 
