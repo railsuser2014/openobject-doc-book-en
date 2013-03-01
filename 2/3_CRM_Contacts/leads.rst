@@ -103,7 +103,7 @@ Open the **Leads** form using the menu :menuselection:`Sales --> Sales --> Leads
 
 Select your file containing the leads information and click :guilabel:`Import File`. OpenERP will automatically map the column headers from your CSV file to the corresponding fields in OpenERP. If necessary, you can click ``CSV Options`` to change the settings so that they match your local settings. 
 
-.. figure:: images/crm_lead_import1.jpeg
+.. figure:: images/crm_lead_import1.png
    :scale: 80
    :align: center
 
