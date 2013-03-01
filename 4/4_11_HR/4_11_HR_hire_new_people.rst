@@ -89,7 +89,7 @@ For this, you have to install the :mod:`fetchmail` module from module list and F
 
 After configuring your server, click the :guilabel:`Test & Confirm` button to enable this configuration and click on  Fetch `Now button` to start receiving e-mails.
 
-Whenever you receive a new e-mail at the configured e-mail address, a new applicant record is created having the same subject name as the e-mail subject. The applicants e-mail details are stored too, for future correspondence. You can add more details to this job application. You can view these newly created applicants from :menuselection:`Human Resources --> Recruitment --> Applicants`. In the figure :ref:`ejob`, the `Initial Qualification` applicants have been created automatically from received e-mails.
+Whenever you receive a new e-mail at the configured e-mail address, a new applicant record is created having the same subject name as the e-mail subject. The applicants e-mail details are stored too, for future correspondence. You can add more details to this job application. You can view these newly created applicants from :menuselection:`Human Resources --> Recruitment --> Applications`. In the figure :ref:`ejob`, the `Initial Qualification` applicants have been created automatically from received e-mails.
 
 .. _ejob:
 
@@ -134,20 +134,24 @@ The :guilabel:`Next Action Date` and :guilabel:`Next Action` fields on the `Appl
 .. index::
    single: recruitments; communication history
 
-Track the history of the e-mail communication with the applicant
+E-mail communication with the applicant
 ----------------------------------------------------------------
 
-Using the :guilabel:`Communication & History` tab in the `Applicants` form, you can add notes for internal reference or send e-mails to the applicant. You can also view the history of communication and notes for a recruitment application in the `History` section. If you specify e-mail addresses in the :guilabel:`Global CC` field, these e-mail addresses will be added to the :guilabel:`CC` field of all inbound and outbound e-mails for this record before being sent. You can separate multiple e-mail addresses with a comma.
+In 7.0 you can send message or email easily.
 
-To create an internal note, click the :guilabel:`Add Internal Note` button. Add a note description in the popup that appears. You also have a choice to change the application state at this stage. Click :guilabel:`Add` to save the note and see it listed in the `History` section.
+OpenChatter provides a simple communication tool to discuss amongst colleagues or external contacts, either with an individual or with a group.
 
-To send an e-mail to the applicant, click the :guilabel:`Send New Email` button. In the popup, you must enter the following:
+You can see OpenChatter below the applicants form and you can send message or mail via that chatter.
 
-* :guilabel:`From` : E-mail address used to send an e-mail.
-* :guilabel:`Reply To` : E-mail address for receiving a reply.
-* :guilabel:`To` : The applicants e-mail address
-* :guilabel:`Subject` : Subject of the e-mail. By default, it takes the subject of the recruitment application.
-* :guilabel:`Message` : The message to send in the e-mail.
+.. figure::  images/recruitment_send_message.png
+   :scale: 75
+   :align: center
+
+   *Send a message to the applicant*
+
+Here too , You may also add attachments through the OpenChatter. Click :guilabel:`Post` to send the message. 
+
+And for send a mail throgh Openchatter , the full window seems like follow:
 
 .. figure::  images/recruitment_send_mail.png
    :scale: 75
@@ -155,47 +159,7 @@ To send an e-mail to the applicant, click the :guilabel:`Send New Email` button.
 
    *Send an e-mail to the applicant*
 
-Here too, you have a choice to change the application state. You may also add attachments through the :guilabel:`Attachments` tab in the popup. Click :guilabel:`Send` to send the e-mail. You can see a listing of the correspondence as shown in the figure below:
-
-.. figure::  images/recruitment_comm_history.png
-   :scale: 75
-   :align: center
-
-   *History of communication for the recruitment application*
-
-.. index::
-   single: recruitments; phone calls
-   single: recruitments; appointments
-
-Plan phone calls or appointments
---------------------------------
-
-One of the advantages of using the :mod:`hr_recruitment` module is that you can plan and organise phone calls to and appointments with prospective employees. This is made possible due to its integration with :mod:`crm` module's Phone Calls and Meetings features.
-
-You can schedule a phone call from the `Applicants` form by clicking the :guilabel:`Phone Call` button. This brings up a popup as shown below:
-
-.. figure::  images/recruitment_sched_phone.png
-   :scale: 75
-   :align: center
-
-   *Schedule an outbound phone call to an applicant*
-
-You can enter the following details in the popup:
-
-* :guilabel:`Assign To` : The user who is responsible for making the call.
-* :guilabel:`Planned Date` : The scheduled date and time to make the call.
-* :guilabel:`Goals` : The agenda of the phone call.
-* :guilabel:`Category` : Whether the call is ``Outbound`` (default) or ``Inbound``.
-
-You can then click the :guilabel:`Schedule Phone Call` button to create a plan for making the call. If the :guilabel:`Category` of your phone call is ``Outbound``, the `Outbound` form opens where you may add additional details. Once you have made the phone call, you can enter the :guilabel:`Duration` as well and click the :guilabel:`Held` button. You can track and evolve your plans of phone calls to an applicant from :menuselection:`Sales --> Phone Calls --> Outbound`.
-
-.. figure::  images/recruitment_outbound_phone.png
-   :scale: 75
-   :align: center
-
-   *Details of an outbound phone call to an applicant*
-
-Just like you schedule phone calls, you can also schedule meetings with an applicant. To do this, click the :guilabel:`Meeting` button on the `Applicants` form. A calendar of meetings opens in the `Meetings` form. Here, you click an empty area on a date for which you wish to schedule the meeting. A popup appears as shown below:
+You can also schedule meetings with an applicant. To do this, click the :guilabel:`Schedule Meeting` button on the `Applicants` form. A calendar of meetings opens in the `Meetings` form. Here, you click an empty area on a date for which you wish to schedule the meeting. It shows as follow:
 
 .. figure::  images/recruitment_sched_meeting.png
    :scale: 75
@@ -205,9 +169,7 @@ Just like you schedule phone calls, you can also schedule meetings with an appli
 
 You can manage the following details from this form:
 
-* :guilabel:`Summary` : Is the recruitment application subject by default, although you can change it.
 * :guilabel:`Start Date` : The scheduled start date and time.
-* :guilabel:`End Date` : The scheduled end date and time.
 * :guilabel:`Duration` : The duration of the meeting in hours.
 * :guilabel:`Location` : Location of the meeting.
 * :guilabel:`Reminder` : If you want to be reminded about the meeting, you can select an alarm time before the event occurs.
