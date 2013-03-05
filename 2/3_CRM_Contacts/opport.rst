@@ -18,8 +18,7 @@ Opportunities can be connected to the email gateway: new emails may create oppor
 .. tip:: Attachments
 
       By default, you can keep attachments in OpenERP to make sure all linked documents are directly accessible. At the top side
-      of the screen, under ``Attachments``, click the *Add* button to start linking documents to your opportunity. With the *Browse*
-      button, you can search for the file to be attached in your directories. You can add attachments in the same way for leads,
+      of the screen, under ``Attachments``, click the *Add* button to start linking documents to your opportunity. You can add attachments in the same way for leads,
       for instance.
       If you also want those documents to be indexed (not for pictures), you should install the Knowledge Application.
 
@@ -30,19 +29,19 @@ If the salesperson thinks that the lead has been well qualified and that there i
 
 Clicking the `Convert to Opportunity` button offers several possibilities, allowing you also to avoid duplicate partners:
 
-* You can decide to just create the opportunity and keep the contact data from the lead without creating a partner,
+* You can decide to just create the opportunity and keep the contact data from the lead without creating a customer,
  
-* You can convert to an opportunity, and create a new partner if it does not exist yet, or merge the contact with an existing partner,
+* You can convert to an opportunity, and create a new customer if it does not exist yet, or merge the contact with an existing customer,
 
-* You first create a partner, and later you convert the lead to an opportunity.
+* You first create a customer, and later you convert the lead to an opportunity.
 
 .. tip:: Convert to Opportunity
 
       When you click the `Convert to Opportunity` button and the email address of the new contact is filled out, OpenERP will check whether
-      this email address corresponds to an email address of an existing partner. If so, OpenERP will directly propose to merge the new
-      contact with the partner found.  
+      this email address corresponds to an email address of an existing customer. If so, OpenERP will directly propose to merge the new
+      contact with the customer found.  
 
-When you click the :guilabel:`Convert to Opportunity` button and the partner already exists, OpenERP opens a window allowing you to select:
+When you click the :guilabel:`Convert to Opportunity` button and the customer already exists, OpenERP opens a window allowing you to select:
 
 * whether you want to create a new opportunity,
 
@@ -54,13 +53,13 @@ OpenERP shows the title of the opportunity (taken from the lead description) and
    :scale: 75
    :align: center
 
-   *Converting a Lead into a Sales Opportunity*
+   *Converting a Lead into a Sales Opportunity*.
 
 .. figure:: images/crm_opport_data.png
    :scale: 75
    :align: center
 
-   *From Lead to Opportunity: Details*
+   *Convert to opportunity (merge with existing)*
 
 
 The Kanban View: Everything at a Glance
@@ -100,7 +99,7 @@ OpenERP allows you to do that by defining `Sales Teams`. A sales team is a group
 
 .. note:: Sales Teams 
 
-        To define your Sales Teams, go to :menuselection:`Sales --> Configuration -->  Miscellaneous --> Sales Teams`.
+        To define your Sales Teams, go to :menuselection:`Sales --> Configuration --> Sales Teams`.
 
 Let us take the example of a bank to explain how you can define your sales teams. A bank has several departments, such as Insurance, Accounts, Assets, Credit Management. Each department may be divided into several subdepartments. For Insurance, this could be Group Insurance and Home Insurance. The hierarchical structure of your Sales Teams could then be as follows:
 
@@ -129,20 +128,13 @@ As you progress in your sales cycle, and move from one stage to another, you can
 
 As an example, to track your opportunities, you can assign the following stages to the sales team. For each stage, you assume you will define criteria that have to be met prior to moving to the next stage. 
 
-1. Territory - Segment your opportunities into territories.
+1. New - Segment your opportunities into territories.
 
 2. Qualified – Attract the prospect’s interest, determine whether the prospect has a need.
 
    What is the expected result?
     * The need to buy the product/service has been confirmed,
     * Confirm that there is a budget.
-
-3. Qualified Sponsors – Ask the right questions and listen carefully to identify and thoroughly understand the prospect's needs.
-
-   What is the expected result?
-    * Current pain points identified,
-    * Identify what the prospect wants to achieve,
-    * Identify the decision-maker.
 
 3. Proposition – Discuss some solutions to determine the customer’s preferences, recommend specific solutions to answer the customer's needs.
 
@@ -178,10 +170,10 @@ The stages are now conveniently placed on the top right hand of each of opportun
    :scale: 60
    :align: center
 
-   *Stages on Opportunity*
+   *Stages on Opportunity*.
 
 OpenERP also has other sales configuration options; you can define your `Campaigns`, allowing you to keep track of the event your leads and opportunities refer to. Examples of campaigns are Google Adwords, an event you are hosting, a newsletter.  
-With `Categories` you identify your prospect's needs (e.g. Needs Training, Needs OpenERP Online), while `Channels` help you to keep visibility on how the lead or opportunity entered the system (email, website, referred by an existing customer). 
+With `Sales Tags` you identify your prospect's needs (e.g. Needs Training, Needs OpenERP Online), while `Channels` help you to keep visibility on how the lead or opportunity entered the system (email, website, referred by an existing customer). 
 
 Planning your Next Actions
 --------------------------
@@ -204,7 +196,7 @@ The screenshots below illustrate how you can tell OpenERP to do this automatical
    :scale: 100
    :align: center
 
-   *Conditions Tab of Automated Actions*
+   *Conditions Tab of Automated Actions*.
 
 *Step 2*
 
@@ -212,7 +204,7 @@ The screenshots below illustrate how you can tell OpenERP to do this automatical
    :scale: 75
    :align: center
 
-   *Actions Tab of Automated Actions*
+   *Actions Tab of Automated Actions*.
 
 Planning your next actions also refers to filling fields or performing actions manually, without interference of automated rules. It is important that you fill all the opportunity fields accurately. To ensure good follow-up and prioritise your opportunities, make sure to register the ``Next Action Date`` and the ``Next Action`` in the Opportunity.
 
@@ -231,12 +223,10 @@ For the ease of reading, Thomas will schedule a new meeting from an opportunity 
 
    To plan the meeting, Thomas clicks the `Meeting` button in the **Opportunity** and clicks the `Week` button in the Calendar view. He uses the drag and drop function to schedule the meeting for Luc. He plans the meeting next Wednesday from 2 pm to 3 pm. He sets Luc as the person responsible and sets a reminder to be send 1 day before the start of the meeting. He also changes the ``Next Action Date`` in the opportunity to the meeting date. 
 
-You can also schedule a meeting directly from a **Customer** form by clicks the `Schedule Meeting` button. If you stay in the Month view of the Calendar, you just have to click the day you want the meeting to be planned, let's say Thursday in two weeks. A meeting form will be displayed, with the name of the customer and the date prefilled.
+You can also schedule a meeting directly from a **Customer** form by clicks the `Meetings` button. If you stay in the Month view of the Calendar, you just have to click the day you want the meeting to be planned, let's say Thursday in two weeks. A meeting form will be displayed, with the name of the customer and the date prefilled.
 
-Another way to enter a meeting request, is to directly use the meeting calendar from the menu :menuselection:`Sales --> Meetings`. You can use the monthly, weekly or daily views to plan a meeting by selecting the corresponding buttons. You can also click a day in the Navigator window to schedule a meeting.
-
-In the **Meeting** window, enter the meeting data such as meeting summary, Attendees, Tags. In the weekly and daily views, you can also press the left mouse button in the calendar and slide the mouse along to create an event of several hours. OpenERP then opens an entry screen for a new meeting.
-You can add reminders (or ``Alarms``) to your meetings and send invitations, either to persons from your own company, partner contacts or external people (just specify the email address directly in the invitation). You can send invitations before or after confirmation of a meeting. Either from the meeting itself or from the separate `Event Invitations` view in the menu :menuselection:`Sales --> Configuration --> Calendar --> Event Invitations`, you can track and change the attendee status. If you cannot attend a meeting, you can delegate it to one of your colleagues.
+In the **Meeting** window, enter the meeting data such as meeting subject, Attendees, Tags. In the weekly and daily views, you can also press the left mouse button in the calendar and slide the mouse along to create an event of several hours. OpenERP then opens an entry screen for a new meeting.
+You can add reminders (or ``Alarms``) to your meetings and send invitations, either to persons from your own company, partner contacts or external people (just specify the email address directly in the invitation). 
 
 .. tip:: Alarms or Meeting Reminders
 
@@ -246,34 +236,36 @@ You can add reminders (or ``Alarms``) to your meetings and send invitations, eit
    :scale: 60
    :align: center
 
-   *Defining your Own Alarms*
+   *Defining your Own Alarms*.
+
+Add events through :menuselection:`Sales --> Configuration --> Calendar --> Events`
      
 .. figure:: images/crm_meeting_form.png
    :scale: 75
    :align: center
 
-   *Entering a New Meeting*
+   *Entering a new Event*.
 
-You may notice different colours and styles in the calendar. That is because OpenERP distinguishes between recurring events, multiple days events and events that only happen once.
-Multi-day events have a coloured background, whereas single events have a coloured font. Each event
-has a colour that represents the user who created the meeting. You can filter the different users by
-selecting them from the list at the right of the screen.
+
+You can filter the My Events by selecting them from the list at the right of the screen.
 
 .. figure:: images/crm_calendar_month.png
    :scale: 50
    :align: center
 
-   *Monthly Meeting Calendar*
+   *Monthly Meeting Calendar*.
+
+Weekly meeting Calendar seems like following screenshot.
 
 .. figure:: images/crm_calendar_week.png
    :scale: 50
    :align: center
 
-   *Weekly Meeting Calendar*
+   *Weekly Meeting Calendar*.
 
 .. index:: calendars
 
-You can change the Calendar view for meetings and return to the list, form or gantt view by using the buttons at the top right. OpenERP's usual search tools and filters enable you to filter the events displayed in the calendar or, for example, to display the calendar for only some employees at a time.
+You can change the Calendar view for meetings and return to the list, form view by using the buttons at the top right. OpenERP's usual search tools and filters enable you to filter the events displayed in the calendar or, for example, to display the calendar for only some employees at a time.
 
 .. tip:: Related Responsible
 
