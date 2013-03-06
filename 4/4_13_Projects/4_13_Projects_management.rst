@@ -42,8 +42,6 @@ Click :guilabel:`Create` and give your new project a :guilabel:`Project Name`.
 
 You can assign a :guilabel:`Project Manager` and assign your project privacy with :guilabel:`Privacy / Visibility`.
 
-You can add project Member(s) in `Team` tab.
-
 The `Other Info` tab displays information about Planned Time and the Time Spent on the project according to the task work completed.
 Enter the general duration by completing :guilabel:`End Date`.
 You can put this project into a hierarchy, as a child of a :guilabel:`Parent` Analytic Account
@@ -53,7 +51,7 @@ You can also link to a :guilabel:`Working Time` category, which will be used to 
 
 The status of a project can take the following values:
 
-* \ ``Open``\: the project is being carried out,
+* \ ``In Progress``\: the project is being carried out,
 
 * \ ``Pending``\: the project is paused,
 
@@ -66,10 +64,16 @@ The status of a project can take the following values:
 
 On the `Team` tab, add :guilabel:`Project Members` to the project; this is related to access rights too.
 
+.. figure::  images/projects.png
+   :scale: 60
+   :align: center
+
+   *Projects*
+
 On the project form you find a customer field, which will also be used for invoice creation.
 To generate invoices based on time spent on tasks, you need to install :mod:`project_timesheet`.Go to menu 
 menu :menuselection:`Settings --> Configuration --> Project`.And in `Task`, tick Record timesheet lines per tasks.
-Then Go to the menu :menuselection:`Project --> Invoicing --> Invoice Tasks Work`.Open its form view click on `More` and `Create Invoices`.
+Then Go to the menu :menuselection:`Project --> Invoicing --> Invoice Tasks`.Open its form view click on `More` and `Create Invoices`.
 
 .. note:: Complete the invoicing data, such as Sale Pricelist and Customer on Analytic Account before creating the invoice.
 
@@ -83,20 +87,14 @@ Then Go to the menu :menuselection:`Project --> Invoicing --> Invoice Tasks Work
 	This function can also be used by ISO 9001-certified companies, to measure customer satisfaction.
 	OpenERP also allows you to create your own surveys. 
 
-The `Task Stages` tab allows you to define stages that help you divide your tasks. You can add a sequence number to set the stage order, allowing you to prioritize your task work, i.e. first you will have the Specification stage and then Development.
-
-.. figure::  images/projects.png
-   :scale: 75
-   :align: center
-
-   *Projects*
+The `Project Stages` tab allows you to define stages that help you divide your tasks. You can add a sequence number to set the stage order, allowing you to prioritize your task work, i.e. first you will have the Design stage and then Specification.
 
 Managing Tasks
 --------------
 
 Once a project has been defined, you can enter the tasks to be executed. You have two possibilities for this:
 
-* click the button :guilabel:`Tasks` to the right of the project form, then click :guilabel:`New`,
+* click the button :guilabel:`Tasks` to the right of the project form, then click :guilabel:`Create`,
 
 * from the menu :menuselection:`Project --> Project --> Tasks`, create a new task and assign it
   to an existing project.
@@ -119,21 +117,21 @@ leave it unassigned so that nobody specific will be responsible: various team me
 made jointly responsible for working on tasks they have the skills for.
 
 .. figure::  images/service_task.png
-   :scale: 75
+   :scale: 50
    :align: center
 
    *Tasks in Project Management*
 
 Each user manages his or her own task using the various menus available. To open the list of
-unclosed tasks that have been specifically assigned to you, go to the menu :menuselection:`Project --> Project --> Tasks`. Or to open the unassigned tasks, go to :menuselection:`Project --> Project --> Tasks` and then click \ ``Clear``\ button
-and then \ ``Unassigned``\   button.
+unclosed tasks that have been specifically assigned to you, go to the menu :menuselection:`Project --> Project --> Tasks`. Or to open the unassigned tasks, go to :menuselection:`Project --> Project --> Tasks` and then \ ``Clear``\ the search
+and then click \ ``Unassigned Tasks``\ from search filter.
 
 .. tip:: Shortcuts
 
 	Every user should create a link in their own shortcuts to the :menuselection:`Tasks` menu, because they will
 	have to consult this menu several times a day.
 
-The `Delegations` tab allows you to define links between your tasks. From `Parent Tasks` set the tasks that are related to this task. Use this feature to define the order in which tasks need to be accomplished, i.e. task 2 may not be executed before task 1.
+The `Delegation` tab allows you to define links between your tasks. From `Parent Tasks` set the tasks that are related to this task. Use this feature to define the order in which tasks need to be accomplished, i.e. task 2 may not be executed before task 1.
 
 .. index::
    single: invoicing; tasks
@@ -158,10 +156,10 @@ helpful to limit the number of invoicing methods in your company by extending th
 invoicing method that you already have.
 
 If you want to connect your Sales Order with Project tasks you should create
-products such as \ ``Consultant``\  and \ ``Senior Developer``\ . These products should be configured
+products such as \ ``On Site Assistance``\  and \ ``On Site Monitoring``\ . These products should be configured
 with :guilabel:`Product Type` \ ``Service``\ , a :guilabel:`Procurement Method` of \ ``Make to Order``\  ,
-and a :guilabel:`Supply Method` of \ ``Produce``\. Once you have set this up, OpenERP automatically creates a task in project management when the order is approved.
-You can even take this further by adding a default project to your product. In the Product form, on the `Procurement & Locations` tab, enter the default project to which the automatically created task (from the sales order) should be linked.
+and a :guilabel:`Supply Method` of \ ``Produce``\. Once you have set this up, OpenERP automatically creates a task in project management When the Quotation will be Converted to Sale Order.
+You can even take this further by adding a default project to your product. In the Product form, on the `Information` tab, enter the default project to which the automatically created task (from the sales order) should be linked.
 
 You can also change some of the order parameters, which affects the invoice:
 
@@ -169,14 +167,14 @@ You can also change some of the order parameters, which affects the invoice:
 
 *  :guilabel:`Invoice On` : \ ``Shipped Quantities`` \ (actual hours in the task).
 
-Create the `Sales Order` using the product :guilabel:`Consultant` with the above configuration and confirm it.
+Create the `Sales Order` using the product :guilabel:`On Site Assistance` with the above configuration and confirm it.
 You can find the task created from this sale order using the menu :menuselection:`Project --> Project --> Tasks`.
-Once you find that task, click on the :guilabel:`Start Task` button in order to start it.  You have to manually assign the
+Once you find that task, click on the specific stage e.g.:guilabel:`Design`.  You have to manually assign the
 project for this task, unless you specified a default project in the Product form. When you complete the task, enter the information in the :guilabel:`Task Work` field. Then click the :guilabel:`Done` button in order to indicate to OpenERP that this task is finished.
-As an example, the new task `SO008:Create SRS` generated from sales order `SO0008` is shown in following figure.
+As an example, the new task `SO008:On Site Assistance` generated from sales order `SO0008` is shown in following figure.
 
 .. figure::  images/project_task_from_sale_order.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Task created from Sales Order*
