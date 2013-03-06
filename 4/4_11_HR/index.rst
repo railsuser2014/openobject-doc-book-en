@@ -22,7 +22,7 @@ To configure the Human Resource Application you should check `Human Resources` i
 following configuration wizard.
 
 .. figure::  images/config_wiz_HR.png
-   :scale: 75
+   :scale: 50
    :align: center
 
    *Human Resources Application in the Configuration wizard*

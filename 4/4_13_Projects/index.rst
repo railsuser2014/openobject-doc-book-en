@@ -14,8 +14,11 @@ Drive your Projects
  OpenERP also helps people in the company to organize their personal time,
  and this chapter proposes a methodology aimed at improving the productivity of managers.*
  
-Start with a fresh database that includes demo data, install Sales Management (:mod:`sale`) and Project Management (:mod:`project`) and 
-select the generic chart of accounts. 
+Start with a fresh database that includes demo data, install Project Management (:mod:`project`). 
+
+.. figure::  images/v7_install_project.png
+   :scale: 30
+   :align: center 
 
 .. raw:: html
 

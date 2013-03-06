@@ -40,14 +40,15 @@ Creating Projects and Related Tasks
 To define a new project, go to the menu :menuselection:`Project --> Project --> Projects`.
 Click :guilabel:`Create` and give your new project a :guilabel:`Project Name`.
 
-You can put this project into a hierarchy, as a child of a :guilabel:`Parent Analytic Account`, and
-assign a :guilabel:`Project Manager`.
-Enter the general duration by completing :guilabel:`End Date`.
+You can assign a :guilabel:`Project Manager` and assign your project privacy with :guilabel:`Privacy / Visibility`.
+
+You can add project Member(s) in `Team` tab.
 
 The `Other Info` tab displays information about Planned Time and the Time Spent on the project according to the task work completed.
+Enter the general duration by completing :guilabel:`End Date`.
+You can put this project into a hierarchy, as a child of a :guilabel:`Parent` Analytic Account
 
-In case a project takes too long, it can also be escalated to another project. This feature is available if you have installed the module :mod:`project_issue`, which can be done by selecting :guilabel:`Issues Tracker` in the :guilabel:`Reconfigure` wizard. In :guilabel:`Project Escalation`, enter the project that will be used for escalated tasks.
-Define a generic :guilabel:`Reply-To Email Address` linked to all automated mails; this allows you to receive replies directly in OpenERP.
+In case a project takes too long, it can also be escalated to another project. This feature is available if you have installed the module :mod:`project_issue`, which can be done by selecting :guilabel:`Track issues and bugs` in the :menuselection:`Settings --> Configuration --> Project`. In :guilabel:`Project Escalation`, enter the project that will be used for escalated tasks.
 You can also link to a :guilabel:`Working Time` category, which will be used to calculate the Project's time line, i.e. through a Gantt chart.
 
 The status of a project can take the following values:
