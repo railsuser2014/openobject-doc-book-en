@@ -56,36 +56,6 @@ Some examples of how you could use the **Opportunities Analysis** report to anal
 
       You can also display the **Opportunities Analysis** screen as a graph.   
 
-Sales Forecast & Sales Dashboards
----------------------------------
-
-OpenERP dashboards are dynamic and allow you to edit or drill-down. Dashboards may be composed of several view types, such as List, Form, Graph view.
-
-When you click the `Sales` button in the web version (to open the business application, so in the top bar), automatically the `Sales Dashboard` will appear. You can also access this dashboard from the :menuselection:`Sales --> Reporting --> Dashboard`. This dashboard gives you more information about your own sales activities, such as your Open Opportunities and your Quotations. This dashboard is prefiltered according to the OpenERP user who opens it. 
-Each user can also choose a dashboard that will be opened when he starts OpenERP.
-
-.. figure::  images/sales_board.jpeg
-   :scale: 80
-   :align: center
-
-   *Sales Dashboard*
-
-The `Sales Manager Dashboard` is a powerful tool to have an overview of quotations, sales by month, sales per customer, per salesman or per product in the last 90 days.
-
-.. figure::  images/sales_mgr_board.jpeg
-   :scale: 80
-   :align: center
-
-   *Sales Manager Dashboard*
-
-The `Statistics Dashboard` shows the Opportunities by Category and by Stage, as well as the planned revenue per stage and user. Clicking one of the stages in the graph will allow you to drill down to the details of such an opportunity. So no need to go through several screens to find what you need.
-
-.. figure::  images/sales_stat_board.jpeg
-   :scale: 80
-   :align: center
-
-   *Statistics Dashboard*
-
 
 
 .. Copyright © Open Object Press. All rights reserved.
