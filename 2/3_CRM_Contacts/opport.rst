@@ -170,7 +170,7 @@ The stages are now conveniently placed on the top right hand of each of opportun
    :scale: 60
    :align: center
 
-   *Stages on Opportunity*.
+   *Stages on Opportunity*
 
 OpenERP also has other sales configuration options; you can define your `Campaigns`, allowing you to keep track of the event your leads and opportunities refer to. Examples of campaigns are Google Adwords, an event you are hosting, a newsletter.  
 With `Sales Tags` you identify your prospect's needs (e.g. Needs Training, Needs OpenERP Online), while `Channels` help you to keep visibility on how the lead or opportunity entered the system (email, website, referred by an existing customer). 
@@ -196,7 +196,7 @@ The screenshots below illustrate how you can tell OpenERP to do this automatical
    :scale: 100
    :align: center
 
-   *Conditions Tab of Automated Actions*.
+   *Conditions Tab of Automated Actions*
 
 *Step 2*
 
@@ -204,7 +204,7 @@ The screenshots below illustrate how you can tell OpenERP to do this automatical
    :scale: 75
    :align: center
 
-   *Actions Tab of Automated Actions*.
+   *Actions Tab of Automated Actions*
 
 Planning your next actions also refers to filling fields or performing actions manually, without interference of automated rules. It is important that you fill all the opportunity fields accurately. To ensure good follow-up and prioritise your opportunities, make sure to register the ``Next Action Date`` and the ``Next Action`` in the Opportunity.
 
@@ -236,7 +236,7 @@ You can add reminders (or ``Alarms``) to your meetings and send invitations, eit
    :scale: 60
    :align: center
 
-   *Defining your Own Alarms*.
+   *Defining your Own Alarms*
 
 Add events through :menuselection:`Sales --> Configuration --> Calendar --> Events`
      
@@ -244,7 +244,7 @@ Add events through :menuselection:`Sales --> Configuration --> Calendar --> Even
    :scale: 75
    :align: center
 
-   *Entering a new Event*.
+   *Entering a new Event*
 
 
 You can filter the My Events by selecting them from the list at the right of the screen.
@@ -253,7 +253,7 @@ You can filter the My Events by selecting them from the list at the right of the
    :scale: 50
    :align: center
 
-   *Monthly Meeting Calendar*.
+   *Monthly Meeting Calendar*
 
 Weekly meeting Calendar seems like following screenshot.
 
@@ -261,7 +261,7 @@ Weekly meeting Calendar seems like following screenshot.
    :scale: 50
    :align: center
 
-   *Weekly Meeting Calendar*.
+   *Weekly Meeting Calendar*
 
 .. index:: calendars
 
