@@ -171,7 +171,7 @@ Create the `Sales Order` using the product :guilabel:`On Site Assistance` with t
 You can find the task created from this sale order using the menu :menuselection:`Project --> Project --> Tasks`.
 Once you find that task, click on the specific stage e.g.:guilabel:`Design`.  You have to manually assign the
 project for this task, unless you specified a default project in the Product form. When you complete the task, enter the information in the :guilabel:`Task Work` field. Then click the :guilabel:`Done` button in order to indicate to OpenERP that this task is finished.
-As an example, the new task `SO008:On Site Assistance` generated from sales order `SO0008` is shown in following figure.
+As an example, the new task `SO008:On Site Assistance` generated from sales order `SO008` is shown in following figure.
 
 .. figure::  images/project_task_from_sale_order.png
    :scale: 60
@@ -181,15 +181,15 @@ As an example, the new task `SO008:On Site Assistance` generated from sales orde
 
 .. tip:: You need to carefully configure the analytic account related to this project. If you use the Billing tab of the project to do this, the analytic account linked to the project will automatically get the related settings.
 
-After finishing this task, go to the menu :menuselection:`Project --> Invoicing --> Invoice Tasks Work` in order to
-find the list of uninvoiced task works.
-Click the action :guilabel:`Invoice analytic lines` when you want to create an invoice for this task work.
+After finishing this task, go to the menu :menuselection:`Project --> Invoicing --> Invoice Tasks` in order to
+find the list of uninvoiced tasks.
+Click the action :guilabel:`Create Invoice`from more button, when you want to create an invoice for this task work.
 
 .. figure::  images/project_invoice_from_task_work.png
-   :scale: 70
+   :scale: 60
    :align: center
 
-   *Form to Create Invoice from Tasks Work*
+   *Create Invoice for Tasks Work*
 
 Priority Management
 -------------------
@@ -198,7 +198,7 @@ Several methods can be used for ordering tasks by their respective priorities. O
 tasks based on a function of the following fields: :guilabel:`Sequence`, :guilabel:`Priority`, and
 :guilabel:`Deadline`.
 
-Use the :guilabel:`Sequence` field on the second tab, :guilabel:`Extra Info`, to plan a
+Use the :guilabel:`Sequence` field on the second tab, :guilabel:`Other Info`, to plan a
 project made up of several tasks. In the case of an IT project, for example, where development tasks
 are done in a given order, the first task to do will be sequence number 1, then numbers 2, 3, 4 and
 so on. When you first open the list of project tasks, they are listed in their sequence order. You can simply drag and drop tasks to change their sequence.
@@ -222,7 +222,7 @@ project.
 	Look at the site: http://controlchaos.com for more information on the Scrum methodology.
 
 .. figure::  images/service_project_gantt.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Gantt chart, calculated for earliest delivery*
@@ -234,12 +234,12 @@ calculates a project plan for earliest delivery using task ordering and the work
 
 .. tip:: Calendar View
 
-	OpenERP can give you a calendar view of the different tasks in both the web client and the GTK client.
+	OpenERP can give you a calendar view of the different tasks.
 	This is all based on the deadline data and displays only tasks that have a deadline.
 	You can then delete, create or modify tasks using drag and drop (only in web).
 
 	.. figure::  images/service_task_calendar.png
-	   :scale: 65
+	   :scale: 45
 	   :align: center
 
 	*Calendar View of the System Tasks*
@@ -249,12 +249,12 @@ calculates a project plan for earliest delivery using task ordering and the work
 Delegate your Tasks
 -------------------
 
-To delegate a task to another user, you can just change the person responsible for that task. However,
+To delegate a task to another user, you can just change the person Assigned to for that task. However,
 the system does not help you track tasks that you have delegated, such as monitoring of work done, if
 you do it this way.
 
 .. figure::  images/service_task_delegate.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Form for Delegating a Task to Another User*
