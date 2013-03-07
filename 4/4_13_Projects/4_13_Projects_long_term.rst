@@ -5,21 +5,22 @@
 Long Term Project Planning
 ==========================
 
-You can plan your projects with Long Term Planning. To do this, use the :guilabel:`Reconfigure` wizard and in the
-:guilabel:`Project Application Configuration` section, select \ ``Long Term Planning`` \ and click :guilabel:`Configure`. This installs the :mod:`project_long_term` module. By using this feature, you can link tasks to your planning to have a great view of who will do what at a specific time.
+You can plan your projects with Long Term Planning. To do this, selecting :guilabel:`Manage resources planning on gantt view` in the :menuselection:`Settings --> Configuration --> Project` Planning section.
+This installs the :mod:`project_long_term` module. By using this feature, you can link tasks to your planning to have a great view of who will do what at a specific time.
 
-The traditional phased approach identifies the sequence of steps to be completed. `Faces <http://faces.homeip.net/>`_ library is used for scheduling phases and tasks based on calendar resources. So resource availability or resource leaves are tracked using this tool. The Gantt chart allows you to easily manage your resources and plans by mere drag & drop. The Calendar view also helps you map your deadlines and tasks needing attention.
+The traditional phased approach identifies the sequence of steps to be completed. `Faces <http://faces.homeip.net/>`_ library is used for scheduling phases and tasks based on calendar resources. So resource availability or resource leaves are tracked using this tool. The Gantt chart allows you to easily manage your resources and plans by simple drag & drop. The Calendar view also helps you map your deadlines and tasks needing attention.
 
 Project Phases
 --------------
 
 You can subdivide your larger projects into several phases.
-To define a new phase, go to :menuselection:`Project --> Project --> Project Phases` and click :guilabel:`New`. You must link your phase to a project through the :guilabel:`Project` field. For each phase, you can define your resources allocation (human or machine), describe the different tasks and link your phase to previous and following ones. You can also add constraints linked with dates and scheduling. A Gantt view of your project is available from this menu, which you may alternatively open through the :menuselection:`Project --> Long Term Planning --> Project Phases` menu.
+To define a new phase, go to :menuselection:`Project --> Project --> Project Phases` and click :guilabel:`Create`. You must link your phase to a project through the :guilabel:`Project` field. For each phase, you have to define `Duration`.
+On the `Team Planning` tab add :guilabel:`Phases Team Members`, describe the different tasks by `Tasks details` tab and link your phase to previous and Next ones though `constraints` tab. You can also add dates and sequence over there.
 
 .. _fig-project_phase:
 
 .. figure::  images/project_phase.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Form View of Project Phase*
