@@ -28,7 +28,6 @@ Start with a fresh database that includes demo data, install Project Management 
 
     4_13_Projects_management
     4_13_Projects_long_term
-    4_13_Projects_planning
     4_13_Projects_productivity
 
 .. raw:: html
