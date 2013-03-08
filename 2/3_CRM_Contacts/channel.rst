@@ -16,18 +16,29 @@ You can use geolocalization to assign and forward opportunities to channel partn
 
 Through :menuselection:`Sales --> Configuration --> Leads & Opportunities --> Partner Grade`, you can create partner grades to classify your partners, such as Gold Partner, Silver Partner, Ready Partner. These grades will be used to determine who gets assigned which kind of opportunities.
 
-Assign the grades to the partners on the `Geo Localization` tab of the Customer form. Also assign a `Weight` to determine the probability of assigning opportunities to a partner. The weight might for instance be how much the partner pays for their channel partner contract.
+Assign the Partner Level on the `Geo Localization` tab of the Customer form. Also assign a `Weight` to determine the probability of assigning opportunities to a partner. The weight might for instance be how much the partner pays for their channel partner contract.
 
 How can you tell OpenERP to geolocalize an opportunity?
  
 Either you convert a promising lead to an opportunity, or you go directly to the opportunity you wish to assign to the channel partner.
 Go to the `Assignation` tab of the **Opportunities** form, and click the `Geo Assign` button. The location of the partner in the opportunity will be matched with the geolatitude and the weight of the channel partners. The most appropriate channel partner will be assigned.
 
+For Example,customer(Agrolait) has 2 partners,Michel Fletcher and Thomas Passot in his region.
+Now,suppose opportunity(Interest in product) has customer Agrolait, and now go to `Assignation` tab.
+After clicking `Geo Assign` button, Assign Partner field shows Michel Fletcher, because Michel Fletcher is one of the partner of Agroalait in nearest region, so it shows that result.
+The following image shows this example,
+
+.. figure:: images/Geo_Assign.png
+   :scale: 75
+   :align: center
+
+   *Assignation of Partner*
+ 
 .. note:: GPS
 
        You can also use the geolocalisation without GPS coordinates.
 
-Now you can decide whether this is the correct channel partner for this opportunity. If you feel that another channel partner would be better to follow up this opportunity because he , you can change the assigned channel partner.
+Now you can decide whether this is the correct channel partner for this opportunity. If you feel that another channel partner would be better to follow up this opportunity , you can change the assigned channel partner.
 
 To automatically inform the channel partner of the new opportunity, proceed as follows.
 
@@ -39,18 +50,14 @@ To allow your salespeople to keep a view on forwarded opportunities, the assigne
 
 Use the **Opportunity Assignment Analysis** for your reporting, you can use the menu Reporting ‣ Sales ‣ Opp. Assignment Analysis. 
 
-.. todo:: test screen
-
-.. tip:: Google Maps
-
-       Use the geolocalization together with the google_map module. This adds a Map button to your **Partner** form. Click this button to open a browser with the partner's location displayed in Google Maps.
-
 Geolocalization of a Partner
 ----------------------------
 
 To determine the geographic location of your partners, you do not have to enter the GPS coordinates yourself. OpenERP can do this for you. All you have to do is click the ``Geo Localize`` button in the **Customer** form. The GPS coordinates will now be filled according to the address of the partner.
 
 In the partner form, the `Geo Localization` tab gives you the information you need.
+
+As explain in above example of Assign Partner , assign partner is Michel, so he has this opportunity and it is shown in following image.
 
 .. figure:: images/crm_partner_geolocalize.png
    :scale: 75
