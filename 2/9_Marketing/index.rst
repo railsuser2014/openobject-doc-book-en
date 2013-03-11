@@ -104,7 +104,7 @@ Once the lead satisfies our final objective, we would consider it as a partner/c
 Email Templates
 ---------------
 .. figure::  images/email_template.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Email Template*    
@@ -124,7 +124,7 @@ Setting up your Marketing Campaigns
 -----------------------------------
 
 .. figure::  images/crm_market_campaign.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Marketing Campaign*
@@ -370,7 +370,7 @@ Let us show you an example of how this can be achieved. The figure below shows a
 .. _fig-crmconfo:
 
 .. figure:: images/crm_contact_form.png
-   :scale: 100
+   :scale: 60
    :align: center
 
    *Contact Form on your Website*
@@ -498,7 +498,7 @@ questions to prospects. These are given in the following figure :ref:`fig-crmpro
 .. _fig-crmprof:
 
 .. figure::  images/crm_profile_tree_eng.png
-   :scale: 100
+   :scale: 60
    :align: center
 
    *Example of Profiling Customer Prospects by the OpenERP Company*
