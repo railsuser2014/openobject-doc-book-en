@@ -93,7 +93,7 @@ Segmenting your Campaigns
 
 The two most important points for any successful campaign are the adoption of a concrete methodology of execution and choosing the right segment: a target loop of customers to whom our campaign would be directed (i.e. your target audience). Inappropriate focus on the wrong segment would result in the campaign being misfired and our efforts would reach deaf ears.
 
-Through the `Segment` Button in the **Campaign** module, we can define our segment for each Campaign activity. Indeed, it is perfectly well possible that with every step downwards, the segment gets narrowed in terms of number. You can also synchronize the entire campaign steps according to the defined segments.
+Through the `Segment` in the **Campaign** module, we can define our segment for each Campaign activity. Indeed, it is perfectly well possible that with every step downwards, the segment gets narrowed in terms of number. You can also synchronize the entire campaign steps according to the defined segments.
 
 Our insurance company wants to attack the Spanish market, and will define a segment called Spanish Leads. Of course you would want your segment to be valid for leads coming from Spain only. To achieve this, go to the **Leads** list view. Filter all the leads for Spain (type *Spain* in the `Search box` and filter by country), make sure to uncheck the salesteam, so that all leads coming from Spain will be selected. Then click `Save Filter` in Custom Filters and call it for instance *Spanish Leads*. Now return to the **Campaigns** menu and open the `Segment`, then click the ``Filter`` field to select *Spanish Leads*. The segment will now only apply to Spanish leads.
 
@@ -453,7 +453,7 @@ Profiling your Customers
 
 The segmentation tools let you create partner groups (or categories) and act on each segment differently according to questionnaires.
 For example, you could create pricelists for each of the segments, or start phone marketing campaigns
-by segment. To allow you to work with segments in OpenERP, you should install the :mod:`crm_profiling` module, which can also be achieved from :menuselection:`Setting --> Configuration --> Marketing tick the Track Customer Profile to Focus your Campaigns`
+by segment. To allow you to work with segments in OpenERP, you should install the :mod:`crm_profiling` module, which can also be achieved from :menuselection:`Setting --> Configuration --> Marketing tick the Track customer profile to focus your campaigns`
 
 Profiling can be used to qualify your customers according to a questionnaire you define. When you establish a good customer profile, this will surely help you to close your deals. Customer profiles might even help you beat your competitors! 
 
@@ -521,7 +521,7 @@ Using Profiles effectively
 .. index::
    single: module; crm_profiling
 
-To use the profiling system, you have to install OpenERP's :mod:`crm_profiling` module. You can also use the :menuselection:`Setting --> Configuration --> Marketing tick the Track Customer Profile to Focus your Campaigns`
+To use the profiling system, you have to install OpenERP's :mod:`crm_profiling` module. You can also use the :menuselection:`Setting --> Configuration --> Marketing tick the Track customer profile to focus your campaigns`
  
 Once the module is installed, you can create several questionnaires through the menu :menuselection:`Sales --> Configuration --> Questionnaires`.  For each questionnaire, OpenERP allows you to create a list of questions and the possible responses through the menu :menuselection:`Sales --> Configuration --> Questions`. 
 
@@ -550,7 +550,7 @@ profile defined like this:
 * Industry Sector? \ ``Services``\  .
 
 When entering the details of a specific prospect, the prospect's answers to various questions can be
-entered in the `Profiling` tab of the **Partner** form. All you have to do is click the `Use a Questionnaire` button on the `Profiling` tab of the **Partner** form.
+entered in the `Profiling` tab of the **Customer** form. All you have to do is click the `Use a Questionnaire` button on the `Profiling` tab of the **Customer** form.
 
 OpenERP will automatically assign prospects to the appropriate partner category based on these answers.
 
