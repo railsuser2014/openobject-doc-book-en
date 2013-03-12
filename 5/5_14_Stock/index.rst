@@ -42,8 +42,7 @@ locations are used for the counterparts of these two operations.
 Inventory locations are counterparts of the stock operations that represent your company's profit
 and loss in terms of your stocks.
 
-The figure :ref:`fig-stloctree` shows the initial configuration of the locations when the software is
-installed (:menuselection:`Warehouse --> Warehouse Management --> Locations`).
+The figure shows the initial configuration of the locations(:menuselection:`Warehouse --> Configuration --> Locations`).
 
 .. _fig-stloctree:
 
@@ -78,13 +77,11 @@ In this chapter, the following modules will be used:
    Name                                    Description
    ======================================= ===================================================================
    :mod:`stock`                            to handle the stock functions
-   :mod:`stock_planning`                   to define planning on products
    :mod:`stock_location`                   to define pull and push flows
    :mod:`delivery`                         to define delivery methods and costs
    :mod:`account_anglo_saxon`              to illustrate the valuation according to the anglo-saxon principles
    :mod:`sale_journal`                     to handle stock by journal
    :mod:`mrp_jit`                          to illustrate the just-in-time functionality
-   :mod:`sale_supplier_direct_delivery`    to directly deliver the product from the supplier to the customer
    ======================================= ===================================================================
 
 .. raw:: html
