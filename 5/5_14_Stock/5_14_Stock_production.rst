@@ -5,26 +5,9 @@
 Scheduling Procurements
 =======================
 
-The master production plan, sometimes called the MPS (Master Production Schedule), enables you to
-generate forecasts for incoming and outgoing material. It is based on forecasts of inputs and outputs
-by the logistics manager.
+OpenERP distinguishes between Production, Purchase and Procurement.
 
-To be able to use the production plan, you must install the :mod:`stock_planning` module.
-
-
-.. note:: MPS, Procurement and Production
-
-   OpenERP distinguishes between Production, Purchase and Procurement.
-
-   Production is manufacturing, Purchase is the acquisition of goods from another party,
-   and Procurement is either one or both of those. So it would be better to call the
-   MPS the Master Procurement Schedule. Which OpenERP does!
-
-.. tip:: Product Trading
-
-    Also called the Production Plan, this tool is also very useful for traded products which are not
-    manufactured.
-    You can use it for stock management with purchased and manufactured products.
+Production is manufacturing, Purchase is the acquisition of goods from another party,  and Procurement is either one or both of those.
 
 Processing Exceptions
 ---------------------
@@ -37,21 +20,20 @@ order, a purchase order, a sales order and a task.
 
 If there should be configuration problems, the system can remain blocked by a procurement without
 generating a corresponding document. For example, suppose that you configure a product :guilabel:`Procurement Method`
-as ``Make to Order``, and :guilabel:`Supply Method` as ``Produce``, but you have not defined the bill of materials. In that case, procurement of the product will stay blocked in an exception state ``No Bill of Materials defined for this product``. You then have to create a bill of materials to solve the problem.
+as ``Make to Order``, and :guilabel:`Supply Method` as ``Manufacture``, but you have not defined the bill of materials. In that case, procurement of the product will stay blocked in an exception state ``No Bill of Materials defined for this product``. You then have to create a bill of materials to solve the problem.
 
 Troubleshooting:
 
 * No bill of materials defined for production: you need to create a BoM or indicate
   that the product can be purchased instead.
 
-* No supplier available for a purchase: you have to define a supplier in the `Supplier` tab
+* No supplier available for a purchase: you have to define a supplier in the `Procurements` tab
   of the product form.
 
 * No address defined on the supplier partner: you have to complete an address for the default supplier
   for the product concerned.
 
-* No quantity available in stock: you have to create a rule for automatic procurement (for example, a
-  minimum stock rule) and put it in the order, or manually procure it.
+* No quantity available in stock: you have to create a reordering rule and put it in the order, or manually procure it.
 
 Some problems are just those of timing and can be automatically corrected by the system.
 
@@ -100,112 +82,17 @@ has the following advantages:
 
 * The calculation of requirements prioritises the procurements. If you encode a purchase directly, you short-circuit the planning of different procurements.
 
-.. tip:: Shortcuts
+Request Procurements
+--------------------
 
-   On the product form you have an :guilabel:`ACTIONS` shortcut button :guilabel:`Create Procurements`
-   that lets you quickly create a new procurement order.
+On the product form you have an :guilabel:`Request Procurement` shortcut button that lets you quickly create a new procurement order.
 
-
-
-.. index::
-   single: module; stock_planning
-
-.. index:: forecasts
-
-Sales Forecasts
----------------
-
-The first thing you have to do to work with a production plan is define the periods for stock management.
-Some companies plan daily, others weekly or monthly.
-
-.. tip:: Stock Management Interval
-
-   The interval chosen for managing stock in the production plan will depend on the length of your
-   production cycle. You generally work daily, weekly or monthly.
-
-   If it takes several days to assemble your products, you most likely will define a weekly plan. If your
-   manufacturing cycles take several months, you can work with a monthly plan.
-   
-   To predefine these periods you can use the :menuselection:`Stock and Sales Planning Periods` that will automatically generate 
-   daily, weekly or monthly periods.
-   
-   .. _fig-stfore:
-
-   .. figure:: images/stock_sales_periods.png
-	  :scale: 75
-	  :align: center
-	  
-	  *Stock and Sales Planning Periods*
-
-Go to the menu :menuselection:`Sales --> Configuration --> Stock and Sales Periods -->
-Create Stock and Sales Periods`. A window appears enabling you to automatically define the next periods that will be
-provided for stock management. For this example, create weekly periods.
-
-.. figure:: images/sale_period.png
-   :scale: 75
+.. figure:: images/procurement_request.png
+   :scale: 65
    :align: center
 
-   *Defining Periods for Stock Management*
+   *Procurement Request*
 
-Salespeople can then enter their sales forecasts by product and by period using the menu
-:menuselection:`Sales --> Sales Forecasts --> Sales Forecasts`. The forecasts can be
-made by quantity or by value. For a forecast by amount, OpenERP automatically calculates the
-quantity equivalent to the estimated amount. This can be modified manually as needed before
-completion. A salesperson can create sales forecasts manually, or he can use the `Create Sales Forecasts` wizard in the above menu.
-
-.. figure:: images/stock_sale_forecast.png
-   :scale: 75
-   :align: center
-
-   *Sales Forecast to Help Create a Master Production Plan*
-
-.. index::
-   single: plan; production
-
-Production Plan
----------------
-
-The manager responsible for logistics then plans receipts (manufacturing or purchases) and outgoings
-(consumption or customer deliveries) by period. From the menu :menuselection:`Warehouse --> Stock Planning --> Create Stock Planning Lines`, you can create a stock planning per week for a specific product category. Through  :menuselection:`Warehouse --> Stock Planning --> Master Procurement Schedule` you can adjust the planning.
-
-For each period and product, OpenERP gives you the following information:
-
-* Stock estimated at the end of the period, calculated as stock in the following period less the total
-  estimated outgoings plus total estimated inputs,
-
-* Closed entries, coming from production or confirmed purchases,
-
-* Forecast inputs for the period, calculated using the incoming entries less the closing amounts,
-
-* Planned inputs entered manually by the logistics manager,
-
-* Closed outgoings which are the consumption of manufacturing waiting and deliveries to be made to
-  customers,
-
-* Forecast outgoings, calculated from the planned outgoings, less the closing amounts,
-
-* Planned outgoings, manually entered by the logistics manager,
-
-* Sales forecasts, which represent the sum of forecasts made by the salespeople.
-
-.. figure:: images/stock_forecast.png
-   :scale: 75
-   :align: center
-
-   *The Master Production Schedule (MPS)*
-
-The production plan enables the logistics manager to play with the forecast receipts and
-outgoings and test the impact on the future stock for the product concerned. It enables
-you, for example, to check that the stock does not fall below a certain level for that product.
-
-You can also open the production plan for past periods. In this case, OpenERP shows you the real
-stock moves, by period for forecast reports.
-
-If you do not have automated procurement rules for a product, you can start procurement at any time
-based on the estimates of the production plan.
-To do this, press the button :guilabel:`Procure Incoming Left` (i.e. remaining) on
-the :guilabel:`Master Procurement Schedule`.
-OpenERP plans procurement for an amount equal to the entries forecast.
 
 .. Copyright © Open Object Press. All rights reserved.
 
