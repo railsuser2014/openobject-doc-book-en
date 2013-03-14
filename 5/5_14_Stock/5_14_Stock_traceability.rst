@@ -39,19 +39,15 @@ or a production activity, or a source location, or any given destination.
 
 Each stock move is in a given state. The various states are:
 
-* ``Draft`` : the move so far has no effect in the system. The transaction has not yet been confirmed,
+* ``New`` : When the stock move is created and not yet confirmed,
 
-* ``Not available``: the move will be done, so it will be counted in the calculations of virtual stock. But
-  you do not know whether it will be done without problem because the products have not been reserved for
-  the move,
+* ``Waiting Another Move``: This state can be seen when a move is waiting for another one, for example in a chained flow,
 
-* ``Available`` : the move will be done and the necessary raw materials have been reserved for the
-  transaction,
+* ``Waiting Availability`` : his state is reached when the procurement resolution is not straight forward. It may need the scheduler to run, a component to me manufactured,
 
-* ``Done`` : the stock move (picking) has been done, and entered into the calculations of real stock,
+* ``Available`` : When products are reserved, it is set to Available,
 
-* ``Waiting`` : in the case of transactions ``From Order``, this state shows that the stock move is blocked
-  waiting for the end of another move,
+* ``Done`` : When the shipment is processed, the state is Done,
 
 * ``Cancelled`` : the stock move was not carried out, so it is not taken into account in either real stock or
   virtual stock.
@@ -65,7 +61,7 @@ Lots
 
 OpenERP can also manage product lots. Two lot types are defined:
 
-* Production lots (batch numbers) are represented by a unique product or an assembly of identical
+* Serial Numbers (batch numbers) are represented by a unique product or an assembly of identical
   products leaving the same production area. They are usually identified by bar codes stuck on the
   products. The batch can be marked with a supplier number or your own company numbers.
 
@@ -82,23 +78,17 @@ and outgoing deliveries.
 
    *Entering a Line for Production Receipt*
 
-To enter the lot number in an operation, you can use an existing lot number or create a new pack. A
-production lot (batch number) is used for a single product. A tracking number can be
+To enter the Serial number in an operation, you can use an existing Serial number or create a new pack. A
+Serial (batch number) is used for a single product. A tracking number can be
 used several times for different products, so you can mix different products on a pallet or in a box.
 
-.. note:: Simplified View
-
-    In the ``Simplified`` view, the tracking numbers cannot be seen: the field is hidden.
-    To get to ``Extended`` view mode, assign the group
-    :guilabel:`Useability / Extended View` to the current user, or change the User Preferences.
-
-You can also specify on the product form the operations in which a lot number is
+You can also specify on the product form the operations in which a Serial number is
 required. You can then compel the user to set a lot number for manufacturing operations, goods
 receipt, or customer packing.
 
-You do not have to encode the lot numbers one by one to assign a unique lot number to a set of several items.
+You do not have to encode the Serial numbers one by one to assign a unique Serial number to a set of several items.
 You only need to take a stock move for several products line and click the button
-:guilabel:`Split in Production Lots`. You can then give a lot number prefix (if you want) and OpenERP will
+:guilabel:`Split in Serial Number`. You can then give a Serial number prefix (if you want) and OpenERP will
 complete the prefix in the wizard with a continuing sequence number. This sequence number
 might correspond to a set of pre-printed barcodes that you stick on each product.
 
@@ -106,31 +96,29 @@ might correspond to a set of pre-printed barcodes that you stick on each product
    :scale: 75
    :align: center
 
-   *Splitting a Lot into uniquely Identified Parts*
+   *Splitting a Serial Number into uniquely Identified Parts*
 
 .. index:: traceability (stock)
 
 Traceability
 ------------
 
-If you key in the lot numbers for stock moves as described above, you can investigate the traceability of any
-given lot number. Go to the menu :menuselection:`Warehouse --> Traceability -->
-Production Lots` or :menuselection:`Warehouse --> Traceability --> Packs`.
+If you key in the Serial numbers for stock moves as described above, you can investigate the traceability of any
+given Serial number. Go to the menu :menuselection:`Warehouse --> Traceability --> Serial Number` or :menuselection:`Warehouse --> Traceability --> Packs`.
 
 .. tip:: Product Shortcuts
 
-    From the product form, the toolbar to the right offers useful information:
+    From the product form, in more option offers useful information:
 
-    * :guilabel:`Minimum Stock Rules`,
+    * :guilabel:`Product Margin`,
 
     * :guilabel:`Stock by Location`,
 
-    * :guilabel:`Product Sales`,
+    * :guilabel:`Sales Order Lines`,
 
-    * :guilabel:`Bills of Material`.
+    * :guilabel:`Product BoM Structure`.
 
-Search for a particular lot using the filters for the lot number, the date or the product. Once you
-can see the form about this lot, several actions can be performed:
+There are several actions can be performed :
 
 * :guilabel:`Upstream Traceability`: from supplier through to customers,
 
@@ -159,11 +147,11 @@ Scrapping Products
 
 In OpenERP, there are many ways to handle scrap products. 
 
-#. :menuselection:`Warehouse --> Product Moves --> Receive Products`
+#. :menuselection:`Warehouse --> Receiver/Deliver Products --> Incoming Products`
 
-#. :menuselection:`Warehouse --> Product Moves --> Deliver Products`
+#. :menuselection:`Warehouse --> Receiver/Deliver Products --> Deliver Products`
 
-#. :menuselection:`Warehouse --> Warehouse Management --> Incoming Shipments`
+#. :menuselection:`Warehouse --> Receiver/Deliver By Orders --> Incoming Shipments`
 
     .. figure:: images/incoming_scrap.png
 	   :scale: 75
@@ -171,7 +159,7 @@ In OpenERP, there are many ways to handle scrap products.
 	
 	   *Scrapping from an Incoming Shipment*
 
-#. :menuselection:`Warehouse --> Warehouse Management --> Internal Moves`
+#. :menuselection:`Warehouse --> Receiver/Deliver By Orders --> Internal Moves`
 
    .. figure:: images/internal_scrap.png
 	  :scale: 75
@@ -179,7 +167,7 @@ In OpenERP, there are many ways to handle scrap products.
 	
 	  *Scrapping from an Internal Move*	
 
-#. :menuselection:`Warehouse --> Warehouse Management --> Delivery Orders`
+#. :menuselection:`Warehouse --> Receiver/Deliver By Orders --> Delivery Orders`
 
 .. figure:: images/delivery_scrap.png
 	  :scale: 75
@@ -188,9 +176,7 @@ In OpenERP, there are many ways to handle scrap products.
 	  *Scrapping from a Delivery Order*	
 
 When you decide to scrap some products, they are transferred to the :guilabel:`Scrap` location.
-To display the content of this :guilabel:`Virtual Location`, go to :menuselection:
-`Warehouse --> Inventory Control --> Location Structure`, then select the virtual locations and display the
-:guilabel:`Scrap` location.
+To display the content of this :guilabel:`Virtual Location`, go to :menuselection:`Warehouse --> Inventory Control --> Location Structure`, then select the virtual locations and display the :guilabel:`Scrap` location.
 
 If you want to transfer the products to another location, you can create a new one and check the 
 :guilabel:`Scrap Location` in the additional information.

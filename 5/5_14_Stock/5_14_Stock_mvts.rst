@@ -737,6 +737,14 @@ At first, you have to define possible packaging. To define the packaging, go to 
 To complete the creation of a new packaging, you have to give it a name and a type. Different types are
 available in OpenERP: :guilabel:`Box`, :guilabel:`Pack`, :guilabel:`Pallet` and :guilabel:`Unit`.
 
+Once all packaging is defined, you can attach the packaging to your products through the following menu: 
+:menuselection:`Warehouse --> Products --> Products`. (Open Product Form view and go to Sales Tab in the last you will find line of packing)
+
+.. figure:: images/product_packaging.png
+     :scale: 75
+     :align: center
+     
+     *Defining the Packaging for the Product*     
 
 .. Copyright © Open Object Press. All rights reserved.
 
