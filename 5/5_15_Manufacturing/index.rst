@@ -60,6 +60,7 @@ As you will notice, when you select ``Manufacturing`` to be installed, OpenERP w
 
 .. toctree::
 
+   5_15_bom_demo
    5_15_Master_data
    5_15_Manufacturing
    5_15_Manufacturing_logistic

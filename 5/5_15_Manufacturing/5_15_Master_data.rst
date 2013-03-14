@@ -5,7 +5,7 @@ Using Bills of Materials
 ------------------------
 
 Bills of Materials are documents that describe the list of raw materials used to make a finished
-product. To illustrate the concept of specification, you will work on a Assemble PC where the
+product. To illustrate the concept of specification, you will work on a shelf (or cabinet) where the
 manufacturing plan is given by the figure :ref:`fig-mrparm2`.
 
 .. _fig-mrparm2:
@@ -14,72 +14,123 @@ manufacturing plan is given by the figure :ref:`fig-mrparm2`.
    :scale: 75
    :align: center
 
-   *On Demand Assemble PC*
+   *Plan of Construction of a Shelf*
 
-The Assemble PC is assembled from raw materials and intermediate assemblies. The Image Code refers to the picture, the Product Reference is the corresponding code in OpenERP.
+The shelf is assembled from raw materials and intermediate assemblies. The Image Code refers to the picture, the Product Reference is the corresponding code in OpenERP.
 
-.. table:: Product Definitions before defining Bills of Materials(Already defined)
+Change the unit of the Wood Lintel 4m (LIN40) product to ``m`` instead of PCE.
 
-   =================== ===================================
-   Product Reference   Description
-   =================== ===================================
-   PC-DEM              PC Assemble + Custom (PC on Demand)
-   LCD15               15” LCD Monitor
-   C-Case              Computer Case
-   CPUa8               Processor AMD 8-Core
-   MBi9                Motherboard I9P57
-   HDD SH-1            HDD SH-1
-   RAM-SR5             RAM SR5
-   M-Las               Mouse, Laser
-   KeyQ                USB Keyboard, QWERTY
-   =================== ===================================
+.. table:: Product Definitions before defining Bills of Materials (already defined)
+
+   ========== ================= =========================
+   Image Code Product Reference Description
+   ========== ================= =========================
+   ARM100     SHE100            Shelf 100 cm
+   PANLAT     SIDEPAN           Side Panel
+   PANA100    RPAN100           Rear Panel SHE100
+   PROFIL     PROFIL            Assembly Section
+   ETA100     RCK100            Rack 100cm
+   BOIS002    WOOD002           Wood 2mm
+   TAQ000     METC000           Metal Cleats
+   LIN40      LIN40             Wood Lintel 4m
+   ========== ================= =========================
+
+.. table:: New Products to be created before defining Bill of Materials
+
+   ========== ================= =========================
+   Image Code Product Reference Description
+   ========== ================= =========================
+   PLET100    SPAN100           Shelf Panel
+   BOIS010    WOOD010           Wood 10mm
+   ========== ================= =========================
 
 .. tip:: Copy
 
-        To create the above products, duplicate existing ones, from the Purchase or Sales menu :menuselection:`Purchases --> Products --> Products`.
+        To create the above products, duplicate existing ones, such as Side Panel and Wood 2mm, from the Purchase or Sales menu :menuselection:`Purchases --> Products --> Products`.
 
-To describe how this Assemble PC should be assembled, you define a bill of materials for each intermediate product and for the final Assemble PC. These are shown in the tables below. You can start from the demo data and complete them according to the specifications. To create or change a bill of materials, go to :menuselection:`Manufacturing --> Products --> Bill of Materials`.
+To describe how this shelf should be assembled, you define a bill of materials for each intermediate product and for the final shelf assembly. These are shown in the tables below. You can start from the demo data and complete them according to the specifications. To create or change a bill of materials, go to :menuselection:`Manufacturing --> Master Data --> Bill of Materials`.
 
-.. table:: Bill of Materials for one Unit of Computer Case(Already defined)
+.. table:: Bill of Materials for 1 SHE100 Unit (already defined)
 
-   ==============  =========  ================
-   Product Ref.    Quantity   Unit of Measure
-   ==============  =========  ================
-   CPUa8               1           Unit
-   MBi9                1           Unit
-   HDD SH-1            1           Unit
-   ==============  =========  ================
+   ============  ========  ===============
+   Product Ref.  Quantity  Unit of Measure
+   ============  ========  ===============
+   PROFIL         4        PCE
+   SIDEPAN        2        PCE
+   METC000       12        PCE
+   RPAN100        1        PCE
+   RCK100         3        PCE
+   ============  ========  ===============
+
+.. table:: Bill of Materials for 1 RCK100 PCE
+
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   SPAN100       1         PCE
+   METC000       4         PCE
+   ============  ========  ===============
+
+.. table:: Bill of Materials for 1 SPAN100 PCE
+
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   WOOD010       0.083     m
+   ============  ========  ===============
+
+.. table:: Bill of Materials for 1 PROFIL PCE
+
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   LIN40         0.25      m
+   ============  ========  ===============
+
+.. table:: Bill of Materials for 1 RPAN100 PCE
+
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   WOOD002       0.25      m
+   ============  ========  ===============
+
+.. table:: Bill of Materials for 1 SIDEPAN PCE
+
+   ============  ========  ===============
+   Product Code  Quantity  Unit of Measure
+   ============  ========  ===============
+   WOOD002       0.083     m
+   ============  ========  ===============
 
 The bills of materials are then used by the software to calculate the raw material needs based on the
-requirements of the finished products. So if you want to manufacture 10 Assemble PC, the system can
+requirements of the finished products. So if you want to manufacture 10 shelves, the system can
 calculate the actual products that will be consumed:
 
-.. table:: Total Quantities per Assemble PC
+.. table:: Total Quantities per Shelf
 
-   ============  ==========  ================
-   Product Code  Quantity    Unit of Measure
-   ============  ==========  ================
-   PC-DEM           1           Unit
-   LCD15            1           Unit
-   C-Case           1           Unit
-   RAM-SR5          1           Unit
-   M-Las            1           Unit
-   KeyQ             1           Unit
-   ============  ==========  ================
+   ============  =========================  ===============
+   Product Code  Quantity                   Unit of Measure
+   ============  =========================  ===============
+   WOOD002       0.416 (2 * 0.083 + 0.25)   m
+   LIN40         1 (4 * 0.25)               m
+   WOOD010       0.249 (0.083 * 3)          m
+   METC000       132 ((3 * 4) + (10 * 12))  PCE
+   ============  =========================  ===============
 
 .. tip:: Bill of Materials
 
    To see the bill of materials in tree view, use the menu :menuselection:`Manufacturing -->
-   Products --> Bill of Materials` then select the product and click the action `Bill Of Material Structure` from more button.
+   Master Data --> Bill of Materials` then select the product and click the action `BOM Structure`.
 
 .. figure:: images/mrp_bom_tree_new.png
-   :scale: 59
+   :scale: 60
    :align: center
 
    *Bill of Materials structure*
 
-Use the menu :menuselection:`Manufacturing --> Products --> Bill of Materials`
-and click the `Create` button to define a new bill of materials.
+Use the menu :menuselection:`Manufacturing --> Master Data --> Bill of Materials`
+and click the `New` button to define a new bill of materials.
 
 .. tip:: The Different Views
 
@@ -87,10 +138,10 @@ and click the `Create` button to define a new bill of materials.
 
     * From the list, select a bill of materials name and then click :guilabel:`Form View`,
 
-    * From a product form, Click on :guilabel:`Product BoM Structure` From more button.
+    * From a product form, use the menu :guilabel:`Product BoM Structure` to the right.
 
 .. figure:: images/mrp_bom_new.png
-   :scale: 65
+   :scale: 60
    :align: center
 
    *Defining a Bill of Materials (Extended view)*
@@ -108,16 +159,25 @@ product. The quantities are set out based on the quantities of finished product 
 .. index::
    single: BoM; revisions
 
-The tab, :guilabel:`By products`, allows you to produce several products from one production order.
-For Example:  A + B + C -> D + E
-This feature is available if you have installed the module :mod:`mrp_byproducts`, which can be done by selecting :guilabel:`Produce several products from one manufacturing order` in the :menuselection:`Settings --> Configuration --> Manufacturing`. In :guilabel:`Order`.
+The second tab, :guilabel:`Revisions`, is used to register all the changes made to the bill of materials. On each change, you can specify a revision number and some notes on the modifications you carried out.
 
-In the tab, :guilabel:`Properties`, you can put a free text reference to a plan,
+.. note:: Simplified View
+
+   The `Revisions` tab is only visible if the user works in the ``Extended`` view mode
+   (which means that the user should belong to the group ``Useability / Extended View`` .
+
+.. figure:: images/mrp_bom_by_products_new.png
+   :scale: 60
+   :align: center
+
+   *Revisions of a Bill of Materials (Extended view)*
+
+In the third tab, :guilabel:`Properties`, you can put a free text reference to a plan,
 a sequence number that is used to determine the priorities between bills of materials, dates between which a bill of materials
 is valid, and values for rounding and production efficiency.
 
 .. figure:: images/mrp_bom_properties.png
-   :scale: 62
+   :scale: 60
    :align: center
 
    *Properties of a Bill of Materials*
@@ -126,7 +186,7 @@ is valid, and values for rounding and production efficiency.
 in which the quantities of the selected product can be expressed. So if you set the rounding to 1.00, you will not be able to manufacture half a piece. The :guilabel:`Efficiency` of the product lets you indicate the percentage you lose during manufacturing. This loss
 can be defined for the finished product or for each raw materials (components) line. The impact of this efficiency figure is that OpenERP will reserve more raw materials for manufacturing than you would otherwise use just from the Bill of Materials calculations.
 
-The final part of this tab lets you set some properties for the product's manufacturing processes. These will be detailed further on in the chapter in the section about configurable products.
+The final part of the third tab lets you set some properties for the product's manufacturing processes. These will be detailed further on in the chapter in the section about configurable products.
 
 .. index::
    single: BoM; multi-level
@@ -135,7 +195,7 @@ The final part of this tab lets you set some properties for the product's manufa
 Multi-level Bills of Materials
 ------------------------------
 
-In OpenERP, each line of a bill of materials may itself be a bill of materials. This allows you to define BoMs with several levels. Instead of defining several BoMs for the Assemble PC in the figure :ref:`fig-mrparm2`, you could define the single bill of materials below:
+In OpenERP, each line of a bill of materials may itself be a bill of materials. This allows you to define BoMs with several levels. Instead of defining several BoMs for the shelf in the figure :ref:`fig-mrparm2`, you could define the single bill of materials below:
 
 .. table:: Single Bill of Materials for 1 SHE100 Unit
 
@@ -160,7 +220,7 @@ BoMs each on a single level or in one BoM tree-structured on several levels.
 
 If you select a BoM using intermediate products that automatically generates production orders
 based on calculated requirements, OpenERP will propose to manufacture an intermediate product. To
-manufacture a Assemble PC according to the different bills of materials defined, you would create 6 production orders:
+manufacture a shelf according to the different bills of materials defined, you would create 6 production orders:
 
 .. table:: Production Order
 
@@ -222,7 +282,7 @@ manufacture a Assemble PC according to the different bills of materials defined,
    ============  ========  ===============
 
 In the case where a single bill of materials is defined in multiple levels, a single manufacturing
-order will be generated for each Assemble PC, including all of the sub BoMs. You would then get the
+order will be generated for each shelf, including all of the sub BoMs. You would then get the
 following production order:
 
 .. table:: Single Production from a tree-structured BoM
@@ -251,12 +311,12 @@ Sometimes, however, it may be useful to define the intermediate product separate
 
 In the example, the intermediate product ``RCK100`` is used in the manufacturing of different shelves (SHE100, SHE200, ...). So you would prefer to define a unique BoM for it, even though you do not want any instances of this product to be built, nor would you want to rewrite these elements in a series of different multi-level BoMs.
 
-If you only want a single production order for the complete Assemble PC, and not one for the BoM itself, you
-can define the BoM line corresponding to product ``RCK100`` in the Assemble PC's BoM as type :guilabel:`Sets/Phantom`. Then OpenERP will automatically put ``RCK100``'s BoM contents into the Assemble PC's production order, even though it has been defined as multi-level.
+If you only want a single production order for the complete shelf, and not one for the BoM itself, you
+can define the BoM line corresponding to product ``RCK100`` in the shelf's BoM as type :guilabel:`Sets/Phantom`. Then OpenERP will automatically put ``RCK100``'s BoM contents into the shelf's production order, even though it has been defined as multi-level.
 
 This way of representing the assembly is very useful, because it allows you to define reusable assembly elements and keep them isolated.
 
-If you define the BoM for the ``SHE100`` Assemble PC in the way shown by the table below, you will get two production orders on confirmation of a sales order, as also shown in the tables.
+If you define the BoM for the ``SHE100`` shelf in the way shown by the table below, you will get two production orders on confirmation of a sales order, as also shown in the tables.
 
 .. table:: Defining and Using Phantom BoMs
 
@@ -301,7 +361,7 @@ Bills of Materials for Kits/Sets
     In OpenERP, the term Kits/Sets is used, because the effect of the bill of materials is visible not
     only in sales, but also elsewhere, for example, in the intermediate manufactured products.
 
-Kits/Sets bills of materials enable you to define assemblies that will be sold directly. These could also be used in deliveries and stock management rather than just sold separately. For example, if you deliver the Assemble PC in pieces for self-assembly, set the ``SHE100`` BoM to type
+Kits/Sets bills of materials enable you to define assemblies that will be sold directly. These could also be used in deliveries and stock management rather than just sold separately. For example, if you deliver the shelf in pieces for self-assembly, set the ``SHE100`` BoM to type
 ``Sets / Phantom``.
 
 When a salesperson creates an order for a ``SHE100`` product, OpenERP automatically changes the ``SHE100``
@@ -324,7 +384,7 @@ Use the menu :menuselection:`Manufacturing --> Configuration --> Resources --> W
 .. _fig-mrpwkc2:
 
 .. figure:: images/mrp_workcenter.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Defining a Work Center*
@@ -389,7 +449,7 @@ Routings define the manufacturing operations to be done in work centers to produ
 A routing can be defined directly in a bill of materials or through the menu :menuselection:`Manufacturing --> Configuration --> Master Bill of Materials --> Routings`. A routing has a name, and a code. You can also add a description. Later in this chapter you will see that a routing can also be associated with a stock location. This enables you to indicate where an assembly takes place.
 
 .. figure:: images/mrp_routing.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Defining a routing with Three Operations*
