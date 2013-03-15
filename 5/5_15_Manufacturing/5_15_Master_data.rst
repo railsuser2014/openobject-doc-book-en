@@ -18,7 +18,7 @@ manufacturing plan is given by the figure :ref:`fig-mrparm2`.
 
 The shelf is assembled from raw materials and intermediate assemblies. The Image Code refers to the picture, the Product Reference is the corresponding code in OpenERP.
 
-Change the unit of the Wood Lintel 4m (LIN40) product to ``m`` instead of PCE.
+Change the unit of the Wood Lintel 4m (LIN40) product to ``m`` instead of Unit(s).
 
 .. table:: Product Definitions before defining Bills of Materials (already defined)
 
@@ -48,30 +48,30 @@ Change the unit of the Wood Lintel 4m (LIN40) product to ``m`` instead of PCE.
 
         To create the above products, duplicate existing ones, such as Side Panel and Wood 2mm, from the Purchase or Sales menu :menuselection:`Purchases --> Products --> Products`.
 
-To describe how this shelf should be assembled, you define a bill of materials for each intermediate product and for the final shelf assembly. These are shown in the tables below. You can start from the demo data and complete them according to the specifications. To create or change a bill of materials, go to :menuselection:`Manufacturing --> Master Data --> Bill of Materials`.
+To describe how this shelf should be assembled, you define a bill of materials for each intermediate product and for the final shelf assembly. These are shown in the tables below. You can start from the demo data and complete them according to the specifications. To create or change a bill of materials, go to :menuselection:`Manufacturing --> Products --> Bill of Materials`.
 
 .. table:: Bill of Materials for 1 SHE100 Unit (already defined)
 
    ============  ========  ===============
    Product Ref.  Quantity  Unit of Measure
    ============  ========  ===============
-   PROFIL         4        PCE
-   SIDEPAN        2        PCE
-   METC000       12        PCE
-   RPAN100        1        PCE
-   RCK100         3        PCE
+   PROFIL         4        Unit(s)
+   SIDEPAN        2        Unit(s)
+   METC000       12        Unit(s)
+   RPAN100        1        Unit(s)
+   RCK100         3        Unit(s)
    ============  ========  ===============
 
-.. table:: Bill of Materials for 1 RCK100 PCE
+.. table:: Bill of Materials for 1 RCK100 Unit(s)
 
    ============  ========  ===============
    Product Code  Quantity  Unit of Measure
    ============  ========  ===============
-   SPAN100       1         PCE
-   METC000       4         PCE
+   SPAN100       1         Unit(s)
+   METC000       4         Unit(s)
    ============  ========  ===============
 
-.. table:: Bill of Materials for 1 SPAN100 PCE
+.. table:: Bill of Materials for 1 SPAN100 Unit(s)
 
    ============  ========  ===============
    Product Code  Quantity  Unit of Measure
@@ -79,7 +79,7 @@ To describe how this shelf should be assembled, you define a bill of materials f
    WOOD010       0.083     m
    ============  ========  ===============
 
-.. table:: Bill of Materials for 1 PROFIL PCE
+.. table:: Bill of Materials for 1 PROFIL Unit(s)
 
    ============  ========  ===============
    Product Code  Quantity  Unit of Measure
@@ -87,7 +87,7 @@ To describe how this shelf should be assembled, you define a bill of materials f
    LIN40         0.25      m
    ============  ========  ===============
 
-.. table:: Bill of Materials for 1 RPAN100 PCE
+.. table:: Bill of Materials for 1 RPAN100 Unit(s)
 
    ============  ========  ===============
    Product Code  Quantity  Unit of Measure
@@ -95,7 +95,7 @@ To describe how this shelf should be assembled, you define a bill of materials f
    WOOD002       0.25      m
    ============  ========  ===============
 
-.. table:: Bill of Materials for 1 SIDEPAN PCE
+.. table:: Bill of Materials for 1 SIDEPAN Unit(s)
 
    ============  ========  ===============
    Product Code  Quantity  Unit of Measure
@@ -115,13 +115,12 @@ calculate the actual products that will be consumed:
    WOOD002       0.416 (2 * 0.083 + 0.25)   m
    LIN40         1 (4 * 0.25)               m
    WOOD010       0.249 (0.083 * 3)          m
-   METC000       132 ((3 * 4) + (10 * 12))  PCE
+   METC000       132 ((3 * 4) + (10 * 12))  Unit(s)
    ============  =========================  ===============
 
 .. tip:: Bill of Materials
 
-   To see the bill of materials in tree view, use the menu :menuselection:`Manufacturing -->
-   Master Data --> Bill of Materials` then select the product and click the action `BOM Structure`.
+   To see the bill of materials in tree view, use the menu :menuselection:`Manufacturing --> Products  --> Products` then select the product and choose `Product BOM Structure` from more button.
 
 .. figure:: images/mrp_bom_tree_new.png
    :scale: 60
@@ -129,8 +128,8 @@ calculate the actual products that will be consumed:
 
    *Bill of Materials structure*
 
-Use the menu :menuselection:`Manufacturing --> Master Data --> Bill of Materials`
-and click the `New` button to define a new bill of materials.
+Use the menu :menuselection:`Manufacturing --> Products --> Bill of Materials`
+and click the `Create` button to define a new bill of materials.
 
 .. tip:: The Different Views
 
@@ -138,13 +137,13 @@ and click the `New` button to define a new bill of materials.
 
     * From the list, select a bill of materials name and then click :guilabel:`Form View`,
 
-    * From a product form, use the menu :guilabel:`Product BoM Structure` to the right.
+    * From a product form, use the `Bill of Materials` Button.
 
 .. figure:: images/mrp_bom_new.png
    :scale: 60
    :align: center
 
-   *Defining a Bill of Materials (Extended view)*
+   *Defining a Bill of Materials*
 
 In the ``Product`` field of the bill of materials, you should set the finished product, which will be
 manufactured or assembled. Once the product has been selected, OpenERP automatically completes the
@@ -159,18 +158,14 @@ product. The quantities are set out based on the quantities of finished product 
 .. index::
    single: BoM; revisions
 
-The second tab, :guilabel:`Revisions`, is used to register all the changes made to the bill of materials. On each change, you can specify a revision number and some notes on the modifications you carried out.
-
-.. note:: Simplified View
-
-   The `Revisions` tab is only visible if the user works in the ``Extended`` view mode
-   (which means that the user should belong to the group ``Useability / Extended View`` .
+The tab, :guilabel:`By products`, allows you to produce several products from one production order.
+This feature is available if you have installed the module :mod:`mrp_byproducts`, which can be done by selecting :guilabel:`Produce several products from one manufacturing order` in the :menuselection:`Settings --> Configuration --> Manufacturing` in :guilabel:`Order`.
 
 .. figure:: images/mrp_bom_by_products_new.png
    :scale: 60
    :align: center
 
-   *Revisions of a Bill of Materials (Extended view)*
+   *By Products of a Bill of Materials*
 
 In the third tab, :guilabel:`Properties`, you can put a free text reference to a plan,
 a sequence number that is used to determine the priorities between bills of materials, dates between which a bill of materials
@@ -186,7 +181,7 @@ is valid, and values for rounding and production efficiency.
 in which the quantities of the selected product can be expressed. So if you set the rounding to 1.00, you will not be able to manufacture half a piece. The :guilabel:`Efficiency` of the product lets you indicate the percentage you lose during manufacturing. This loss
 can be defined for the finished product or for each raw materials (components) line. The impact of this efficiency figure is that OpenERP will reserve more raw materials for manufacturing than you would otherwise use just from the Bill of Materials calculations.
 
-The final part of the third tab lets you set some properties for the product's manufacturing processes. These will be detailed further on in the chapter in the section about configurable products.
+The final part of this tab lets you set some properties for the product's manufacturing processes. These will be detailed further on in the chapter in the section about configurable products.
 
 .. index::
    single: BoM; multi-level
@@ -202,17 +197,17 @@ In OpenERP, each line of a bill of materials may itself be a bill of materials. 
    ============  ========  ===============
    Product Ref.  Quantity  Unit of Measure
    ============  ========  ===============
-   SHE100        1         PCE
-   SIDEPAN       2         PCE
+   SHE100        1         Unit(s)
+   SIDEPAN       2         Unit(s)
    WOOD002       0.166     m
-   RPAN100       1         PCE
+   RPAN100       1         Unit(s)
    WOOD002       0.25      m
-   PROFIL        4         PCE
+   PROFIL        4         Unit(s)
    LIN40         1         m
-   RCK100        3         PCE
-   SPAN100       3         PCE
+   RCK100        3         Unit(s)
+   SPAN100       3         Unit(s)
    WOOD010       0.249     m
-   METC000       132       PCE
+   METC000       132       Unit(s)
    ============  ========  ===============
 
 OpenERP behaves differently depending on whether the bill of materials is defined in several small
@@ -227,7 +222,7 @@ manufacture a shelf according to the different bills of materials defined, you w
    ============  ========  ===============
    Product Ref.  Quantity  Unit of Measure
    ============  ========  ===============
-   SPAN100       3         PCE
+   SPAN100       3         Unit(s)
    WOOD010       0.249     m
    ============  ========  ===============
 
@@ -236,9 +231,9 @@ manufacture a shelf according to the different bills of materials defined, you w
    ============  ========  ===============
    Product Ref.  Quantity  Unit of Measure
    ============  ========  ===============
-   RCK100        3         PCE
-   SPAN100       3         PCE
-   METC000       12        PCE
+   RCK100        3         Unit(s)
+   SPAN100       3         Unit(s)
+   METC000       12        Unit(s)
    ============  ========  ===============
 
 .. table:: Production Order
@@ -246,7 +241,7 @@ manufacture a shelf according to the different bills of materials defined, you w
    ============  ========  ===============
    Product Ref.  Quantity  Unit of Measure
    ============  ========  ===============
-   PROFIL        4         PCE
+   PROFIL        4         Unit(s)
    LIN40         1         m
    ============  ========  ===============
 
@@ -255,7 +250,7 @@ manufacture a shelf according to the different bills of materials defined, you w
    ============  ========  ===============
    Product Ref.  Quantity  Unit of Measure
    ============  ========  ===============
-   RPAN100       1         PCE
+   RPAN100       1         Unit(s)
    WOOD002       0.25      m
    ============  ========  ===============
 
@@ -264,7 +259,7 @@ manufacture a shelf according to the different bills of materials defined, you w
    ============  ========  ===============
    Product Ref.  Quantity  Unit of Measure
    ============  ========  ===============
-   SIDEPAN       2         PCE
+   SIDEPAN       2         Unit(s)
    WOOD002       0.17      m
    ============  ========  ===============
 
@@ -273,12 +268,12 @@ manufacture a shelf according to the different bills of materials defined, you w
    ============  ========  ===============
    Product Ref.  Quantity  Unit of Measure
    ============  ========  ===============
-   SHE100         1        PCE
-   SIDEPAN        2        PCE
-   RPAN100        1        PCE
-   PROFIL         4        PCE
-   RCK100         3        PCE
-   METC000       12        PCE
+   SHE100         1        Unit(s)
+   SIDEPAN        2        Unit(s)
+   RPAN100        1        Unit(s)
+   PROFIL         4        Unit(s)
+   RCK100         3        Unit(s)
+   METC000       12        Unit(s)
    ============  ========  ===============
 
 In the case where a single bill of materials is defined in multiple levels, a single manufacturing
@@ -290,12 +285,12 @@ following production order:
    ============  ========  ===============
    Product Ref.  Quantity  Unit of Measure
    ============  ========  ===============
-   SHE100        1         PCE
+   SHE100        1         Unit(s)
    WOOD002       0.17      m
    WOOD002       0.25      m
    LIN40         1         m
    WOOD010       0.249     m
-   METC000       132       PCE
+   METC000       132       Unit(s)
    ============  ========  ===============
 
 .. index::
@@ -323,11 +318,11 @@ If you define the BoM for the ``SHE100`` shelf in the way shown by the table bel
    ============  ========  ===============  ===========
    Product Ref.  Quantity  Unit of Measure  Type of BoM
    ============  ========  ===============  ===========
-   SHE100        1         PCE              normal
-   SIDEPAN       2         PCE              normal
-   RPAN100       1         PCE              phantom
-   PROFIL        4         PCE              phantom
-   RCK100        3         PCE              phantom
+   SHE100        1         Unit(s)              normal
+   SIDEPAN       2         Unit(s)              normal
+   RPAN100       1         Unit(s)              phantom
+   PROFIL        4         Unit(s)              phantom
+   RCK100        3         Unit(s)              phantom
    ============  ========  ===============  ===========
 
 .. table:: Production Order from Phantom BoMs
@@ -335,12 +330,12 @@ If you define the BoM for the ``SHE100`` shelf in the way shown by the table bel
    ============  ========  ===============
    Product Ref.  Quantity  Unit of Measure
    ============  ========  ===============
-   SHE100        1         PCE
-   SIDEPAN       2         PCE
+   SHE100        1         Unit(s)
+   SIDEPAN       2         Unit(s)
    WOOD002       0.25      m
    LIN40         1         m
    WOOD010       0.249     m
-   METC000       12        PCE
+   METC000       12        Unit(s)
    ============  ========  ===============
 
 .. table:: Production Order from Normal BoM
@@ -348,7 +343,7 @@ If you define the BoM for the ``SHE100`` shelf in the way shown by the table bel
    ============  ========  ===============
    Product Ref.  Quantity  Unit of Measure
    ============  ========  ===============
-   SIDEPAN       2         PCE
+   SIDEPAN       2         Unit(s)
    WOOD002       0.17      m
    ============  ========  ===============
 
@@ -379,7 +374,7 @@ Work centers represent units of production, capable of doing material transforma
     Work centers are units of production consisting of one or several people and/or machines
     that can be considered as a unit for the purpose of forecasting capacity and planning.
 
-Use the menu :menuselection:`Manufacturing --> Configuration --> Resources --> Work Centers` to define a new work center. You get a form as shown in the figure :ref:`fig-mrpwkc2`.
+Use the menu :menuselection:`Manufacturing --> Configuration --> Work Centers` to define a new work center. You get a form as shown in the figure :ref:`fig-mrpwkc2`.
 
 .. _fig-mrpwkc2:
 
@@ -388,11 +383,6 @@ Use the menu :menuselection:`Manufacturing --> Configuration --> Resources --> W
    :align: center
 
    *Defining a Work Center*
-   
-.. tip:: Missing fields
-
-        If some fields such as :guilabel:`Analytic Journal, General Account` in the view are missing, you have
-        to add the user group ``Useability / Analytic Accounting``.
 
 A work center should have a name. You then assign a type: Machine or Human, a code and
 the operating hours, i.e. ``Working Period``. The Working Time(s) can be defined through the menu :menuselection:`Manufacturing --> Configuration --> Resources --> Working Time`. The figure :ref:`fig-mrpwkc2` represents the hours from Monday
@@ -446,7 +436,7 @@ Routings
 
 Routings define the manufacturing operations to be done in work centers to produce a certain product. A routing is usually attached to bills of materials, which will define the assembly of products required for manufacturing or to produce finished products.
 
-A routing can be defined directly in a bill of materials or through the menu :menuselection:`Manufacturing --> Configuration --> Master Bill of Materials --> Routings`. A routing has a name, and a code. You can also add a description. Later in this chapter you will see that a routing can also be associated with a stock location. This enables you to indicate where an assembly takes place.
+A routing can be defined directly in a bill of materials or through the menu :menuselection:`Manufacturing --> Products --> Routings`. A routing has a name, and a code. You can also add a description. Later in this chapter you will see that a routing can also be associated with a stock location. This enables you to indicate where an assembly takes place.
 
 .. figure:: images/mrp_routing.png
    :scale: 60
