@@ -10,7 +10,7 @@ In order to define the delivery time, you have to know three things:
 
   That is the time you promise to your customer for a delivery. It corresponds to the average delay
   between the confirmation of the customer order and the delivery of the finished goods. It can be
-  defined in the product form, in the :guilabel:`Procurement and Locations` tab.
+  defined in the product form, in the :guilabel:`Sales` tab.
   
   This time will be influenced by the Manufacturing Lead Time and the Delivery Lead Time.
   
@@ -18,12 +18,12 @@ In order to define the delivery time, you have to know three things:
 
   This is the time you need to produce one unit of a product. If this product needs other sub-products,
   the different manufacturing times will be summed. It can also be defined in the product form, in the 
-  :guilabel:`Procurement and Locations` tab.
+  :guilabel:`Procurements` tab.
   
 * Delivery Lead Time :
 
   This is the time your supplier needs to deliver the goods. This delay can be defined in the product form
-  in the :guilabel:`Suppliers` tab.
+  in the :guilabel:`Procurements` tab in last line.
   
 For example, if we have to deliver some products to a customer in a month (in 30 days). You promise to deliver
 the goods to the customer within 10 days, the manufacturing time is equal to 4 days and our suppliers deliver 
@@ -40,29 +40,6 @@ It is a computer-based system in which the given Master Schedule is exploded wit
 Material, into the required amount of raw material, parts and subassemblies needed to produce 
 the final products in each period.
 
-Incoming and Outgoing Products Planning
-========================================
-
-To be able to plan incoming and outgoing shipments of products, you have to install the module
-:guilabel:`stock_planning`. 
-
-.. figure:: images/stock_forecast.png
-	:scale: 75
-	:align: center
-	
-	*Planning the Deliveries of Customer Products*
-
-Thanks to this module, you will be able to calculate a planning of the stock for a product.
-
-Planned dates on a packing order are put in each stock move line. If you have a packing order 
-containing several products, not all of the lines necessarily need to be delivered the same day. 
-The minimum and maximum dates in a packing order show the earliest and latest dates on the stock 
-move lines for the packing.
-
-If you move a packing order in the calendar view, the planned date in the stock move lines will 
-automatically be moved as a result.
-
-
 Managing Inventory Reconciliation
 =================================
 
@@ -76,55 +53,7 @@ Reconciliation steps on the accounting side include verification that all invent
 posted, entering adjustments from the physical count and analysing the dollar differences between months.
 Inventory reconciliation frequency depends on the size, location, and type of inventory in a company’s 
 operations.
-
-Building Reports to Track Activity 
-==================================
-
-With OpenERP, you can build your own reports in order to track the different activities in your warehouses.
-To create your own reports, you have to install the :guilabel:`base_report_creator`. It will add a 
-submenu in :menuselection:`Administration --> Customization --> Reporting`.
-
-.. figure:: images/report_creation.png
-	:scale: 75
-	:align: center
-	
-	*Create your Own Reports*
-
-This newly added section allows you to define for your new report:
-
-* The general configuration:
-
-  The aim of this tab is to choose the models your report will rely on.
-
-* The view parameters
-  
-  This tab will define the display of your report. You can choose between the traditional available views
-  (Tree/List, Form, Graph and Calendar) and you can define three different ways to display your report.
-
-* The fields to display
-
-  The fields available to display will depend on the models you choose in the :guilabel:`General Configuration`
-  tab.
-  
-  When you add a new field to your report, different fields have to be specified:
-  
-  * Sequence - defines the order in which the fields will be displayed in the report
-  * Field - the information you want to display in your report
-  * Grouping method - affects the way the field is displayed. You can choose between *Grouped*, *Sum*,
-    *Minimum*, *Count*, *Maximum* and *Average*
-  * Graph mode - defines which axe of the graph the field will represent
-  * Calendar mode - defines the meaning of the field for the calendar (*Starting or Ending date*,
-    *Delay*, *End Date*, *Unique Colours*)
-
-* The filters on fields
-
-  This tab will let you choose which data to display according to the value of a field. It is possible to 
-  manually modify or add new filters according to your needs.
-
-* The security
-  
-  The security tab is used to select the groups that are able to display the report.
-  
+ 
 .. tip:: Create Report with OpenOffice
    
    You can also create or edit reports with OpenOffice using the :guilabel:`base_report_designer`
