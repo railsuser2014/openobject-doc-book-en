@@ -384,7 +384,7 @@ Use the menu :menuselection:`Manufacturing --> Configuration --> Work Centers` t
 
    *Defining a Work Center*
 
-A work center should have a name. You then assign a type: Machine or Human, a code and
+A work center should have a name. You then assign a type: Material or Human, a code and
 the operating hours, i.e. ``Working Period``. The Working Time(s) can be defined through the menu :menuselection:`Manufacturing --> Configuration --> Resources --> Working Time`. The figure :ref:`fig-mrpwkc2` represents the hours from Monday
 to Friday, from 08:00 to 18:00 with a break of an hour from 12:00.
 
@@ -429,7 +429,7 @@ The total time for carrying out X operations is then given by the following form
 In this formula the result of the division is rounded upwards. Then, if the
 capacity per cycle is 6, it takes 3 cycles to realize 15 operations (15/6 = 2.5, rounded upwards = 3).
 
-With the `Hour Account` and `Cycle Account` you define the links to analytical accounting, to report the costs of the work center operations. If you leave the different fields empty, it will not have any effect on the analytic accounts.
+If you leave the different fields empty, it will not have any effect on the analytic accounts.
 
 Routings
 ========
