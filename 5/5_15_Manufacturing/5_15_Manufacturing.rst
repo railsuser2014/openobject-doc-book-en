@@ -11,10 +11,10 @@ Production orders can be proposed automatically by the system depending on sever
 
 * Using the Production plan.
 
-Of course, you can also start production manually by clicking the button :guilabel:`New` in the menu :menuselection:`Manufacturing --> Manufacturing --> Manufacturing Orders`.
+Of course, you can also start production manually by clicking the button :guilabel:`Create` in the menu :menuselection:`Manufacturing --> Manufacturing --> Manufacturing Orders`.
 
 .. figure:: images/mrp_manual.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Manufacturing Order*
@@ -22,7 +22,7 @@ Of course, you can also start production manually by clicking the button :guilab
 .. index::
    single: module; mrp_jit
 
-If you have not installed the Just-in-Time planning module :mod:`mrp_jit`, you should start using OpenERP to schedule the Production Orders automatically using the various system rules. To do this, use the menu :menuselection:`Warehouse --> Schedulers --> Compute Schedulers`.
+If you have not installed the Just-in-Time planning module :mod:`mrp_jit`, you should start using OpenERP to schedule the Production Orders automatically using the various system rules. To do this, use the menu :menuselection:`Warehouse --> Schedulers --> Run Schedulers`.
 
 .. tip:: Procurement Exceptions
 
@@ -46,14 +46,7 @@ on the database installed with the demonstration data. We will show you:
 
 * Traceability for after-sales service.
 
-.. tip:: Demonstration data
-
-    To exactly follow the workflow as shown below, you should keep the same quantities as in the
-    example and start from a new database. Then you will not run into exceptions resulting from a lack of stock.
-
 This more advanced case of handling problems in procurement will be sorted out later in the chapter.
-
-To be able to do the following step, add ``Sales Management`` through the Reconfigure wizard.
 
 The Sales Order
 +++++++++++++++
@@ -61,32 +54,31 @@ The Sales Order
 .. index:: quotation
 .. index:: sales order
 
-Begin by encoding a sales (or customer) order through the menu :menuselection:`Sales --> Sales Orders -> New Quotation`. Enter the following information:
+Begin by encoding a sales (or customer) order through the menu :menuselection:`Sales --> Sales --> Quotation -> Create`. Enter the following information:
 
 * :guilabel:`Customer` : Agrolait,
 
-* :guilabel:`Shipping Policy` : Invoice from the picking (``Other Information`` tab),
+* :guilabel:`Create Invoice` : On Delivery Order (``Other Information`` tab),
 
-* :guilabel:`Sales Order Lines`, click `New`:
+* :guilabel:`Sales Order Lines`, click `Add an item`:
 
-  * :guilabel:`Product` : PC2 – Basic PC (assembly on order),
+  * :guilabel:`Product` : [LAP-CUS] Laptop Customised,
 
   * :guilabel:`Quantity (UoM)` : 1,
 
-  * :guilabel:`Product UoM` : PCE,
+  * :guilabel:`Product UoM` : Unit(s),
 
   * :guilabel:`Procurement Method` : on order.
 
 Once the quotation has been entered, you can confirm it immediately by clicking the button
-:guilabel:`Confirm Order` at the bottom to the right. Keep note of the order reference because this
-follows all through the process. Usually, in a new database, this will be ``SO007`` . At this stage,
-you can look at the process linked to your order using the :guilabel:`Question Mark` button next to the ``Sales Orders`` title.
+:guilabel:`Confirm Sale` at the top. Keep note of the order reference because this
+follows all through the process. Usually, in a new database, this will be ``SO009`` . At this stage,``SO010``
 
 .. figure:: images/mrp_sales_process_new.png
-   :scale: 75
+   :scale: 60
    :align: center
 
-   *Process for Handling Sales Order SO007*
+   *Process for Handling Sales Order SO010*
 
 Start the requirements calculation using the menu :menuselection:`Manufacturing --> Compute All Schedulers`.
 
@@ -96,47 +88,47 @@ Start the requirements calculation using the menu :menuselection:`Manufacturing 
 Producing an Intermediate Product
 +++++++++++++++++++++++++++++++++
 
-To understand the implications of requirements calculation, you should know the configuration of the sold product. To do this, go to the form for product PC2 and click the link :guilabel:`Product BoM Structure` to the right. You get the scheme shown in :ref:`fig-mrpbomtree` which is the composition of the selected product.
+To understand the implications of requirements calculation, you should know the configuration of the sold product. To do this, go to the form for product LAP-CUS and click the link :guilabel:`Product BoM Structure` From the more button. You get the scheme shown in :ref:`fig-mrpbomtree` which is the composition of the selected product.
 
 .. _fig-mrpbomtree:
 
 .. figure:: images/mrp_product_bom_tree_new.png
-   :scale: 75
+   :scale: 60
    :align: center
 
-   *Composition of PC2*
+   *Composition of LAP-CUS*
 
-The PC2 computer has to be manufactured in two steps:
+The LAP-CUS computer has to be manufactured in two steps:
 
-1: The intermediate product: CPU_GEN
+1: The intermediate product: LP-Kit
 
-2: The finished product using that intermediate product: PC2
+2: The finished product using that intermediate product: LAP-CUS
 
 The manufacturing supervisor can then consult the production orders using the menu
 :menuselection:`Manufacturing --> Manufacturing --> Manufacturing Orders`. You then get a
-list of orders to start (``Ready to Produce``) and the estimated start date (``Scheduled Date``) to meet the customer delivery date.
+list of orders.
 
 .. figure:: images/mrp_production_list_new.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *List of Manufacturing Orders*
 
-You will see the production order for CPU_GEN, but not the one for PC2 because it depends on an intermediate product that has to be produced first. Return to the production order for CPU_GEN and click it. If there are several of them, select the one corresponding to your order using the source document that contains your order number (in this example ``SO007`` ).
+You will see the Manufacturing order for `LP-Kit` and one for `LAP-CUS-Laptop Customized` because it depends on an intermediate product. Return to the Manufacturing order for `LP-Kit` and click it. If there are several of them, select the one corresponding to your order using the source document that contains your order number (in this example ``SO010`` ).
 
 .. figure:: images/mrp_production_form_new.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Details of a Production Order*
 
-The system shows you that you have to manufacture product CPU_GEN using the components: MB1, CPU1, FAN, RAM. You can then confirm the production twice:
+The system shows you that you have to manufacture product `LAP-CUS` using the components: `LP-Kit`. You can then confirm the production twice:
 
 Start production: consumption of raw materials,
 
 Produce: manufacturing of finished product.
 
-Click the ``Start Production`` button, then click the ``Edit`` button, and edit the line for the product MB1. Enter a lot number for it by putting the cursor in the field :guilabel:`Production Lot` and pressing :kbd:`<F1>` to create a new lot. Enter an internal reference, for example: ``MB1345678``. The system may then show you a warning because this lot is not in stock, but you can ignore this message.
+Click the ``Start Production`` button, then click the ``Edit`` button, and edit the line for the product MB1. Enter a lot number for it by putting the cursor in the field :guilabel:`Production Lot` and to create a new lot. Enter an internal reference, for example: ``MB1345678``. The system may then show you a warning because this lot is not in stock, but you can ignore this message.
 
 Click the ``Produce`` button to manufacture the finished product.
 
@@ -145,7 +137,7 @@ The production order has to be in the closed state as shown in the figure :ref:`
 .. _fig-mrpprdfrm:
 
 .. figure:: images/mrp_production_form_end_new.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Production Order after the Different Stages*
@@ -153,16 +145,16 @@ The production order has to be in the closed state as shown in the figure :ref:`
 Finished Product Manufacturing
 ++++++++++++++++++++++++++++++
 
-Having manufactured the intermediate product CPU_GEN, OpenERP automatically proposes the manufacturing
-of the computer PC2 using the order created earlier. Return to the Manufacturing Orders menu and look at the orders Ready to Produce through  :menuselection:`Manufacturing --> Manufacturing --> Manufacturing Orders`.
+Having manufactured the intermediate product LP-Kit, OpenERP automatically proposes the manufacturing
+of the computer LAP-CUS using the order created earlier. Return to the Manufacturing Orders menu and look at the orders Ready to Produce through  :menuselection:`Manufacturing --> Manufacturing --> Manufacturing Orders`.
 
-You will find computer PC2 which has been sold to the customer (source document SO007), as shown in the figure hereafter.
+You will find LAP-CUS which has been sold to the customer (source document SO010), as shown in the figure hereafter.
 
 .. figure:: images/mrp_production_list_end_new.png
-    :scale: 75
+    :scale: 60
     :align: center
     
-    *Completed Production for PC2*
+    *Completed Production for LAP-CUS*
 
 Now that the production has been completed, the product sold to the customer has been manufactured and the raw materials have been consumed and taken out of stock.
  
@@ -192,7 +184,7 @@ If the module :mod:`mrp_subproduct` has been installed, you get a new tab Sub pr
 that lets you set secondary products resulting from the manufacturing of the finished product.
 
 .. figure:: images/mrp_bom_subproduct.png
-    :scale: 75
+    :scale: 60
     :align: center
     
     *Definition of Subproducts*
@@ -201,7 +193,7 @@ When OpenERP generates a production order based on a bill of materials that uses
 up the list of all products in the second tab of the production order ``Finished Products``.
     
 .. figure:: images/mrp_production.png
-    :scale: 75
+    :scale: 60
     :align: center
     
     *Production Order producing Several Finished Products*
@@ -224,7 +216,7 @@ Scrapping
 If you have to scrap the final product before it is finished, you will have to scrap every component allowed for this product. 
 
 .. figure:: images/mo_scrap.png
-    :scale: 75
+    :scale: 60
     :align: center
     
     *Scrapping a Product to Finish*
@@ -253,7 +245,7 @@ You get a blank form to enter a new production order as shown in the figure :ref
 .. _fig-mrpprdnew:
 
 .. figure:: images/mrp_production_new.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *New Production Order*
@@ -263,7 +255,7 @@ The production order follows the process given by the figure :ref:`fig-mrpprdpro
 .. _fig-mrpprdproc:
 
 .. figure:: images/mrp_production_processus.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Process for Handling a Production Order*
