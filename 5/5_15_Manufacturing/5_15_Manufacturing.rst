@@ -72,7 +72,7 @@ Begin by encoding a sales (or customer) order through the menu :menuselection:`S
 
 Once the quotation has been entered, you can confirm it immediately by clicking the button
 :guilabel:`Confirm Sale` at the top. Keep note of the order reference because this
-follows all through the process. Usually, in a new database, this will be ``SO009`` . At this stage,``SO010``
+follows all through the process. Usually, in a new database, this will be ``SO009`` . At this stage `SO010`
 
 .. figure:: images/mrp_sales_process_new.png
    :scale: 60
@@ -80,15 +80,13 @@ follows all through the process. Usually, in a new database, this will be ``SO00
 
    *Process for Handling Sales Order SO010*
 
-Start the requirements calculation using the menu :menuselection:`Manufacturing --> Compute All Schedulers`.
-
 .. index::
    single: semi-finished product
 
 Producing an Intermediate Product
 +++++++++++++++++++++++++++++++++
 
-To understand the implications of requirements calculation, you should know the configuration of the sold product. To do this, go to the form for product LAP-CUS and click the link :guilabel:`Product BoM Structure` From the more button. You get the scheme shown in :ref:`fig-mrpbomtree` which is the composition of the selected product.
+To understand the implications of requirements calculation, you should know the configuration of the sold product. To do this, go to the form for product LAP-CUS and click the :guilabel:`Product BoM Structure` From the more button. You get the screen shown in :ref:`fig-mrpbomtree` which is the composition of the selected product.
 
 .. _fig-mrpbomtree:
 
@@ -98,7 +96,7 @@ To understand the implications of requirements calculation, you should know the 
 
    *Composition of LAP-CUS*
 
-The LAP-CUS computer has to be manufactured in two steps:
+The LAP-CUS Customised Laptop has to be manufactured in two steps:
 
 1: The intermediate product: LP-Kit
 
@@ -114,7 +112,7 @@ list of orders.
 
    *List of Manufacturing Orders*
 
-You will see the Manufacturing order for `LP-Kit` and one for `LAP-CUS-Laptop Customized` because it depends on an intermediate product. Return to the Manufacturing order for `LP-Kit` and click it. If there are several of them, select the one corresponding to your order using the source document that contains your order number (in this example ``SO010`` ).
+You will see the Manufacturing order for `LP-Kit` and one for `[LAP-CUS] Laptop Customized` because it depends on an intermediate product. Return to the Manufacturing order for `LP-Kit` and click it. If there are several of them, select the one corresponding to your order using the source document that contains your order number (in this example ``SO010`` ).
 
 .. figure:: images/mrp_production_form_new.png
    :scale: 60
@@ -128,7 +126,9 @@ Start production: consumption of raw materials,
 
 Produce: manufacturing of finished product.
 
-Click the ``Start Production`` button, then click the ``Edit`` button, and edit the line for the product MB1. Enter a lot number for it by putting the cursor in the field :guilabel:`Production Lot` and to create a new lot. Enter an internal reference, for example: ``MB1345678``. The system may then show you a warning because this lot is not in stock, but you can ignore this message.
+Manufacturing order is Waiting for raw material, you should set the availability by clicking ``Force Reservation`` Button.
+
+Click the ``Mark as Started`` button, then click the ``Edit`` button, and edit the line for the product [DC]Datacard. Enter a serial number for it by putting the cursor in the field :guilabel:`Serial Number` and to create a new Number. Enter an internal reference, for example: ``MB1345678``. The system may then show you a warning because this lot is not in stock, but you can ignore this message.
 
 Click the ``Produce`` button to manufacture the finished product.
 
@@ -170,8 +170,9 @@ Now that the production has been completed, the product sold to the customer has
 Subproduct Production
 +++++++++++++++++++++
 
-If you need to manage subproducts, you should install the module :mod:`mrp_subproduct` (Reconfigure wizard, MRP Sub-
-products). The normal behaviour of manufacturing in OpenERP enables you to manufacture several units of the
+If you need to manage subproducts, you should install the module :mod:`mrp_byproduct` 
+Go to menu menu :menuselection:`Settings --> Configuration --> Manufacturing`.And in `Order`, tick Produce several products.
+The normal behaviour of manufacturing in OpenERP enables you to manufacture several units of the
 same finished product from raw materials (A + B > C). With Subproduct management, the manufacturing result can be to have both finished products and secondary products (A + B > C + D).
 
 .. note:: Subproduct Material
@@ -180,7 +181,7 @@ same finished product from raw materials (A + B > C). With Subproduct management
     process. For example, cutting planks of timber will produce other planks but these bits of timber are too small 
     (or the offcuts may have value for the company if they can be used elsewhere).
 
-If the module :mod:`mrp_subproduct` has been installed, you get a new tab Sub products in the Bill of Material
+If the module :mod:`mrp_byproduct` has been installed, you get a new tab By products in the Bill of Material
 that lets you set secondary products resulting from the manufacturing of the finished product.
 
 .. figure:: images/mrp_bom_subproduct.png
@@ -223,11 +224,6 @@ If you have to scrap the final product before it is finished, you will have to s
 
 If you scrap a Product to Finish, you will get the situation illustrated in the previous figure. A finished product will be *created* and put in the scrapped virtual location. A new Product to Finish has been added to the manufacturing order.
 
-.. tip:: Scrap a product
-
-    To scrap a product, you have to edit the manufacturing order and then select the product to be
-    scrapped by clicking the little pencil at the left of the item.
-
 This new product has been added for the following reason: when you have to manufacture a product and if this product
 has to be scrapped, you have to produce another product to replace the scrapped one. The reason why 
 you have to scrap each component manually is that the production problem can come from one component.
@@ -260,9 +256,9 @@ The production order follows the process given by the figure :ref:`fig-mrpprdpro
 
    *Process for Handling a Production Order*
 
-The `Scheduled date` , `Product Qty` and `Reference`, are automatically completed when the form is first opened.
+The `Scheduled date` , `Product Qty` , `Name` and Default Locations, are automatically completed when the form is first opened.
 Enter the product that you want to produce, and the quantity required. The :guilabel:`Product UOM` by
-default is completed automatically by OpenERP when the product is first selected.
+default completed automatically by OpenERP when the product is first selected.
 
 You then have to set two locations:
 
@@ -270,14 +266,14 @@ You then have to set two locations:
 
 	* The location for depositing the finished products.
 
-For simplicity, put the ``Stock`` location in both places. The field :guilabel:`Bill of Materials` will
-automatically be completed by OpenERP when you select the product. You can then overwrite it with another BoM to specify something else to use for this specific manufacturing, then click the button :guilabel:`Compute Data`.
+The field :guilabel:`Bill of Materials` will
+automatically be completed by OpenERP when you select the product. You can then overwrite it with another BoM to specify something else to use for this specific manufacturing.
 
 The tabs :guilabel:`Scheduled Products` and :guilabel:`Work Orders` are also completed automatically when you click
 :guilabel:`Compute Data` (in the :guilabel:`Work Orders` or :guilabel:`Scheduled Products` tabs). 
 You will find the raw materials there that are required for the production and the operations needed by the assembly staff.
 
-If you want to start production, click the button :guilabel:`Confirm Production`, and OpenERP automatically completes the :guilabel:`Products to Consume` field in the :guilabel:`Consumed Products` tab and :guilabel:`Products to Finish` field in :guilabel:`Finished Products` tab.
+If you want to start production, click the button :guilabel:`Confirm Production`, and OpenERP automatically completes the :guilabel:`Products to Consume` field in the :guilabel:`Consumed Products` tab and :guilabel:`Products to Produce` field in :guilabel:`Finished Products` tab.
 
 The information in the :guilabel:`Consumed Products` tab can be changed if:
 
@@ -285,9 +281,9 @@ The information in the :guilabel:`Consumed Products` tab can be changed if:
 
 * you want to change the quantities consumed (lost during production).
 
-For traceability, you can set lot numbers on the raw materials used, or on the finished
+For traceability, you can set serial numbers on the raw materials used, or on the finished
 products.
-Note the :guilabel:`Production Lot` and :guilabel:`Pack` numbers.
+Note the :guilabel:`Serial Number` and :guilabel:`Pack` numbers.
 
 Once the order is confirmed, you should force the reservation of materials
 using the :guilabel:`Force Reservation` button. This means that you do not have
@@ -296,7 +292,7 @@ production run. This shortens the procurement process.
 
 If you do not want to change the priorities, just leave the production order in this state and the scheduler will create a plan based on the priority and your planned date.
 
-To start the production of products, click :guilabel:`Start Production`. The raw materials are then consumed automatically from stock, which means that the draft ( ``Waiting`` ) movements become ``Done``.
+To start the production of products, click :guilabel:`Mark as Started`. The raw materials are then consumed automatically from stock, which means that the ``Ready to Produce`` movements become ``Production Started``.
 
 Once the production is complete, click :guilabel:`Produce`. The finished products are now moved into stock.
 

@@ -161,7 +161,7 @@ product. The quantities are set out based on the quantities of finished product 
 The tab, :guilabel:`By products`, allows you to produce several products from one production order.
 This feature is available if you have installed the module :mod:`mrp_byproducts`, which can be done by selecting :guilabel:`Produce several products from one manufacturing order` in the :menuselection:`Settings --> Configuration --> Manufacturing` in :guilabel:`Order`.
 
-.. figure:: images/mrp_bom_by_products_new.png
+.. figure:: images/mrp_bom_subproduct.png
    :scale: 60
    :align: center
 
