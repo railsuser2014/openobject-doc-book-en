@@ -29,7 +29,7 @@ You can select the production serial number in the :guilabel:`Manufacturing Orde
 When you have linked some manufacturing orders to serial number, you can trace them from the menu :menuselection:`Warehouse --> Traceability --> Serial Number`. In this view, you see the different serial numbers linked to a product. If you select one number, you will have the possibility to choose between :guilabel:`Upstream Traceability` or :guilabel:`Downstream Traceability`.
 
 .. figure:: images/production_lots.png
-    :scale: 75
+    :scale: 60
     :align: center
     
     *Choosing between Upstream and Downstream Traceability*
@@ -46,7 +46,7 @@ When you have linked some manufacturing orders to serial number, you can trace t
 
         
 .. figure:: images/upstream_trace.png
-    :scale: 75
+    :scale: 60
     :align: center
     
     *Upstream Traceability*
@@ -56,7 +56,7 @@ stock moves that are traced due to the Bill of Materials attached to the product
     
         
 .. figure:: images/downstream_trace.png
-    :scale: 75
+    :scale: 60
     :align: center
     
     *Downstream Traceability*        
@@ -100,7 +100,7 @@ the system. You will see a blank form for the repair data, as shown in the figur
 .. _fig-mrprepnew2:
 
 .. figure:: images/mrp_repair_new.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Entering a New Repair*
@@ -140,7 +140,7 @@ This information is automatically proposed by the system, but you can modify it 
 On the second tab of the ``Repair`` form, ``Invoicing``, you can select whether the repair has to be invoiced or not, and if invoiced whether it should be before or after the repair. You can also select the applicable list price, a specific address and encode additional charges that need to be added to the repair invoice.
 
 .. figure:: images/mrp_repair_tab2.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Repair Form, Invoicing Tab*
@@ -155,7 +155,7 @@ A defined process handles a repair order – both the repair itself and the cust
 .. _fig-mrprepflow2:
 
 .. figure:: images/mrp_repair_workflow.png
-   :scale: 65
+   :scale: 60
    :align: center
 
    *Process to Handle a Repair*
@@ -200,7 +200,7 @@ For example, take the case of the shelf that was produced at the start of this c
 .. _fig-mrpreppan2:
 
 .. figure:: images/mrp_repair_panlat.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Repair for a Side Panel*
