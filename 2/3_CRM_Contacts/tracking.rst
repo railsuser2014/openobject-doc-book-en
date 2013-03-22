@@ -9,8 +9,20 @@ Keeping Track of your Communications
 Tracking your Customer's History
 --------------------------------
 
-Information related to leads & opportunities, meetings, phone calls,  marketing campaigns and emails will be tracked in OpenERP. 
-The activities are automatically reported in the partner form of the associated customer. To have a complete overview of the activities for a customer, all you have to do is open the **Customer** form and click the `History` tab. As you will notice in the screenshot below, this is not merely a report. From this tab, you can also plan new activities for the customer or change existing activities!
+Information related to leads & opportunities, meetings, phone calls, sales and purchase, marketing campaigns and emails will be tracked in OpenERP. 
+You can see all above information of customer in its kanban view,it seems like follow.
+
+.. figure:: images/customer_kanban.png
+   :scale: 80
+   :align: center
+
+   *Customer Kanban view*
+
+From above example , you can see 4 opportunities , 2 Meetings , 2 Sales. You can click on any one of them and will find the related information.   
+The other option for view the customer information is , in customer form view , you can see the buttons related it in upper right side of the corner. 
+
+The activities are automatically reported in the form of the customer. To have a complete overview of the activities for a customer, all you have to do is open the **Customer** form and click the `History` tab. As you will notice in the screenshot below, this is not merely a report. 
+This tab contains informations like tasks, events , Registrations , Campaigns . From this tab, you can also plan new activities for the customer or change existing activities!
 
 .. figure:: images/crm_partner_event.png
    :scale: 80
@@ -23,7 +35,7 @@ Tracking Sales Orders
 
 After intensive opportunity qualification, your customer asks you to make a quotation. You can easily do this from the corresponding opportunity! Just click the ``Convert to Quote`` button and OpenERP will create a sales quotation ready for you to be edited. A sales quotation is an unconfirmed sales order. On the quotation, the Source document it was created from (in this case the opportunity) is displayed, to allow you to keep track of which opportunity is linked to which sales quotation / order.
 
-To review the quotation later, you can access it from the :menuselection:`Sales --> Sales --> Sales Orders` menu. On the `Extra Info` tab of the sales quotation, you can find the reference to the related sales quotation / order that has been created from the opportunity concerned.
+To review the quotation later, you can access it from the :menuselection:`Sales --> Sales --> Sales Orders` menu. On the `Other Information` tab of the sales quotation, you can find the source document to the related sales quotation / order that has been created from the opportunity concerned.
 
 For more information about sales orders, please refer to the chapter :ref:`part4-crm-sales`.
 
@@ -34,9 +46,9 @@ Storing Attached Documents
 
 For any object in OpenERP, for instance a lead, opportunity, customer, you can attach external documents. Suppose you send a product folder to one of your customers, and to make sure you know exactly which version of the document he received, you can keep it as an attachment in OpenERP.
 
-To attach whatever type of document to the customer, you just have to go to the :menuselection:`Sales --> Address Book --> Customers` menu.
+To attach whatever type of document to the customer, you just have to go to the :menuselection:`Sales --> Customers` menu.
 
-Open the Customer form of the selected partner, and click the `Add` button in the Action bar, just below `Attachments`. Then click the `Browse...` button and navigate to the location where the product folder is stored, just like you would do in your file explorer. Click the product folder, and then confirm.
+Open the Customer form of the selected partner, and click the `Add` button in the Action bar, just below `Attachments`. Then navigate to the location where the product folder is stored, just like you would do in your file explorer. Click the product folder, and then confirm.
 
 The product folder is now stored in OpenERP as an attachment for the customer. You can open it by clicking the document in Attachments.
 
