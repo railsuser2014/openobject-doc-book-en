@@ -137,11 +137,12 @@ The :guilabel:`Next Action Date` and :guilabel:`Next Action` fields on the `Appl
 E-mail communication with the applicant
 ----------------------------------------------------------------
 
-In 7.0 you can send message or email easily.
+In version 7 you can send message or email easily.
 
 OpenChatter provides a simple communication tool to discuss amongst colleagues or external contacts, either with an individual or with a group.
 
-You can see OpenChatter below the applicants form and you can send message or mail via that chatter.
+You can see it, as 2 links below the applicants form (Send a message or Log a note) and you can send message or mail via that chatter.
+If you click on Send a message , you can see following figure,
 
 .. figure::  images/recruitment_send_message.png
    :scale: 75
@@ -149,7 +150,7 @@ You can see OpenChatter below the applicants form and you can send message or ma
 
    *Send a message to the applicant*
 
-Here too , You may also add attachments through the OpenChatter. Click :guilabel:`Post` to send the message. 
+Here too , You may also add attachments through the OpenChatter. Click :guilabel:`Send` button to send the message. 
 
 And for send a mail throgh Openchatter , the full window seems like follow:
 
