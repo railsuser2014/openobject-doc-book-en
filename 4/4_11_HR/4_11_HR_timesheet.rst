@@ -21,7 +21,7 @@ assigned for the day.
 .. _fig-servtimlis:
 
 .. figure::  images/service_timesheet_list.png
-   :scale: 65
+   :scale: 60
    :align: center
 
    *Timesheet for a working day*
@@ -42,13 +42,13 @@ The figure :ref:`fig-servtimlis` gives an example of a timesheet for an employee
 	they will be entering – but to track the tasks running and the allocation of costs between them is the
 	responsibility of the management.
 
-To enable your system with all the features related to `Timesheet`, your configuration wizard should be like this.
+To enable your system with all the features related to `Timesheet`, you need to install Timesheet module from module list or Go to menu Settings ‣ Configuration ‣ Human Resources tick `Manage timesheets` and click on apply button..
 
 .. figure::  images/config_wiz_timesheets.png
    :scale: 75
    :align: center
 
-   *Configuration wizard for Timesheet*
+   *Install Timesheet Module*
 
 Amongst the many uses of such a timesheet system for a company, here are some of the most important:
 
@@ -69,14 +69,14 @@ Amongst the many uses of such a timesheet system for a company, here are some of
 
 You will need to install the :guilabel:`Manufacturing` application (:mod:`mrp`) in order to access timesheet categories.
 The different timesheet categories (working time sessions) can be defined through the menu
-:menuselection:`Manufacturing --> Configuration --> Resources --> Working Period` and selecting
-one of the groups there such as :guilabel:`38 Hours/Week`.
+:menuselection:`Manufacturing --> Configuration --> Resources --> Working Time` and selecting
+one of the groups there such as :guilabel:`45 Hours/Week`.
 
 .. figure::  images/service_timesheet_def.png
-   :scale: 75
+   :scale: 60
    :align: center
 
-   *Timesheet category for full time 38 hours per week*
+   *Timesheet category for full time 45 hours per week*
 
 
 .. index::
@@ -88,16 +88,15 @@ one of the groups there such as :guilabel:`38 Hours/Week`.
 .. index::
    single: module; hr_timesheet
 
-To be able to use timesheets fully, install the module :mod:`hr_timesheet_sheet` through the :guilabel:`Reconfigure` wizard by selecting :guilabel:`Timesheets` and clicking :guilabel:`Configure`. Once this module
+To be able to use timesheets fully, install the module :mod:`hr_timesheet_sheet` from module list or Go to menu :menuselection:`Settings --> Configuration --> Human Resources tick `Allow timesheets validation by managers` and click on apply button..  Once this module
 has been installed and the employees configured, the different system users can enter their
 timesheet data in the menu
-:menuselection:`Human Resources --> Time Tracking --> Working Hours`,
-then click :guilabel:`New`.
+:menuselection:`Human Resources --> Time Tracking --> Timesheet Activities`,
+then click :guilabel:`Create`.
 
 .. tip:: Shortcut to Timesheets
 
-	It is a good idea if all employees who use timesheets place this menu in their shortcuts.
-	That is because they will need to return to them several times each day.
+	It is a good idea if all employees who use timesheets place this menu in their shortcuts. That is because they will need to return to them several times each day.
 
 For a new entry:
 
@@ -111,7 +110,7 @@ For a new entry:
 
 	#. 	:guilabel:`Description` : a free text description of the work done in the time.
 
-	#. 	:guilabel:`Quantity` : number of units of time (the units are defined as part of the product).
+	#. 	:guilabel:`Duration` : number of units of time (the units are defined as part of the product).
 
 The other fields are automatically completed, but can be modified: the :guilabel:`Product`
 which is the service product such as consultancy, the
@@ -125,29 +124,28 @@ accounted for. The total entered is shown at the bottom right of the list of ser
 
 .. tip:: Hiding Service Costs
 
-	By default, OpenERP is configured to show the cost of each service when an employee encodes the
+	By default, OpenERP is configured to show the amount of each service when an employee encodes the
 	number of hours per project.
 	You can modify this field by adding the attribute ``invisible=True`` in the timesheet view.
 
 	(And the way to do that is either to modify the view on the file system, or
-	to use the web client to modify the view in the current database.
-	For the latter, there is a pale grey :guilabel:`[Customize]` label
-	to the bottom left of each form that gives you access to the
-	:guilabel:`Manage Views` option.
+	click on the logged in user at top-right and select *About OpenERP* and then select *Activate the developer mode*.Now go to the :menuselection:`HR -->
+	Time Tracking --> Timesheet Activities` menu. Click on `Debug View#` and then select `Edit TreeView`.
+	
 	If you have sufficient permissions, you can edit the XML that defines the current view.)
 
-	The value in the cost field shows employees the cost of their time used in the company, so masking this
+	The value in the Amount field shows employees the cost of their time used in the company, so masking this
 	field might not always be the best option.
 
 The accuracy of the services entered is crucial for calculating the profitability of the different
 jobs and the recharging of services. Different reports are therefore available for verifying
 employees' data entry. Employees can verify their own timesheet using the following reports:
 
-* Printing the particular employee's timesheet, using the menu :menuselection:`Human Resources --> Reporting
-  --> Timesheet --> Employee Timesheet`.
+* Printing the particular employee's timesheet, using the menu :menuselection:`Reporting --> Human Resources
+  --> Employee Timesheet`.
 
-* Printing more than one employees' timesheet, using the menu :menuselection:`Human Resources --> Reporting
-  --> Timesheet --> Employees Timesheet`.You can print a summary in the form of a table per user and per day.
+* Printing more than one employees' timesheet, using the menu :menuselection:`Reporting --> Human Resources 
+  --> Reports --> Employees Timesheet`.You can print a summary in the form of a table per user and per day.
 
 .. figure::  images/service_timesheet_all.png
    :scale: 65
@@ -155,22 +153,17 @@ employees' data entry. Employees can verify their own timesheet using the follow
 
    *Employees' monthly summary timesheet*
 
-* Reviewing profit of timesheet, using the menu :menuselection:`Human Resources --> Reporting --> Timesheets
+* Reviewing profit of timesheet, using the menu :menuselection:`Reporting --> Human Resources --> Reports
   --> Timesheet Profit`.
 
 * You can then use the statistical reports to analyze your services by period, by product
-  or by account using the menu :menuselection:`Human Resources --> Reporting --> Timesheets
-  --> Timesheet Analysis` and :menuselection:`Human Resources --> Reporting --> Timesheets
-  --> Timesheet Sheet Analysis`.
+  or by account using the menu :menuselection:`Reporting --> Human Resources --> Timesheet Analysis` and :menuselection:`Reporting --> Human Resources --> Timesheet Sheet Analysis`.
 
 .. figure::  images/service_timesheet_graph.png
    :scale: 75
    :align: center
 
    *Chart of timesheet by account*
-
-The data making up these list views can be varied using the filters available in the upper part of the
-screen. If you want to see more detail, switch to the graph view.
 
 .. index::
    single: timesheet; evaluation
@@ -315,7 +308,7 @@ then passed to the services manager, who must approve his team's entries. Period
 company forms, and you can set them to run monthly or weekly.
 
 To enter timesheet data each employee uses the menu :menuselection:`Human Resources --> Time Tracking
---> My Timesheet`.
+--> My Current Timesheet`.
 
 .. figure::  images/service_timesheet_sheet_form.png
    :scale: 75
@@ -323,34 +316,35 @@ To enter timesheet data each employee uses the menu :menuselection:`Human Resour
 
    *Form for entering timesheet data*
 
-In the upper part of the screen, the user starts with the sign-in and sign-out times. The system
-enables the control of attendance day by day. The two buttons :guilabel:`Sign In` and :guilabel:`Sign Out` enable the
-automatic completion of hours in the area to the left. These hours can be modified by employee, so
-it is not a true management control system.
+This form describes summary of attendance (total hours) of employee.
 
-The area to the bottom of the screen represents a sheet of the employee's time entries for the
-selected day. In total, this should comprise the number of hours worked in the company each day.
-This provides a simple verification that the whole day's attendance time has been entered properly.
-
-The second tab of the timesheet, :guilabel:`By Day`, gives the number of hours worked on the different
-projects. When there is a gap between the attendance and the timesheet entries, you can use the
-second tab to detect the days or the entries that have not been correctly entered.
+The second tab of the timesheet, :guilabel:`Details`, gives the number of hours worked on the different
+projects. 
 
 .. figure::  images/timesheet_sheet_hours.png
    :scale: 75
    :align: center
 
-   *Detail of hours worked by day for an employee*
+   *Detail of hours worked on different projects for an employee*
 
-The action :guilabel:`Timesheet by Account` shows the time worked on all the different projects. That enables you
+The third tab of timesheet, :guilabel:`Attendances`, shows when there is a gap between the attendance and the timesheet entries, you can use the third tab to detect the days or the entries that have not been correctly entered.
+
+The user starts with the sign-in and sign-out times. The system enables the control of attendance day by day. The two buttons :guilabel:`Sign In` and :guilabel:`Sign Out` enable the
+automatic completion of hours in the area to the right. These hours can be modified by employee, so it is not a true management control system.
+
+.. figure::  images/attendances_new.png
+   :scale: 75
+   :align: center
+
+   *Detail of hours worked by day for an employee*
+   
+The button :guilabel:`Timesheet Activities` shows the time worked on all the different projects. That enables you
 to step back to see an overview of the time an employee has worked spread over different projects.
 
-At the end of the week or the month, the employee confirms his timesheet. If the attendance time in
-the company corresponds to the encoded entries, the whole timesheet is then confirmed and sent to
-his department manager, who is then responsible for approving it or asking for corrections.
+At the end of the week or the month, the employee can submit his/her timesheet to manager by clicking on button :guilabel:`Submit to Manager`.
 
 Each manager can then look at a list of his department's timesheets waiting for approval using the
-menu :menuselection:`Human Resource --> Reporting  --> Timesheet --> Timesheet Sheet Analysis` by applying the proper filters. He then has to approve them or return them to their initial state.
+menu :menuselection:`Reporting --> Human Resource --> Timesheet Sheet Analysis` by applying the proper filters. He then has to approve them or return them to their initial state.
 
 To define the departmental structure, use the menu :menuselection:`Human Resources --> Configuration -->
 Human Resources --> Departments`.

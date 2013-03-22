@@ -17,15 +17,7 @@ A company's effectiveness depends on its employees' good work. OpenERP's Human
 Resources modules enable you to manage important aspects of staff work efficiently, such as their
 skills, contracts, and working time.
 
-For this chapter, you should start with a fresh database that includes demo data.
-To configure the Human Resource Application you should check `Human Resources` in the
-following configuration wizard.
-
-.. figure::  images/config_wiz_HR.png
-   :scale: 75
-   :align: center
-
-   *Human Resources Application in the Configuration wizard*
+Start with a fresh database that includes demo data and install Employee Directory application.
 
 .. raw:: html
 
