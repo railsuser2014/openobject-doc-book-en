@@ -11,7 +11,6 @@ Managing Customer Acquisition
     contacts
     leads
     opport
-    communicate
     channel
     tracking
     reporting
