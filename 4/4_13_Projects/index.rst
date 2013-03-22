@@ -8,14 +8,17 @@
 Drive your Projects
 *******************
 
- *If you have a good system to manage tasks, your whole company will benefit.
- OpenERP's project management application enables you to efficiently manage and track tasks,
- work on them effectively, quickly delegate them while keeping close track of your delegated tasks.
- OpenERP also helps people in the company to organize their personal time,
- and this chapter proposes a methodology aimed at improving the productivity of managers.*
+*If you have a good system to manage tasks, your whole company will benefit.
+OpenERP's project management application enables you to efficiently manage and track tasks,
+work on them effectively, quickly delegate them while keeping close track of your delegated tasks.
+OpenERP also helps people in the company to organize their personal time,
+and this chapter proposes a methodology aimed at improving the productivity of managers.*
  
-Start with a fresh database that includes demo data, install Sales Management (:mod:`sale`) and Project Management (:mod:`project`) and 
-select the generic chart of accounts. 
+Start with a fresh database that includes demo data, install Project Management (:mod:`project`). 
+
+.. figure::  images/v7_install_project.png
+   :scale: 30
+   :align: center 
 
 .. raw:: html
 
@@ -25,7 +28,6 @@ select the generic chart of accounts.
 
     4_13_Projects_management
     4_13_Projects_long_term
-    4_13_Projects_planning
     4_13_Projects_productivity
 
 .. raw:: html

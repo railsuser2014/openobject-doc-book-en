@@ -10,8 +10,6 @@ Here we will explain operational project management to organize tasks and plan t
 need to get the tasks completed. All the necessary operations are carried out from the
 :menuselection:`Project` menu.
 
-.. tip:: Remember that you will have less options in Simplified view than in Extended view.
-
 .. index::
    single: project
 
@@ -40,23 +38,20 @@ Creating Projects and Related Tasks
 -----------------------------------
 
 To define a new project, go to the menu :menuselection:`Project --> Project --> Projects`.
-Click :guilabel:`New` and give your new project a :guilabel:`Project Name`.
+Click :guilabel:`Create` and give your new project a :guilabel:`Project Name`.
 
-You can put this project into a hierarchy, as a child of a :guilabel:`Parent Project`, and
-assign a :guilabel:`Project Manager`.
-Enter the general duration by completing :guilabel:`Start Date` and :guilabel:`End Date`.
+You can assign a :guilabel:`Project Manager` and assign your project privacy with :guilabel:`Privacy / Visibility`.
 
-The `Administration` tab displays information about Planned Time and the Time Spent on the project according to the task work completed.
-By checking the box :guilabel:`Warn Manager`, you configure the system to automatically send the project manager
-an OpenERP `Request` every time a task is closed.
+The `Other Info` tab displays information about Planned Time and the Time Spent on the project according to the task work completed.
+Enter the general duration by completing :guilabel:`End Date`.
+You can put this project into a hierarchy, as a child of a :guilabel:`Parent` Analytic Account
 
-In case a project takes too long, it can also be escalated to another project. This feature is available if you have installed the module :mod:`project_issue`, which can be done by selecting :guilabel:`Issues Tracker` in the :guilabel:`Reconfigure` wizard. In :guilabel:`Project Escalation`, enter the project that will be used for escalated tasks.
-Define a generic :guilabel:`Reply-To Email Address` linked to all automated mails; this allows you to receive replies directly in OpenERP.
+In case a project takes too long, it can also be escalated to another project. This feature is available if you have installed the module :mod:`project_issue`, which can be done by selecting :guilabel:`Track issues and bugs` in the :menuselection:`Settings --> Configuration --> Project`. In :guilabel:`Project Escalation`, enter the project that will be used for escalated tasks.
 You can also link to a :guilabel:`Working Time` category, which will be used to calculate the Project's time line, i.e. through a Gantt chart.
 
 The status of a project can take the following values:
 
-* \ ``Open``\: the project is being carried out,
+* \ ``In Progress``\: the project is being carried out,
 
 * \ ``Pending``\: the project is paused,
 
@@ -67,24 +62,20 @@ The status of a project can take the following values:
 * \ ``Template``\: the project can be used as a template to make projects based on this.
 
 
-On the `Members` tab, add :guilabel:`Members` to the project; this is related to access rights too.
+On the `Team` tab, add :guilabel:`Project Members` to the project; this is related to access rights too.
 
-On the `Billing` tab, you find information to invoice your customer.
-Select the `Customer`; the Invoice address will automatically be filled from the customer form.
-To generate invoices based on time spent on tasks, if activated on a project, you may install :mod:`project_timesheet` by selecting :guilabel:`Bill Time on Tasks` in the :guilabel:`Reconfigure` wizard.
-Then you can complete the invoicing data, such as `Sale Pricelist` and `Invoice Task Work` to directly invoice from task work done.
-OpenERP allows you to set a `Max. Invoice Price` for the project (or sub-project). The `Invoiced Amount` shows the total amount that has already been invoiced for the project concerned. 
+.. figure::  images/projects.png
+   :scale: 60
+   :align: center
 
-If you want to automatically keep your customer informed about the progress of the project, check `Warn Partner`. 
+   *Projects*
 
-.. note:: Warn Partner Setup
+On the project form you find a customer field, which will also be used for invoice creation.
+To generate invoices based on time spent on tasks, you need to install :mod:`project_timesheet`.Go to menu 
+menu :menuselection:`Settings --> Configuration --> Project`.And in `Task`, tick Record timesheet lines per tasks.
+Then Go to the menu :menuselection:`Project --> Invoicing --> Invoice Tasks`.Open its form view click on `More` and `Create Invoices`.
 
-   If you check :guilabel:`Warn Partner`, you should define a generic Mail Header and Mail Footer in the
-   :guilabel:`Billing` tab that will be used in the automated email (*Extended view* only).
-   OpenERP prepares an email the user can send to the customer
-   each time that a task is completed. The contents of this email are based on details of the project
-   task, and can be modified by the user before the email is sent.
-   OpenERP displays a number of variables at the bottom of this tab.
+.. note:: Complete the invoicing data, such as Sale Pricelist and Customer on Analytic Account before creating the invoice.
 
 .. note:: Study of Customer Satisfaction
 
@@ -96,14 +87,14 @@ If you want to automatically keep your customer informed about the progress of t
 	This function can also be used by ISO 9001-certified companies, to measure customer satisfaction.
 	OpenERP also allows you to create your own surveys. 
 
-The `Task Stages` tab allows you to define stages that help you divide your tasks. You can add a sequence number to set the stage order, allowing you to prioritize your task work, i.e. first you will have the Specification stage and then Development.
+The `Project Stages` tab allows you to define stages that help you divide your tasks. You can add a sequence number to set the stage order, allowing you to prioritize your task work, i.e. first you will have the Design stage and then Specification.
 
 Managing Tasks
 --------------
 
 Once a project has been defined, you can enter the tasks to be executed. You have two possibilities for this:
 
-* click the :guilabel:`ACTION` button :guilabel:`Tasks` to the right of the project form, then click :guilabel:`New`,
+* click the button :guilabel:`Tasks` to the right of the project form, then click :guilabel:`Create`,
 
 * from the menu :menuselection:`Project --> Project --> Tasks`, create a new task and assign it
   to an existing project.
@@ -126,21 +117,21 @@ leave it unassigned so that nobody specific will be responsible: various team me
 made jointly responsible for working on tasks they have the skills for.
 
 .. figure::  images/service_task.png
-   :scale: 75
+   :scale: 50
    :align: center
 
    *Tasks in Project Management*
 
 Each user manages his or her own task using the various menus available. To open the list of
-unclosed tasks that have been specifically assigned to you, go to the menu :menuselection:`Project --> Project --> Tasks`. Or to open the unassigned tasks, go to :menuselection:`Project --> Project --> Tasks` and then click \ ``Clear``\ button
-and then \ ``Unassigned``\   button.
+unclosed tasks that have been specifically assigned to you, go to the menu :menuselection:`Project --> Project --> Tasks`. Or to open the unassigned tasks, go to :menuselection:`Project --> Project --> Tasks` and then \ ``Clear``\ the search
+and then click \ ``Unassigned Tasks``\ from search filter.
 
 .. tip:: Shortcuts
 
 	Every user should create a link in their own shortcuts to the :menuselection:`Tasks` menu, because they will
 	have to consult this menu several times a day.
 
-The `Delegations` tab allows you to define links between your tasks. From `Parent Tasks` set the tasks that are related to this task. Use this feature to define the order in which tasks need to be accomplished, i.e. task 2 may not be executed before task 1.
+The `Delegation` tab allows you to define links between your tasks. From `Parent Tasks` set the tasks that are related to this task. Use this feature to define the order in which tasks need to be accomplished, i.e. task 2 may not be executed before task 1.
 
 .. index::
    single: invoicing; tasks
@@ -165,10 +156,10 @@ helpful to limit the number of invoicing methods in your company by extending th
 invoicing method that you already have.
 
 If you want to connect your Sales Order with Project tasks you should create
-products such as \ ``Consultant``\  and \ ``Senior Developer``\ . These products should be configured
+products such as \ ``On Site Assistance``\  and \ ``On Site Monitoring``\ . These products should be configured
 with :guilabel:`Product Type` \ ``Service``\ , a :guilabel:`Procurement Method` of \ ``Make to Order``\  ,
-and a :guilabel:`Supply Method` of \ ``Produce``\. Once you have set this up, OpenERP automatically creates a task in project management when the order is approved.
-You can even take this further by adding a default project to your product. In the Product form, on the `Procurement & Locations` tab, enter the default project to which the automatically created task (from the sales order) should be linked.
+and a :guilabel:`Supply Method` of \ ``Produce``\. Once you have set this up, OpenERP automatically creates a task in project management When the Quotation will be Converted to Sale Order.
+You can even take this further by adding a default project to your product. In the Product form, on the `Information` tab, enter the default project to which the automatically created task (from the sales order) should be linked.
 
 You can also change some of the order parameters, which affects the invoice:
 
@@ -176,29 +167,29 @@ You can also change some of the order parameters, which affects the invoice:
 
 *  :guilabel:`Invoice On` : \ ``Shipped Quantities`` \ (actual hours in the task).
 
-Create the `Sales Order` using the product :guilabel:`Consultant` with the above configuration and confirm it.
+Create the `Sales Order` using the product :guilabel:`On Site Assistance` with the above configuration and confirm it.
 You can find the task created from this sale order using the menu :menuselection:`Project --> Project --> Tasks`.
-Once you find that task, click on the :guilabel:`Start Task` button in order to start it.  You have to manually assign the
+Once you find that task, click on the specific stage e.g.:guilabel:`Design`.  You have to manually assign the
 project for this task, unless you specified a default project in the Product form. When you complete the task, enter the information in the :guilabel:`Task Work` field. Then click the :guilabel:`Done` button in order to indicate to OpenERP that this task is finished.
-As an example, the new task `SO008:Create SRS` generated from sales order `SO0008` is shown in following figure.
+As an example, the new task `SO008:On Site Assistance` generated from sales order `SO008` is shown in following figure.
 
 .. figure::  images/project_task_from_sale_order.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Task created from Sales Order*
 
 .. tip:: You need to carefully configure the analytic account related to this project. If you use the Billing tab of the project to do this, the analytic account linked to the project will automatically get the related settings.
 
-After finishing this task, go to the menu :menuselection:`Project --> Invoicing --> Invoice Tasks Work` in order to
-find the list of uninvoiced task works.
-Click the action :guilabel:`Invoice analytic lines` when you want to create an invoice for this task work.
+After finishing this task, go to the menu :menuselection:`Project --> Invoicing --> Invoice Tasks` in order to
+find the list of uninvoiced tasks.
+Click the action :guilabel:`Create Invoice`from more button, when you want to create an invoice for this task work.
 
 .. figure::  images/project_invoice_from_task_work.png
-   :scale: 70
+   :scale: 60
    :align: center
 
-   *Form to Create Invoice from Tasks Work*
+   *Create Invoice for Tasks Work*
 
 Priority Management
 -------------------
@@ -207,7 +198,7 @@ Several methods can be used for ordering tasks by their respective priorities. O
 tasks based on a function of the following fields: :guilabel:`Sequence`, :guilabel:`Priority`, and
 :guilabel:`Deadline`.
 
-Use the :guilabel:`Sequence` field on the second tab, :guilabel:`Extra Info`, to plan a
+Use the :guilabel:`Sequence` field on the second tab, :guilabel:`Other Info`, to plan a
 project made up of several tasks. In the case of an IT project, for example, where development tasks
 are done in a given order, the first task to do will be sequence number 1, then numbers 2, 3, 4 and
 so on. When you first open the list of project tasks, they are listed in their sequence order. You can simply drag and drop tasks to change their sequence.
@@ -231,7 +222,7 @@ project.
 	Look at the site: http://controlchaos.com for more information on the Scrum methodology.
 
 .. figure::  images/service_project_gantt.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Gantt chart, calculated for earliest delivery*
@@ -243,12 +234,12 @@ calculates a project plan for earliest delivery using task ordering and the work
 
 .. tip:: Calendar View
 
-	OpenERP can give you a calendar view of the different tasks in both the web client and the GTK client.
+	OpenERP can give you a calendar view of the different tasks.
 	This is all based on the deadline data and displays only tasks that have a deadline.
 	You can then delete, create or modify tasks using drag and drop (only in web).
 
 	.. figure::  images/service_task_calendar.png
-	   :scale: 65
+	   :scale: 45
 	   :align: center
 
 	*Calendar View of the System Tasks*
@@ -258,12 +249,12 @@ calculates a project plan for earliest delivery using task ordering and the work
 Delegate your Tasks
 -------------------
 
-To delegate a task to another user, you can just change the person responsible for that task. However,
+To delegate a task to another user, you can just change the person Assigned to for that task. However,
 the system does not help you track tasks that you have delegated, such as monitoring of work done, if
 you do it this way.
 
 .. figure::  images/service_task_delegate.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Form for Delegating a Task to Another User*

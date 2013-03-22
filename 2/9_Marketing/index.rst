@@ -26,12 +26,12 @@ Lead Automation with Marketing Campaigns
 ========================================
 
 OpenERP offers a set of modules allowing you to easily create and track your Marketing Campaigns.
-With the **Marketing** application, you define your direct marketing campaigns, allowing you to automate your lead communication. You can install the module through the Reconfigure wizard, then select Marketing.
+With the **Marketing** application, you define your direct marketing campaigns, allowing you to automate your lead communication. You can install it by installing the marketing module from the list of modules.
 
 Campaigns can be displayed in List or Diagram view. The Diagram view allows you to clearly see the marketing actions (represented by a node) and the applied conditions (represented by an arrow).
 
-.. figure::  images/market_diagram.jpeg
-   :scale: 100
+.. figure::  images/market_diagramv7.png
+   :scale: 60
    :align: center
 
    *Diagram View of a Campaign*
@@ -69,7 +69,7 @@ Moreover, we can measure the method according to our goals. Based on the goals w
 
 .. tip:: Campaign Example
 
-        To a get an example of a complete campaign in OpenERP, you can install the :mod:`marketing_campaign_crm_demo` module.
+        To a get an example of a complete campaign in OpenERP, you can install the :mod:`marketing_campaign_crm_demo` module or you can also go to Settings ‣ Configuration ‣ Marketing tick the `Marketing Campaigns` and `Demo Data for Marketing Campaigns` then click on Apply...
 
 Designing your Campaigns
 ------------------------
@@ -93,9 +93,9 @@ Segmenting your Campaigns
 
 The two most important points for any successful campaign are the adoption of a concrete methodology of execution and choosing the right segment: a target loop of customers to whom our campaign would be directed (i.e. your target audience). Inappropriate focus on the wrong segment would result in the campaign being misfired and our efforts would reach deaf ears.
 
-Through the `Segment` tab in the **Campaign** module, we can define our segment for each Campaign activity. Indeed, it is perfectly well possible that with every step downwards, the segment gets narrowed in terms of number. You can also synchronize the entire campaign steps according to the defined segments.
+Through the `Segment` in the **Campaign** module, we can define our segment for each Campaign activity. Indeed, it is perfectly well possible that with every step downwards, the segment gets narrowed in terms of number. You can also synchronize the entire campaign steps according to the defined segments.
 
-Our insurance company wants to attack the Spanish market, and will define a segment called Spanish Leads. Of course you would want your segment to be valid for leads coming from Spain only. To achieve this, go to the **Leads** list view. Filter all the leads for Spain (type *Spain* in the `Country` field), make sure to clear the salesteam, so that all leads coming from Spain will be selected. Then click `Save Filter` and call it for instance *Spanish Leads*. Now return to the **Campaigns** menu and open the `Segment`, then click the ``Filter`` field to select *Spanish Leads*. The segment will now only apply to Spanish leads.
+Our insurance company wants to attack the Spanish market, and will define a segment called Spanish Leads. Of course you would want your segment to be valid for leads coming from Spain only. To achieve this, go to the **Leads** list view. Filter all the leads for Spain (type *Spain* in the `Search box` and filter by country), make sure to uncheck the salesteam, so that all leads coming from Spain will be selected. Then click `Save Filter` in Custom Filters and call it for instance *Spanish Leads*. Now return to the **Campaigns** menu and open the `Segment`, then click the ``Filter`` field to select *Spanish Leads*. The segment will now only apply to Spanish leads.
 
 As you can see, the **Marketing Campaign** module is closely synchronized with the **Customer Relationship Management** Business Application. Let us consider the segment we cater in the campaign as Leads in OpenERP. Goals are set for each campaign, which would be considered as a desired state. Once a lead meets our objective criteria of goals, we change the lead status by converting it into an **Opportunity**, meaning that we should give focused attention. 
 
@@ -103,83 +103,85 @@ Once the lead satisfies our final objective, we would consider it as a partner/c
 
 Email Templates
 ---------------
+.. figure::  images/email_template.png
+   :scale: 60
+   :align: center
 
-OpenERP allows you to create your own email templates. You can use the Expression Builder to have the variables created for you. Suppose you would like to add the Contact Name in the email, but of course, this will be a different name for each email.
+   *Email Template*    
+   
+OpenERP allows you to create your own email templates. You can configure your email template(s) from the Settings ‣ Technical ‣ Email ‣ Template. You can use the Expression Builder to have the variables created for you. Suppose you would like to add the Contact Name in the email, but of course, this will be a different name for each email.
 
-In the Expression Builder, in ``Field``, select Contact Name. Automatically, the ``Expression`` will be filled. Copy the value from the expression and paste it in your email, e.g. Dear ${object.contact_name}. So your email will start with Dear followed by the name of the contact. This way you automatically create personalized emails.
+In the Dynamic Value Builder, in ``Field``, select Contact Name. Automatically, the ``Placeholder Expression`` will be filled. Copy the value from the expression and paste it in your email, e.g. Dear ${object.contact_name}. So your email will start with Dear followed by the name of the contact. This way you automatically create personalized emails.
 
-For each email template, you can have OpenERP generate a Wizard Action / Button that will be related to the object. So if you choose to do marketing campaigns for leads, the action will be added to the right side panel of the **Lead** form.
+For each email template, you can have OpenERP generate a Action / Button that will be related to the object. So if you choose to do marketing campaigns for leads click on `Add context action` button of Email template form, the action will be added to the top panel of the **Lead** form.
 
 .. tip:: Configuring Marketing Campaigns
 
       Please notice that it requires some technical knowledge to configure Marketing Campaigns.
       To be able to see, create, edit campaign, users need to be in the `Marketing / User` group.
-
+      
 Setting up your Marketing Campaigns
 -----------------------------------
 
 .. figure::  images/crm_market_campaign.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Marketing Campaign*
 
 0. Introduction
 
-A campaign defines a workflow of activities that items/objects entering the campaign will go through. Items are selected by segments. Segments are automatically processed every few hours and inject new items into the campaign, according to a given set of criteria.
-It is possible to watch the campaign as it is running, by following the campaign "workitems". A workitem represents a given object/item passing through a given campaign activity. See it as a step that still can go either way. Workitems are left behind when the item proceeds to the next activities. This allows an easy analysis and reporting on the running campaign.
-Each activity may execute an action upon activation depending on a dynamic condition. When the condition is not met, the workitem is cancelled/deleted; if the condition is met, the action is executed, the workitem is marked as Done, and propagated to the next activities.
+   A campaign defines a workflow of activities that items/objects entering the campaign will go through. Items are selected by segments. Segments are automatically processed every few hours and inject new items into the campaign, according to a given set of criteria.
+   It is possible to watch the campaign as it is running, by following the campaign "workitems". A workitem represents a given object/item passing through a given campaign activity. See it as a step that still can go either way. Workitems are left behind when the item proceeds to the next activities. This allows an easy analysis and reporting on the running campaign.
+   Each activity may execute an action upon activation depending on a dynamic condition. When the condition is not met, the workitem is cancelled/deleted; if the condition is met, the action is executed, the workitem is marked as Done, and propagated to the next activities.
 
 1. Campaigns (:menuselection:`Marketing --> Campaigns --> Campaigns`)
 
-Campaign
-  Each campaign is made of activities and transitions, and must be defined on any specific object the system knows about
-  (e.g. Leads, Opportunities, Employees, Partners).
+   **Campaign**
+     Each campaign is made of activities and transitions, and must be defined on any specific object the system knows about
+     (e.g. Leads, Opportunities, Employees, Partners).
 
-Mode
-  A campaign can be in one of 4 modes:
+   **Mode**: A campaign can be in one of 4 modes
 
- * `Test Directly`: processes the whole campaign in one go, ignoring any delay put on transitions, and does not actually execute the actions, so the result is simply the set of corresponding campaign workitems (see below). Any time a segment adds new items in the campaign they will be processed in the same manner.
+   * `Test Directly`: processes the whole campaign in one go, ignoring any delay put on transitions, and does not actually execute the actions, so the result is simply the set of corresponding campaign workitems (see below). Any time a segment adds new items in the campaign they will be processed in the same manner.
 
- * `Test in Real time`: processes the campaign but does not actually execute the actions, so the result is simply the set of corresponding campaign workitems. Any time a segment adds new items in the campaign they will be processed in the same manner.
+   * `Test in Real time`: processes the campaign but does not actually execute the actions, so the result is simply the set of corresponding campaign workitems. Any time a segment adds new items in the campaign they will be processed in the same manner.
 
- * `Manual confirmation`: No action will be executed automatically, a human intervention is needed to let workitems proceed into the flow. It is like a step-by-step manual process using the Campaign Followup menu. You can ignore the time delays and force any step of the campaign, implementing the campaign at your pace i.e. (you have a test email and want to see if the steps and templates do exactly what you want them to do). You will see that the actions set are defined as To Do and Done and the page has to be refreshed to see the next activities defined by the campaign node: the campaign sends real messages to the actual targets, be warned.
+   * `Manual confirmation`: No action will be executed automatically, a human intervention is needed to let workitems proceed into the flow. It is like a step-by-step manual process using the Campaign Followup menu. You can ignore the time delays and force any step of the campaign, implementing the campaign at your pace i.e. (you have a test email and want to see if the steps and templates do exactly what you want them to do). You will see that the actions set are defined as To Do and Done and the page has to be refreshed to see the next activities defined by the campaign node: the campaign sends real messages to the actual targets, be warned.
 
- * `Normal`: the campaign is processed normally, all actions are executed automatically at the scheduled date. Pay attention that in this status, the campaign sends real messages to the actual target audience.
+   * `Normal`: the campaign is processed normally, all actions are executed automatically at the scheduled date. Pay attention that in this status, the campaign sends real messages to the actual target audience.
 
-Regardless of the current mode of the campaign, any workitem can be manually executed or cancelled at any time (even if it is scheduled in the future) through *Campaign Followup*.
+    Regardless of the current mode of the campaign, any workitem can be manually executed or cancelled at any time (even if it is scheduled in the future) through *Campaign Followup*.
 
-Resource
-  Specifies where the campaign will get the information from, i.e. the OpenERP object linked (e.g. Leads, Opportunities,
-  Employees, Partners).
+   **Resource**
+   
+    Specifies where the campaign will get the information from, i.e. the OpenERP object linked (e.g. Leads, Opportunities, Employees, Partners).
 
+   **Activities**
+   
+    Activities are steps in the campaign. Each activity is optionally linked to previous and next activities through transitions.
 
-Activities
-  Activities are steps in the campaign. Each activity is optionally linked to previous and next activities through transitions.
+    Each activity has:
 
-Each activity has:
+    * one optional condition that stops the campaign,
 
-   * one optional condition that stops the campaign,
+    * one action to be executed when the activity is activated and the condition is True (could be a 'do nothing' action),
 
-   * one action to be executed when the activity is activated and the condition is True (could be a 'do nothing' action),
+    * one optional signal (ignore it),
 
-   * one optional signal (ignore it),
+    * a start flag.
 
-   * a start flag.
+   **Start Activity**
 
-*Start Activity*
+	 Activities that have the Start checkbox set, will receive a new workitem corresponding to each new resource/object entering the campaign. It is possible to have more than one Start Activity, but not less than one.
 
-Activities that have the Start checkbox set, will receive a new workitem corresponding to each new resource/object entering the campaign. It is possible to have more than one Start Activity, but not less than one.
+   **Activity Conditions**
 
-*Activity Conditions*
+    [a Boolean expression, made of clauses combined using boolean operators: AND, OR, NOT]
+    Each condition is the criterion that decides whether the activity is going to be activated for a given workitem, or just cancelled.
+    It is an arbitrary expression composed of simple tests on attributes of the object, possibly combined using *or*, *and* & *not* operators.
 
-[a Boolean expression, made of clauses combined using boolean operators: AND, OR, NOT]
-Each condition is the criterion that decides whether the activity is going to be activated for a given workitem, or just cancelled.
-It is an arbitrary expression composed of simple tests on attributes of the object, possibly combined using *or*, *and* & *not* operators.
-
-See section 6.1 for more information on Comparators.
-
-The individual tests can use the "object" name to refer to the object/resource it originates from (e.g the lead), using a "dot notation" to refer to its attributes. Some examples on a CRM Lead resource:
+    The individual tests can use the "object" name to refer to the object/resource it originates from (e.g the lead), using a "dot notation" to refer to its attributes. Some examples on a CRM Lead resource:
 
    * object.name == 'Insurance Offer Lead' would select only leads whose title is exactly "Insurance Offer Lead",
 
@@ -189,25 +191,25 @@ The individual tests can use the "object" name to refer to the object/resource i
 
    * object.country_id.name == 'Belgium' would select leads whose country field is set to Belgium.
 
-Tests can also use a 'workitem' name to refer to the actual item denoting the position of the object in the campaign. This can be useful to access some specific attributes, such as the segment that selected this item. Some examples:
+    Tests can also use a 'workitem' name to refer to the actual item denoting the position of the object in the campaign. This can be useful to access some specific attributes, such as the segment that selected this item. Some examples:
 
    * workitem.segment_id.name == 'Insurance Offer EU Zone1 - Industry Consulting/Technology'  would select leads that entered this campaign through the "Insurance Offer Lead EU Zone1 - Industry Consulting/Technology" segment,
 
    * 'EU Zone1' in workitem.segment_id.name would select only leads that entered the campaign through a segment that has "EU Zone1" in its name.
 
-.. tip:: Help
+   .. tip:: Help
 
-       In the GTK client you can use "Help > Enable Debug mode tooltips" to see the attribute name of every field in a form. These are the same that you can use during import/export with CSV files.
+          In the Web client you can use "User > About OpenERP > Active the developer mode " to see the attribute name of every field in a form. These are the same that you can use during import/export with CSV files.
 
-You can also use the special formula re.search(PATTERN_TO_SEARCH, ATTRIBUTE_TO_SEARCH) where PATTERN_TO_SEARCH is a character string delimited with quotes, and ATTRIBUTE_TO_SEARCH uses the dot notation above to refer to a field of the object.
-An example for CRM leads:
+   You can also use the special formula re.search(PATTERN_TO_SEARCH, ATTRIBUTE_TO_SEARCH) where PATTERN_TO_SEARCH is a character string delimited with quotes, and ATTRIBUTE_TO_SEARCH uses the dot notation above to refer to a field of the object.
+   An example for CRM leads:
 
    * re.search('Plan to buy: True', object.description) would be true if the Notes on a Lead contain this text: "Plan to buy: True". Be careful that all spaces etc. do matter, so you may use the special pattern characters as detailed at the bottom to account for small variations,
 
    * re.search('Plan to.*True', object.description) would be true if the Notes on a Lead contain this text: "Plan to" followed later on by "True".
 
-You can combine individual tests using boolean operators and parentheses.
-Some examples on a CRM Lead resource:
+   You can combine individual tests using boolean operators and parentheses.
+   Some examples on a CRM Lead resource:
 
    * object.state != 'pending' and ( re.search('Plan to by:.*True',object.description)  and not re.search('Plan to use:.*True',object.description)   )  would be true if the lead is NOT in Pending state and it contains "Plan to buy", but not "Plan to use".
 
@@ -218,31 +220,31 @@ Guidelines for Creating a Campaign
 
  * Put a stop condition on each subsequent activity in the campaign to get items out of the campaign as soon as the goal is achieved (e.g. every activity has a partial condition on the state of the item, if CRM Leads stops being Pending, the campaign ends for that case).
 
-2. Email Templates (:menuselection:`Marketing --> Configuration --> Email Template --> Templates`)
+2. Email Templates (:menuselection:`Settings ‣ Technical ‣ Email ‣ Template`)
 
-Email templates are composed of the following information:
+   Email templates are composed of the following information:
 
- * The Email headers: to, from, cc, bcc, subject
+   * The Email headers: to, from, cc, bcc, subject
 
- * The raw HTML body, with the low-level markup and formatting
+   * The raw HTML body, with the low-level markup and formatting
 
- * The plaintext body
+   * The plaintext body
 
-Headers and bodies can contain placeholders for dynamic contents that will be replaced in the final email with the actual content.
+   Headers and bodies can contain placeholders for dynamic contents that will be replaced in the final email with the actual content.
 
 
 3. Campaign Segments
 
-Segments are processed automatically according to a predefined schedule set in the menu :menuselection:`Administration --> Configuration --> Scheduled Actions`. It could be set to process every 4 hours or every minute for example.
-This is the only entry point in a campaign at the moment.
+   Segments are processed automatically according to a predefined schedule set in the menu :menuselection:`Setting --> Technical -->  Scheduler -->Scheduled Actions`. It could be set to process every 4 hours or every minute for example.
+   This is the only entry point in a campaign at the moment.
 
-*Segment filters*
+   **Segment filters**
 
-Segments select resources via filters, exactly the same kind of filter that can be used in advanced search views on any list in OpenERP. You can actually create them easily from any OpenERP screen allowing you to save filters. Save your advanced search criteria as a new filters and add them to the segment in the ``Filter`` field.
-Filters mainly consist in a domain expressing the criteria of selection on a model (the resource).
-See section 10.3 for more information on the syntax for these filters.
+   Segments select resources via filters, exactly the same kind of filter that can be used in advanced search views on any list in OpenERP. You can actually create them easily from any OpenERP screen allowing you to save filters. Save your advanced search criteria as a new filters and add them to the segment in the ``Filter`` field.
+   Filters mainly consist in a domain expressing the criteria of selection on a model (the resource).
+   See section 10.3 for more information on the syntax for these filters.
 
-For Leads, the following filter would select draft Leads from any European country with "Plan for use: True" or "Plan for buy: False" specified in the body:
+   For Leads, the following filter would select draft Leads from any European country with "Plan for use: True" or "Plan for buy: False" specified in the body:
     [  ('type','=','lead'), 
        ('state', '=', 'draft'),
        ('country_id.name', 'in', ['Belgium',
@@ -266,9 +268,9 @@ For Leads, the following filter would select draft Leads from any European count
        ('description', 'ilike', 'Plan for buy: False')
        ]
 
-6. Miscellaneous References, Examples
+4. Miscellaneous References, Examples
 
-6.1 Reference of Comparison Operators:
+4.1 Reference of Comparison Operators:
 
  * ==: Equal
 
@@ -284,7 +286,7 @@ For Leads, the following filter would select draft Leads from any European count
 
  * in: to check that a given text is included somewhere in another text. e.g "a" in "dabc" is True
 
-6.2 Reference of Pattern/Wildcard characters
+4.2 Reference of Pattern/Wildcard characters
 
  * `.` (dot) represents any character (but just one)
 
@@ -300,7 +302,7 @@ For Leads, the following filter would select draft Leads from any European count
 
  * `5?` would represent an optional 5 character
 
-6.3 Reference of filter domains
+4.3 Reference of filter domains
 
 Generic format is:  [ (criterion_1), (criterion_2) ] to filter for resources matching both criterions.
 It is possible to combine criterions differently with the following operators:
@@ -341,14 +343,14 @@ Pushing your Campaign Results further
 
 Of course, Marketing Campaigns can only be effective when you also do something with the results. OpenERP offers analysis features to help you better manage future campaigns based on the outcome of past campaigns. Learning from your results, that is.
 
-The :menuselection:`Marketing --> Reporting --> Campaign Analysis` report allows you to analyse your campaigns in detail, both ongoing and completed campaigns. 
+The :menuselection:`Reporting --> Marketing --> Campaign Analysis` report allows you to analyse your campaigns in detail, both ongoing and completed campaigns. 
 
 Segments allow you to keep good track of the results of a marketing campaign. You can see from which segment you have most demands, for instance. 
 
 Thanks to good insights in the way your respondents answer to your campaign, you can continuously improve your marketing results!
 
 .. figure::  images/camp_analysis.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Campaign Analysis*
@@ -368,7 +370,7 @@ Let us show you an example of how this can be achieved. The figure below shows a
 .. _fig-crmconfo:
 
 .. figure:: images/crm_contact_form.png
-   :scale: 80
+   :scale: 60
    :align: center
 
    *Contact Form on your Website*
@@ -451,7 +453,7 @@ Profiling your Customers
 
 The segmentation tools let you create partner groups (or categories) and act on each segment differently according to questionnaires.
 For example, you could create pricelists for each of the segments, or start phone marketing campaigns
-by segment. To allow you to work with segments in OpenERP, you should install the :mod:`crm_profiling` module, which can also be achieved from the Configuration Wizard (Marketing - Profiling).
+by segment. To allow you to work with segments in OpenERP, you should install the :mod:`crm_profiling` module, which can also be achieved from :menuselection:`Setting --> Configuration --> Marketing tick the Track customer profile to focus your campaigns`
 
 Profiling can be used to qualify your customers according to a questionnaire you define. When you establish a good customer profile, this will surely help you to close your deals. Customer profiles might even help you beat your competitors! 
 
@@ -496,7 +498,7 @@ questions to prospects. These are given in the following figure :ref:`fig-crmpro
 .. _fig-crmprof:
 
 .. figure::  images/crm_profile_tree_eng.png
-   :scale: 100
+   :scale: 60
    :align: center
 
    *Example of Profiling Customer Prospects by the OpenERP Company*
@@ -519,9 +521,9 @@ Using Profiles effectively
 .. index::
    single: module; crm_profiling
 
-To use the profiling system, you have to install OpenERP's :mod:`crm_profiling` module. You can also use the Reconfigure Wizard and add Marketing / Profiling.
+To use the profiling system, you have to install OpenERP's :mod:`crm_profiling` module. You can also use the :menuselection:`Setting --> Configuration --> Marketing tick the Track customer profile to focus your campaigns`
  
-Once the module is installed, you can create several questionnaires through the menu :menuselection:`Sales --> Configuration --> Leads & Opportunities --> Questionnaires`.  For each questionnaire, OpenERP allows you to create a list of questions and the possible responses through the menu :menuselection:`Sales --> Configuration --> Leads & Opportunities --> Questions`. 
+Once the module is installed, you can create several questionnaires through the menu :menuselection:`Sales --> Configuration --> Questionnaires`.  For each questionnaire, OpenERP allows you to create a list of questions and the possible responses through the menu :menuselection:`Sales --> Configuration --> Questions`. 
 
 To obtain the scheme presented earlier you can create the following questions and responses:
 
@@ -548,7 +550,7 @@ profile defined like this:
 * Industry Sector? \ ``Services``\  .
 
 When entering the details of a specific prospect, the prospect's answers to various questions can be
-entered in the `Profiling` tab of the **Partner** form. All you have to do is click the `Use a Questionnaire` button on the `Profiling` tab of the **Partner** form.
+entered in the `Profiling` tab of the **Customer** form. All you have to do is click the `Use a Questionnaire` button on the `Profiling` tab of the **Customer** form.
 
 OpenERP will automatically assign prospects to the appropriate partner category based on these answers.
 
