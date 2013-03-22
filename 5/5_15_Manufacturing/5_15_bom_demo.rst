@@ -472,7 +472,9 @@ Demo records need to create
         </record>
 
 .. tip:: Copy
-        To create the above records, copy these records and paste it in mrp_demo.xml upgrade mrp module.
+
+        To create the above records, copy these records and paste it in mrp_demo.xml upgrade mrp module from Database. 
+
 
 .. Copyright © Open Object Press. All rights reserved.
 

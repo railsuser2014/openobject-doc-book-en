@@ -44,24 +44,8 @@ When you have linked some manufacturing orders to serial number, you can trace t
     suppliers of raw material. Note that the name is confusing - this would often be considered an upstream 
     direction. Think of it as **Where Supplied**.
 
-        
-.. figure:: images/upstream_trace.png
-    :scale: 60
-    :align: center
-    
-    *Upstream Traceability*
-
 The different lines show the stock moves attached to the production of the product. There are several
 stock moves that are traced due to the Bill of Materials attached to the product.
-    
-        
-.. figure:: images/downstream_trace.png
-    :scale: 60
-    :align: center
-    
-    *Downstream Traceability*        
-
-In this window, you only see the move for the finished product. This is related to the definition of the  concept of Downstream Traceability, which only shows the flow from the customer to the supplier of raw materials.
 
 Managing Repairs: from Repair to Invoicing and Stock Movements
 ==============================================================
