@@ -9,11 +9,11 @@
 Defining your Master Data
 *************************
 
- *The management of manufacturing described in this chapter covers
- planning, ordering, stocks and the manufacturing or assembly of products from raw materials and
- components.
- It also discusses consumption and production of products, as well as the necessary operations on
- machinery, tools or human resources.*
+*The management of manufacturing described in this chapter covers
+planning, ordering, stocks and the manufacturing or assembly of products from raw materials and
+components.
+It also discusses consumption and production of products, as well as the necessary operations on
+machinery, tools or human resources.*
 
 Manufacturing management in OpenERP is based on its stock management and equally very
 flexible in both its operations and its financial control. It particularly benefits from the use of
@@ -60,6 +60,7 @@ As you will notice, when you select ``Manufacturing`` to be installed, OpenERP w
 
 .. toctree::
 
+   5_15_bom_demo
    5_15_Master_data
    5_15_Manufacturing
    5_15_Manufacturing_logistic
