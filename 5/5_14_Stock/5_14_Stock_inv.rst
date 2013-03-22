@@ -11,7 +11,7 @@ Warehouses are designed for physical locations from which you can deliver to the
 receive raw materials. When you buy products from a supplier, you should take account of the Warehouse you use
 for this purchase. This also enables the end user to not have to choose from a list of locations, but simply a
 real warehouse.
-Use the menu :menuselection:`Warehouse --> Configuration --> Warehouse Management --> Warehouses`, then click New to 
+Use the menu :menuselection:`Warehouse --> Configuration --> Warehouses`, then click Create to 
 configure a new warehouse.
 
 A warehouse is defined by a link between three locations:
@@ -36,7 +36,7 @@ A warehouse is defined by a link between three locations:
 You can also set an address for the warehouse. This address should ideally be an address of your company. Once
 the warehouse has been defined, it can be used in:
 
-* Minimum stock rules,
+* Reordering rules,
 
 * Supplier orders,
 
@@ -49,17 +49,17 @@ Several methods of automatically procuring products can be carried out by OpenER
 
 * the workflow used by products that have the procurement method *Make to Order*,
 
-* using minimum stock rules for *Make to Stock* products,
+* using Reordering rules for *Make to Stock* products,
 
 * using the master production schedule for *Make to Stock* products.
 
 The last two methods are described below.
 
-Minimum Stock Rules
+Reordering Rules
 ^^^^^^^^^^^^^^^^^^^
 
-To automatically make stock replenishment proposals, you can use minimum stock rules. Go to the menu
-:menuselection:`Warehouse --> Automatic Procurements --> Minimum Stock Rules`.
+To automatically make stock replenishment proposals, you can use Reordering rules. Go to the menu
+:menuselection:`Warehouse --> Configuration --> Reordering Rules`.
 
 The rule is the following: if the virtual stock for the given location is lower than the minimum stock indicated in
 the rule, the system will automatically propose a procurement to increase the level of virtual stock to the
@@ -69,7 +69,7 @@ maximum level given in the rule.
 	:scale: 75
 	:align: center
 	
-	*List of Minimum Stock Rules*
+	*List of Reordering Rules*
 	
 .. tip:: Conflict Resolution
 
@@ -99,16 +99,15 @@ The rules defined are:
 * Maximum stock: 25.
 
 Once the rules have been properly configured, the purchasing manager only needs to look at the list
-of orders for confirmation with the supplier using the menu :menuselection:`Purchases --> Purchase Management -->
-Requests for Quotation`.
+of orders for confirmation with the supplier using the menu :menuselection:`Purchases --> Purchase --> Quotations`.
 
 .. note:: Procurement
 
    Note that the procurement does not require that you buy from a supplier. If the product has a
-   :guilabel:`Supply Method` ``Produce``, the scheduler will generate a Manufacturing order instead of a
+   :guilabel:`Supply Method` ``Manufacture``, the scheduler will generate a Manufacturing order instead of a
    supplier order.
 
-You can also set multiple quantities in the minimum stock rules. If you set a multiple quantity of 3
+You can also set multiple quantities in the reordering rules. If you set a multiple quantity of 3
 the system will propose procurement of 15 pieces, and not the 13 it really needs. In this case, it
 automatically rounds the quantity upwards.
 
@@ -121,7 +120,7 @@ automatically rounds the quantity upwards.
 	the minimum quantity and the other 12 to reach the maximum quantity. At the end, the stock of this product 
 	will be equal to 32 pieces.
 
-In a minimum stock rule, when you indicate a warehouse, it suggests a stock location by default in
+In a reordering rule, when you indicate a warehouse, it suggests a stock location by default in
 that warehouse. You can change that default location when the scheduler completes.
 
 
@@ -138,7 +137,7 @@ There are different types of locations that allow you to structure your warehous
 Locations are structured hierarchically to account for the subdivision of a warehouse into sections, aisles, and/or
 cupboards. The hierarchical view also enables you to structure virtual locations such as production counterparts.
 That gives you a finer level of analysis.
-Go to the menu :menuselection:`Warehouse --> Configuration --> Warehouse Management --> Locations`, then click New 
+Go to the menu :menuselection:`Warehouse --> Configuration --> Locations`, then click Create 
 to define new locations.
 
 .. figure:: images/stock_location_form.png
@@ -302,7 +301,7 @@ confirm the second step. It is then assumed all the items have automatically bee
 
 * **Linked production**
 
-The :mod:`stock_location module` enables you to manage the linkages by product in addition to doing that by
+The :mod:`stock_location` module enables you to manage the linkages by product in addition to doing that by
 location. You can then create a location structure that represents your production chain by product.
 
 The location structure may look like this:
@@ -334,7 +333,7 @@ Shop
 The counterparts for procurement, inventory and production operations are given by the locations shown in the
 product form. The counterparts of reception and delivery operations are given by the locations shown in the
 partner form. The choice of stock location is determined by the configuration of the warehouse, linked to a Shop,
-which can be defined using :menuselection:`Sales --> Configuration --> Sales --> Shop`.
+which can be defined using :menuselection:`Sales --> Configuration --> Shop`.
 
 Once a shop is defined, you will be able to make sales orders from this shop. You need at least one shop in order to be able to make sales orders.
 
@@ -384,33 +383,34 @@ In this respect, two important fields in the product form are:
 Lead Times and Locations
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-The tab **Procurement & Locations** in the Product form contains information about different lead times and
-locations. Three lead time figures are available:
+The tab **Procurement** in the Product form contains information about Manufacturing lead time:
 
-* **Customer Lead Time**: lead time promised to the customer, expressed in number of days between the order
-  and the delivery to the customer,
-  
 * **Manufacturing Lead Time**: lead time, in days, between a production order and the end of production of
   the finished product,
   
-* **Warranty (months)**: length of time in months for the warranty of the delivered products.
 
+The tab **Sale** in the Product form contains information about Warranty and Customer Lead Time:
+
+* **Warranty**: length of time in months for the warranty of the delivered products.
+
+* **Customer Lead Time**: lead time promised to the customer, expressed in number of days between the order
+  and the delivery to the customer.
+  
 .. note:: Warranty
 
 	The warranty period is used in the `Repairs management and after-sales service`. You can find more information
 	on this subject in the on line chapter about Manufacturing.
 
-Fields in the section *Storage Localisation* are for information only; they do not have any impact on the management
-of stock.
+The tab **Inventory** in the Product form contains information about Locations:
 
-*Counter-Part Locations Properties* are automatically proposed by the system, but the different values can be
-modified. You will find counterpart locations for:
+* **Storage Localisation** : for information only; they do not have any impact on the management of stock.
+* **Counter-Part Locations Properties** : automatically proposed by the system, but the different values can be modified. You will find counterpart locations for:
 
-* Procurement,
+ * `Procurement` : This stock location will be used, instead of the default one, as the source location for stock moves generated by procurements,
+    
+ *  `Production` : This stock location will be used, instead of the default one, as the source location for stock moves generated by manufacturing orders ,
 
-* Production,
-
-* Inventory.
+ *  `Inventory` :This stock location will be used, instead of the default one, as the source location for stock moves generated when you do an inventory.
 
 A procurement location is a temporary location for stock moves that have not yet been finalized by the scheduler.
 When the system does not yet know if procurement is to be done by a purchase or production, OpenERP uses the
@@ -435,11 +435,11 @@ for each inventory operation.
 
 You have three ways of doing an inventory.
 
-* Click the Import Inventory action and select the location concerned. You can choose to include child locations 
+* Click the Fill Inventory button at the top right side of the form view and select the location concerned. You can choose to include child locations 
   and set the inventory to zero (especially useful to ensure the count is done correctly).
   
-* You can update the inventory from the Product form. Go to the Information tab, Stocks section, and click
-  the Update button. On confirmation, OpenERP will create a Physical Inventory.
+* You can update the inventory from the Product form. Go to the Inventory tab, Stock and Expected Variations section, and click on 
+  the Update. On confirmation, OpenERP will create a Physical Inventory.
   
 * You can manually add inventory lines. You can then enter data about the quantities available for each product 
   by location. Start by entering the location, for example Stock , and then select the product.
@@ -452,8 +452,7 @@ Enter data for a single line in your inventory:
 * Product : PC1 Basic PC,
 * Quantity : 23 Units.
 
-When your inventory operation is finished, you can confirm it using the Confirm Inventory button to the bottom
-right of the form. OpenERP will then automatically create the stock moves to close the gaps, as mentioned at the
+When your inventory operation is finished, you can confirm it using the Confirm Inventory button on the form. OpenERP will then automatically create the stock moves to close the gaps, as mentioned at the
 start of this chapter. You can verify the moves generated using the Posted Inventory tab of the inventory operation
 form.
 
@@ -467,7 +466,7 @@ product form to see the quantities available in stock.
 	
 	That means you can check the stock levels of a proportion of your products every so often. This system is accepted
 	in France as long as you can guarantee that all of your products have been counted at least once per year. To see
-	the last inventory count per product, use the report :menuselection:`Warehouse --> Reporting --> Last Product 
+	the last inventory count per product, use the report :menuselection:`Reporting --> Warehouse --> Last Product 
 	Inventories`.
 	
 	You can do this the same way for all products and all locations, so you only carry out small inventory operations
