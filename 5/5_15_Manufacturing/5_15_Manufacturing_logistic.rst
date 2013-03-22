@@ -57,7 +57,7 @@ The management of repairs is carried out through the module :mod:`mrp_repair`. O
 
 .. tip:: Repairs
 
-        To install this module, Go to menu menu :menuselection:`Settings --> Configuration --> Manufacturing`.And in `Order`, tick Manage repairs of products.
+        To install this module, Go to menu menu :menuselection:`Settings --> Configuration --> Manufacturing` in `Order`, tick Manage repairs of products.
 
 In OpenERP, a repair will have the following effects:
 
