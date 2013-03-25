@@ -16,7 +16,7 @@ This section deals with
 
 * manual journal entries.
 
-Here we will show you how to enter financial transactions. In OpenERP, you can handle bank statements and also a cash register. Use different journals for these two kinds of transaction. According to the journal type selected, you will have a different screen.
+Here we will show you how to enter financial transactions. In OpenERP, you can handle bank statements and also a cash register. Use different journals for these two kinds of transaction. According to the journal type selected, you will have a different screen.For more information about creating journals, refer to the Configuring Accounts from A to Z chapter.
 
 .. index::
    pair: bank; statement
@@ -36,12 +36,12 @@ A data entry form for bank statements then opens as shown in figure :ref:`fig-ac
 .. _fig-accstate:
 
 .. figure::  images/account_statement.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Data Entry Form for a Bank Statement*
 
-The statement reference :guilabel:`Name` and the :guilabel:`Date` are automatically suggested by OpenERP. The :guilabel:`Name` will be filled with the statement number at confirmation of the bank statement. You can configure your own reference by managing sequences in the :menuselection:`Administration --> Configuration --> Sequences` menu.
+The statement reference :guilabel:`Name` and the :guilabel:`Date` are automatically suggested by OpenERP. The :guilabel:`Name` will be filled with the statement number at confirmation of the bank statement. You can configure your own reference by managing sequences in the :menuselection:`Settings --> Technical --> Sequences & Identifiers --> Sequences` menu.
 
 Then select the correct :guilabel:`Journal`. Ideally, when you are configuring your company, you would create at
 least one journal for each bank account and one journal for petty cash in your company. So select
@@ -72,16 +72,13 @@ When you type the Partner name, OpenERP automatically proposes the corresponding
 must then enter the amount that appears on your statement line: a negative sign for a withdrawal and
 a positive sign for a cash payment or deposit.
 
-In the :guilabel:`Payment` press :kbd:`F1` to reconcile your payment directly with the corresponding accounting
-entry or entries to be paid.
-
 Import Invoices
 ---------------
 Click the `Import Invoices` button, then click Add to select the invoices for
-which your payment will have to be reconciled. Click OK to confirm your selection; the statement line will automatically be added with the corresponding reconciliation.
+which your payment will have to be reconciled. Click select to confirm your selection; the statement line will automatically be added with the corresponding reconciliation.
 
 .. figure::  images/account_statement_reconcile.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Reconciliation from Data Entry of the Bank Statement*
@@ -123,7 +120,7 @@ OpenERP then automatically generates the corresponding accounting entries if the
 
 You can also enter general accounting entries, for example, banking costs. In such cases, you can enter the amounts directly in the corresponding general accounts.
 
-A user with advanced accounting skills can enter accounting entries directly into the bank journal from :menuselection:`Accounting --> Journal Entries -> Journal Items`. The result is the same, but the operation is more complex because you must know the
+A user with advanced accounting skills can enter accounting entries directly into the bank journal from :menuselection:`Accounting --> Journal Entries --> Journal Items`. The result is the same, but the operation is more complex because you must know the
 accounts to use and must have mastered the ideas of credit and debit.
 
 .. index::
@@ -136,7 +133,7 @@ To manage cash, you can use the menu :menuselection:`Accounting -->
 Bank and Cash --> Cash Registers`. At the start of the day you set the opening amount of cash in the entry (:guilabel:`Opening Balance`). Then open the cashbox to start making entries from the :guilabel:`Cash Transactions` tab.
 
 .. figure::  images/account_cash_registers.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Defining the Cash Register*
@@ -233,7 +230,7 @@ reconcilable (the :guilabel:`Reconcile` field).
         reconciliation.
         Account reconciliation consists of linking account entries with each other, while statement reconciliation consists of
         verifying that your bank statement corresponds to the entries of that account in your accounting system.
-        You can perform statement reconciliation using the menu :menuselection:`Accounting --> Periodical Processing --> Statements --> Statements Reconciliation`.
+        You can perform statement reconciliation using the menu :menuselection:`Invoicing --> Periodical Processing --> Statements --> Statements Reconciliation`.
 
 There are different methods of reconciling entries. You have already seen the reconciliation of
 entries while doing data entry in an account. Automatic and manual reconciliations are described
@@ -255,20 +252,18 @@ OpenERP will reconcile, for instance, three invoices and two payments if the tot
 Note that you can also choose a maximum write-off amount, if you allow payment differences to be posted.
 
 .. figure::  images/account_reconcile_auto.png
-   :scale: 75
+   :scale: 65
    :align: center
 
    *Form for Automatic Reconciliation*
 
-To start the reconciliation tool, click :menuselection:`Accounting --> Periodical Processing --> Reconciliation --> Automatic Reconciliation`.
+To start the reconciliation tool, click :menuselection:`Invoicing --> Periodical Processing --> Reconciliation --> Automatic Reconciliation`.
 
 A form opens, asking you for the following information:
 
-* :guilabel:`Accounts to Reconcile` : you can select one, several or all reconcilable accounts,
+* :guilabel:Add `Accounts to Reconcile` : you can select one, several or all reconcilable accounts,
 
-* the dates to take into consideration (:guilabel:`Starting Date` / :guilabel:`Ending Date`),
-
-* the Reconciliation :guilabel:`Power`  (from \ ``2``\   to \ ``9``\  ),
+* the Reconciliation :guilabel:`Power`  (from \ ``2``\   to \ ``4``\  ),
 
 * checkbox :guilabel:`Allow write off` to determine whether you will allow for payment differences.
 
@@ -295,13 +290,6 @@ off account.
         You should not make the adjustment limits too large. Companies that introduced substantial automatic
         write-off adjustments have found that all employee expense reimbursements below the limit were
         written off automatically!
-
-.. note:: Default Values
-
-        If you run the automatic reconciliation tool regularly, you should set default values for each
-        field by using the right-click mouse button in the web client (in edit mode) or the GTK client.
-        The resulting context menu enables you to set default values.
-        This means that you will not have to retype all the fields each time.
 
 .. index::
    single: reconciliation; manual
@@ -397,8 +385,8 @@ How to Manage your Payment Orders?
 .. index::
    single: module; account_payment
 
-To use the tool for managing payments you must first install the module :mod:`account_payment`, or install ``Supplier Payments`` from the Configuration Wizard.
-It is part of the core OpenERP system.
+To use the tool for managing payments you must first install the module :mod:`account_payment`, or Go to menu :menuselection:`Settings --> Configuration --> Accounting` in eInvoicing & Payments section tick ``Manage payment orders``. 
+Supplier Payments are part of the core OpenERP system.
 
 The system lets you enter a series of payments to be carried out from your various bank
 accounts. Once the different payments have been registered, you can validate the payment orders.
@@ -423,8 +411,8 @@ manager to go ahead with payment.
 .. tip:: Payment Workflow
 
         An OpenERP workflow is associated with each payment order. Select a payment order, and
-        if you are in the GTK client
-        click :menuselection:`Plugins --> Print workflow` from the top menu.
+        if you are in the developer mode
+        Click on `Debug View#` and then select `print workflow` to print the payment order workflow.
 
         You can integrate more complex workflow rules to manage payment orders by adapting the workflow.
         For example, in some companies payments must be approved by a manager under certain cash flow or
@@ -451,7 +439,7 @@ To enter a payment order, use the menu :menuselection:`Accounting --> Payment --
 
 .. figure::  images/account_payment_order.png
    :align: center
-   :scale: 80
+   :scale: 60
 
    *Entering a Payment Order*
 
@@ -527,12 +515,7 @@ the \ ``Confirmed``\   state and a new button appears that can be used to start 
 .. Depending on the chosen payment method, OpenERP provides a file containing all of the payment
 .. orders. You can send this to the bank to make the payment transfers.
 
-In future versions of OpenERP, it is expected that the system will be able to prepare and print
-cheques.
-
-As usual, you can change the
-start point for the payment workflow from the
-:menuselection:`Administration --> Customization --> Workflow` menus.
+You can print the payment order to send it to the bank by clicking the :menuselection:`Print --> Payment Order` at the top of the screen.
 
 .. Copyright © Open Object Press. All rights reserved.
 

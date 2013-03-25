@@ -15,28 +15,29 @@ When configuring the software, OpenERP allows you to choose predefined charts of
 Using a Preconfigured Chart of Accounts
 ---------------------------------------
 
-On installation, the software allows you to select a default chart of accounts from a huge list of predefined charts. To install the chart of accounts as well as the tax definitions for your own country (in most cases), select the chart corresponding to your country from the ``Installation Wizard``.
-The ``Generic Chart of Accounts`` offers a default (but limited) set of accounts which can be used as a basic chart in any country. The ``Chart of Accounts`` list also includes a lot of localised charts of accounts.
+The software allows you to select a default chart of accounts from a huge list of predefined charts. To install the chart of accounts as well as the tax definitions for your own country (in most cases), select the chart corresponding to your country from the menu :menuselection:`Settings --> Configuration --> Accounting`.
+Then click on ``Install more chart templates.``
+The ``Configurable Account Chart Template`` offers a default (but limited) set of accounts which can be used as a basic chart in any country. The list also includes a lot of localised charts of accounts.
 
 .. figure::  images/account_chart.png
    :scale: 75
    :align: center
 
-   *Starting from a Generic Chart of Accounts*
+   *Starting from a Configurable Account Chart Template*
 
-The wizard will change a bit according to the chart of accounts you select. For the Generic Chart you will be able to add a tax percentage, which will not be the case when you install, for instance, the chart named ``Belgium - Plan Comptable Minimum Normalise``. Here OpenERP will automatically install the tax configuration for Belgium too. You will, however, be able to select the default sales and purchase tax to be added when you create a new product.
+The wizard will change a bit according to the chart of accounts you select. For the `Configurable Account Chart Template` you will be able to add a tax percentage from the same wizard, but when you install, for instance, the chart named ``Belgium - Plan Comptable Minimum Normalise``, it will propose another wizard from where you can configure your sales and purchase tax. Here OpenERP will automatically install the tax configuration for Belgium too. You will, however, be able to select the default sales and purchase tax to be added when you create a new product.
 
-.. figure::  images/account_chart_be.png
+.. figure::  images/set_your_accounting_options.png
    :scale: 75
    :align: center
 
-   *Starting from a Belgian Chart of Accounts*
+   *Set Your Accounting Options*
 
 Please keep in mind that even when you use a default chart of accounts, you can still modify it to fit your needs.
 
 .. note:: Modules
 
-    You can install a chart from the list of modules too, so simply skip the installation wizard then. The module name will be like :mod:`l10n_XX` where XX represents your country code in two letters. For example, to get the chart of accounts for Belgium, go to :menuselection:`Settings --> Modules --> Modules` and install the module :mod:`l10n_be`. This will propose the exact same chart from the wizard (``Belgium - Plan Comptable Minimum Normalise``).
+    You can install a chart from the list of modules too. The module name will be like :mod:`l10n_XX` where XX represents your country code in two letters. For example, to get the chart of accounts for Belgium, go to :menuselection:`Settings --> Modules --> Modules` and install the module :mod:`l10n_be`.
 
 Some of these pre-defined charts of accounts are comprehensive and accurate, others rather have a more tentative status and are simply indicators of the possibilities. You can modify these, or build your own accounts onto the default chart, or replace it entirely with a custom chart.
 
@@ -48,7 +49,7 @@ Creating a Chart of Accounts
 
 Start by creating :guilabel:`Account Types`, which determine the kind of account and the way in which accounts will be treated at financial year closing.
 
-To add, modify or delete existing account types, go to the menu :menuselection:`Accounting --> Configuration --> Financial Accounting --> Accounts --> Account Types`.
+To add, modify or delete existing account types, go to the menu :menuselection:`Accounting --> Configuration --> Accounts --> Account Types`.
 
 .. figure::  images/account_type.png
    :scale: 75
@@ -71,11 +72,9 @@ The fields used to define an account type are the following:
     - ``Detail`` means that every single entry will be transferred to the next financial year.
     - ``Unreconciled`` means that only unreconciled (outstanding) entries will be transferred to the next financial year. Typically used for centralisation accounts.
 
-*  :guilabel:`Sign on Reports`: this field allows you to reverse the sign of accounts, such as Income accounts being printed positive instead of the default negative. Use ``Reverse balance sign`` to accomplish this.
-
 Use the :guilabel:`View` type for accounts that make up the structure of the charts and have no account data inputs of their own.
 
-To add, modify or delete existing accounts, use the menu :menuselection:`Accounting --> Configuration --> Financial Accounting --> Accounts --> Accounts`.
+To add, modify or delete existing accounts, use the menu :menuselection:`Accounting --> Configuration --> Accounts --> Accounts`.
 
 .. figure::  images/account_form.png
    :scale: 75
@@ -85,9 +84,7 @@ To add, modify or delete existing accounts, use the menu :menuselection:`Account
 
 The main account fields are:
 
-*  :guilabel:`Name`: the account name.
-
-*  :guilabel:`Code`: the code length is not limited to a specific number of digits. Use code 0 to indicate the root account.
+*  :guilabel:`Account Code and Name`: the code length is not limited to a specific number of digits. Use code 0 to indicate the root account and the account name.
 
 *  :guilabel:`Parent`: determines which account is the parent of this one, to create the tree structure of
    the chart of accounts.

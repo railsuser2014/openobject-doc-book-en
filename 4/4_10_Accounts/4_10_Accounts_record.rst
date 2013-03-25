@@ -24,7 +24,7 @@ Analytic records can be distinguished from general records by the following char
 .. _fig-accanmv:
 
 .. figure::  images/account_analytic_move.png
-   :scale: 85
+   :scale: 60
    :align: center
 
    *Analytic Account Records for a Customer Project*
@@ -62,9 +62,7 @@ Select a journal and complete the different fields. Write an expense as a negati
 
 .. tip::  Entering a Date
 
-        To enter a date in the editable list you can use the calendar widget in the web client or, in the
-        GTK client, if you enter just the day of the month OpenERP automatically completes the month and
-        year when you press the :kbd:`Tab` key.
+        To enter a date in the editable list you can use the calendar widget.
 
 .. note:: Example Cost Redistribution
 
@@ -95,10 +93,10 @@ To visualise the general entries following these different actions, you can use 
 
         #. To see all of the entries, :menuselection:`Accounting --> Journal Entries --> Analytic Journal Items`
 
-        #. To see the entries per account, per user, per product or per partner, you can use the menu :menuselection:`Accounting --> Reporting --> Statistic Reports --> Analytic Entries Analysis`.
+        #. To see the entries per account, per user, per product or per partner, you can use the menu :menuselection:`Reporting --> Accounting --> Analytic Entries Analysis`.
 
 .. figure::  images/account_analytic_analysis2.png
-   :scale: 85
+   :scale: 60
    :align: center
 
    *Analytic Entries Analysis*
@@ -106,20 +104,20 @@ To visualise the general entries following these different actions, you can use 
 Analytic Models
 ---------------
 
-Standard OpenERP allows you to post analytic entries to one chart at a time. Using the `Analytic Model` concept (install the option ``Multiple Analytic Plans`` from the `Add New Features` wizard), you can distribute your income or expenses to one or several analytic charts of account at the same time.
+Standard OpenERP allows you to post analytic entries to one chart at a time. Using the `Analytic Model` concept (install the module ``Multiple Analytic Plans`` from the module list), you can distribute your income or expenses to one or several analytic charts of account at the same time.
 You can define the combination of analytic plans through the menu :menuselection:`Accounting --> Configuration --> Analytic Accounting --> Multi Plans --> Analytic Plan.`
 
 .. figure::  images/account_analytic_plan_61.png
-   :scale: 85
+   :scale: 60
    :align: center
 
    *Definition of Analytic Plan*
 
-Using the link `Distribution Models` at the right side of the `Analytic Plan` form, you can define the distribution of either your expenses while creating a supplier invoice, or revenue when defining customer invoices.
+Using the link `More > Distribution Models` at the top of the `Analytic Plan` form, you can define the distribution of either your expenses while creating a supplier invoice, or revenue when defining customer invoices.
 Thanks to these models, you can have one amount distributed amongst several analytic accounts. Models can be reused, and they can be applied to one analytic chart of accounts, but also to a combination of various charts of account, such as projects and cost centers.
 
 .. figure::  images/account_distribution_model_61.png
-   :scale: 85
+   :scale: 60
    :align: center
 
    *Definition of Distribution Models*
@@ -130,7 +128,7 @@ When the invoice has been validated, you can find the Analytic Journal Entries w
 
 
 .. figure::  images/analytic_journal_entry_analytic_distribution_61.png
-   :scale: 85
+   :scale: 60
    :align: center
 
    *Journal Entries with Distributed Amount*
