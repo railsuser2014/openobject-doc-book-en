@@ -31,7 +31,7 @@ some demonstration data to test the installation.
    Tiny ERP was renamed to OpenERP early in 2008, so anyone who has used Tiny ERP should be
    equally at home with OpenERP. The two names refer to the same software, so there is no
    functional difference between versions 4.2.X of OpenERP and 4.2.X of Tiny ERP. This book
-   applies to versions of OpenERP from 6.0.0 onwards, with references to earlier versions from
+   applies to versions of OpenERP from 7 onwards, with references to earlier versions from
    time to time.
 
 .. index::
@@ -43,7 +43,7 @@ some demonstration data to test the installation.
    subscription that
    includes hardware (servers), system maintenance, provision of hosting services, and support.
 
-   You can get a month's free trial on OpenERP's http://www.openerp.com/online, which enables you to get
+   You can get a month's free trial on OpenERP's http://www.openerp.com/, which enables you to get
    started quickly
    without incurring costs for integration or for buying computer systems.
    Many of OpenERP's partner companies will access this, and some may offer their own similar service.
@@ -58,7 +58,7 @@ some demonstration data to test the installation.
 Whether you want to test OpenERP or to put it into full production, you have at least three starting
 points:
 
-* no need to install OpenERP, you can test it through http://demo.openerp.com,
+* no need to install OpenERP, you can test it through http://www.openerp.com/,
 
 * evaluate it on line at http://www.openerp.com and ask OpenERP for a SaaS trial hosted at
   http://ondemand.openerp.com, or the equivalent service at any of OpenERP's partner companies,
@@ -78,7 +78,7 @@ of server you are using.
 
    * Main Site: http://www.openerp.com,
 
-   * SaaS or OpenERP OnLine Site: http://www.openerp.com/online,
+   * SaaS or OpenERP OnLine Site: http://www.openerp.com/,
 
    * Documentation Site: http://doc.openerp.com/,
 

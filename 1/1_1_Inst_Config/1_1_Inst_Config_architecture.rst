@@ -5,46 +5,18 @@
 The Architecture of OpenERP
 ===========================
 
-To access OpenERP you can:
+To access OpenERP V7 you can:
 
-* use a web browser pointed at the OpenERP client-web server, or
+* use only a web browser pointed at the OpenERP client-web server.
 
-* use an application client (the GTK client) installed on each computer.
-
-The two methods of access give very similar facilities, and you can use both on
-the same server at the same time. It is best to use the web browser if the
-OpenERP server is some distance away (such as on another continent) because
-it is more tolerant of time delays between the two than the GTK client is. The
-web client is also easier to maintain, because it is generally already installed
-on users' computers.
-
-Conversely you would be better off with the application client (called the GTK
-client because of the technology it is built with) if you are using a local
-server (such as in the same building). In this case the GTK client will be more
-responsive, so more satisfying to use.
+It is best to use the web browser if the OpenERP server is some distance away 
+(such as on another continent) because it is more tolerant of time delays 
+between the two than the GTK client was. The web client is also easier to maintain, 
+because it is generally already installed on users' computers.
 
 .. index::
    single: client; web (thin) and GTK (thick)
    single: client; caching
-
-.. note::   Web Client and GTK Client
-
-    There is little functional difference between the two OpenERP clients - the 
-    web client and the GTK client at present. 
-    The web client offers more functionality, for instance, the Corporate Intelligence feature, and the Gantt view.
-    
-    When you are changing the structure of your OpenERP installation (adding and
-    removing modules, perhaps changing labels), you might find the web client to be
-    irritating because of its use of **caching**. 
-    
-    Caching speeds it all up by keeping a copy of data somewhere between the server 
-    and your client, which is usually good. But you may 
-    have made changes to your installation that you cannot immediately see in
-    your browser. Many apparent faults are caused by this! The workaround is 
-    to use the GTK client during development and implementation where possible.
-
-    The OpenERP company will continue to support two clients for the foreseeable
-    future, so you can use whichever client you prefer.
 
 An OpenERP system is formed from three main components:
 
@@ -55,8 +27,7 @@ An OpenERP system is formed from three main components:
   OpenERP runs optimally,
 
 * the web server, a separate application called the Open Object client-web, which enables you to
-  connect to OpenERP from standard web browsers and is not needed when you connect using a GTK
-  client.
+  connect to OpenERP from standard web browsers.
 
 .. figure:: images/terp_arch_1.png
    :align: center

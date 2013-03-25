@@ -11,7 +11,7 @@ Subscribe & Start
 Whether you want to test OpenERP or put it into full production, you have at least two possible starting
 points:
 
-* you can use OpenERP Online by subscribing to http://www.openerp.com/online/;
+* you can use OpenERP Online by subscribing to http://www.openerp.com/;
 
 * you can install the solution on your own computers to test it in your company's system environment.
 
@@ -21,13 +21,11 @@ In this chapter, the easy-to-use *OpenERP Online* solution will be briefly expla
 
    * Main Site: http://www.openerp.com,
 
-   * OpenERP Online Site: http://www.openerp.com/online,
-   
-   * Online demo at http://demo.openerp.com,
+   * OpenERP Online Site: http://www.openerp.com/,
 
    * Documentation site: http://doc.openerp.com/,
 
-   * Community discussion forum where you can often receive assistance: http://www.openerp.com/forum/.
+   * Community discussion forum where you can often receive assistance: http://http://help.openerp.com/questions/.
 
 .. tip:: Current documentation
 
@@ -62,7 +60,7 @@ These advantages give you total control over your data, your software, your plat
 
    *Subscribe and Start with OpenERP Online*
 
-If you want to start working with the online platform, you can navigate to http://www.openerp.com/online. After successful registration, you will be able to configure and use OpenERP online. To log in to your OpenERP Online account, you will receive a username and password. You can build the software to fit your needs, at your own pace! 
+If you want to start working with the online platform, you can navigate to http://www.openerp.com/. After successful registration, you will be able to configure and use OpenERP online. To log in to your OpenERP Online account, you will receive a username and password. You can build the software to fit your needs, at your own pace! 
 
 OpenERP Online - Software as a Service - is hosted by OpenERP and paid in the form of a monthly subscription. The pricing model is extremely simple. OpenERP charges a fixed fee per month per user. You will get an invoice each month according to the number of users registered in the system at that time. If you add new users during the next 30 days, they will only be charged with the next invoice.
 You can find the details of current pricing and payment options at http://www.openerp.com/online.
