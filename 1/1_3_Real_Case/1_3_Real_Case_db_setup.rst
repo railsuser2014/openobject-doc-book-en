@@ -24,8 +24,12 @@ Account Types
 
 Create account types using :menuselection:`Accounting --> Configuration --> 
 Financial Accounting --> Accounts --> Account Types` and then clicking the
-:guilabel:`New` button. You will need the following four types, the first of which is shown
+:guilabel:`Create` button. You will need the following four types, the first of which is shown
 in figure :ref:`fig-oech03accty`.
+
+.. tip:: Usability Rights for Analytic Account menu
+
+   Admin have rights of `Usability / Technical Features` group. 
 
 .. table:: Defining Account Types
 
@@ -50,8 +54,8 @@ Accounts
 ^^^^^^^^
 
 Create accounts using :menuselection:`Accounting --> Configuration --> 
-Financial Accounting --> Accounts --> Accounts` and then clicking the
-:guilabel:`New` button. 
+Accounts --> Accounts` and then clicking the
+:guilabel:`Create` button. 
 
 You need accounts to handle the purchase and sales orders that have not yet been paid,
 two more for the receipt and shipping of goods, and one for the payment and receipt of funds. 

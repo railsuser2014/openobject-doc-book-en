@@ -47,7 +47,7 @@ somebody who does have it to create this seed database. You will not be able to 
 because they both contain demonstration data.
 
 Start the database creation process from the :guilabel:`Welcome` page by clicking
-:guilabel:`Databases` and then completing the following fields on the :guilabel:`Create Database` form, as shown in :ref:`fig-oech03`:
+:guilabel:`Manage Databases` and then completing the following fields on the :guilabel:`Create Database` form, as shown in :ref:`fig-oech03`:
 
 *  :guilabel:`Super admin password` : by default it is \ ``admin`` \, if you or your system
    administrator have not changed it,
@@ -65,54 +65,29 @@ Start the database creation process from the :guilabel:`Welcome` page by clickin
 .. _fig-oech03:
 
 .. figure::  images/openerp_ch03.png
-   :scale: 65
+   :scale: 50
    :align: center
 
    *Creating a blank database*
 
-Then click :guilabel:`Create` to create the database and move to the setup screen :ref:`fig-oech03s1`.
+Then click :guilabel:`Create Database` to create the database and move to the Application screen :ref:`fig-oech03s1`.
 
 .. _fig-oech03s1:
 
 .. figure::  images/openerp_ch03_s1.png
-   :scale: 75
+   :scale: 50
    :align: center
 
    *Setting up a blank database - first screen*
 
-After a short delay you are connected to the new \ ``openerp_ch03``\   database as user \ ``admin`` \
-with the password you gave it. You will have to go through the Setup wizard in steps. You have two options:
-
-1. If you click the `Start Configuration` button, OpenERP guides you through a series of steps to: :guilabel:`Configure Your Interface` - proceed with the default ``Simplified`` (the other option is ``Extended``); and :guilabel:`Configure Your Company Information` - enter a :guilabel:`Company Name` and select a :guilabel:`Currency` for your company.
-Then OpenERP helps you to install various applications with different functionalities through the following wizard as shown in figure :ref:`fig-oech03cfg` :
-
-.. _fig-oech03cfg:
-
-.. figure::  images/openerp_ch03_config.png
-   :scale: 75
-   :align: center
-
-   *Configuring a database with other applications and functionality when you select Extended view option*
-
-- OR -
-
-2. When you click the button `Skip Configuration Wizards`, you can have the screen as shown in screenshot :ref:`fig-oech03st`. Then you
-can start working with this minimal database (we will not use this option here).
-
-.. _fig-oech03st:
-
-.. figure::  images/openerp_ch03_start.png
-   :scale: 65
-   :align: center
-
-   *Starting the minimal database*
+You can have the screen as shown in above screenshot :ref:`fig-oech03s1`.
 
 
 Fit your Needs
 ==============
 
 Functional needs can be provided by core modules from OpenERP. You just have to decide which functionality
-you want in your system. Click the `Check Box` of the corresponding application in the :ref:`fig-oech03cfsimp`.
+you want in your system. Click `Install` button of the corresponding application in the :ref:`fig-oech03cfsimp`.
 
 .. index::
    single: module; product
@@ -123,35 +98,33 @@ you want in your system. Click the `Check Box` of the corresponding application 
 
 For this instance, we need the following applications:
 
-* Warehouse Management (the :mod:`stock` module),
-
 * Accounting & Finance (the :mod:`account` module),
+
+* Warehouse Management (the :mod:`stock` module),
 
 * Purchase Management (the :mod:`purchase` module),
 
 * Sales Management (the :mod:`sale` module).
 
-To get OpenERP to install these business applications, the Configuration Wizard should look as follows:
+To get OpenERP to install these business applications,screens should look as follows:
 
 .. _fig-oech03cfsimp:
 
 .. figure:: images/openerp_feature.png
-   :scale: 75
+   :scale: 50
    :align: center
 
-   *Configuration Wizard with the Simplified view option*
+   *At the time of Installation*
 
 :guilabel:`Skip` the step that asks you to configure your Accounting Chart. OpenERP will now display the opening screen with all selected business applications installed.
 
 .. _fig-oech03cfgexample:
 
 .. figure:: images/openerp_ch03_main.png
-   :scale: 65
+   :scale: 50
    :align: center
 
    *Database with all required functionality for this example*
-
-If you want to reconfigure your system, then click the `Reconfigure` link that appears in the header of :ref:`fig-oech03cfgexample`.
 
 
 .. Copyright © Open Object Press. All rights reserved.
