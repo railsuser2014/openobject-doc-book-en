@@ -18,20 +18,18 @@ Setting up your Database
 ------------------------
 
 To set up a system for these examples, create a new database with demonstration data in it, and
-select the :guilabel:`Extended` interface when you log in as the *admin* user. You can enter your own
-company details when asked, or just use the default if you want.
+give all possible access rights to login user. You can enter your own company details when asked, or just use the default if you want.
 
 .. index::
    single: module; purchase
 
-Then, using the Configuration Wizard, select :guilabel:`Purchase Management` in the :guilabel:`Install Applications` section to install the :mod:`purchase` module, which also installs several other modules as dependencies. Continue
+Then, from Setting menu, install the :mod:`purchase` module, which also installs several other modules as dependencies. Continue
 the remainder of this chapter logged in as the *admin* user.
 
 Price Request from the Supplier
 -------------------------------
 
-To enter data for a new supplier price request (i.e. request for quotation), use the menu :menuselection:`Purchases --> Purchase Management -->
-Request for Quotation`. When you click :guilabel:`New`, OpenERP opens a blank request for quotation form that you use for requesting prices from a supplier. This is shown in the figure :ref:`fig-pfrm`. If the price request came from an automatic procurement created by OpenERP, you will find a reference to the document that generated the request in the :guilabel:`Origin` field.
+To enter data for a new supplier price request (i.e. request for quotation), use the menu :menuselection:`Purchases --> Purchase --> Quotations`. When you click :guilabel:`Create`, OpenERP opens a blank quotation form that you use for requesting prices from a supplier. This is shown in the figure :ref:`fig-pfrm`. If the price request came from an automatic procurement created by OpenERP, you will find a reference to the document that generated the request in the :guilabel:`Origin` field.
 
 .. _fig-pfrm:
 
@@ -46,7 +44,7 @@ Request for Quotation`. When you click :guilabel:`New`, OpenERP opens a blank re
 
 .. note:: Managing Alerts
 
-        If you install the :mod:`warning` module, you will be able to define alerts that appear when the purchaser enters a price request or order. You can set alerts on the product and on the supplier.
+        If you install the :mod:`warning` module, you will be able to define alerts that appear when the purchaser enters a price request or order. You can set alerts on the supplier.
 
 The internal reference, the date and the warehouse the products should be delivered to, are completed automatically by OpenERP, but you can change these values if needed. Next, when you select a supplier, OpenERP automatically completes the contact address for the supplier. The pricelist is also automatically completed from the pricelist in the supplier form. This should bring in all of the conditions that you have negotiated with the supplier for a given period.
 
@@ -90,9 +88,7 @@ invoice.
 
    Analytic accounts can be very useful for all companies that manage costs by case, by site, by
    project or by folder.
-   To work with several analytic axes, you should install the module :mod:`purchase_analytic_plans`,
-   by selecting :guilabel:`Purchase Analytic Plans` in the :guilabel:`Reconfigure` wizard and clicking
-   :guilabel:`Configure`.
+   To work with several analytic axes, you should install the module :mod:`purchase_analytic_plans`,from :guilabel:`Settings` menu.
 
 .. index::
    single: module; account_analytic_default
@@ -102,13 +98,13 @@ To make sure that the analytic account is automatically selected according to th
 products or the user, you can install the module :mod:`account_analytic_default` (which is installed
 automatically as a dependency of :mod:`purchase_analytic_plans`).
 
-In the :guilabel:`Notes` tab of the product line, you can enter a note that will be attached when the order
+In the :guilabel:`Purchase Order` tab below the product line, you can enter a note that will be attached when the order
 confirmation or price quotation is printed. This note can be predefined on the product form to
 automatically appear on each order for that product. For example, you can enter “Do not forget to send
 by express delivery as specified in our contract reference 1234.”
 
 Once the document has been completed, you can print it as a price estimate to send to
-the supplier. You can set a note for the attention of the supplier in the form's third tab.
+the supplier. You can set a note for the attention of the supplier in the form.
 
 .. figure:: images/purchase_quotation.png
    :scale: 75
@@ -116,12 +112,11 @@ the supplier. You can set a note for the attention of the supplier in the form's
 
    *Printing the Supplier Price Quotation*
 
-Then leave the document in the ``Request for Quotation`` state. When you receive a response from the supplier, use the menu
-:menuselection:`Purchases --> Purchase Management --> Requests for Quotation`. Select the
+Then leave the document in the ``RFQ Sent`` state. When you receive a response from the supplier, use the menu
+:menuselection:`Purchases --> Purchase --> Quotations`. Select the
 order and complete its details.
 
-When you want to approve the order, use the button :guilabel:`Convert to Purchase Order`. The price
-request then passes into the ``Approved`` state. 
+When you want to approve the order, use the button :guilabel:`Confirm Order`. The price request then passes into the ``Purchase Order`` state. 
 No further changes are possible.
 
 .. figure:: images/purchase_process.png
@@ -135,7 +130,7 @@ Goods Receipt
 
 Once the order has been approved, OpenERP automatically prepares the goods receipt order in the
 draft state for you. To get a list of the products you are waiting for from your suppliers, use the
-menu :menuselection:`Warehouse --> Warehouse Management --> Incoming Shipments`.
+menu :menuselection:`Warehouse --> Receiver/Deliver By Orders --> Incoming Shipments`.
 
 .. tip:: Purchasing Services
 
@@ -158,7 +153,7 @@ receipt and invoicing if you return to the list of orders.
    :scale: 75
    :align: center
 
-   *List of Open Orders, and their Receipt and Invoice Status*
+   *List view of Purchase Orders*
 
 Control of Invoicing
 --------------------
@@ -166,13 +161,13 @@ Control of Invoicing
 To control supplier invoicing, OpenERP provides three systems as standard, which can differ order
 by order:
 
-* :guilabel:`From Order` : invoicing based on quantities ordered,
+* :guilabel:`Based on Purchase Order lines` : place individual lines in 'Invoice Control > Based on P.O. lines' from where you can selectively create an invoice,
 
-* :guilabel:`From Picking` : invoicing based on quantities received,
+* :guilabel:`Based on generated draft invoice` : create a draft invoice you can validate later,
 
-* :guilabel:`Manual` : manual invoicing.
+* :guilabel:`Bases on incoming shipments` :let you create an invoice when receptions are validated.
 
-The mode of invoicing control is set in the second tab of the purchase order in the field
+The mode of invoicing control is set in the second tab :guilabel:`Incoming Shipments & Invoices` of the purchase order in the field
 :guilabel:`Invoicing Control`.
 
 .. figure:: images/purchase_form_tab2.png
@@ -210,7 +205,7 @@ Control based on Goods Receipt
 ------------------------------
 
 To control your supplier invoices based on goods receipt, set the field :guilabel:`Invoicing
-Control` on the second tab of the order to :guilabel:`From Picking`.
+Control` on the second tab of the order to :guilabel:`Based on incoming shipments`.
 
 In this case, no invoice, draft state or any other, is generated by the order. On the goods receipt
 note, the field :guilabel:`Invoice Control` is set to :guilabel:`To Be Invoiced`.
@@ -224,8 +219,8 @@ This approach is useful when you receive the invoice at the same time as the ite
 Usually, invoices are sent by post some days later. In this case, the storesperson leaves the item
 unchanged without generating an invoice. Then, once per day or once per week the accountant will
 create the draft invoices based on all the receipts for the day. To do that, he uses the menu
-:menuselection:`Purchases --> Invoice Control --> Purchase Lines Not Invoiced`. 
-He clicks the action :guilabel:`Create invoices` to generate all draft invoices from
+:menuselection:`Purchases --> Invoice Control --> On Draft Invoices`. 
+He clicks the action :guilabel:`Validate` to generate all draft invoices from
 the list of receipts that have not yet been invoiced.
 
 .. index::
@@ -243,10 +238,7 @@ invoices you.
 
 .. tip:: Delivery Charges
 
-   To manage delivery charges, install the module :mod:`delivery` using the :guilabel:`Reconfigure` wizard
-   and selecting :guilabel:`Delivery Costs` in :guilabel:`Sales Application Configuration` section.
-   This will automatically add delivery charges to the creation of the draft invoice as a function
-   of the products delivered or ordered.
+   To manage delivery charges, install the module :mod:`delivery` from :guilabel:`Settings` menu. This will automatically add delivery charges to the creation of the draft invoice as a function of the products delivered or ordered.
 
 .. index:: 
    single: tender
@@ -258,11 +250,9 @@ Tenders
 .. index::
    single: module; purchase_tender
 
-To manage tenders, you should use the module :mod:`purchase_requisition`, installed via the
-:guilabel:`Purchase Requisition` option in the :guilabel:`Reconfigure` wizard.
-This lets you create several
-supplier price requests for a single supply requirement. Once the module is installed, OpenERP adds
-a new :menuselection:`Purchase Requisitions` menu in :menuselection:`Purchases --> Purchase Management`. You can then define the new tenders.
+To manage tenders, you should use the module :mod:`purchase_requisition`,you can install this module direct from :guilabel:`Settings` menu or you can select  Manage purchase requisitions option from configuration of Purchases in Settings menu  .
+This lets you create several supplier price requests for a single supply requirement. Once the module is installed, 
+OpenERP adds a new :menuselection:`Purchase Requisitions` menu in :menuselection:`Purchases --> Purchase `. You can then define the new tenders.
 
 .. figure:: images/purchase_tender.png
    :scale: 75
@@ -270,12 +260,10 @@ a new :menuselection:`Purchase Requisitions` menu in :menuselection:`Purchases -
 
    *Defining a Tender*
 
-To enter data for a new tender, use the menu :menuselection:`Purchases --> Purchase Management -->
-Purchase Requisitions` and select :guilabel:`New`. OpenERP then opens a new blank tender form. The reference number
-is set by default and you can enter information about your tender in the other fields.
+To enter data for a new tender, use the menu :menuselection:`Purchases --> Purchase --> Purchase Requisitions` and select :guilabel:`Create`. OpenERP then opens a new blank tender form. The reference number is set by default and you can enter information about your tender in the other fields.
 
 If you want to enter a supplier's response to your tender request, add a new
-draft purchase order into the list on the :guilabel:`Quotation` tab of your tender document. 
+draft purchase order into the list on the :guilabel:`Quotation` of your tender document. 
 If you want to revise a supplier price in response to negotiations, edit any 
 appropriate purchase order that you have left in the draft state and link that to the tender. 
 
@@ -287,9 +275,7 @@ Price Revisions
 
 OpenERP supports several methods of calculating and automatically updating product costs:
 
-* Standard Price: manually fixed, and
-
-* Standard Price: revalued automatically and periodically,
+* Standard Price: manually fixed, and revalued automatically and periodically,
 
 * Average Price: updated at each receipt to the warehouse.
 
@@ -307,13 +293,8 @@ everything directly related to the received cost. You could include such element
 Standard Price
 ^^^^^^^^^^^^^^
 
-The mode of price management for the product is shown in the tab :guilabel:`Information` on the product form.
+The mode of price management for the product is shown in the tab :guilabel:`Procurements` on the product form.
 On each individual product, you can select if you want to work in ``Standard Price`` or on weighted ``Average Price``.
-
-.. tip:: Simplified Interface
-
-   If you work in the ``Simplified`` interface mode you will not see the field that lets you
-   manage the price calculation mode for a product. In that case, the default value is ``Standard Price``.
 
 The ``Standard Price`` setting means that the product cost is fixed manually for each product in the field
 :guilabel:`Cost Price`. This is usually revalued once a year based on the average of purchase costs
@@ -367,13 +348,7 @@ If the products are managed as a weighted average, OpenERP will open a
 window that lets you specify the price of the product received at each goods receipt. 
 The purchase price is, by default,
 set from the purchase order, but you can change the price to add the cost of
-delivery to the various received products, for example.
-
-.. figure:: images/purchase_pmp.png
-   :scale: 75
-   :align: center
-
-   *Goods Receipt of Products managed in Weighted Average*
+delivery to the various received products.
 
 Once the receipt has been confirmed, the price is automatically recalculated and entered on the
 product form.
