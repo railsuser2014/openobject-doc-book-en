@@ -127,8 +127,7 @@ A pricelist version is made up of a set of rules that apply to the basic product
 
    *Rule in a Pricelist Version*
 
-You define the conditions for a rule in the first part of the screen labelled :guilabel:`Rules Test
-Match`. The rule applies to the :guilabel:`Product` or :guilabel:`Product Template` and/or the named :guilabel:`Product
+You define the conditions for a rule . The rule applies to the :guilabel:`Product` or :guilabel:`Product Template` and/or the named :guilabel:`Product
 Category`. If a rule is applied to a category, then it is automatically applied to all of its
 subcategories too (using the tree structure for product categories).
 
@@ -151,8 +150,7 @@ The first field to complete is :guilabel:`Based on`. Set the way in which the pa
 
 * an :guilabel:`Other Pricelist` given in the field :guilabel:`If Other Pricelist`,
 
-* the price that varies as a function of a supplier defined in the :guilabel:`Partner section of the
-  product form`.
+* the price that varies as a function of a supplier defined in the :guilabel:`Supplier Prices on the product form`.
 
 Several other criteria can be considered and added to the list, as you will see in the following
 section.
@@ -187,9 +185,9 @@ Minimum and Maximum margins enable you to guarantee a given margin over the base
 10 USD enables you to stop the discount from returning less than that margin. If you put 0 into this
 field, no effect is taken into account.
 
-Once the pricelist is defined, you can assign it to a partner. Go to the Partner form and select
+Once the pricelist is defined, you can assign it to a customer. Go to the Customer form and select
 its :guilabel:`Sales & Purchases` tab. You can then change the :guilabel:`Purchase Pricelist` and the
-:guilabel:`Sale Pricelist` that is loaded by default for the partner.
+:guilabel:`Sale Pricelist` that is loaded by default for the customer.
 
 
 .. _decimal_accuracy:
@@ -200,10 +198,9 @@ There are several configuration settings related to the decimal accuracy of
 prices, or the number of decimal places to hold with each price field. To change
 the accuracy of a field, follow these steps:
 
-1. Make sure you have the `Extended` user interface. The setting is in your user 
-   preferences.
+1. First make sure that you have give the access rights to user.
    
-2. Go to :menuselection:`Administration --> Customization --> Database Structure --> 
+2. Go to :menuselection:`Settings --> Technical --> Database Structure --> 
    Decimal Accuracy`. This list contains a number of predefined elements.
    
 3. Open the entry you want to change. `Purchase Price` and `Sale Price` are the 

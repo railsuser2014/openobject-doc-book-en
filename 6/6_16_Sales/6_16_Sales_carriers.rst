@@ -8,8 +8,7 @@ Management of Carriers
    single: module; delivery
    single: module; profile_manufacturing
 
-To manage deliveries in OpenERP, you can install the :mod:`delivery` module.
-To do that, use the :guilabel:`Reconfigure` wizard and select :guilabel:`Delivery Costs` under the :guilabel:`Sales Application Configuration` section for installation.
+To manage deliveries in OpenERP, you can install the :mod:`delivery` module from setting menu.
 
 This module enables you to manage:
 
@@ -22,8 +21,7 @@ This module enables you to manage:
 * the transport methods and their tariffs.
 
 Once the :mod:`delivery` module has been installed, the first thing to do is to configure the different
-modes of delivery accepted by your company. Go to the menu :menuselection:`Warehouse
---> Configuration --> Delivery --> Delivery Method` to create your company's delivery modes.
+modes of delivery accepted by your company. Go to the menu :menuselection:`Warehouse --> Configuration --> Delivery Method` to create your company's delivery modes.
 
 For each delivery mode, you should define the following elements:
 
@@ -129,30 +127,12 @@ There are two methods for doing that in OpenERP.
 
 * Delivery based on Shipped Quantities.
 
-Delivery based on Ordered Quantities
-------------------------------------
-
-To add the delivery charges (or transport costs) to the quotation, use the button :guilabel:`Delivery Costs` available on the `Sales Order` tab of the form. A dialog box opens, asking you to select a delivery mode from the list available.
-
-.. figure:: images/sale_delivery.png
-   :scale: 75
-   :align: center
-
-   *Adding Transport Costs to an Order*
-
-Once the delivery mode has been selected, OpenERP automatically adds a line to the quotation with
-the amount calculated by the delivery function. This technique enables you to calculate the
-delivery charge based on the order and then, separately, how the products will really be delivered
-to the customer.
-
-If you want to calculate the exact delivery charges depending on the actual deliveries, you must use
-invoicing based on deliveries.
 
 Delivery based on Shipped Quantities
 ------------------------------------
 
 To invoice the delivery according to the items shipped, you set the delivery mode in the
-:guilabel:`Delivery Method` field on the second tab of the order, :guilabel:`Other Information`, to :guilabel:`Invoice from Delivery`. 
+:guilabel:`Delivery Method` field on the tab , :guilabel:`Order Lines` of Sales Order, to :guilabel:`Invoice from Delivery`. 
 
 You can then confirm the order, and when the goods are available you can also validate the delivery order.
 
