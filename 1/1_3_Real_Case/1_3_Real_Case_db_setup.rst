@@ -46,7 +46,7 @@ in figure :ref:`fig-oech03accty`.
 
 .. figure::  images/openerp_ch03_acctype.png
    :align: center
-   :scale: 80
+   :scale: 60
 
    *New Account Type*
    
@@ -69,8 +69,8 @@ in :ref:`fig-oech03accts`.
    Name          Code Internal Type Parent          Account Type Reconcile
    ============= ==== ============= =============== ============ =========
    Minimal Chart 0    View                          View         unchecked
-   Payable       AP   Payable       0 Minimal Chart Expense      checked
-   Receivable    AR   Receivable    0 Minimal Chart Income       checked
+   Payable       AP   Payable       0 Minimal Chart Payable      checked
+   Receivable    AR   Receivable    0 Minimal Chart Receivable   checked
    Cash          C    Liquidity     0 Minimal Chart Cash         unchecked
    Purchases     P    Regular       0 Minimal Chart Expense      unchecked
    Sales         S    Regular       0 Minimal Chart Income       unchecked
@@ -80,7 +80,7 @@ in :ref:`fig-oech03accts`.
 
 .. figure::  images/openerp_ch03_accts.png
    :align: center
-   :scale: 80
+   :scale: 60
 
    *New Account*
 
@@ -88,7 +88,7 @@ The :guilabel:`Account Type` entry is taken from the list of types that you just
 Although it looks a bit like a text box, it does not behave in quite the same way.
 A single :kbd:`Del` or :kbd:`Backspace` keystroke is all you need to delete the whole text,
 and when you type the name (or part of the name), you still need to associate that text
-with the entry by clicking the :guilabel:`Search` icon to the right of the field.
+with the entry by clicking the :guilabel:`Search More`.
 
 .. index::
    single: properties; defining
@@ -101,9 +101,9 @@ which account is used for which transaction every time you do something.
 The main new properties are the four that associate accounts payable and receivable
 to partners, and expenses and income to product categories.
 
-Create properties using :menuselection:`Administration --> Configuration --> 
-Parameters --> Configuration Parameters` and then clicking the :guilabel:`New` button.
-You may have switch to ``Extended`` view to be able to access this menu.
+Create properties using :menuselection:`Settings --> Technical --> 
+Parameters --> Configuration Parameters` and then clicking the :guilabel:`create` button.
+You may have ``Technical rights`` to be able to access this menu.
 
 .. table:: Defining Properties
 
@@ -138,8 +138,7 @@ Configuring Journals
 
 You will also need to configure some journals, which are used to record the transactions from one account
 to another when invoices are raised and then paid. Create journals from the menu
-:menuselection:`Accounting --> Configuration --> 
-Financial Accounting --> Journals --> Journals` and then click the :guilabel:`New` button. 
+:menuselection:`Accounting --> Configuration --> Journals --> Journals` and then click the :guilabel:`Create` button. 
 
 .. table:: Defining Journals
 
@@ -175,26 +174,25 @@ Configuring the Main Company
 
 In case you had chosen to :guilabel:`Skip Configuration Wizards` when you first created the database, you may configure your company information in the following manner.
 Start configuring your database by renaming the :guilabel:`Main Company` from its default of \
-``OpenERP S.A.``\   to the name of your own company or (in this case) another example company. When you
+``Your Company``\   to the name of your own company or (in this case) another example company. When you
 print standard documents such as quotations, orders and invoices you will find this configuration
 information used in the document headers and footers.
 
-To do this, click :menuselection:`Sales --> Address Book --> Customers` and click the name of the only company
-there, which is \ ``OpenERP S.A.`` \. This gives you a read-only form view of the company, so
+To do this, click :menuselection:`Sales --> Address Book --> Customers` and search for only company
+there, which is \ ``Your Company`` \. This gives you a read-only form view of the company, so
 make it editable by clicking the :guilabel:`Edit` button to the upper left of the form.
 
 .. tip:: Editable form in the web-client
 
 	When toggling from the list view to the form view of an item, you can generally click its name in
-	the list view to show a non-editable view, or the pencil icon by the left-hand edge of the line to
-	open it in an editable view. You can toggle between editable and non-editable once you are in form
+	the list view to show a non-editable view. You can toggle between editable and non-editable once you are in form
 	view.
 
 Change the following:
 
 *  :guilabel:`Name` : \ ``Ambitious Plumbing Enterprises``\  ,
 
-*  :guilabel:`Contact Name` : \ ``George Turnbull``\  .
+*  :guilabel:`Add Contact` : \ ``George Turnbull``\  .
 
 Before you save this, look at the partner's accounting setup by clicking the tab
 :guilabel:`Accounting`. The fields :guilabel:`Account Receivable` and :guilabel:`Account Payable`
@@ -206,18 +204,16 @@ Back at the first tab, :guilabel:`General`, change any other fields you like,
 such as the address and phone numbers, then :guilabel:`Save`. This
 changes one Contact for the Partner, which is sufficient for the example.
 
-From the :guilabel:`MAIN MENU`, click :menuselection:`Administration --> Companies --> Companies`
+From the :guilabel:`MAIN MENU`, click :menuselection:`Settings --> Companies --> Companies`
 and edit the only entry there:
 
 *  :guilabel:`Company Name` : \ ``AmbiPlum``\  ,
 
 *  :guilabel:`Partner` : should already show \ ``Ambitious Plumbing Enterprises``\  ,
 
-*  :guilabel:`Report Header` : \ ``Ambitious Plumbing``\  ,
+*  :guilabel:`Custom Footer` : Ticked  ,
 
-*  :guilabel:`Report Footer 1` : \ ``Best Plumbing Services, Great Prices``\  ,
-
-*  :guilabel:`Report Footer 2` : \ ``Ambitious – our Registered Company Details``\  .
+*  :guilabel:`Report Footer` : \ ``Best Plumbing Services, Great Prices , Ambitious – our Registered Company Details .``\
 
 Figure :ref:`fig-oech03co` shows the effect of this.
 You can also change various other company-wide parameters for reports and scheduling in the other tabs,
@@ -227,11 +223,11 @@ and you can upload a company logo of a specific size for the reports. Click :gui
 
 .. figure::  images/openerp_ch03_co.png
    :align: center
-   :scale: 75
+   :scale: 60
 
    *Changing company details*
 
-You can leave the currency at its default setting of \ ``EUR`` \ for this example. Or you can
+You can leave the currency at its default setting of \ ``EUR`` \ Or you can
 change it in this Company and the two default Pricelists (:menuselection:`Sales --> Configuration --> Pricelists --> Pricelists`) if you feel compelled to do that.
 
 .. note::  Currency
@@ -251,8 +247,8 @@ You will now create a suppliers category and a customers category. Partner categ
 organizing groups of partners but have no special behavior that affects partners, so you can assign
 them as you like. Then you will define one supplier and one customer, with a contact for each.
 
-To do this, use the menu :menuselection:`Sales --> Configuration --> Address Book --> Partner Categories` and
-click :guilabel:`New` to open a new form for defining :guilabel:`Partner Categories`.
+To do this, use the menu :menuselection:`Sales --> Configuration --> Address Book --> Partner Tags` and
+click :guilabel:`Create` to open a new form for defining :guilabel:`Partner Categories`.
 Define the two categories that follow by just entering their :guilabel:`Category Name` and saving
 them:
 
@@ -260,8 +256,8 @@ them:
 
 * \ ``Customers``\  .
 
-Then create two partners from the menu :menuselection:`Sales --> Address Book --> Customers`. Click on the
-:guilabel:`New` button to open a blank form and then add the following data for the first partner
+Then create two partners from the menu :menuselection:`Sales --> Sales --> Customers`. Click on the
+:guilabel:`Create` button to open a blank form and then add the following data for the first partner
 first:
 
 * :guilabel:`Name` : \ ``Plumbing Component Suppliers``\  ,
@@ -270,11 +266,7 @@ first:
 
 * :guilabel:`Supplier` checkbox : \ ``checked``\  ,
 
-* :guilabel:`Contact Name` : \ ``Jean Poolley``\  ,
-
-* :guilabel:`Address Type` : \ ``Default``\  ,
-
-* add \ ``Suppliers``\   to the :guilabel:`Partner Categories` field by selecting it from the Search Partner Categories list,
+* add \ ``Suppliers``\   to the :guilabel:`Tags` field by selecting it from the selection list,
 
 * then save the partner by clicking the :guilabel:`Save` button. 
 
@@ -284,19 +276,9 @@ Figure :ref:`fig-oech03part` shows the result.
 
 .. figure::  images/openerp_03_part.png
    :align: center
-   :scale: 80
+   :scale: 60
 
    *New Partner Form*
-
-.. note:: Contact Types
-
-	If you have recorded several contacts for the same partner you can specify which contact is used for
-	various documents by specifying the Address Type.
-
-	For example the delivery address can differ from the invoice address for a partner. If the Address
-	Types are correctly assigned, then OpenERP can automatically select the appropriate address
-	during the creation of the document – an invoice is addressed to the contact that has been assigned
-	the Address Type of Invoice, otherwise to the Default address.
 
 For the second partner, proceed just as you did for the first, with the following data:
 
@@ -306,16 +288,12 @@ For the second partner, proceed just as you did for the first, with the followin
 
 * :guilabel:`Supplier` checkbox : \ ``unchecked``\ ,
 
-* :guilabel:`Contact Name` : \ ``Stephen Smith``\ ,
-
-* :guilabel:`Address Type` : \ ``Default``\ ,
-
 * add \ ``Customers``\   in the :guilabel:`Categories` field,
 
 * :guilabel:`Save` the form.
 
 To check
-your work, you can go to the menu :menuselection:`Sales --> Configuration --> Address Book --> Partner Categories`
+your work, you can go to the menu :menuselection:`Sales --> Configuration --> Address Book --> Partner Tages`
 and click on each category in turn to see the companies in the category.
 
 .. note:: Multiple Partner Categories
@@ -382,8 +360,7 @@ Now create a new product through the :menuselection:`Warehouse` or :menuselectio
 
 #.	Create a product – type \ ``Titanium Alloy Radiator``\  in the :guilabel:`Name` field.
 
-#.	Click the :guilabel:`Search` icon to the right of the :guilabel:`Category` field to select the
-	:guilabel:`Radiators` category.
+#.	:guilabel:`Search` for :guilabel:`Category` field to select the:guilabel:`Radiators` category.
 
 #.	The :guilabel:`Product Type` field should be assigned as \ ``Stockable Product``\.
 	The fields :guilabel:`Procurement Method`, :guilabel:`Supply method`, :guilabel:`Default Unit Of Measure`, 
@@ -395,7 +372,7 @@ Now create a new product through the :menuselection:`Warehouse` or :menuselectio
 
 	.. figure:: images/product.png
 	   :align: center
-	   :scale: 75
+	   :scale: 60
            
 	   *Product Form*
 
