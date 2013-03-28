@@ -25,7 +25,7 @@ To be able to manage the process, please install the following modules:
 	* :mod:`sale`
 	* :mod:`purchase`
 	* :mod:`stock`
-	* :mod:`stock_location`, *Reconfigure* wizard --> *Advanced route* (in order to be able to define pull & push flows)
+	* :mod:`stock_location` (in order to be able to define pull & push flows)
 
 .. toctree::
     :maxdepth: 2
