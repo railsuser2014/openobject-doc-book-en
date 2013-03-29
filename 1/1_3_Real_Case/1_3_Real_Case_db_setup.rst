@@ -142,13 +142,13 @@ to another when invoices are raised and then paid. Create journals from the menu
 
 .. table:: Defining Journals
 
-   ================ ==== ======== ========================== ================ ===================== ======================
-   Journal Name     Code Type     Display Mode               Entry Sequence   Default Debit Account Default Credit Account
-   ================ ==== ======== ========================== ================ ===================== ======================
-   Purchase Journal PUJ  Purchase Sale/Purchase Journal View Purchase Journal P Purchases           P Purchases
-   Sale Journal     SAJ  Sale     Sale/Purchase Journal View Sale Journal     S Sales               S Sales
-   Bank Journal     BNK  Cash     Cash Journal View          Account Journal  C Cash                C Cash
-   ================ ==== ======== ========================== ================ ===================== ======================
+   ================ ==== ======== ============================= ===================== ======================
+   Journal Name     Code Type     Entry Sequence                Default Debit Account Default Credit Account
+   ================ ==== ======== ============================= ===================== ======================
+   Purchase Journal PUJ  Purchase Purchase Journal              P Purchases           P Purchases
+   Sale Journal     SAJ  Sale     Account Default Sales Journal S Sales               S Sales
+   Bank Journal     BNK  Cash     Account Journal               C Cash                C Cash
+   ================ ==== ======== ============================= ===================== ======================
 
 .. tip:: Mistakes in configuring journals
 

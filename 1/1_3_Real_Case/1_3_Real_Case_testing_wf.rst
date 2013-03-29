@@ -31,8 +31,8 @@ Following this, you will sell some of these products, using this sequence:
 Purchase Order
 --------------
 
-To place a Purchase Order with your supplier, use the menu :menuselection:`Purchases --> Purchase Management -->
-Purchase Orders` and click the `New` button.
+To place a Purchase Order with your supplier, use the menu :menuselection:`Purchases --> Purchase -->
+Quotations` and click the `Create` button.
 
 Complete the following field:
 
@@ -46,7 +46,7 @@ Enter the following information
 
 *  :guilabel:`Product` : \ ``Titanium Alloy Radiator``\   - type in part of this name then
    press the tab key to complete it, or click the
-   :guilabel:`Search` icon at the end of the line to bring a search box. (if product is previously configured)
+   :guilabel:`Search More` at the end of the s to bring a search box. (if product is previously configured)
 
 When you have selected a product on the product line, OpenERP automatically completes the following
 fields from information it finds in the Product record:
@@ -64,6 +64,10 @@ fields from information it finds in the Product record:
 * :guilabel:`Taxes` : applicable taxes defined in the partner, if specified, otherwise in the
   product, if specified (there are not any in this example).
 
+.. note::  Analytic account
+
+    You may have ticked and Apply `Analytic accounting for purchases` from :menuselection:`Settings --> Purchases --> Purchase Order`
+
 You can edit any of these fields to suit the requirements of the purchase order at the time of
 entry. Change the:
 
@@ -75,14 +79,13 @@ Save the order line and close the :guilabel:`Order Line` window by clicking the
 :guilabel:`Close` button. You can then confirm the whole one-line order by clicking
 :guilabel:`Save`, which makes the form non-editable.
 
-It is now in a state of \ ``Request for
-Quotation``\ , so click :guilabel:`Convert to Purchase Order`, which corresponds to an approval from
+It is now in a state of \ `` Draft PO``\ , Confirm that by clicking `Confirm` Button which corresponds to an approval from
 a manager or from Accounts within your own company and moves the order into \ ``Approved`` \
 state.
+`Send by Email`, with the help of this button you can Request for Quotation and mean while your Draft PO moves in to \ ``RFQ sent``\ state.
 
-If you click the :guilabel:`Delivery & Invoicing` tab
-you will see the delivery :guilabel:`Destination` is your own company's ``Stock`` location and that
-the invoice was created from the order.
+If you click the :guilabel:`Incoming Shipments & Invoices` tab
+you will see the delivery :guilabel:`Destination` is your own company's ``Stock`` location and `Receive Invoice` button show you the draft invoice was created from the order.
 It is not entirely obvious at this stage, but the invoice is in a draft state so it can be
 edited and, crucially, has no accounting impact yet: it is just ready for your accounting
 group to activate it.
@@ -103,25 +106,13 @@ this would be somebody in Stores, who would:
 
 	#. When the :guilabel:`Incoming Shipments` window appears, select the name of the entry in the list
 	   (\ ``IN/00002``\)   to display the Packing List itself – you would usually do a search for the supplier name
-	   or order number in a list that was larger than this – then click :guilabel:`Process` to load the
-	   :guilabel:`Process Document` form.
-
-	#. Click :guilabel:`Validate` to indicate that you are receiving the whole quantity of 10 units.
+	   or order number in a list that was larger than this – then click :guilabel:`Receive` to indicate that you are receiving the whole quantity of 10 units.
 
 At this point you have accepted 10 units into your company, in a location that you have already seen.
 
 Using the menu :menuselection:`Purchases --> Products --> Products` you can find the product `Titanium Alloy Radiators`
-with `Real Stock` and `Virtual Stock` 10. From the product form click on the link at the right most side `Stock by Location`,
-you can see the `Real Stock` and `Virtual Stock` of this product in various locations. Now click on the `Location Inventory Overview`
-report to see the inventory valuation per location.
-
-.. _fig-lotsbyloc:
-
-.. figure::  images/lots_by_location_pdf.png
-   :scale: 65
-   :align: center
-
-   *List of products and their stock levels*
+with `Quantity On Hand` and `Incoming` 10. From the product form click on `Stock by Location` from `More` button,
+you can see the `Quantity On Hand` and `Incoming Stock` of this product in various locations.
 
 .. tip:: Traceability in Double-entry
 
