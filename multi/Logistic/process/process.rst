@@ -5,12 +5,12 @@ At this point, we have defined everything that we need, we can now execute the p
 
 The following example will be structured as follows: 
 
-First, we will make a sales order for one unit of our product (Basic PC) in the company 
-OpenERP France for the customer NotSoTiny. Then this will be sent to the company OpenERP 
-Belgium that stocks the Basic PCs. An order of one unit will be sent to OpenERP Belgium 
+First, we will make a sales order for one unit of our product (Computer) in the company 
+OpenERP France for the customer FranceTiny. Then this will be sent to the company OpenERP 
+BE that stocks the Computers. An order of one unit will be sent to OpenERP BE 
 from OpenERP France. OpenERP will purchase the product from its supplier (in this case, 
 Dell Belgium). Second, OpenERP France will have to invoice the delivered quantities sent 
-by OpenERP Belgium to NotSoTiny.
+by OpenERP Belgium to FranceTiny.
 
 .. toctree::
 
