@@ -8,8 +8,6 @@ For every company, keeping a clear sight on and a good control of margins is cru
 
 * Margins by product,
 
-* Margins by project,
-
 * Using pricelists.
 
 Margins on Sales Orders
@@ -18,8 +16,7 @@ Margins on Sales Orders
 .. index::
    single: module; sale_margin
 
-If you want to check your margins on sales orders, you can install the :mod:`sale_margin` module
-by selecting :guilabel:`Margins in Sales Orders` for installation in the :guilabel:`Reconfigure` wizard.
+If you want to check your margins on sales orders, you can install the :mod:`sale_margin` module from :guilabel:`Settings` menu
 This will add margins calculated on each order line and on the order total.
 
 .. figure:: images/sale_margin.png
@@ -51,8 +48,7 @@ Margins by Product
    single: module; product_margin
 
 To track margins by product, install the module :mod:`product_margin`. Once the module
-is installed you can see the margins by product by using the menu :menuselection:`Sales --> Products
---> Product Margins`.
+is installed you can see the margins by product by using the menu :menuselection:`Reporting --> Purchase --> Product Margins`.
 
 When you have clicked the menu option concerned, OpenERP asks for an analysis period and the state of invoices (draft, open, paid). If
 no period is given, OpenERP will calculate margins on all of the operations without restriction. By
@@ -78,7 +74,7 @@ You then get a margin analysis table. The following fields are displayed for the
 
 * :guilabel:`Catalog Price`: the list price based on this product,
 
-* :guilabel:`# Invoiced`: the number of sold products that have been invoiced,
+* :guilabel:`# Invoiced in Sale`: the number of sold products that have been invoiced,
 
 * :guilabel:`Sales Gap`: the difference between the revenue calculated from list price and volume, and the actual sales,
 
@@ -98,7 +94,7 @@ The following fields are given by product for purchases:
 
 * :guilabel:`Standard price` : the standard cost price of the product for the company,
 
-* :guilabel:`# Invoiced` : the number of purchased products,
+* :guilabel:`# Invoiced in Purchase` : the number of purchased products,
 
 * :guilabel:`Purchase Gap`: the difference between the total actual cost and the standard cost
   multiplied by the number of units purchased,
@@ -117,62 +113,6 @@ The following fields are given by product for margins:
 
 * :guilabel:`Expected Margin in percent`.
 
-Margins by Project
-------------------
-
-To manage margins by project, you should install the analytical accounts with management by task. The use
-of these accounts is described in :ref:`ch-accts`.
-
-.. index::
-   single: module; account_analytic_analysis
-
-Install the module :mod:`account_analytic_analysis` and all of its dependencies. 
-This module adds a tab on the analytic account form to handle the different margins in an analytic account 
-representing a project or a case, and several new reports on those accounts.
-
-.. figure:: images/account_analytic_analysis_form.png
-   :scale: 75
-   :align: center
-
-   *Detail of margins for a case*
-
-Start by opening a project's analytic account through
-:menuselection:`Project --> Billing --> Overpassed Accounts`
-and selecting one of them.
-In the form's :guilabel:`Analysis summary` tab you will find the following information:
-
-* The total costs for the analytic account,
-
-* The total amount of invoiced sales,
-
-* The number of hours worked,
-
-* The number of hours remaining to be worked,
-
-* The remaining income,
-
-* The theoretical income (hours worked multiplied by their sale price),
-
-* The number of hours invoiced,
-
-* The real income per hour,
-
-* The real margin,
-
-* The theoretical margin taking into account everything yet to be invoiced,
-
-* The real margin rate in percent,
-
-* The last invoicing date,
-
-* The last worked hours,
-
-* The number of hours remaining to be invoiced,
-
-* The amount remaining to be invoiced.
-
-For detailed information on the analytic account you can use any of the several reports available in
-the toolbar to the right.
 
 .. Copyright © Open Object Press. All rights reserved.
 

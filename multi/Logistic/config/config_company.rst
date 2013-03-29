@@ -15,9 +15,9 @@ will be used to aggregate the different information from OpenERP France and Open
    
    *Companies Structure*
    
-.. tip:: User Group
+.. tip:: User Access Rights
 
-	To view the companies' structure, you have to add the group  :guilabel:`Useability/Multi Companies` to your user. 
+	To view the companies' structure, you have to give access rights to user, select :guilabel:`Multi Companies` option in user access rights. 
    
 Here are the different configurations for the mother and the child companies (for the child companies, do not 
 forget to add a parent company):
@@ -31,8 +31,9 @@ forget to add a parent company):
 Charts of Accounts
 ^^^^^^^^^^^^^^^^^^
 
-For each company, you have to define an accounting setting. To do this, go to the :menuselection:`Accounting --> 
-Configuration --> Financial Accounting --> New company Financial Setting`. 
+For each company, you have to define an accounting setting. To do this, go to the :menuselection:`Settings  --> Configuration --> Accounting`.
+Then you can select company in chart of account also select the option :guilabel:`This company has its own chart of accounts`, in the template you can select chart of account as you want, if it is not available in list , you can select option :guilabel:`Install more chart template`.
+After installing your chart of account , you can apply this configuration. 
 
 .. figure:: images/accounting_charts.png
    :scale: 75
@@ -52,7 +53,7 @@ from the employee who is created through the Human Resources module.
 
 Each company needs a user to manage the different operations to complete the flow. You can create one user for each 
 company, but do not forget to select the appropriate company in the ``Contact`` section of the User form after have added the 
-company in the ``Companies`` tab.
+company in the ``Access Rights`` tab.
 
 
 .. figure:: images/user_1tab.png
@@ -74,7 +75,7 @@ the company.
 The customers and suppliers go in the same object called `Partners` which can be classified in three ways: customer, supplier and
 customer and supplier. This has the advantage that you have to update address data only once.
 
-	* Customer: log in with the user of OpenERP France, then go to :menuselection:`Sales --> Address Book --> Customers`
+	* Customer: log in with the user of OpenERP France, then go to :menuselection:`Sales --> Sales --> Customers`
 	
 .. figure:: images/customer_1tab.png
    :scale: 75
@@ -88,7 +89,7 @@ customer and supplier. This has the advantage that you have to update address da
    
    *Defining Customers part 2*
    
-	* Supplier: log in with the user of OpenERP Belgium, then go to :menuselection:`Purchases --> Address Book --> Suppliers`
+	* Supplier: log in with the user of OpenERP Belgium, then go to :menuselection:`Purchases --> Purchase --> Suppliers`
 
 .. figure:: images/supplier_1tab.png
    :scale: 75

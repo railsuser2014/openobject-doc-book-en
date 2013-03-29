@@ -17,7 +17,7 @@ Let us start by configuring the different components we need. In the next sectio
 
 .. note:: User Group
 
-        Go to :menuselection:`Administration --> Users --> Users` and add the :guilabel:`Useability / Multi Companies` group to your user, to be able to use OpenERP in a multi-company environment.
+        Go to :menuselection:`Settings --> Users --> Users` and go to tab Access rights of user , Select the :guilabel:`Multi Companies` , to be able to use OpenERP in a multi-company environment.
 
 .. toctree::
 
