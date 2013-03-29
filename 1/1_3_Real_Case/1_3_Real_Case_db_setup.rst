@@ -314,7 +314,7 @@ Creating Products and their Categories
 Unlike partner categories and their assigned partners, product categories do have an effect on the
 products assigned to them – and a product may belong to only one category. Under the main menu link
 :menuselection:`Warehouse` or :menuselection:`Sale`, select the menu
-:menuselection:`Configuration --> Products --> Products Categories` and click :guilabel:`New` to get
+:menuselection:`Configuration --> Products --> Products Categories` and click :guilabel:`Create` to get
 an empty form for defining a product category.
 
 Enter \ ``Radiators``\   in the :guilabel:`Name` field. You will see that other fields, specifically those
@@ -326,7 +326,7 @@ Click :guilabel:`Save`.
 .. note:: Property Fields
 
 	Properties have a rather unusual behavior. They are defined by parameters in the menus in 
-	:menuselection:`Administration --> Configuration --> Parameters --> Configuration Parameters`,
+	:menuselection:`Settings --> Technical --> Parameters --> Configuration Parameters`,
 	and they update fields only when a form
 	is saved, and only when the fields are empty at the time the form is saved. You can manually
 	override any of these properties as you need.
@@ -404,9 +404,9 @@ OpenERP has three predefined top-level location types , ``Physical Locations`` a
 that act as their names suggest, and ``Virtual Locations`` that are used by OpenERP for its own purposes.
 
 #.	From the :guilabel:`Main Menu` click on :menuselection:`Warehouse --> Configuration -->
-	Warehouse Management --> Locations` to reach a list view of the locations (not the tree view).
+	--> Locations` to reach a list view of the locations (not the tree view).
 
-#.	Click on the name of a location, such as \ ``Physical Locations/OpenERP S.A.`` \ to open a
+#.	Click on the name of a location, such as \ ``Physical Locations/Your Company`` \ to open a
 	descriptive form view. Each
 	location has a :guilabel:`Location Type` and a :guilabel:`Parent Location` that defines the hierarchical structure.
 	While you are here you should change 
@@ -414,8 +414,8 @@ that act as their names suggest, and ``Virtual Locations`` that are used by Open
 	company name.
 
 #.	From the :menuselection:`Main Menu` click :menuselection:`Warehouse --> Configuration
-	Warehouse Management --> Warehouses` to view a list of warehouses. There is only the one at the moment, which
-	should also be renamed from ``OpenERP S.A.`` to ``Ambitious Plumbing Enterprises`` .
+	--> Warehouses` to view a list of warehouses. There is only the one at the moment, which
+	should also be renamed from ``Your Company`` to ``Ambitious Plumbing Enterprises`` .
 
 A Warehouse contains an input location, a stock location and an output location for sold products.
 You can associate a warehouse with a partner to give the warehouse an address. That does not have to
@@ -460,9 +460,36 @@ accounts into several charts, with different arrangements for taxation and depre
 differently for various needs.
 
 Before you can use any chart of accounts for anything, you need to specify a Fiscal Year. This
-defines the different time periods available for accounting transactions. An initial Fiscal Year
-was created during the database setup, so you do not need to do any more on this.
-You can also create a Fiscal Year manually from :menuselection:`Accounting --> Configuration --> Financial Accounting --> Periods --> Fiscal Years`.
+defines the different time periods available for accounting transactions.
+You can create a Fiscal Year from :menuselection:`Accounting --> Configuration --> Periods --> Fiscal Years`.
+Click on the :guilabel:`Create` button to open a blank form and then add the following data:
+
+* :guilabel:`Fiscal year` : \ ``Fiscal Year X 2013``\  ,
+
+* :guilabel:`Code`  : \ ``FY2013``\  ,
+
+* :guilabel:`Start Date` : \ ``01/01/2013``\  ,
+
+* :guilabel:`End Date` : \ ``12/31/2013``\  ,
+
+* Click on `Create Monthly Periods` Button.
+
+* then save the Form by clicking the :guilabel:`Save` button. 
+
+Figure :ref:`fig-oech03accfy` shows the result. 
+
+.. _fig-oech03accfy:
+
+.. figure::  images/fiscalyear.png
+   :align: center
+   :scale: 60
+
+   *Fiscal Year*
+
+.. note:: Fiscal year
+
+    `Start Date` is a first date of current year and last Date of current year for `End Date`.
+    By clicking `Create 3 Months Periods` you can create a periods quarterly.
 
 Click :menuselection:`Accounting --> Charts --> Charts of Accounts` to open a :guilabel:`Chart of Accounts`
 form where you define exactly what you want to see.
