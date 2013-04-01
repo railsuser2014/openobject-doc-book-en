@@ -488,7 +488,7 @@ Figure :ref:`fig-oech03accfy` shows the result.
 .. note:: Fiscal year
 
     In many countries, the fiscal year corresponds to a calendar year. That may not be the case in other countries.
-    `Start Date` is a first date of the first day of your fiscal year and last Date of your fiscal year for `End Date`.
+    `Start Date` is a first date of your fiscal year and `End Date` is a last Date of your fiscal year.
     By clicking `Create 3 Months Periods` you can create a periods quarterly.
 
 Click :menuselection:`Accounting --> Charts --> Charts of Accounts` to open a :guilabel:`Chart of Accounts`
