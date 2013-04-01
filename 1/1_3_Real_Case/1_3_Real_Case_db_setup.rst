@@ -22,8 +22,7 @@ structure them into several additional charts at the same time as you will see i
 Account Types
 ^^^^^^^^^^^^^
 
-Create account types using :menuselection:`Accounting --> Configuration --> 
-Financial Accounting --> Accounts --> Account Types` and then clicking the
+Create account types using :menuselection:`Accounting --> Configuration --> Accounts --> Account Types` and then clicking the
 :guilabel:`Create` button. You will need the following four types, the first of which is shown
 in figure :ref:`fig-oech03accty`.
 
@@ -288,7 +287,7 @@ For the second partner, proceed just as you did for the first, with the followin
 
 * :guilabel:`Supplier` checkbox : \ ``unchecked``\ ,
 
-* add \ ``Customers``\   in the :guilabel:`Categories` field,
+* add \ ``Suppliers``\   in the :guilabel:`Categories` field,
 
 * :guilabel:`Save` the form.
 
