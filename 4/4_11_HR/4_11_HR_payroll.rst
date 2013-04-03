@@ -196,7 +196,7 @@ You can configure the following information:-
 
 On the selection of an employee the Reference, Contract, Structure, Description, Worked Days and Input data ( if you have a rule that has an input data) fields will be automatically filled.
 
-Click on the :guilabel:`Compute Sheet` button will fill the payslip lines based on the rules defined in your salary structure.(In :guilabel:`Salary Computation`tab)
+Click on the :guilabel:`Compute Sheet` button will fill the payslip lines based on the rules defined in your salary structure.(In :guilabel:`Salary Computation` tab)
 Payslip lines will appear and will be calculated based on the sequence provided on salary rules. Allowances and Deductions will be shown in positive and negative values respectively.
 
 :guilabel:`Details By Salary Rule Category`: It displays the rules grouped by its categories.
@@ -219,9 +219,9 @@ Payslip lines will appear and will be calculated based on the sequence provided 
     - *Amount* : The amount for an incentive.
     - *Contract* : Contract to be applied for Payslip Input.
 
-*Other Information*: -
+:guilabel:`Other Information` : - It holds the information regarding the company, payment, notes, etc.
 
-- *Other Information* : It holds the information regarding the company, payment, notes, etc.
+ 
 - *Company* : The company.
 - *Payslip Batches* : Name of Payslip Batch through which payslip is generated.
 - *Made Payment Order* : If **True**, the payment is made.
