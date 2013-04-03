@@ -2,36 +2,29 @@ HR Payroll
 ==========
 
 The new :mod:`hr_payroll` module includes a generic payroll engine that handles everything required to compute hr salary slips, the taxes to pay, etc.
-You can manage your company's payroll by using this module.The configuration wizard to install this module is shown below:
-
+You can manage your company's payroll by using this module.
+You have to select option :guilabel:`Manage payroll` from following menu :menuselection:`Settings --> Configuration --> Human Resources` and you can install your country payroll from that option  *Install your country's payroll*.
+  
 .. figure:: images/install_payroll.png
    :align: center
    :scale: 90
 
-   *Configuration wizard to install hr_payroll module*
+   *Configuration to install hr_payroll module*
 
 OpenERP provides the following features for efficient payroll management process:-
 
-- Salary rule: are used to compute data like allowances, deductions, net, taxes, contribution registers, etc.
-- You can define salary rules by using the expression.
-- Salary structure: Define a set of rules usually applied to a category of employees.
-- Salary calculation after considering all the allowances, deductions and incentives (if any) etc.,
-- Contribution registers: A register containing to whom the company or the employee have to pay taxes.
-- Employee and contract: It includes everything required to compute the salary slip of an employee.
-- Salary processing on the basis of leaves taken or number of working days.
-- Generating Reports.
-- Integrated with Contracts and Holidays.
+- :guilabel:`Salary rule`: are used to compute data like allowances, deductions, net, taxes, contribution registers, etc. You can define salary rules by using the expression.
+- :guilabel:`Salary structure`: Define a set of rules usually applied to a category of employees. Salary calculation after considering all the allowances, deductions and incentives (if any) etc.,
+- :guilabel:`Contribution registers`: A register containing to whom the company or the employee have to pay taxes.
+- :guilabel:`Employee and contract`: It includes everything required to compute the salary slip of an employee.
+- :guilabel:`Salary processing on the basis of leaves taken or number of working days.`
+- :guilabel:`Generating Reports.`
+- :guilabel:`Integrated with Contracts and Holidays.`
 
 Salary Rule Categories
 ----------------------
 
-Salary Rule Categories are your Basic, Allowance, Deduction, Gross, Net, Company Contribution, etc by using which you can categorize your Salary Rule. You can define Salary Rule Categories by using the menu :menuselection:`Human Resources --> Configuration --> Payroll --> Salary Rule Categories` and click *New.*
-
-.. figure:: images/salary_rule_categories.png
-   :align: center
-   :scale: 75
-
-   *Allowance defined as Salary Rule Category*
+Salary Rule Categories are your Basic, Allowance, Deduction, Gross, Net, Company Contribution, etc by using which you can categorize your Salary Rule. You can define Salary Rule Categories by using the menu :menuselection:`Human Resources --> Configuration --> Payroll --> Salary Rule Categories` and click *Create.*
 
 You can configure the following information:-
 
@@ -45,7 +38,7 @@ Salary Rules
 ------------
 
 Salary Rules are the various types of Allowances, Deductions, etc.You can define Salary Rules by using the menu
-:menuselection:`Human Resources --> Configuration --> Payroll --> Salary Rules` and click *New.*
+:menuselection:`Human Resources --> Configuration --> Payroll --> Salary Rules` and click *Create.*
 
 
 .. figure:: images/salary_rule.png
@@ -54,7 +47,7 @@ Salary Rules are the various types of Allowances, Deductions, etc.You can define
 
    *House Rent Allowance defined as Salary Rule*
 
-Before starting to configure a rule I would like to mention a list of Available Variables which will be used to specify field's value(as python code) on Salary Rules.
+There are list of Available Variables which will be used to specify field's value(as python code) on Salary Rules.
 
 `Available variables:`
 
@@ -108,7 +101,7 @@ You can configure the following information:-
   - *Quantity* : For example, a rule for Meal Voucher having fixed amount of 1€ per worked day can have its quantity defined in expression like ``worked_days.WORK100.number_of_days`` which will then be multipied with the calculated percentage amount.
   - *Percentage* : Provide Percentage.
 
-3. ``Python Expression`` : You can specify your condition by python expression.
+3. ``Python Code`` : You can specify your condition by python expression.
 
   - *Python condition* : For example, If you want to calculate Gross then you can write your expression like ``result = categories.BASIC + categories.ALW`` where ``BASIC`` and ``ALW`` are salary rule categories code.
 
@@ -123,11 +116,12 @@ You can configure the following information:-
 
 After entering the salary rule information click Save.
 
-.. note:: Sign of amount
+.. note:: 
+    :guilabel:`Sign of amount`
 
     If you are defining a rule for Allowance then make sure that the **amount** , **percentage** or **python code** you enter is *positive*. And if its for Deduction then it has to be *negative*.
 
-.. note:: Python Expression
+    :guilabel:`Python Expression`
 
     If you are using python code then returned value has to be set in the variable *result*.
 
@@ -162,7 +156,7 @@ Contracts
 ---------
 
 We need to define a contract for an employee which will be used during the payslip generation.
-Using the menu :menuselection:`Human Resources --> Contracts` you can define contract.
+Using the menu :menuselection:`Human Resources --> Human Resources --> Contracts` you can define contract.
 
 .. figure:: images/payroll_contract.png
    :align: center
@@ -202,30 +196,26 @@ You can configure the following information:-
 
 On the selection of an employee the Reference, Contract, Structure, Description, Worked Days and Input data ( if you have a rule that has an input data) fields will be automatically filled.
 
-Click on the *Compute Sheet* button will fill the payslip lines based on the rules defined in your salary structure.
+Click on the :guilabel:`Compute Sheet` button will fill the payslip lines based on the rules defined in your salary structure.(In :guilabel:`Salary Computation`tab)
 Payslip lines will appear and will be calculated based on the sequence provided on salary rules. Allowances and Deductions will be shown in positive and negative values respectively.
 
-*Details By Salary Rule Category*: It displays the rules grouped by its categories.
+:guilabel:`Details By Salary Rule Category`: It displays the rules grouped by its categories.
 
-*Worked Days & Inputs*:- It displays the worked days and inputs.
+:guilabel:`Worked Days & Inputs`:- It displays the worked days and inputs.
 
 1.	*Worked Days* : The no of days and hours an employee has worked. It will be computed on employee onchange. It calculates the number of working days and hours on the basis of Working Schedule provided on contract. It also calculates the leaves.
 
     - *Description* : Description regarding your working or leave day.
     - *Code* :  Code for Payslip Worked Days.
     .. note:: You cannot change the code for working days i.e.'WORK100'.
-    - *Payslip* : Payslip on which Payslip Worked Days has to be applied.
-    - *Sequence* : Sequence for Payslip Worked Days which will be considered in the calculation and its display..
     - *Number of Days* : Number of Days an employee has worked or taken leave.
     - *Number of Hours* : Number of Hours for which an employee has worked or taken leave.
     - *Contract* : Contract to be applied for Payslip Worked Days.
 
-2.	*Input Data* : It is used when you want to provide some incentives, commissions, etc. Input Data comes from the rules having Inputs. You need to provide an amount through Input Data of payslip.
+2.	*Other Input* : It is used when you want to provide some incentives, commissions, etc. Input Data comes from the rules having Inputs. You need to provide an amount through Input Data of payslip.
 
     - *Description* : Description for Payslip Input.
     - *Code* : A code for Payslip Input.
-    - *Payslip* : Payslip on which Payslip Input has to be applied.
-    - *Sequence* : Sequence for Payslip Input which will be considered in the calculation and its display.
     - *Amount* : The amount for an incentive.
     - *Contract* : Contract to be applied for Payslip Input.
 
@@ -233,23 +223,23 @@ Payslip lines will appear and will be calculated based on the sequence provided 
 
 - *Other Information* : It holds the information regarding the company, payment, notes, etc.
 - *Company* : The company.
-- *Payslip Run* : Name of Payslip Run through which payslip is generated.
+- *Payslip Batches* : Name of Payslip Batch through which payslip is generated.
 - *Made Payment Order* : If **True**, the payment is made.
 - *Notes* : Some additional information related to payslip.
 
 Click on the Confirm button when the payslip is fully calculated and the Payment is made. It will change the state to ``Done``.
 
-Payslips Run
+Payslips Batch
 ------------
 
-Using the menu :menuselection:`Human Resources --> Payroll --> Payslips Run` you can create payslips for various employees at a time.
+Using the menu :menuselection:`Human Resources --> Payroll --> Payslips Batches` you can create payslips for various employees at a time.
 Its like a register which holds payslips of various employees created through ``Generate Payslips`` wizard.
 
 .. figure:: images/payslips_run.png
    :align: center
    :scale: 80
 
-   *Payslips Run*
+   *Payslips Batch*
 
 You need to configure the following:-
 
@@ -268,7 +258,7 @@ Click on the *Generate Payslips* wizard will let you choose the employees for wh
 
 - *Payslips* : It holds the newly generated Payslips through wizard.
 
-A click on the Close button of Payslips Run changes the state to ``Close``.
+A click on the Close button of Payslips Batch changes the state to ``Close``.
 
 Contribution Registers
 ----------------------
@@ -294,7 +284,7 @@ To see the payslip lines related to a contribution register go to that particula
 Employee Payslip PDF Report
 ---------------------------
 
-You can print the Employee Payslip PDF Report from the form view of Employee Payslips.
+You can print the Employee Payslip PDF Report from the view of Employee Payslips from Print button.
 
 .. figure:: images/payslip_report.png
    :align: center
@@ -303,7 +293,7 @@ You can print the Employee Payslip PDF Report from the form view of Employee Pay
 Payslip Details PDF Report
 --------------------------
 
-You can print the Payslip Details report from the form view of Employee Payslips. It prints the report grouped by Salary Rule Category and also prints the Payslip Lines by Contribution Register.
+You can print the Payslip Details report from the view of Employee Payslips. It prints the report grouped by Salary Rule Category.
 
 .. figure:: images/payslip_details_report.png
    :align: center
@@ -312,7 +302,7 @@ You can print the Payslip Details report from the form view of Employee Payslips
 Payslip Lines PDF Report
 ------------------------
 
-You can print the Payslip Lines report from the form view of Contribution Registers. It prints the Payslip Lines by Contribution Register.
+You can print the Payslip Lines report from the view of Contribution Registers. It prints the Payslip Lines by Contribution Register.
 
 .. figure:: images/contribution_register_report.png
    :align: center
