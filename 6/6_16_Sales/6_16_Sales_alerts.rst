@@ -7,9 +7,8 @@ Alerts
    single: alerts
    single: module; warning
 
-To manage alerts on products or partners, you can install the :mod:`warning` module. Once that is
-installed, you will be able to configure a series of alerts on the partners or products by
-setting parameters in the new :guilabel:`Warnings` tab on each of the forms.
+To manage alerts on customers, you can install the :mod:`warning` module. Once that is
+installed, you will be able to configure a series of alerts on the customers by setting parameters in the new :guilabel:`Warnings` tab on the form.
 
 You can select any of the following types of warnings and create different warnings for purchases and for sales:
 
@@ -26,9 +25,9 @@ be displayed when the event concerned is started.
    :scale: 75
    :align: center
 
-   *Management of alerts on partners*
+   *Example Alert on Customer Agrolait*
 
-The available warnings in the partner form are:
+The available warnings in the customer form are:
 
 * Create a warning for a sales order,
 
@@ -38,28 +37,13 @@ The available warnings in the partner form are:
 
 * Create a warning when invoicing a partner.
 
-For example, if you enter an alert for the invoicing of a customer, for an accountant entering an
-invoice for that customer, the alert message will be attached as shown in the figure :ref:`fig-warnsmp`.
-
-.. _fig-warnsmp:
+From above example,  you enter an alert for the sale order of a customer, so alert will be appear when sale order will be created for that customer, the alert message will be attached as shown in the following figure.
 
 .. figure:: images/warning_sample.png
    :scale: 75
    :align: center
 
-   *Alert from Invoicing a Customer*
-
-.. figure:: images/warning_product.png
-   :scale: 75
-   :align: center
-
-   *Management of Alerts on Products*
-
-The alerts that can be configured on a product form are related to:
-
-* The sales of that product,
-
-* The purchase of that product.
+   *Alert from Sale Order of a Customer*
 
 A practical example:
 

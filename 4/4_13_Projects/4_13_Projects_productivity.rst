@@ -110,7 +110,7 @@ example, you could define the following contexts:
    contractor, or mowing the lawn).
 
 An employee / system user can create his or her own contexts using the menu
-:menuselection:`Project --> Configuration --> Tasks --> Contexts`.
+:menuselection:`Project --> Configuration --> GTD --> Contexts`.
 
 Timebox
 ^^^^^^^
@@ -133,7 +133,7 @@ is usually fixed by the requirements of the project manager. A timebox, by contr
 with reference to what an individual can do.
 
 To define timeboxes for your company, use the menu
-:menuselection:`Project --> Configuration --> Tasks --> Timeboxes`.
+:menuselection:`Project --> Configuration --> GTD --> Timeboxes`.
 
 .. index:: methodology; GTD
 
@@ -193,17 +193,17 @@ A project or an objective over several days can be summarized in a single task. 
 detail each operation if the actions to be done are sufficiently clear to you.
 
 You have to empty your Tasks periodically. To do that, use the menu :menuselection:`Project
---> Project --> Tasks`. Assign a timebox and a context to each task. This operation should
+--> Project --> Tasks`. Assign a `Timeframe` and a `Context' to each task. This operation should
 not take more than a few minutes, because you are not dealing with the tasks themselves, just
 classifying them.
 
 .. figure::  images/service_timebox_day.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Timebox for tasks to be done today*
 
-Then click on the button at the top right :guilabel:`Plannify Timebox`. This procedure lets you
+Then click on the :guilabel:`Plannify Timebox` in More button. This procedure lets you
 select the tasks for the day from those in the timebox for the week. This operation gives you an
 overview of the medium term tasks and objectives and makes you review them there at least once a
 day. It is then that you would decide to allocate a part of your time that day to certain tasks based on
@@ -216,8 +216,8 @@ every task you know about in the future, but just from those selected for the cu
 Once the timebox has been completed you can start your daily work on the tasks. For each task, you
 can start work on it, delegate it, close it, or cancel it.
 
-At the end of the day, you empty the timebox using the button at the top right
-:guilabel:`Empty Timebox`. All the tasks that have not been done are sent back
+At the end of the day, you empty the timebox using the :guilabel:`Empty Timebox` from More button.
+All the tasks that have not been done are sent back
 to the weekly timebox to sit in amongst the tasks that will be planned next morning.
 
 Do the same each week and each month using the same principles, but just using the appropriate

@@ -19,7 +19,7 @@ select the default packaging type as a function of the quantities ordered.
 
 For example, if the customer wants to buy 30,000 batteries, the salesperson can select the ``palette`` package. OpenERP will then propose to sell 32,000 batteries, which corresponds to two palettes. Or the salesperson can select 75 packs.
 
-The available packages are defined in the product form, in the :guilabel:`Packaging` tab. The first item on the
+The available packages are defined in the product form, in the :guilabel:`Sales` tab . The first item on the
 list is the one that will be used by default.
 
 Once a package has been defined on the order, OpenERP will throw up an alert if the ordered

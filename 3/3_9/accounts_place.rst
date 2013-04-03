@@ -20,7 +20,7 @@ Start by choosing the most suitable analytic representation for your company bef
 Note that the data you see when creating an analytic account will depend upon the business applications installed.
 
 .. figure::  images/account_analytic_form.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Setting up an Analytic Account*
@@ -33,7 +33,7 @@ To create an analytic account, you have to complete the main fields:
 
 * the :guilabel:`Parent Analytic Account`: use this field to define the hierarchy between the accounts.
 
-* the :guilabel:`Account Type`: just like general accounts, the \ ``View``\ type is used for virtual accounts which are used only to create a hierarchical structure and for subtotals, and not to store accounting entries. The \ ``Normal``\ type will be used for analytic accounts containing entries.
+* the :guilabel:`Account Type`: just like general accounts, the \ ``Analytic View``\  type is used for virtual accounts which are used only to create a hierarchical structure and for subtotals, and not to store accounting entries. The \ ``Analytic Account``\  type will be used for usual accounts that you only want to use in accounting. If you select \ ``Contract or Project``\ , it offers you the possibility to manage the validity and the invoicing options for this account. The special type \ ``Template of Project``\  allows you to define a template with default data that you can reuse easily.
 
 If an analytic account (e.g. a project) is for a limited time, you can define a start and end date here.
 
@@ -57,7 +57,7 @@ The :guilabel:`Maximum Time` can be used for contracts with a fixed limit of hou
 Once you have defined the different analytic accounts, you can view your chart through the menu :menuselection:`Accounting --> Charts --> Chart of Analytic Accounts`. You can display analytic accounts for one or more periods or for an entire financial year.
 
 .. figure::  images/account_analytic_chart.png
-   :scale: 85
+   :scale: 60
    :align: center
 
    *Analytic Chart of Accounts*
@@ -100,7 +100,7 @@ These journals enable you to categorise the different accounting entries by thei
         because it would not be able to create an analytic accounting entry automatically.
 
 .. figure::  images/account_analytic_journal.png
-   :scale: 85
+   :scale: 60
    :align: center
 
    *Creating an Analytic Journal*
@@ -121,10 +121,10 @@ types available are:
 * \ ``General``\, for all other entries.
 
 The analytic journal now has to be linked to your general journals to allow OpenERP to post the analytic entries. For example, if you enter an invoice for a customer, OpenERP will automatically search for the analytic journal of type \ ``Sales``\ linked to your Sales Journal.
-Go to :menuselection:`Accounting--> Configuration --> Financial Accounting --> Journals --> Journals` and select for instance the Sales journal. In the :guilabel:`Analytic Journal` select the analytic sales journal.
+Go to :menuselection:`Accounting--> Configuration --> Journals --> Journals` and select for instance the Sales journal. In the :guilabel:`Analytic Journal` select the analytic sales journal.
 
 .. figure::  images/account_general_journal.png
-   :scale: 85
+   :scale: 60
    :align: center
 
    *Linking an Analytic Journal to a Journal*
@@ -146,7 +146,7 @@ You can configure these criteria using the menu :menuselection:`Accounting --> C
 According to the criteria you define here, the correct analytic account will be proposed when creating an order or an invoice.
 
 .. figure::  images/account_analytic_default.png
-   :scale: 85
+   :scale: 60
    :align: center
 
    *Specify Criteria to Automatically Select Analytic Account*

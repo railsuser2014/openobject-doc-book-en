@@ -13,7 +13,7 @@ France. Go to :menuselection:`Sales --> Products --> Products` and create a new 
    
    *Defining Products*
    
-In the ``Suppliers`` tab, you can select the supplier defined above. In the tab ``Logistical Flows``, we will define 
+In the ``Procurements`` tab, you can select the supplier defined above. In the tab ``Inventory``, we will define 
 the different flows in order to share the different objects between the companies. To order the product in Belgium from a sales order made in France, we will define a `Pull flow`.
 
 Flows

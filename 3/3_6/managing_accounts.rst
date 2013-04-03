@@ -14,7 +14,7 @@ OpenERP provides many tools for managing customer and supplier accounts. In this
   of all of your partners,
 
 * multi-level reminders, which is an automatic system for preparing reminder letters or emails when
-  invoices remain unpaid,
+  invoices remain unpaid.
 
 * detailed analysis of individual partners.
 
@@ -44,13 +44,13 @@ An ageing balance will indicate how much of the accounts receivable is overdue. 
     This report works best of you use payment terms or if you set a due date yourself.
 
 .. figure::  images/account_aged_balance.png
-   :scale: 85
+   :scale: 75
    :align: center
 
    *Aged Balance in the Past using a 30-days Period*
 
 .. figure::  images/account_aged_balance_fut.png
-   :scale: 85
+   :scale: 75
    :align: center
 
    *Aged Balance in the Future using a 30-days Period*
@@ -58,7 +58,7 @@ An ageing balance will indicate how much of the accounts receivable is overdue. 
 For an analysis by partner, you can use the partner balance that you get through the menu :menuselection:`Accounting --> Reporting --> Generic Reporting --> Partners --> Partner Balance`. The system then supplies you with a PDF report containing one line per partner representing debit, credit and balance. The total is displayed per account receivable.
 
 .. figure::  images/account_partner_balance_61.png
-   :scale: 85
+   :scale: 75
    :align: center
 
    *Partner Balance*
@@ -68,21 +68,21 @@ For an analysis by partner, you can use the partner balance that you get through
 If you want detailed information about all invoices, credit notes and payments related to partner, print the partner ledger from the menu :menuselection:`Accounting --> Reporting --> Generic Reporting --> Partners --> Partner Ledger`. You can choose to print one partner per page.
 
 .. figure::  images/account_partner_ledger_61.png
-   :scale: 85
+   :scale: 75
    :align: center
 
    *Partner Ledger*
 
-Furthermore, OpenERP also provides statistics about individual account entries, invoices and treasury, for instance. To look up statistic information about your accounting, explore the menu :menuselection:`Accounting --> Reporting --> Statistic Reports`. There you will find ``Invoices Analysis``, ``Entries Analysis`` and ``Treasury Analysis`` to name some. By default these statistics are displayed as a list which you can filter to fit your needs. Standard filter buttons, extended filters and grouping features allow you to make an in-depth analysis of your accounting. But the list is not all OpenERP has to offer. These statistic reports can be displayed as a graph simply by clicking the ``Graph`` button at the top right side of the screen. Notice that graphs allow for only one Group by function at a time.
+Furthermore, OpenERP also provides statistics about individual account entries, invoices and treasury, for instance. To look up statistic information about your accounting, explore the menu :menuselection:`Reporting --> Accounting`. There you will find ``Invoices Analysis``, ``Entries Analysis`` and ``Treasury Analysis`` to name some. By default these statistics are displayed as a list which you can filter to fit your needs. Standard filter buttons, extended filters and grouping features allow you to make an in-depth analysis of your accounting. But the list is not all OpenERP has to offer. These statistic reports can be displayed as a graph simply by clicking the ``Graph`` button at the top right side of the screen. Notice that graphs allow for only one Group by function at a time.
 
 .. figure::  images/account_entries_anal.png
-   :scale: 85
+   :scale: 75
    :align: center
 
    *Entries Analysis List View*
 
 .. figure::  images/account_entries_anal_graph.png
-   :scale: 85
+   :scale: 75
    :align: center
 
    *Entries Analysis Graph View*
@@ -103,7 +103,7 @@ Multi-step Reminders
 
 To automate the management of follow-ups (reminders) you should install the module :mod:`account_followup` (or check the `Followups Management` option in the `Add More Features` wizard).
 
-This module is integrated with the email features of OpenERP. Ask your system administrator to define the smtp server through the menu :menuselection:`Settings --> Configuration --> Email --> Outgoing Mail Servers`.
+This module is integrated with the email features of OpenERP. Ask your system administrator to define the smtp server through the menu :menuselection:`Settings --> Technical --> Email --> Outgoing Mail Servers`.
 
 Once the module is installed, configure your levels of follow-up using the menu :menuselection:`Accounting --> Configuration --> Miscellaneous --> Follow-Ups`.
 
@@ -144,7 +144,7 @@ To obtain a detailed statistical report of sent follow-ups go to the menu :menus
 
 The different reports are standard OpenERP screens, so you can filter them and explore the elements in detail.
 
-.. figure::  images/account_followup.png
+.. figure::  images/account_followup_sent.png
    :scale: 75
    :align: center
 
@@ -154,7 +154,7 @@ The different reports are standard OpenERP screens, so you can filter them and e
 Analyse your Turnover
 =====================
 
-Analyse your invoicing in OpenERP through the **Invoices Analysis** screen from the menu :menuselection:`Accounting --> Reporting --> Statistic Reports --> Invoices Analysis`.
+Analyse your invoicing in OpenERP through the **Invoices Analysis** screen from the menu :menuselection:`Reporting --> Accounting --> Invoices Analysis`.
 
 In this statistic report, the columns displayed will vary according to the selections and grouping made, thus making it a very flexible report to analyse your invoices.
 
@@ -164,7 +164,7 @@ You can easily group by partner, product category, ... or select only invoices t
 This is also an easy way to check your sales people's impact on turnover. You can see your turnover per product category, per salesman, per partner and many more options.
 
 .. figure::  images/account_invoice_analysis.png
-   :scale: 80
+   :scale: 75
    :align: center
 
    *Analysing your Invoices*
@@ -172,7 +172,7 @@ This is also an easy way to check your sales people's impact on turnover. You ca
 To quickly see the total turnover per customer in a graph view, group by ``Partner`` and click the ``Graph`` button to change to graph mode.
 
 .. figure::  images/account_turnover_analysis.png
-   :scale: 80
+   :scale: 75
    :align: center
 
    *Analysing your Customer's Turnover*

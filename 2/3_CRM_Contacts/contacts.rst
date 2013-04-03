@@ -33,9 +33,11 @@ The partner form is composed of several tabs.
 
 * the :guilabel:`Contact` tab contains information about different contacts of that partner (*company*).
 
+* the :guilabel:`Internal Notes` tab is an area for free text notes.
+
 * the :guilabel:`Sales & Purchases` tab contains information such as the default salesperson and sales team, whether the partner (*company*) is a \ ``Customer`` \ and/or a \ ``Supplier`` \ and its primary language.
 
-* the :menuselection:`Internal Notes` tab is an area for free text notes.
+* the :guilabel:`Accouting` tab contains information about Fiscal Position,Account Payable/Receivable,Credit Limit,etc..
 
 .. figure::  images/sales_purchases_tab.png
    :scale: 75
@@ -126,7 +128,7 @@ Performing Actions on Customers
    single: opportunity
    single: reminder
 
-At the right side of the `Customers` form view, you will find group of buttons(\ ``Schedule a Meeting``\, \ ``Purchase Orders``\, \ ``Supplier Invoices``\, \ ``Quotations and Sales``\  etc) are available. You can perform actions(by clicking on the ``More`` at the top) and print reports(by clicking on the ``Print`` at the top) both from List and from Form view, List view allowing you to do actions for several partners at the same time.
+At the right side of the `Customers` form view, you will find button(\ ``Quotations and Sales``\). You can perform actions(by clicking on the ``More`` at the top) and print reports(by clicking on the ``Print`` at the top) both from List and from Form view, List view allowing you to do actions for several partners at the same time.
 You can also add an attachment.
 
 .. tip:: Actions
@@ -165,7 +167,7 @@ Categorizing your Partners
 .. index::
    pair: partner; category
 
-OpenERP uses categories to organize all of its partners according to their relationship with your company (partner, prospect, supplier, and so on). Each partner may be attached to several categories. To open the list of available partner categories, use the menu :menuselection:`Sales --> Configuration --> Address Book --> Partner Categories`.
+OpenERP uses categories to organize all of its partners according to their relationship with your company (partner, prospect, supplier, and so on). Each partner may be attached to several categories. To open the list of available partner categories, use the menu :menuselection:`Sales --> Configuration --> Address Book --> Partner Tags`.
 
 .. figure::  images/crm_partner_category_big.png
    :scale: 75
@@ -175,7 +177,7 @@ OpenERP uses categories to organize all of its partners according to their relat
 
 .. note:: Categories
 
-        To create a new category, go to the menu :menuselection:`Sales --> Configuration --> Address Book --> Partner Categories` and click the `New` button.
+        To create a new category, go to the menu :menuselection:`Sales --> Configuration --> Address Book --> Partner Tags` and click the `Create` button.
 
 Because categories can be organized according to a tree structure, you can apply an action at any level of
 the structure: a marketing promotion activity, for example, can be applied either to all customers,

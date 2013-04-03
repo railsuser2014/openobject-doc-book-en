@@ -37,7 +37,7 @@ In the Product form, go to the ``Accounting`` tab and select the ``Real Time`` (
 
 To define your accounts, you have two options. Set them on the product category, or on the product.
 
-1. From the ``Accounting Stock Properties`` section, for the Product Category, set the ``Stock Input Account``, the ``Stock Output Account`` and the ``Stock Variation Account``,
+1. From the ``Accounting Stock Properties`` section, for the Product Category, set the ``Stock Input Account``, the ``Stock Output Account`` and the ``Stock Valuation Account``,
 
 2. From the ``Accounting`` tab, for the Product, set the ``Stock Input Account`` and the ``Stock Output Account``.
 
@@ -46,8 +46,7 @@ and Stock Output Account for a Location.
 
 .. note:: account_anglo_saxon 
 	
-	You can also install the account_anglo_saxon module (Reconfigure wizard, Anglo-Saxon Accounting) to value
-	your stock according to Anglo-saxon principles.
+	You can also install the account_anglo_saxon module to value your stock according to Anglo-saxon principles.
     
 The figure below shows the various accounts that can be used, with and without the account_anglo_saxon
 module installed.
@@ -71,7 +70,7 @@ This module will allow you:
 	:scale: 75
 	:align: center
 	
-	*Define the Delivery Method*
+	*Define the Delivery Method* (Warehouse -> Configuration -> Delivery Methods)
 	
 * To define the delivery pricelist according to the price, the weight or the volume.
 
@@ -79,7 +78,7 @@ This module will allow you:
 	:scale: 75
 	:align: center
 	
-	*Define the Delivery Costs*
+	*Define the Delivery Costs* (Warehouse -> Configuration -> Delivery -> Delivery Pricelist) 
 
 Now, in each :guilabel:`Delivery Order`, two new fields are available to enter the right 
 value to deliver the products to the customer. You can also find a new field in the :guilabel:`Sales Order`
@@ -89,13 +88,13 @@ form that enables you to select a delivery method.
 	:scale: 75
 	:align: center
 	
-	*Delivery Cost in the Delivery Orders*
+	*Delivery Cost in the Delivery Orders* (Warehouse -> Receiver/Deliver By Orders -> Delivery Orders)
 
 .. figure:: images/sale_order_delivcost.png	
 	:scale: 75
 	:align: center
 	
-	*Delivery Method in the Sales Orders*
+	*Delivery Method in the Sales Orders* (Sales -> Sales -> Sale Orders)
 
 .. Copyright © Open Object Press. All rights reserved.
 

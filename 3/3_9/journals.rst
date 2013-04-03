@@ -10,7 +10,7 @@ All your accounting entries need to appear in an accounting journal. So you shou
 Configuring a Journal
 ---------------------
 
-To view, edit or create new journals use the menu :menuselection:`Accounting --> Configuration --> Financial Accounting --> Journals --> Journals`.
+To view, edit or create new journals use the menu :menuselection:`Accounting --> Configuration --> Journals --> Journals`.
 
 .. figure::  images/account_journal_form.png
    :scale: 75
@@ -28,7 +28,7 @@ You can create a sequence for each journal. This sequence determines the automat
 
 .. tip:: Sequences
 
-    Sequences can also be created from the :menuselection:`Settings --> Configuration --> Sequences & Identifiers --> Sequences`.
+    Sequences can also be created from the :menuselection:`Settings --> Technical --> Sequences & Identifiers --> Sequences`.
     By default, OpenERP has only one sequence in the journal definition. If you need two separate sequences to be kept for the journal, you can install the module :mod:`account_sequence`.
 
 The default credit and debit account allow the software to automatically generate counterpart entries when you are entering data through :guilabel:`Journal Items`. In some journals, debit and credit accounts are mandatory. For example, in a bank journal you should put an associated bank account, so that you do not have to create counterparts for each transaction manually.
@@ -37,12 +37,12 @@ A journal can be marked as being centralised. When you do this, the counterpart 
 
 .. note:: Bank Journal, Easy Configuration
 
-    A bank journal can automatically be created from the bank account(s) you define for your company. Go to :menuselection:`Accounting --> Configuration --> Financial Accounting --> Accounts --> Setup your Bank Accounts`. Here you create the bank account or IBAN number of your company's bank account(s). Fill in the Bank Name, and when you save the entry, your Bank Journal will automatically be created with the Bank Name and the Account Number. The general ledger account for this bank will also be created for you.
+    A bank journal can automatically be created from the bank account(s) you define for your company. Go to :menuselection:`Accounting --> Configuration --> Accounts --> Setup your Bank Accounts`. Here you create the bank account or IBAN number of your company's bank account(s). Fill in the Bank Name, and when you save the entry, your Bank Journal will automatically be created with the Bank Name and the Account Number. The general ledger account for this bank will also be created for you.
 
 Controls and Tips for Data Entry
 --------------------------------
 
-You can carry out two types of control on journals in OpenERP – controls over the accounts and access controls for groups of users. In addition to these controls, you can also apply all of the standard user rights management.
+You can have control on journals in OpenERP – controls over the accounts.
 
 To avoid entering account data in wrong accounts, you can put conditions on the general accounts about which journal can use a given account. To do this, you have to list all the accounts or valid account types in the second tab, :guilabel:`Entry Controls`. If you have not added any accounts there, OpenERP applies no restriction on the accounts for that journal. If you list accounts and/or the types of accounts that can be used in a journal, OpenERP prevents you from using any account or account type not in that list. This verification step starts from the moment you enter data. You can only select allowed accounts or account types.
 

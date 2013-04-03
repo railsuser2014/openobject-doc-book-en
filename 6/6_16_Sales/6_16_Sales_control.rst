@@ -9,31 +9,25 @@ Configuring Orders
    pair: control; delivery
    pair: control; invoicing
 
-The way the order is configured will determine its future behaviour:
+The way the order is configured will determine its future behaviour , following fields are available :guilabel:`Other Information` tab of :guilabel:`Sale Orders` form:
 
-* :guilabel:`Picking Policy` : ``Partial Delivery`` or ``Complete Delivery``,
-
-* :guilabel:`Shipping Policy` : ``Shipping & Manual Invoice``, ``Payment Before Delivery``,
-  ``Invoice on Order After Delivery``, and ``Invoice from Delivery``,
-
-* :guilabel:`Invoice on` : ``Ordered Quantities`` or ``Shipped Quantities``.
-
-  .. tip::  Configuring your Interface
-
-     If you work in the ``Simplified`` view mode, only the :guilabel:`Shipping Policy` field is visible
-     in the second order tab.
-     To get to the ``Extended`` view mode, go to the :guilabel:`Edit Preferences` link and select the interface of your choice.
-     You can also use the :guilabel:`Reconfigure` wizard and configure your interface as :guilabel:`Extended`, or assign the group
-     :guilabel:`Usability – Extended View` to the current user.
+* :guilabel:`Shipping Policy` :  
+    * Partial: Deliver each product when available ,
+    * Complete: Deliver all products at once.
+* :guilabel:`Create Invoice` : 
+    * On demand: A draft invoice can be created from the sales order when needed.
+    * On delivery order: A draft invoice can be created from the delivery order when the products have been delivered. 
+    * Before delivery: A draft invoice is created from the sales order and must be paid before the products can be delivered.
+* :guilabel:`Invoice on` : 
+    Shipped Quantities and Order Quantities.  The sale order will automatically create the invoice proposition (draft invoice). Ordered and delivered quantities may not be the same. You have to choose if you want your invoice based on ordered or shipped quantities. If the product is a service, shipped quantities means hours spent on the associated tasks. By default it is Order Quantity and in 7.o it is invisible field.
+        
 
 Picking Mode
 ------------
 
 The picking mode determines the way the storesperson will do the picking. If the order is put
 into :guilabel:`Partial Delivery` mode, the picking order will appear in the list of things for the
-storesperson to do as soon as any of the products on the order is available. To get the list of
-items to be done, you can use the menu :menuselection:`Warehouse --> Outgoing Deliveries`.
-By default, the :guilabel:`Available` filter button is selected, so you immediately see the list of available pickings.
+storesperson to do as soon as any of the products on the order is available. 
 
 The storesperson will then be able to make a partial delivery of the quantities actually available
 and do a second picking operation later when the remaining products are available in stock.

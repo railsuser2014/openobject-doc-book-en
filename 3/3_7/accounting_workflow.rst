@@ -56,6 +56,10 @@ A pro forma invoice does not have an invoice number yet, nor accounting entries.
 It is commonly used as a preliminary invoice or for customs purposes.
 It is more formal than a draft invoice and a pro forma invoice can later be converted to an open invoice.
 
+.. tip:: Pro-forma in Invoice
+
+	Go to  menu :menuselection:`Settings --> Configuration --> Accounting` in eInvoicing & Payments section tick Allow pro-forma invoices. Then the `Pro-forma` will be shown in Invoice form.
+
 An open invoice has a unique invoice number. The invoice is sent to the customer and is marked on
 the system as awaiting payment.
 

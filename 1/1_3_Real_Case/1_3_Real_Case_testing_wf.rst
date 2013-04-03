@@ -31,8 +31,8 @@ Following this, you will sell some of these products, using this sequence:
 Purchase Order
 --------------
 
-To place a Purchase Order with your supplier, use the menu :menuselection:`Purchases --> Purchase Management -->
-Purchase Orders` and click the `New` button.
+To place a Purchase Order with your supplier, use the menu :menuselection:`Purchases --> Purchase -->
+Quotations` and click the `Create` button.
 
 Complete the following field:
 
@@ -46,7 +46,7 @@ Enter the following information
 
 *  :guilabel:`Product` : \ ``Titanium Alloy Radiator``\   - type in part of this name then
    press the tab key to complete it, or click the
-   :guilabel:`Search` icon at the end of the line to bring a search box. (if product is previously configured)
+   :guilabel:`Search More` at the end of the s to bring a search box. (if product is previously configured)
 
 When you have selected a product on the product line, OpenERP automatically completes the following
 fields from information it finds in the Product record:
@@ -64,6 +64,10 @@ fields from information it finds in the Product record:
 * :guilabel:`Taxes` : applicable taxes defined in the partner, if specified, otherwise in the
   product, if specified (there are not any in this example).
 
+.. note::  Analytic account
+
+    You may have ticked and Apply `Analytic accounting for purchases` from :menuselection:`Settings --> Purchases --> Purchase Order`
+
 You can edit any of these fields to suit the requirements of the purchase order at the time of
 entry. Change the:
 
@@ -75,14 +79,13 @@ Save the order line and close the :guilabel:`Order Line` window by clicking the
 :guilabel:`Close` button. You can then confirm the whole one-line order by clicking
 :guilabel:`Save`, which makes the form non-editable.
 
-It is now in a state of \ ``Request for
-Quotation``\ , so click :guilabel:`Convert to Purchase Order`, which corresponds to an approval from
+It is now in a state of \ ``Draft PO``\ , Confirm that by clicking `Confirm` Button which corresponds to an approval from
 a manager or from Accounts within your own company and moves the order into \ ``Approved`` \
 state.
+`Send by Email`, with the help of this button you can Request for Quotation and mean while your Draft PO moves in to \ ``RFQ sent``\ state.
 
-If you click the :guilabel:`Delivery & Invoicing` tab
-you will see the delivery :guilabel:`Destination` is your own company's ``Stock`` location and that
-the invoice was created from the order.
+If you click the :guilabel:`Incoming Shipments & Invoices` tab
+you will see the delivery :guilabel:`Destination` is your own company's ``Stock`` location and `Receive Invoice` button show you the draft invoice was created from the order.
 It is not entirely obvious at this stage, but the invoice is in a draft state so it can be
 edited and, crucially, has no accounting impact yet: it is just ready for your accounting
 group to activate it.
@@ -97,31 +100,19 @@ this would be somebody in Stores, who would:
 
 	   .. note:: From the Purchase Order
 
-	      You could have clicked the :guilabel:`Receptions` link to the right of the Purchase Order
+	      You could have clicked the :guilabel:`Incoming Shipment` Button to the top right of the Purchase Order form
 	      to reach the same screen, but this would confuse the purchasing role with the
-	      stores role. That link is very useful during testing and training, however.
+	      stores role. That Button is very useful during testing and training, however.
 
 	#. When the :guilabel:`Incoming Shipments` window appears, select the name of the entry in the list
 	   (\ ``IN/00002``\)   to display the Packing List itself – you would usually do a search for the supplier name
-	   or order number in a list that was larger than this – then click :guilabel:`Process` to load the
-	   :guilabel:`Process Document` form.
-
-	#. Click :guilabel:`Validate` to indicate that you are receiving the whole quantity of 10 units.
+	   or order number in a list that was larger than this – then click :guilabel:`Receive` to indicate that you are receiving the whole quantity of 10 units.
 
 At this point you have accepted 10 units into your company, in a location that you have already seen.
 
 Using the menu :menuselection:`Purchases --> Products --> Products` you can find the product `Titanium Alloy Radiators`
-with `Real Stock` and `Virtual Stock` 10. From the product form click on the link at the right most side `Stock by Location`,
-you can see the `Real Stock` and `Virtual Stock` of this product in various locations. Now click on the `Location Inventory Overview`
-report to see the inventory valuation per location.
-
-.. _fig-lotsbyloc:
-
-.. figure::  images/lots_by_location_pdf.png
-   :scale: 65
-   :align: center
-
-   *List of products and their stock levels*
+with `Quantity On Hand` and `Incoming` 10. From the product form click on `Stock by Location` from `More` button,
+you can see the `Quantity On Hand` and `Incoming Stock` of this product in various locations.
 
 .. tip:: Traceability in Double-entry
 
@@ -161,17 +152,17 @@ the ``Payable`` account.
 Paying the Supplier
 -------------------
 
-Select the menu :menuselection:`Accounting --> Suppliers --> Supplier Invoices` and click on the :guilabel:`Unpaid` button
+Select the menu :menuselection:`Accounting --> Suppliers --> Supplier Invoices` and click on the :guilabel:`Unpaid` Filter from Search
 for a list of supplier invoices that have not yet been paid. Write the
-``PO00001`` in  `Source Document` text itself to find the invoice.
+``PO00001`` in  search text box, itself to find the invoice.
 In practice, you would search for the invoice by order number or,
 more generally, for invoices nearing their payment date.
 
-Click on :guilabel:`Pay Invoice` button in the supplier invoice form. It opens the
-:guilabel:`Pay Invoice` window in new tab with a description of the payment.
+Click on :guilabel:`Pay` button in the supplier invoice form. It opens the
+:guilabel:`Pay Invoice` window with a description of the payment.
 
 ``Supplier`` and ``Date`` comes automatically from invoice. You need to just enter the
-``Payment Method``.  After that, click on :guilabel:`Validate` button to post this entry.
+``Payment Method``.  After that, click on :guilabel:`Pay` button to post this entry.
 
 .. index::
    single: module; account
@@ -200,15 +191,15 @@ From Sales Proposal to Sales Order
 In OpenERP, sales proposals and sales orders are managed using documents that are based on the
 same common functionality as purchase orders, so you will recognize the following documents in general
 but see changes to their detail and to their workflows. To create a new sales proposal, use the
-menu :menuselection:`Sales --> Sales --> Sales Orders` and click on `New` button which creates a new order in a state of \
-``Quotation``\  , then:
+menu :menuselection:`Sales --> Sales --> Quotations` and click on `Create` button which creates a new order in a state of \
+``Draft Quotation``\  , then:
 
-	#. Select the :guilabel:`Customer` \ ``Axelor`` \. This has the effect of automatically
+	#. Select the :guilabel:`Customer` \ ``Smith and Offspring`` \. This has the effect of automatically
 	   completing several other fields: :guilabel:`Ordering Contact`, :guilabel:`Invoice Address`,
 	   :guilabel:`Shipping Address`, and the :guilabel:`Pricelist` \ ``Public Pricelist (EUR)``\.  They are
 	   all only defaults, so these fields can be modified as you need.
 
-	#. Click the :guilabel:`New` button in :guilabel:`Sales Order Lines` section to open a :guilabel:`Sales Order Lines` window.
+	#. Click the :guilabel:`Add an iteam` link in :guilabel:`Sales Order Lines` section to open a :guilabel:`Sales Order Lines` window.
 
 	#. Select the product \ ``Titanium Alloy Radiator`` \. Although the :guilabel:`Product` field is not
 	   itself required, it is used by OpenERP to select the specific product so that several other fields
@@ -220,12 +211,12 @@ menu :menuselection:`Sales --> Sales --> Sales Orders` and click on `New` button
 	   Then click :guilabel:`Save & Close` and the line appears on the quotation form.
 
 	#. On the :guilabel:`Other Information` tab of this Sales Order, select a
-	   :guilabel:`Picking Policy` of ``Complete Delivery`` and
-	   :guilabel:`Shipping Policy` of ``Invoice on Order After Delivery`` from their dropdown menu lists.
+	   :guilabel:`Shipping Policy` of ``Deliver all products at once`` and
+	   :guilabel:`Create Invoice` of ``On Delivery Order`` from their dropdown menu lists.
+	   you can also define default Invoicing Method, use the menu :menuselection:`Settings --> Configuration --> Sales` under Invoicing Process set `The default invoicing method` is ``Invoice based on deliveries`` .
 
-	#. Return to the first tab :guilabel:`Sales Order` and validate the document by clicking
-	   :guilabel:`Confirm Order` which calculates prices and the changes the order's state from \
-	   ``Quotation``\  to \ ``In Progress`` \ as shown in screenshot :ref:`fig-ch03ord`.
+	#. Go back to the Quatation and validate the document by clicking :guilabel:`Confirm Sale` which calculates prices and the changes the order's state from \
+	   ``Quotation``\  to \ ``Sale Order`` \ as shown in screenshot :ref:`fig-ch03ord`.
 	   If you were in negotiation with the prospective customer,
 	   you would keep clicking :guilabel:`Compute` and :guilabel:`Save`, keeping the document in \
 	   ``Quotation``\  state for as long as necessary.
@@ -233,12 +224,12 @@ menu :menuselection:`Sales --> Sales --> Sales Orders` and click on `New` button
 	   .. _fig-ch03ord:
 
 	   .. figure:: images/order.png
-	      :scale: 75
+	      :scale: 55
 	      :align: center
 
 	      *Sales Order Form*
 
-	#. In the last tab of the order :guilabel:`History`, you can see the :guilabel:`Picking List`
+	#. By clicking :guilabel:`View Delivery Order` button, you can see the :guilabel:`Picking List`
 	   that has been created and you will be able to see any invoices that relate to this order when they are
 	   generated.
 
@@ -250,7 +241,7 @@ products: just the one, \ ``Titanium Alloy Radiator``\  , currently exists in th
 Preparing Goods for Shipping to Customers
 -----------------------------------------
 
-The stores manager selects the menu :menuselection:`Warehouse --> Warehouse Management -->
+The stores manager selects the menu :menuselection:`Warehouse --> Receive/Deliver By Orders -->
 Delivery Orders` to get a list of orders to dispatch. For this example, find the Delivery Order related
 to the sale order which you have created.
 
@@ -276,8 +267,8 @@ location, so start this process by clicking
 :guilabel:`Check Availability`. The :guilabel:`Move` line has now changed from the \ ``Confirmed``\   state to
 the \ ``Available``\   state.
 
-Then click the :guilabel:`Process` button to reach the :guilabel:`Process Document` window, where
-you click the :guilabel:`Validate` button to transfer the 6 radiators to the customer.
+Then click the :guilabel:`Deliver` button to reach the :guilabel:`Deliver Products` window, where
+you click the :guilabel:`Deliver` button to transfer the 6 radiators to the customer.
 
 To analyze stock movements that you have made during these operations, use
 :menuselection:`Warehouse --> Product --> Product` and find this product, then click on the action
@@ -290,21 +281,15 @@ Invoicing Goods
 Use the menu :menuselection:`Accounting --> Customers --> Customer Invoices`
 to open a list of Sales invoices generated by OpenERP. If they are in the \ ``Draft`` \
 state, it means that they do not yet have any presence in the accounting system. You will find a
-draft invoice has been created for the order \ ``SO00008``\   once you have dispatched the goods
-because you had selected \ ``Invoice on Order After Delivery``\  .
+draft invoice has been created for the order \ ``SO00001``\   once you have dispatched the goods
+because you had selected \ ``Invoice based on deliveries``\  .
 
-Once you confirm an invoice, OpenERP assigns it a unique number, and all of the corresponding
+Once you validate an invoice, OpenERP assigns it a unique number, and all of the corresponding
 accounting entries are generated. So open the invoice and click :guilabel:`Validate` to do that and
-move the invoice into an \ ``Open``\   state with a number of ``SAJ/2011/001``.
+move the invoice into an \ ``Open``\   state with a number of ``SAJ/2013/002``.
 
-You can send your customer the invoice for payment at this stage. Click :guilabel:`Print Invoice`
-to get a PDF document that can be printed or emailed to the customer.
-
-You can also attach the PDF document to the OpenERP invoice record. Save the PDF somewhere
-convenient on your PC (such as on your desktop). Then click the :guilabel:`Add` button to the top right of
-the invoice form (it looks like a clipboard). Browse to the
-file you just saved (\ ``record.pdf``\   if you did not change its name).
-This gives you a permanent non-editable record of your invoice on the OpenERP system.
+You can send your customer the invoice for payment at this stage. Print Invoice by Click :guilabel:`Print` or :guilabel:`Invoice` link from Print button
+to get a PDF document that can be printed to the customer.
 
 Review your chart of accounts to check the impact of these activities on your accounting. You will see
 the new revenue line from the invoice.
@@ -316,14 +301,14 @@ Registering an invoice payment by a customer is essentially the same as the proc
 supplier. From the menu :menuselection:`Accounting --> Customers --> Customer Invoices`,
 click the name of the invoice that you want to mark as paid:
 
-	#. Use the :guilabel:`Payment` button which opens a new window `Pay Invoice`.
+	#. Use the :guilabel:`Register Payment` button which opens a new window `Pay Invoice`.
 
-	#. Select the :guilabel:`Payment Method`, for this example select ``Cash`` then validate the entry.
+	#. Select the :guilabel:`Payment Method`, for this example select ``Bank(EUR)`` then Pay the entry.
 
 .. _fig_ch03faminv:
 
 .. figure::  images/familiarization_invoice.png
-   :scale: 75
+   :scale: 55
    :align: center
 
    *Invoice Form*

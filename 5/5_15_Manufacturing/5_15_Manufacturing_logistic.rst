@@ -6,7 +6,7 @@ Manufacturing Stock Locations
 
 OpenERP allows you to define a specific location to keep track of your manufacturing moves. 
 
-To get an overview of all stock moves, go to :menuselection:`Warehouse --> Traceability --> Stock Moves`. You can enter your Production location in the ``Location`` search field and then group by Source or Destination according to the moves you would like to check.
+To get an overview of all stock moves, go to :menuselection:`Warehouse --> Traceability --> Stock Moves`. You can enter your Production location in the search field and then group by Source or Destination according to the moves you would like to check.
 
 Traceability
 ++++++++++++
@@ -15,10 +15,10 @@ With traceability you can easily track your production lots in the software. Wit
 quickly find where your products are in your warehouse. In counterpart, you will be forced to mention a
 number of lot to each product to be able to track it in the system.
 
-To enable traceability in the manufacturing process, go to :menuselection:`Warehouse --> Product --> Products`. In the ``Product`` form, you have to select the box :guilabel:`Track Manufacturing Lots` in the :guilabel:`Lots` section on the ``Information`` tab.
+To enable traceability in the manufacturing process, go to :menuselection:`Warehouse --> Product --> Products`. In the ``Product`` form, you have to select the box :guilabel:`Track Manufacturing Lots` in the :guilabel:`Lots` section on the ``Inventory`` tab.
 
-In the manufacturing order, you have to mention a production lot number in order to continue the process.
-You can select the production lot in the :guilabel:`Manufacturing Order` form on the second tab, called :guilabel:`Finished Products`. You have to click the Products to Finish you want to trace, a new window will open. In the :guilabel:`Production Lot` field, click to link the manufacturing order to a production lot.
+In the manufacturing order, you have to mention a production serial number in order to continue the process.
+You can select the production serial number in the :guilabel:`Manufacturing Order` form on the tab, called :guilabel:`Finished Products`. You have to click the Products to Finish you want to trace, a new window will open. In the :guilabel:`Serial Number` field, click to link the manufacturing order to a serial number.
 
 .. figure:: images/prod_lot.png
     :scale: 75
@@ -26,10 +26,10 @@ You can select the production lot in the :guilabel:`Manufacturing Order` form on
     
     *Tracking a Manufacturing Order*
 
-When you have linked some manufacturing orders to production lots, you can trace them from the menu :menuselection:`Warehouse --> Traceability --> Production Lots`. In this view, you see the different production lots linked to a product. If you select one lot, you will have the possibility to choose between :guilabel:`Upstream Traceability` or :guilabel:`Downstream Traceability`.
+When you have linked some manufacturing orders to serial number, you can trace them from the menu :menuselection:`Warehouse --> Traceability --> Serial Number`. In this view, you see the different serial numbers linked to a product. If you select one number, you will have the possibility to choose between :guilabel:`Upstream Traceability` or :guilabel:`Downstream Traceability`.
 
 .. figure:: images/production_lots.png
-    :scale: 75
+    :scale: 60
     :align: center
     
     *Choosing between Upstream and Downstream Traceability*
@@ -44,24 +44,8 @@ When you have linked some manufacturing orders to production lots, you can trace
     suppliers of raw material. Note that the name is confusing - this would often be considered an upstream 
     direction. Think of it as **Where Supplied**.
 
-        
-.. figure:: images/upstream_trace.png
-    :scale: 75
-    :align: center
-    
-    *Upstream Traceability*
-
 The different lines show the stock moves attached to the production of the product. There are several
-stock moves that are traced due to the Bill of Materials attached to the product *[PC1] Basic PC*.
-    
-        
-.. figure:: images/downstream_trace.png
-    :scale: 75
-    :align: center
-    
-    *Downstream Traceability*        
-
-In this window, you only see the move for the finished product. This is related to the definition of the  concept of Downstream Traceability, which only shows the flow from the customer to the supplier of raw materials.
+stock moves that are traced due to the Bill of Materials attached to the product.
 
 Managing Repairs: from Repair to Invoicing and Stock Movements
 ==============================================================
@@ -73,7 +57,7 @@ The management of repairs is carried out through the module :mod:`mrp_repair`. O
 
 .. tip:: Repairs
 
-        To install this module, you can also use the ``Reconfigure`` wizard. In the *MRP Application Configuration* screen, check the ``Repairs`` option.
+        To install this module, Go to menu menu :menuselection:`Settings --> Configuration --> Manufacturing` in `Order`, tick Manage repairs of products.
 
 In OpenERP, a repair will have the following effects:
 
@@ -100,12 +84,12 @@ the system. You will see a blank form for the repair data, as shown in the figur
 .. _fig-mrprepnew2:
 
 .. figure:: images/mrp_repair_new.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Entering a New Repair*
 
-First enter the product to repair, then identify the product that will be repaired using the *product lot number*. OpenERP then automatically completes fields from the selected lot – the partner fields, address, delivery location and stock move.
+First enter the product to repair, then identify the product that will be repaired using the *product serial number*. OpenERP then automatically completes fields from the selected serial number – the partner fields, address, delivery location and stock move.
 
 If a warranty period has been defined in the product description, in months, OpenERP completes the field :guilabel:`Guarantee limit` with the correct warranty date.
 
@@ -140,7 +124,7 @@ This information is automatically proposed by the system, but you can modify it 
 On the second tab of the ``Repair`` form, ``Invoicing``, you can select whether the repair has to be invoiced or not, and if invoiced whether it should be before or after the repair. You can also select the applicable list price, a specific address and encode additional charges that need to be added to the repair invoice.
 
 .. figure:: images/mrp_repair_tab2.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Repair Form, Invoicing Tab*
@@ -155,7 +139,7 @@ A defined process handles a repair order – both the repair itself and the cust
 .. _fig-mrprepflow2:
 
 .. figure:: images/mrp_repair_workflow.png
-   :scale: 65
+   :scale: 60
    :align: center
 
    *Process to Handle a Repair*
@@ -172,7 +156,7 @@ On the second tab, you can specify the `Invoice Method`:
 
 You can then confirm the repair operation or create an invoice for the customer depending on the Invoice Method.
 
-The repair quotation can now be sent to the customer. Once the customer approves the repair, click the `Confirm Repair` button. From the menu :menuselection:`Manufacturing --> Manufacturing --> Repair Orders` you can easily find the confirmed repair orders by selecting the ``Confirmed`` button. Click `Start Repair` to indicate that you can start working on the repair. The Repair order will now be in the ``Under Repair`` state. When you finish the repair, click the ``End Repair`` button.
+The repair quotation can now be sent to the customer. Once the customer approves the repair, click the `Confirm Repair` button. From the menu :menuselection:`Manufacturing --> Manufacturing --> Repair Orders` you can easily find the confirmed repair orders by selecting the ``Confirmed`` Filter. Click `Start Repair` to indicate that you can start working on the repair. The Repair order will now be in the ``Under Repair`` state. When you finish the repair, click the ``End Repair`` button.
 
 .. index::
    pair: invoicing; repair
@@ -180,7 +164,7 @@ The repair quotation can now be sent to the customer. Once the customer approves
 Invoicing the Repair
 ++++++++++++++++++++
 
-When the repair is to be invoiced, a draft invoice is generated by the system. For an After Repair invoice, you can click the ``Make Invoice`` button. OpenERP will then show the draft invoice created at the top of the repair order (red text). You can easily go to that invoice simply by clicking the corresponding red text. This invoice contains the raw materials used (replaced components) and any other costs such as the time used for the repair. These other costs are entered on the second tab of the *Repair* form. Any information you entered for the quotation on the ``Notes`` tab will also be displayed on the invoice.
+When the repair is to be invoiced, a draft invoice is generated by the system. For an After Repair invoice, you can Select the repair record from the list and click the ``Make Invoice`` from More button. OpenERP will then show the draft invoice created at the top of the repair order. This invoice contains the raw materials used (replaced components) and any other costs such as the time used for the repair. These other costs are entered on the second tab of the *Repair* form. Any information you entered for the quotation on the ``Notes`` tab will also be displayed on the invoice.
 
 If the product to be repaired is still under guarantee, OpenERP automatically suggests that the components themselves are not invoiced, but will still use any other defined costs. You can override any of these default values while entering the data.
 
@@ -191,7 +175,7 @@ If the product to be repaired is still under guarantee, OpenERP automatically su
 Stock Movements and Repairs
 +++++++++++++++++++++++++++
 
-When the repair has been carried out, OpenERP automatically carries out stock movements for components that have been removed, added or replaced on the finished product. From the menu :menuselection:`Warehouse --> Traceability --> Stock Moves`, you can for instance enter the production lot to see all moves for the repaired product.
+When the repair has been carried out, OpenERP automatically carries out stock movements for components that have been removed, added or replaced on the finished product. From the menu :menuselection:`Warehouse --> Traceability --> Stock Moves`, you can for instance enter the production serial number to see all moves for the repaired product.
 
 The move operations are carried out using the locations shown in the first tab of the ``Repair`` form. If a destination location has been specified, OpenERP automatically handles the final customer delivery order when the repair has been completed. This also lets you manage the delivery of the repaired products.
 
@@ -200,7 +184,7 @@ For example, take the case of the shelf that was produced at the start of this c
 .. _fig-mrpreppan2:
 
 .. figure:: images/mrp_repair_panlat.png
-   :scale: 75
+   :scale: 60
    :align: center
 
    *Repair for a Side Panel*

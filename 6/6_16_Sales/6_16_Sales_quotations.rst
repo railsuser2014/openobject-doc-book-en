@@ -2,14 +2,11 @@
 Managing your Sales Quotations
 ==============================
 
-In OpenERP, a quotation and an order are handled in the same form (a Sales Order), but in different states. You
-can consider an order to be a quotation that has evolved, because it has been confirmed by the
+In OpenERP, now a quotation and an order are handled in the different menu. You can consider an order to be a quotation that has evolved, because it has been confirmed by the
 customer. Or, conversely, that a quotation is an order that has not been validated or cancelled yet.
-Both your quotations and sales orders can be opened using the menu :menuselection:`Sales
---> Sales --> Sales Orders`.
+Your quotations can be opened using the menu :menuselection:`Sales --> Sales --> Quotations`.
 
-To enter details of a new quotation, you can use the menu :menuselection:`Sales -->
-Sales --> Sales Orders` and then select :guilabel:`New`. OpenERP opens a new window
+To enter details of a new quotation, you can use the menu :menuselection:`Sales --> Sales --> Quotations` and then select :guilabel:`Create`. OpenERP opens a new window
 allowing you to enter data into a new blank quotation form. You can also create a quotation directly from an opportunity, as explained in a previous chapter.
 
 .. figure:: images/sale_quotation_new.png
@@ -26,21 +23,17 @@ Some information is automatically specified by the system:
 
 * the order date,
 
-* the pricelist for the current sales order.
+* the pricelist for the current Quotation.
 
 You can modify any of that information before validating the quotation. The customer
-reference is shown in the header of the order. This optional field is for the customer's own reference –
+reference is shown in the right side. This optional field is for the customer's own reference –
 if the customer does not supply one, just leave it empty.
 
-You then enter all the data about the order in the :guilabel:`Sales Order` tab. Start by entering
-the customer name, by selecting the correct customer from the list of customers in the system. From the quotation, you can
-create a new customer on the fly if necessary – press :kbd:`<F1>` in the empty :guilabel:`Customer` field to do that, or type the name, press the `Tab` key and then click `Create`. Indeed, when you type a name or part of a name in the ``Customer`` field, and OpenERP does not find a corresponding customer, you will see the `Create` button appear to allow you to directly create the customer with the name you entered.
+In new quotation form ,start by entering the customer name, by selecting the correct customer from the list of customers in the system. 
+From the quotation, you can create a new customer.
 
 Once the customer name has been selected, different fields of the order are completed
-automatically, based on the configuration of the partner form for that customer:
-
-* :guilabel:`Ordering Contact` : person handling the order at the customer end. By default, OpenERP
-  proposes the Ordering Contact at the selected partner.
+automatically, based on the configuration of that customer:
 
 * :guilabel:`Delivery Address` : address used on the delivery order. By default, OpenERP proposes
   the delivery address from the partner form. If no specific delivery address is defined, the default
@@ -50,10 +43,9 @@ automatically, based on the configuration of the partner form for that customer:
   proposes the address labelled :guilabel:`Invoice` from the partner form. If no specific invoice address is defined, the default
   address will be used instead.
 
-* :guilabel:`Pricelist` : will determine both the currency of the quotation and the price that will
-  be used for each product.
+* :guilabel:`Invoice Type` : available in :guilabel:`Other Information` tab, shows the invoice type(daily/monthly), if configure for that selected customer.
 
-* :guilabel:`Payment Term` : available in the :guilabel:`Other Information` tab, it shows the payment
+* :guilabel:`Payment Term` : also available in the :guilabel:`Other Information` tab, it shows the payment
   method that the customer will follow, for example ``30 Days End of Month``.
 
 You can modify any of these fields on the order as you go.
@@ -69,10 +61,7 @@ for assigning revenues to the project or case specified by this order.
    The sales carried out by the order can be allocated to the project so that profitability
    calculations can be made.
 
-Once the information has been entered, you can enter data for the order lines. To do that, create a
-new order line as shown in the figure :ref:`fig-slinf`.
-
-.. _fig-slinf:
+Once the information has been entered, you can enter data for the order lines in :guilabel:`Order Lines` tab .
 
 .. figure:: images/sale_line_form.png
    :scale: 75
@@ -83,21 +72,16 @@ new order line as shown in the figure :ref:`fig-slinf`.
 First of all, select the product that is to be sold to the customer. OpenERP shows some
 useful information in the list of products to help you making a sales quotation:
 
-* :guilabel:`Real Stock` : physically present in your warehouses. This value depends on the Shop (sales
+* :guilabel:`Quality On Hand` : physically present in your warehouses. This value depends on the Shop (sales
   point) selected in the order header. Different shops can be linked to different warehouses,
   giving different stock levels, or can use the same warehouse.
 
-* :guilabel:`Virtual Stock` : shows a salesperson the quantity that can be sold, taking into account
+* :guilabel:`Forecasted Quantity` : shows a salesperson the quantity that can be sold, taking into account
   both stock reserved for other orders and the number of products planned to arrive in the short term.
 
 * :guilabel:`Public Price` : the basic sales price for the given product. It provides a basis for the
   salesperson to be able to judge whether to offer a discount to the customer, and how much the
   discount should be.
-
-* :guilabel:`Pricelist` : (may not be shown, depending on the installed modules) depends on the pricing conditions attached to the customer, calculated on the list price. This is the price that is proposed by default in the customer quotation, unless it has been modified by the salesperson.
-
-* :guilabel:`Cost Price` : shows the cost price of the product. If the salesperson sells at less
-  than this amount, the company incurs a loss.
 
 .. figure:: images/sale_product_list.png
    :scale: 75
@@ -123,16 +107,6 @@ the product form.
    explicitly visible in an order form as a percentage difference from the list price,
    or just show a reduced unit price as in the default configuration.
 
-When you enter a quotation, the selected product is presented in the language of the user so that he can see
-what he is selling. The description of the product sold can also be expressed in the customer's language.
-The translation to the customer's language is used on the quotation or order when it is printed.
-
-.. figure:: images/sale_line_translation.png
-   :scale: 75
-   :align: center
-
-   *Selling a Product in a Partner Language that differs from the User Language*
-
 .. note:: One-off Sales
 
    If a product is sold to a customer only once, you do not have to create a completely new
@@ -141,8 +115,9 @@ The translation to the customer's language is used on the quotation or order whe
    description, price, quantity, lead time, taxes.
    In this case, OpenERP will not generate a delivery note because the a pure description is not a product, and so it is not in stock.
 
-When all of the products are entered, you can print the quotation and send it to the customer. To do
-this, click the :guilabel:`Quotation / Order` link in the :guilabel:`Reports` section to the right.
+When all of the products are entered, you can print the quotation by clicking :guilabel:`Print` button on the form. 
+Also you can send it to the customer by clicking :guilabel:`Send by Email` button on the form .
+
 OpenERP opens the quotation in PDF to enable to you to check it before printing.
 
 .. figure:: images/sale_print.png
@@ -151,11 +126,9 @@ OpenERP opens the quotation in PDF to enable to you to check it before printing.
 
    *Printing a Sales Quotation*
 
-When the order is confirmed by the customer, you can confirm the quotation to turn in into a sales order. You can also just cancel the window without confirming the order to leave it in quotation state. To see all the current quotations, you can use the menu :menuselection:`Sales --> Sales --> Sales Orders` and click the :guilabel:`Quotations` filter button.
+When the order is confirmed by the customer, you can confirm the quotation to turn in into a sales order. You can also just cancel the window without confirming the order to leave it in Draft Quotation state. To see all the current quotations, you can use the menu Sales ‣ Sales ‣ Quotation. (But Quotations menu contains only those Quotations which are in Draft Quotation state)
 
-To follow the process for your order, you can click on the process view (indicated by a question mark) from the order form. OpenERP
-shows you an interactive process view of that order. For more information about its use,
-look at :ref:`ch-process`.
+The process of Sale Order is like ,following figure.
 
 .. figure:: images/sale_process.png
    :scale: 75
