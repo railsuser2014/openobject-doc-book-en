@@ -102,12 +102,6 @@ and budgetary accounting. It is double-entry, multi-currency and multi-company.
         * if the companies share many documents, you can register them in the same database and install
           OpenERP's multi-company documents to finely manage access rights,
 
-        .. index::
-           single: module; base_synchro
-
-        * you can synchronize specified document types in several databases using the :mod:`base_synchro`
-          module, which is a shared-funding module rather than a module in the standard open repositories.
-
 One of the great advantages of integrating accounts with all of the other modules is in avoiding the
 double entry of data into accounting documents. So in OpenERP, an Order automatically generates an
 Invoice, and the Invoice automatically generates the accounting entries. These in turn generate tax
@@ -127,12 +121,9 @@ submissions, customer reminders, and so on. Such strong integration enables you 
 
 .. tip:: For Accountants
 
-        You can configure the Accounting application using the information given in the configuration wizard.
-
-        .. figure::  images/config_wiz_account.png
-           :scale: 55
-             
-        .. figure::  images/config_wiz_account1.png
+        You can configure the Accounting application using the information given in the configuration settings.
+               
+        .. figure::  images/acc_confif_einvoice.png
            :scale: 55
 
         With appropriate rights management, this allows trustees to
