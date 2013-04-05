@@ -103,8 +103,7 @@ confirmation or price quotation is printed. This note can be predefined on the p
 automatically appear on each order for that product. For example, you can enter “Do not forget to send
 by express delivery as specified in our contract reference 1234.”
 
-Once the document has been completed, you can print it as a price estimate to send to
-the supplier. You can set a note for the attention of the supplier in the form.
+Once the document has been completed, you can print it by clicking :guilabel:`Print` button on the form.
 
 .. figure:: images/purchase_quotation.png
    :scale: 75
@@ -112,9 +111,15 @@ the supplier. You can set a note for the attention of the supplier in the form.
 
    *Printing the Supplier Price Quotation*
 
-Then leave the document in the ``RFQ Sent`` state. When you receive a response from the supplier, use the menu
-:menuselection:`Purchases --> Purchase --> Quotations`. Select the
-order and complete its details.
+You can also send an e-mail by clicking :guilabel:`Send by Email` button on the form . Now it will be in the ``RFQ Sent`` state. 
+
+.. figure:: images/RFQ_sent.png
+   :scale: 75
+   :align: center
+
+   *Quotation after sending an e-mail in RFQ Sent State*
+   
+When you receive a response from the supplier, use the menu :menuselection:`Purchases --> Purchase --> Quotations`. Select the order and complete its details.
 
 When you want to approve the order, use the button :guilabel:`Confirm Order`. The price request then passes into the ``Purchase Order`` state. 
 No further changes are possible.
