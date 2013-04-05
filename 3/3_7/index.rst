@@ -158,6 +158,7 @@ with `Sales Management` installed and a generic chart of accounts.
     accounting_workflow
     invoicing
     accounting_entries
+    account_asset
 
 .. raw:: html
 
