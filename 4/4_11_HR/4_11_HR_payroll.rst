@@ -65,13 +65,13 @@ You can configure the following information:-
 - *Code* : A code for the salary rule. It must be unique.
 - *Category* : Select a category for a rule.
 - *Sequence* : Provide the sequence(integer).
+
 .. note:: Sequence
 
     Sequence plays a major role in the calculation and appearance of payslip lines. For example, a sequence defined on a rule calculating the Gross should always be greater than the sequence's given on Allowance's rules, else it won't be considered in the calculation of Gross value.
 
 - *Active* : If **False**, it will allow you to hide the salary rule without removing it.
 - *Appears on Payslip* : If **False**, it won't appear on the payslip but will be considered in the calculation.
-
 - *Condition Based on* : Consider a rule on the basis of some condition.
 
 1. ``Always True`` : As the name implies the condition is always True and hence rule will always be considered in the Payslip calculation.
@@ -207,7 +207,7 @@ Payslip lines will appear and will be calculated based on the sequence provided 
 
     - *Description* : Description regarding your working or leave day.
     - *Code* :  Code for Payslip Worked Days.
-    .. note:: You cannot change the code for working days i.e.'WORK100'.
+      .. note:: You cannot change the code for working days i.e.'WORK100'.
     - *Number of Days* : Number of Days an employee has worked or taken leave.
     - *Number of Hours* : Number of Hours for which an employee has worked or taken leave.
     - *Contract* : Contract to be applied for Payslip Worked Days.
@@ -230,7 +230,7 @@ Payslip lines will appear and will be calculated based on the sequence provided 
 Click on the Confirm button when the payslip is fully calculated and the Payment is made. It will change the state to ``Done``.
 
 Payslips Batch
-------------
+--------------
 
 Using the menu :menuselection:`Human Resources --> Payroll --> Payslips Batches` you can create payslips for various employees at a time.
 Its like a register which holds payslips of various employees created through ``Generate Payslips`` wizard.

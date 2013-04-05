@@ -257,7 +257,7 @@ Tenders
 
 To manage tenders, you should use the module :mod:`purchase_requisition`,you can install this module direct from :guilabel:`Settings` menu or you can select  Manage purchase requisitions option from configuration of Purchases in Settings menu  .
 This lets you create several supplier price requests for a single supply requirement. Once the module is installed, 
-OpenERP adds a new :menuselection:`Purchase Requisitions` menu in :menuselection:`Purchases --> Purchase `. You can then define the new tenders.
+OpenERP adds a new :menuselection:`Purchase Requisitions` menu in :menuselection:`Purchases --> Purchase`. You can then define the new tenders.
 
 .. figure:: images/purchase_tender.png
    :scale: 75

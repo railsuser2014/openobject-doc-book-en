@@ -193,7 +193,7 @@ A project or an objective over several days can be summarized in a single task. 
 detail each operation if the actions to be done are sufficiently clear to you.
 
 You have to empty your Tasks periodically. To do that, use the menu :menuselection:`Project
---> Project --> Tasks`. Assign a `Timeframe` and a `Context' to each task. This operation should
+--> Project --> Tasks`. Assign a ``Timeframe`` and a ``Context`` to each task. This operation should
 not take more than a few minutes, because you are not dealing with the tasks themselves, just
 classifying them.
 
