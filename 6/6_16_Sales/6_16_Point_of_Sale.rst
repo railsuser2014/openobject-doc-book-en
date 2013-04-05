@@ -4,7 +4,7 @@ Point of Sale
 
 You can manage your retail business and its account transactions using point_of_sale module. 
 
-  *This module provides fast and easy way to manage sales orders. The primary function of point-of-sale is to make transactions easy to manage without sacrificing quick, efficient service or customer data. There are different ways of making payments and to split them between different payment modes. Computation of amount of money and creation and confirmation of the pickings are done automatically.*
+  *This module provides fast and easy way to manage sales orders. It allows you to manage your shop sales very easily with a fully web based touchscreen interface. The primary function of point-of-sale is to make transactions easy to manage without sacrificing quick, efficient service or customer data. There are different ways of making payments and to split them between different payment modes. Computation of amount of money and creation and confirmation of the pickings are done automatically.*
 
 
 You can click on *Install* button given below the Point of Sales on the home page to install this module:
@@ -23,7 +23,8 @@ Daily sales of products, picking and delivery of the products and invoicing are 
 Generate Sale Orders
 --------------------
 
-For any retail business, the process flow of point of sale starts by making the sales orders. To start point of sale touchscreen application you can click on *Point of Sale ‣ Start Point of Sale*. It will open the following screen:
+For any retail business, the process flow of point of sale starts by making the sales orders. To start point of sale touchscreen application you can click on *Point of Sale ‣ Daily Operations ‣ Your Session*. And click button **New Session**.
+It will open the following screen:
 
 .. figure:: images/2_pos_order.png
    :scale: 75
@@ -51,7 +52,7 @@ Making Payment
 
 You need to make payment to complete a sale order. In OpenERP we provide you certain payment modes using which you can pay for your sale order.
 
-After finishing your order you can click on **Payment** button or any of the Cash registers listed on the left side. This will open a new screen which will display the total amount to be paid and selected register name. You can see it in the following figure:
+After finishing your order you can click on any of the Cash registers listed on the left side. This will open a new screen which will display the total amount to be paid and selected register name. You can see it in the following figure:
 
 .. figure:: images/4_pos_payment.png
    :scale: 75
@@ -64,13 +65,21 @@ There will be a **Validate** button on the screen. When you click on it a new sc
 Payment Receipt
 ---------------
 
-After you validate your sale order you will get a payment receipt and one button will appear **Next Order**, to create a new order. You can see it in the following screen:
+After you validate your sale order you will get a payment receipt and two button will appear **Next Order** and **Print**, You can see it in the following screen:
 
 .. figure:: images/5_pos_payment_receipt.png
    :scale: 75
    :align: center
 
    *Payment receipt*
+   
+If you click on print , you will find printed receipt as following figure, 
+
+.. figure:: images/5_pos_printed_receipt.png
+   :scale: 75
+   :align: center
+
+   *Printed Payment receipt*   
 
 .. Copyright © Open Object Press. All rights reserved.
 
