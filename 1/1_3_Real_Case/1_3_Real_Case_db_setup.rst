@@ -26,10 +26,6 @@ Create account types using :menuselection:`Accounting --> Configuration --> Acco
 :guilabel:`Create` button. You will need the following four types, the first of which is shown
 in figure :ref:`fig-oech03accty`.
 
-.. tip:: Usability Rights for Analytic Account menu
-
-   Admin have rights of `Usability / Technical Features` group. 
-
 .. table:: Defining Account Types
 
    ============== ======== ================================= ===============

@@ -15,8 +15,7 @@ When configuring the software, OpenERP allows you to choose predefined charts of
 Using a Preconfigured Chart of Accounts
 ---------------------------------------
 
-The software allows you to select a default chart of accounts from a huge list of predefined charts. To install the chart of accounts as well as the tax definitions for your own country (in most cases), select the chart corresponding to your country from the menu :menuselection:`Settings --> Configuration --> Accounting`.
-Then click on ``Install more chart templates.``
+The software allows you to select a default chart of accounts from a huge list of predefined charts. To install the chart of accounts as well as the tax definitions for your own country (in most cases), select the chart corresponding to your country from the menu :menuselection:`Settings --> Configuration --> Invoicing`.
 The ``Configurable Account Chart Template`` offers a default (but limited) set of accounts which can be used as a basic chart in any country. The list also includes a lot of localised charts of accounts.
 
 .. figure::  images/account_chart.png
@@ -25,10 +24,11 @@ The ``Configurable Account Chart Template`` offers a default (but limited) set o
 
    *Starting from a Configurable Account Chart Template*
 
-The wizard will change a bit according to the chart of accounts you select. For the `Configurable Account Chart Template` you will be able to add a tax percentage from the same wizard, but when you install, for instance, the chart named ``Belgium - Plan Comptable Minimum Normalise``, it will propose another wizard from where you can configure your sales and purchase tax. Here OpenERP will automatically install the tax configuration for Belgium too. You will, however, be able to select the default sales and purchase tax to be added when you create a new product.
+Then click on ``Install more chart templates.`` offers different counties chart of account.
+for instance, the chart named ``Belgium - Accounting``.
 
 .. figure::  images/set_your_accounting_options.png
-   :scale: 75
+   :scale: 55
    :align: center
 
    *Set Your Accounting Options*
@@ -48,6 +48,10 @@ Creating a Chart of Accounts
    pair: account; type
 
 Start by creating :guilabel:`Account Types`, which determine the kind of account and the way in which accounts will be treated at financial year closing.
+
+.. tip:: Account Type
+
+    For Access the Account Type, you have to assign ``Technical Features`` from :menuselection:`Settings --> Users --> Users`, Access Right.
 
 To add, modify or delete existing account types, go to the menu :menuselection:`Accounting --> Configuration --> Accounts --> Account Types`.
 
@@ -144,7 +148,7 @@ In OpenERP, you can use the concept of virtual charts of accounts to manage seve
 
 So your general chart of accounts can be the one imposed by the statutes of your country, and your CEO can then have other virtual charts as necessary, based on the accounts in the general chart. For example, you can create a view per department, a cash-flow and liquidity view, or consolidated accounts for different companies.
 
-The most interesting thing about virtual charts of accounts is that they can be used in the same way as the default chart of accounts for the whole organization. For example, you can establish budgets from your consolidated accounts or from the accounts from one of your companies.
+The most interesting thing about virtual charts of accounts is that they can be used in the same way as the default chart of accounts for the whole organization. For example, you can establish budgets from your consolidated accounts or the accounts from one of your companies.
 
 .. tip:: Virtual Accounts
 
@@ -168,7 +172,7 @@ The most interesting thing about virtual charts of accounts is that they can be 
 
         So there are good reasons for viewing the impact of financial transactions through virtual charts, such as budgets and financial indicators based on special views of the company.
 
-To create a new chart of accounts you should create a root account using the menu :menuselection:`Accounting --> Configuration --> Financial Accounting --> Accounts --> Accounts`. Your top level account should have a name, a code (different from any other code in your current chart), an :guilabel:`Internal Type` and :guilabel:`Account Type`  \ ``View``\. Then you can choose your structure by creating other accounts of :guilabel:`Account Type` \ ``View``\ as necessary. The :guilabel:`Internal Type` should be of the ``Consolidation`` type if you want to map accounts. Check your virtual structure using the menu :menuselection:`Financial Management --> Charts --> Charts of Accounts` and select the corresponding chart in the drop-down list at the top of the screen.
+To create a new chart of accounts you should create a root account using the menu :menuselection:`Accounting --> Configuration --> Accounts --> Accounts`. Your top level account should have a name, a code (different from any other code in your current chart), an :guilabel:`Internal Type` and :guilabel:`Account Type`  \ ``View``\. Then you can choose your structure by creating other accounts of :guilabel:`Account Type` \ ``View``\ as necessary. The :guilabel:`Internal Type` should be of the ``Consolidation`` type if you want to map accounts. Check your virtual structure using the menu :menuselection:`Accounting --> Charts --> Charts of Accounts` and select the corresponding chart in the drop-down list at the top of the screen.
 
 To be able to map your virtual chart of accounts to your general chart of accounts, you have to set :guilabel:`Internal Type` as ``Consolidation``. From the :guilabel:`Consolidated Children` you can then map accounts or make accounts consolidate. In the :guilabel:`Consolidated Children`, you can add ``View`` accounts or normal accounts. If you add a ``View`` account to the consolidated children, OpenERP will automatically include all existing and future linked accounts.
 

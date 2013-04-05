@@ -8,13 +8,13 @@ You can define whatever payment terms you need in OpenERP. Payment terms determi
 for paying an invoice.
 
 To define new payment terms, use the menu :menuselection:`Accounting -->
-Configuration --> Miscellaneous --> Payment Terms` and then click :guilabel:`New`.
+Configuration --> Miscellaneous --> Payment Terms` and then click :guilabel:`Create`.
 
 The figure below represents the following payment term: 5000 within 5 days, 50% payment at the last day of current month,
 Remaining on 15th of next month.
 
 .. figure::  images/account_payment_term.png
-   :scale: 75
+   :scale: 55
    :align: center
 
    *Configuring payment terms*
@@ -23,12 +23,9 @@ To configure new conditions, start by giving a name to the :guilabel:`Payment Te
 you put in the field :guilabel:`Description on invoices`, is used on invoices, so enter a clear description of
 the payment terms there.
 
-Then create individual lines for calculating the terms in the section :guilabel:`Payment Term`. You
-must give each line a name (:guilabel:`Line Name`). These give an informative title and do not affect
-the actual calculation of terms. The :guilabel:`Sequence` field lets you define the order in which
-the rules are evaluated.
+Then create individual lines for calculating the terms in the section :guilabel:`Payment Term`.
 
-The :guilabel:`Valuation` field enables you to calculate the amount to pay for each line:
+The :guilabel:`Amount to pay` field enables you to calculate the amount to pay for each line:
 
 * ``Percent`` : the line corresponds to a percentage of the total amount, the factor being
   given in :guilabel:`Value Amount`. The number indicated in :guilabel:`Value Amount` must take a value between 0 and 1.
@@ -42,11 +39,11 @@ errors. The highest sequence number is evaluated last.
 
 The two last fields, :guilabel:`Number of Days` and :guilabel:`Day of the Month`, enable the calculation of
 the delay in payment for each line. The delay :guilabel:`Day of the Month` can be set to \ ``-1`` \, \ ``0`` \
-or any positive number. For example, if today is 20th December 2010, and if you want to set payment terms like this:
+or any positive number. For example, if today is 20th December 2012, and if you want to set payment terms like this:
 
-* :guilabel:`5000 within 5 days`: set `Valuation` ``Fixed Amount``, `Number of Days` ``5`` and `Day of the Month` ``0``. That creates journal entry for date 25th December 2010.
-* :guilabel:`50% payment at the last day of current month`: set `Valuation` ``Percent``, `Number of Days` ``0`` and  `Day of the Month` ``-1``. That creates journal entry for date 31st December 2010.
-* :guilabel:`Remaining on 15th of next month`: set `Valuation` ``Balance``, `Number of Days` ``0`` and  `Day of the Month` ``15``. That creates journal entry for date 15th January 2011.
+* :guilabel:`5000 within 5 days`: set `Valuation` ``Fixed Amount``, `Number of Days` ``5`` and `Day of the Month` ``0``. That creates journal entry for date 25th December 2012.
+* :guilabel:`50% payment at the last day of current month`: set `Valuation` ``Percent``, `Number of Days` ``0`` and  `Day of the Month` ``-1``. That creates journal entry for date 31st December 2012.
+* :guilabel:`Remaining on 15th of next month`: set `Valuation` ``Balance``, `Number of Days` ``0`` and  `Day of the Month` ``15``. That creates journal entry for date 15th January 2013.
 
 You can then add payment terms to a Partner through the tab :guilabel:`Accounting` on the partner form.
 
