@@ -130,7 +130,15 @@ Cash Management
 ---------------
 
 To manage cash, you can use the menu :menuselection:`Accounting -->
-Bank and Cash --> Cash Registers`. At the start of the day you set the opening amount of cash in the entry (:guilabel:`Opening Balance`). Then open the cashbox to start making entries from the :guilabel:`Cash Transactions` tab.
+Bank and Cash --> Cash Registers`. At the start of the day you set the opening amount of cash in the entry (:guilabel:`Opening Balance`). 
+Then click on button :guilabel:`Open CashBox`, after you can start making entries from the :guilabel:`Cash Transactions` tab.
+
+.. note::  Cash Control
+
+        You have to go menu :menuselection:`Accounting --> Configuration --> Journals --> Journals` and open the cash journal , then go to the Cash Register tab of form and select option ``Opening With Last Losing Balance`` and ``Cash Control``. 
+        
+        Because if you do not select that options , than you will find Opening Cash Control field 0.00 of Cash Register form. So first you have to configure Journal.
+        
 
 .. figure::  images/account_cash_registers.png
    :scale: 60
@@ -138,7 +146,7 @@ Bank and Cash --> Cash Registers`. At the start of the day you set the opening a
 
    *Defining the Cash Register*
 
-All the transactions throughout the day are then entered in this statement. When you close the cashbox, generally at the end of the day, enter the amounts on the :guilabel:`CashBox` tab, in the
+All the transactions throughout the day are then entered in this statement. When you close the cashbox, generally at the end of the day, enter the amounts on the :guilabel:`Cash Control` tab, in the
 :guilabel:`Closing Balance` section. Then confirm the statement to close the day's cash statement and automatically
 generate the corresponding accounting entries. Note that the :guilabel:`Calculated Balance` and the :guilabel:`CashBox Balance` need to be equal before you can close the cashbox.
 
@@ -156,11 +164,11 @@ create entries directly in a journal (line by line) without using the dedicated 
 often used for miscellaneous entries.
 
 To make manual entries, go to the following menu :menuselection:`Accounting --> Journal Entries -->
-Journal Items`. In the :guilabel:`Journal` field from the filter, select the journal in which you want to post, then click :guilabel:`Find`. When you select a journal in this filter, you do not have to fill in the journal when posting new entries.
+Journal Items`. In the :guilabel:`Journal` field from the filter, select the journal in which you want to post. When you select a journal in this filter, you do not have to fill in the journal when posting new entries.
 
 Let us give the example of a purchase invoice. Note, however, that these entries are usually generated automatically by OpenERP.
 
-Click the :guilabel:`New` button. Fill these fields manually in the following order:
+Click the :guilabel:`Create` button. Fill these fields manually in the following order:
 
 *  :guilabel:`Reference`: reference from the invoice or entry,
 
@@ -230,8 +238,7 @@ reconcilable (the :guilabel:`Reconcile` field).
         reconciliation.
         Account reconciliation consists of linking account entries with each other, while statement reconciliation consists of
         verifying that your bank statement corresponds to the entries of that account in your accounting system.
-        You can perform statement reconciliation using the menu :menuselection:`Invoicing --> Periodical Processing --> Statements --> Statements Reconciliation`.
-
+        
 There are different methods of reconciling entries. You have already seen the reconciliation of
 entries while doing data entry in an account. Automatic and manual reconciliations are described
 here.
@@ -257,11 +264,11 @@ Note that you can also choose a maximum write-off amount, if you allow payment d
 
    *Form for Automatic Reconciliation*
 
-To start the reconciliation tool, click :menuselection:`Invoicing --> Periodical Processing --> Reconciliation --> Automatic Reconciliation`.
+To start the reconciliation tool, click :menuselection:`Accounting --> Periodical Processing --> Reconciliation --> Automatic Reconciliation`.
 
 A form opens, asking you for the following information:
 
-* :guilabel:Add `Accounts to Reconcile` : you can select one, several or all reconcilable accounts,
+* :guilabel:`Add Accounts to Reconcile` : you can select one, several or all reconcilable accounts,
 
 * the Reconciliation :guilabel:`Power`  (from \ ``2``\   to \ ``4``\  ),
 
@@ -307,24 +314,18 @@ Select entries that you want to reconcile. OpenERP indicates the sum of debits
 and credits for the selected entries. When these are equal you can click the :guilabel:`Reconcile Entries`
 button to reconcile the entries.
 
-        .. note::  *Example Real Case of Using Reconciliation*
+.. note::  *Example Real Case of Using Reconciliation*
 
-                        Suppose that you are entering customer order details. You wonder what is outstanding on the
-                        customer account (that is the list of unpaid invoices and unreconciled payments). To review
-                        it from the order form, navigate to the :guilabel:`Partner` record and select
-                        the view :guilabel:`Receivables and Payables`. OpenERP opens a history of unreconciled accounting entries
-                        on screen.
+                        Suppose that you are entering customer order details. 
+                        You wonder what is outstanding on the customer account (that is the list of unpaid invoices and unreconciled payments). 
+                        To review it from the order form, navigate to the :guilabel:`Partner` record and select the view :guilabel:`Receivables and Payables`.
+                        OpenERP opens a history of unreconciled accounting entries on screen.
+                        
+                        After running the `Reconcile Entries` wizard, these lines can no longer be selected and will not appear when the entries are listed again. 
+                        If there is a difference between the two entries, OpenERP suggests you to make an adjustment. 
+                        This "write-off" is a compensating entry that enables a complete reconciliation. You must therefore specify the journal and the account to be used for the write-off.
 
-                    .. figure::  images/account_sample2_entries.png
-                       :align: center
-                       :scale: 65
-
-                       *Unreconciled Accounting Entries*
-
-                        After running the `Reconcile Entries` wizard, these lines can no longer be selected and will not appear when the                                entries are listed again. If there is a difference between the two entries, OpenERP suggests you to make
-                        an adjustment. This "write-off" is a compensating entry that enables a complete reconciliation. You must
-                        therefore specify the journal and the account to be used for the write-off.
-
+           
 For example, if you want to reconcile the following entries:
 
 .. csv-table:: Entries for reconciliation
