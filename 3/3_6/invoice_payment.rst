@@ -106,7 +106,7 @@ It is important to efficiently keep track of payments of your customers and supp
 :guilabel:`Customer Payment` allows you to register the payments you receive from your customers.
 In order to record a payment, you have to enter the customer, the payment method (= the journal) and the payment amount. OpenERP will automatically propose the reconciliation of this payment with any open invoices or sales receipts, credit notes and (advance) payments.
 
-You can register Customer payments in OpenERP from the menu :menuselection:`Accounting --> Customers --> Customer Payment`; click `New` to register a payment.
+You can register Customer payments in OpenERP from the menu :menuselection:`Accounting --> Customers --> Customer Payment`; click `Create` to register a payment.
 
 .. figure::  images/account_customer_payment.png
    :scale: 75
@@ -141,7 +141,7 @@ Validate the payment. The system will now create an advance payment of 1000 for 
 
     The ``Supplier Payment`` form allows you to track the payment to your suppliers in the same way as a customer payment.
 
-From the menu :menuselection:`Accounting --> Suppliers --> Supplier Payment`, click the `New` button to create a new `Supplier Payment`.
+From the menu :menuselection:`Accounting --> Suppliers --> Supplier Payment`, click the `Create` button to create a new `Supplier Payment`.
 
 .. figure::  images/account_supplier_payment.png
    :scale: 75
@@ -151,11 +151,11 @@ From the menu :menuselection:`Accounting --> Suppliers --> Supplier Payment`, cl
 
 Another way of keeping track of your payments is the way accountants will do it, by encoding ``Bank Statements``. For more information about this, please refer to the chapter on :ref:`invoicemanagement`.
 
-You can also push your accounting further by importing your payments electronically through a CODA file you receive from the bank. To do this install the :mod:`account_coda` module.
+You can also push your accounting further by importing your payments electronically through a CODA file you receive from the bank. To do this install the :mod:`l10n_be_coda` module.
 
 How should you proceed?
 
-You have to enter your company's bank account(s) for which you want to accept CODA files. Go to the menu :menuselection:`Accounting --> Configuration --> Financial Accounting --> Accounts --> Setup your Bank Accounts`. Choose the bank account type you want to use (IBAN or normal bank account). For electronic payments, you should use IBAN; do not forget to also enter your bank's BIC code.
+You have to enter your company's bank account(s) for which you want to accept CODA files. Go to the menu :menuselection:`Accounting --> Configuration --> Accounts --> Setup your Bank Accounts`. Choose the bank account type you want to use (IBAN or normal bank account). For electronic payments, you should use IBAN; do not forget to also enter your bank's BIC code.
 
 .. tip:: Bank Journal
 
@@ -163,11 +163,11 @@ You have to enter your company's bank account(s) for which you want to accept CO
 
 Then add the bank account details for each partner that will pay you through a bank. You can do this in the Partner form, on the ``Accounting`` tab.
 
-Download the CODA file from your bank to any directory. Import the electronic bank statement through the menu :menuselection:`Accounting --> Periodical Processing --> Statements --> Import Coda Statements`.
+Download the CODA file from your bank to any directory. Import the electronic bank statement through the menu :menuselection:`Accounting --> Bank and Cash --> Import CODA File`.
 
-Enter the data required in the wizard (receivable and payable account, bank journal and a default account to post to when no corresponding partner is found). Then select the CODA file in your directory and click the ``Import`` button to start processing the CODA file.
+Enter the data required in the wizard . Then select the CODA file in your directory and click the ``Import`` button to start processing the CODA file.
 
-OpenERP will then import a draft bank statement in the selected journal and will match all corresponding customer / supplier payments when possible. You can change the draft statement if necessary from the menu :menuselection:`Accounting --> Bank and Cash --> Bank Statements`. You can check any issues during file loading from the menu :menuselection:`Accounting --> Bank and Cash --> Coda Import Logs`.
+OpenERP will then import a draft bank statement in the selected journal and will match all corresponding customer / supplier payments when possible. You can change the draft statement if necessary from the menu :menuselection:`Accounting --> Bank and Cash --> Bank Statements`. 
 
 .. Copyright © Open Object Press. All rights reserved.
 

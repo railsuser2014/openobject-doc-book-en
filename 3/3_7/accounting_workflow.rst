@@ -102,17 +102,6 @@ If you receive a payment of 120, OpenERP will delay reconciliation because there
 invoices to pay. It could either reconcile the payment against invoices 145 and 184 or against
 invoice 167.
 
-.. tip:: Treatment in Lots
-
-        Usually, different transactions are grouped together and handled at the same time rather than
-        invoice by invoice. This is called batch work or lot handling.
-
-        You can select several documents in the list of invoices: check the checkboxes of
-        the interesting lines using the web client and click the appropriate shortcut button at the right;
-        or shift-click the lines using the mouse in the GTK client and use the action or print button at
-        the top –
-        these give you the option of a number of possible actions on the selected objects.
-
 At regular intervals, and independent of the invoices, an automatic import procedure or a manual
 accounts procedure can be used to bring in bank statements. These comprise all of the payments of
 suppliers and customers and general transactions, such as between accounts.
