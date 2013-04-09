@@ -29,11 +29,11 @@ To create an analytic account, you have to complete the main fields:
 
 * the :guilabel:`Account Name`,
 
-* the :guilabel:`Code/Reference`: used as a shortcut for selecting the account,
-
-* the :guilabel:`Parent Analytic Account`: use this field to define the hierarchy between the accounts.
+* the :guilabel:`Reference`: used as a shortcut for selecting the account,
 
 * the :guilabel:`Account Type`: just like general accounts, the \ ``Analytic View``\  type is used for virtual accounts which are used only to create a hierarchical structure and for subtotals, and not to store accounting entries. The \ ``Analytic Account``\  type will be used for usual accounts that you only want to use in accounting. If you select \ ``Contract or Project``\ , it offers you the possibility to manage the validity and the invoicing options for this account. The special type \ ``Template of Project``\  allows you to define a template with default data that you can reuse easily.
+
+* the :guilabel:`Parent Analytic Account`: use this field to define the hierarchy between the accounts.
 
 If an analytic account (e.g. a project) is for a limited time, you can define a start and end date here.
 

@@ -13,7 +13,7 @@ Configuring a Journal
 To view, edit or create new journals use the menu :menuselection:`Accounting --> Configuration --> Journals --> Journals`.
 
 .. figure::  images/account_journal_form.png
-   :scale: 75
+   :scale: 55
    :align: center
 
    *Defining an Accounting Journal*

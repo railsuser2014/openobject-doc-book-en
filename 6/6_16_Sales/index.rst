@@ -29,12 +29,10 @@ with :mod:`sale` and its dependencies installed and no particular chart of accou
     6_16_Sales_packing
     6_16_Sales_alerts
     6_16_Sales_control
+    6_16_Point_of_Sale
     6_16_Sales_carriers
     6_16_Sales_margins
     6_16_Sales_pricing
-    6_16_Sales_rebates
-    6_16_Sales_open
-    6_16_Sales_layout
 
 .. raw:: html
 

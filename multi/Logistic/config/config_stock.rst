@@ -26,7 +26,7 @@ We have to create three new warehouses. One for OpenERP, one for OpenERP Belgium
    
    *Warehouses*
 
-Go to :menuselection:`Warehouse --> Configuration --> Warehouse Management --> Warehouses` and create the different warehouses
+Go to :menuselection:`Warehouse --> Configuration --> Warehouses` and create the different warehouses
 according to the parameters shown in picture :ref:`fig-wareh`.
 
 .. _fig-wareh:
@@ -51,7 +51,7 @@ those companies.
    
    *Locations*
 
-Go to :menuselection:`Warehouse --> Configuration --> Warehouse Management --> Locations` and create the different locations with 
+Go to :menuselection:`Warehouse --> Configuration --> Locations` and create the different locations with 
 the parameters defined in the picture :ref:`fig-loc`.
 
 .. _fig-loc:
@@ -74,7 +74,7 @@ it to OpenERP Belgium for the delivery of the products.
    
    *Defining a Shop*
 
-Go to :menuselection:`Sales --> Configuration --> Sales --> Shop` to define a shop for OpenERP France.
+Go to :menuselection:`Sales --> Configuration --> Shop` to define a shop for OpenERP France.
 
 .. Copyright © Open Object Press. All rights reserved.
 

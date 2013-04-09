@@ -33,7 +33,7 @@ You will develop a real case through the following phases:
 	#. Test the system with your database.
 
 The case is deliberately simple to provide you with a foundation for the more complex
-situations you might have to handle in your company. Throughout this chapter, we assume that you access OpenERP through its web interface. And it is also assumed (as in the rest of this book) that you are using the latest download of OpenERP version 6, the stable production version at the time of writing (not the trunk version, which is likely to have new and potentially unstable features).
+situations you might have to handle in your company. Throughout this chapter, we assume that you access OpenERP through its web interface. And it is also assumed (as in the rest of this book) that you are using the latest download of OpenERP version 7, the stable production version at the time of writing (not the trunk version, which is likely to have new and potentially unstable features).
 
 .. raw:: html
 

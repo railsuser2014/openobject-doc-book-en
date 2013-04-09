@@ -63,7 +63,7 @@ OpenERP shows the title of the opportunity (taken from the lead description) and
 
 
 The Kanban View: Everything at a Glance
-----------------------------
+---------------------------------------
 
 In order to improve the end user productivity, we developed a drag & drop kanban view for some documents. This new view allows users to easily reorganize their records while allowing them to maintain a global overview.
 

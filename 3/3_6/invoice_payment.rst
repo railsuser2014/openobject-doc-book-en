@@ -143,7 +143,7 @@ Validate the payment. The system will now create an advance payment of 1000 for 
 
 From the menu :menuselection:`Accounting --> Suppliers --> Supplier Payment`, click the `Create` button to create a new `Supplier Payment`.
 
-.. figure::  images/supplier_payment.png
+.. figure::  images/account_supplier_payment.png
    :scale: 75
    :align: center
 

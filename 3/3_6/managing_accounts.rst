@@ -101,7 +101,7 @@ To automate the management of follow-ups (reminders) you should install the modu
 
 This module is integrated with the email features of OpenERP. Ask your system administrator to define the smtp server through the menu :menuselection:`Settings --> Technical --> Email --> Outgoing Mail Servers`.
 
-Once the module is installed, configure your levels of follow-up using the menu :menuselection:`Accounting --> Configuration --> Follow-Up Levels `.
+Once the module is installed, configure your levels of follow-up using the menu :menuselection:`Accounting --> Configuration --> Follow-Up Levels`.
 
 .. note:: Follow-ups
 

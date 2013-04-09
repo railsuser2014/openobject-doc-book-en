@@ -61,7 +61,7 @@ Create a new journal to post your opening entries. Make sure to respect the foll
 
 We recommend you to create separate purchase and sales journals to post the outstanding entries from your previous accounting system. This will allow you to easily keep track of your opening entries.
 
-Go to :menuselection:`Accounting --> Configuration --> Financial Accounting --> Journals --> Journals`.
+Go to :menuselection:`Accounting --> Configuration --> Journals --> Journals`.
 Create a new purchase and sales journal to post your outstanding entries. Make sure to respect the following settings:
 
     1. :guilabel:`Type` should be :guilabel:`Purchase` or `Sales`.
@@ -69,7 +69,7 @@ Create a new purchase and sales journal to post your outstanding entries. Make s
 
 Now you can start entering your outstanding customer and supplier entries according to your list of open entries at the end of the year.
 
-Go to the menu :menuselection:`Accounting --> Customers --> Customer Invoices` to post your outstanding sales entries. To post your outstanding purchase entries, go to Go to the menu :menuselection:`Accounting --> Suppliers --> Supplier Invoices`.
+Go to the menu :menuselection:`Accounting --> Customers --> Customer Invoices` to post your outstanding sales entries. To post your outstanding purchase entries, Go to the menu :menuselection:`Accounting --> Suppliers --> Supplier Invoices`.
 
 We recommend you to use suspense accounts instead of expense or income accounts. Indeed, your expense and income accounts have already been posted in the previous financial year, and there is no need to transfer these balances. The outstanding entries from previous financial years should not contain any VAT entries; they only get the balance the customer still has to pay you, or the balance you have to pay to the supplier.
 
@@ -106,14 +106,14 @@ To have a look at the draft opening entry that has been generated, go to :menuse
 Closing a Financial Year
 ------------------------
 
-To close a financial year, use the menu :menuselection:`Accounting--> Periodical Processing --> End of Period --> Close a Fiscal Year`.
+To close a financial year, use the menu :menuselection:`Accounting--> Periodical Processing --> End of Period --> Cancel Closing Entries`.
 A wizard opens asking you for the financial year to close.
 
 When the year is closed, you can no longer create or modify any transactions in that year.
 So you should always make a backup of the database before closing the fiscal year. Closing a year is not mandatory, and you could easily do that sometime in the following year, when your accounts are finally sent to the statutory authorities, and no further modifications are permitted.
 
 .. figure::  images/account_fy_close.png
-   :scale: 75
+   :scale: 55
    :align: center
 
    *Closing a Financial Year*

@@ -22,9 +22,8 @@ structure them into several additional charts at the same time as you will see i
 Account Types
 ^^^^^^^^^^^^^
 
-Create account types using :menuselection:`Accounting --> Configuration --> 
-Financial Accounting --> Accounts --> Account Types` and then clicking the
-:guilabel:`New` button. You will need the following four types, the first of which is shown
+Create account types using :menuselection:`Accounting --> Configuration --> Accounts --> Account Types` and then clicking the
+:guilabel:`Create` button. You will need the following four types, the first of which is shown
 in figure :ref:`fig-oech03accty`.
 
 .. table:: Defining Account Types
@@ -42,7 +41,7 @@ in figure :ref:`fig-oech03accty`.
 
 .. figure::  images/openerp_ch03_acctype.png
    :align: center
-   :scale: 80
+   :scale: 60
 
    *New Account Type*
    
@@ -50,8 +49,8 @@ Accounts
 ^^^^^^^^
 
 Create accounts using :menuselection:`Accounting --> Configuration --> 
-Financial Accounting --> Accounts --> Accounts` and then clicking the
-:guilabel:`New` button. 
+Accounts --> Accounts` and then clicking the
+:guilabel:`Create` button. 
 
 You need accounts to handle the purchase and sales orders that have not yet been paid,
 two more for the receipt and shipping of goods, and one for the payment and receipt of funds. 
@@ -65,8 +64,8 @@ in :ref:`fig-oech03accts`.
    Name          Code Internal Type Parent          Account Type Reconcile
    ============= ==== ============= =============== ============ =========
    Minimal Chart 0    View                          View         unchecked
-   Payable       AP   Payable       0 Minimal Chart Expense      checked
-   Receivable    AR   Receivable    0 Minimal Chart Income       checked
+   Payable       AP   Payable       0 Minimal Chart Payable      checked
+   Receivable    AR   Receivable    0 Minimal Chart Receivable   checked
    Cash          C    Liquidity     0 Minimal Chart Cash         unchecked
    Purchases     P    Regular       0 Minimal Chart Expense      unchecked
    Sales         S    Regular       0 Minimal Chart Income       unchecked
@@ -76,7 +75,7 @@ in :ref:`fig-oech03accts`.
 
 .. figure::  images/openerp_ch03_accts.png
    :align: center
-   :scale: 80
+   :scale: 60
 
    *New Account*
 
@@ -84,7 +83,7 @@ The :guilabel:`Account Type` entry is taken from the list of types that you just
 Although it looks a bit like a text box, it does not behave in quite the same way.
 A single :kbd:`Del` or :kbd:`Backspace` keystroke is all you need to delete the whole text,
 and when you type the name (or part of the name), you still need to associate that text
-with the entry by clicking the :guilabel:`Search` icon to the right of the field.
+with the entry by clicking the :guilabel:`Search More`.
 
 .. index::
    single: properties; defining
@@ -97,9 +96,9 @@ which account is used for which transaction every time you do something.
 The main new properties are the four that associate accounts payable and receivable
 to partners, and expenses and income to product categories.
 
-Create properties using :menuselection:`Administration --> Configuration --> 
-Parameters --> Configuration Parameters` and then clicking the :guilabel:`New` button.
-You may have switch to ``Extended`` view to be able to access this menu.
+Create properties using :menuselection:`Settings --> Technical --> 
+Parameters --> Configuration Parameters` and then clicking the :guilabel:`create` button.
+You may have ``Technical rights`` to be able to access this menu.
 
 .. table:: Defining Properties
 
@@ -134,18 +133,17 @@ Configuring Journals
 
 You will also need to configure some journals, which are used to record the transactions from one account
 to another when invoices are raised and then paid. Create journals from the menu
-:menuselection:`Accounting --> Configuration --> 
-Financial Accounting --> Journals --> Journals` and then click the :guilabel:`New` button. 
+:menuselection:`Accounting --> Configuration --> Journals --> Journals` and then click the :guilabel:`Create` button. 
 
 .. table:: Defining Journals
 
-   ================ ==== ======== ========================== ================ ===================== ======================
-   Journal Name     Code Type     Display Mode               Entry Sequence   Default Debit Account Default Credit Account
-   ================ ==== ======== ========================== ================ ===================== ======================
-   Purchase Journal PUJ  Purchase Sale/Purchase Journal View Purchase Journal P Purchases           P Purchases
-   Sale Journal     SAJ  Sale     Sale/Purchase Journal View Sale Journal     S Sales               S Sales
-   Bank Journal     BNK  Cash     Cash Journal View          Account Journal  C Cash                C Cash
-   ================ ==== ======== ========================== ================ ===================== ======================
+   ================ ==== ======== ============================= ===================== ======================
+   Journal Name     Code Type     Entry Sequence                Default Debit Account Default Credit Account
+   ================ ==== ======== ============================= ===================== ======================
+   Purchase Journal PUJ  Purchase Purchase Journal              P Purchases           P Purchases
+   Sale Journal     SAJ  Sale     Account Default Sales Journal S Sales               S Sales
+   Bank Journal     BNK  Cash     Account Journal               C Cash                C Cash
+   ================ ==== ======== ============================= ===================== ======================
 
 .. tip:: Mistakes in configuring journals
 
@@ -171,26 +169,25 @@ Configuring the Main Company
 
 In case you had chosen to :guilabel:`Skip Configuration Wizards` when you first created the database, you may configure your company information in the following manner.
 Start configuring your database by renaming the :guilabel:`Main Company` from its default of \
-``OpenERP S.A.``\   to the name of your own company or (in this case) another example company. When you
+``Your Company``\   to the name of your own company or (in this case) another example company. When you
 print standard documents such as quotations, orders and invoices you will find this configuration
 information used in the document headers and footers.
 
-To do this, click :menuselection:`Sales --> Address Book --> Customers` and click the name of the only company
-there, which is \ ``OpenERP S.A.`` \. This gives you a read-only form view of the company, so
+To do this, click :menuselection:`Sales --> Address Book --> Customers` and search for only company
+there, which is \ ``Your Company`` \. This gives you a read-only form view of the company, so
 make it editable by clicking the :guilabel:`Edit` button to the upper left of the form.
 
 .. tip:: Editable form in the web-client
 
 	When toggling from the list view to the form view of an item, you can generally click its name in
-	the list view to show a non-editable view, or the pencil icon by the left-hand edge of the line to
-	open it in an editable view. You can toggle between editable and non-editable once you are in form
+	the list view to show a non-editable view. You can toggle between editable and non-editable once you are in form
 	view.
 
 Change the following:
 
 *  :guilabel:`Name` : \ ``Ambitious Plumbing Enterprises``\  ,
 
-*  :guilabel:`Contact Name` : \ ``George Turnbull``\  .
+*  :guilabel:`Add Contact` : \ ``George Turnbull``\  .
 
 Before you save this, look at the partner's accounting setup by clicking the tab
 :guilabel:`Accounting`. The fields :guilabel:`Account Receivable` and :guilabel:`Account Payable`
@@ -202,18 +199,16 @@ Back at the first tab, :guilabel:`General`, change any other fields you like,
 such as the address and phone numbers, then :guilabel:`Save`. This
 changes one Contact for the Partner, which is sufficient for the example.
 
-From the :guilabel:`MAIN MENU`, click :menuselection:`Administration --> Companies --> Companies`
+From the :guilabel:`MAIN MENU`, click :menuselection:`Settings --> Companies --> Companies`
 and edit the only entry there:
 
 *  :guilabel:`Company Name` : \ ``AmbiPlum``\  ,
 
 *  :guilabel:`Partner` : should already show \ ``Ambitious Plumbing Enterprises``\  ,
 
-*  :guilabel:`Report Header` : \ ``Ambitious Plumbing``\  ,
+*  :guilabel:`Custom Footer` : Ticked  ,
 
-*  :guilabel:`Report Footer 1` : \ ``Best Plumbing Services, Great Prices``\  ,
-
-*  :guilabel:`Report Footer 2` : \ ``Ambitious – our Registered Company Details``\  .
+*  :guilabel:`Report Footer` : \ ``Best Plumbing Services, Great Prices , Ambitious – our Registered Company Details .``\
 
 Figure :ref:`fig-oech03co` shows the effect of this.
 You can also change various other company-wide parameters for reports and scheduling in the other tabs,
@@ -223,11 +218,11 @@ and you can upload a company logo of a specific size for the reports. Click :gui
 
 .. figure::  images/openerp_ch03_co.png
    :align: center
-   :scale: 75
+   :scale: 60
 
    *Changing company details*
 
-You can leave the currency at its default setting of \ ``EUR`` \ for this example. Or you can
+You can leave the currency at its default setting of \ ``EUR`` \ Or you can
 change it in this Company and the two default Pricelists (:menuselection:`Sales --> Configuration --> Pricelists --> Pricelists`) if you feel compelled to do that.
 
 .. note::  Currency
@@ -247,8 +242,8 @@ You will now create a suppliers category and a customers category. Partner categ
 organizing groups of partners but have no special behavior that affects partners, so you can assign
 them as you like. Then you will define one supplier and one customer, with a contact for each.
 
-To do this, use the menu :menuselection:`Sales --> Configuration --> Address Book --> Partner Categories` and
-click :guilabel:`New` to open a new form for defining :guilabel:`Partner Categories`.
+To do this, use the menu :menuselection:`Sales --> Configuration --> Address Book --> Partner Tags` and
+click :guilabel:`Create` to open a new form for defining :guilabel:`Partner Categories`.
 Define the two categories that follow by just entering their :guilabel:`Category Name` and saving
 them:
 
@@ -256,8 +251,8 @@ them:
 
 * \ ``Customers``\  .
 
-Then create two partners from the menu :menuselection:`Sales --> Address Book --> Customers`. Click on the
-:guilabel:`New` button to open a blank form and then add the following data for the first partner
+Then create two partners from the menu :menuselection:`Sales --> Sales --> Customers`. Click on the
+:guilabel:`Create` button to open a blank form and then add the following data for the first partner
 first:
 
 * :guilabel:`Name` : \ ``Plumbing Component Suppliers``\  ,
@@ -266,11 +261,7 @@ first:
 
 * :guilabel:`Supplier` checkbox : \ ``checked``\  ,
 
-* :guilabel:`Contact Name` : \ ``Jean Poolley``\  ,
-
-* :guilabel:`Address Type` : \ ``Default``\  ,
-
-* add \ ``Suppliers``\   to the :guilabel:`Partner Categories` field by selecting it from the Search Partner Categories list,
+* add \ ``Suppliers``\   to the :guilabel:`Tags` field by selecting it from the selection list,
 
 * then save the partner by clicking the :guilabel:`Save` button. 
 
@@ -280,19 +271,9 @@ Figure :ref:`fig-oech03part` shows the result.
 
 .. figure::  images/openerp_03_part.png
    :align: center
-   :scale: 80
+   :scale: 60
 
    *New Partner Form*
-
-.. note:: Contact Types
-
-	If you have recorded several contacts for the same partner you can specify which contact is used for
-	various documents by specifying the Address Type.
-
-	For example the delivery address can differ from the invoice address for a partner. If the Address
-	Types are correctly assigned, then OpenERP can automatically select the appropriate address
-	during the creation of the document – an invoice is addressed to the contact that has been assigned
-	the Address Type of Invoice, otherwise to the Default address.
 
 For the second partner, proceed just as you did for the first, with the following data:
 
@@ -302,16 +283,12 @@ For the second partner, proceed just as you did for the first, with the followin
 
 * :guilabel:`Supplier` checkbox : \ ``unchecked``\ ,
 
-* :guilabel:`Contact Name` : \ ``Stephen Smith``\ ,
-
-* :guilabel:`Address Type` : \ ``Default``\ ,
-
-* add \ ``Customers``\   in the :guilabel:`Categories` field,
+* add \ ``Suppliers``\   in the :guilabel:`Categories` field,
 
 * :guilabel:`Save` the form.
 
 To check
-your work, you can go to the menu :menuselection:`Sales --> Configuration --> Address Book --> Partner Categories`
+your work, you can go to the menu :menuselection:`Sales --> Configuration --> Address Book --> Partner Tages`
 and click on each category in turn to see the companies in the category.
 
 .. note:: Multiple Partner Categories
@@ -332,7 +309,7 @@ Creating Products and their Categories
 Unlike partner categories and their assigned partners, product categories do have an effect on the
 products assigned to them – and a product may belong to only one category. Under the main menu link
 :menuselection:`Warehouse` or :menuselection:`Sale`, select the menu
-:menuselection:`Configuration --> Products --> Products Categories` and click :guilabel:`New` to get
+:menuselection:`Configuration --> Products --> Products Categories` and click :guilabel:`Create` to get
 an empty form for defining a product category.
 
 Enter \ ``Radiators``\   in the :guilabel:`Name` field. You will see that other fields, specifically those
@@ -344,7 +321,7 @@ Click :guilabel:`Save`.
 .. note:: Property Fields
 
 	Properties have a rather unusual behavior. They are defined by parameters in the menus in 
-	:menuselection:`Administration --> Configuration --> Parameters --> Configuration Parameters`,
+	:menuselection:`Settings --> Technical --> Parameters --> Configuration Parameters`,
 	and they update fields only when a form
 	is saved, and only when the fields are empty at the time the form is saved. You can manually
 	override any of these properties as you need.
@@ -378,8 +355,7 @@ Now create a new product through the :menuselection:`Warehouse` or :menuselectio
 
 #.	Create a product – type \ ``Titanium Alloy Radiator``\  in the :guilabel:`Name` field.
 
-#.	Click the :guilabel:`Search` icon to the right of the :guilabel:`Category` field to select the
-	:guilabel:`Radiators` category.
+#.	:guilabel:`Search` for :guilabel:`Category` field to select the:guilabel:`Radiators` category.
 
 #.	The :guilabel:`Product Type` field should be assigned as \ ``Stockable Product``\.
 	The fields :guilabel:`Procurement Method`, :guilabel:`Supply method`, :guilabel:`Default Unit Of Measure`, 
@@ -391,7 +367,7 @@ Now create a new product through the :menuselection:`Warehouse` or :menuselectio
 
 	.. figure:: images/product.png
 	   :align: center
-	   :scale: 75
+	   :scale: 60
            
 	   *Product Form*
 
@@ -423,9 +399,9 @@ OpenERP has three predefined top-level location types , ``Physical Locations`` a
 that act as their names suggest, and ``Virtual Locations`` that are used by OpenERP for its own purposes.
 
 #.	From the :guilabel:`Main Menu` click on :menuselection:`Warehouse --> Configuration -->
-	Warehouse Management --> Locations` to reach a list view of the locations (not the tree view).
+	--> Locations` to reach a list view of the locations (not the tree view).
 
-#.	Click on the name of a location, such as \ ``Physical Locations/OpenERP S.A.`` \ to open a
+#.	Click on the name of a location, such as \ ``Physical Locations/Your Company`` \ to open a
 	descriptive form view. Each
 	location has a :guilabel:`Location Type` and a :guilabel:`Parent Location` that defines the hierarchical structure.
 	While you are here you should change 
@@ -433,8 +409,8 @@ that act as their names suggest, and ``Virtual Locations`` that are used by Open
 	company name.
 
 #.	From the :menuselection:`Main Menu` click :menuselection:`Warehouse --> Configuration
-	Warehouse Management --> Warehouses` to view a list of warehouses. There is only the one at the moment, which
-	should also be renamed from ``OpenERP S.A.`` to ``Ambitious Plumbing Enterprises`` .
+	--> Warehouses` to view a list of warehouses. There is only the one at the moment, which
+	should also be renamed from ``Your Company`` to ``Ambitious Plumbing Enterprises`` .
 
 A Warehouse contains an input location, a stock location and an output location for sold products.
 You can associate a warehouse with a partner to give the warehouse an address. That does not have to
@@ -479,9 +455,37 @@ accounts into several charts, with different arrangements for taxation and depre
 differently for various needs.
 
 Before you can use any chart of accounts for anything, you need to specify a Fiscal Year. This
-defines the different time periods available for accounting transactions. An initial Fiscal Year
-was created during the database setup, so you do not need to do any more on this.
-You can also create a Fiscal Year manually from :menuselection:`Accounting --> Configuration --> Financial Accounting --> Periods --> Fiscal Years`.
+defines the different time periods available for accounting transactions.
+You can create a Fiscal Year from :menuselection:`Accounting --> Configuration --> Periods --> Fiscal Years`.
+Click on the :guilabel:`Create` button to open a blank form and then add the following data:
+
+* :guilabel:`Fiscal year` : \ ``Fiscal Year X 2013``\  ,
+
+* :guilabel:`Code`  : \ ``FY2013``\  ,
+
+* :guilabel:`Start Date` : \ ``01/01/2013``\  ,
+
+* :guilabel:`End Date` : \ ``12/31/2013``\  ,
+
+* Click on `Create Monthly Periods` Button.
+
+* then save the Form by clicking the :guilabel:`Save` button. 
+
+Figure :ref:`fig-oech03accfy` shows the result. 
+
+.. _fig-oech03accfy:
+
+.. figure::  images/fiscalyear.png
+   :align: center
+   :scale: 60
+
+   *Fiscal Year*
+
+.. note:: Fiscal year
+
+    In many countries, the fiscal year corresponds to a calendar year. That may not be the case in other countries.
+    `Start Date` is a first date of your fiscal year and `End Date` is a last Date of your fiscal year.
+    By clicking `Create 3 Months Periods` you can create a periods quarterly.
 
 Click :menuselection:`Accounting --> Charts --> Charts of Accounts` to open a :guilabel:`Chart of Accounts`
 form where you define exactly what you want to see.
