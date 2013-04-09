@@ -116,7 +116,6 @@ the product form.
    In this case, OpenERP will not generate a delivery note because the a pure description is not a product, and so it is not in stock.
 
 When all of the products are entered, you can print the quotation by clicking :guilabel:`Print` button on the form. 
-Also you can send it to the customer by clicking :guilabel:`Send by Email` button on the form .
 
 OpenERP opens the quotation in PDF to enable to you to check it before printing.
 
@@ -126,7 +125,16 @@ OpenERP opens the quotation in PDF to enable to you to check it before printing.
 
    *Printing a Sales Quotation*
 
-When the order is confirmed by the customer, you can confirm the quotation to turn in into a sales order. You can also just cancel the window without confirming the order to leave it in Draft Quotation state. To see all the current quotations, you can use the menu Sales ‣ Sales ‣ Quotation. (But Quotations menu contains only those Quotations which are in Draft Quotation state)
+Also you can send it to the customer by clicking :guilabel:`Send by Email` button on the form . After sending email , state will be change to ``Quotation Sent`` 
+
+.. figure:: images/quotation_sent.png
+   :scale: 75
+   :align: center
+
+   *Order after sending an e-mail in Quotation Sent state*
+
+When the order is confirmed by the customer, you can confirm the quotation to turn in into a sales order. You can also just cancel the window without confirming the order to leave it in Draft Quotation state. 
+To see all the current quotations, you can use the menu Sales ‣ Sales ‣ Quotation. (But Quotations menu contains only those Quotations which are in ``Draft Quotation`` and ``Quotation Sent`` state)
 
 The process of Sale Order is like ,following figure.
 

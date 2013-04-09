@@ -31,6 +31,7 @@ Start with a fresh database that includes demo data and install Employee Directo
     4_11_HR_motivate_your_people
     4_11_HR_timesheet
     4_11_HR_expenses
+    4_11_HR_payroll
 
 .. raw:: html
 

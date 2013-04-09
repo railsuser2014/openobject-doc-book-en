@@ -183,7 +183,7 @@ As an example, the new task `SO008:On Site Assistance` generated from sales orde
 
 After finishing this task, go to the menu :menuselection:`Project --> Invoicing --> Invoice Tasks` in order to
 find the list of uninvoiced tasks.
-Click the action :guilabel:`Create Invoice`from more button, when you want to create an invoice for this task work.
+Click the action :guilabel:`Create Invoice` from more button, when you want to create an invoice for this task work.
 
 .. figure::  images/project_invoice_from_task_work.png
    :scale: 60

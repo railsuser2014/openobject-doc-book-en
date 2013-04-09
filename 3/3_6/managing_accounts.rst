@@ -25,13 +25,9 @@ Financial Analysis of Partners
    single: module; board_account
    pair: dashboard; accounting
 
-When members of your accounting department sign in to OpenERP, they can immediately be presented with the :guilabel:`Accounting Dashboard`. By default, it contains the customer invoices to approve, a company analysis according to account type, a Treasury graph and a useful graph for analyzing aged receivables. Click the ``Accounting`` button in the top toolbar to open the dashboard. You can also call the dashboard from the menu :menuselection:`Accounting --> Reporting --> Dashboard --> Accounting Dashboard`.
+When members of your accounting department sign in to OpenERP, they can immediately be presented with the :guilabel:`Accounting Dashboard`. By default, it contains company analysis according to account type. You can also call the dashboard from the menu :menuselection:`Reporting --> Dashboards --> Accounting`.
 
 .. index:: balance; aged
-
-In the dashboard, the graph at the right entitled :guilabel:`Aged Receivables` represents your receivables week by week. At a glance, you can see the cumulative amount of what your customers owe you by week.
-
-All of OpenERP's graphs are dynamic. So you can, for example, filter the data by clicking the graph itself and then :guilabel:`Filter` in the Search form. When you click the graph, data will be displayed in list view. Now you enter extra search criteria and then click the `graph` button to display the data as a graph again.
 
 To obtain a more detailed report of the aged balance (or order by past date), use the menu :menuselection:`Accounting --> Reporting --> Generic Reporting --> Partners --> Aged Partner Balance`.
 
@@ -73,7 +69,7 @@ If you want detailed information about all invoices, credit notes and payments r
 
    *Partner Ledger*
 
-Furthermore, OpenERP also provides statistics about individual account entries, invoices and treasury, for instance. To look up statistic information about your accounting, explore the menu :menuselection:`Reporting --> Accounting`. There you will find ``Invoices Analysis``, ``Entries Analysis`` and ``Treasury Analysis`` to name some. By default these statistics are displayed as a list which you can filter to fit your needs. Standard filter buttons, extended filters and grouping features allow you to make an in-depth analysis of your accounting. But the list is not all OpenERP has to offer. These statistic reports can be displayed as a graph simply by clicking the ``Graph`` button at the top right side of the screen. Notice that graphs allow for only one Group by function at a time.
+Furthermore, OpenERP also provides statistics about individual account entries, invoices and treasury, for instance. To look up statistic information about your accounting, explore the menu :menuselection:`Reporting --> Accounting`. There you will find ``Invoices Analysis``, ``Entries Analysis`` and ``Treasury Analysis`` etc.. By default these statistics are displayed as a list which you can filter to fit your needs. Standard filter buttons, extended filters and grouping features allow you to make an in-depth analysis of your accounting. But the list is not all OpenERP has to offer. These statistic reports can be displayed as a graph simply by clicking the ``Graph`` button at the top right side of the screen. Notice that graphs allow for only one Group by function at a time.
 
 .. figure::  images/account_entries_anal.png
    :scale: 75
@@ -90,7 +86,7 @@ Furthermore, OpenERP also provides statistics about individual account entries, 
 .. tip:: Exporting Entries
 
         Remember that you can export all types of resources in OpenERP.
-        From the web client, you need to navigate to a search list for the resource, then click the :guilabel:`Export` link at the bottom left of the list. From the GTK client, you would use the menu :menuselection:`Form --> Export data`. The Export feature enables you to easily create your own analysis in tools such as Microsoft Excel or Calc (LibreOffice or OpenOffice), simply by exporting accounting entries.
+        You can go to the :guilabel:`More` button at the top centre of any view. The Export feature enables you to easily create your own analysis in tools such as Microsoft Excel or Calc (LibreOffice or OpenOffice), simply by exporting accounting entries.
 
 .. index::
    single: follow-up
@@ -101,11 +97,11 @@ Furthermore, OpenERP also provides statistics about individual account entries, 
 Multi-step Reminders
 --------------------
 
-To automate the management of follow-ups (reminders) you should install the module :mod:`account_followup` (or check the `Followups Management` option in the `Add More Features` wizard).
+To automate the management of follow-ups (reminders) you should install the module :mod:`account_followup` (or select the `Manage customer payment follow-ups` option in the Settings -> Configuration -> Accounting -> eInvoicing & Payments).
 
 This module is integrated with the email features of OpenERP. Ask your system administrator to define the smtp server through the menu :menuselection:`Settings --> Technical --> Email --> Outgoing Mail Servers`.
 
-Once the module is installed, configure your levels of follow-up using the menu :menuselection:`Accounting --> Configuration --> Miscellaneous --> Follow-Ups`.
+Once the module is installed, configure your levels of follow-up using the menu :menuselection:`Accounting --> Configuration --> Follow-Up Levels`.
 
 .. note:: Follow-ups
 
@@ -123,24 +119,7 @@ For each level, you should define the number of days and create a note which wil
    "2","Level 2","30 days net","Second reminder"
    "3","Level 3","45 days from end of month","Put on notice"
 
-You can send your reminders by mail and/or email with the menu :menuselection:`Accounting --> Periodical Processing --> Billing --> Send followups`.
-
-.. figure::  images/account_followup_wizard.png
-   :scale: 75
-   :align: center
-
-   *Prepare Reminders*
-
-OpenERP allows you to plan your reminders in the future; you could start a cycle today for invoices due at the end of the week, for instance.
-OpenERP presents you with a list of partners who are due to be reminded, which you can modify before starting the procedure. On the ``Email Settings`` tab of the form, you can supply the information you will send in the email reminder.
-
-You can either print the reminders or send them by email. From the ``Email Settings`` tab, you can select the ``Test Print`` checkbox to print the reminders as a preview only, without adding follow-up data to the reminded invoices. This way you can easily preview reminders to be sent.
-
-The system then gives you a PDF report with all of the reminder letters for each partner. Each letter is produced in the language of the partner (if that is specified), so it is possible to have letters in different languages in the same PDF on several pages.
-
-From the ``Journal Items`` view, you can check the due date of customers before starting the reminder procedure. You will get a list of unreconciled entries only by clicking the ``Unreconciled`` button. The best thing to do is open the unreconciled line in Form view; select the line and click the ``Form`` button at the top of the page. You can then easily modify the duedate, the last follow-up and the reminder level for each entry.
-
-To obtain a detailed statistical report of sent follow-ups go to the menu :menuselection:`Accounting --> Reporting --> Generic Reporting --> Partners --> Follow-ups Sent`. This screen will let you analyse your reminder data in various ways, e.g. by follow-up level, by partner or for a combination of these data. You can also group by ``Latest Followup Date`` or ``Partner``, for instance.
+To obtain a detailed statistical report of sent follow-ups go to the menu :menuselection:` Reporting --> Accounting --> Follow-ups Analysis`. This screen will let you analyse your reminder data in various ways, e.g. by follow-up level, by partner or for a combination of these data. You can also group by ``Latest Followup Date`` or ``Partner``, for instance.
 
 The different reports are standard OpenERP screens, so you can filter them and explore the elements in detail.
 
