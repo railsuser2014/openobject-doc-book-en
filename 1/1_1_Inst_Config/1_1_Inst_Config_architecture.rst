@@ -10,9 +10,8 @@ To access OpenERP V7 you can:
 * use only a web browser pointed at the OpenERP client-web server.
 
 It is best to use the web browser if the OpenERP server is some distance away 
-(such as on another continent) because it is more tolerant of time delays 
-between the two than the GTK client was. The web client is also easier to maintain, 
-because it is generally already installed on users' computers.
+(such as on another continent) because it is more tolerant of time delays.
+The web client is also easier to maintain, because it is generally already installed on users' computers.
 
 .. index::
    single: client; web (thin) and GTK (thick)
@@ -41,8 +40,7 @@ An OpenERP system is formed from three main components:
     your viewpoint.
 
     It acts as a web server to an end user connecting from a web browser, but
-    it also acts as a client to the OpenERP application server just as a GTK
-    application client does.
+    it also acts as a client to the OpenERP application server.
 
     So in this book its context will determine whether the client-web component is referred to as
     a server or a client.
@@ -70,11 +68,6 @@ An OpenERP system is formed from three main components:
 These three components can be installed on the same server or can be
 distributed onto separate computer servers, if performance considerations
 require it.
-
-If you choose to run only with GTK clients, you will not need the third component –
-the client-web server – at all. In this case, OpenERP's GTK client must be installed
-on the workstation of each OpenERP user in the company.
-
 
 .. Copyright © Open Object Press. All rights reserved.
 

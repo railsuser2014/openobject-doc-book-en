@@ -8,7 +8,7 @@
 Database Creation
 =================
 
-Use the technique outlined in this section to create a new database, \ ``openerp_ch01`` \. This
+Use the Manage databases link in this section to create a new database, \ ``openerp_ch01`` \. This
 database will contain the demonstration data provided with OpenERP and a large proportion of the
 core OpenERP functionality. You will need to know your super administrator password for this – or
 you will have to find somebody who does have it to create this database.
@@ -29,16 +29,14 @@ you will have to find somebody who does have it to create this database.
    configuration file read-only so that there is no prospect of changing it from the client.
    Either way, a server systems administrator can change it if you forget it.
    
-   So if your system is set to allow it, you can change the superadmin password through the GTK client
-   from the menu :menuselection:`File --> Databases --> Administrator Password`, or through the
-   web client by logging out (click the :guilabel:`Logout` link), clicking :guilabel:`Databases` on the
-   login screen, and then clicking the :guilabel:`Password` button on the Management screen. 
+   So if your system is set to allow it, you can change the superadmin password through the client
+   by using the `Send reset password link by email` button of user form 
    
    The location of the server configuration file is typically defined by starting the server with 
    the ``--config`` command line option.
 
 .. figure:: images/change_superadmin_pwd.png
-   :scale: 65
+   :scale: 55
    :align: center
 
    *Changing the super-administrator password through the web client*
@@ -48,24 +46,21 @@ you will have to find somebody who does have it to create this database.
 Creating the Database
 ---------------------
 
-If you are using the GTK client, choose :menuselection:`File --> Databases --> New database`  in
-the menu at the top left. Enter the super-administrator password, then the name of the new database
+Use the `Manage databases` link , :menuselection:`Databases --> Create`  in
+the menu. Enter the super-administrator password, then the name of the new database
 you are creating.
 
-.. figure:: images/create_new_db_GTK.png
-   :scale: 75
+.. figure:: images/create_new_db.png
+   :scale: 55
    :align: center
 
-   *Creating a new database through the GTK client*  
+   *Creating a new database*  
 
-If you are using the web client, click :guilabel:`Databases` on the login screen, then
-:guilabel:`Create` on the database management page. Enter the super-administrator password, and the
-name of the new database you are creating.
   
-In both cases, you will see a checkbox that determines whether you load demonstration data or not.
+At the time of creation database you can see the checkbox that determines whether you load demonstration data or not.
 The consequences of checking this box or not affect the **whole use** of this database.
 
-In both cases, you will also see that you can choose the Administrator password. This makes your 
+You will also see that you can choose the Administrator password. This makes your 
 database quite secure because you can ensure that it is unique from the outset.
 (In fact many people find it hard to resist ``admin`` as their password!)
 
@@ -107,30 +102,6 @@ database, you can extend it without having to know the super-administrator passw
 	(some names can be reserved without your knowledge), you will be alerted by the dialog box
 	:guilabel:`Error during database creation!`.
 
-Since this is the first time you have connected to this database, you will be asked a series of questions to
-define the database parameters. You may choose to :guilabel:`Skip Configuration Wizards` or
-:guilabel:`Start Configuration`. If you choose to configure your application, you may proceed with the
-following steps:
-
-	#.  :guilabel:`Configure Your Interface` : select \ ``Simplified`` \ and click :guilabel:`Next`.
-
-	#.  :guilabel:`Configure Your Company Information` : replace the proposed default of \ ``OpenERP S.A.`` \
-	    by your own company name, complete as much of your address as you like. You can set the currency that
-	    your company uses or leave the default setting. You may also add your company logo which will
-	    be visible on reports and other documents. Click :guilabel:`Next`.
-
-	#.  :guilabel:`Install Applications` : check the applications you need and then click :guilabel:`Install`.
-	    For now, do not install any application.
-
-Once configuration is complete, you are connected to your OpenERP system. Its functionality is very
-limited because you have selected a :guilabel:`Simplified` interface with no application installed,
-but this is sufficient to demonstrate that your installation is working.
-
-.. figure:: images/define_main_co_dlg.png
-   :align: center
-   :scale: 80
-
-   *Defining your company during initial database configuration*
 
 .. index::
    single: database; manage
@@ -148,8 +119,7 @@ As a super-administrator, you do not only have rights to create new databases, b
 
 * restore databases.
 
-All of these operations can be carried out from the menu :menuselection:`File --> Databases...`
-in the GTK client, or from the :guilabel:`Databases` button in the web client's 
+All of these operations can be carried out from the ``Manage Database``
 :guilabel:`Login` screen.
 
 .. index::
@@ -157,9 +127,8 @@ in the GTK client, or from the :guilabel:`Databases` button in the web client's
 
 .. tip:: Backup (copy) a Database
 
-        To make a copy of a database, go to the web :guilabel:`Login` screen and click the :guilabel:`Databases` button.
-        Then click the :guilabel:`Backup` button, select the database you want to copy and enter the super-administrator
-	password. Click the :guilabel:`Backup` button to confirm that you want to copy the database.
+        To make a copy of a database, go to the web :guilabel:`Login` screen and click the :guilabel:`Manage Databases` button.
+        Then click the :guilabel:`Backup` button, select the database you want to copy and enter the super-administrator password. Click the :guilabel:`Backup` button to confirm that you want to copy the database.
 
 .. index::
    single: database; drop
@@ -167,15 +136,14 @@ in the GTK client, or from the :guilabel:`Databases` button in the web client's
 .. tip:: Drop (delete) a Database
 
         To delete a database, go to the web :guilabel:`Login` screen and click the :guilabel:`Databases` button.
-        Then click the :guilabel:`Drop` button, select the database you want to delete and enter the super-administrator
-	password. Click the :guilabel:`Drop` button to confirm that you want to delete the database.
+        Then click the :guilabel:`Drop` button, select the database you want to delete and enter the super-administrator password. Click the :guilabel:`Drop` button to confirm that you want to delete the database.
 
 .. index::
    single: database; restore
 
 .. tip:: Restore a Database
 
-        To restore a database, go to the web :guilabel:`Login` screen and click the :guilabel:`Databases` button.
+        To restore a database, go to the web :guilabel:`Login` screen and click the :guilabel:`Manage Databases` button.
         Then click the :guilabel:`Restore` button, click the :guilabel:`Choose File` button to select the database
         you want to restore. Give the database a name and enter the super-administrator	password.
 	Click the :guilabel:`Restore` button to confirm that you want to install a new copy of the selected database.
