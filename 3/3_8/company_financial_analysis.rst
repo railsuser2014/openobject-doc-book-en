@@ -8,7 +8,8 @@ Good Management Budgeting
 Budgets are important for a company to get a good grip on forecasted expenses and revenues. They allow you to measure your actual financial performance against the planned one.
 
 OpenERP manages its budgets using both General and Analytic Accounts.
-Go to :menuselection:`Settings --> Modules --> Modules` and install :mod:`account_budget` to be able to do this.
+Go to :menuselection:`Settings --> Modules --> Modules` and install :mod:`account_budget` to be able to do this,
+or you can go to :menuselection:`Settings --> Configuration --> Accounting` and select option Budget management and click on :guilabel:`Apply` button , it will install this module.
 
 The first step in defining budgets is to determine the general accounts for which you want to keep budgets (typically expense or income accounts).
 That is what you will use ``Budgetary Positions`` for, from the menu :menuselection:`Accounting --> Configuration --> Budgets --> Budgetary Positions`. Here you can select the general accounts for which you want to keep budgets. The aim is to group general accounts logically, according to sales or purchases, for instance. OpenERP has no limitations as to the account types that can be used for budgeting.
@@ -19,7 +20,7 @@ That is what you will use ``Budgetary Positions`` for, from the menu :menuselect
 
    *Budgetary Position for Sales*
 
-To define your budgets, go to the menu :menuselection:`Accounting --> Budgets --> Budgets`. Define a new budget by clicking the `Creat` button.
+To define your budgets, go to the menu :menuselection:`Accounting --> Budgets --> Budgets`. Define a new budget by clicking the :guilabel:`Create` button.
 
 .. figure::  images/account_budget_form.png
    :scale: 60
@@ -81,6 +82,8 @@ The figure :ref:`fig-accbudg` gives an example of a budget produced by OpenERP.
 
    *Printing a Budget*
 
+You can Print the Summarised Budget from selecting :guilabel:`Print Summary` option in Print button Option. 
+
 .. figure::  images/account_budget_summ.png
    :scale: 65
    :align: center
@@ -91,14 +94,6 @@ The figure :ref:`fig-accbudg` gives an example of a budget produced by OpenERP.
 You could also use the menu :menuselection:`Accounting --> Reporting --> Generic Reporting --> Budgets --> Budget Lines`.
 This gives an analysis of each budget line.
 
-From the menu :menuselection:`Accounting --> Configuration --> Budgets --> Budgetary Positions`, you can print the budgets for an individual budgetary position. Open a budgetary position, and click the :guilabel:`Budget Lines` tab for a graphical representation of your budgetary position.
-
-.. figure::  images/account_budget_graph.png
-   :scale: 75
-   :align: center
-
-   *Graphical Representation of Budgetary Position*
-
 .. note:: Print Reports
 
     You can also print budgets from the menu :menuselection:`Accounting --> Configuration --> Analytic Accounting --> Analytic Accounts`.
@@ -106,7 +101,7 @@ From the menu :menuselection:`Accounting --> Configuration --> Budgets --> Budge
 The Accounting Dashboard
 ------------------------
 
-You can open the `Accounting Dashboard` in more than one way: either by clicking the ``Accounting`` button at the top of the web screen, or from the menu :menuselection:`Accounting --> Reporting --> Dashboard --> Accounting Dashboard`.
+You can open the `Accounting Dashboard` from the menu :menuselection:`Reporting --> Dashboards --> Accounting`.
 
 .. figure::  images/account_board.png
    :scale: 75
@@ -117,24 +112,10 @@ You can open the `Accounting Dashboard` in more than one way: either by clicking
 .. index::
    single: module; board_account
 
-OpenERP gives you an accounting dashboard that will be presented to your accounting staff as they sign in to the Accounting system (you can also set the dashboard as their Home Page by setting the :guilabel:`Home Action` to ``Accounting Dashboard`` in the :guilabel:`User` form). This dashboard provides an analysis of the company's financial health at a glance.
-
-The description of the different parts of the dashboard, from top to bottom, then from left to right, is as follows:
-
-*  :guilabel:`Customer Invoices to Approve` : gives the list of invoices waiting to be approved by an accountant.
-
-*  :guilabel:`Company Analysis` : lists the debit, credit and balance of all account types.
-
-*  :guilabel:`Treasury` : shows the balance per Bank account in graphical view.
-
-*  :guilabel:`Aged Receivables` : gives a weekly graph of the receivables that have not yet been reconciled.
-
-For most of the panels of the `Accounting Dashboard`, you can click a line or a graph to investigate the detail of your financial indicators.
-
-The `Accounting Dashboard` is dynamically integrated, which means that you can navigate easily through the data if you want more detail about certain factors, and edit the entries if necessary.
+OpenERP gives you an accounting dashboard that will be presented to your accounting staff as they sign in to the Accounting system .
+This dashboard provides an analysis of the company's financial health at a glance. Company Analysis gives the list of debit , credit and balance of all account types.
 
 The ``Change Layout`` button at the top right allows you to change the way the dashboard is displayed; you can choose among several options, such as one column, two columns, etc.
-You can also add other features to the dashboard and customise it to your needs with the ``Add Widget`` button. You can easily ``Undo`` changes or ``Reset`` the original dashboard.
 
 .. Copyright © Open Object Press. All rights reserved.
 

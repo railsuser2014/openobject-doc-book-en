@@ -4,7 +4,7 @@ Analytic Analysis
 
 There are various reports designed for financial analysis based on the analytic accounts. Most of these reports are available directly from the tree of analytic accounts or from the form view of the analytic account.
 
-From the :menuselection:`Accounting --> Configuration --> Analytic Accounting --> Analytic Accounts` menu, select one or more analytic accounts and then click one of the reports in the `Reports` section at the right side of the screen.
+From the :menuselection:`Accounting --> Configuration --> Analytic Accounting --> Analytic Accounts` menu, select one or more analytic accounts and then click one the :guilabel:`Print` button at the centre of the screen.
 OpenERP provides the following financial analyses from the analytic accounts (and maybe more, depending on the additional installed modules):
 
 *  :guilabel:`Cost Ledger`,
@@ -15,10 +15,6 @@ OpenERP provides the following financial analyses from the analytic accounts (an
 
 *  :guilabel:`Analytic Balance`,
 
-
-.. note:: Menu
-
-    At the time of writing, there is no separate menu to print analytic reporting.
 
 .. index::
    pair: cost ledger; analytic
@@ -121,7 +117,7 @@ You can have the statistical analysis on all analytic entries from the menu :men
 
 .. tip:: Graph
 
-    You can easily turn this analysis screen into a graph by clicking the :guilabel:`Graph` button at the top right of the screen.
+    You can easily turn this analysis screen into a graph by clicking the :guilabel:`Graph` view at the top right of the screen.
 
 .. Copyright © Open Object Press. All rights reserved.
 
