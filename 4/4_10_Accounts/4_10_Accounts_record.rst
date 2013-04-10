@@ -29,7 +29,7 @@ Analytic records can be distinguished from general records by the following char
 
    *Analytic Account Records for a Customer Project*
 
-The figure :ref:`fig-accanmv` represents the entries in an analytic account for a customer project.
+The figure :ref:`fig-accanmv` represents the entries in an analytic account for a customer project , you can see this list view of Analytic Journal Items from this menu :menuselection:`Accounting --> Journal Entries --> Analytic Journal Items` .
 
 You can see there:
 
@@ -113,7 +113,7 @@ You can define the combination of analytic plans through the menu :menuselection
 
    *Definition of Analytic Plan*
 
-Using the link `More > Distribution Models` at the top of the `Analytic Plan` form, you can define the distribution of either your expenses while creating a supplier invoice, or revenue when defining customer invoices.
+Save the plan , after you can create Distribution Models from `More` button at the top of the `Analytic Plan` form, you can define the distribution of either your expenses while creating a supplier invoice, or revenue when defining customer invoices.
 Thanks to these models, you can have one amount distributed amongst several analytic accounts. Models can be reused, and they can be applied to one analytic chart of accounts, but also to a combination of various charts of account, such as projects and cost centers.
 
 .. figure::  images/account_distribution_model_61.png
