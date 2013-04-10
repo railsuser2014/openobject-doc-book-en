@@ -30,11 +30,11 @@ Fixed Price Contracts
 Fixed price contracts for the sale of services are represented in OpenERP by a Sales Order. In
 this case, the supply of services is managed just like all other stockable or consumable products.
 
-You can add new orders using the menu :menuselection:`Sales --> Sales --> Sales Orders`.
+You can add new orders using the menu :menuselection:`Sales --> Sales --> Quotations`.
 
-The new Sales Order document starts in the \ ``Quotation`` \ state, so the estimate has no
+The new Sales Order document starts in the \ ``Draft Quotation`` \ state, so the estimate has no
 accounting impact on the system until it is confirmed. When you confirm the order, your estimate
-moves into the state \ ``Manual In Progress`` \.
+moves into the state \ ``Sale Order`` \.
 
 .. figure::  images/service_sale_workflow.png
    :scale: 55
@@ -45,8 +45,7 @@ moves into the state \ ``Manual In Progress`` \.
 Once the order has been approved, OpenERP will automatically generate an invoice and/or a delivery
 document proposal based on the parameters you set in the order.
 
-The invoice will be managed by the system depending on the setting of the field :guilabel:`Shipping
-Policy` on the order's second tab :guilabel:`Other Information`:
+The invoice will be managed by the system depending on the setting of the field :guilabel:`Shipping Policy` on the order's second tab :guilabel:`Other Information`:
 
 *  :guilabel:`Payment Before Delivery` : OpenERP creates an invoice in the \ ``Draft`` \ state.
    Once this is confirmed and paid, the delivery is activated.
@@ -57,7 +56,7 @@ Policy` on the order's second tab :guilabel:`Other Information`:
 *  :guilabel:`Shipping & Manual Invoice` : OpenERP starts the delivery from the confirmation of
    the order, and adds a button which you manually click when you are ready to create an invoice.
 
-*  :guilabel:`Invoice From The Picking` : invoices are created from the picking stage.
+*  :guilabel:`Invoice From The Delivery` : invoices are created from the picking stage.
 
 .. index:: delivery
 
@@ -87,14 +86,9 @@ several times through the contract, for example:
 
 * 30% one month after the system has gone into production.
 
-In this case you should create several invoices for the one Sales Order. You have two options for this:
+In this case you should create several invoices for the one Sales Order. You have to do for this:
 
 * Do not handle invoicing automatically from the Sales Order but carry out manual invoicing instead,
-
-* Create draft invoices and then link to them in the third tab :guilabel:`History` of the
-  Sales Order, in the :guilabel:`Related
-  Invoices` section. When you create an invoice from the order, OpenERP deducts the amounts of the
-  invoices already linked to the order to calculate the proposed invoice value.
 
 Cost-reimbursement Contracts
 ----------------------------
@@ -137,21 +131,6 @@ services, purchase of raw materials, and expense reimbursements.
 	a best case situation where all the services would be invoiced.
 	To get this comparison you have to print the analytic balance from the analytic account.
 
-Services are then entered onto timesheets by the various people who work on the project.
-Periodically the project manager or account manager uses the following menu to prepare an invoice
-:menuselection:`Accounting --> Periodical Processing --> Billing -->
-Bill Tasks Works`.
-
-OpenERP then displays all of the costs that have not yet been invoiced. You can filter the proposed
-list and click the appropriate action button to generate the corresponding invoices. You can select
-the level of detail which is reported on the invoice, such as the date and details of the services.
-
-.. figure::  images/service_timesheet_invoice.png
-   :scale: 75
-   :align: center
-
-   *Screen for invoicing services*
-
 .. index::
    single: module; account_analytic_analysis
 
@@ -160,9 +139,6 @@ the level of detail which is reported on the invoice, such as the date and detai
 	:guilabel:`Analytic Accounts` is only available once you have
 	installed the module :mod:`account_analytic_analysis`.
 	It provides various global financial and operational views of a project manager's projects.
-
-Select an entry and click :guilabel:`Invoice analytic lines` link on the right of the form.
-You can then invoice the selected entry by clicking :guilabel:`Create Invoices`.
 
 Fixed-price Contracts Invoiced as Services are Worked
 -----------------------------------------------------
@@ -209,10 +185,9 @@ different project or account managers, just like projects that are invoiced by t
 managers can apply a refund on the final invoice if the project takes more time to complete than
 permitted under the contract.
 
-When the project is finished you can generate the closing invoice using the  *Final Invoice*  button
-on the analytic account. This automatically calculates the final balance of the bill, taking the
-amounts already charged into account. If the amount already invoiced is greater than the maximum
-agreed amount, then OpenERP generates a draft credit note.
+When the project is finished you can generate the closing invoice. 
+This automatically calculates the final balance of the bill, taking the amounts already charged into account. 
+If the amount already invoiced is greater than the maximum agreed amount, then OpenERP generates a draft credit note.
 
 This approach offers many advantages compared with the traditional methods of invoicing in phases
 for fixed-price contracts:
