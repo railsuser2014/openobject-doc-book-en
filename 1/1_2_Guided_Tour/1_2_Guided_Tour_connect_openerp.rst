@@ -2,23 +2,10 @@ To Connect to OpenERP
 =====================
 
 Since this is the first time you have connected to OpenERP, you will be given the opportunity
-to configure the system. You may choose to either :guilabel:`Skip Configuration Wizards`
-or :guilabel:`Start Configuration`. We shall proceed with system configuration by clicking
-:guilabel:`Start Configuration`.
+to select openERP's featured application
 
-Configuration consists of a set of wizards that help you through options for the installed modules.
+You first screen show you different Apllications of openerp you can install any from it as per your requirement.
 Hardly anything is installed, so this is a very simple process at the moment.
-   
-    #.  :guilabel:`Configure Your Interface` : select ``Simplified`` and click :guilabel:`Next`.
-
-    #.  At the :guilabel:`Company Configuration` step, you should select your own :guilabel:`Company Name` and 
-	:guilabel:`Currency`. You may add your company address, contact and other details and a logo,
-	if you have one, that appears on reports. Then, click :guilabel:`Next`.
-
-    #.  The :guilabel:`Install Applications` section would enable you to add applications to
-	your system. For now, click :guilabel:`Skip` to proceed without installing any applications.
-	You are now connected to OpenERP and can start using the system as an Administrator.
-
 
 .. index::
    single:  administrator
@@ -26,32 +13,21 @@ Hardly anything is installed, so this is a very simple process at the moment.
 Once you are displaying the main menu, you are able to see the following screen items, 
 as shown in screenshot :ref:`fig-oech2-main`:
 
-* the name of the database you are logged into and, just below it, the current user name,
+* The name of current user,
 
-* the :guilabel:`ONLINE SUPPORT` button, which gives you an overview of the support services provided by OpenERP
-  which is available for subscription,
+* the :guilabel:`Preferences` toolbar to the top right, showing the links to the :guilabel:`Change password` page,
+  :guilabel:`Receiving Email from` for system, :guilabel:`EDIT PREFERENCES` page, :guilabel:`About OpenERP`, :guilabel:`Help`
+  and :guilabel:`Logout` button,
 
-* the :guilabel:`Preferences` toolbar to the top right, showing the links to the :guilabel:`HOME` page,
-  :guilabel:`REQUESTS` system, :guilabel:`EDIT PREFERENCES` page, :guilabel:`ABOUT`, :guilabel:`HELP`
-  and :guilabel:`LOGOUT` button,
-
-* just below, you will find shortcuts (which the user can customize) and links to the menu items of installed applications,
-
-* a collection of interesting and useful widgets are available on the right of the home page beside the main menu.
+* a collection of interesting and useful widgets are available on the left of the main page.
 
 .. _fig-oech2-main:
 
 .. figure:: images/main_window_openerp_ch02.png
-   :scale: 65
+   :scale: 50
    :align: center
 
    *The Main Menu of the openerp_ch02 database*
-
-Two menus are available at the moment:
-
-* :menuselection:`Sales`
-
-* :menuselection:`Administration`
 
 .. index::
    single: Preferences
@@ -63,14 +39,9 @@ When you are connected to OpenERP, the topmost toolbar indicates which user you 
 So it should currently be showing :guilabel:`Administrator` (unless you logged in as another
 user and it is reflecting the name of that user instead).
 
-You will find the Preferences toolbar to its right containing a set of useful links.
-First, you will find a link to the :guilabel:`HOME` page. This takes you to either the
-Home page containing links to the available menus or to another window or dashboard, depending on the
-user configuration. In the case of the \ ``openerp_ch02`` \ database, so far the Home page
-is the Main Menu. But in general each user of the
-system is presented with a dashboard that is designed to show performance indicators and urgent
-documents that are most useful to someone of the user's position in the company. You will see how to
-assign dashboards to different users in a later chapter, :ref:`ch-config`.
+You will find the Preferences  when you click on current user name, its containing a set of useful links.
+First, you will find a field to the :guilabel:`
+Receive Messages by Email` page.
 
 .. index::
    single: timezone
@@ -85,14 +56,11 @@ assign dashboards to different users in a later chapter, :ref:`ch-config`.
 	server's timezone. When the English users want to set up a meeting with an Indian user, the Indian
 	user's available time will be converted to English time.
 
-The :guilabel:`REQUESTS` link is found beside the :guilabel:`HOME` link. It is only visible if you are logged into
-a database. If your database is new it will show number of requests as 0. You can click on that link
-to look at requests that have been sent to you at any time.
+The :guilabel:`Compose new Message` Icon is found beside the :guilabel:`User name` link. It is only visible if you are logged into
+a database. You can click on that and compose a new mail at any time.
 
-The next element in the toolbar is a link to :guilabel:`EDIT PREFERENCES`. By clicking that link, you
-get a dialog box where the current user can set his interface in the :guilabel:`Current Activity` tab;
-and in the :guilabel:`Preferences` tab, set his password, a timezone, a working language,
-e-mail and a signature:
+The next element in the toolbar is a link to :guilabel:`Timezone mismatch`. By clicking that Icon, you
+get a dialog box where you find a link which forward on preference changes.
 
 * The :guilabel:`Interface` field in the :guilabel:`Current Activity` tab allows the user to switch
   between the \ ``Simplified`` \ and \ ``Extended`` \ interfaces.
@@ -146,8 +114,8 @@ sent to that partner will be automatically translated into that language.
 
 As administrator, you can install a new main working language into the system.
 
-	#. Select :menuselection:`Administration` in the Menu Toolbar and click
-	   :menuselection:`Translations --> Load an Official Translation` in the main menu window,
+	#. Select :menuselection:`Settings` in the Menu Toolbar and click
+	   :menuselection:`Translations --> Load a Translation` in the main menu window,
 
 	#. Select the language to install, \ ``French``\  for example, and click :guilabel:`Load`,
 
@@ -158,16 +126,7 @@ To see the effects of this installation, change the preferences of your user to 
 language (you may first need to ensure that you have explicitly selected English as your language,
 rather than keep the default, before you are given the French option). 
 You may have to reload the page to see the effects. The main menu is immediately translated in
-the selected language. If you are using the GTK
-client, you will first have to close the menu then open a new main menu to start seeing things in the
-new language.
-
-.. note:: Navigating the Menu
-
-   From this point in the book navigation from the main menu is written as a series of menu entries
-   connected by the :menuselection:`-->` character. Instead of seeing “Select Administration in
-   the Menu toolbar then click Translations > Load an Official Translation” you will just get “use menu
-   :menuselection:`Administration --> Translations --> Load an Official Translation`”.
+the selected language.
 
 .. index:: requests
 
@@ -189,69 +148,6 @@ OpenERP uses this mechanism to inform users about certain system events. For exa
 problem concerning the procurement of a product, a request is sent by OpenERP to the production
 manager.
 
-Send a request to get an understanding of its functionality:
-
-	#. Click on the :guilabel:`REQUESTS` link that should currently be showing number of requests as 0.
-	   This opens a window that lists all of your waiting requests.
-
-	#. Click :guilabel:`New` to create and send a new request.
-
-	#. Complete the subject of the request, such as \ ``How are things?``\  then give a description of the
-	   enquiry in the field.
-
-	#. Click the :guilabel:`Search` button to the right of the :guilabel:`To` field in the
-	   :guilabel:`Request` tab and select :guilabel:`Administrator` in the window that opens
-	   (that is the user that you are already connected as).
-
-	#. You can then link this request to other system documents using the :guilabel:`References` field,
-	   which could, for example, be a partner or a quotation or a disputed invoice.
-
-	#. Click :guilabel:`Send` to send the request to the intended recipient – that is yourself in this
-	   case. Then click :guilabel:`HOME` to return to the original screen.
-
-.. figure:: images/request_tab.png
-   :align: center
-   :scale: 80
-
-   *Creating a new request*
-
-To check your requests:
-
-	#. Click on the :guilabel:`REQUESTS` link (which may now show the number of requests as 1)
-	   to open a list of your requests. The list of requests then opens and you can see the
-	   requests you have been sent there.
-
-	#. Click the :guilabel:`Edit` icon, represented by a pencil, at the left hand end of the request
-	   line. That opens the request in edit mode.
-
-	#. You can then click the :guilabel:`Reply` button and make your response in the
-	   :guilabel:`Description` field of the :guilabel:`Request` tab that appears in place of the original message.
-
-	#. Click :guilabel:`Send` to save your response and send it to the original sender.
-
-.. note:: Requests vs. Email
-
-	The advantage of an OpenERP request compared with a set of emails about one thread of discussion
-	is that a request contains all of the conversation in one place. You can easily monitor a whole
-	discussion with the appropriate documents attached, and quickly review a list of incomplete
-	discussions with the history within each request.
-
-To look at the request history (the user needs to set the interface as \ ``Extended`` \
-to use this feature), and close the request:
-
-	#. Click on the :guilabel:`History` tab in the :guilabel:`Request` form to see the
-	   original request and all of the responses. By clicking on each line, you could get more information
-	   on each element.
-
-	#. Return to the first tab, :guilabel:`Request` and click :guilabel:`Close` to set it to \
-	   ``closed``\. This then appears greyed out.
-
-.. tip:: Trigger Date
-
-	You can send a request with a future date. This request will not appear in the recipient's waiting
-	list until the indicated date. This mechanism is very useful for setting up alerts before an
-	important event.
-
 .. index::
    single: user; configuration
 
@@ -268,11 +164,11 @@ Currencies were installed with some samples.
    single: administrator
 
 Because you logged in as Administrator, you have all the access you need to configure users. Click
-:menuselection:`Administration --> Users --> Users` to display the list of users defined in the
+:menuselection:`Settings --> Users --> Users` to display the list of users defined in the
 system. A second user, \ ``Demo User`` \, is also present in the system as part of the
 demonstration data. Click the \ ``Demo User`` \ name to open a non-editable form on that user.
 
-Click the :guilabel:`Groups`  tab to see that the demo user is a member of only the ``Employee`` group,
+Click the :guilabel:`Access Rights`  tab to see that the demo user is a member of only the ``Employee`` group,
 and is subject to no specialized rules.
 The user \ ``Administrator`` \ is different, as you can see if you
 follow the same sequence to review its definition. It is a member of the \ ``Administration / Configuration`` \
@@ -289,13 +185,13 @@ which gives it more advanced rights to configure new users.
 	Users and groups provide the structure for specifying access rights to different documents. Their
 	setup answers the question “Who has access to what?”
 
-Click :menuselection:`Administration --> Users --> Groups` to open the list of
-groups defined in the system. If you open the form view of the \ ``Administration / Configuration`` \
+Click :menuselection:`Settings --> Users --> Groups` to open the list of
+groups defined in the system. If you open the form view of the \ ``Settings / Configuration`` \
 group by clicking its name in the list, the first tab :guilabel:`Users` gives you the list of
 all the users who belong to this group.
 
 You can also see in the :guilabel:`Menus` tab, the list of menus reserved for this group. By convention,
-the \ ``Administration / Configuration`` \ in OpenERP has rights of access to
+the \ ``Settings / Configuration`` \ in OpenERP has rights of access to
 the :menuselection:`Configuration` menu in each section. So \ ``Sales / Configuration`` \ is
 found in the list of access rights but \ ``Sales`` \ is not found there because it is accessible
 to all users. Click the :guilabel:`Access Rights` tab and it gives you details of the access rights
@@ -325,11 +221,11 @@ customer, a supplier, or even an employee of your company.
 List of Partners
 ^^^^^^^^^^^^^^^^
 
-Click :menuselection:`Sales --> Address Book --> Customers` in the main menu to open the list of partners who are customers. Then click the name of the first partner to get hold of the details – a form appears with 
+Click :menuselection:`Sales --> Sales --> Customers` in the main menu to open the list of partners who are customers. Then click the name of the first partner to get hold of the details – a form appears with 
 information about the company, such as its corporate name, its primary language, its reference and whether it is a
 \ ``Customer`` \ and/or a \ ``Supplier`` \. You will also find several other tabs on it:
 
-* the :guilabel:`General` tab contains information about different contacts at that partner, postal information,
+* The Customer form contains information about different contacts at that partner, postal information,
   communication information and the categories it belongs to.
 
 * the :guilabel:`Sales & Purchases` tab contains information that is slightly less immediate.
@@ -341,14 +237,14 @@ information about the company, such as its corporate name, its primary language,
   These give you a rapid view of the partner's history on a single
   screen.
 
-* the :menuselection:`Notes` tab is an area for free text notes.
+* the :menuselection:`Internal Notes` is an area for free text notes.
 
-To the right of the form is a list of Reports, Actions, Links and Attachments related to a partner. Click some of 
-them to get a feel for their use.
+To the Top of the form There is a button name `More` is a list of Actions, Links and related to a partner. Click some of 
+them to get a feel for their use.The print button contain the list od report and the attachment button for attachment.
 
 .. figure:: images/partner.png
    :align: center
-   :scale: 80
+   :scale: 50
 
    *Partner form*
 

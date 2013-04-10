@@ -14,19 +14,19 @@ sections.
    :widths: 20,15,15,30
 
    "OpenERP Demo","No installation","Simple","Very useful for quick evaluations because no need to install anything."
-   "All-in-one Windows Installer","A few minutes","Simple","Very useful for quick evaluations because it installs all of the components pre-configured on one computer (using the GTK client)."
+   "All-in-one Windows Installer","A few minutes","Simple","Very useful for quick evaluations because it installs all of the components pre-configured on one computer (using the client)."
    "Independent installation on Windows","Half an hour","Medium","Enables you to install the components on different computers. Can be put into production use."
    "Ubuntu Linux packages","A few minutes","Simple","Simple and quick but the Ubuntu packages are not always up to date."
    "From source, for all Linux systems","More than half an hour","Medium to slightly difficult","This is the method recommended for production environments because it is easy to keep it up to date."
 
 Each time a new release of OpenERP is made, OpenERP supplies a complete Windows auto-installer for
 it. This contains all of the components you need – the PostgreSQL database server, the OpenERP
-application server and the GTK application client.
+application server and the web application client.
 
 This auto-installer enables you to install the whole system in just a few mouse clicks. The initial
 configuration is set up during installation, making it possible to start using it very quickly as
 long as you do not want to change the underlying code. It is aimed at the installation of everything
-on a single PC, but you can later connect GTK clients from other PCs, Macs and Linux boxes to it as
+on a single PC, but you can later connect clients from other PCs, Macs and Linux boxes to it as
 well.
 
 The first step is to download the OpenERP installer. At this stage you must choose which version
@@ -56,11 +56,11 @@ To download the version of OpenERP for Windows, follow these steps:
 
 #. Navigate to the site http://openerp.com.
 
-#. Click the :menuselection:`Downloads` button at the right, then, under :guilabel:`Windows Auto-Installer`, select
+#. Click the :menuselection:`Pricing & Download` Link at the bottom, then, under :guilabel:`Windows`, sign up/sign in and download
    :menuselection:`All-in-One`.
 
 #. This brings up the demonstration version Windows installer, 
-   currently :program:`openerp-allinone-setup-6.0.0`.
+   currently :program:`openerp-allinone-setup-7.0`.
 
 #. Save the file on your PC - it is quite a substantial size because it downloads everything including
    the PostgreSQL database system, so it will take some time.
@@ -104,7 +104,7 @@ Connecting Users on Other PCs to the OpenERP Server
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 To connect other computers to the OpenERP server, you must set the server up so that it is
-visible to the other PCs, and install a GTK client on each of those PCs:
+visible to the other PCs, and install a client on each of those PCs:
 
 #. Make your OpenERP server visible to other PCs by opening the Windows Firewall in the Control
    Panel, then ask the firewall to make an exception of the OpenERP server. In the
@@ -112,8 +112,9 @@ visible to the other PCs, and install a GTK client on each of those PCs:
    :guilabel:`OpenERP Server` in the list provided. This step enables other computers to see the
    OpenERP application on this server.
 
-#. Install the OpenERP client (:program:`openerp-client-6.X.exe`), which you can download in the
+#. Install the OpenERP client (:program:`openerp-allinone-setup-7.0-latest.exe`), which you can download in the
    same way as you downloaded the other OpenERP software, onto the other PCs.
+   
 
 .. tip:: Version Matching
 
@@ -124,11 +125,10 @@ visible to the other PCs, and install a GTK client on each of those PCs:
 .. index::
    single:  administrator
 
-To run the client installer on every other PC you will need to have administrator rights there. The
+To run the client installer on every other PC you will need to know the IP address of main machine. The
 installation is automated, so you just need follow the different installation steps.
 
-To test your installation, start by connecting through the OpenERP client on the server machine
-while you are still logged in as administrator.
+When your installation finished the client start on your machine's default browser.
 
 .. note:: Why sign in as a PC Administrator?
 
@@ -137,16 +137,10 @@ while you are still logged in as administrator.
 	the installation so that you can make any necessary fixes than to switch users as you alternate
 	between roles as a tester and a software installer.
 
-Start the GTK client on the server through the Windows Start menu there. The main client window
-appears, identifying the server you are connected to (which is \ ``localhost``\   – your own server
-PC – by default). If the message :guilabel:`No database found, you must create one` appears then
+To Start web client, Open any browser and just write ``http://localhost:8069/`` or ``http://0.0.0.0:8069/``
+If you want to access it on different machine just need to set your machin's IP address instead of `localhost` like : ``192.168.1.1:8069``
+There is :guilabel:`No database found, you must create one` then
 you have **successfully connected** to an OpenERP server containing, as yet, no databases.
-
-.. figure:: images/new_login_dlg.png
-   :align: center
-   :scale: 75
-
-   *Dialog box on connecting a GTK client to a new OpenERP server*
 
 .. index::
    single: protocol; XML-RPC
@@ -160,7 +154,7 @@ you have **successfully connected** to an OpenERP server containing, as yet, no 
 	the OpenERP client connects to port 8069 on the server using the
 	XML-RPC protocol (from Linux) or port 8070 using the NET-RPC protocol instead (from Windows).
 	You can use any protocol from either operating system.
-	NET-RPC is quite a bit quicker, although you may not notice that on the GTK client in normal use.
+	NET-RPC is quite a bit quicker.
 	OpenERP can run XML-RPC, but not NET-RPC, as a secure connection.
 	
 Resolving Errors with a Windows Installation
@@ -199,7 +193,7 @@ resolving this below:
    you will be able to see some information about the empty database. If it is not, an error message
    will appear.
 
-#. Are your client programs correctly installed? If your OpenERP GTK clients have not started,
+#. Are your client programs correctly installed? If your OpenERP clients have not started,
    the swiftest approach is to reinstall them.
 
 #. Can remote client computers see the server computer at all? Check this by opening a command prompt
@@ -252,7 +246,7 @@ Upgrade of Ubuntu packages and installation of OpenERP and pgadmin::
 
     $ sudo apt-get install openerp-server openerp-client pgadmin3
 
-To avoid having some of the labels untranslated in the GTK client, install the language-pack-gnome-YOURLANG-base package. The following command installs the Spanish language pack::
+To avoid having some of the labels untranslated in the client, install the language-pack-gnome-YOURLANG-base package. The following command installs the Spanish language pack::
 
     $ sudo apt-get install language-pack-gnome-es-base
 
@@ -327,24 +321,6 @@ Check out the logs::
 
     $ sudo cat /var/log/openerp.log
 
-    [2009-06-14 21:06:39,314] INFO:server:version – 6.0.0
-
-    [2009-06-14 21:06:39,314] INFO:server:addons_path – /usr/lib/openerp-server/addons
-
-    [2009-06-14 21:06:39,314] INFO:server:database hostname – localhost
-
-    [2009-06-14 21:06:39,315] INFO:server:database port – 5432
-
-    [2009-06-14 21:06:39,315] INFO:server:database user – openerp
-
-    [2009-06-14 21:06:39,315] INFO:objects:initialising distributed objects services
-
-    [2009-06-14 21:06:39,502] INFO:web-services:starting XML-RPC services, port 8069
-
-    [2009-06-14 21:06:39,502] INFO:web-services:starting NET-RPC service, port 8070
-
-    [2009-06-14 21:06:39,502] INFO:web-services:the server is running, waiting for connections…
-
 OpenERP is now up and running, connected to Postgres database on port 5432 and listening on ports 8069 and 8070
 
 ::
@@ -370,10 +346,8 @@ OpenERP is now up and running, connected to Postgres database on port 5432 and l
     
     python  5686 openerp 5u  IPv4 116563      0t0  TCP *:8070 (LISTEN)
 
-Start the OpenERP GTK client by clicking its icon in the :menuselection:`Applications --> Internet
---> OpenERP Client`  menu,
-or by opening a terminal window and typing \ ``openerp-client``\  . The OpenERP login dialog box
-should open and show the message :guilabel:`No database found you must create one!`.
+Start the OpenERP client from the browser. The OpenERP login dialog box
+ open but :guilabel:`No database found you must create one!`.
 
 Although this installation method is simple and therefore an attractive option, it is better to
 install OpenERP using a version downloaded from http://openerp.com. The downloaded revision is
@@ -383,8 +357,8 @@ likely to be far more up to date than that available from a Linux distribution.
 
 	Maintaining packages is a process of development, testing and publication that takes time. The
 	releases in OpenERP packages are therefore not always the latest available. Check
-	the version number from the information on the website before installing a package. If only the
-	third digit group differs (for example 6.0.1 instead of 6.0.2) then you may decide to install it because
+	the version number from the information on the website before installing a package. If 
+	group differs (for example 7.0) then you may decide to install it because
 	the differences may be minor – bug fixes rather than functionality changes between the package
 	and the latest version.
 	
@@ -398,7 +372,7 @@ desktop version of Ubuntu. Here is a summary of the procedure:
 
 #. Navigate to the page http://openerp.com with your web browser,
 
-#. Click the :menuselection:`Download` button on the right side,
+#. Click the :menuselection:`Pricing & Download` link on bottom side,
 
 #. Download the client and server files from the *Sources* section into your home directory
    (or some other location if you have defined a different download area).
@@ -432,14 +406,15 @@ To download the PostgreSQL database and all of the other dependencies for OpenER
 Once all these dependencies and the database are installed, install the server itself using the
 instructions on the website.
 
-Open a terminal window to start the server with the command :command:`openerp-server`, which
-should result in a series of log messages as the server starts up. If the server
+Open a terminal window to start the server with the command :command:`openerp-server` as well as need to mention web client path, 
+On terminal go to server source path, and give the command :command:`./openerp-server --addons=../addons/7.0/,../web/7.0/addons` 
+which should result in a series of log messages as the server starts up. If the server
 is correctly installed, the message :guilabel:`[...] waiting for connections...` should show within 30
 seconds or so, which indicates that the server is waiting for a client to connect to it.
 
 .. figure:: images/terps_startup_log.png
    :align: center
-   :scale: 75
+   :scale: 55
    
    *OpenERP startup log in the console*
 
@@ -447,28 +422,44 @@ seconds or so, which indicates that the server is waiting for a client to connec
    single: client; GTK
    single: installation; GTK client
 
-Manual Installation of OpenERP GTK Clients
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+GTK
+^^^
 
-To install an OpenERP GTK client, follow the steps outlined in the website installation document for
-your particular operating system.
+GTK Clients is deprecated for Openerp v7.0
 
-.. figure:: images/terp_client_startup.png
+Installation of an OpenERP Web Server
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+You can install it from sources after installing its dependencies from packages as you did
+with the OpenERP server,
+but OpenERP has provided a simpler way to do this for the web client.
+
+To install client-web follow the up-to-date instructions in the installation document on the website.
+
+Its default setup corresponds to that of the OpenERP server
+you have just installed, so should connect directly at startup.
+
+#.  At a terminal window type :command:`openerp-web` to start the OpenERP Web server as mention above.
+
+.. _fig-webwel:
+
+.. figure:: images/web_welcome.png
+   :scale: 50
    :align: center
-   :scale: 75
-   
-   *OpenERP client at startup*
 
-Open a terminal window to start the client using the command :command:`openerp-client`. When you start the
-client on the same Linux PC as the server you will find that the default connection parameters will
-just work without needing any change. The message :guilabel:`No database found, you must create
-one!`  shows you that the connection to the server has been successful and you need to create a
-database on the server.
+   *OpenERP web client at startup*
+   
+You can verify the installation by opening a web browser on the server and navigating to
+http://localhost:8069 to connect to the OpenERP web version as shown in the figure :ref:`fig-webwel`. 
+You can also test this from
+another computer connected to the same network if you know the name or IP address of the server over
+the network – your browser should be set to http://<server_address>:8069 for this.
+
 
 Creating the Database
 ^^^^^^^^^^^^^^^^^^^^^
 
-You can connect other GTK clients over the network to your Linux server. Before you leave your
+You can connect other clients over the network to your Linux server. Before you leave your
 server, make sure you know its network address – either by its name (such as \
 ``mycomputer.mycompany.net``\  ) or its IP address (such as \ ``192.168.0.123``\  ).
 
@@ -488,73 +479,21 @@ and set the following fields as needed:
 
 *  :guilabel:`Server` : \ ``name``\   or  \ ``IP address``\   of the server over the network,
 
-*  :guilabel:`Port` : the port, whose default is \ ``8069``\   or  \ ``8070``\ ,
+*  :guilabel:`Port` : the port, whose default is \ ``8069``\,
 
-*  :guilabel:`Connection protocol` : \ ``XML-RPC``\   or  \ ``NET-RPC``\  .
-
-
-.. figure:: images/terp_client_server.png
-   :align: center
-   :scale: 75
-
-   *Dialog box for defining connection parameters to the server*
+*  :guilabel:`Connection protocol` : \ ``XML-RPC``\.
 
 It is possible to connect the server to the client using a secure protocol to prevent other network
 users from listening in, but the installation described here is for direct unencrypted connection.
 
 If your Linux server is protected by a firewall you will have to provide access to port 
- \ ``8069`` \ or \ ``8070`` \ for users on other computers with OpenERP GTK clients.
+ \ ``8069`` \ for users on other computers with OpenERP clients.
 
 .. index::
    single: installation; eTiny web server
    single: installation; OpenERP client-web server
 
-Installation of an OpenERP Web Server
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Just as you installed a GTK client on a Linux server, you can also install the OpenERP client-web
-server.
-You can install it from sources after installing its dependencies from packages as you did
-with the OpenERP server,
-but OpenERP has provided a simpler way to do this for the web client – using a system known as ez_setup.
-
-Before proceeding, confirm that your OpenERP installation is functioning correctly with a GTK
-client.
-If it is not, you will need to go back now and fix it, because you need to be able to fully use it for
-the next stages.
-
-To install client-web follow the up-to-date instructions in the installation document on the website.
-
-.. note:: Ez Tool
-
-	Ez is the packaging system used by Python. It enables the installation of programs as required just
-	like the packages used by a Linux distribution. The software is downloaded across the network and
-	installed on your computer by ez_install.
-
-	:program:`ez_setup` is a small program that installs ez_install automatically.
-
-The OpenERP Web server connects to the OpenERP server in the same way as an OpenERP client
-using the NET-RPC protocol. Its default setup corresponds to that of the OpenERP server
-you have just installed, so should connect directly at startup.
-
-#.	At the same console as you've just been using, go to the OpenERP web directory by typing
-	:command:`cd openerp-web-6.X`.
-
-#. 	At a terminal window type :command:`openerp-web` to start the OpenERP Web server.
-
-.. _fig-webwel:
-
-.. figure:: images/web_welcome.png
-   :scale: 70
-   :align: center
-
-   *OpenERP web client at startup*
-   
-You can verify the installation by opening a web browser on the server and navigating to
-http://localhost:8080 to connect to the OpenERP web version as shown in the figure :ref:`fig-webwel`. 
-You can also test this from
-another computer connected to the same network if you know the name or IP address of the server over
-the network – your browser should be set to http://<server_address>:8080 for this.
 
 Verifying your Linux Installation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -614,15 +553,12 @@ the following points provide some indicators about how you can set up your insta
 	started this way.
 
 #.	The client setup is stored in the file \ ``.terprc``\  in the user's home directory.
-	Since a GTK client can be started by any user, each user would have their setup defined in a
+	Since a client can be started by any user, each user would have their setup defined in a
 	configuration file in their own home directory.
 
 #.	You can delete the configuration file to be quite sure that the OpenERP client is starting with
 	just the default options. When the client starts without a configuration file it will write a new
 	one for itself.
-
-#.	The web server uses the NET-RPC protocol. If a GTK client works but the web server does not, then the
-	problem is either with the NET-RPC port or with the web server itself, and not with the OpenERP server.
 
 .. 	hint:: One Server for Several Companies
 
