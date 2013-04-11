@@ -9,38 +9,28 @@ you an insight into the coverage of the core OpenERP software.
 
 	When you have installed a new module and are using additional languages to English, you have to reload
 	the translation file. New terms introduced in these modules are not translated by default. To do
-	this use :menuselection:`Administration --> Translations --> Load an Official Translation`.
+	this use :menuselection:`Settings --> Translations --> Load an Official Translation`.
 
 Depending on the user you are connected as, the page appears differently.
-Using the installation sequence above, certain dashboards may be assigned as various
+Using the installation sequence above, certain kanban may be assigned as various
 users' home pages. They show a summary of the information required to start the day effectively. A
-project dashboard might contain:
+project kanban might contain:
 
-* a list of the tasks to carry out,
+* Display numbers of tasks,
 
-* a list of the tasks which is assigned to current user,
+* Display numbers of issues,
 
-* a list of sprints,
+* Display numbers of phases,
 
-* a list of issues assigned to current user,
+* Show the team members,
 
-* a graph of Planned vs Total hours,
+* Display spend time from assign planned time.
 
-* a graph of Remaining hours by Project,
-
-* a graph of Open Issues by Creation Date.
-
-Each of the lists can be reordered simply by clicking the heading of a column – first in ascending, then in descending order as you click repeatedly. To get more information about any particular entry, click on the name in the first column, or if you want to show a particular panel, click :guilabel:`Zoom` above it.
-
-.. figure:: images/admin_project_dashboard.png
+.. figure:: images/admin_project_kanban.png
    :align: center
    :scale: 65
 
-   *Project Dashboard*
-
-A user's home page is automatically reassigned during the creation or upgrading of a database. It is
-customary to assign a dashboard to someone's home page, but any OpenERP screen can be assigned to the
-home page of any user.
+   *Project Kanban*
 
 .. index::
    single: shortcut
@@ -49,11 +39,6 @@ home page of any user.
 
 	Each user has access to many menu items from the menu. But in
 	general, an employee uses only a small part of the system's functions.
-
-	So you can define shortcuts for the most-used menus. These shortcuts are personal for each user. To
-	create a new shortcut, just click the '*' of the header of the view in web client.
-
-	To remove a shortcut just click the link and again click '*' of the header of the view.
 
 The following sections present an overview of the main functions of OpenERP. Some areas are
 covered in more detail in the following chapters of this book and you will find many other functions
@@ -81,30 +66,18 @@ Search for a Partner
 
 Above the partner list you will see a search form that enables you to quickly filter the partners.
 
-The \ ``Customers`` \ filter is enabled by default showing partners who are customers. If you have applied no filter, the list shows every partner in the system. For space reasons, this list shows only the first few partners. If you want to display other records, you can search for them or navigate through the whole list using the :guilabel:`First`, :guilabel:`Previous`, :guilabel:`Next`, :guilabel:`Last` arrows.
+The \ ``Customers`` \ filter is enabled by default showing partners who are customers.
+If you have applied no filter, the Kanban shows every partner in the system. 
+For space reasons, this view shows few partners. If you want to display other records, you can search for them or show whole kanban using the :guilabel:`Show more...(X remaining)` Button at the end.
 
-.. figure:: images/partner_search_tab.png
-   :scale: 75
+.. figure:: images/customer_kanban.png
+   :scale: 55
    :align: center
 
    *Standard partner search*
 
-.. note:: List Limits
-
-	By default, the list in the GTK client shows only the first 80 records, to avoid overloading the
-	network and the server.
-
-	But you can change that limit by clicking the selection widget (showing 80 by default) to the
-	right of the search criteria.
-
-	Similarly, the list in the web client shows only the first 20, 50, 100, 500 or unlimited records.
-
-	The actual number can be switched by clicking the link between the PREVIOUS and NEXT buttons
-	and selecting one of the other limits.
-
 In the web version, if you click the name of a partner, the form view corresponding to that partner opens in Read-Only
-mode. In the list you could alternatively click the pencil icon to open the same form in Edit mode.
-Once you have a form, you can toggle between the two modes by clicking :guilabel:`Save` or :guilabel:`Cancel` when in
+mode.Once you have a form, you can toggle between the two modes by clicking :guilabel:`Save` or :guilabel:`Cancel` when in
 Edit mode and :guilabel:`Edit` when in Read-Only mode.
 
 .. index::
@@ -115,15 +88,15 @@ Partner Form
 
 The partner form contains several tabs, all referring to the current record:
 
-*  :guilabel:`General`,
+*  :guilabel:`Contract`,
+
+*  :guilabel:`Internal Notes`,
 
 *  :guilabel:`Sales & Purchases`,
 
 *  :guilabel:`Accounting`,
 
-*  :guilabel:`History`,
-
-*  :guilabel:`Notes`.
+*  :guilabel:`History`.
 
 The fields in a tab are not all of the same type – some (such as :guilabel:`Name`) contain free
 text, some (such as the :guilabel:`Language`) enable you to select a value from a list of options,
@@ -139,67 +112,32 @@ It is possible to add events manually which directly relate to the corresponding
 Possible Partner Actions
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-To the right of the partner form is a toolbar containing a list of possible :guilabel:`Reports` ,
-:guilabel:`Actions` and quick :guilabel:`Links` about the partner displayed in the form.
+To top center of the partner form is a Button named `Print` containing a list of possible :guilabel:`Reports` ,
+and button named `More` containing :guilabel:`Actions` and quick :guilabel:`Links` about the partner displayed in the form.
 
 You can generate PDF documents for the selected object (or, in list view, about one or more
-selected objects) using certain buttons in the :guilabel:`Reports` section of the toolbar:
+selected objects) using certain buttons in the :guilabel:`Print` button
 
 *  :guilabel:`Labels` : print address labels for the selected partners,
 
 *  :guilabel:`Overdue Payments` : print a letter to notify the selected partners of overdue payments,
 
-Certain actions can be started by the following buttons in the :guilabel:`Actions` section of the
-toolbar:
-
-*  :guilabel:`SMS Send`: enables you to send an SMS to selected partners. This system uses the bulk
-   SMS facilities of the Clickatell® company http://clickatell.com,
+Certain actions can be started by the following buttons in the :guilabel:`Actions` section of the `More` button
 
 *  :guilabel:`Mass Mailing`: enables you to send an email to a selection of partners,
 
-*  :guilabel:`Create Opportunity`: opens a window to create an opportunity for the partner.
 
 .. index::
    single: buttons; reports, actions, links
 
-.. tip:: Reports, Actions and Links in the GTK Client
-
-	When you are viewing a form in the GTK client, the buttons to the right of the form are shortcuts to
-	the same Reports, Actions and Links as described in the text. When you are viewing a list (such as
-	the partner list), those buttons are not available to you. Instead, you can reach Reports and Actions
-	through two of the buttons in the toolbar at the top of the list – Print and Action.
 
 Partners are used throughout the OpenERP system in other documents. For example, the menu
-:menuselection:`Sales --> Sales Orders` brings up all the Sales Orders in list view. Open an order in form view and click the name of a partner, even when the form is read-only. The Partner form will open.
+:menuselection:`Sales --> Sales Orders` brings up all the Sales Orders in list view. 
+Open an order in form view and click the name of a partner, even when the form is read-only. The Partner form will open.
 
-.. tip:: Right-clicks and Shortcuts
-
-	In the GTK client you do not get hyperlinks to other document types. Instead, you can right-click in
-	a list view to show the linked fields (that is fields having a link to other forms) on that line.
-
-	In the web client you will see hyperlink shortcuts on several of the fields on a form in Read-
-	Only mode, allowing you to be taken directly to the corresponding form. When the web form is in Edit mode,
-	you can instead right-click the mouse button
-	in the field, to get all of the linked fields in a pop-up menu just as you would with the GTK
-	client.
-
-	You can quickly give this a try by going to any one of the sales orders in :menuselection:`Sales
-	--> Sales Orders`. See where you can go from the
-	:guilabel:`Customer` field using either the web client with the form in
-	both read-only and in edit mode, or with the GTK client.
-
-.. figure:: images/familiarization_sale_partner.png
-   :scale: 85
-   :align: center
-
-   *Links for a partner appear in an order form*
-
-Before moving on to the next topic, take a quick look at the :menuselection:`Sales -->
-Configuration --> Address Book`  menu, particularly :menuselection:`Partner Categories`  and  :menuselection:`Localisation` menus.
-They contain some of the demonstration data that you installed when you created the database.
 
 Products
---------
+^^^^^^^^
 
 In OpenERP, `product` is used to define a raw material, a stockable product, a consumable or a service. You can
 work with whole products or with templates that separate the definition of products and variants (*extra module*).
@@ -306,6 +244,7 @@ Boost your Sales
 
 OpenERP provides many tools for managing relationships with partners. These are available through
 the :menuselection:`Sales` menu.
+
 
 .. tip::  :guilabel:`CRM & SRM`
 
@@ -766,25 +705,25 @@ You can also easily combine filters; an arrow will be displayed and you will get
 
 Let's show an example.
 The statistical report for project tasks is `Task Analysis` which can be displayed using the
-menu :menuselection:`Project --> Reporting --> Tasks Analysis` when you have installed the `Project Management` module.
+menu :menuselection:`Reporting --> Project --> Tasks Analysis` when you have installed the `Project Management` module.
 
 .. figure:: images/filter_task_analysis.png
-   :scale: 75
+   :scale: 55
    :align: center
 
    *Task Analysis*
 
-You can see the `Advanced Search View` in the light green shaded area.
+You can see the `Advanced Search View` at the top right area.
 
 You can filter the information of a task according to the Group by features.
 
-Click, for instance, the `Stage` button in Group by, and then click `Task` to analyse your tasks by stage and then by task.
+Click, for instance, the `Project` in Group by from the filter, and then click `Stage` to analyse your tasks by project and then by stages.
 
-This `Advanced Search View` can also be attached to any `List View` of an object and hence increase the
+This `Advanced Search View` can also be attached to any `Kanban or List View` of an object and hence increase the
 search facility when a user looks up the record in list view.
 
 .. figure:: images/filter_task_list_view.png
-   :scale: 75
+   :scale: 55
    :align: center
 
    *Search the Tasks which are `In Progress` with Group by Project and State*

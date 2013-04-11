@@ -21,7 +21,7 @@ installation. Then you will install a CRM module to complete your existing datab
 Updating the Modules list
 -------------------------
 
-Click :menuselection:`Administration --> Modules --> Update Modules List` to start the
+Click :menuselection:`Settings --> Modules --> Update Modules List` to start the
 updating tool. The :guilabel:`Module Update` window opens notifying the user that
 OpenERP will look at the server side for adding new modules and updating
 existing ones.
@@ -37,40 +37,31 @@ and how many existing modules were updated. Click :guilabel:`Open Modules` to re
 	file with the module name and .zip appended to it. The file is in ZIP archive format and replicates
 	the directory structure of unzipped modules.
 
-.. tip:: Searching through the whole list
-
-	The list of modules shows only the first available modules. In the web client you can search or
-	follow the First / Previous / Next / Last links to get to any point in the whole list, and you can
-	change the number of entries listed by clicking the row number indicators between :guilabel:`Previous` 
-	and :guilabel:`Next`
-	and selecting a different number from the default of 20.
-
-	If you use the GTK client you can search, as you would with the web client, or use the selection field
-	(currently showing 80) to
-	the top right of the window to change the number of entries returned by the search from its default
-	limit of 80, or its default offset of 0 (starting at the first entry) in the whole list.
-
 .. index::
   single: module; installing
 
-The Configuration / Reconfigure Wizard
---------------------------------------
+The Configuration
+-----------------
 
-One of the new features of OpenERP is the :guilabel:`Configuration` wizard. Once run, the :guilabel:`Reconfigure` shortcut will appear. This wizard provides an easy way to install modules, thanks to its user-friendly and easy-to-use interface. The user may invoke this wizard at his own convenience using the shortcut :guilabel:`Reconfigure`, found just below the database and user name in the web-client or in the Shortcut menu in the GTK client. The same Configuration dialog box appears that you may have encountered at the time of installing a new database. Why did we call it the :guilabel:`Reconfigure` wizard? Indeed, because it allows the user to review installed applications and install related additional features or simply to install new applications on the fly.
+One of the new features of OpenERP is the :guilabel:`Configuration`.
+This provides an easy way to install modules, thanks to its user-friendly and easy-to-use interface.
+After installing any featured openERP application you will find out the Configuration Menu.
+The user may invoke this form at his own convenience using the menu :menuselection:`Settings --> Configuration --> ...`.
 
-When you go through the various steps in the wizard, you will come across some options that are checked and greyed. These are applications already installed. In the \ ``openerp_ch02`` \ database configuration, you may see that the \ ``Customer Relationship Management`` \ option is already checked because this Business Application has been installed in this database.
-Install extra applications simply by checking the corresponding options and clicking :guilabel:`Install` or click :guilabel:`Skip` to stop the configuration. You will eventually also come across the :guilabel:`CRM Application Configuration` step which you may use to add features to your CRM application. For now, select the \ ``Claims`` \ option and click :guilabel:`Configure`. This will in turn install the :mod:`crm_claim` module.
+Why did we call it the :guilabel:`Configuration`? Indeed, because it allows the user to review installed applications and install related additional features or simply to install new applications on the fly.
+
+When you go through the various steps in the Configuration, you will come across some options that are checked. These are applications already installed. In the \ ``openerp_ch02`` \ database configuration.
+Install extra applications simply by checking the corresponding options and clicking :guilabel:`Apply`.
 
 .. figure:: images/reconfigure_wizard.png
    :scale: 75
    :align: center
 
-   *Reconfigure wizard showing Customer Relationship Management application as installed*
+   *Configuration*
 
-You may continue adding features this way, skip configuration steps or simply exit from this wizard. When you feel the need to
-load your system with additional features, you may invoke the :guilabel:`Reconfigure` wizard again at any point.
+You may continue adding features this way, skip configuration steps or simply exit from this configuration. When you feel the need to
+load your system with additional features, you may invoke at :guilabel:`Configure` again at any point.
 
-.. note:: You can also change the Configuration Wizard through the :menuselection:`Administration --> Configuration --> Configuration Wizards --> Configuration Wizards`.
 
 Installing an Application / Module from the Modules list
 --------------------------------------------------------
@@ -78,39 +69,37 @@ Installing an Application / Module from the Modules list
 .. index::
    single: module; google maps
 
-You will now install a module named :mod:`google_map`, which will enable you to add a feature to the partner form to open the location directly in Google Maps. This is part of the core installation, so you do not need to load anything to make this work.
 
-Open the list of modules from :menuselection:`Administration --> Modules --> Modules`. Search for the module by entering the name :mod:`google_map` in the :guilabel:`Name` field on the search screen then clicking it in the list that appears to open it. The form that describes the module gives you useful information such as its version number, its status and a review of its
-functionality. Click :guilabel:`Schedule for Installation` and the status of the module changes to :guilabel:`To be installed`.
+You will now install a module named :mod:`google_doc`, Google Docs integration: using spreadsheets and text files
+In general, many users have a multitude of tools and files to conduct their daily business. Besides using your ERP, many amongst us still use separate text and spreadsheet files to cover specific business needs. We now offer you to integrate text and spreadsheet files with OpenERP 7.0. This offers to the end user the possibility to take these files into account whilst using OpenERP 7.0. Its purpose is to offer a quick fix solution for those users, where the creation of a custom module to cover that particular user need would take some more time to obtain.
+Take a job opening in the Recruitment Process App as an example of an OpenERP object: you can attach an interview evaluation form you maintain in Google Docs, and dynamically link it to the said job application. Then, you can share this Google Docs file with the persons you wish. Taking this example a step further, you can link a document template, say your interview evaluation template, and link them to all your job openings.  And every time you have a need to hire, you can mobilize the Google Doc-based evaluation template.
+Upon the one click installation of the Google Docs module, its configuration section allows you to specify models or templates. Prior to this, don’t forget to specify your personal Google Docs credentials in your User configuration menu.
 
-.. tip:: From now on you can schedule and install modules from list view too. Notice the buttons on the right side and the action button to install.
+Open the list of modules from :menuselection:`Settings --> Modules --> Modules`. Search for the module by entering the name :mod:`google_doc` in search text in the list that appears to open it. The form that describes the module gives you useful information such as its version number, its status and a review of its
+functionality. Click :guilabel:`Install` and the status of the module changes to :guilabel:`Installed`.
 
-.. figure:: images/install_google_map_module.png
-   :scale: 75
+.. tip:: From now you can schedule and install modules from kanban view using Install button.
+
+.. figure:: images/install_google_doc_module.png
+   :scale: 55
    :align: center
 
-   *Installation of the Google Maps module*
+   *Installation of the Google Docs module*
 
 
 .. tip::  Technical Guide
 
 	If you select a module in any of the module lists by clicking on a module line and then on
-	:guilabel:`Technical Guide` at the top right of the window, OpenERP produces a technical report
+	:guilabel:`Technical Guide` from the top `Print` button, OpenERP produces a technical report
 	on that module. It is helpful only if the module is installed.
 
 	This report comprises a list of all the objects and all the fields along with their descriptions.
 	The report adapts to your system and reflects any modifications you have made and all the other
 	modules you have installed.
 
-Then, either use the menu :menuselection:`Administration --> Modules --> Apply Scheduled Upgrades`, or from the :guilabel:`Actions` section click :guilabel:`Apply Scheduled Upgrades`, then :guilabel:`Start update` on the :guilabel:`Module Upgrade`
+Then, either use the menu :menuselection:`Settings --> Modules --> Apply Scheduled Upgrades`, or from the :guilabel:`Actions` section click :guilabel:`Apply Scheduled Upgrades`, then :guilabel:`Start update` on the :guilabel:`Module Upgrade`
 form that appears. Close the window when the operation has completed. Return to the :guilabel:`Sales` menu; you will
 see the new menu :menuselection:`Products` has become available.
-
-.. tip::  Refreshing the menu in the GTK Client
-
-	After an update in the GTK client you will have to open a new menu to refresh the content –
-	otherwise you will not see the new menu item. To do that, use the window menu :menuselection:`Form -->
-	Reload / Undo` or use the shortcut :kbd:`Ctrl+R`.
 
 Installing a Module with its Dependencies
 -----------------------------------------
@@ -119,19 +108,15 @@ Installing a Module with its Dependencies
    single: module; stock
 
 Now install the Warehouse Management module using the same process as before.
-Start from :menuselection:`Administration --> Modules --> Modules`.
+Start from :menuselection:`Settings --> Modules --> Modules`.
 
-	#.  Get the list of modules, and search for the :mod:`stock` module in that list.
+	#.  Get the Kanban view of modules, and search for the :mod:`stock` module in that view.
 	
-	#.  Schedule the module for installation by clicking :guilabel:`Schedule for Installation`.
+	#.  Schedule the module for installation by clicking :guilabel:`Install`.
 	
 	#.  Do the same for :mod:`account`. 
 	
-	#.  Click :guilabel:`Apply Scheduled Upgrades` on the action toolbar to the right.
-
-	#.  Click :guilabel:`Start update` to install both modules. 
-	
-	#.  After a few seconds, when the installation is complete, you may close this dialog box.
+	#.  After a few seconds, installation is completed.
 	
 	#.  You will see details of all the features installed by the modules on a new
 	    :guilabel:`Features` tab on the module form. 
@@ -172,9 +157,9 @@ installing because you have to handle existing system data.
 	you can return to your backup. If they are, then you will probably still reinstall the modules on
 	your backup so that you do not have to delete all your test data.
 
-	If you wanted to uninstall, you would use the menu :menuselection:`Administration --> Modules
-	--> Modules` and then uninstall them in the inverse order of their
-	dependencies: ``stock``, ``account``.
+	If you wanted to uninstall, you would use the menu :menuselection:`Settings --> Modules
+	--> Installed Modules` and then uninstall them in the inverse order of their
+	dependencies: ``stock``, ``account`` from the form view's `Uninstall` button.
 
 Installing Additional Functionality
 -----------------------------------
@@ -189,7 +174,7 @@ created the database.
    single: module; importing
 ..
 
-Click :menuselection:`Administration --> Modules --> Modules` to give you an
+Click :menuselection:`Settings --> Modules --> Modules` to give you an
 overview of all of the modules available for installation.
 
 To test several modules, you will not have to install them all one by one. You can use the dependencies

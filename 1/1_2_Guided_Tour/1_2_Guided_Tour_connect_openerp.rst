@@ -171,7 +171,7 @@ demonstration data. Click the \ ``Demo User`` \ name to open a non-editable form
 Click the :guilabel:`Access Rights`  tab to see that the demo user is a member of only the ``Employee`` group,
 and is subject to no specialized rules.
 The user \ ``Administrator`` \ is different, as you can see if you
-follow the same sequence to review its definition. It is a member of the \ ``Administration / Configuration`` \
+follow the same sequence to review its definition. It is a member of the \ ``Administration / Settings`` \
 and the \ ``Administration / Access Rights`` \ groups,
 which gives it more advanced rights to configure new users.
 
@@ -186,12 +186,12 @@ which gives it more advanced rights to configure new users.
 	setup answers the question “Who has access to what?”
 
 Click :menuselection:`Settings --> Users --> Groups` to open the list of
-groups defined in the system. If you open the form view of the \ ``Settings / Configuration`` \
+groups defined in the system. If you open the form view of the \ ``Administration / Settings`` \
 group by clicking its name in the list, the first tab :guilabel:`Users` gives you the list of
 all the users who belong to this group.
 
 You can also see in the :guilabel:`Menus` tab, the list of menus reserved for this group. By convention,
-the \ ``Settings / Configuration`` \ in OpenERP has rights of access to
+the \ ``Administration / Settings`` \ in OpenERP has rights of access to
 the :menuselection:`Configuration` menu in each section. So \ ``Sales / Configuration`` \ is
 found in the list of access rights but \ ``Sales`` \ is not found there because it is accessible
 to all users. Click the :guilabel:`Access Rights` tab and it gives you details of the access rights
@@ -240,7 +240,7 @@ information about the company, such as its corporate name, its primary language,
 * the :menuselection:`Internal Notes` is an area for free text notes.
 
 To the Top of the form There is a button name `More` is a list of Actions, Links and related to a partner. Click some of 
-them to get a feel for their use.The print button contain the list od report and the attachment button for attachment.
+them to get a feel for their use.The print button contain the list of report and the Attachment button for attachment (Attachement button visible if you install modules :mod:`Document`).
 
 .. figure:: images/partner.png
    :align: center
@@ -264,8 +264,8 @@ them to get a feel for their use.The print button contain the list od report and
 Partner Categories
 ^^^^^^^^^^^^^^^^^^
 
-You can list your partners by category using the menu :menuselection:`Sales --> Configuration -->
-Address Book --> Partners Categories`. Click a category to obtain a list of partners in that category.
+You can list your partners by category or you can say by tags using the menu :menuselection:`Sales --> Configuration -->
+Address Book --> Partners Tags`. Click a tag to obtain a list of partners in that category.
 
 .. figure:: images/main_window_partner_menu_config.png
    :scale: 75
@@ -279,16 +279,15 @@ partner:
 	#. Use :menuselection:`Sales --> Configuration --> Address Book --> Partners Categories`
 	   to reach the list of categories in a list view.
 
-	#. Click :guilabel:`New` to open an empty form for creating a new category
+	#. Click :guilabel:`Create` to open an empty form for creating a new category
 
-	#. Enter \ ``My Prospects``\  in the field :guilabel:`Category Name`. Then click on the
+	#. Enter \ ``Gold``\  in the field :guilabel:`Name`. Then click on the
 	   :guilabel:`Search` icon to the right of the :guilabel:`Parent Category` field and select 
-	   \ ``Prospect``\  in the list that appears.
+	   \ ``Partner``\  in the list that appears.
 
 	#. Then save your new category using the :guilabel:`Save` button.
 
-You may add exiting partners to this new category using the :guilabel:`Add` button in the
-:guilabel:`Partners` section.
+You may add exiting partners to this new category in the :guilabel:`Partners` section.
 
 .. tip:: Required Fields
 
@@ -297,28 +296,13 @@ You may add exiting partners to this new category using the :guilabel:`Add` butt
 	you have completed every required field.
 
 You can review your new category structure using the list view. 
-You should see the new structure of \ ``Prospects / My Prospects``\   there.
+You should see the new structure of \ ``Partner / Gold``\   there.
 
 .. figure:: images/main_window_partner_tab.png
    :scale: 75
    :align: center
 
    *Creating a new partner category*
-
-To create a new partner and link it to this new category, open a new partner form to modify it.
-
-	#. Type \ ``New Partner``\  into the :guilabel:`Name` field.
-
-	#. In the :guilabel:`General` tab, click the :guilabel:`Add` button under the
-	   :guilabel:`Categories` section and select your
-	   new category from the list that appears: \ ``Prospect / My Prospects`` \.
-
-	#. Then save your partner by clicking :guilabel:`Save`. The partner now belongs in the category 
-	   \ ``Prospect / My Prospects`` \.
-
-	#. Monitor your modification in the menu :menuselection:`Sales --> Configuration --> Address Book -->
-	   Partners Categories`. Select the category :guilabel:`Prospect / My Prospects`. The list of partners opens
-	   and you will find your new partner there in that list.
 
 .. tip:: Searching for Documents
 
@@ -328,8 +312,7 @@ To create a new partner and link it to this new category, open a new partner for
 
 .. note::  Example Categories of Partners
 
-	A partner can be assigned to several categories. These enable you to create alternative
-	classifications as necessary, usually in a hierarchical form.
+	A partner can be assigned to several categories. These enable you to create alternativen classifications as necessary, usually in a hierarchical form.
 
 	Here are some structures that are often used:
 
