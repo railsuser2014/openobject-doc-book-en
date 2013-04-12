@@ -573,17 +573,13 @@ You can see where a particular document is in its process, if you have selected
 a single document, by the solid bar on one of the process nodes. You also link
 to documents and menus for each of the stages.
 
-There is a clear distinction between a cross-functional process (that is currently only
-shown in the web client) and the detailed document workflow (that is shown in both the
-web client from a process node, and the GTK client from the
-:menuselection:`Plugins > Execute a Plugin...` menu and clicking either
-the :guilabel:`Print Workflow` or the :guilabel:`Print Workflow (Complex)` option.
+There is a clear distinction between a cross-functional process and the detailed document workflow that is shown in client from a debug mode.
 
 .. figure:: images/purchase_workflow.png
    :scale: 65
    :align: center
 
-   *Workflow for a Purchase Order*
+   *flow for a Purchase Order*
 
 Alongside the document management system, the process visualization features make OpenERP
 far better for documentation than similar systems.
@@ -595,10 +591,10 @@ You have been guided through a brisk, brief overview of many of the main functio
 Some of these – a large proportion of the core modules – are treated in more detail
 in the following chapters.
 
-You can use the menu :menuselection:`Administration --> Modules --> Modules`
+You can use the menu :menuselection:`Settings --> Modules --> Modules`
 to find the remaining modules that have been loaded into your installation but
 not yet installed in your database. Some modules have only minor side-effects to OpenERP (such as
-:mod:`google_maps`), some have quite extensive effects (such as the various charts of accounts), and
+:mod:`google_docs`), some have quite extensive effects (such as the various charts of accounts), and
 some make fundamental additions.
 
 But there are now more than hundred modules available. You can install them according to your needs.
@@ -612,55 +608,6 @@ Tips & Tricks
 
 Overview of Shortcut Keys
 ^^^^^^^^^^^^^^^^^^^^^^^^^
-
-* Shortcuts for OpenERP
-
-.. table::
-
-   ============  ===============================
-   Shortcut Key  What does it do?
-   ============  ===============================
-   Ctrl+H        Contextual Help
-   Ctrl+O        Connect
-   Ctrl+Q        Quit
-   ============  ===============================
-
-* Shortcuts for OpenERP Form
-
-.. table::
-
-   ==============  ===============================
-   Shortcut Key    What does it do?
-   ==============  ===============================
-   Ctrl+D          Delete
-   Ctrl+F          Find
-   Ctrl+G          Go To Resource ID
-   Ctrl+L          Switch to List/Form
-   Ctrl+N          New
-   Ctrl+P          Preview in PDF
-   Ctrl+Page Down  Next Tab
-   Ctrl+Page Up    Previous Tab
-   Ctrl+R          Reload/Undo
-   Ctrl+S          Save
-   Ctrl+T          Menu
-   Ctrl+W          Close Tab
-   Page Down       Next
-   Page Up         Previous
-   Shift+Ctrl+D    Duplicate
-   Shift+Ctrl+H    New Home Tab
-   Shift+Ctrl+Y    Repeat latest action
-   ==============  ===============================
-
-* Shortcuts for OpenERP when editing a resource in a popup window
-
-.. table::
-
-   ============  ===============================
-   Shortcut Key  What does it do?
-   ============  ===============================
-   Ctrl+Enter    Save and Close window
-   Ctrl+Esc      Close window without Saving
-   ============  ===============================
 
 * Shortcuts in a relation field
 
@@ -692,7 +639,7 @@ Overview of Shortcut Keys
 Filters
 ^^^^^^^
 
-The `Advanced Search View` is a new feature of OpenERP v6 which provides a very user-friendly filtering mechanism
+The `Advanced Search View` is a new feature of OpenERP v7 which provides a very user-friendly filtering mechanism
 for the end user to easily look up desired records from the list.
 
 The perfect example of an advanced search view is the `Statistical Report` of OpenERP.

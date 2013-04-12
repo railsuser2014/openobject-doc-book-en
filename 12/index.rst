@@ -2,7 +2,7 @@
 Social Network
 ################
 
- `The Social Networking module provides unified social network abstraction layers allowing allowing applications to display a complete communication history on documents with a fully-integrated email and message management system. It enables the user to read and send a message as well as e-mails , it also provides a feeds page combine to a subscription mechanism that allows to follow documents and to be constantly updated about recent news.`
+ `The Social Networking module provides unified social network abstraction layers allowing applications to display a complete communication history on documents with a fully-integrated email and message management system. It enables the user to read and send a message as well as e-mails , it also provides a feeds page combine to a subscription mechanism that allows to follow documents and to be constantly updated about recent news.`
 
 Recent research shows that we spend 61 % of our professional time either reading and answering email, searching and gathering information or communicating and collaborating internally.   
 
