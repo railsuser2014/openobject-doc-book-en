@@ -17,7 +17,7 @@ User Login
 
 .. tip:: Managing Users through LDAP
 
-	With the :mod:`users_ldap` module, user accounts can be managed through an LDAP directory that can be
+	With the :mod:`auth_ldap` module, user accounts can be managed through an LDAP directory that can be
 	made common to various different company resources.
 
 	Connection parameters for the LDAP directory are then registered with the company definition.
@@ -99,10 +99,10 @@ To get a feel for rights management in OpenERP, you will create a new \ ``Stock1
 access to the *Warehouse* menu items. You will then create a stores person user who is a member
 of the \ ``Stock1`` \  group.
 
-To create a new group, use the menu :menuselection:`Administration --> Users --> Groups`. Enter the
+To create a new group, use the menu :menuselection:`Settings --> Users --> Groups`. Enter the
 group name ``Stock1``.
 
-Then to create a new user linked to this, use :menuselection:`Administration --> Users --> Users` to
+Then to create a new user linked to this, use :menuselection:`Settings --> Users --> Users` to
 enter the following:
 
 *  :guilabel:`User Name` : \ ``Stores Person`` \ ,
@@ -117,12 +117,12 @@ In the :guilabel:`Groups` section of the user form, add the \ ``Stock1`` \ group
 just created.
 
 .. figure::  images/menu_access.png
-   :scale: 75
+   :scale: 55
    :align: center
 
    *Groups that have access to the Warehouse menu*
 
-Save the user, then go into the menu :menuselection:`Administration --> Customization --> User
+Save the user, then go into the menu :menuselection:`Settings --> Technical --> User
 Interface --> Menu Items` to get a list of menus. Filter this list using the search field :guilabel:`Menu` to
 get the :menuselection:`Warehouse` menu item. In the form describing the menu, add \ ``Stock1`` \ into the :guilabel:`Groups` field. From now on, only members of
 the \ ``Warehouse / Manager`` \, \ ``Warehouse / User`` \ and \ ``Stock1`` \ group will be able to see
@@ -146,14 +146,14 @@ this menu item in their main menu list.
 
 .. note:: Initial Access Configuration
 
-	In the initial configuration, OpenERP's \ ``admin`` \ user, a member of the \ ``Administration / Configuration`` \
+	In the initial configuration, OpenERP's \ ``admin`` \ user, a member of the \ ``Administration / Settings`` \
 	group, is given access to the Configuration menu
 	in each section of the main menu. This is a general convention.
 	For example, :menuselection:`Sales --> Configuration` is visible in the administrator's menu
 	amongst the other Sales menu items.
 	But only the menu items other than :menuselection:`Sales --> Configuration` are visible to other users.
 	Similarly, the main menu item :menuselection:`Administration` is, by convention, visible only to
-	users who are members of the \ ``Administration / Configuration`` \ group.
+	users who are members of the \ ``Administration / Settings`` \ group.
 
 .. index::
    single: access; objects
@@ -193,13 +193,13 @@ You can manage four access modes on objects independently:
 *  :guilabel:`Delete access` : members of the group can delete records from the object.
 
 .. figure::  images/access_control.png
-   :scale: 75
+   :scale: 55
    :align: center
 
-   *Access control to invoices for the Accounting / Invoice group*
+   *Access control to invoices for the Accounting & Finance / Invoicing & Payments*
 
-To configure access rights on an OpenERP object, use the menu :menuselection:`Administration -->
-Security --> Access Controls List` and click :guilabel:`New` or choose an existing one
+To configure access rights on an OpenERP object, use the menu :menuselection:`Settings -->
+Security --> Access Controls List` and click :guilabel:`Create` or choose an existing one
 and click :guilabel:`Edit`.
 You give a :guilabel:`Name` to the access control, select a :guilabel:`Group`, and
 the :guilabel:`Object`, then check the checkbox corresponding to each of the four :guilabel:`Access` modes.
@@ -233,14 +233,14 @@ You can manage four access modes on objects independently, depending on the test
 
     * :guilabel:`Delete access` : can delete records from the object.
 
-To configure a rule on an object, use the menu :menuselection:`Administration -->
+To configure a rule on an object, use the menu :menuselection:`Settings -->
 Security --> Record Rules`. The fields in the ``ir.rule`` object describe:
 
     * :guilabel:`Object` : Object on which to have the rule
 
     * :guilabel:`Name` : Name of the rule
 
-    * :guilabel:`Global` : If global is checked, then that rule would be applied for all the groups; and if it is unchecked, then that rule would be applied only for the groups selected for it
+    * :guilabel:`Global` : If global is checked, then that rule would be applied for all the groups; and if it is unchecked, then that rule would be applied only for the groups selected for it.
 
     * :guilabel:`Domain` : A list of all the tests for the object. It is specified through a Python expression as a list of tuples.
 
@@ -257,7 +257,7 @@ Security --> Record Rules`. The fields in the ``ir.rule`` object describe:
         But at least one access mode has to be checked, all of them cannot be unchecked. If all of them are unchecked, it would raise an exception.
 
 .. .. figure:: images/security_rule.png
-..    :scale: 75
+..    :scale: 55
 ..    :align: center
 
 *For example :* We can have a rule defined on ``res.partner`` object, which tests if the user is the dedicated salesman of the partner ``[('user_id', '=', user.id)]``. We check only the create and write access modes and keep other access modes unchecked.
@@ -273,17 +273,16 @@ Modification History
 .. _fig-log:
 
 .. figure::  images/view_log.png
-   :scale: 75
+   :scale: 55
    :align: center
 
    *Partner Record History*
 
 Each record in an OpenERP database carries a note of its history. You can find out who it was
 created by and when that occurred, and who last modified it and when that occurred. Click the
-:guilabel:`View Log` link at the right of any form in the web client
-to display a dialog box showing this information, as shown in the
+:guilabel:`View Log` link from More button to display a logs related to that record, as shown in the
 figure :ref:`fig-log`. It can help you identify who to contact if there are any problems with the
-data in the records.
+data in the records. Before that you have to define log rule using :menuselection:`Reporting --> Audit --> Audit Rules`. 
 
 .. index::
    single: module; audittrail

@@ -10,10 +10,8 @@ That is the same format as used in the language translations.
 
 .. note:: Forms and Lists
 
-   You have access to the Import and Export functions in the web client on a single form view in read-
-   only mode – you cannot reach Import or Export in any other view or when the form is editable.
-   If you are using the GTK client, you can find the functions from the top menu 
-   :menuselection:`Form --> Import data...` and :menuselection:`Form --> Export data...`.
+   You have access to the Import and Export functions in the client on a list view in read-
+   only mode – From `More` Button. You cannot reach Import or Export in any other view.
 
 The CSV file format is a text format compatible with most spreadsheet programs (such as OpenOffice
 Calc and Microsoft Excel), and is easily editable as a worksheet. The first line contains the name of
@@ -28,7 +26,7 @@ Exporting OpenERP Data to CSV
 Start exploring OpenERP's use of the CSV format by exporting a modestly complex set of data,
 the partners and partner addresses in the demonstration data.
 
-Go to :menuselection:`Sales --> Address Book --> Customers` for a list of partners, and select the records to export by clicking the checkbox on the left of each record. Then look for the :guilabel:`Other Options` section on the right of the list and click the :guilabel:`Export` link. This pops up the :guilabel:`Export Data` dialog box.
+Go to :menuselection:`Sales --> Sales --> Customers` for a list of partners, and select the records to export by clicking the checkbox on the left of each record. Then look for the :guilabel:`More Button` section on the Top of the list and click the :guilabel:`Export` link. This pops up the :guilabel:`Export Data` dialog box.
 Select the following fields:
 
 * :guilabel:`Name`,
@@ -42,7 +40,7 @@ the multiple selection - the order in which you
 select them, is the order in which they will be displayed.
 
 If you do not wish to export your data just yet, or would like to use the same fields for future exports,
-you have the option to save these settings. To do that, click :guilabel:`Save List` and give your export a name.
+you have the option to save these settings. To do that, click :guilabel:`Save fields List` and give your export a name.
 
 Then click :guilabel:`Export` and save the resulting :file:`data.csv` file somewhere accessible - 
 perhaps your desktop. You can open that file in a spreadsheet program or a text editor.
@@ -84,12 +82,9 @@ would create the following CSV file from the export file:
    "","Emerson Earth","New York"
    "Miles A Minute","",""
 
-From the list of partners, click the :guilabel:`Import` button, and then in the 
+From the list of partners, click the :guilabel:`Import` link, and then in the 
 :guilabel:`Import Data` window click :guilabel:`Browse` to search for and import
-the new :file:`data.csv` file. The web client automatically matches column names
-but the GTK client requires that you click the :guilabel:`Auto detect` button.
-You can use the default :guilabel:`Options` or change them according to preference.
-Then click :guilabel:`Import`.
+the new :file:`data.csv` file then click :guilabel:`Validate`.
 
 You will get a dialog box showing that you have imported 2 objects, and you can
 see the new partners and partner addresses when you refresh the list on-screen.
@@ -97,230 +92,32 @@ see the new partners and partner addresses when you refresh the list on-screen.
 .. index::
    pair: data; CSV structured
 
-The CSV Format for Complex Database Structures
-----------------------------------------------
+Lowering the barrier to import data
+-----------------------------------
 
-When you import data, you have to overcome the problem of representing a database structure in \
-``.csv``\  flat files. To do this, two solutions are possible in OpenERP:
+The importation of data into OpenERP has been completely redesigned as to enable much easier and transparent data import operations.
+ 
+When setting the “Allow users to import data from CSV files” option in the Settings/Configuration/General Settings menu entry, the import/export tool will be made available throughout the App Suite. Once installed, the import option is available next to every Create button from a list view.
 
-* importing a CSV file that has been structured in a particular way to enable you to load several
-  different database tables from a single file (such as partners and partner contacts in one CSV
-  file, as you have just done above),
-
-* importing several CSV files, each corresponding to a specific database table, that have explicit
-  links between the tables.
-
-.. note:: Server-side Importing
-
-   You can also import CSV data through the server interface. The file format is the same, but
-   column headings differ slightly. When importing through the user interface, it checks that the column
-   heading names match the names seen in the forms on the user interface itself. 
-   In contrast, when importing through the 
-   server, the column heading names must match the internal names of the fields.
-
-Start by building the header of the CSV file. Open the import tool on the object that you are
-interested in, and select the fields that you want to import into your OpenERP database. You must
-include every field that is colored blue because those fields are required (unless you know that they
-get filled by default with an appropriate value), and also any other field that is important to you.
-
-.. figure::  images/csv_column_select.png
-   :scale: 75
+.. figure::  images/import.png
+   :scale: 65
    :align: center
 
-   *Selecting fields to import using a CSV file*
+   *New Import feature*
 
-Use the field names as the column names in the first line of your CSV file, adding one field per
-column. If your CSV file has these names in the first line, then when you import your CSV file,
-OpenERP will automatically match the column name to the field name of the table. When you have
-created your CSV file, you will do that by clicking the :guilabel:`Nothing` button to clear the
-:guilabel:`Fields to Import`, then select your CSV file by browsing for a :guilabel:`File to
-import`, and then clicking the :guilabel:`Auto Detect` button.
+After selecting your data, you can preview them right away, thus resulting in a significant gain in time. In previous versions of OpenERP, you had to reiterate the import when the initial one did not meet your criteria. Now, the system analyses the file content and provides indications in case of errors or issues for every line at once.
+ 
+In case of errors in the original file formatting, OpenERP proposes you alternatives and solutions on how to structure your document.
+ 
+Furthermore, the mapping with the OpenERP data fields has been improved. The system even proposes available data alternatives, in case it does not find the data the user specified. Previously, the system would halt the import upon meeting an error. Now, it lists all the errors, allowing the user to correct on the spot prior to finalizing the import process.
 
-To import CSV data that matches your database structure, you should distinguish between the following types
-of fields in the OpenERP interface:  *many-to-many*  fields (between multiple sources and
-destinations),  *many-to-one*  fields (from multiple sources to a single destination), and
-*one-to-many*  fields (from a single origin to multiple destinations).
-
-.. note:: Foreground Table
-
-   Each of these types is described in relation to a foreground table –
-   the table whose entry form you are viewing and whose entries would be updated by a simple CSV file.
-
-   Just because one of these relation fields appears on the foreground table, does not mean that there
-   is an inverse field on the related table – but there may be.
-
-   So there is *no* one-to-many field in the User form to reflect the many-to-one :guilabel:`user_id` Salesman field in
-   the Customer form,
-   but there *is* a many-to-one :guilabel:`partner_id` Partner Name field in the Addresses form to reflect the one-to-many
-   :guilabel:`child_ids` Partner Contacts field in the Customer form.
-
-Have a look at the screenshots below to see the differences.
-
-.. figure::  images/csv_many2one.png
-   :scale: 75
+.. figure::  images/import_solution.png
+   :scale: 65
    :align: center
 
-   *A many-to-one field: a salesperson linked to a partner*
+   *Solution Import feature*
 
-.. figure::  images/csv_many2many.png
-   :scale: 75
-   :align: center
-
-   *A many-to-many field: partner categories*
-
-.. figure::  images/csv_one2many.png
-   :scale: 75
-   :align: center
-
-   *A one-to-many field: partner contacts*
-
-All of the other fields are coded in the CSV file as just one text string in each column.
-
-.. index:: 
-   pair: relation; field
-
-Many-to-one Fields
-^^^^^^^^^^^^^^^^^^
-
-Many-to-one fields represent a relationship between the foreground table and another table in the
-database, where the foreground table has a single entry for the other table. OpenERP tries to link 
-the new record in the foreground table with the field in the other table by matching the field values.
-
-.. tip:: Field Identifiers 
-
-   If you are working on the server side, you can use identifiers rather than the names of resources
-   to link tables. To do this, you import the
-   first file (for example, Products) with a column named :guilabel:`id` in your CSV file that contains a
-   unique identifier for each product. This could be an incrementing number.
-
-   When you import other files which link to the first table, you can use the identifier in preference
-   to the names (so, for example, when you are saving inventory you can use \ ``product:id`` \
-   instead of the product name). 
-   You then do not need any complex conversion to create links between the two tables.
-   
-   This considerably simplifies the importation of another database into OpenERP.
-   You just create a linking ``id`` column for each table that you are importing
-   that contains the identifier used in the first table.
-
-Many-to-many Fields
-^^^^^^^^^^^^^^^^^^^
-
-Many-to-many fields are handled just like many-to-one fields in trying to recreate the relationship
-between tables: either by searching for names or by using identifiers.
-
-There are several possible values in a single many-to-many field. Therefore a partner can be given
-several associated categories. You must separate the different values with a comma.
-
-One-to-many Fields
-^^^^^^^^^^^^^^^^^^
-
-One-to-many fields are a bit different. Take as an example the :guilabel:`Partner Contacts` field in
-the Customer form, which contains all of the linked contacts.
-
-To import such a field you do not have to link to an existing entry in another table, but can instead
-create and link to several partner contacts using the same file. You can then specify several values
-for different fields linked to that object by the one-to-many field. Each field must be put in a
-column of the table, and the title of that column must be expressed in the form \ ``field_one-to-
-many/field_linked-object`` \. The partner data you imported earlier took that form.
-
-.. note::  Symmetry in Relation Fields
-
-	Depending on the structure of your data, it can be easier to use the one-to-many form or the
-	many-to-one form in relating two tables, so long as the relevant fields exist on both ends of the relationship.
-
-	For example, you can:
-
-	* import one partner with different contacts in a single file (one-to-many),
-
-	* import the partners first, and then the contacts with the field linking to the partner in a many-to-one form.
-
-.. index::
-   single: data; import example
-
-Another Example of a CSV Import File
-------------------------------------
-
-To illustrate data importing, you can see another example below. First import partner
-categories, and then import some partners and their contacts along with links to the categories
-just created. Although you can create new contacts at the same time as creating partners (because
-you can do this for *one-to-many* relations), you cannot create new categories this way (because they
-use *many-to-many* relations). You must create new categories in a separate step.
-
-Partner Categories
-^^^^^^^^^^^^^^^^^^
-Start by creating partner categories in a CSV file:
-
-#. Create the following table in your spreadsheet program:
-
-   .. csv-table:: Partner categories file
-      :header: "","Column A","Column B"
-      :widths: 5,10,10
-
-      "Line 1","Category Name","Parent Category"
-      "Line 2","Quality",""
-      "Line 3","Gold","Quality"
-      "Line 4","Silver","Quality"
-      "Line 5","Bronze","Quality"
-
-   On the first line, :guilabel:`Category Name` and :guilabel:`Parent Category` are
-   the column titles that correspond to field names in the :guilabel:`Partner
-   category` form.
-
-   :guilabel:`Column A` is for the different partner categories and :guilabel:`Column
-   B` indicates if that category has a parent category. If :guilabel:`Column B` is
-   blank, then the category sits at the top level.
-
-#. Save the spreadsheet file in CSV format – separated by commas – and name the file 
-   \ ``categories.csv``\.
-
-#. In OpenERP, select :menuselection:`Sales --> Configuration --> Address Book --> Localisation
-   --> Partner Categories`.
-
-#. Click :guilabel:`Import` (to the bottom right of the list) to bring up the :guilabel:`Import Data` dialog
-   box, in which you will find the list of fields that can be imported.
-
-#. Click :guilabel:`Browse...` on the :guilabel:`File to import` field and select the CSV file you
-   just created, \ ``categories.csv`` \. If you are using GTK client, click :guilabel:`Auto Detect`
-   to match the column names
-   in the CSV file with the field names available in :guilabel:`Partner Categories`.
-
-#. Click :guilabel:`Import` at the top-left of the dialog box to load your data. You should get
-   the message \ ``Imported 4 objects``\  in a new dialog box. Close both this and the
-   :guilabel:`Import Data` dialog box to return to the original page.
-
-#. Refresh the :guilabel:`Partner Categories` list to view the tree of categories,
-   including the new \ ``Quality`` \ branch and its child branches that you loaded.
-
-New Partners
-^^^^^^^^^^^^
-
-Here is how to create new partners with more than one contact, as you did before, and how to link them to these new categories:
-
-#. Enter the table below into your spreadsheet program.
-
-   .. csv-table:: Partner data file - partners.csv
-      :header: "","Column A","Column B","Column C","Column D"
-      :widths: 5,10,10,10,10
-
-      "Line 1","Name","Categories","Contacts/Contact Name","Salesman"
-      "Line 2","Black Advertising","Silver,Gold","George Black","Administrator"
-      "Line 3","","","Jean Green",""
-      "Line 4","Tiny sprl","","Fabien Pinckaers","Administrator"
-
-#. The second line corresponds to the creation of a new partner, with two existing categories, that
-   has two contacts and is linked to a salesman.
-
-#. Save the file using the name \ ``partners.csv``\
-
-#. In OpenERP, select :menuselection:`Sales --> Address Book --> Customers` then import the file that you have just
-   saved. You will get a message confirming that you have imported and saved the data.
-
-#. Verify that you have imported the data. A new partner should have appeared (``Black Advertising``),
-   with a salesman (``Administrator``), two contacts (``George Black`` and ``Jean Green``) and two categories
-   (``Silver`` and ``Gold``).
-
-.. index::
-   single: data, export in other forms
+As you can see in the above screenshot, a frequently asked questions section has been added in the import dialog to help solving complex document transformation issues.
    
 Exporting Data in Other Forms
 -----------------------------

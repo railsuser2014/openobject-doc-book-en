@@ -22,110 +22,16 @@ or from OpenOffice.org.
 Managing Statistical Reports
 ----------------------------
 
-Many reports are configured in advance in OpenERP. You can find them in the :menuselection:`Reporting` sub-menus
-under each main menu entry.
-
-Modelling a New Report
-^^^^^^^^^^^^^^^^^^^^^^
+Many reports are configured in advance in OpenERP.
+You can find them in the :menuselection:`Reporting` sub-menus under each main menu entry.
 
 .. index::
    single: module; base_report_creator
-
-OpenERP gives you the possibility of developing your own analyses to meet your specific needs. To
-define a new analysis of the system's data, you should install the module :mod:`base_report_creator`.
-You can do so by using the :guilabel:`Reconfigure` wizard and installing :guilabel:`Advanced Reporting`.
-Then as you configure the reporting tools, select :guilabel:`Query Builder` for installation.
-This enables you to create complex queries on the database, in a simple and visual way.
-
-Once the module is installed, create a new report using the menu :menuselection:`Administration --> Customization -->
-Reporting --> Custom Reports`.
-
-Give a :guilabel:`Report Name` to your new report and select the objects that you are going to
-analyse. For example, select the :guilabel:`project.vs.hours` object (you have to install :guilabel:`Project Management` for this).
-
-Then turn to the second tab :guilabel:`View parameters` to select the views that you want in your
-report. Select \ ``Tree``\   in the :guilabel:`First View` and \ ``Graph``\   in the :guilabel:`Second
-View`. You can choose the type of graph displayed using the :guilabel:`Graph View` fields. You could
-also select \ ``Calendar``\   as a view if you were going to add a date field to your
-report.
-
-.. figure::  images/report_analysis_config.png
-   :scale: 75
-   :align: center
-
-   *Fields selected for the project analysis*
-
-In the third tab :guilabel:`Fields to Display` you must indicate which of the fields in the list you want to be shown in your report. Complete the screen along the lines of the figure above.
-
-	#. The :guilabel:`Sequence` field gives the order of the fields displayed.
-
-	#. :guilabel:`Field`, the second column, enables you to select a field from any of the objects
-	   you selected in the first tab.
-
-	#. :guilabel:`Grouping Method`, the third column lets you to determine the grouping operation that
-	   is to be applied to this field:
-
-	        - :guilabel:`Grouped` : Enables you to group document entries with the same value in this field.
-
-	        - :guilabel:`Sum` : Gives the sum of values in this field.
-
-	        - :guilabel:`Minimum` : Gives the minimum of all the values that appear in this field.
-
-	        - :guilabel:`Maximum` : Gives the maximum of all the values that appear in this field.
-
-	        - :guilabel:`Average` : Gives the arithmetic average of all the values in this field.
-
-	        - :guilabel:`Count` : Gives the count of all the values in this field.
-
-	#. :guilabel:`Graph Mode`, the fourth column, determines if the field will appear in the graph view
-	   and, if so, on which axis (X or Y).
-
-	#. :guilabel:`Calendar Mode`, the fifth column, enables you to specify if the field can be the
-	   basis of a calendar view.
-
-In the fourth tab :guilabel:`Filters on Fields`, you can add filters on all the fields of the selected
-objects. To do that, use the button :guilabel:`Add filter` at the
-top of this tab. For the moment, do not add a filter.
-
-You can now :guilabel:`Save` the report you defined. Click on the :guilabel:`Open Report` button to
-the right of the form on the :guilabel:`General Configuration` tab to get the requested analysis.
-
-.. figure::  images/report_project_tree.png
-   :scale: 75
-   :align: center
-
-   *Analysing task by project in tree view*
-
-.. figure::  images/report_project_graph.png
-   :scale: 75
-   :align: center
-
-   *Analysing task by project in graph view*
 
 .. index::
    single: configuring; dashboard
    single: dashboard
 ..
-
-Configuring the Dashboards
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-A dashboard is a selection of reports previously defined in OpenERP. You can choose from hundreds
-of predefined reports and, for each report, indicate its position on the dashboard.
-
-Just like fields on reports, the :guilabel:`Sequence` field determines the order in which views
-appear in the dashboard.
-
-.. figure::  images/dashboard_config.png
-   :align: center
-   :scale: 85
-
-   *Definition of a new dashboard*
-
-Once the dashboard has been defined through the menu
-:menuselection:`Administration --> Customization --> Reporting --> Dashboard Definition`,
-you can use the :guilabel:`Create Menu` button to create a menu
-entry for your dashboard anywhere in the menu system.
 
 Managing Document Templates with OpenOffice.org
 -----------------------------------------------
@@ -134,7 +40,6 @@ Managing Document Templates with OpenOffice.org
    single: module; base_report_designer
 
 To configure your printable documents in OpenERP, use the module :mod:`base_report_designer`.
-To install this module use the :guilabel:`Reconfigure` wizard and ensuring that :guilabel:`Advanced Reporting` is installed, configure :guilabel:`OpenOffice Report Designer` for installation.
 
 .. tip:: The OpenOffice.org Writer Plug-in
 
@@ -331,7 +236,7 @@ header. This header is a template that creates a standard page header and footer
 that is defined in each database.
 
 This template can be customized by changing the company information through the menu
-:menuselection:`Administration --> Companies --> Companies`. You may select your parent company from the list
+:menuselection:`Settings --> Companies --> Companies`. You may select your parent company from the list
 and edit the fields Report Header, Report Footer 1, Report Footer 2 in the :guilabel:`General Information` tab.
 If your company has a logo that you would want to appear in all reports, you may add it using the :guilabel:`Logo` field.
 You can also change the appearance of the header/footer by editing the XML code in the tabs :guilabel:`Header/Footer`

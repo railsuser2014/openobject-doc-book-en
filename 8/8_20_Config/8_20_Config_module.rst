@@ -19,27 +19,9 @@ dedicated just to that. This enables you to:
 .. index::
    single: module; base_module_record
 
-Start by installing the module :mod:`base_module_record` in the usual way from
-:menuselection:`Administration --> Modules --> Modules`. Manually make all your
-configuration changes through the user
-interface as you would normally do (such as menu management, dashboard assignments, screen
-configuration, new reports, and access rights management – details of some of these possibilities
-are described later in this chapter).
+base_module_record:  this was a developer tool we removed as almost no developer was using it. It was not clean enough to respect new OpenERP quality standards;
 
-Then start recording
-your data using the menu :menuselection:`Administration --> Customization --> Module Creation -->
-Export Customizations As a Module`. This opens a wizard through which you may select the date to record
-from, choose records that have been \ ``Created`` \, \ ``Modified`` \ or both \ ``Created & Modified`` \.
-You have to select the objects for recording and then start recording by clicking :guilabel:`Record`.
-After the recording operation is complete, a dialog box appears giving you the opportunity to save
-the recorded module at a desired location.
-
-OpenERP then creates a ZIP file for you containing all of the modifications you made while you
-were carrying out your configuration work. You could reinstall this module on other databases.
-This could turn out to be useful if you want to install a
-test server for your company's users and give them the same configuration as the production server.
-
-To install a new module saved in ZIP file form, use the menu :menuselection:`Administration -->
+To install a new module saved in ZIP file form, use the menu :menuselection:`Settings -->
 Modules --> Import Module`.
 
 .. Copyright © Open Object Press. All rights reserved.

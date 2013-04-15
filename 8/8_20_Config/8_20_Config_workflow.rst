@@ -10,21 +10,16 @@ define the path that any individual OpenERP object (such as an order) must follo
 (for example, an order above a certain value must be approved by a sales director, otherwise by any
 sales person, before the delivery can be triggered).
 
-The figure :ref:`fig-sflow` shows the standard workflow for an order. You can show it from the GTK client
-starting with :menuselection:`Sales --> Sales --> Sales Orders`. Select an
-order, then go to the top menu :menuselection:`Plugins --> Execute a plugin --> Print Workflow` to
-show the workflow below.
+The figure :ref:`fig-sflow` shows the standard workflow for an order. You can show it from the Debug Mode by clicking `Print Workflow`. Select an
+order, then Print Workflow to show the workflow below.
 
-In the web client, you can reach a workflow from the associated cross-company process
-(the process itself is reached by going to the sales document and then clicking the 
-:guilabel:`Corporate Intelligence` button above it). 
 The chapter :ref:`ch-process` provides all of the information
 needed to create and modify technical workflows and cross-company processes.
 
 .. _fig-sflow:
 
 .. figure::  images/sales_workflow.png
-   :scale: 65
+   :scale: 55
    :align: center
 
    *Workflow for order SO005*
