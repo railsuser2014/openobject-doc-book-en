@@ -4,10 +4,10 @@
 Process Integration in the Management System
 ============================================
 
-Processes are at the heart of a company: they form a structure for all
+Processes are at the heart of a company, they form a structure for all
 activities that enable the company to function effectively. A company's human
 dimension is often disconnected from its processes at the moment, preventing
-individual employees' aspirations from being directed towards a collective
+individual employees aspirations from being directed towards a collective
 objective.
 
 From a mapping process, integrating management and the changing needs of each
@@ -40,12 +40,11 @@ Following a Customer Sales Order
 
 The example :ref:`fig-procquot` shows the process for handling a customer sales order. Use
 the menu :menuselection:`Sales --> Sales --> Sales Orders` to list all orders, then choose
-Order SO001 – you can either check the checkbox to its left, or you can open
-the order itself by clicking the row containing the order.
+Order.
 
-To view the process for that specific order, click the :guilabel:`Corporate Intelligence`
-button (displayed as a question mark) at the
-top right of the title of the list or form. The process for this order is shown in the
+To view the process for that specific order, first :guilabel:`Active the developer mode`,active from Administrator/About OpenERP. 
+After activate it, click the :guilabel:`Corporate Intelligence` button (displayed as a question mark) at the
+top left of the title of the list or form. The process for this order is shown in the
 window, and the current state of this document can be seen by looking for the
 node whose left edge is colored maroon rather than grey.
 
@@ -57,23 +56,21 @@ node whose left edge is colored maroon rather than grey.
 
    *Example of a process handling a customer order quotation*
 
-This order is in the ``Quotation`` state. The whole of some nodes is greyed out
+This order is in the ``Sale Order`` state. The whole of some nodes is greyed out
 because the selected document will never enter into that state, such as
 invoicing based on deliveries (the order is in an invoicing mode that is based
 on orders, not deliveries).
 
 The process is completely dynamic and based on that specific sale order
 document. You can click each of the process nodes (:guilabel:`Quotation`, :guilabel:`Sale Order`,
-:guilabel:`Procurement`, :guilabel:`Draft Invoice`, :guilabel:`Outgoing Products`) using one of the
+:guilabel:`Procurement`, :guilabel:`Invoice`, :guilabel:`Delivery Order`) using one of the
 links or icons on it:
 
 * Obtaining the documentation and the corresponding process in the quality manual, using the
-  :guilabel:`Help` (or :guilabel:`Information`) icon,
+  :guilabel:`Help` icon (in blue colour),
 
 * Obtaining the documents that an employee needs to carry out the process by clicking the green
   arrow icon,
-
-* Seeing the menu that OpenERP uses to get the document by hovering over the green arrow icon.
 
 .. index::
    single: process; new employee
@@ -81,10 +78,10 @@ links or icons on it:
 New Employee Induction
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Open the employee form for Fabien Pinckaers from the menu
+Open the any employee form the menu
 :menuselection:`Human Resources --> Human Resources --> Employees`.
 Click the :guilabel:`Corporate Intelligence` button to open the detailed
-process of engagement.
+process view of engagement.
 
 .. figure:: images/process_employee_flow.png
    :scale: 75
@@ -93,7 +90,7 @@ process of engagement.
    *Example of a process engaging a new employee*
 
 You can immediately see things that might interest the HR manager. On a single
-screen she has all of the documents about the selected employee. She can then
+screen HR manager has all of the documents about the selected employee. HR manager can then
 zoom into each document to look at associated documents or
 the user account in the system.
 
