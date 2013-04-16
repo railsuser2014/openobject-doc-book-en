@@ -13,9 +13,6 @@ As you have seen, the complete architecture of OpenERP includes the following el
 
 * an OpenERP client-web server,
 
-* several clients that access the OpenERP server: they can either be web clients if the client-web
-  server is installed, or GTK clients.
-
 .. index::
    single: deployment
 

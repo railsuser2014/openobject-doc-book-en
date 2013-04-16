@@ -49,7 +49,7 @@ automatically by the earlier ones where possible. And demonstration data illustr
 functional areas are linked from one to the other
 
 The menus themselves hint at several helpful implementation suggestions, for example, the sub-menus of
-:menuselection:`Administration --> Configuration` are useful for the configuration of the software.
+:menuselection:`Settings --> Technical` are useful for the configuration of the software.
 New functions such as the :guilabel:`Module Recorder` enable you to significantly accelerate the configuration
 of data.
 
