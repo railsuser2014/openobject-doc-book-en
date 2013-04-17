@@ -35,7 +35,7 @@ directory :menuselection:`Documents --> Projects` you will see the structure of 
 accounts.
 
 To define a directory containing a specific type of resource, you have to define parameters when you
-define the directory itself:
+define the directory itself from menu :menuselection:`Knowledge --> Configuration --> Document Management --> Dictionaries` :
 
 * :guilabel:`Type` : Folders per resource
 
@@ -60,7 +60,7 @@ configured in the document management system:
 
 * Quotations and Order: storing documents that relate to orders,
 
-* Products: for storing products' technical datasheets,
+* Products: for storing products technical datasheets,
 
 * Users: to automatically define a directory owned by each user of the system,
 

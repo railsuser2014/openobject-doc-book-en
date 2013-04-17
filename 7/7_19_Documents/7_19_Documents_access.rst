@@ -19,18 +19,16 @@ document set. You can use the structure automatically proposed by OpenERP from t
    *Structure of directories when the document module has been installed*
 
 In addition to the usual access to documents through OpenERP, you will be able to connect to them
-directly through the file system using the FTP protocol. To connect to the FTP server, use the
-following address:
+directly through the file system using the FTP protocol. 
 
-========= ==========================================
-Parameter Value
-========= ==========================================
-Server    Your OpenERP server, for example 127.0.0.1
-Port      8021
-Path      The '/' character, for the root
-User      Your user account in OpenERP
-Password  Your OpenERP password
-========= ==========================================
+To connect to the FTP server, go to your home directory (root) of your machine, and enter the path , for example : ftp://admin@localhost:8021, after entering this path , it will ask for the password, enter the password of your database.
+Figure seems like following :
+
+.. figure::  images/ftp_server.png
+   :scale: 75
+   :align: center
+
+   *Connecting to ftp server*
 
 .. note:: FTP Server
 
@@ -41,22 +39,17 @@ Password  Your OpenERP password
    There could have been other ways, but FTP proved itself to the developers to be the one that performed best
    at lowest cost.
 
-Once you are connected using FTP, you get to the root of a directory for the document
+After entering password ,once you are connected using FTP, you get to the root of a directory for the document
 management system. Once you enter that directory you find a structure that matches the structure
-defined in OpenERP.
+defined in OpenERP. 
 
-.. figure::  images/document_ftp_structure_root.png
-   :scale: 75
-   :align: center
-
-   *Root of the database directory seen through FTP*
+It will seems like following figure:
 
 .. figure::  images/document_ftp_structure_tree.png
    :scale: 75
    :align: center
 
-   *Structure of the directories in the document management system*
-
+   *Tree structure of document after connecting ftp server*
 
 .. Copyright © Open Object Press. All rights reserved.
 
