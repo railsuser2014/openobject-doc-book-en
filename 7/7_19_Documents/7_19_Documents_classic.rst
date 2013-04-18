@@ -7,7 +7,7 @@ solutions that are promoted today, from simple email archiving to complete elect
 systems dedicated to arbitrary documents.
 
 Unfortunately, these solutions have not always been very useful because they are too little integrated
-in companies' management systems. Most solutions that we have come across, are underused by the
+in company's management systems. Most solutions that we have come across, are underused by the
 employees – often used by some of them but not by all.
 
 The primary reason for this is that a document management system that is not integrated imposes extra
@@ -32,14 +32,6 @@ confirmation:
 This is obviously a lot of operations just to handle a simple order confirmation. You can understand
 why many companies hardly use their document management system even if they have gone to the cost and
 effort of purchasing and installing one.
-
-.. tip::  Free Document Management Systems
-
-    A number of free document management applications exist. The most well known are:
-
-    * Alfresco: http://www.alfresco.com
-
-    * Quotero: http://www.quotero.com
 
 It is very difficult to keep information in the company's management system synchronized
 with that in the document management system. For example, when a customer changes his address, users

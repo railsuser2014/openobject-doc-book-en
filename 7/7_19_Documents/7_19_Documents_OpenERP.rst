@@ -38,8 +38,8 @@ Installation
    single: module; board_document
 
 To install OpenERP's document management system, you just need to install the :mod:`document`
-and :mod:`document_ftp` modules through the :guilabel:`Reconfigure` wizard by selecting
-:guilabel:`Knowledge Management`, and further on, :guilabel:`Shared Repositories (FTP)` for installation.
+and :mod:`document_ftp` modules through the menu :menuselection:`Settings --> Modules` by selecting
+:guilabel:`Knowledge Management`, and :guilabel:`Shared Repositories (FTP)` for installation.
 As the module installation proceeds, the system automatically proposes that you
 configure the FTP server.
 
@@ -50,13 +50,6 @@ configure the FTP server.
    *Screen for configuring document management*
 
 Once the module has been installed, you will see a new entry in the main menu called :menuselection:`Knowledge`.
-
-.. figure::  images/document_menu.png
-   :scale: 75
-   :align: center
-
-   *The Knowledge menu*
-
 
 .. Copyright © Open Object Press. All rights reserved.
 

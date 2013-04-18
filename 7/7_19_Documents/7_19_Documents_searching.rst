@@ -72,13 +72,13 @@ This functionality is very significant. All you need to do is search for a partn
 number to automatically get all the documents that are referenced there. And you can use a fragment
 of text to find the document you need from within that subset.
 
-Integration with Emails
------------------------
+Integration with E-mails using Outlook and Thunderbird
+------------------------------------------------------
 
-Using Outlook and Thunderbird
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-OpenERP's document management system is well-integrated with popular email clients like Microsoft Outlook and Mozilla Thunderbird. For this, you can install the required plugins available in OpenERP, usually made available when you install and configure :mod:`crm`. Or you may install :mod:`outlook` or :mod:`thunderbird` module according to your requirement, and take advantage of its compatibility with OpenERP's documents. For more on this, refer :ref:`ch-commtools`.
+OpenERP's document management system is well-integrated with popular email clients like Microsoft Outlook and Mozilla Thunderbird. 
+For this, you can install the required plugins available in OpenERP, usually made available when you install and configure :mod:`crm`.
+Or you may install :mod:`outlook` or :mod:`thunderbird` module according to your requirement, and take advantage of its compatibility with OpenERP's documents.
+For more on this, refer :ref:`ch-commtools`.
 
 .. figure::  images/create_contact_outlook.png
    :scale: 65
@@ -91,38 +91,6 @@ OpenERP's document management system is well-integrated with popular email clien
    :align: center
 
    *Pushing an attachment in the Document Management System from Thunderbird*
-
-Working with Users' Changes
----------------------------
-
-To make the document management system's use as unobtrusive as possible, the system's users should
-easily be able to store all the documents that they produce or receive from their customers and
-suppliers. So OpenERP supplies dashboards to help system users approve their acceptance of such
-documents.
-
-So you will find two dashboards in the menu :menuselection:`Knowledge --> Reporting --> Dashboard`. One
-dashboard is for the document management system manager and one dashboard is for tracking use by different
-users.
-
-The first lets you track the changes to documents by month, by customer and by type of resource. You
-could also quickly assess the use that is made of the system by the various users.
-
-.. figure::  images/document_board1.png
-   :scale: 75
-   :align: center
-
-   *Dashboard for the document management system manager*
-
-The second dashboard shows you how different employees use the system.
-You can see the number of files sent by each user and who uses the document
-management system the least. That tells you something about your user training
-and whether you need to do something about changing work methods.
-
-.. figure::  images/document_board2.png
-   :scale: 75
-   :align: center
-
-   *Dashboard for the document management system analyzed by user*
 
 Version Management
 ------------------
@@ -139,8 +107,7 @@ That is because they are commonly legally required.
 But you can configure the system so that it does not matter which type of report is printed - 
 they can all be stored automatically. To
 activate that functionality on another type of report, modify this in the menu
-:menuselection:`Administration --> Low Level Objects --> Actions --> Reports`.
-To be able to access this menu, the user should be added to the group :guilabel:`Useability / No One`.
+:menuselection:`Settings --> Technical --> Actions --> Reports`.
 
 .. figure::  images/document_report_modif.png
    :scale: 75

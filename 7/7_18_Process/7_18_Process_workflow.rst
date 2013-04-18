@@ -32,10 +32,7 @@ software but will show the user another way of working on a given problem.
    *Example of a process handling a customer order*
 
 Processes are used by end-users to help them understand the problems which
-have not been handled in OpenERP. You can find actions that have no influence
-on the software, such as “Telephone customer to thank him”, and “Send a fax to
-reassure them”. As well as providing user help, processes provide functions such
-as:
+have not been handled in OpenERP. As well as providing user help, processes provide functions such as:
 
 * integration with OpenERP Help and the company's quality manual,
 
@@ -58,12 +55,11 @@ engine, OpenERP provides an integrated workflow editor and user process
 editor. These enable you to modify them through the client interface.
 
 You will only work with the process editor in this chapter. If you want to view and edit the
-workflow of a document, click on the link :guilabel:`Edit Workflow` to the right of the document.
-OpenERP opens a graphical view of the workflow for the selected document type.
+workflow of a document, click on the :guilabel:`Edit Workflow` in the `Debug View` to the left of the document.
+OpenERP opens a list view of the workflow for the selected document type.
 
-If you want to edit a workflow in a text-based editor, you can use the menus under
-:menuselection:`Administration --> Customization --> Workflows`.
-
+You can also edit a workflows from menu :menuselection:`Settings --> Technical --> Workflows --> Workflows` and select workflow that you want to change. To see this technical menu , you have to give Technical Features access right to user.
+ 
 Using Processes Effectively
 ---------------------------
 
@@ -110,7 +106,7 @@ handled.
 Defining your Own User Processes
 --------------------------------
 
-Use the menus under :menuselection:`Administration --> Customization --> Enterprise Process` to
+Use the menus under :menuselection:`Settings --> Technical --> Enterprise Process --> Processes` to
 define new processes or modify existing processes. When entering a process,
 OpenERP shows you the list of states available for that process.
 
@@ -118,24 +114,21 @@ OpenERP shows you the list of states available for that process.
    :scale: 75
    :align: center
 
-   *Form for defining a process*
+   *Defining a process*
 
 You can add a new state or modify an existing state. A state can be associated
 with an object (whose instances are represented by documents). If that is the
 case, choose it in the case object. You can set an expression that shows if the
-object can be found in that state or not. Expressions are in Python format. For
-example, for the quotation state choose the object ``sale.order`` and set the
-following expression ``object.state == 'draft'`` .
+object can be found in that state or not. Expressions are in Python format. 
 
 You can also link to a menu so that users can learn which menu to use to access
-objects in a state. You can set the conditions in which this object is in a
-greyed-out state in the section :guilabel:`Conditions`. These expressions, too, are
-encoded in Python format.
+objects in a state. You can set the conditions in the section :guilabel:`Conditions`.
+These expressions, too, are encoded in Python format.
 
-Once the node has been defined, you should set the transitions leaving this
-object. For each transition you can:
+Once the node has been defined, you should set the process transitions this object from menu :menuselection:`Settings --> Technical --> Enterprise Process --> Process Transitions`.
+For each transition you can:
 
-* Give the leaving and destination states,
+* Give the source and target states,
 
 * Set up a list of buttons that start various transitions in the process,
 
@@ -147,7 +140,7 @@ object. For each transition you can:
    :scale: 75
    :align: center
 
-   *Screen for defining a process transition*
+   *Defining a process transition*
 
 .. Copyright © Open Object Press. All rights reserved.
 
