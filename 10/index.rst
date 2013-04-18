@@ -82,23 +82,6 @@ OpenERP investigation.
 The forum enables you to discuss issues with other OpenERP users. It is very active and you have a
 good chance of receiving some form of response to your questions within twenty-four hours or so.
 
-* **The wiki** http://openobject.com/wiki
-
-The OpenObject wiki is used to manage activities around OpenERP.
-
-You will find information about:
-
-  * Shared Funding Projects
-  * IRC Meetings
-  * Real Life Meetings (e.g. Community Days)
-  * Business Intelligence
-  * Open Report (e.g. OpenReport, OpenOffice Plugin)
-
-* **Database of OpenERP modules** http://doc.openerp.com/v6.0/py-modindex.html
-
-A database of all the modules available for use gives you free access to most of the known OpenERP
-extensions.
-
 * **Launchpad** https://code.launchpad.net/~openerp/
 
 The most recent communication tool is the launchpad system, which now hosts all of OpenERP's
