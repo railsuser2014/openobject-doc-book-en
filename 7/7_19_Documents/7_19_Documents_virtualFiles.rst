@@ -29,8 +29,9 @@ that have the special type of *linked resource* and link the virtual files to Op
     The PDF file is then created in real time by OpenERP by reading the relevant data.
 
 The screen :ref:`fig-docvirt` shows the parameters of the virtual files in All Sales Order. You define the virtual files
-using the name ORDERNUM_print.pdf, where ORDERNUM represents the reference to the order. To do
-this, you must check the option :guilabel:`Include Record Name` of the file for a directory. 
+using the name ORDERNUM_print.pdf, where ORDERNUM represents the reference to the order. 
+To do this, first you have to give access rights of Technical Features to user, from :menuselection:`Settings --> Users --> Users`. 
+So you can see the tab `Generated Files` in Dictionaries (:menuselection:`Knowledge --> Configuration --> Document management --> Dictionaries`) form view. Go to this tab, click an `Add an item`, after in that form you must select the option :guilabel:`Include Record Name` of the file for a directory. 
 You can then find a virtual file for each report associated with an order.
 
 .. _fig-docvirt:
