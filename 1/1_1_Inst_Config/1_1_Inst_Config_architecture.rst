@@ -48,12 +48,6 @@ An OpenERP system is formed from three main components:
 .. index::
    pair: eTiny; client-web
 
-.. note::   eTiny
-
-    The web application used to be known as “eTiny”.
-    Its name changed to “client-web” as Tiny ERP was renamed to OpenERP,
-    but its characteristics have generally stayed the same.
-
 .. index::
    single: PostgreSQL
 

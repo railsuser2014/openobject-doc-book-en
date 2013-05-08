@@ -1,8 +1,16 @@
 
 .. _part2-crm:
 
+###############################
+Managing Customer Relationships
+###############################
+
+The Sales department is the engine of your whole company. Sales success drives staff motivation and your company’s general dynamism, which in turn enables you to keep innovating and lay the foundations for future success.
+The key to continued Sales success is effective Customer Relationship Management (most often known as CRM). Open ERP’s CRM capabilities are flexible and highly developed to assist you in managing all aspects of both supplier and customer relationships.
+
 .. toctree::
-    :maxdepth: 2
+    :maxdepth: 1
+
 
     3_CRM_Contacts/index
     9_Marketing/index

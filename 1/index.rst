@@ -17,7 +17,7 @@ First steps with OpenERP
  OpenERP, or if you are planning to use an online SaaS provider, then you can skip this chapter and
  move straight to the next chapter, :ref:`ch-guided`. 
  There we take you on a step-by-step guided tour using the information 
- in the demonstration database.
+ in the demonstration database. 
  
  If you have already used OpenERP (or Tiny ERP) a bit then you can move to the third chapter in this part of the book.
  In :ref:`ch-real` you can try out a real case, from scratch in a new database,

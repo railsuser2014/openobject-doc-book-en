@@ -6,7 +6,7 @@ Foreword
 Information Systems have played an increasingly visible role over the past several years in
 improving the competitiveness of business.
 More than just tools for handling repetitive tasks, they are used to guide and advance
-all of a company's' daily activities. Integrated management software is today very often a
+all of a company's daily activities. Integrated management software is today very often a
 key source of significant competitive advantage.
 
 The standard response to a need for responsiveness, reliability, and rapidly
@@ -23,7 +23,7 @@ Open Source software at the Service of Management
 =================================================
 
 Risks and integration costs are important barriers to all the advantages you gain from such systems.
-That is why, today, few small- and medium-sized companies use ERP.
+That's why, today, few small- and medium-sized companies use ERP.
 In addition, the larger ERP vendors such as SAP, Microsoft and Oracle have not been able
 to reconcile the power and comprehensive cover of an ERP system with the simplicity and flexibility
 wanted by the users.
@@ -135,10 +135,10 @@ Structure of this book
 Part One, :ref:`part1-steps`, starts with the installation of OpenERP. If you have already installed OpenERP you
 can directly take your first steps on a guided tour in the :ref:`ch-guided` chapter. If you are already familiar
 with OpenERP or Tiny ERP you can use the :ref:`ch-real` chapter to find out how to create a new workflow from
-scratch in an empty database with nothing to distract you. Or you can skip directly to the :ref:`ch-crm` chapter in
-the :ref:`part2-crm` part, to start with details of OpenERP's functional modules.
+scratch in an empty database with nothing to distract you. Or you can skip directly to the, :ref:`part2-crm-leads`, chapter in
+the, :ref:`part2-crm`, to start with details of OpenERP's functional modules.
 
-Part Two, :ref:`part2-crm`, deals with Supplier and Customer Relationship Management (SRM & CRM). You will find the
+Part Two, :ref:`part2-crm`, deals with Customer Relationship Management (CRM). You will find the
 elements necessary for managing an efficient sales department there, and automating tasks to monitor
 performance.
 
