@@ -206,20 +206,6 @@ so on. When you first open the list of project tasks, they are listed in their s
 You can use one of these three ordering methods, or combine several of them, depending on the
 project.
 
-.. index::
-   single: module; scrum
-   single: agile (method)
-
-.. note:: Agile Methods
-
-	OpenERP implements the agile methodology Scrum for IT development projects in the :mod:`project_scrum`
-	module.
-
-	Scrum supplements the task system with the following concepts:
-	long-term planning, sprints, iterative development, progress meetings, burndown chart, and product
-	backlog.
-
-	Look at the site: http://controlchaos.com for more information on the Scrum methodology.
 
 .. figure::  images/service_project_gantt.png
    :scale: 60

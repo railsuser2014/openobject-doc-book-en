@@ -14,8 +14,8 @@ Project Phases
 --------------
 
 You can subdivide your larger projects into several phases.
-To define a new phase, go to :menuselection:`Project --> Project --> Project Phases` and click :guilabel:`Create`. You must link your phase to a project through the :guilabel:`Project` field. For each phase, you have to define `Duration`.
-On the `Team Planning` tab add :guilabel:`Phases Team Members`, describe the different tasks by `Tasks details` tab and link your phase to previous and Next ones though `constraints` tab. You can also add dates and sequence over there.
+To define a new phase, go to :menuselection:`Project --> Project --> Project Phases` and click :guilabel:`Create`. You must link your phase to a project through the :guilabel:`Project` field. For each phase, you have to define `Duration`. 
+On the `Team Planning` tab you can add :guilabel:`Phases Team Members`, in `Tasks details` tab you can describe the different tasks and link your phase to previous and Next ones though `constraints` tab. You can also add dates and sequence `constraints` tab.
 
 .. _fig-project_phase:
 
