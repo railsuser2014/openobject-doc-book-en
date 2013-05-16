@@ -43,16 +43,16 @@ You can also do goods-in data entry manually if there is no order, in Incoming S
 A new goods-in data entry form opens. Enter the supplier in the :guilabel:`Supplier` field
 and type the reference number from your supplier in the field :guilabel:`Source Document`.
 
-Now in Product tab , click on Add an item, and select Product, and quantity.In that form the source location is already completed by default because of your supplier selection..
+Now in Product tab, click on Add an item and select Product & quantity. In that form the source location is already completed by default because of your supplier selection.
 You should then give the destination location where you will place the products. For example, enter ``Stock``.
 At this stage, you can set a Serial number for traceability (this function will be described later in
 this chapter, so leave this field empty for the moment).
 
-Once the form has been completed, you can click save & close that wizard.
+Once the form has been completed, you can click on `save` button & close that wizard.
 
-Now in Additional info tab, You can select the Delivery method either partial or All at once. Confirm this incoming shipment.
+Now in `Additional info` tab, You can select the Delivery method either partial or All at once. Confirm this incoming shipment.
   
-Next go to Incoming Products , in list view you will find your created incoming shipment, open that order,you can find buttons on that form , :guilabel:`Process Partially` and `Process Entirely`. (Process Partially button available only if you have select delivery method partially in additional info tab of Incoming shipment)
+Next go to Incoming Products, in list view you will find your created incoming shipment, open that order, you can find buttons on that form, :guilabel:`Process Partially` and `Process Entirely`. (Process Partially button available only if you have select delivery method partially in `Additional info` tab of Incoming shipment)
 
 If you click , the wizard open and seems like following figure, for example 18 quantity of Datacard product, 
 	
@@ -90,9 +90,9 @@ the invoiced quantities correspond to the quantities received.
 .. tip:: Print the Picking Slip
 
 	In order to print the picking Slip of an incoming shipment, select the incoming shipment of which you need
-	the details and click ``Picking Slip`` in the print option at the center of the screen.
+	the details and click ``Receipt Slip`` from the Print button at the top center of the screen.
 	
-	This link is available in the ``Internal Moves`` and  ``Delivery Slip`` available in ``Delivery Orders`` sections.
+	This ``Delivery Slip`` is available in the ``Internal Moves`` and ``Delivery Orders`` sections.
 	
 In case you received damaged or wrong products, you can return them to the supplier. In the ``Incoming shipment``
 form, click the ``Return Products`` button. A window will open that lets you choose the invoicing
@@ -114,7 +114,7 @@ rather than by orders.
 
 From this version on, you can also handle receptions by product, even from List view. Go to :menuselection:`Warehouse --> Receiver/Deliver Products --> Incoming Products`.
 
-Filters allow you to easily select receipts to be done, and so on. One way to quickly receive products is to Group by `Product`,`Picking',etc.. and select `To Do`. 
+Filters allow you to easily select receipts to be done, and so on. One way to quickly receive products is to Group by `Product`,`Picking`,etc and select `To Do`. 
 
 This is very useful functionality when your supplier sends the goods for several purchase orders at a time. You can now just receive the products, regardless of the purchase order they come from, simply by clicking the green arrow at the right side of the screen.
 
@@ -384,12 +384,6 @@ supplier will immediately be generated.
 .. index::
    single: module; sale_supplier_direct_delivery
 
-.. tip :: Delivery from the Supplier or to the Customer
-
-    The :mod:`sale_supplier_direct_delivery` module enables you to deliver the product directly from
-    the supplier to the customer. At the time of writing, this module is in ``extra-addons``.
-    The logic that the product follows is configured individually for each product and affects only
-    products marked ``Make to Order``.
 
 This mode does not always makes sense. Each order is processed immediately when confirmed. So if an order
 is to be delivered in three months, the scheduler will reserve goods in stock for each order once
@@ -553,7 +547,6 @@ The procurement method determines how the product will be replenished:
 * :guilabel:`Make to Stock`: your customers are supplied from available stock. If the quantities in stock are
   too low to fulfil the order, a Purchase Order (according the minimum stock rules) will be generated in order 
   to get the products required. Example: a classic distributor.
-
 * :guilabel:`Make to Order`: when a customer order is confirmed, you procure or manufacture
   the products for this order. A customer order 'Make to Order' will not modify stock in the medium term
   because you restock with the exact amount that was ordered. Example: computers from a large supplier
@@ -597,9 +590,8 @@ Choosing Supply Methods
 
 OpenERP supports two supply methods:
 
-* Manufacture: when the product is manufactured or the service is supplied from internal resources.
-
-* Buy: when the product is bought from a supplier.
+* :guilabel:`Manufacture`: when the product is manufactured or the service is supplied from internal resources.
+* :guilabel:`Buy`: when the product is bought from a supplier.
 
 These are just the default settings used by the system during automated replenishment. The same
 product can be either manufactured internally or bought from a supplier.
@@ -612,17 +604,7 @@ price quotation to a supplier or a manufacturing order.
 OpenERP manages both stockable products and services. A service bought from a supplier in
 :guilabel:`Make to Order` mode, will generate a subcontract order from the supplier in question.
 
-Figure :ref:`fig-stflow2` illustrates different cases for automatic procurement.
-
-.. _fig-stflow2:
-
-.. figure:: images/stock_flow.png
-   :scale: 80
-   :align: center
-
-   *Workflow for Automatic Procurement, depending on the Product Configuration*
-
-The table below shows all possible cases for the figure :ref:`fig-stflow2`.
+The table below shows all possible cases for Procurement.
 
 .. table:: Consequences of Procurement Methods Make to Stock (MTS) and Make To Order (MTO)
 

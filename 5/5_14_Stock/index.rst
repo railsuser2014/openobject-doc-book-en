@@ -29,7 +29,7 @@ for a counterpart to each stock movement, the software supports different types 
 Physical locations represent warehouses and their hierarchical structure. These are generally the
 locations that are managed by traditional stock management systems.
 
-Partner locations represent your customers' and suppliers' stocks. To reconcile them with your
+Partner locations represent your customer's and supplier's stocks. To reconcile them with your
 accounts, these stores play the role of third-party accounts. Reception from a supplier can be shown
 by the movement of goods from a partner location to a physical location in your own company. As you
 see, supplier locations usually show negative stocks and customer locations usually show positive

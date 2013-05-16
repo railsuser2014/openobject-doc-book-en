@@ -181,7 +181,7 @@ example. You can then give it the address of that customer or supplier. Go to th
 
 .. tip:: Subcontracting Production
 
-	You will see in the on line chapter Manufacturing that it is possible to assign a location to a manufacturing workcenter.
+	You will see in the chapter Manufacturing that it is possible to assign a location to a manufacturing workcenter.
 	If this location is at a supplier’s, you must give it an address so that OpenERP can prepare a delivery order for
 	the supplier and a receive operation for the manufactured goods.
 	Creating a location specifically for a partner is also a simple solution for handling consigned stocks in OpenERP.
@@ -364,8 +364,8 @@ In this respect, two important fields in the product form are:
 
 .. tip:: Detail of Future Stock
 
-	To get more details about future stock, you can click ``Stock Level Forecast`` to the right of the product form to 
-	get the report Forecast Stock Levels as illustrated below. OpenERP shows a graph of the changes in stock 
+	To get more details about future stock, you can find ``Stock Level Forecast`` option in the `Print` button at the top center of the product form.
+	It will saw the report Forecast Stock Levels as illustrated below. OpenERP shows a graph of the changes in stock 
 	in the days to come, varying as a function of purchase orders, confirmed production and sales orders.
 	
 .. figure:: images/stock_forecast_report.png
@@ -399,7 +399,7 @@ The tab **Sale** in the Product form contains information about Warranty and Cus
 .. note:: Warranty
 
 	The warranty period is used in the `Repairs management and after-sales service`. You can find more information
-	on this subject in the on line chapter about Manufacturing.
+	on this subject in the chapter Manufacturing.
 
 The tab **Inventory** in the Product form contains information about Locations:
 
