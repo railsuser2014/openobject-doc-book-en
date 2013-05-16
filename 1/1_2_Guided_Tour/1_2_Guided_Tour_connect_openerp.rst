@@ -40,8 +40,7 @@ So it should currently be showing :guilabel:`Administrator` (unless you logged i
 user and it is reflecting the name of that user instead).
 
 You will find the Preferences  when you click on current user name, its containing a set of useful links.
-First, you will find a field to the :guilabel:`
-Receive Messages by Email` page.
+First, you will find a field to the :guilabel:`Receive Messages by Email` page.
 
 .. index::
    single: timezone
@@ -130,23 +129,18 @@ the selected language.
 
 .. index:: requests
 
-Requests as a Mechanism for Internal Communication
+Messaging as a Mechanism for Internal Communication
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Requests are a powerful communication mechanism between users of the system. They are also used by
-OpenERP itself to send system messages to users.
+* Facilitates conversations with internal users or external ones (customers, suppliers,...), joining the power of instant messaging with standard emails ;
 
-They have distinct advantages over traditional emails:
+* Organize groups of discussions, an alternative to traditional mailing lists ;
 
-* requests are linked to other OpenERP documents,
+* Extends the breadth of these conversations to incorporate discussions around and about business documents ;
 
-* an event's history is attached to the request,
+* Incorporates a subscription system to any business event, generating notifications ;
 
-* you can monitor events effectively from the messages they have sent.
-
-OpenERP uses this mechanism to inform users about certain system events. For example, if there is a
-problem concerning the procurement of a product, a request is sent by OpenERP to the production
-manager.
+* Displays all the messages and notifications in a threaded manner on the user’s unified feeds page.
 
 .. index::
    single: user; configuration
