@@ -130,7 +130,7 @@ the selected language.
 .. index:: requests
 
 Messaging as a Mechanism for Internal Communication
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * Facilitates conversations with internal users or external ones (customers, suppliers,...), joining the power of instant messaging with standard emails ;
 
