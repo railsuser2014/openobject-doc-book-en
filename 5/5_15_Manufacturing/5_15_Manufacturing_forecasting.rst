@@ -366,7 +366,7 @@ For this last category, OpenERP can react in two different ways. Once a manufact
    In order to automatically generate a task, you have to install the module :mod:`project_mrp` which
    requires the installation of the module :mod:`project`.
 
-By default, the generated task is not linked to any project. You can change this behaviour by creating a project and link the service to this project. This can be done in the ``Product`` form, on the tab :guilabel:`Procurement & Locations` in the :guilabel:`Miscellaneous` section. Select the project to be linked in the ``Project`` field.
+By default, the generated task is not linked to any project. You can change this behaviour by creating a project and link the service to this project. This can be done in the ``Product`` form, on the tab :guilabel:`Information` . Select the project to be linked in the ``Project`` field.
 
 .. figure:: images/service_prj.png
     :scale: 75
@@ -388,16 +388,12 @@ First, you have to create a project to which you want to link the service. We wi
    Reference          CSLT
    Product Type       Service
    Procurement Method Make to Order
-   Supply Method      Produce
+   Supply Method      Manufacture
    Default UoM        Hour
    **Project**        **Consulting**
    ================== ==============
    
 Once you have configured your project and your product, you can create a Sales Order to order hours of consultancy. When you confirm the Sales Order, a task will be created.
-
-.. figure:: images/soprj_tip.png
-    :scale: 100
-    :align: center
     
 If you go to :menuselection:`Project --> Project --> Tasks`, you will find a new task called: :guilabel:`SO011:[CSLT] Consulting`. This task is linked to the project :guilabel`Consulting`. Note that the Sales Order number may be different in your database.
 
