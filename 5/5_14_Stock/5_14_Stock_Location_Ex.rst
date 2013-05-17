@@ -79,16 +79,8 @@ Here are the details of the different flows:
 	
 	*Get Product from Transit*
 
-With this configuration, when a Sales Order for 3 units of Product A is confirmed and the scheduler has been launched,
-you will have the following procurements:
-
-.. figure:: images/procurement.png
-	:scale: 90
-	:align: center
 	
-	*Procurements View*
-	
-And the following stock moves have been generated:
+The following stock moves have been generated with this configuration:
 
 .. figure:: images/stock_moves_ex.png
 	:scale: 90
