@@ -38,9 +38,7 @@ Complete the following field:
 
 *  :guilabel:`Supplier` : \ ``Plumbing Component Suppliers``\  .
 
-As you complete the :guilabel:`Supplier` field, OpenERP automatically completes the
-:guilabel:`Address` field and the :guilabel:`Pricelist` field from information it takes out of the
-Partner record.
+As you complete the :guilabel:`Supplier` field, OpenERP automatically completes the :guilabel:`Pricelist` field from information it takes out of the Partner record.
 
 Enter the following information
 
@@ -80,7 +78,7 @@ Save the order line and close the :guilabel:`Order Line` window by clicking the
 :guilabel:`Save`, which makes the form non-editable.
 
 It is now in a state of \ ``Draft PO``\ , Confirm that by clicking `Confirm` Button which corresponds to an approval from
-a manager or from Accounts within your own company and moves the order into \ ``Approved`` \
+a manager or from Accounts within your own company and moves the order into \ ``Purchase Order`` \
 state.
 `Send by Email`, with the help of this button you can Request for Quotation and mean while your Draft PO moves in to \ ``RFQ sent``\ state.
 
@@ -96,7 +94,7 @@ Receiving Goods
 After confirming the order, you would wait for the delivery of the products from your supplier. Typically
 this would be somebody in Stores, who would:
 
-	#. Open the menu :menuselection:`Warehouse --> Warehouse Management --> Incoming Shipments` using the expand/collapse icon.
+	#. Open the menu :menuselection:`Warehouse --> Receive/Deliver By Orders --> Incoming Shipments` using the expand/collapse icon.
 
 	   .. note:: From the Purchase Order
 
