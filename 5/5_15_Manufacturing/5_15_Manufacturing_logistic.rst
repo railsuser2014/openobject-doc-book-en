@@ -170,7 +170,7 @@ If the product to be repaired is still under guarantee, OpenERP automatically su
 
 .. note:: Extra Info
 
-        The link to the generated invoice is shown on the ``Extra Info``tab of the repair document. To open the invoice, simply click the ``Invoice`` field.
+        The link to the generated invoice is shown on the ``Extra Info`` tab of the repair document. To open the invoice, simply click the ``Invoice`` field.
 
 Stock Movements and Repairs
 +++++++++++++++++++++++++++

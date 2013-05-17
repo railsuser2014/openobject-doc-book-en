@@ -4,12 +4,12 @@ Forecasting and Supplying
 Scheduler
 +++++++++
 
-The requirements scheduler is the calculation engine which plans and prioritises production and purchasing automatically according to the rules defined on products. By default, the scheduler is set to run once a day (OpenERP automatically creates a *Scheduled Action* for this). You can also start the scheduler manually from the menu :menuselection:`Warehouse --> Schedulers --> Compute Schedulers`.
+The requirements scheduler is the calculation engine which plans and prioritises production and purchasing automatically according to the rules defined on products. By default, the scheduler is set to run once a day (OpenERP automatically creates a *Scheduled Action* for this). You can also start the scheduler manually from the menu :menuselection:`Warehouse --> Schedulers --> Run Schedulers`.
 The scheduler uses all the relevant parameters defined for products, suppliers and the company to determine the priorities between the different production orders, deliveries and supplier purchases.
 
 .. note:: Starting Time
 
-        You can set the starting time of the scheduler by modifying the corresponding action in the menu :menuselection:`Administration --> Configuration --> Scheduler --> Scheduled Actions`. Modify the ``Run mrp Scheduler`` configuration document.
+        You can set the starting time of the scheduler by modifying the corresponding action in the menu :menuselection:`Settings --> Technical --> Scheduler --> Scheduled Actions`. Modify the ``Run mrp Scheduler`` configuration document.
 
 .. figure:: images/stock_cron.png
    :scale: 75
@@ -30,7 +30,7 @@ Planning
 
 In OpenERP, you can plan the production in an easy way. Simply by going to :menuselection:`Manufacturing --> Planning`, you can plan manufacturing orders, work orders and/or work centers.
 
-By clicking ``Manufacturing Orders`` in the *Planning* menu, a calendar view will open in which you can select a day to create the order whenever you want. You will also see the already planned orders. By dragging and dropping a manufacturing order in Calendar view, you can change the starting date of the order.
+By clicking ``Order Planning`` in the *Planning* menu, a calendar view will open in which you can select a day to create the order whenever you want. You will also see the already planned orders. By dragging and dropping a manufacturing order in Calendar view, you can change the starting date of the order.
 
 .. figure:: images/mo_plan.png
     :scale: 75
@@ -72,11 +72,11 @@ To see a calculation of the lead times, take the example of the cabinet above. S
    ============  ========  ===============
    Product Code  Quantity  Unit of Measure
    ============  ========  ===============
-   SIDEPAN       2         PCE
+   SIDEPAN       2         Unit
    WOOD002       0.25      m
    LIN040        1         m
    WOOD010       0.249     m
-   METC000       12        PCE
+   METC000       12        Unit
    ============  ========  ===============
 
 .. table:: Bill of Materials for 2 SIDEPAN Units
@@ -199,7 +199,7 @@ Some problems are just timing issues and can be automatically corrected by the s
 If a product has to be ‘in stock’ but is not available in your stores, OpenERP will make the exception as ‘temporary’ or ‘to be corrected’. The exception is temporary if the system can procure it automatically, for example, when a procurement rule has been defined for minimum stock.
 
 When an exception is raised, you can check the configuration of your product in order to correct the misconfiguration. Then you
-can choose to relaunch the scheduler or you can retry to execute the action by selecting the line, and clicking the :guilabel:`Retry` button, then click :guilabel:`Run procurement`.
+can choose to relaunch the scheduler or you can retry to execute the action by selecting the line, and clicking the :guilabel:`Retry` button, then click :guilabel:`Run Scheduler`.
 
 .. figure:: images/procurement_fix.png
     :scale: 75
@@ -214,7 +214,7 @@ Manual Procurement
 ------------------
 
 To procure internally, you can create a procurement order manually. Use the menu :menuselection:`Warehouse --> Schedulers -->
-Procurement Exceptions` and click the New button to do this.
+Procurement Exceptions` and click the `Create` button to do this.
 
 .. figure:: images/mrp_procurement.png
     :scale: 75
@@ -241,7 +241,7 @@ calculated from order date, default supplier, raw materials needs, selection of 
 
 .. tip:: Shortcuts
 
-    On the Product form you have an **action** shortcut button :guilabel:`Procurement Request` that lets you quickly 
+    On the Product form you have shortcut button :guilabel:`Request Procurement` that lets you quickly 
     create a new procurement order.
         
 
@@ -268,7 +268,7 @@ Then once the manufacturing has been planned for the product concerned, OpenERP 
 
 * Production order for the products at the supplier's and receipt of the finished products in the stores.
 
-Once the production order has been confirmed, OpenERP automatically generates a delivery order to send to the raw materials supplier. The storesperson can access this delivery order from the menu :menuselection:`Warehouse --> Warehouse Management --> Internal Moves`. The raw materials will then be placed in stock at the supplier's stores.
+Once the production order has been confirmed, OpenERP automatically generates a delivery order to send to the raw materials supplier. The storesperson can access this delivery order from the menu :menuselection:`Warehouse --> Receiver/Deliver By Orders --> Internal Moves`. The raw materials will then be placed in stock at the supplier's stores.
 
 Once the delivery of raw materials has been confirmed, OpenERP activates the production order. The supplier uses the raw materials to produce the finished goods which will automatically be put in your own stores. This manufacturing is confirmed when you receive the products from your supplier. Then you will indicate the quantities consumed by your supplier.
 
@@ -293,7 +293,7 @@ In OpenERP, you can define several bills of materials for the same product. In f
 Once several bills of materials have been defined for a particular product, you need to have a system to enable OpenERP to select one of them for use. By default, the bill of materials with the lowest sequence number is selected by the system.
 
 To gain more control over the process during selling or procuring, you can use **Properties**.
-The menu :menuselection:`Manufacturing --> Configuration --> Master Bill of Materials --> Properties` enables you to define properties, which can be set up arbitrarily to help you select a bill of materials when you have a choice of BoMs.
+The menu :menuselection:`Manufacturing --> Configuration --> Properties` enables you to define properties, which can be set up arbitrarily to help you select a bill of materials when you have a choice of BoMs.
 
 .. note:: Properties
 
@@ -316,11 +316,11 @@ For example, you can define the following property groups and properties:
    Method of Manufacture  Batch
    =====================  ============
 
-Once the bills of materials have been defined, you could associate the corresponding properties with them. Then when the salesperson enters a sales order line, he can attach the properties required (``Extra Info`` tab). If the product has to be manufactured, OpenERP will automatically choose the bill of materials that matches the defined properties in the order most closely.
+Once the bills of materials have been defined, you could associate the corresponding properties with them. Then when the salesperson enters a sales order line, he can attach the properties required. If the product has to be manufactured, OpenERP will automatically choose the bill of materials that matches the defined properties in the order most closely.
 
 .. note:: Extended View
 
-        Note that the properties are only visible in the Bills of Materials and Sales Management if you are working in the ``Extended`` view mode. If you cannot see it on your screen, add the group ``Useability /Extended View`` to your user.
+        Note that the properties are only visible in the Bills of Materials and Sales Management if you have select option ``Allow several bill of materials per products using properties`` from menu :menuselection:`Settings --> Configuration --> Manufacturing`.
 
 .. figure:: images/sale_line_property.png
    :scale: 75
