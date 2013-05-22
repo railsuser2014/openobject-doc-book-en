@@ -202,8 +202,7 @@ menu :menuselection:`Sales --> Sales --> Quotations` and click on `Create` butto
 	#. Select the product \ ``Titanium Alloy Radiator`` \. Although the :guilabel:`Product` field is not
 	   itself required, it is used by OpenERP to select the specific product so that several other fields
 	   can be automatically completed on the order line of the proposal, such as :guilabel:`Description`,
-	   :guilabel:`Unit of Measure`, :guilabel:`Unit Price`, :guilabel:`Procurement Method`,
-	   :guilabel:`Delivery Lead Time`, and :guilabel:`Taxes`.
+	   :guilabel:`Unit of Measure`, :guilabel:`Unit Price` and :guilabel:`Taxes`.
 
 	#. Change the :guilabel:`Quantity (UoM)` to \ ``6``\  and the :guilabel:`Unit Price` to \ ``130.00``\.
 	   Then click :guilabel:`Save & Close` and the line appears on the quotation form.
@@ -252,7 +251,7 @@ to the sale order which you have created.
 	A stock reservation activity takes place periodically to calculate the needs,
 	which also takes customer priorities into account.
 	The calculation can be started from the menu
-	:menuselection:`Warehouse --> Schedulers --> Compute Schedulers`.
+	:menuselection:`Warehouse --> Schedulers --> Run Schedulers`.
 	Running this automatically reserves products.
 
 	If you do not want to have to work out your stock needs but have a lean workflow you can install the
