@@ -5,12 +5,12 @@ Fleet Management
 
  *Fleet management. To manage all your vehicles, the contracts associated to those vehicle as well as services, fuel log entries, costs and many other features necessary to the management of your fleet of vehicle(s).*
 
-You can manage your vehicles, vehical's contacts using fleet module.
+You can manage your vehicles, vehical's contracts using fleet module.
 
 The main Features of fleet Module is you can add vehicles to your fleet, Manage contracts for vehicles, Reminder when a contract reach its expiration date, Add services, fuel log entry, odometer values for all vehicles and show all costs associated to a vehicle or to a type of service with help of Analysis graph for costs.
 
-You can create and modify a vehicle using the menu *Fleet ‣ Vehicle ‣ Vehicle,* You can select the model of vehicle from `Model` and need to define the license number in `License Plate`. ``Conract`` button define list of contract releted to vehicle same way the ``cost`` button list out the vehicle related cost.
-``Service`` Button define the vehicle related service list. ``Fuel log`` shows the fuel logs for this vehicle and the ``odometer logs`` show the related odometers list. This form provide the all other importatnt details related to vehicle like seat number, door number, vehicle value, Last Odometer. If you provide vehicle to any employee then you can tag it as emplyee car in `tag` field.
+You can create and modify a vehicle using the menu *Fleet ‣ Vehicle ‣ Vehicle,* You can select the model of vehicle from `Model` and need to define the license number in `License Plate`. ``Contract`` button define list of contract releted to vehicle same way the ``cost`` button list out the vehicle related cost.
+``Service`` Button define the vehicle related service list. ``Fuel log`` shows the fuel logs for this vehicle and the ``odometer logs`` show the related odometers list. This form provide the all other importatnt details related to vehicle like seat number, door number, Car value, Last Odometer. If you provide vehicle to any employee then you can tag it as emplyee car in `tag` field.
 
 .. figure:: images/main.png
    :scale: 75
