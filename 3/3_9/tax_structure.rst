@@ -20,7 +20,7 @@ You can attach taxes to transactions so that you can:
 
 * manage the payment and refund of taxes using the same mechanisms OpenERP uses for other monetary transactions.
 
-Since the detailed tax structure is a mechanism for carrying out governments' policies, and the collection of taxes so critical to their authorities, tax requirements and reporting can be complex. OpenERP has a flexible mechanism for handling taxation that can be configured to meet the requirements of many tax jurisdictions.
+Since the detailed tax structure is a mechanism for carrying out governments policies, and the collection of taxes so critical to their authorities, tax requirements and reporting can be complex. OpenERP has a flexible mechanism for handling taxation that can be configured to meet the requirements of many tax jurisdictions.
 
 The taxation mechanism can also be used to handle other tax-like financial transactions, such as royalties to authors based on the value of transactions through an account.
 

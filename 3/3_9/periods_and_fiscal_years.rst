@@ -46,11 +46,12 @@ To close a fiscal year you can also use the menu :menuselection:`Accounting--> P
 Closing a Period
 ----------------
 
-To close a financial period, for example when a tax declaration has been made, go to the menu :menuselection:`Accounting--> Configuration --> Periods --> Periods`, Select those period(s) which you want to close and from top centered `More` button click on ``Close a Period`` then Tick the check box for sure click on `Close Period` button.
+To close a financial period, for example when a tax declaration has been made, go to the menu :menuselection:`Accounting--> Configuration --> Periods --> Periods`, Select those period(s) which you want to close and from top centered `More` button click on ``Close a Period`` then select `Check this box` and on `Close Period` button.
+You can also close period from form view of Periods by clicking on `Close Period` button.  
 
 .. tip:: Opening Closed Periods
 
-    The system administrator can re-open a period should a period have been closed by mistake.
+    The system administrator can re-open a period, which have been closed by mistake.
 
 When a period is closed, you can no longer create or modify any transactions in that period. Closing a period is not obligatory, and you could easily leave periods open.
 
