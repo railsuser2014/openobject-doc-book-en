@@ -62,6 +62,7 @@ You can create asset by using the menu *Accounting ‣ Assets ‣ Assets* and cl
    :align: center
  
    *Assets form*
+
 You can configure the following information:
  
  - *Asset* : A name for an asset.

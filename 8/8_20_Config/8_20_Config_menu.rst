@@ -64,8 +64,9 @@ forms. This enables you to pre-complete the fields with default data to simplify
 entering new documents. Let us use the Customer form to demonstrate this feature. Create a new customer
 with :guilabel:`Country` set as :guilabel:`New Zealand`
 
-* First you have to active the developer mode, In that select \ ``Set Defaults`` \.
-An administrator has the choice of making the default work just for that user, or for all users of the database.
+* First you have to active the developer mode, In that select \ ``Set
+  Defaults`` \.  An administrator has the choice of making the default
+  work just for that user, or for all users of the database.
 
 .. figure::  images/set_default.png
    :scale: 55
