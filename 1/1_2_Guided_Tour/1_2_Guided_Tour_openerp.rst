@@ -246,11 +246,11 @@ OpenERP provides many tools for managing relationships with partners. These are 
 the :menuselection:`Sales` menu.
 
 
-.. tip::  :guilabel:`CRM & SRM`
+.. tip:: :guilabel:`CRM & SRM`
 
-	``CRM`` stands for Customer Relationship Management, a standard term for systems that manage client and
-	customer relations. ``SRM`` stands for Supplier Relationship Management, and is commonly used for
-	functions that manage your communications with your suppliers.
+    ``CRM`` stands for Customer Relationship Management, a standard term for systems that manage client and
+    customer relations. ``SRM`` stands for Supplier Relationship Management, and is commonly used for
+    functions that manage your communications with your suppliers.
 
 Through Customer Relationship Management, OpenERP allows you to keep track of:
 

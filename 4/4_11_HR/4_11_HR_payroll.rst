@@ -116,7 +116,8 @@ You can configure the following information:-
 
 After entering the salary rule information click Save.
 
-.. note:: 
+.. note::
+
     :guilabel:`Sign of amount`
 
     If you are defining a rule for Allowance then make sure that the **amount** , **percentage** or **python code** you enter is *positive*. And if its for Deduction then it has to be *negative*.
